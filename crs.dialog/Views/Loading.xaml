@@ -1,0 +1,60 @@
+﻿<UserControl x:Class="crs.dialog.Views.Loading"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+             xmlns:hc="https://handyorg.github.io/handycontrol"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:prism="http://prismlibrary.com/"
+             d:Height="1080"
+             d:Width="1920"
+             prism:ViewModelLocator.AutoWireViewModel="True"
+             mc:Ignorable="d">
+
+    <Border Width="145"
+            Height="145"
+            Background="White"
+            CornerRadius="18"
+            Effect="{StaticResource EffectShadow2}">
+        <hc:SimplePanel Margin="15">
+            <hc:SimplePanel Background="{StaticResource crs_SolidColorBrush.F89F00}">
+                <hc:SimplePanel.OpacityMask>
+                    <ImageBrush ImageSource="{StaticResource crs_加载}" />
+                </hc:SimplePanel.OpacityMask>
+            </hc:SimplePanel>
+            <ed:Arc x:Name="arc"
+                    ArcThickness="1"
+                    ArcThicknessUnit="Percent"
+                    EndAngle="360"
+                    Fill="White"
+                    Opacity="0.8"
+                    RenderTransformOrigin="0.5,0.5"
+                    StartAngle="0"
+                    Stretch="None"
+                    StrokeThickness="0">
+                <ed:Arc.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="135" />
+                    </TransformGroup>
+                </ed:Arc.RenderTransform>
+                <ed:Arc.Triggers>
+                    <EventTrigger RoutedEvent="Loaded">
+                        <BeginStoryboard>
+                            <Storyboard RepeatBehavior="Forever">
+                                <DoubleAnimation BeginTime="0"
+                                                 Storyboard.TargetProperty="StartAngle"
+                                                 From="0"
+                                                 To="360"
+                                                 Duration="0:0:0.8">
+                                    <DoubleAnimation.EasingFunction>
+                                        <SineEase EasingMode="EaseOut" />
+                                    </DoubleAnimation.EasingFunction>
+                                </DoubleAnimation>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </ed:Arc.Triggers>
+            </ed:Arc>
+        </hc:SimplePanel>
+    </Border>
+</UserControl>

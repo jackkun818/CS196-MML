@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "crs.core": {
+      "commandName": "Project",
+      "commandLineArgs": "DEBUG"
+    }
+  }
+}

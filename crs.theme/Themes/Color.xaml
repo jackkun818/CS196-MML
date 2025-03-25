@@ -1,0 +1,51 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:po="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options">
+
+<Color x:Key="crs_Color.000000" po:Freeze="True">#000000</Color>
+
+<SolidColorBrush x:Key="crs_SolidColorBrush.000000" po:Freeze="True" Color="{StaticResource crs_Color.000000}" />
+
+<Color x:Key="crs_Color.FFFFFF" po:Freeze="True">#FFFFFF</Color>
+
+<SolidColorBrush x:Key="crs_SolidColorBrush.FFFFFF" po:Freeze="True" Color="{StaticResource crs_Color.FFFFFF}" />
+
+<Color x:Key="crs_Color.EFEFEF" po:Freeze="True">#EFEFEF</Color>
+
+<SolidColorBrush x:Key="crs_SolidColorBrush.EFEFEF" po:Freeze="True" Color="{StaticResource crs_Color.EFEFEF}" />
+
+<Color x:Key="crs_Color.F8F8F8" po:Freeze="True">#F8F8F8</Color>
+
+<SolidColorBrush x:Key="crs_SolidColorBrush.F8F8F8" po:Freeze="True" Color="{StaticResource crs_Color.F8F8F8}" />
+
+<Color x:Key="crs_Color.FFA300" po:Freeze="True">#FFA300</Color>
+
+<SolidColorBrush x:Key="crs_SolidColorBrush.FFA300" po:Freeze="True" Color="{StaticResource crs_Color.FFA300}" />
+
+<Color x:Key="crs_Color.FF5252" po:Freeze="True">#FF5252</Color>
+
+<SolidColorBrush x:Key="crs_SolidColorBrush.FF5252" po:Freeze="True" Color="{StaticResource crs_Color.FF5252}" />
+
+<Color x:Key="crs_Color.248BFC" po:Freeze="True">#248BFC</Color>
+
+<SolidColorBrush x:Key="crs_SolidColorBrush.248BFC" po:Freeze="True" Color="{StaticResource crs_Color.248BFC}" />
+
+<Color x:Key="crs_Color.FFD892" po:Freeze="True">#FFD892</Color>
+
+<SolidColorBrush x:Key="crs_SolidColorBrush.FFD892" po:Freeze="True" Color="{StaticResource crs_Color.FFD892}" />
+
+<Color x:Key="crs_Color.F89F00" po:Freeze="True">#F89F00</Color>
+
+<SolidColorBrush x:Key="crs_SolidColorBrush.F89F00" po:Freeze="True" Color="{StaticResource crs_Color.F89F00}" />
+
+<Color x:Key="crs_Color.9B9B9B" po:Freeze="True">#9B9B9B</Color>
+
+<SolidColorBrush x:Key="crs_SolidColorBrush.9B9B9B" po:Freeze="True" Color="{StaticResource crs_Color.9B9B9B}" />
+
+<Color x:Key="crs_Color.E7F3FF" po:Freeze="True">#E7F3FF</Color>
+
+<SolidColorBrush x:Key="crs_SolidColorBrush.E7F3FF" po:Freeze="True" Color="{StaticResource crs_Color.E7F3FF}" />
+
+<Color x:Key="crs_Color.59CFA1" po:Freeze="True">#59CFA1</Color>
+
+<SolidColorBrush x:Key="crs_SolidColorBrush.59CFA1" po:Freeze="True" Color="{StaticResource crs_Color.59CFA1}" />
+
+</ResourceDictionary>

@@ -1,0 +1,25 @@
+ManifestFileVersion: 0
+CRC: 3934458747
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: pausepanel_prefab
+      Dependencies: {}
+    Info_1:
+      Name: mainmenu_prefab
+      Dependencies: {}
+    Info_2:
+      Name: errorpanel_prefab
+      Dependencies: {}
+    Info_3:
+      Name: testinfopanel_prefab
+      Dependencies: {}
+    Info_4:
+      Name: loadpanel_prefab
+      Dependencies: {}
+    Info_5:
+      Name: gameoverpanel_prefab
+      Dependencies: {}
+    Info_6:
+      Name: spasmpanel_prefab
+      Dependencies: {}

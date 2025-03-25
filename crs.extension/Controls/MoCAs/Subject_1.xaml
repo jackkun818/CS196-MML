@@ -1,0 +1,227 @@
+﻿<UserControl
+    x:Class="crs.extension.Controls.MoCAs.Subject_1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:behaviors="http://schemas.microsoft.com/xaml/behaviors"
+    xmlns:controls="clr-namespace:crs.extension.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:hc="https://handyorg.github.io/handycontrol"
+    xmlns:local="clr-namespace:crs.extension.Controls.MoCAs"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:models="clr-namespace:crs.extension.Models"
+    xmlns:theme="clr-namespace:crs.theme;assembly=crs.theme"
+    d:Background="White"
+    d:DataContext="{d:DesignInstance IsDesignTimeCreatable=True,
+                                     Type={x:Type models:SubjectItem}}"
+    d:DesignHeight="579"
+    d:DesignWidth="1400"
+    mc:Ignorable="d">
+
+    <DockPanel>
+        <TextBlock
+            DockPanel.Dock="Top"
+            TextBlock.FontSize="32"
+            TextBlock.FontWeight="Bold"
+            TextTrimming="CharacterEllipsis">
+            <behaviors:Interaction.Triggers>
+                <behaviors:EventTrigger EventName="Loaded">
+                    <behaviors:ChangePropertyAction
+                        PropertyName="OriginName"
+                        TargetObject="{Binding}"
+                        Value="视空间/执行功能" />
+                </behaviors:EventTrigger>
+            </behaviors:Interaction.Triggers>
+            视空间/执行功能
+        </TextBlock>
+        <UniformGrid
+            Margin="0,30,0,0"
+            Columns="3"
+            Rows="1">
+            <DockPanel HorizontalAlignment="Center" DataContext="{Binding ChildrenItems[0]}">
+                <ContentControl
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Content="{Binding AnswerItems[0]}"
+                    ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate}"
+                    DockPanel.Dock="Bottom" />
+                <StackPanel
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    DockPanel.Dock="Top"
+                    Orientation="Horizontal">
+                    <TextBlock VerticalAlignment="Center" FontSize="28">
+                        1.交替连线测验
+                    </TextBlock>
+                    <ContentControl
+                        Margin="10,0,0,0"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        ContentTemplate="{StaticResource MMSE_MoCA_ToolTipTemplate}">
+                        <ContentControl.Content>
+                            <TextBlock TextTrimming="CharacterEllipsis" TextWrapping="Wrap">
+                                评分：<LineBreak /><LineBreak />
+                                当患者完全按照”1-甲-2-乙-3-丙-4-丁-5-戊“的顺序进行连线且没有任何交叉线时候给1分。当患者出现任何错误而没有立刻自我纠正时，给0分。</TextBlock>
+                        </ContentControl.Content>
+                    </ContentControl>
+                    <Button
+                        Width="51"
+                        Height="36"
+                        Background="Transparent"
+                        BorderBrush="Transparent"
+                        Click="ExecuteAudioPlayClick"
+                        Cursor="Hand"
+                        Tag="请按照顺序进行数字和文字交替连线">
+
+                        <Button.Content>
+                            <Image
+                                Width="28"
+                                Height="24"
+                                VerticalAlignment="Center"
+                                Cursor="Hand"
+                                Source="{StaticResource crs_声音}"
+                                Stretch="Uniform" />
+                        </Button.Content>
+                    </Button>
+                </StackPanel>
+                <Image
+                    Width="260"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Source="{StaticResource crs_题目插图4}" />
+            </DockPanel>
+            <DockPanel HorizontalAlignment="Center" DataContext="{Binding ChildrenItems[1]}">
+                <ContentControl
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Content="{Binding AnswerItems[0]}"
+                    ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate}"
+                    DockPanel.Dock="Bottom" />
+                <StackPanel
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    DockPanel.Dock="Top"
+                    Orientation="Horizontal">
+                    <TextBlock VerticalAlignment="Center" FontSize="28">
+                        2.复制立方体
+                    </TextBlock>
+                    <ContentControl
+                        Margin="10,0,0,0"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        ContentTemplate="{StaticResource MMSE_MoCA_ToolTipTemplate}">
+                        <ContentControl.Content>
+                            <TextBlock TextTrimming="CharacterEllipsis" TextWrapping="Wrap">
+                                评分：完全符合下列标准时，给 1分,只要违反其中一条，即为0分<LineBreak /><LineBreak />
+                                1.图形为三维结构<LineBreak />
+                                2.所有线条都存在<LineBreak />
+                                3.无多余线条<LineBreak />
+                                4.相对的边基本平行，长度基本一致(长方体或棱柱体也算正确）</TextBlock>
+                        </ContentControl.Content>
+                    </ContentControl>
+                    <Button
+                        Width="51"
+                        Height="36"
+                        Background="Transparent"
+                        BorderBrush="Transparent"
+                        Click="ExecuteAudioPlayClick"
+                        Cursor="Hand"
+                        Tag="请根据以下图形在空白处进行模仿绘制立方体">
+                        <Button.Content>
+                            <Image
+                                Width="28"
+                                Height="24"
+                                VerticalAlignment="Center"
+                                Cursor="Hand"
+                                Source="{StaticResource crs_声音}"
+                                Stretch="Uniform" />
+                        </Button.Content>
+                    </Button>
+                </StackPanel>
+                <Image
+                    Width="195"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Source="{StaticResource crs_题目插图5}" />
+            </DockPanel>
+            <DockPanel HorizontalAlignment="Center" DataContext="{Binding ChildrenItems[2]}">
+                <StackPanel
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    DockPanel.Dock="Top"
+                    Orientation="Horizontal">
+                    <TextBlock VerticalAlignment="Center" FontSize="28">
+                        3.画钟（11点10分）
+                    </TextBlock>
+                    <ContentControl
+                        Margin="10,0,0,0"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        ContentTemplate="{StaticResource MMSE_MoCA_ToolTipTemplate}">
+                        <ContentControl.Content>
+                            <TextBlock TextTrimming="CharacterEllipsis" TextWrapping="Wrap">
+                                评分：符合下列三个标准时，分别给1分,如果违反其中一条，则该项目不给分<LineBreak /><LineBreak />
+                                轮廓(1分)：表面必须是个圆，允许有轻微缺陷(如，圆没有闭合）<LineBreak />
+                                数字(1分)：所有的数字必须完整且无多余的数字；数字顺序必须正确且在所属的象限内；可以是罗马数字；数字可以放在圆圈外<LineBreak />
+                                指针(1分)：必须有两个指针且一起指向正确的时间；时针必须明显短于分针；指针的中心交点必须在表内且接近钟表的中心</TextBlock>
+                        </ContentControl.Content>
+                    </ContentControl>
+                    <Button
+                        Width="51"
+                        Height="36"
+                        Background="Transparent"
+                        BorderBrush="Transparent"
+                        Click="ExecuteAudioPlayClick"
+                        Cursor="Hand"
+                        Tag="请您在空白处画一个钟表，填上所有的数字并指出11点10分">
+                        <Button.Content>
+                            <Image
+                                Width="28"
+                                Height="24"
+                                VerticalAlignment="Center"
+                                Cursor="Hand"
+                                Source="{StaticResource crs_声音}"
+                                Stretch="Uniform" />
+                        </Button.Content>
+                    </Button>
+                </StackPanel>
+                <UniformGrid
+                    Height="220"
+                    Margin="0,0,0,45"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Columns="1"
+                    Rows="3"
+                    TextBlock.FontSize="28">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock VerticalAlignment="Center">轮廓</TextBlock>
+                        <ContentControl
+                            Margin="20,0,0,0"
+                            VerticalAlignment="Center"
+                            Content="{Binding AnswerItems[0]}"
+                            ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate}"
+                            DockPanel.Dock="Bottom" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock VerticalAlignment="Center">数字</TextBlock>
+                        <ContentControl
+                            Margin="20,0,0,0"
+                            VerticalAlignment="Center"
+                            Content="{Binding AnswerItems[1]}"
+                            ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate}"
+                            DockPanel.Dock="Bottom" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock VerticalAlignment="Center">指针</TextBlock>
+                        <ContentControl
+                            Margin="20,0,0,0"
+                            VerticalAlignment="Center"
+                            Content="{Binding AnswerItems[2]}"
+                            ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate}"
+                            DockPanel.Dock="Bottom" />
+                    </StackPanel>
+                </UniformGrid>
+            </DockPanel>
+        </UniformGrid>
+    </DockPanel>
+
+</UserControl>

@@ -1,0 +1,243 @@
+﻿<UserControl
+    x:Class="crs.extension.Controls.MoCAs.Subject_11"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:behaviors="http://schemas.microsoft.com/xaml/behaviors"
+    xmlns:controls="clr-namespace:crs.extension.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:hc="https://handyorg.github.io/handycontrol"
+    xmlns:local="clr-namespace:crs.extension.Controls.MoCAs"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:models="clr-namespace:crs.extension.Models"
+    xmlns:theme="clr-namespace:crs.theme;assembly=crs.theme"
+    d:Background="White"
+    d:DataContext="{d:DesignInstance IsDesignTimeCreatable=True,
+                                     Type={x:Type models:SubjectItem}}"
+    d:DesignHeight="579"
+    d:DesignWidth="1400"
+    mc:Ignorable="d">
+
+    <DockPanel>
+        <TextBlock
+            DockPanel.Dock="Top"
+            TextBlock.FontSize="32"
+            TextBlock.FontWeight="Bold"
+            TextTrimming="CharacterEllipsis">
+            <behaviors:Interaction.Triggers>
+                <behaviors:EventTrigger EventName="Loaded">
+                    <behaviors:ChangePropertyAction
+                        PropertyName="OriginName"
+                        TargetObject="{Binding}"
+                        Value="定向力" />
+                </behaviors:EventTrigger>
+            </behaviors:Interaction.Triggers>
+            定向力
+        </TextBlock>
+        <StackPanel
+            Margin="0,30,0,0"
+            VerticalAlignment="Center"
+            DockPanel.Dock="Top"
+            Orientation="Horizontal">
+            <TextBlock VerticalAlignment="Center" FontSize="28">“告诉我今天是什么日期？“”告诉我这是什么地方，它在哪个城市？”</TextBlock>
+            <ContentControl
+                Margin="10,0,0,0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                ContentTemplate="{StaticResource MMSE_MoCA_ToolTipTemplate}">
+                <ContentControl.Content>
+                    <TextBlock TextTrimming="CharacterEllipsis" TextWrapping="Wrap">
+                        评分：每正确回答一项给1分。患者必须回答精确的日期和地点（医院、诊所、办公室的名称）。日期上多一天或少一天都算错误，不给分
+                    </TextBlock>
+                </ContentControl.Content>
+            </ContentControl>
+            <Button
+                Width="51"
+                Height="36"
+                Background="Transparent"
+                BorderBrush="Transparent"
+                Click="ExecuteAudioPlayClick"
+                Cursor="Hand"
+                Tag="下面我会提出几个问题，请告诉我答案。请告诉我今天是星期几,是哪一年，哪一个月，哪一天,这是什么地方，它在哪个城市">
+                <Button.Content>
+                    <Image
+                        Width="28"
+                        Height="24"
+                        VerticalAlignment="Center"
+                        Cursor="Hand"
+                        Source="{StaticResource crs_声音}"
+                        Stretch="Uniform" />
+                </Button.Content>
+            </Button>
+        </StackPanel>
+        <UniformGrid
+            Columns="6"
+            Rows="1"
+            TextBlock.FontSize="36"
+            TextBlock.FontWeight="Bold">
+            <DockPanel DataContext="{Binding ChildrenItems[0]}">
+                <ContentControl
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Content="{Binding AnswerItems[0]}"
+                    ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate}"
+                    DockPanel.Dock="Bottom" />
+                <hc:TextBox
+                    Width="180"
+                    Height="50"
+                    Margin="0,0,0,60"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Center"
+                    hc:InfoElement.ShowClearButton="True"
+                    BorderBrush="Black"
+                    DataContext="{Binding AnswerItems[0]}"
+                    DockPanel.Dock="Bottom"
+                    FontSize="20"
+                    Text="{Binding Remark, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                    TextAlignment="Center" />
+                <TextBlock
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    TextTrimming="CharacterEllipsis">
+                    星期
+                </TextBlock>
+            </DockPanel>
+            <DockPanel DataContext="{Binding ChildrenItems[0]}">
+                <ContentControl
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Content="{Binding AnswerItems[1]}"
+                    ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate}"
+                    DockPanel.Dock="Bottom" />
+                <hc:TextBox
+                    Width="180"
+                    Height="50"
+                    Margin="0,0,0,60"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Center"
+                    hc:InfoElement.ShowClearButton="True"
+                    BorderBrush="Black"
+                    DataContext="{Binding AnswerItems[1]}"
+                    DockPanel.Dock="Bottom"
+                    FontSize="20"
+                    Text="{Binding Remark, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                    TextAlignment="Center" />
+                <TextBlock
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    TextTrimming="CharacterEllipsis">
+                    年
+                </TextBlock>
+            </DockPanel>
+            <DockPanel DataContext="{Binding ChildrenItems[0]}">
+                <ContentControl
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Content="{Binding AnswerItems[2]}"
+                    ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate}"
+                    DockPanel.Dock="Bottom" />
+                <hc:TextBox
+                    Width="180"
+                    Height="50"
+                    Margin="0,0,0,60"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Center"
+                    hc:InfoElement.ShowClearButton="True"
+                    BorderBrush="Black"
+                    DataContext="{Binding AnswerItems[2]}"
+                    DockPanel.Dock="Bottom"
+                    FontSize="20"
+                    Text="{Binding Remark, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                    TextAlignment="Center" />
+
+                <TextBlock
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    TextTrimming="CharacterEllipsis">
+                    月
+                </TextBlock>
+            </DockPanel>
+            <DockPanel DataContext="{Binding ChildrenItems[0]}">
+                <ContentControl
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Content="{Binding AnswerItems[3]}"
+                    ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate}"
+                    DockPanel.Dock="Bottom" />
+                <hc:TextBox
+                    Width="180"
+                    Height="50"
+                    Margin="0,0,0,60"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Center"
+                    hc:InfoElement.ShowClearButton="True"
+                    BorderBrush="Black"
+                    DataContext="{Binding AnswerItems[3]}"
+                    DockPanel.Dock="Bottom"
+                    FontSize="20"
+                    Text="{Binding Remark, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                    TextAlignment="Center" />
+                <TextBlock
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    TextTrimming="CharacterEllipsis">
+                    日
+                </TextBlock>
+            </DockPanel>
+            <DockPanel DataContext="{Binding ChildrenItems[1]}">
+                <ContentControl
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Content="{Binding AnswerItems[0]}"
+                    ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate}"
+                    DockPanel.Dock="Bottom" />
+                <hc:TextBox
+                    Width="180"
+                    Height="50"
+                    Margin="0,0,0,60"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Center"
+                    hc:InfoElement.ShowClearButton="True"
+                    BorderBrush="Black"
+                    DataContext="{Binding AnswerItems[0]}"
+                    DockPanel.Dock="Bottom"
+                    FontSize="20"
+                    Text="{Binding Remark, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                    TextAlignment="Center" />
+                <TextBlock
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    TextTrimming="CharacterEllipsis">
+                    地方
+                </TextBlock>
+            </DockPanel>
+            <DockPanel DataContext="{Binding ChildrenItems[1]}">
+                <ContentControl
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Content="{Binding AnswerItems[1]}"
+                    ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate}"
+                    DockPanel.Dock="Bottom" />
+                <hc:TextBox
+                    Width="180"
+                    Height="50"
+                    Margin="0,0,0,60"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Center"
+                    hc:InfoElement.ShowClearButton="True"
+                    BorderBrush="Black"
+                    DataContext="{Binding AnswerItems[1]}"
+                    DockPanel.Dock="Bottom"
+                    FontSize="20"
+                    Text="{Binding Remark, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                    TextAlignment="Center" />
+                <TextBlock
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    TextTrimming="CharacterEllipsis">
+                    城市
+                </TextBlock>
+            </DockPanel>
+        </UniformGrid>
+    </DockPanel>
+
+</UserControl>

@@ -1,0 +1,60 @@
+﻿<hc:GlowWindow
+    x:Class="crs.window.Views.SubWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:ex="clr-namespace:crs.extension;assembly=crs.extension"
+    xmlns:hc="https://handyorg.github.io/handycontrol"
+    xmlns:prism="http://prismlibrary.com/"
+    Width="1280"
+    Height="750"
+    prism:ViewModelLocator.AutoWireViewModel="True"
+    ActiveGlowColor="White"
+    Background="Goldenrod"
+    BorderBrush="{Binding NonClientAreaBackground, RelativeSource={RelativeSource Mode=Self}}"
+    InactiveGlowColor="Goldenrod"
+    NonClientAreaBackground="Goldenrod"
+    NonClientAreaForeground="White"
+    ResizeMode="CanMinimize"
+    ShowNonClientArea="True"
+    ShowTitle="False"
+    Style="{StaticResource WindowGlow}"
+    Tag="HostWindow"
+    WindowStartupLocation="CenterScreen"
+    WindowState="Normal"
+    WindowStyle="SingleBorderWindow">
+
+    <hc:Interaction.Triggers>
+        <hc:EventTrigger EventName="Loaded">
+            <hc:InvokeCommandAction Command="{Binding LoadedCommand}" />
+        </hc:EventTrigger>
+    </hc:Interaction.Triggers>
+
+    <hc:GlowWindow.NonClientAreaContent>
+        <hc:SimplePanel
+            Height="30"
+            hc:WindowAttach.IsDragElement="True"
+            Background="Transparent" />
+    </hc:GlowWindow.NonClientAreaContent>
+
+    <Viewbox Stretch="Uniform">
+        <Border
+            Width="1920"
+            Height="1080"
+            Background="White"
+            BorderBrush="Goldenrod"
+            BorderThickness="1">
+            <hc:SimplePanel>
+                <ContentControl prism:RegionManager.RegionName="{x:Static ex:Crs_Region.MainWindow}" />
+                <hc:DialogContainer hc:Dialog.Token="{x:Static ex:Crs_DialogToken.TopContent}">
+                    <hc:SimplePanel />
+                </hc:DialogContainer>
+                <hc:DialogContainer hc:Dialog.Token="{x:Static ex:Crs_DialogToken.TopMessageBox}">
+                    <hc:SimplePanel />
+                </hc:DialogContainer>
+                <hc:DialogContainer hc:Dialog.Token="{x:Static ex:Crs_DialogToken.TopProgress}">
+                    <hc:SimplePanel />
+                </hc:DialogContainer>
+            </hc:SimplePanel>
+        </Border>
+    </Viewbox>
+</hc:GlowWindow>

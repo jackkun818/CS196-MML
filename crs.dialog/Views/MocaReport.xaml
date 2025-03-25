@@ -1,0 +1,1872 @@
+﻿<UserControl
+    x:Class="crs.dialog.Views.MocaReport"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:behaviors="http://schemas.microsoft.com/xaml/behaviors"
+    xmlns:controls="clr-namespace:crs.extension.Controls;assembly=crs.extension"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:hc="https://handyorg.github.io/handycontrol"
+    xmlns:lcc="clr-namespace:LiveChartsCore.SkiaSharpView.WPF;assembly=LiveChartsCore.SkiaSharpView.WPF"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:mocas="clr-namespace:crs.extension.Controls.MoCAs;assembly=crs.extension"
+    xmlns:prism="http://prismlibrary.com/"
+    xmlns:system="clr-namespace:System;assembly=mscorlib"
+    xmlns:theme="clr-namespace:crs.theme;assembly=crs.theme"
+    xmlns:vm="clr-namespace:crs.dialog.ViewModels"
+    xmlns:wpfToolkit="clr-namespace:WpfToolkit.Controls;assembly=VirtualizingWrapPanel"
+    d:DataContext="{d:DesignInstance IsDesignTimeCreatable=True,
+                                     Type={x:Type vm:MocaReportViewModel}}"
+    d:MinHeight="1080"
+    d:Width="1920"
+    prism:ViewModelLocator.AutoWireViewModel="True"
+    mc:Ignorable="d">
+
+    <DockPanel>
+        <hc:SimplePanel
+            Height="100"
+            Background="Transparent"
+            DockPanel.Dock="Top"
+            MouseUp="SimplePanel_MouseUp" />
+        <hc:SimplePanel
+            Width="280"
+            Background="Transparent"
+            DockPanel.Dock="Left"
+            MouseUp="SimplePanel_MouseUp" />
+
+        <hc:SimplePanel Background="White">
+            <DockPanel Margin="45,10,45,45">
+                <UniformGrid
+                    Columns="3"
+                    DockPanel.Dock="Top"
+                    Rows="1">
+                    <Button
+                        Width="58"
+                        Height="46"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        BorderThickness="0"
+                        Command="{Binding CancelCommand}">
+                        <Button.Background>
+                            <ImageBrush ImageSource="{StaticResource crs_返回}" />
+                        </Button.Background>
+                    </Button>
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        FontSize="36"
+                        FontWeight="Bold">
+                        MoCA量表报告
+                    </TextBlock>
+                    <Button
+                        Width="166"
+                        Height="52"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        hc:BorderElement.CornerRadius="26"
+                        Background="{StaticResource crs_SolidColorBrush.F89F00}"
+                        Click="ExportPDFButton_Click"
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Foreground="White">
+                        <StackPanel Orientation="Horizontal">
+                            <Image
+                                Width="30"
+                                VerticalAlignment="Center"
+                                Source="{StaticResource crs_导出报告}" />
+                            <TextBlock Margin="10,0,0,0" VerticalAlignment="Center">导出报告</TextBlock>
+                        </StackPanel>
+                    </Button>
+                </UniformGrid>
+                <Border
+                    Margin="0,10,0,0"
+                    Background="White"
+                    CornerRadius="8"
+                    Effect="{StaticResource EffectShadow2}">
+                    <ScrollViewer x:Name="scrollViewer" VerticalScrollBarVisibility="Auto">
+                        <DockPanel
+                            x:Name="page"
+                            Margin="40,20,40,40"
+                            LastChildFill="False">
+                            <Border
+                                Height="120"
+                                BorderBrush="Black"
+                                BorderThickness="0,0,0,1"
+                                DockPanel.Dock="Top"
+                                TextBlock.FontSize="24">
+                                <UniformGrid
+                                    Margin="0,0,0,20"
+                                    Columns="3"
+                                    Rows="2">
+                                    <UniformGrid Columns="2" Rows="1">
+                                        <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center">姓名：</TextBlock>
+                                        <TextBlock
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Center"
+                                            Text="{Binding PatientItem.Name, TargetNullValue=--, FallbackValue=--}"
+                                            TextTrimming="CharacterEllipsis" />
+                                    </UniformGrid>
+                                    <UniformGrid Columns="2" Rows="1">
+                                        <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center">性别：</TextBlock>
+                                        <TextBlock
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Center"
+                                            Text="{Binding PatientItem.SexType, TargetNullValue=--, FallbackValue=--}"
+                                            TextTrimming="CharacterEllipsis" />
+                                    </UniformGrid>
+                                    <UniformGrid Columns="2" Rows="1">
+                                        <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center">年龄：</TextBlock>
+                                        <TextBlock
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Center"
+                                            Text="{Binding PatientItem.Age, StringFormat={}{0}岁, TargetNullValue=--, FallbackValue=--}"
+                                            TextTrimming="CharacterEllipsis" />
+                                    </UniformGrid>
+                                    <UniformGrid Columns="2" Rows="1">
+                                        <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center">训练用时：</TextBlock>
+                                        <TextBlock
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Center"
+                                            Text="{Binding DurationTime, TargetNullValue=--, FallbackValue=--}"
+                                            TextTrimming="CharacterEllipsis" />
+                                    </UniformGrid>
+                                    <UniformGrid Columns="2" Rows="1">
+                                        <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center">模式：</TextBlock>
+                                        <TextBlock
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Center"
+                                            Text="标准评估"
+                                            TextTrimming="CharacterEllipsis" />
+                                    </UniformGrid>
+                                    <UniformGrid Columns="2" Rows="1">
+                                        <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center">报告时间：</TextBlock>
+                                        <TextBlock
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Center"
+                                            Text="{Binding DateTime, TargetNullValue=--, FallbackValue=--}"
+                                            TextTrimming="CharacterEllipsis" />
+                                    </UniformGrid>
+                                </UniformGrid>
+                            </Border>
+                            <StackPanel
+                                Margin="0,20,0,0"
+                                DockPanel.Dock="Top"
+                                Orientation="Horizontal">
+                                <Rectangle
+                                    Width="7"
+                                    Height="27"
+                                    VerticalAlignment="Center"
+                                    Fill="{StaticResource crs_SolidColorBrush.F89F00}"
+                                    RadiusX="3"
+                                    RadiusY="3" />
+                                <TextBlock
+                                    Margin="10,0,0,0"
+                                    VerticalAlignment="Center"
+                                    FontSize="30"
+                                    FontWeight="Bold">
+                                    测评得分
+                                </TextBlock>
+                            </StackPanel>
+                            <lcc:CartesianChart
+                                Height="380"
+                                Margin="0,20,0,0"
+                                DataContext="{Binding CartesianChartItem}"
+                                DockPanel.Dock="Top"
+                                LegendPosition="Top"
+                                Series="{Binding Series}"
+                                XAxes="{Binding XAxes}"
+                                YAxes="{Binding YAxes}" />
+                            <DockPanel
+                                Margin="20,20,20,0"
+                                DockPanel.Dock="Top"
+                                TextBlock.FontSize="24"
+                                TextBlock.FontWeight="Bold">
+                                <TextBlock DockPanel.Dock="Left">主要问题：</TextBlock>
+                                <TextBlock Text="{Binding Problem}" TextWrapping="Wrap" />
+                            </DockPanel>
+                            <Border
+                                Margin="0,20,0,0"
+                                Background="{StaticResource crs_SolidColorBrush.EFEFEF}"
+                                DockPanel.Dock="Top">
+                                <TextBlock
+                                    Margin="20"
+                                    FontSize="24"
+                                    Text="{Binding Conclusion}"
+                                    TextWrapping="Wrap" />
+                            </Border>
+                            <StackPanel
+                                Margin="0,20,0,0"
+                                DockPanel.Dock="Top"
+                                Orientation="Horizontal">
+                                <Rectangle
+                                    Width="7"
+                                    Height="27"
+                                    VerticalAlignment="Center"
+                                    Fill="{StaticResource crs_SolidColorBrush.F89F00}"
+                                    RadiusX="3"
+                                    RadiusY="3" />
+                                <TextBlock
+                                    Margin="10,0,0,0"
+                                    VerticalAlignment="Center"
+                                    FontSize="30"
+                                    FontWeight="Bold">
+                                    量表详情
+                                </TextBlock>
+                            </StackPanel>
+                            <StackPanel
+                                Margin="0,20,0,0"
+                                DockPanel.Dock="Top"
+                                TextBlock.FontSize="24">
+                                <controls:Crs_SubjectReport
+                                    Height="55"
+                                    TextBlock.FontSize="26"
+                                    TextBlock.FontWeight="Bold">
+                                    <controls:Crs_SubjectReport.RightContent>
+                                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">得分</TextBlock>
+                                    </controls:Crs_SubjectReport.RightContent>
+                                    <TextBlock
+                                        Margin="20,0,0,0"
+                                        HorizontalAlignment="Left"
+                                        VerticalAlignment="Center">
+                                        视空间/执行能力
+                                    </TextBlock>
+                                </controls:Crs_SubjectReport>
+                                <controls:Crs_SubjectReport DataContext="{Binding SubjectItems[0]}">
+                                    <behaviors:Interaction.Triggers>
+                                        <behaviors:EventTrigger EventName="Loaded">
+                                            <behaviors:ChangePropertyAction
+                                                PropertyName="OriginName"
+                                                TargetObject="{Binding}"
+                                                Value="视空间/执行能力" />
+                                        </behaviors:EventTrigger>
+                                    </behaviors:Interaction.Triggers>
+                                    <controls:Crs_SubjectReport.RightContent>
+                                        <TextBlock
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            Foreground="{StaticResource crs_SolidColorBrush.F89F00}"
+                                            Text="{Binding Fraction, TargetNullValue=--, FallbackValue=--}" />
+                                    </controls:Crs_SubjectReport.RightContent>
+                                    <UniformGrid
+                                        Margin="20"
+                                        Columns="3"
+                                        Rows="1">
+                                        <DockPanel
+                                            Margin="20,0"
+                                            HorizontalAlignment="Stretch"
+                                            DataContext="{Binding ChildrenItems[0]}">
+                                            <ContentControl
+                                                Margin="0,20,0,0"
+                                                Content="{Binding AnswerItems[0]}"
+                                                ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}"
+                                                DockPanel.Dock="Bottom" />
+                                            <TextBlock
+                                                VerticalAlignment="Center"
+                                                DockPanel.Dock="Top"
+                                                FontSize="24" />
+                                            <Image
+                                                Height="260"
+                                                Margin="0,20,0,0"
+                                                Source="{Binding BitmapData, IsAsync=True, Converter={StaticResource crs_BitmapStream2ImageSource_380_Converter}}" />
+                                        </DockPanel>
+                                        <DockPanel
+                                            Margin="20,0"
+                                            HorizontalAlignment="Stretch"
+                                            DataContext="{Binding ChildrenItems[1]}">
+                                            <ContentControl
+                                                Margin="0,20,0,0"
+                                                Content="{Binding AnswerItems[0]}"
+                                                ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}"
+                                                DockPanel.Dock="Bottom" />
+                                            <TextBlock
+                                                VerticalAlignment="Center"
+                                                DockPanel.Dock="Top"
+                                                FontSize="24" />
+                                            <Image
+                                                Height="260"
+                                                Margin="0,20,0,0"
+                                                Source="{Binding BitmapData, IsAsync=True, Converter={StaticResource crs_BitmapStream2ImageSource_380_Converter}}" />
+                                        </DockPanel>
+                                        <DockPanel
+                                            Margin="20,0"
+                                            HorizontalAlignment="Stretch"
+                                            DataContext="{Binding ChildrenItems[2]}">
+                                            <UniformGrid
+                                                Margin="0,20,0,0"
+                                                HorizontalAlignment="Stretch"
+                                                VerticalAlignment="Center"
+                                                Columns="3"
+                                                DockPanel.Dock="Bottom"
+                                                Rows="1"
+                                                TextBlock.FontSize="28">
+                                                <StackPanel Orientation="Horizontal">
+                                                    <TextBlock VerticalAlignment="Center" FontSize="24">轮廓</TextBlock>
+                                                    <ContentControl
+                                                        Margin="10,0,0,0"
+                                                        Content="{Binding AnswerItems[0]}"
+                                                        ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}" />
+                                                </StackPanel>
+                                                <StackPanel Orientation="Horizontal">
+                                                    <TextBlock VerticalAlignment="Center" FontSize="24">数字</TextBlock>
+                                                    <ContentControl
+                                                        Margin="10,0,0,0"
+                                                        Content="{Binding AnswerItems[1]}"
+                                                        ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}" />
+                                                </StackPanel>
+                                                <StackPanel Orientation="Horizontal">
+                                                    <TextBlock VerticalAlignment="Center" FontSize="24">指针</TextBlock>
+                                                    <ContentControl
+                                                        Margin="10,0,0,0"
+                                                        Content="{Binding AnswerItems[2]}"
+                                                        ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}" />
+                                                </StackPanel>
+                                            </UniformGrid>
+                                            <TextBlock
+                                                VerticalAlignment="Center"
+                                                DockPanel.Dock="Top"
+                                                FontSize="24">
+                                                画钟（11点10分）
+                                            </TextBlock>
+                                            <Image
+                                                Height="260"
+                                                Margin="0,20,0,0"
+                                                Source="{Binding BitmapData, IsAsync=True, Converter={StaticResource crs_BitmapStream2ImageSource_380_Converter}}" />
+                                        </DockPanel>
+                                    </UniformGrid>
+                                </controls:Crs_SubjectReport>
+                                <controls:Crs_SubjectReport
+                                    Height="55"
+                                    TextBlock.FontSize="26"
+                                    TextBlock.FontWeight="Bold">
+                                    <TextBlock
+                                        Margin="20,0,0,0"
+                                        HorizontalAlignment="Left"
+                                        VerticalAlignment="Center">
+                                        命名
+                                    </TextBlock>
+                                </controls:Crs_SubjectReport>
+                                <controls:Crs_SubjectReport DataContext="{Binding SubjectItems[1]}">
+                                    <behaviors:Interaction.Triggers>
+                                        <behaviors:EventTrigger EventName="Loaded">
+                                            <behaviors:ChangePropertyAction
+                                                PropertyName="OriginName"
+                                                TargetObject="{Binding}"
+                                                Value="命名" />
+                                        </behaviors:EventTrigger>
+                                    </behaviors:Interaction.Triggers>
+                                    <controls:Crs_SubjectReport.RightContent>
+                                        <TextBlock
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            Foreground="{StaticResource crs_SolidColorBrush.F89F00}"
+                                            Text="{Binding Fraction, TargetNullValue=--, FallbackValue=--}" />
+                                    </controls:Crs_SubjectReport.RightContent>
+                                    <UniformGrid
+                                        Margin="20"
+                                        Columns="3"
+                                        Rows="1">
+                                        <DockPanel
+                                            Margin="20,0"
+                                            HorizontalAlignment="Stretch"
+                                            DataContext="{Binding ChildrenItems[0]}">
+                                            <Border
+                                                Margin="0,20,0,0"
+                                                Background="{StaticResource crs_SolidColorBrush.EFEFEF}"
+                                                DockPanel.Dock="Bottom">
+                                                <TextBlock
+                                                    Margin="10"
+                                                    VerticalAlignment="Center"
+                                                    DataContext="{Binding AnswerItems[0]}"
+                                                    Text="{Binding Remark, StringFormat={}记录：{0}, TargetNullValue=记录：, FallbackValue=记录：}"
+                                                    TextTrimming="CharacterEllipsis" />
+                                            </Border>
+                                            <ContentControl
+                                                Margin="0,20,0,0"
+                                                Content="{Binding AnswerItems[0]}"
+                                                ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}"
+                                                DockPanel.Dock="Bottom" />
+                                            <Image
+                                                Width="322"
+                                                Margin="0,20,0,0"
+                                                HorizontalAlignment="Center"
+                                                VerticalAlignment="Center"
+                                                Source="{StaticResource crs_题目插图3}" />
+                                        </DockPanel>
+                                        <DockPanel
+                                            Margin="20,0"
+                                            HorizontalAlignment="Stretch"
+                                            DataContext="{Binding ChildrenItems[1]}">
+                                            <Border
+                                                Margin="0,20,0,0"
+                                                Background="{StaticResource crs_SolidColorBrush.EFEFEF}"
+                                                DockPanel.Dock="Bottom">
+                                                <TextBlock
+                                                    Margin="10"
+                                                    VerticalAlignment="Center"
+                                                    DataContext="{Binding AnswerItems[0]}"
+                                                    Text="{Binding Remark, StringFormat={}记录：{0}, TargetNullValue=记录：, FallbackValue=记录：}"
+                                                    TextTrimming="CharacterEllipsis" />
+                                            </Border>
+                                            <ContentControl
+                                                Margin="0,20,0,0"
+                                                Content="{Binding AnswerItems[0]}"
+                                                ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}"
+                                                DockPanel.Dock="Bottom" />
+                                            <Image
+                                                Width="322"
+                                                Margin="0,20,0,0"
+                                                HorizontalAlignment="Center"
+                                                VerticalAlignment="Center"
+                                                Source="{StaticResource crs_题目插图1}" />
+                                        </DockPanel>
+                                        <DockPanel
+                                            Margin="20,0"
+                                            HorizontalAlignment="Stretch"
+                                            DataContext="{Binding ChildrenItems[2]}">
+                                            <Border
+                                                Margin="0,20,0,0"
+                                                Background="{StaticResource crs_SolidColorBrush.EFEFEF}"
+                                                DockPanel.Dock="Bottom">
+                                                <TextBlock
+                                                    Margin="10"
+                                                    VerticalAlignment="Center"
+                                                    DataContext="{Binding AnswerItems[0]}"
+                                                    Text="{Binding Remark, StringFormat={}记录：{0}, TargetNullValue=记录：, FallbackValue=记录：}"
+                                                    TextTrimming="CharacterEllipsis" />
+                                            </Border>
+                                            <ContentControl
+                                                Margin="0,20,0,0"
+                                                Content="{Binding AnswerItems[0]}"
+                                                ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}"
+                                                DockPanel.Dock="Bottom" />
+                                            <Image
+                                                Width="322"
+                                                Margin="0,20,0,0"
+                                                HorizontalAlignment="Center"
+                                                VerticalAlignment="Center"
+                                                Source="{StaticResource crs_题目插图2}" />
+                                        </DockPanel>
+                                    </UniformGrid>
+                                </controls:Crs_SubjectReport>
+                                <controls:Crs_SubjectReport
+                                    Height="55"
+                                    TextBlock.FontSize="26"
+                                    TextBlock.FontWeight="Bold">
+                                    <TextBlock
+                                        Margin="20,0,0,0"
+                                        HorizontalAlignment="Left"
+                                        VerticalAlignment="Center">
+                                        记忆
+                                    </TextBlock>
+                                </controls:Crs_SubjectReport>
+                                <controls:Crs_SubjectReport DataContext="{Binding SubjectItems[2]}">
+                                    <!--<behaviors:Interaction.Triggers>
+                                            <behaviors:EventTrigger EventName="Loaded">
+                                                <behaviors:ChangePropertyAction PropertyName="OriginName"
+                                                                                TargetObject="{Binding}"
+                                                                                Value="记忆" />
+                                            </behaviors:EventTrigger>
+                                        </behaviors:Interaction.Triggers>-->
+                                    <controls:Crs_SubjectReport.RightContent>
+                                        <TextBlock
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            Foreground="{StaticResource crs_SolidColorBrush.F89F00}">
+                                            不计分
+                                        </TextBlock>
+                                    </controls:Crs_SubjectReport.RightContent>
+                                    <theme:LineGrid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="335" />
+                                            <ColumnDefinition />
+                                        </Grid.ColumnDefinitions>
+                                        <TextBlock
+                                            Margin="20"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Center"
+                                            LineHeight="36"
+                                            TextWrapping="Wrap">
+                                            读出下列词语，然后由患者重复上述过程重复2次，5分钟后回忆
+                                        </TextBlock>
+                                        <theme:LineGrid Grid.Column="1">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="60" />
+                                                <RowDefinition Height="60" />
+                                                <RowDefinition Height="60" />
+                                            </Grid.RowDefinitions>
+
+                                            <theme:LineGrid>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="1.5*" />
+                                                    <ColumnDefinition />
+                                                    <ColumnDefinition />
+                                                    <ColumnDefinition />
+                                                    <ColumnDefinition />
+                                                    <ColumnDefinition />
+                                                </Grid.ColumnDefinitions>
+                                                <TextBlock
+                                                    Grid.Column="1"
+                                                    HorizontalAlignment="Center"
+                                                    VerticalAlignment="Center"
+                                                    TextTrimming="CharacterEllipsis">
+                                                    面孔
+                                                </TextBlock>
+                                                <TextBlock
+                                                    Grid.Column="2"
+                                                    HorizontalAlignment="Center"
+                                                    VerticalAlignment="Center"
+                                                    TextTrimming="CharacterEllipsis">
+                                                    天鹅绒
+                                                </TextBlock>
+                                                <TextBlock
+                                                    Grid.Column="3"
+                                                    HorizontalAlignment="Center"
+                                                    VerticalAlignment="Center"
+                                                    TextTrimming="CharacterEllipsis">
+                                                    教堂
+                                                </TextBlock>
+                                                <TextBlock
+                                                    Grid.Column="4"
+                                                    HorizontalAlignment="Center"
+                                                    VerticalAlignment="Center"
+                                                    TextTrimming="CharacterEllipsis">
+                                                    菊花
+                                                </TextBlock>
+                                                <TextBlock
+                                                    Grid.Column="5"
+                                                    HorizontalAlignment="Center"
+                                                    VerticalAlignment="Center"
+                                                    TextTrimming="CharacterEllipsis">
+                                                    红色
+                                                </TextBlock>
+                                            </theme:LineGrid>
+
+                                            <theme:LineGrid Grid.Row="1" DataContext="{Binding ChildrenItems[0]}">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="1.5*" />
+                                                    <ColumnDefinition />
+                                                    <ColumnDefinition />
+                                                    <ColumnDefinition />
+                                                    <ColumnDefinition />
+                                                    <ColumnDefinition />
+                                                </Grid.ColumnDefinitions>
+                                                <TextBlock
+                                                    HorizontalAlignment="Center"
+                                                    VerticalAlignment="Center"
+                                                    TextTrimming="CharacterEllipsis">
+                                                    第1次
+                                                </TextBlock>
+                                                <ContentControl
+                                                    Grid.Column="1"
+                                                    Content="{Binding AnswerItems[0]}"
+                                                    ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}">
+                                                    <behaviors:Interaction.Triggers>
+                                                        <behaviors:EventTrigger EventName="Loaded">
+                                                            <behaviors:ChangePropertyAction
+                                                                PropertyName="Ignore"
+                                                                TargetObject="{Binding Content, RelativeSource={RelativeSource AncestorType=ContentControl}}"
+                                                                Value="True" />
+                                                        </behaviors:EventTrigger>
+                                                    </behaviors:Interaction.Triggers>
+                                                </ContentControl>
+                                                <ContentControl
+                                                    Grid.Column="2"
+                                                    Content="{Binding AnswerItems[1]}"
+                                                    ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}">
+                                                    <behaviors:Interaction.Triggers>
+                                                        <behaviors:EventTrigger EventName="Loaded">
+                                                            <behaviors:ChangePropertyAction
+                                                                PropertyName="Ignore"
+                                                                TargetObject="{Binding Content, RelativeSource={RelativeSource AncestorType=ContentControl}}"
+                                                                Value="True" />
+                                                        </behaviors:EventTrigger>
+                                                    </behaviors:Interaction.Triggers>
+                                                </ContentControl>
+                                                <ContentControl
+                                                    Grid.Column="3"
+                                                    Content="{Binding AnswerItems[2]}"
+                                                    ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}">
+                                                    <behaviors:Interaction.Triggers>
+                                                        <behaviors:EventTrigger EventName="Loaded">
+                                                            <behaviors:ChangePropertyAction
+                                                                PropertyName="Ignore"
+                                                                TargetObject="{Binding Content, RelativeSource={RelativeSource AncestorType=ContentControl}}"
+                                                                Value="True" />
+                                                        </behaviors:EventTrigger>
+                                                    </behaviors:Interaction.Triggers>
+                                                </ContentControl>
+                                                <ContentControl
+                                                    Grid.Column="4"
+                                                    Content="{Binding AnswerItems[3]}"
+                                                    ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}">
+                                                    <behaviors:Interaction.Triggers>
+                                                        <behaviors:EventTrigger EventName="Loaded">
+                                                            <behaviors:ChangePropertyAction
+                                                                PropertyName="Ignore"
+                                                                TargetObject="{Binding Content, RelativeSource={RelativeSource AncestorType=ContentControl}}"
+                                                                Value="True" />
+                                                        </behaviors:EventTrigger>
+                                                    </behaviors:Interaction.Triggers>
+                                                </ContentControl>
+                                                <ContentControl
+                                                    Grid.Column="5"
+                                                    Content="{Binding AnswerItems[4]}"
+                                                    ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}">
+                                                    <behaviors:Interaction.Triggers>
+                                                        <behaviors:EventTrigger EventName="Loaded">
+                                                            <behaviors:ChangePropertyAction
+                                                                PropertyName="Ignore"
+                                                                TargetObject="{Binding Content, RelativeSource={RelativeSource AncestorType=ContentControl}}"
+                                                                Value="True" />
+                                                        </behaviors:EventTrigger>
+                                                    </behaviors:Interaction.Triggers>
+                                                </ContentControl>
+                                            </theme:LineGrid>
+
+                                            <theme:LineGrid Grid.Row="2" DataContext="{Binding ChildrenItems[1]}">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="1.5*" />
+                                                    <ColumnDefinition />
+                                                    <ColumnDefinition />
+                                                    <ColumnDefinition />
+                                                    <ColumnDefinition />
+                                                    <ColumnDefinition />
+                                                </Grid.ColumnDefinitions>
+                                                <TextBlock
+                                                    HorizontalAlignment="Center"
+                                                    VerticalAlignment="Center"
+                                                    TextTrimming="CharacterEllipsis">
+                                                    第2次
+                                                </TextBlock>
+                                                <ContentControl
+                                                    Grid.Column="1"
+                                                    Content="{Binding AnswerItems[0]}"
+                                                    ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}">
+                                                    <behaviors:Interaction.Triggers>
+                                                        <behaviors:EventTrigger EventName="Loaded">
+                                                            <behaviors:ChangePropertyAction
+                                                                PropertyName="Ignore"
+                                                                TargetObject="{Binding Content, RelativeSource={RelativeSource AncestorType=ContentControl}}"
+                                                                Value="True" />
+                                                        </behaviors:EventTrigger>
+                                                    </behaviors:Interaction.Triggers>
+                                                </ContentControl>
+                                                <ContentControl
+                                                    Grid.Column="2"
+                                                    Content="{Binding AnswerItems[1]}"
+                                                    ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}">
+                                                    <behaviors:Interaction.Triggers>
+                                                        <behaviors:EventTrigger EventName="Loaded">
+                                                            <behaviors:ChangePropertyAction
+                                                                PropertyName="Ignore"
+                                                                TargetObject="{Binding Content, RelativeSource={RelativeSource AncestorType=ContentControl}}"
+                                                                Value="True" />
+                                                        </behaviors:EventTrigger>
+                                                    </behaviors:Interaction.Triggers>
+                                                </ContentControl>
+                                                <ContentControl
+                                                    Grid.Column="3"
+                                                    Content="{Binding AnswerItems[2]}"
+                                                    ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}">
+                                                    <behaviors:Interaction.Triggers>
+                                                        <behaviors:EventTrigger EventName="Loaded">
+                                                            <behaviors:ChangePropertyAction
+                                                                PropertyName="Ignore"
+                                                                TargetObject="{Binding Content, RelativeSource={RelativeSource AncestorType=ContentControl}}"
+                                                                Value="True" />
+                                                        </behaviors:EventTrigger>
+                                                    </behaviors:Interaction.Triggers>
+                                                </ContentControl>
+                                                <ContentControl
+                                                    Grid.Column="4"
+                                                    Content="{Binding AnswerItems[3]}"
+                                                    ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}">
+                                                    <behaviors:Interaction.Triggers>
+                                                        <behaviors:EventTrigger EventName="Loaded">
+                                                            <behaviors:ChangePropertyAction
+                                                                PropertyName="Ignore"
+                                                                TargetObject="{Binding Content, RelativeSource={RelativeSource AncestorType=ContentControl}}"
+                                                                Value="True" />
+                                                        </behaviors:EventTrigger>
+                                                    </behaviors:Interaction.Triggers>
+                                                </ContentControl>
+                                                <ContentControl
+                                                    Grid.Column="5"
+                                                    Content="{Binding AnswerItems[4]}"
+                                                    ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}">
+                                                    <behaviors:Interaction.Triggers>
+                                                        <behaviors:EventTrigger EventName="Loaded">
+                                                            <behaviors:ChangePropertyAction
+                                                                PropertyName="Ignore"
+                                                                TargetObject="{Binding Content, RelativeSource={RelativeSource AncestorType=ContentControl}}"
+                                                                Value="True" />
+                                                        </behaviors:EventTrigger>
+                                                    </behaviors:Interaction.Triggers>
+                                                </ContentControl>
+                                            </theme:LineGrid>
+                                        </theme:LineGrid>
+                                    </theme:LineGrid>
+                                </controls:Crs_SubjectReport>
+                                <controls:Crs_SubjectReport
+                                    Height="55"
+                                    TextBlock.FontSize="26"
+                                    TextBlock.FontWeight="Bold">
+                                    <TextBlock
+                                        Margin="20,0,0,0"
+                                        HorizontalAlignment="Left"
+                                        VerticalAlignment="Center">
+                                        注意
+                                    </TextBlock>
+                                </controls:Crs_SubjectReport>
+                                <controls:Crs_SubjectReport DataContext="{Binding SubjectItems[3]}">
+                                    <behaviors:Interaction.Triggers>
+                                        <behaviors:EventTrigger EventName="Loaded">
+                                            <behaviors:ChangePropertyAction
+                                                PropertyName="OriginName"
+                                                TargetObject="{Binding}"
+                                                Value="注意" />
+                                        </behaviors:EventTrigger>
+                                    </behaviors:Interaction.Triggers>
+                                    <controls:Crs_SubjectReport.RightContent>
+                                        <TextBlock
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            Foreground="{StaticResource crs_SolidColorBrush.F89F00}"
+                                            Text="{Binding Fraction, TargetNullValue=--, FallbackValue=--}" />
+                                    </controls:Crs_SubjectReport.RightContent>
+                                    <theme:LineGrid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="0.8*" />
+                                            <ColumnDefinition />
+                                        </Grid.ColumnDefinitions>
+                                        <TextBlock
+                                            Margin="20"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Center"
+                                            TextWrapping="Wrap">
+                                            读出下列数字，请患者重复（每秒1个）
+                                        </TextBlock>
+                                        <theme:LineGrid Grid.Column="1">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="60" />
+                                                <RowDefinition Height="60" />
+                                            </Grid.RowDefinitions>
+                                            <theme:LineGrid DataContext="{Binding ChildrenItems[0]}">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition />
+                                                    <ColumnDefinition />
+                                                </Grid.ColumnDefinitions>
+                                                <DockPanel>
+                                                    <ContentControl
+                                                        Margin="20,0"
+                                                        Content="{Binding AnswerItems[0]}"
+                                                        ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}"
+                                                        DockPanel.Dock="Right" />
+                                                    <TextBlock
+                                                        Margin="20,0,0,0"
+                                                        VerticalAlignment="Center"
+                                                        TextTrimming="CharacterEllipsis">
+                                                        顺背：21854
+                                                    </TextBlock>
+                                                </DockPanel>
+                                                <Border
+                                                    Grid.Column="1"
+                                                    Margin="1"
+                                                    Background="{StaticResource crs_SolidColorBrush.EFEFEF}"
+                                                    DockPanel.Dock="Bottom">
+                                                    <TextBlock
+                                                        Margin="20,0"
+                                                        VerticalAlignment="Center"
+                                                        DataContext="{Binding AnswerItems[0]}"
+                                                        Text="{Binding Remark, StringFormat={}记录：{0}, TargetNullValue=记录：, FallbackValue=记录：}"
+                                                        TextTrimming="CharacterEllipsis" />
+                                                </Border>
+                                            </theme:LineGrid>
+
+                                            <theme:LineGrid Grid.Row="1" DataContext="{Binding ChildrenItems[1]}">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition />
+                                                    <ColumnDefinition />
+                                                </Grid.ColumnDefinitions>
+                                                <DockPanel>
+                                                    <ContentControl
+                                                        Margin="20,0"
+                                                        Content="{Binding AnswerItems[0]}"
+                                                        ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}"
+                                                        DockPanel.Dock="Right" />
+                                                    <TextBlock
+                                                        Margin="20,0,0,0"
+                                                        VerticalAlignment="Center"
+                                                        TextTrimming="CharacterEllipsis">
+                                                        倒背：742
+                                                    </TextBlock>
+                                                </DockPanel>
+                                                <Border
+                                                    Grid.Column="1"
+                                                    Margin="1"
+                                                    Background="{StaticResource crs_SolidColorBrush.EFEFEF}"
+                                                    DockPanel.Dock="Bottom">
+                                                    <TextBlock
+                                                        Margin="20,0"
+                                                        VerticalAlignment="Center"
+                                                        DataContext="{Binding AnswerItems[0]}"
+                                                        Text="{Binding Remark, StringFormat={}记录：{0}, TargetNullValue=记录：, FallbackValue=记录：}"
+                                                        TextTrimming="CharacterEllipsis" />
+                                                </Border>
+                                            </theme:LineGrid>
+                                        </theme:LineGrid>
+                                    </theme:LineGrid>
+                                </controls:Crs_SubjectReport>
+                                <controls:Crs_SubjectReport DataContext="{Binding SubjectItems[4]}">
+                                    <behaviors:Interaction.Triggers>
+                                        <behaviors:EventTrigger EventName="Loaded">
+                                            <behaviors:ChangePropertyAction
+                                                PropertyName="OriginName"
+                                                TargetObject="{Binding}"
+                                                Value="注意" />
+                                        </behaviors:EventTrigger>
+                                    </behaviors:Interaction.Triggers>
+                                    <controls:Crs_SubjectReport.RightContent>
+                                        <TextBlock
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            Foreground="{StaticResource crs_SolidColorBrush.F89F00}"
+                                            Text="{Binding Fraction, TargetNullValue=--, FallbackValue=--}" />
+                                    </controls:Crs_SubjectReport.RightContent>
+                                    <theme:LineGrid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition />
+                                            <ColumnDefinition />
+                                        </Grid.ColumnDefinitions>
+                                        <TextBlock
+                                            Margin="20"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Center"
+                                            LineHeight="36"
+                                            TextWrapping="Wrap">
+                                            读出下列数字，每当数字出现1时，患者敲1下桌面，错误数大于或等于2不给分
+                                        </TextBlock>
+                                        <DockPanel Grid.Column="1" DataContext="{Binding ChildrenItems[0]}">
+                                            <ContentControl
+                                                Margin="40,0"
+                                                HorizontalAlignment="Center"
+                                                VerticalAlignment="Center"
+                                                Content="{Binding AnswerItems[0]}"
+                                                ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}"
+                                                DockPanel.Dock="Left" />
+                                            <TextBlock
+                                                HorizontalAlignment="Center"
+                                                VerticalAlignment="Center"
+                                                TextTrimming="CharacterEllipsis">
+                                                52139411806215194511141905112
+                                            </TextBlock>
+                                        </DockPanel>
+                                    </theme:LineGrid>
+                                </controls:Crs_SubjectReport>
+                                <controls:Crs_SubjectReport DataContext="{Binding SubjectItems[5]}">
+                                    <behaviors:Interaction.Triggers>
+                                        <behaviors:EventTrigger EventName="Loaded">
+                                            <behaviors:ChangePropertyAction
+                                                PropertyName="OriginName"
+                                                TargetObject="{Binding}"
+                                                Value="注意" />
+                                        </behaviors:EventTrigger>
+                                    </behaviors:Interaction.Triggers>
+                                    <controls:Crs_SubjectReport.RightContent>
+                                        <TextBlock
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            Foreground="{StaticResource crs_SolidColorBrush.F89F00}"
+                                            Text="{Binding Fraction, TargetNullValue=--, FallbackValue=--}" />
+                                    </controls:Crs_SubjectReport.RightContent>
+                                    <DockPanel DataContext="{Binding ChildrenItems[0]}">
+                                        <TextBlock Margin="20,10" DockPanel.Dock="Bottom">4~5个正确给3分，2~3个正确给1分，全部错误给0分</TextBlock>
+                                        <theme:LineGrid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="335" />
+                                                <ColumnDefinition />
+                                            </Grid.ColumnDefinitions>
+                                            <TextBlock
+                                                Margin="20,0,0,0"
+                                                HorizontalAlignment="Left"
+                                                VerticalAlignment="Center"
+                                                TextWrapping="Wrap">
+                                                100连续减7
+                                            </TextBlock>
+                                            <theme:LineGrid Grid.Column="1">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition />
+                                                    <ColumnDefinition />
+                                                    <ColumnDefinition />
+                                                    <ColumnDefinition />
+                                                    <ColumnDefinition />
+                                                </Grid.ColumnDefinitions>
+                                                <theme:LineGrid DataContext="{Binding AnswerItems[0]}">
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="60" />
+                                                        <RowDefinition Height="60" />
+                                                    </Grid.RowDefinitions>
+                                                    <DockPanel>
+                                                        <ContentControl
+                                                            Margin="20,0"
+                                                            Content="{Binding}"
+                                                            ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}"
+                                                            DockPanel.Dock="Left" />
+                                                        <TextBlock
+                                                            HorizontalAlignment="Center"
+                                                            VerticalAlignment="Center"
+                                                            DockPanel.Dock="Right"
+                                                            TextTrimming="CharacterEllipsis">
+                                                            93
+                                                        </TextBlock>
+                                                    </DockPanel>
+                                                    <Border
+                                                        Grid.Row="1"
+                                                        Margin="1"
+                                                        Background="{StaticResource crs_SolidColorBrush.EFEFEF}"
+                                                        DockPanel.Dock="Bottom">
+                                                        <TextBlock
+                                                            Margin="20,0"
+                                                            VerticalAlignment="Center"
+                                                            Text="{Binding Remark, StringFormat={}记录：{0}, TargetNullValue=记录：, FallbackValue=记录：}"
+                                                            TextTrimming="CharacterEllipsis" />
+                                                    </Border>
+                                                </theme:LineGrid>
+                                                <theme:LineGrid Grid.Column="1" DataContext="{Binding AnswerItems[1]}">
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="60" />
+                                                        <RowDefinition Height="60" />
+                                                    </Grid.RowDefinitions>
+                                                    <DockPanel>
+                                                        <ContentControl
+                                                            Margin="20,0"
+                                                            Content="{Binding}"
+                                                            ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}"
+                                                            DockPanel.Dock="Left" />
+                                                        <TextBlock
+                                                            HorizontalAlignment="Center"
+                                                            VerticalAlignment="Center"
+                                                            DockPanel.Dock="Right"
+                                                            TextTrimming="CharacterEllipsis">
+                                                            86
+                                                        </TextBlock>
+                                                    </DockPanel>
+                                                    <Border
+                                                        Grid.Row="1"
+                                                        Margin="1"
+                                                        Background="{StaticResource crs_SolidColorBrush.EFEFEF}"
+                                                        DockPanel.Dock="Bottom">
+                                                        <TextBlock
+                                                            Margin="20,0"
+                                                            VerticalAlignment="Center"
+                                                            Text="{Binding Remark, StringFormat={}记录：{0}, TargetNullValue=记录：, FallbackValue=记录：}"
+                                                            TextTrimming="CharacterEllipsis" />
+                                                    </Border>
+                                                </theme:LineGrid>
+                                                <theme:LineGrid Grid.Column="2" DataContext="{Binding AnswerItems[2]}">
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="60" />
+                                                        <RowDefinition Height="60" />
+                                                    </Grid.RowDefinitions>
+                                                    <DockPanel>
+                                                        <ContentControl
+                                                            Margin="20,0"
+                                                            Content="{Binding}"
+                                                            ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}"
+                                                            DockPanel.Dock="Left" />
+                                                        <TextBlock
+                                                            HorizontalAlignment="Center"
+                                                            VerticalAlignment="Center"
+                                                            DockPanel.Dock="Right"
+                                                            TextTrimming="CharacterEllipsis">
+                                                            79
+                                                        </TextBlock>
+                                                    </DockPanel>
+                                                    <Border
+                                                        Grid.Row="1"
+                                                        Margin="1"
+                                                        Background="{StaticResource crs_SolidColorBrush.EFEFEF}"
+                                                        DockPanel.Dock="Bottom">
+                                                        <TextBlock
+                                                            Margin="20,0"
+                                                            VerticalAlignment="Center"
+                                                            Text="{Binding Remark, StringFormat={}记录：{0}, TargetNullValue=记录：, FallbackValue=记录：}"
+                                                            TextTrimming="CharacterEllipsis" />
+                                                    </Border>
+                                                </theme:LineGrid>
+                                                <theme:LineGrid Grid.Column="3" DataContext="{Binding AnswerItems[3]}">
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="60" />
+                                                        <RowDefinition Height="60" />
+                                                    </Grid.RowDefinitions>
+                                                    <DockPanel>
+                                                        <ContentControl
+                                                            Margin="20,0"
+                                                            Content="{Binding}"
+                                                            ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}"
+                                                            DockPanel.Dock="Left" />
+                                                        <TextBlock
+                                                            HorizontalAlignment="Center"
+                                                            VerticalAlignment="Center"
+                                                            DockPanel.Dock="Right"
+                                                            TextTrimming="CharacterEllipsis">
+                                                            72
+                                                        </TextBlock>
+                                                    </DockPanel>
+                                                    <Border
+                                                        Grid.Row="1"
+                                                        Margin="1"
+                                                        Background="{StaticResource crs_SolidColorBrush.EFEFEF}"
+                                                        DockPanel.Dock="Bottom">
+                                                        <TextBlock
+                                                            Margin="20,0"
+                                                            VerticalAlignment="Center"
+                                                            Text="{Binding Remark, StringFormat={}记录：{0}, TargetNullValue=记录：, FallbackValue=记录：}"
+                                                            TextTrimming="CharacterEllipsis" />
+                                                    </Border>
+                                                </theme:LineGrid>
+                                                <theme:LineGrid Grid.Column="4" DataContext="{Binding AnswerItems[4]}">
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="60" />
+                                                        <RowDefinition Height="60" />
+                                                    </Grid.RowDefinitions>
+                                                    <DockPanel>
+                                                        <ContentControl
+                                                            Margin="20,0"
+                                                            Content="{Binding}"
+                                                            ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}"
+                                                            DockPanel.Dock="Left" />
+                                                        <TextBlock
+                                                            HorizontalAlignment="Center"
+                                                            VerticalAlignment="Center"
+                                                            DockPanel.Dock="Right"
+                                                            TextTrimming="CharacterEllipsis">
+                                                            65
+                                                        </TextBlock>
+                                                    </DockPanel>
+                                                    <Border
+                                                        Grid.Row="1"
+                                                        Margin="1"
+                                                        Background="{StaticResource crs_SolidColorBrush.EFEFEF}"
+                                                        DockPanel.Dock="Bottom">
+                                                        <TextBlock
+                                                            Margin="20,0"
+                                                            VerticalAlignment="Center"
+                                                            Text="{Binding Remark, StringFormat={}记录：{0}, TargetNullValue=记录：, FallbackValue=记录：}"
+                                                            TextTrimming="CharacterEllipsis" />
+                                                    </Border>
+                                                </theme:LineGrid>
+                                            </theme:LineGrid>
+                                        </theme:LineGrid>
+                                    </DockPanel>
+                                </controls:Crs_SubjectReport>
+                                <controls:Crs_SubjectReport
+                                    Height="55"
+                                    TextBlock.FontSize="26"
+                                    TextBlock.FontWeight="Bold">
+                                    <TextBlock
+                                        Margin="20,0,0,0"
+                                        HorizontalAlignment="Left"
+                                        VerticalAlignment="Center">
+                                        语言
+                                    </TextBlock>
+                                </controls:Crs_SubjectReport>
+                                <controls:Crs_SubjectReport DataContext="{Binding SubjectItems[6]}">
+                                    <behaviors:Interaction.Triggers>
+                                        <behaviors:EventTrigger EventName="Loaded">
+                                            <behaviors:ChangePropertyAction
+                                                PropertyName="OriginName"
+                                                TargetObject="{Binding}"
+                                                Value="语言" />
+                                        </behaviors:EventTrigger>
+                                    </behaviors:Interaction.Triggers>
+                                    <controls:Crs_SubjectReport.RightContent>
+                                        <TextBlock
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            Foreground="{StaticResource crs_SolidColorBrush.F89F00}"
+                                            Text="{Binding Fraction, TargetNullValue=--, FallbackValue=--}" />
+                                    </controls:Crs_SubjectReport.RightContent>
+                                    <theme:LineGrid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="60" />
+                                            <RowDefinition Height="60" />
+                                        </Grid.RowDefinitions>
+                                        <theme:LineGrid DataContext="{Binding ChildrenItems[0]}">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition />
+                                                <ColumnDefinition />
+                                            </Grid.ColumnDefinitions>
+                                            <DockPanel>
+                                                <ContentControl
+                                                    Margin="20,0"
+                                                    HorizontalAlignment="Center"
+                                                    VerticalAlignment="Center"
+                                                    Content="{Binding AnswerItems[0]}"
+                                                    ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}"
+                                                    DockPanel.Dock="Right" />
+                                                <TextBlock
+                                                    Margin="20,0,0,0"
+                                                    HorizontalAlignment="Left"
+                                                    VerticalAlignment="Center"
+                                                    LineHeight="36"
+                                                    TextWrapping="Wrap">
+                                                    重复：我只知道今天张亮是来帮过忙的人。
+                                                </TextBlock>
+                                            </DockPanel>
+                                            <Border
+                                                Grid.Column="1"
+                                                Margin="1"
+                                                Background="{StaticResource crs_SolidColorBrush.EFEFEF}"
+                                                DockPanel.Dock="Bottom">
+                                                <TextBlock
+                                                    Margin="20,0"
+                                                    VerticalAlignment="Center"
+                                                    DataContext="{Binding AnswerItems[0]}"
+                                                    Text="{Binding Remark, StringFormat={}记录：{0}, TargetNullValue=记录：, FallbackValue=记录：}"
+                                                    TextTrimming="CharacterEllipsis" />
+                                            </Border>
+                                        </theme:LineGrid>
+                                        <theme:LineGrid Grid.Row="1" DataContext="{Binding ChildrenItems[1]}">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition />
+                                                <ColumnDefinition />
+                                            </Grid.ColumnDefinitions>
+                                            <DockPanel>
+                                                <ContentControl
+                                                    Margin="20,0"
+                                                    HorizontalAlignment="Center"
+                                                    VerticalAlignment="Center"
+                                                    Content="{Binding AnswerItems[0]}"
+                                                    ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}"
+                                                    DockPanel.Dock="Right" />
+                                                <TextBlock
+                                                    Margin="20,0,0,0"
+                                                    HorizontalAlignment="Left"
+                                                    VerticalAlignment="Center"
+                                                    LineHeight="36"
+                                                    TextWrapping="Wrap">
+                                                    重复：狗在房间的时候，猫总是躲在沙发下面。
+                                                </TextBlock>
+                                            </DockPanel>
+                                            <Border
+                                                Grid.Column="1"
+                                                Margin="1"
+                                                Background="{StaticResource crs_SolidColorBrush.EFEFEF}"
+                                                DockPanel.Dock="Bottom">
+                                                <TextBlock
+                                                    Margin="20,0"
+                                                    VerticalAlignment="Center"
+                                                    DataContext="{Binding AnswerItems[0]}"
+                                                    Text="{Binding Remark, StringFormat={}记录：{0}, TargetNullValue=记录：, FallbackValue=记录：}"
+                                                    TextTrimming="CharacterEllipsis" />
+                                            </Border>
+                                        </theme:LineGrid>
+                                    </theme:LineGrid>
+                                </controls:Crs_SubjectReport>
+                                <controls:Crs_SubjectReport DataContext="{Binding SubjectItems[7]}">
+                                    <behaviors:Interaction.Triggers>
+                                        <behaviors:EventTrigger EventName="Loaded">
+                                            <behaviors:ChangePropertyAction
+                                                PropertyName="OriginName"
+                                                TargetObject="{Binding}"
+                                                Value="语言" />
+                                        </behaviors:EventTrigger>
+                                    </behaviors:Interaction.Triggers>
+                                    <controls:Crs_SubjectReport.RightContent>
+                                        <TextBlock
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            Foreground="{StaticResource crs_SolidColorBrush.F89F00}"
+                                            Text="{Binding Fraction, TargetNullValue=--, FallbackValue=--}" />
+                                    </controls:Crs_SubjectReport.RightContent>
+                                    <theme:LineGrid DataContext="{Binding ChildrenItems[0]}">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="60" />
+                                            <RowDefinition Height="60" />
+                                        </Grid.RowDefinitions>
+                                        <DockPanel>
+                                            <ContentControl
+                                                Margin="20,0"
+                                                HorizontalAlignment="Center"
+                                                VerticalAlignment="Center"
+                                                Content="{Binding AnswerItems[0]}"
+                                                ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}"
+                                                DockPanel.Dock="Right" />
+                                            <TextBlock
+                                                Margin="20,0,0,0"
+                                                HorizontalAlignment="Left"
+                                                VerticalAlignment="Center"
+                                                LineHeight="36"
+                                                TextWrapping="Wrap">
+                                                流畅性：在1分钟内尽可能多地说出动物的名字。（N≥11）
+                                            </TextBlock>
+                                        </DockPanel>
+                                        <Border
+                                            Grid.Row="1"
+                                            Margin="1"
+                                            Background="{StaticResource crs_SolidColorBrush.EFEFEF}">
+                                            <TextBlock
+                                                Margin="20,0"
+                                                VerticalAlignment="Center"
+                                                DataContext="{Binding AnswerItems[0]}"
+                                                Text="{Binding Remark, StringFormat={}记录：{0}, TargetNullValue=记录：, FallbackValue=记录：}"
+                                                TextTrimming="CharacterEllipsis" />
+                                        </Border>
+                                    </theme:LineGrid>
+                                </controls:Crs_SubjectReport>
+                                <controls:Crs_SubjectReport
+                                    Height="55"
+                                    TextBlock.FontSize="26"
+                                    TextBlock.FontWeight="Bold">
+                                    <TextBlock
+                                        Margin="20,0,0,0"
+                                        HorizontalAlignment="Left"
+                                        VerticalAlignment="Center">
+                                        抽象
+                                    </TextBlock>
+                                </controls:Crs_SubjectReport>
+                                <controls:Crs_SubjectReport DataContext="{Binding SubjectItems[8]}">
+                                    <behaviors:Interaction.Triggers>
+                                        <behaviors:EventTrigger EventName="Loaded">
+                                            <behaviors:ChangePropertyAction
+                                                PropertyName="OriginName"
+                                                TargetObject="{Binding}"
+                                                Value="抽象" />
+                                        </behaviors:EventTrigger>
+                                    </behaviors:Interaction.Triggers>
+                                    <controls:Crs_SubjectReport.RightContent>
+                                        <TextBlock
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            Foreground="{StaticResource crs_SolidColorBrush.F89F00}"
+                                            Text="{Binding Fraction, TargetNullValue=--, FallbackValue=--}" />
+                                    </controls:Crs_SubjectReport.RightContent>
+                                    <theme:LineGrid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="0.8*" />
+                                            <ColumnDefinition />
+                                        </Grid.ColumnDefinitions>
+                                        <TextBlock
+                                            Margin="20,0,0,0"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Center"
+                                            TextWrapping="Wrap">
+                                            词语相似性：香蕉——桔子=水果
+                                        </TextBlock>
+                                        <theme:LineGrid Grid.Column="1">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition />
+                                                <ColumnDefinition />
+                                            </Grid.ColumnDefinitions>
+                                            <theme:LineGrid DataContext="{Binding ChildrenItems[0]}">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="60" />
+                                                    <RowDefinition Height="60" />
+                                                </Grid.RowDefinitions>
+                                                <DockPanel>
+                                                    <ContentControl
+                                                        Margin="20,0"
+                                                        Content="{Binding AnswerItems[0]}"
+                                                        ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}"
+                                                        DockPanel.Dock="Left" />
+                                                    <TextBlock
+                                                        HorizontalAlignment="Center"
+                                                        VerticalAlignment="Center"
+                                                        DockPanel.Dock="Right"
+                                                        TextTrimming="CharacterEllipsis">
+                                                        火车——自行车
+                                                    </TextBlock>
+                                                </DockPanel>
+                                                <Border
+                                                    Grid.Row="1"
+                                                    Margin="1"
+                                                    Background="{StaticResource crs_SolidColorBrush.EFEFEF}"
+                                                    DockPanel.Dock="Bottom">
+                                                    <TextBlock
+                                                        Margin="20,0"
+                                                        VerticalAlignment="Center"
+                                                        DataContext="{Binding AnswerItems[0]}"
+                                                        Text="{Binding Remark, StringFormat={}记录：{0}, TargetNullValue=记录：, FallbackValue=记录：}"
+                                                        TextTrimming="CharacterEllipsis" />
+                                                </Border>
+                                            </theme:LineGrid>
+                                            <theme:LineGrid Grid.Column="1" DataContext="{Binding ChildrenItems[1]}">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="60" />
+                                                    <RowDefinition Height="60" />
+                                                </Grid.RowDefinitions>
+                                                <DockPanel>
+                                                    <ContentControl
+                                                        Margin="20,0"
+                                                        Content="{Binding AnswerItems[0]}"
+                                                        ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}"
+                                                        DockPanel.Dock="Left" />
+                                                    <TextBlock
+                                                        HorizontalAlignment="Center"
+                                                        VerticalAlignment="Center"
+                                                        DockPanel.Dock="Right"
+                                                        TextTrimming="CharacterEllipsis">
+                                                        手表——尺子
+                                                    </TextBlock>
+                                                </DockPanel>
+                                                <Border
+                                                    Grid.Row="1"
+                                                    Margin="1"
+                                                    Background="{StaticResource crs_SolidColorBrush.EFEFEF}"
+                                                    DockPanel.Dock="Bottom">
+                                                    <TextBlock
+                                                        Margin="20,0"
+                                                        VerticalAlignment="Center"
+                                                        DataContext="{Binding AnswerItems[0]}"
+                                                        Text="{Binding Remark, StringFormat={}记录：{0}, TargetNullValue=记录：, FallbackValue=记录：}"
+                                                        TextTrimming="CharacterEllipsis" />
+                                                </Border>
+                                            </theme:LineGrid>
+                                        </theme:LineGrid>
+                                    </theme:LineGrid>
+                                </controls:Crs_SubjectReport>
+                                <controls:Crs_SubjectReport
+                                    Height="55"
+                                    TextBlock.FontSize="26"
+                                    TextBlock.FontWeight="Bold">
+                                    <TextBlock
+                                        Margin="20,0,0,0"
+                                        HorizontalAlignment="Left"
+                                        VerticalAlignment="Center">
+                                        延迟回忆
+                                    </TextBlock>
+                                </controls:Crs_SubjectReport>
+                                <controls:Crs_SubjectReport DataContext="{Binding SubjectItems[9]}">
+                                    <behaviors:Interaction.Triggers>
+                                        <behaviors:EventTrigger EventName="Loaded">
+                                            <behaviors:ChangePropertyAction
+                                                PropertyName="OriginName"
+                                                TargetObject="{Binding}"
+                                                Value="延迟回忆" />
+                                        </behaviors:EventTrigger>
+                                    </behaviors:Interaction.Triggers>
+                                    <controls:Crs_SubjectReport.RightContent>
+                                        <TextBlock
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            Foreground="{StaticResource crs_SolidColorBrush.F89F00}"
+                                            Text="{Binding Fraction, TargetNullValue=--, FallbackValue=--}" />
+                                    </controls:Crs_SubjectReport.RightContent>
+                                    <theme:LineGrid DataContext="{Binding ChildrenItems[0]}">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="220" />
+                                        </Grid.ColumnDefinitions>
+                                        <TextBlock
+                                            Grid.Column="1"
+                                            Margin="20"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            LineHeight="36">
+                                            仅根据非提示记<LineBreak />
+                                            忆得分</TextBlock>
+                                        <theme:LineGrid Grid.Column="0">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="300" />
+                                                <ColumnDefinition />
+                                                <ColumnDefinition />
+                                                <ColumnDefinition />
+                                                <ColumnDefinition />
+                                                <ColumnDefinition />
+                                            </Grid.ColumnDefinitions>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="60" />
+                                                <RowDefinition Height="60" />
+                                                <RowDefinition Height="60" />
+                                                <RowDefinition Height="60" />
+                                            </Grid.RowDefinitions>
+                                            <TextBlock
+                                                Grid.Column="1"
+                                                HorizontalAlignment="Center"
+                                                VerticalAlignment="Center"
+                                                TextTrimming="CharacterEllipsis">
+                                                面孔
+                                            </TextBlock>
+                                            <TextBlock
+                                                Grid.Column="2"
+                                                HorizontalAlignment="Center"
+                                                VerticalAlignment="Center"
+                                                TextTrimming="CharacterEllipsis">
+                                                天鹅绒
+                                            </TextBlock>
+                                            <TextBlock
+                                                Grid.Column="3"
+                                                HorizontalAlignment="Center"
+                                                VerticalAlignment="Center"
+                                                TextTrimming="CharacterEllipsis">
+                                                教堂
+                                            </TextBlock>
+                                            <TextBlock
+                                                Grid.Column="4"
+                                                HorizontalAlignment="Center"
+                                                VerticalAlignment="Center"
+                                                TextTrimming="CharacterEllipsis">
+                                                菊花
+                                            </TextBlock>
+                                            <TextBlock
+                                                Grid.Column="5"
+                                                HorizontalAlignment="Center"
+                                                VerticalAlignment="Center"
+                                                TextTrimming="CharacterEllipsis">
+                                                红色
+                                            </TextBlock>
+
+                                            <TextBlock
+                                                Grid.Row="1"
+                                                HorizontalAlignment="Center"
+                                                VerticalAlignment="Center"
+                                                TextTrimming="CharacterEllipsis">
+                                                回忆时不能提醒
+                                            </TextBlock>
+                                            <TextBlock
+                                                Grid.Row="2"
+                                                HorizontalAlignment="Center"
+                                                VerticalAlignment="Center"
+                                                TextTrimming="CharacterEllipsis">
+                                                分类提示
+                                            </TextBlock>
+                                            <TextBlock
+                                                Grid.Row="3"
+                                                HorizontalAlignment="Center"
+                                                VerticalAlignment="Center"
+                                                TextTrimming="CharacterEllipsis">
+                                                多选提示
+                                            </TextBlock>
+
+                                            <ContentControl
+                                                Grid.Row="1"
+                                                Grid.Column="1"
+                                                Content="{Binding AnswerItems[0]}"
+                                                ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}" />
+                                            <ContentControl
+                                                Grid.Row="1"
+                                                Grid.Column="2"
+                                                Content="{Binding AnswerItems[1]}"
+                                                ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}" />
+                                            <ContentControl
+                                                Grid.Row="1"
+                                                Grid.Column="3"
+                                                Content="{Binding AnswerItems[2]}"
+                                                ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}" />
+                                            <ContentControl
+                                                Grid.Row="1"
+                                                Grid.Column="4"
+                                                Content="{Binding AnswerItems[3]}"
+                                                ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}" />
+                                            <ContentControl
+                                                Grid.Row="1"
+                                                Grid.Column="5"
+                                                Content="{Binding AnswerItems[4]}"
+                                                ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}" />
+
+                                            <ContentControl
+                                                Grid.Row="2"
+                                                Grid.Column="1"
+                                                Content="{Binding AnswerItems[5]}"
+                                                ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}">
+                                                <behaviors:Interaction.Triggers>
+                                                    <behaviors:EventTrigger EventName="Loaded">
+                                                        <behaviors:ChangePropertyAction
+                                                            PropertyName="Ignore"
+                                                            TargetObject="{Binding Content, RelativeSource={RelativeSource AncestorType=ContentControl}}"
+                                                            Value="True" />
+                                                    </behaviors:EventTrigger>
+                                                </behaviors:Interaction.Triggers>
+                                            </ContentControl>
+                                            <ContentControl
+                                                Grid.Row="2"
+                                                Grid.Column="2"
+                                                Content="{Binding AnswerItems[6]}"
+                                                ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}">
+                                                <behaviors:Interaction.Triggers>
+                                                    <behaviors:EventTrigger EventName="Loaded">
+                                                        <behaviors:ChangePropertyAction
+                                                            PropertyName="Ignore"
+                                                            TargetObject="{Binding Content, RelativeSource={RelativeSource AncestorType=ContentControl}}"
+                                                            Value="True" />
+                                                    </behaviors:EventTrigger>
+                                                </behaviors:Interaction.Triggers>
+                                            </ContentControl>
+                                            <ContentControl
+                                                Grid.Row="2"
+                                                Grid.Column="3"
+                                                Content="{Binding AnswerItems[7]}"
+                                                ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}">
+                                                <behaviors:Interaction.Triggers>
+                                                    <behaviors:EventTrigger EventName="Loaded">
+                                                        <behaviors:ChangePropertyAction
+                                                            PropertyName="Ignore"
+                                                            TargetObject="{Binding Content, RelativeSource={RelativeSource AncestorType=ContentControl}}"
+                                                            Value="True" />
+                                                    </behaviors:EventTrigger>
+                                                </behaviors:Interaction.Triggers>
+                                            </ContentControl>
+                                            <ContentControl
+                                                Grid.Row="2"
+                                                Grid.Column="4"
+                                                Content="{Binding AnswerItems[8]}"
+                                                ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}">
+                                                <behaviors:Interaction.Triggers>
+                                                    <behaviors:EventTrigger EventName="Loaded">
+                                                        <behaviors:ChangePropertyAction
+                                                            PropertyName="Ignore"
+                                                            TargetObject="{Binding Content, RelativeSource={RelativeSource AncestorType=ContentControl}}"
+                                                            Value="True" />
+                                                    </behaviors:EventTrigger>
+                                                </behaviors:Interaction.Triggers>
+                                            </ContentControl>
+                                            <ContentControl
+                                                Grid.Row="2"
+                                                Grid.Column="5"
+                                                Content="{Binding AnswerItems[9]}"
+                                                ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}">
+                                                <behaviors:Interaction.Triggers>
+                                                    <behaviors:EventTrigger EventName="Loaded">
+                                                        <behaviors:ChangePropertyAction
+                                                            PropertyName="Ignore"
+                                                            TargetObject="{Binding Content, RelativeSource={RelativeSource AncestorType=ContentControl}}"
+                                                            Value="True" />
+                                                    </behaviors:EventTrigger>
+                                                </behaviors:Interaction.Triggers>
+                                            </ContentControl>
+
+                                            <ContentControl
+                                                Grid.Row="3"
+                                                Grid.Column="1"
+                                                Content="{Binding AnswerItems[10]}"
+                                                ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}">
+                                                <behaviors:Interaction.Triggers>
+                                                    <behaviors:EventTrigger EventName="Loaded">
+                                                        <behaviors:ChangePropertyAction
+                                                            PropertyName="Ignore"
+                                                            TargetObject="{Binding Content, RelativeSource={RelativeSource AncestorType=ContentControl}}"
+                                                            Value="True" />
+                                                    </behaviors:EventTrigger>
+                                                </behaviors:Interaction.Triggers>
+                                            </ContentControl>
+                                            <ContentControl
+                                                Grid.Row="3"
+                                                Grid.Column="2"
+                                                Content="{Binding AnswerItems[11]}"
+                                                ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}">
+                                                <behaviors:Interaction.Triggers>
+                                                    <behaviors:EventTrigger EventName="Loaded">
+                                                        <behaviors:ChangePropertyAction
+                                                            PropertyName="Ignore"
+                                                            TargetObject="{Binding Content, RelativeSource={RelativeSource AncestorType=ContentControl}}"
+                                                            Value="True" />
+                                                    </behaviors:EventTrigger>
+                                                </behaviors:Interaction.Triggers>
+                                            </ContentControl>
+                                            <ContentControl
+                                                Grid.Row="3"
+                                                Grid.Column="3"
+                                                Content="{Binding AnswerItems[12]}"
+                                                ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}">
+                                                <behaviors:Interaction.Triggers>
+                                                    <behaviors:EventTrigger EventName="Loaded">
+                                                        <behaviors:ChangePropertyAction
+                                                            PropertyName="Ignore"
+                                                            TargetObject="{Binding Content, RelativeSource={RelativeSource AncestorType=ContentControl}}"
+                                                            Value="True" />
+                                                    </behaviors:EventTrigger>
+                                                </behaviors:Interaction.Triggers>
+                                            </ContentControl>
+                                            <ContentControl
+                                                Grid.Row="3"
+                                                Grid.Column="4"
+                                                Content="{Binding AnswerItems[13]}"
+                                                ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}">
+                                                <behaviors:Interaction.Triggers>
+                                                    <behaviors:EventTrigger EventName="Loaded">
+                                                        <behaviors:ChangePropertyAction
+                                                            PropertyName="Ignore"
+                                                            TargetObject="{Binding Content, RelativeSource={RelativeSource AncestorType=ContentControl}}"
+                                                            Value="True" />
+                                                    </behaviors:EventTrigger>
+                                                </behaviors:Interaction.Triggers>
+                                            </ContentControl>
+                                            <ContentControl
+                                                Grid.Row="3"
+                                                Grid.Column="5"
+                                                Content="{Binding AnswerItems[14]}"
+                                                ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}">
+                                                <behaviors:Interaction.Triggers>
+                                                    <behaviors:EventTrigger EventName="Loaded">
+                                                        <behaviors:ChangePropertyAction
+                                                            PropertyName="Ignore"
+                                                            TargetObject="{Binding Content, RelativeSource={RelativeSource AncestorType=ContentControl}}"
+                                                            Value="True" />
+                                                    </behaviors:EventTrigger>
+                                                </behaviors:Interaction.Triggers>
+                                            </ContentControl>
+                                        </theme:LineGrid>
+                                    </theme:LineGrid>
+                                </controls:Crs_SubjectReport>
+                                <controls:Crs_SubjectReport
+                                    Height="55"
+                                    TextBlock.FontSize="26"
+                                    TextBlock.FontWeight="Bold">
+                                    <TextBlock
+                                        Margin="20,0,0,0"
+                                        HorizontalAlignment="Left"
+                                        VerticalAlignment="Center">
+                                        定向力
+                                    </TextBlock>
+                                </controls:Crs_SubjectReport>
+                                <controls:Crs_SubjectReport DataContext="{Binding SubjectItems[10]}">
+                                    <behaviors:Interaction.Triggers>
+                                        <behaviors:EventTrigger EventName="Loaded">
+                                            <behaviors:ChangePropertyAction
+                                                PropertyName="OriginName"
+                                                TargetObject="{Binding}"
+                                                Value="定向力" />
+                                        </behaviors:EventTrigger>
+                                    </behaviors:Interaction.Triggers>
+                                    <controls:Crs_SubjectReport.RightContent>
+                                        <TextBlock
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            Foreground="{StaticResource crs_SolidColorBrush.F89F00}"
+                                            Text="{Binding Fraction, TargetNullValue=--, FallbackValue=--}" />
+                                    </controls:Crs_SubjectReport.RightContent>
+                                    <theme:LineGrid Grid.Column="1">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition />
+                                            <ColumnDefinition />
+                                            <ColumnDefinition />
+                                            <ColumnDefinition />
+                                            <ColumnDefinition />
+                                            <ColumnDefinition />
+                                        </Grid.ColumnDefinitions>
+                                        <theme:LineGrid DataContext="{Binding ChildrenItems[0]}">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="60" />
+                                                <RowDefinition Height="60" />
+                                            </Grid.RowDefinitions>
+                                            <DockPanel>
+                                                <ContentControl
+                                                    Margin="20,0"
+                                                    Content="{Binding AnswerItems[0]}"
+                                                    ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}"
+                                                    DockPanel.Dock="Right" />
+                                                <TextBlock
+                                                    Margin="20,0,0,0"
+                                                    HorizontalAlignment="Left"
+                                                    VerticalAlignment="Center"
+                                                    DockPanel.Dock="Right"
+                                                    TextTrimming="CharacterEllipsis">
+                                                    星期几
+                                                </TextBlock>
+                                            </DockPanel>
+                                            <Border
+                                                Grid.Row="1"
+                                                Margin="1"
+                                                Background="{StaticResource crs_SolidColorBrush.EFEFEF}"
+                                                DockPanel.Dock="Bottom">
+                                                <TextBlock
+                                                    Margin="20,0"
+                                                    VerticalAlignment="Center"
+                                                    DataContext="{Binding AnswerItems[0]}"
+                                                    Text="{Binding Remark, StringFormat={}记录：{0}, TargetNullValue=记录：, FallbackValue=记录：}"
+                                                    TextTrimming="CharacterEllipsis" />
+                                            </Border>
+                                        </theme:LineGrid>
+                                        <theme:LineGrid Grid.Column="1" DataContext="{Binding ChildrenItems[0]}">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="60" />
+                                                <RowDefinition Height="60" />
+                                            </Grid.RowDefinitions>
+                                            <DockPanel>
+                                                <ContentControl
+                                                    Margin="20,0"
+                                                    Content="{Binding AnswerItems[1]}"
+                                                    ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}"
+                                                    DockPanel.Dock="Right" />
+                                                <TextBlock
+                                                    Margin="20,0,0,0"
+                                                    HorizontalAlignment="Left"
+                                                    VerticalAlignment="Center"
+                                                    DockPanel.Dock="Right"
+                                                    TextTrimming="CharacterEllipsis">
+                                                    年代
+                                                </TextBlock>
+                                            </DockPanel>
+                                            <Border
+                                                Grid.Row="1"
+                                                Margin="1"
+                                                Background="{StaticResource crs_SolidColorBrush.EFEFEF}"
+                                                DockPanel.Dock="Bottom">
+                                                <TextBlock
+                                                    Margin="20,0"
+                                                    VerticalAlignment="Center"
+                                                    DataContext="{Binding AnswerItems[1]}"
+                                                    Text="{Binding Remark, StringFormat={}记录：{0}, TargetNullValue=记录：, FallbackValue=记录：}"
+                                                    TextTrimming="CharacterEllipsis" />
+                                            </Border>
+                                        </theme:LineGrid>
+                                        <theme:LineGrid Grid.Column="2" DataContext="{Binding ChildrenItems[0]}">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="60" />
+                                                <RowDefinition Height="60" />
+                                            </Grid.RowDefinitions>
+                                            <DockPanel>
+                                                <ContentControl
+                                                    Margin="20,0"
+                                                    Content="{Binding AnswerItems[2]}"
+                                                    ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}"
+                                                    DockPanel.Dock="Right" />
+                                                <TextBlock
+                                                    Margin="20,0,0,0"
+                                                    HorizontalAlignment="Left"
+                                                    VerticalAlignment="Center"
+                                                    DockPanel.Dock="Right"
+                                                    TextTrimming="CharacterEllipsis">
+                                                    月份
+                                                </TextBlock>
+                                            </DockPanel>
+                                            <Border
+                                                Grid.Row="1"
+                                                Margin="1"
+                                                Background="{StaticResource crs_SolidColorBrush.EFEFEF}"
+                                                DockPanel.Dock="Bottom">
+                                                <TextBlock
+                                                    Margin="20,0"
+                                                    VerticalAlignment="Center"
+                                                    DataContext="{Binding AnswerItems[2]}"
+                                                    Text="{Binding Remark, StringFormat={}记录：{0}, TargetNullValue=记录：, FallbackValue=记录：}"
+                                                    TextTrimming="CharacterEllipsis" />
+                                            </Border>
+                                        </theme:LineGrid>
+                                        <theme:LineGrid Grid.Column="3" DataContext="{Binding ChildrenItems[0]}">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="60" />
+                                                <RowDefinition Height="60" />
+                                            </Grid.RowDefinitions>
+                                            <DockPanel>
+                                                <ContentControl
+                                                    Margin="20,0"
+                                                    Content="{Binding AnswerItems[3]}"
+                                                    ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}"
+                                                    DockPanel.Dock="Right" />
+                                                <TextBlock
+                                                    Margin="20,0,0,0"
+                                                    HorizontalAlignment="Left"
+                                                    VerticalAlignment="Center"
+                                                    DockPanel.Dock="Right"
+                                                    TextTrimming="CharacterEllipsis">
+                                                    日期
+                                                </TextBlock>
+                                            </DockPanel>
+                                            <Border
+                                                Grid.Row="1"
+                                                Margin="1"
+                                                Background="{StaticResource crs_SolidColorBrush.EFEFEF}"
+                                                DockPanel.Dock="Bottom">
+                                                <TextBlock
+                                                    Margin="20,0"
+                                                    VerticalAlignment="Center"
+                                                    DataContext="{Binding AnswerItems[3]}"
+                                                    Text="{Binding Remark, StringFormat={}记录：{0}, TargetNullValue=记录：, FallbackValue=记录：}"
+                                                    TextTrimming="CharacterEllipsis" />
+                                            </Border>
+                                        </theme:LineGrid>
+                                        <theme:LineGrid Grid.Column="4" DataContext="{Binding ChildrenItems[1]}">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="60" />
+                                                <RowDefinition Height="60" />
+                                            </Grid.RowDefinitions>
+                                            <DockPanel>
+                                                <ContentControl
+                                                    Margin="20,0"
+                                                    Content="{Binding AnswerItems[0]}"
+                                                    ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}"
+                                                    DockPanel.Dock="Right" />
+                                                <TextBlock
+                                                    Margin="20,0,0,0"
+                                                    HorizontalAlignment="Left"
+                                                    VerticalAlignment="Center"
+                                                    DockPanel.Dock="Right"
+                                                    TextTrimming="CharacterEllipsis">
+                                                    地点
+                                                </TextBlock>
+                                            </DockPanel>
+                                            <Border
+                                                Grid.Row="1"
+                                                Margin="1"
+                                                Background="{StaticResource crs_SolidColorBrush.EFEFEF}"
+                                                DockPanel.Dock="Bottom">
+                                                <TextBlock
+                                                    Margin="20,0"
+                                                    VerticalAlignment="Center"
+                                                    DataContext="{Binding AnswerItems[0]}"
+                                                    Text="{Binding Remark, StringFormat={}记录：{0}, TargetNullValue=记录：, FallbackValue=记录：}"
+                                                    TextTrimming="CharacterEllipsis" />
+                                            </Border>
+                                        </theme:LineGrid>
+                                        <theme:LineGrid Grid.Column="5" DataContext="{Binding ChildrenItems[1]}">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="60" />
+                                                <RowDefinition Height="60" />
+                                            </Grid.RowDefinitions>
+                                            <DockPanel>
+                                                <ContentControl
+                                                    Margin="20,0"
+                                                    Content="{Binding AnswerItems[1]}"
+                                                    ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate_ReadOnly}"
+                                                    DockPanel.Dock="Right" />
+                                                <TextBlock
+                                                    Margin="20,0,0,0"
+                                                    HorizontalAlignment="Left"
+                                                    VerticalAlignment="Center"
+                                                    DockPanel.Dock="Right"
+                                                    TextTrimming="CharacterEllipsis">
+                                                    城市
+                                                </TextBlock>
+                                            </DockPanel>
+                                            <Border
+                                                Grid.Row="1"
+                                                Margin="1"
+                                                Background="{StaticResource crs_SolidColorBrush.EFEFEF}"
+                                                DockPanel.Dock="Bottom">
+                                                <TextBlock
+                                                    Margin="20,0"
+                                                    VerticalAlignment="Center"
+                                                    DataContext="{Binding AnswerItems[1]}"
+                                                    Text="{Binding Remark, StringFormat={}记录：{0}, TargetNullValue=记录：, FallbackValue=记录：}"
+                                                    TextTrimming="CharacterEllipsis" />
+                                            </Border>
+                                        </theme:LineGrid>
+                                    </theme:LineGrid>
+                                </controls:Crs_SubjectReport>
+                                <controls:Crs_SubjectReport
+                                    Height="55"
+                                    TextBlock.FontSize="26"
+                                    TextBlock.FontWeight="Bold">
+                                    <controls:Crs_SubjectReport.RightContent>
+                                        <TextBlock
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            Foreground="{StaticResource crs_SolidColorBrush.F89F00}"
+                                            Text="{Binding AllFraction, TargetNullValue=--, FallbackValue=--}" />
+                                    </controls:Crs_SubjectReport.RightContent>
+                                    <TextBlock
+                                        Margin="20,0,0,0"
+                                        HorizontalAlignment="Left"
+                                        VerticalAlignment="Center">
+                                        总分
+                                    </TextBlock>
+                                </controls:Crs_SubjectReport>
+                            </StackPanel>
+                        </DockPanel>
+                    </ScrollViewer>
+                </Border>
+            </DockPanel>
+        </hc:SimplePanel>
+    </DockPanel>
+</UserControl>

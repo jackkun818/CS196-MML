@@ -1,0 +1,35 @@
+ManifestFileVersion: 0
+CRC: 1471204530
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 3ab5f8a437a215ae2b31eba9572bc6f1
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b629d06dca8684ce1c6e8d892d372c76
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 62a7abc01c957c644bd77f2623414c2b, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.PersistentCallGroup
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
+Assets:
+- Assets/Resources/UIPrefabs/PausePanel.prefab
+Dependencies: []

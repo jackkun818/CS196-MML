@@ -1,0 +1,209 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:po="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options">
+
+<BitmapImage x:Key="crs_MH-01" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/MH-01.png" />
+
+<BitmapImage x:Key="crs_MH-02" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/MH-02.png" />
+
+<BitmapImage x:Key="crs_上箭头" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/上箭头.png" />
+
+<BitmapImage x:Key="crs_下箭头" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/下箭头.png" />
+
+<BitmapImage x:Key="crs_专注注意力" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/专注注意力.png" />
+
+<BitmapImage x:Key="crs_产品型号" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/产品型号.png" />
+
+<BitmapImage x:Key="crs_产品型号2" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/产品型号2.png" />
+
+<BitmapImage x:Key="crs_公司LOGO" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/公司LOGO.png" />
+
+<BitmapImage x:Key="crs_公司LOGO1" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/公司LOGO1.png" />
+
+<BitmapImage x:Key="crs_关闭" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/关闭.png" />
+
+<BitmapImage x:Key="crs_关闭窗体" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/关闭窗体.png" />
+
+<BitmapImage x:Key="crs_删除" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/删除.png" />
+
+<BitmapImage x:Key="crs_加载" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/加载.png" />
+
+<BitmapImage x:Key="crs_医生头像" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/医生头像.png" />
+
+<BitmapImage x:Key="crs_历史方案" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/历史方案.png" />
+
+<BitmapImage x:Key="crs_参数调节" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/参数调节.png" />
+
+<BitmapImage x:Key="crs_反应能力" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/反应能力.png" />
+
+<BitmapImage x:Key="crs_反应行为" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/反应行为.png" />
+
+<BitmapImage x:Key="crs_反馈" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/反馈.png" />
+
+<BitmapImage x:Key="crs_右箭头" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/右箭头.png" />
+
+<BitmapImage x:Key="crs_图形记忆力" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/图形记忆力.png" />
+
+<BitmapImage x:Key="crs_声音" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/声音.png" />
+
+<BitmapImage x:Key="crs_声音2" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/声音2.png" />
+
+<BitmapImage x:Key="crs_女" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/女.png" />
+
+<BitmapImage x:Key="crs_女生头像" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/女生头像.png" />
+
+<BitmapImage x:Key="crs_容貌记忆力" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/容貌记忆力.png" />
+
+<BitmapImage x:Key="crs_密码" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/密码.png" />
+
+<BitmapImage x:Key="crs_对-未选中" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/对-未选中.png" />
+
+<BitmapImage x:Key="crs_对-选中" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/对-选中.png" />
+
+<BitmapImage x:Key="crs_导出报告" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/导出报告.png" />
+
+<BitmapImage x:Key="crs_工作记忆力" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/工作记忆力.png" />
+
+<BitmapImage x:Key="crs_左箭头" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/左箭头.png" />
+
+<BitmapImage x:Key="crs_平面视野" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/平面视野.png" />
+
+<BitmapImage x:Key="crs_平面识别能力" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/平面识别能力.png" />
+
+<BitmapImage x:Key="crs_康复训练" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/康复训练.png" />
+
+<BitmapImage x:Key="crs_患者端背景" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/患者端背景.png" />
+
+<BitmapImage x:Key="crs_患者端背景2" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/患者端背景2.png" />
+
+<BitmapImage x:Key="crs_报告设置背景图" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/报告设置背景图.png" />
+
+<BitmapImage x:Key="crs_拓扑记忆力" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/拓扑记忆力.png" />
+
+<BitmapImage x:Key="crs_排班查询" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/排班查询.png" />
+
+<BitmapImage x:Key="crs_提示框" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/提示框.png" />
+
+<BitmapImage x:Key="crs_提示灯" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/提示灯.png" />
+
+<BitmapImage x:Key="crs_插图" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/插图.png" />
+
+<BitmapImage x:Key="crs_插图2" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/插图2.png" />
+
+<BitmapImage x:Key="crs_插图3" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/插图3.png" />
+
+<BitmapImage x:Key="crs_搜索" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/搜索.png" />
+
+<BitmapImage x:Key="crs_搜索2" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/搜索2.png" />
+
+<BitmapImage x:Key="crs_搜索能力" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/搜索能力.png" />
+
+<BitmapImage x:Key="crs_搜索能力2" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/搜索能力2.png" />
+
+<BitmapImage x:Key="crs_数字人管理" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/数字人管理.png" />
+
+<BitmapImage x:Key="crs_数据报告" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/数据报告.png" />
+
+<BitmapImage x:Key="crs_新增" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/新增.png" />
+
+<BitmapImage x:Key="crs_方案" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/方案.png" />
+
+<BitmapImage x:Key="crs_日期" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/日期.png" />
+
+<BitmapImage x:Key="crs_暂无内容" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/暂无内容.png" />
+
+<BitmapImage x:Key="crs_最大化" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/最大化.png" />
+
+<BitmapImage x:Key="crs_标准评估" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/标准评估.png" />
+
+<BitmapImage x:Key="crs_模式选择" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/模式选择.png" />
+
+<BitmapImage x:Key="crs_注意力分配" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/注意力分配.png" />
+
+<BitmapImage x:Key="crs_注意力分配2" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/注意力分配2.png" />
+
+<BitmapImage x:Key="crs_用户管理" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/用户管理.png" />
+
+<BitmapImage x:Key="crs_男" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/男.png" />
+
+<BitmapImage x:Key="crs_男生头像" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/男生头像.png" />
+
+<BitmapImage x:Key="crs_眼动训练" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/眼动训练.png" />
+
+<BitmapImage x:Key="crs_空间数字搜索" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/空间数字搜索.png" />
+
+<BitmapImage x:Key="crs_细节记忆力" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/细节记忆力.png" />
+
+<BitmapImage x:Key="crs_编辑" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/编辑.png" />
+
+<BitmapImage x:Key="crs_菜单" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/菜单.png" />
+
+<BitmapImage x:Key="crs_视觉修复训练" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/视觉修复训练.png" />
+
+<BitmapImage x:Key="crs_视觉分配能力" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/视觉分配能力.png" />
+
+<BitmapImage x:Key="crs_视野" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/视野.png" />
+
+<BitmapImage x:Key="crs_警惕训练2" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/警惕训练2.png" />
+
+<BitmapImage x:Key="crs_警觉能力" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/警觉能力.png" />
+
+<BitmapImage x:Key="crs_警觉训练" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/警觉训练.png" />
+
+<BitmapImage x:Key="crs_记忆广度" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/记忆广度.png" />
+
+<BitmapImage x:Key="crs_设置" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/设置.png" />
+
+<BitmapImage x:Key="crs_评估测试" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/评估测试.png" />
+
+<BitmapImage x:Key="crs_词汇记忆能力" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/词汇记忆能力.png" />
+
+<BitmapImage x:Key="crs_词语记忆力" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/词语记忆力.png" />
+
+<BitmapImage x:Key="crs_账号" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/账号.png" />
+
+<BitmapImage x:Key="crs_返回" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/返回.png" />
+
+<BitmapImage x:Key="crs_选择注意力" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/选择注意力.png" />
+
+<BitmapImage x:Key="crs_逻辑思维能力" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/逻辑思维能力.png" />
+
+<BitmapImage x:Key="crs_逻辑推理能力" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/逻辑推理能力.png" />
+
+<BitmapImage x:Key="crs_错-未选中" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/错-未选中.png" />
+
+<BitmapImage x:Key="crs_错-选中" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/错-选中.png" />
+
+<BitmapImage x:Key="crs_问号" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/问号.png" />
+
+<BitmapImage x:Key="crs_题目插图1" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/题目插图1.png" />
+
+<BitmapImage x:Key="crs_题目插图11" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/题目插图11.png" />
+
+<BitmapImage x:Key="crs_题目插图11_Big" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/题目插图11_Big.png" />
+
+<BitmapImage x:Key="crs_题目插图1_Big" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/题目插图1_Big.png" />
+
+<BitmapImage x:Key="crs_题目插图2" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/题目插图2.png" />
+
+<BitmapImage x:Key="crs_题目插图2_Big" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/题目插图2_Big.png" />
+
+<BitmapImage x:Key="crs_题目插图3" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/题目插图3.png" />
+
+<BitmapImage x:Key="crs_题目插图3_Big" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/题目插图3_Big.png" />
+
+<BitmapImage x:Key="crs_题目插图4" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/题目插图4.png" />
+
+<BitmapImage x:Key="crs_题目插图4_Big" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/题目插图4_Big.png" />
+
+<BitmapImage x:Key="crs_题目插图5" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/题目插图5.png" />
+
+<BitmapImage x:Key="crs_题目插图5_Big" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/题目插图5_Big.png" />
+
+<BitmapImage x:Key="crs_题目插图6_Big" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/题目插图6_Big.png" />
+
+<BitmapImage x:Key="crs_题目插图7_Big" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/题目插图7_Big.png" />
+
+<BitmapImage x:Key="crs_麦克风" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/麦克风.png" />
+
+<BitmapImage x:Key="crs_默认模式" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/默认模式.png" />
+
+</ResourceDictionary>

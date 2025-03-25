@@ -1,0 +1,111 @@
+﻿<Window x:Class="crs.game.HostWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:crs.game"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Title="HostWindow"
+        Width="1280"
+        Height="720"
+        Tag="HostWindow"
+        WindowStartupLocation="CenterScreen"
+        mc:Ignorable="d">
+
+    <DockPanel>
+        <DockPanel Width="300"
+                   Margin="5"
+                   DockPanel.Dock="Right">
+            <Button x:Name="stopButton"
+                    Height="40"
+                    Margin="5"
+                    Click="stopButton_Click"
+                    DockPanel.Dock="Bottom"
+                    Focusable="False">
+                结束
+            </Button>
+            <Button x:Name="nextButton"
+                    Height="40"
+                    Margin="5"
+                    Click="nextButton_Click"
+                    DockPanel.Dock="Bottom"
+                    Focusable="False">
+                下一题
+            </Button>
+            <Button x:Name="pauseButton"
+                    Height="40"
+                    Margin="5"
+                    Click="pauseButton_Click"
+                    DockPanel.Dock="Bottom"
+                    Focusable="False">
+                暂停
+            </Button>
+            <Button x:Name="startButton"
+                    Height="40"
+                    Margin="5"
+                    Click="startButton_Click"
+                    DockPanel.Dock="Bottom"
+                    Focusable="False">
+                开始
+            </Button>
+            <Button x:Name="initButton"
+                    Height="40"
+                    Margin="5"
+                    Click="initButton_Click"
+                    DockPanel.Dock="Bottom"
+                    Focusable="False">
+                初始化
+            </Button>
+            <StackPanel Margin="5"
+                        Background="Aquamarine"
+                        DockPanel.Dock="Top">
+                <TextBlock Margin="5">语音指令：</TextBlock>
+                <TextBlock x:Name="voiceTextBlock"
+                           Margin="20,5,5,5"
+                           TextWrapping="Wrap" />
+            </StackPanel>
+            <StackPanel Margin="5"
+                        Background="Aquamarine"
+                        DockPanel.Dock="Top">
+                <TextBlock Margin="5">题目说明：</TextBlock>
+                <TextBlock x:Name="synopsisTextBlock"
+                           Margin="20,5,5,5"
+                           TextWrapping="Wrap" />
+            </StackPanel>
+            <StackPanel Margin="5"
+                        Background="Aquamarine"
+                        DockPanel.Dock="Top">
+                <TextBlock Margin="5">统计：</TextBlock>
+                <StackPanel Margin="20,5,5,5" Orientation="Horizontal">
+                    <TextBlock>等级：</TextBlock>
+                    <TextBlock x:Name="levelTextBlock" />
+                </StackPanel>
+                <StackPanel Margin="20,5,5,5" Orientation="Horizontal">
+                    <TextBlock>正确次数：</TextBlock>
+                    <TextBlock x:Name="rightCountTextBlock" />
+                </StackPanel>
+                <StackPanel Margin="20,5,5,5" Orientation="Horizontal">
+                    <TextBlock>错误次数：</TextBlock>
+                    <TextBlock x:Name="wrongCountTextBlock" />
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Margin="5"
+                        Background="Aquamarine"
+                        DockPanel.Dock="Top">
+                <TextBlock Margin="5">用时：</TextBlock>
+                <StackPanel Margin="20,5,5,5" Orientation="Horizontal">
+                    <TextBlock>总用时：</TextBlock>
+                    <TextBlock x:Name="timeSumTextBlock" />
+                </StackPanel>
+                <StackPanel Margin="20,5,5,5" Orientation="Horizontal">
+                    <TextBlock>当前题目用时：</TextBlock>
+                    <TextBlock x:Name="timeTextBlock" />
+                </StackPanel>
+            </StackPanel>
+        </DockPanel>
+        <Grid Background="Black">
+            <Viewbox>
+                <ContentControl x:Name="gameContentControl" Margin="20" />
+            </Viewbox>
+        </Grid>
+    </DockPanel>
+</Window>

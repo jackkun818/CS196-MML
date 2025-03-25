@@ -1,0 +1,71 @@
+﻿<UserControl x:Class="crs.extension.Controls.MoCAs.Subject_7_Sub"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:behaviors="http://schemas.microsoft.com/xaml/behaviors"
+             xmlns:controls="clr-namespace:crs.extension.Controls"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:hc="https://handyorg.github.io/handycontrol"
+             xmlns:local="clr-namespace:crs.extension.Controls.MoCAs"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:models="clr-namespace:crs.extension.Models"
+             xmlns:theme="clr-namespace:crs.theme;assembly=crs.theme"
+             d:Background="White"
+             d:DataContext="{d:DesignInstance IsDesignTimeCreatable=True,
+                                              Type={x:Type models:SubjectItem}}"
+             d:DesignHeight="975"
+             d:DesignWidth="1720"
+             mc:Ignorable="d">
+
+    <controls:Crs_Carousel x:Name="carousel" Style="{StaticResource crs_Carousel}">
+        <DockPanel Width="{Binding ActualWidth, RelativeSource={RelativeSource AncestorType=hc:Carousel}}" DataContext="{Binding ChildrenItems[0]}">
+            <TextBlock HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       DockPanel.Dock="Bottom"
+                       FontSize="28"
+                       TextAlignment="Center"
+                       TextTrimming="CharacterEllipsis"
+                       TextWrapping="Wrap" />
+            <controls:Crs_AudioButton Margin="0,0,0,40"
+                                      AudioData="{Binding AudioData}"
+                                      DockPanel.Dock="Bottom" />
+            <hc:SimpleStackPanel Margin="0,0,0,-145"
+                                 HorizontalAlignment="Center"
+                                 VerticalAlignment="Center">
+                <TextBlock HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           FontSize="45"
+                           FontWeight="Bold"
+                           TextAlignment="Center"
+                           TextTrimming="CharacterEllipsis"
+                           TextWrapping="Wrap">
+                    现在我读出一句话，请清楚地重复一遍。
+                </TextBlock>
+            </hc:SimpleStackPanel>
+        </DockPanel>
+        <DockPanel Width="{Binding ActualWidth, RelativeSource={RelativeSource AncestorType=hc:Carousel}}" DataContext="{Binding ChildrenItems[1]}">
+            <TextBlock HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       DockPanel.Dock="Bottom"
+                       FontSize="28"
+                       TextAlignment="Center"
+                       TextTrimming="CharacterEllipsis"
+                       TextWrapping="Wrap" />
+            <controls:Crs_AudioButton Margin="0,0,0,40"
+                                      AudioData="{Binding AudioData}"
+                                      DockPanel.Dock="Bottom" />
+            <hc:SimpleStackPanel Margin="0,0,0,-145"
+                                 HorizontalAlignment="Center"
+                                 VerticalAlignment="Center">
+                <TextBlock HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           FontSize="45"
+                           FontWeight="Bold"
+                           TextAlignment="Center"
+                           TextTrimming="CharacterEllipsis"
+                           TextWrapping="Wrap">
+                    现在我再读出一句话，请清楚地重复一遍。
+                </TextBlock>
+            </hc:SimpleStackPanel>
+        </DockPanel>
+    </controls:Crs_Carousel>
+</UserControl>

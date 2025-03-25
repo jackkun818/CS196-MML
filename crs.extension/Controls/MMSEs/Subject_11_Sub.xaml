@@ -1,0 +1,47 @@
+﻿<UserControl x:Class="crs.extension.Controls.MMSEs.Subject_11_Sub"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:behaviors="http://schemas.microsoft.com/xaml/behaviors"
+             xmlns:controls="clr-namespace:crs.extension.Controls"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:hc="https://handyorg.github.io/handycontrol"
+             xmlns:local="clr-namespace:crs.extension.Controls.MMSEs"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:models="clr-namespace:crs.extension.Models"
+             xmlns:theme="clr-namespace:crs.theme;assembly=crs.theme"
+             d:Background="White"
+             d:DataContext="{d:DesignInstance IsDesignTimeCreatable=True,
+                                              Type={x:Type models:SubjectItem}}"
+             d:DesignHeight="975"
+             d:DesignWidth="1720"
+             mc:Ignorable="d">
+    <DockPanel DataContext="{Binding ChildrenItems[0]}">
+        <TextBlock HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   DockPanel.Dock="Bottom"
+                   FontSize="28"
+                   TextAlignment="Center"
+                   TextTrimming="CharacterEllipsis"
+                   TextWrapping="Wrap" />
+        <TextBlock DockPanel.Dock="Top"
+                   FontSize="45"
+                   FontWeight="Bold"
+                   TextTrimming="CharacterEllipsis"
+                   TextWrapping="Wrap">
+            这是结构能力测试，请根据以下图案在空白处画下来
+        </TextBlock>
+        <!--  中心区域包含正五边形图案  -->
+        <hc:SimplePanel Margin="0,20,0,20">
+            <Image Width="1000"
+                   Margin="10,0,0,0"
+                   HorizontalAlignment="Left"
+                   Source="{StaticResource crs_题目插图11_Big}" />
+            <TextBlock Margin="450,90,0,0"
+                       HorizontalAlignment="Left"
+                       FontSize="30"
+                       FontWeight="Bold"
+                       Text="(参考图)" />
+            <controls:Crs_DrawPanel DrawStrokes="{Binding StrokeItem}" />
+        </hc:SimplePanel>
+    </DockPanel>
+</UserControl>

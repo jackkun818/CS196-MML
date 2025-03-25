@@ -1,0 +1,54 @@
+﻿<Window x:Class="test.websocket.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:test.websocket"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Title="MainWindow"
+        Width="800"
+        Height="600"
+        mc:Ignorable="d">
+    <Grid>
+        <DockPanel>
+            <Border Width="300"
+                    Margin="20"
+                    Background="Black"
+                    DockPanel.Dock="Left">
+                <Image x:Name="image" Stretch="UniformToFill" />
+            </Border>
+            <DockPanel Margin="20">
+                <UniformGrid Columns="2"
+                             DockPanel.Dock="Bottom"
+                             Rows="1">
+                    <Button x:Name="send"
+                            Height="50"
+                            Margin="0,0,10,0"
+                            Click="send_Click"
+                            FontSize="18">
+                        Send
+                    </Button>
+                    <Button x:Name="stop"
+                            Height="50"
+                            Margin="10,0,0,0"
+                            Click="stop_Click"
+                            FontSize="18">
+                        Stop
+                    </Button>
+                </UniformGrid>
+
+                <Border Height="50"
+                        Margin="0,0,0,20"
+                        BorderBrush="Black"
+                        BorderThickness="1"
+                        DockPanel.Dock="Bottom">
+                    <TextBlock x:Name="result" FontSize="18" />
+                </Border>
+                <TextBox x:Name="message"
+                         Margin="0,0,0,20"
+                         FontSize="18"
+                         Text="中国是世界上历史最悠久的国家之一，有着光辉灿烂的文化和光荣的革命传统，世界遗产数量全球领先。"
+                         TextWrapping="Wrap" />
+            </DockPanel>
+        </DockPanel>
+    </Grid>
+</Window>

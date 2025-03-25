@@ -1,0 +1,14 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:converter="clr-namespace:crs.theme.Converter"
+                    xmlns:po="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/crs.theme;component/Themes/Color.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/crs.theme;component/Themes/BitmapImage.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/crs.theme;component/Themes/DataGrid.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <converter:BitmapImageConverter x:Key="crs_BitmapImageConverter" />
+    <converter:BitmapImageConverter x:Key="crs_ModeBitmapImageConverter" DefaultBitmapImage="{StaticResource crs_默认模式}" />
+</ResourceDictionary>

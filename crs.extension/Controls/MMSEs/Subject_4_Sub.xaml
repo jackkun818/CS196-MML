@@ -1,0 +1,83 @@
+﻿<UserControl x:Class="crs.extension.Controls.MMSEs.Subject_4_Sub"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:behaviors="http://schemas.microsoft.com/xaml/behaviors"
+             xmlns:controls="clr-namespace:crs.extension.Controls"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:hc="https://handyorg.github.io/handycontrol"
+             xmlns:local="clr-namespace:crs.extension.Controls.MMSEs"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:models="clr-namespace:crs.extension.Models"
+             xmlns:theme="clr-namespace:crs.theme;assembly=crs.theme"
+             d:Background="White"
+             d:DataContext="{d:DesignInstance IsDesignTimeCreatable=True,
+                                              Type={x:Type models:SubjectItem}}"
+             d:DesignHeight="975"
+             d:DesignWidth="1720"
+             mc:Ignorable="d">
+    <DockPanel DataContext="{Binding ChildrenItems[0]}">
+        <TextBlock HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   DockPanel.Dock="Bottom"
+                   FontSize="28"
+                   TextAlignment="Center"
+                   TextTrimming="CharacterEllipsis"
+                   TextWrapping="Wrap" />
+        <TextBlock DockPanel.Dock="Top"
+                   FontSize="45"
+                   FontWeight="Bold"
+                   TextTrimming="CharacterEllipsis"
+                   TextWrapping="Wrap">
+            现在请您从100减去7，然后从所得的数目再去减去7，共计算五次
+        </TextBlock>
+        <hc:SimplePanel Margin="0,40">
+
+            <hc:SimpleStackPanel HorizontalAlignment="Center"
+                                 VerticalAlignment="Center"
+                                 IsHitTestVisible="False">
+                <TextBlock HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           FontSize="40">
+                    （可在空白处计算，并在白色方块内写下答案）
+                </TextBlock>
+                <UniformGrid Margin="0,25,0,0"
+                             HorizontalAlignment="Center"
+                             VerticalAlignment="Center"
+                             Columns="5"
+                             Rows="1">
+                    <Border Width="224"
+                            Height="120"
+                            Margin="22,0"
+                            Background="White"
+                            BorderBrush="Black"
+                            BorderThickness="1" />
+                    <Border Width="224"
+                            Height="120"
+                            Margin="22,0"
+                            Background="White"
+                            BorderBrush="Black"
+                            BorderThickness="1" />
+                    <Border Width="224"
+                            Height="120"
+                            Margin="22,0"
+                            Background="White"
+                            BorderBrush="Black"
+                            BorderThickness="1" />
+                    <Border Width="224"
+                            Height="120"
+                            Margin="22,0"
+                            Background="White"
+                            BorderBrush="Black"
+                            BorderThickness="1" />
+                    <Border Width="224"
+                            Height="120"
+                            Margin="22,0"
+                            Background="White"
+                            BorderBrush="Black"
+                            BorderThickness="1" />
+                </UniformGrid>
+            </hc:SimpleStackPanel>
+            <controls:Crs_DrawPanel DrawStrokes="{Binding StrokeItem}" />
+        </hc:SimplePanel>
+    </DockPanel>
+</UserControl>

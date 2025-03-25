@@ -1,0 +1,612 @@
+[
+    {
+        "Story": "今天下午3点，市中心的新书店正式开张。书店内提供了各种畅销书籍和咖啡。开张当天，有50名顾客到场。书店的装潢风格现代而温馨，墙壁上挂着一些艺术画作，营造出一种轻松愉悦的氛围。书店的老板是一位热爱阅读的中年男子，他亲自迎接顾客，并向他们推荐一些值得一读的好书。除了书籍，书店还提供各种口味的咖啡和小点心，顾客们可以坐在舒适的沙发上，一边品尝咖啡，一边享受阅读的乐趣。开张活动吸引了许多附近的居民和爱书之人，他们纷纷前来参观和选购书籍。书店还特别准备了一些书签作为小礼物，送给前来的顾客，以表达对他们的欢迎和感谢。整个下午，书店内充满了欢声笑语，人们在这里找到了属于自己的阅读空间。",
+        "QuestionsList": [
+            {
+                "Question": "书店在今天什么时候开张？",
+                "OptionA": "下午3点",
+                "OptionB": "中午12点",
+                "OptionC": "晚上8点",
+                "OptionD": "上午10点",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "书店内除了书籍还提供什么？",
+                "OptionA": "咖啡",
+                "OptionB": "饮料",
+                "OptionC": "零食",
+                "OptionD": "玩具",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "开张当天有多少顾客到场？",
+                "OptionA": "30",
+                "OptionB": "50",
+                "OptionC": "70",
+                "OptionD": "90",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "书店的装潢风格是怎样的？",
+                "OptionA": "古典",
+                "OptionB": "现代",
+                "OptionC": "传统",
+                "OptionD": "简约",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "书店老板亲自做了什么？",
+                "OptionA": "打扫",
+                "OptionB": "迎接顾客",
+                "OptionC": "煮咖啡",
+                "OptionD": "整理书籍",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "顾客们可以在书店里做什么？",
+                "OptionA": "看电影",
+                "OptionB": "品尝咖啡",
+                "OptionC": "玩游戏",
+                "OptionD": "听音乐",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "书店准备了什么小礼物？",
+                "OptionA": "书签",
+                "OptionB": "鲜花",
+                "OptionC": "糖果",
+                "OptionD": "帽子",
+                "Answer": "OptionA"
+            }
+        ]
+    },
+    {
+        "Story": "阳光图书馆是一座历史悠久的建筑，坐落在市中心的一个安静角落。它以其丰富的藏书和舒适的阅读环境而闻名。最近，图书馆决定进行一次大规模的装修，以提升读者的阅读体验。装修工作从昨天开始，预计将持续两周时间。在这段时间里，图书馆每天上午9点到下午5点仍然对公众开放。尽管装修可能会带来一些不便，但图书馆的工作人员努力确保读者能够继续享受阅读的乐趣。他们设置了临时的阅读区域，并在图书馆内张贴了指示牌，引导读者前往未受装修影响的区域。此外，图书馆还举办了一些特别的活动，如讲座和儿童故事会，以吸引更多的读者前来。尽管如此，一些读者还是对装修期间的噪音表示了担忧。图书馆管理层表示，他们会尽量减少对读者的影响，并在装修完成后提供一个更加舒适的阅读环境。",
+        "QuestionsList": [
+            {
+                "Question": "图书馆装修的目的是什么？",
+                "OptionA": "扩大空间",
+                "OptionB": "增加藏书",
+                "OptionC": "提升阅读体验",
+                "OptionD": "更换设备",
+                "Answer": "OptionC"
+            },
+            {
+                "Question": "图书馆装修期间每天开放的时间是？",
+                "OptionA": "下午2点到晚上8点",
+                "OptionB": "全天",
+                "OptionC": "上午10点到下午6点",
+                "OptionD": "上午9点到下午5点",
+                "Answer": "OptionD"
+            },
+            {
+                "Question": "图书馆设置了什么来引导读者？",
+                "OptionA": "指示牌",
+                "OptionB": "地图",
+                "OptionC": "志愿者",
+                "OptionD": "电子屏幕",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "图书馆在装修期间举办了哪些活动？",
+                "OptionA": "讲座",
+                "OptionB": "展览",
+                "OptionC": "比赛",
+                "OptionD": "拍卖",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "读者对装修期间的什么表示担忧？",
+                "OptionA": "灰尘",
+                "OptionB": "噪音",
+                "OptionC": "拥挤",
+                "OptionD": "费用",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "图书馆装修完成后会提供什么？",
+                "OptionA": "更舒适的环境",
+                "OptionB": "更多的藏书",
+                "OptionC": "更先进的设备",
+                "OptionD": "更宽敞的空间",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "图书馆的名字叫什么？",
+                "OptionA": "花语图书馆",
+                "OptionB": "蓝纪图书馆",
+                "OptionC": "阳光图书馆",
+                "OptionD": "春风图书馆",
+                "Answer": "OptionC"
+            }
+        ]
+    },
+    {
+        "Story": "在城市的繁华地段，一家受欢迎的餐厅在本周一推出了新的菜单。新菜单经过精心设计，包含了10道不同的菜品，满足素食者需求的素食选项。餐厅的厨师们为了这次菜单更新，特意从本地市场挑选了新鲜的食材，确保每一道菜品都能呈现出最佳的口感和风味。新菜单一经推出，便吸引了众多顾客前来品尝。餐厅内部装饰也焕然一新，墙壁上增加了一些与新菜品相关的艺术画作，营造出一种温馨而优雅的用餐氛围。顾客们在品尝美食的同时，还能欣赏到这些美丽的画作，享受一次视觉与味觉的双重盛宴。餐厅的经理表示，他们将继续努力为顾客提供优质服务。",
+        "QuestionsList": [
+            {
+                "Question": "餐厅的新菜单包含多少道菜品？",
+                "OptionA": "12道",
+                "OptionB": "10道",
+                "OptionC": "8道",
+                "OptionD": "15道",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "新菜单中有哪些选项？",
+                "OptionA": "素食",
+                "OptionB": "肉类",
+                "OptionC": "甜品",
+                "OptionD": "汤品",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "厨师们从哪里挑选食材？",
+                "OptionA": "超市",
+                "OptionB": "本地市场",
+                "OptionC": "农场",
+                "OptionD": "进口商",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "餐厅墙壁上的内部装饰增加了什么？",
+                "OptionA": "新的桌椅",
+                "OptionB": "音乐",
+                "OptionC": "灯光",
+                "OptionD": "艺术画作",
+                "Answer": "OptionD"
+            },
+            {
+                "Question": "顾客在用餐时还能享受什么？",
+                "OptionA": "表演",
+                "OptionB": "欣赏画作",
+                "OptionC": "游戏",
+                "OptionD": "讲座",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "餐厅经理表示将继续提供什么？",
+                "OptionA": "免费餐点",
+                "OptionB": "优质服务",
+                "OptionC": "折扣",
+                "OptionD": "礼品",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "新菜单的推出吸引了多少顾客？",
+                "OptionA": "少数",
+                "OptionB": "一些",
+                "OptionC": "众多",
+                "OptionD": "没有",
+                "Answer": "OptionC"
+            }
+        ]
+    },
+    {
+        "Story": "市游泳池今天举行了一场备受瞩目的游泳比赛，吸引了众多游泳爱好者和观众前来观看。比赛包括50米自由泳项目。比赛开始时间是下午2点，阳光明媚，天气晴朗，游泳池边坐满了热情的观众。选手们在比赛前进行了充分的热身，准备迎接挑战。随着裁判员的一声哨响，50米自由泳比赛正式开始，选手们像离弦的箭一般跃入水中，奋力向前游去。观众们屏息凝视，为选手们加油助威。紧接着，100米蛙泳比赛也拉开了帷幕，选手们在水中展现出优雅而有力的动作，赢得了观众的阵阵掌声。比赛结束后，主办方为获胜者颁发了奖牌，选手们互相拥抱，庆祝这次成功的比赛。",
+        "QuestionsList": [
+            {
+                "Question": "比赛包括哪个项目？",
+                "OptionA": "自由泳",
+                "OptionB": "蛙泳",
+                "OptionC": "蝶泳",
+                "OptionD": "仰泳",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "比赛开始时间是几点？",
+                "OptionA": "上午10点",
+                "OptionB": "中午12点",
+                "OptionC": "下午2点",
+                "OptionD": "晚上6点",
+                "Answer": "OptionC"
+            },
+            {
+                "Question": "选手们在比赛前做了什么？",
+                "OptionA": "休息",
+                "OptionB": "热身",
+                "OptionC": "交谈",
+                "OptionD": "拍照",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "观众们在比赛中做了什么？",
+                "OptionA": "拍照",
+                "OptionB": "加油",
+                "OptionC": "交谈",
+                "OptionD": "休息",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "比赛结束后，获胜者得到了什么？",
+                "OptionA": "奖牌",
+                "OptionB": "证书",
+                "OptionC": "奖金",
+                "OptionD": "礼物",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "选手们在比赛结束后做了什么？",
+                "OptionA": "庆祝",
+                "OptionB": "休息",
+                "OptionC": "交谈",
+                "OptionD": "拍照",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "比赛当天的天气如何？",
+                "OptionA": "阴天",
+                "OptionB": "下雨",
+                "OptionC": "晴朗",
+                "OptionD": "多云",
+                "Answer": "OptionC"
+            }
+        ]
+    },
+    {
+        "Story": "周五，博物馆将开设一个新展览，吸引了众多历史爱好者和游客前来参观。展览将展出15件珍贵的古董，涵盖了从古代到近代的各个时期。这些古董主要包括陶瓷。展览于上午10点正式开放，博物馆内人头攒动，参观者们纷纷驻足欣赏这些珍贵的历史文物。讲解员详细地为观众们讲解每件展品的历史背景和艺术价值，让参观者们对这些古董有了更深入的了解。展览还特别设置了互动环节，观众们可以通过触摸屏了解更多的文物信息。参观结束后，许多游客在博物馆的纪念品商店购买了一些与展览相关的纪念品，作为此次参观的纪念。",
+        "QuestionsList": [
+            {
+                "Question": "展览将展出多少件古董？",
+                "OptionA": "25件",
+                "OptionB": "20件",
+                "OptionC": "15件",
+                "OptionD": "10件",
+                "Answer": "OptionC"
+            },
+            {
+                "Question": "展览将在哪一天开放？",
+                "OptionA": "周一",
+                "OptionB": "周三",
+                "OptionC": "周五",
+                "OptionD": "周日",
+                "Answer": "OptionC"
+            },
+            {
+                "Question": "展览开放的时间是几点？",
+                "OptionA": "上午9点",
+                "OptionB": "上午10点",
+                "OptionC": "中午12点",
+                "OptionD": "下午2点",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "展览中的古董包括哪种类型？",
+                "OptionA": "陶瓷",
+                "OptionB": "青铜器",
+                "OptionC": "书画",
+                "OptionD": "玉器",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "参观者们在展览中可以做什么？",
+                "OptionA": "拍照",
+                "OptionB": "触摸",
+                "OptionC": "购买",
+                "OptionD": "互动",
+                "Answer": "OptionD"
+            },
+            {
+                "Question": "展览结束后，游客们在哪里购买纪念品？",
+                "OptionA": "售票处",
+                "OptionB": "纪念品商店",
+                "OptionC": "展厅",
+                "OptionD": "入口处",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "讲解员在展览中为观众做了什么？",
+                "OptionA": "拍照",
+                "OptionB": "讲解",
+                "OptionC": "购买",
+                "OptionD": "展示",
+                "Answer": "OptionB"
+            }
+        ]
+    },
+    {
+        "Story": "本周三，大学将举办一个科学讲座，吸引了众多学生和教师前来参加。讲座的主题是宇宙，由著名的天文学家李教授主讲。讲座地点设在礼堂，礼堂内布置得十分庄重，墙上挂着精美的天文图片。下午4点，随着主持人宣布讲座正式开始，李教授走上讲台，开始向大家介绍宇宙的起源和发展。他用生动的语言和丰富的图片，让听众仿佛置身于浩瀚的星海之中。讲座进行到一半时，李教授还邀请了几位学生上台，与他一起进行一个有趣的天文实验。实验结束后，大家对宇宙的奥秘有了更深的理解。讲座持续了一个小时，结束后，许多学生围着李教授提问，讨论得非常热烈。最后，李教授为每位参与者颁发了一本关于宇宙的书籍，以鼓励大家继续探索科学的奥秘。讲座结束后，李教授还亲自为参与者签名。",
+        "QuestionsList": [
+            {
+                "Question": "讲座的主题是什么？",
+                "OptionA": "化学",
+                "OptionB": "宇宙",
+                "OptionC": "生物学",
+                "OptionD": "物理学",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "讲座的主讲人是谁？",
+                "OptionA": "李教授",
+                "OptionB": "林教授",
+                "OptionC": "王教授",
+                "OptionD": "赵教授",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "讲座的地点在哪里？",
+                "OptionA": "图书馆",
+                "OptionB": "实验室",
+                "OptionC": "礼堂",
+                "OptionD": "教室",
+                "Answer": "OptionC"
+            },
+            {
+                "Question": "讲座开始的时间是什么时候？",
+                "OptionA": "下午2点",
+                "OptionB": "下午4点",
+                "OptionC": "下午6点",
+                "OptionD": "晚上8点",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "讲座中进行了什么活动？",
+                "OptionA": "实验",
+                "OptionB": "讨论",
+                "OptionC": "比赛",
+                "OptionD": "表演",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "讲座结束后，李教授做了什么？",
+                "OptionA": "拍照",
+                "OptionB": "提问",
+                "OptionC": "颁奖",
+                "OptionD": "签名",
+                "Answer": "OptionD"
+            },
+            {
+                "Question": "讲座结束后，参与者得到了什么？",
+                "OptionA": "证书",
+                "OptionB": "书籍",
+                "OptionC": "奖品",
+                "OptionD": "纪念品",
+                "Answer": "OptionB"
+            }
+        ]
+    },
+    {
+        "Story": "昨天，小李在网上购买了一件心仪已久的电子产品，他非常期待能够尽快收到。根据快递公司的通知，原定的送货时间是下午3点。小李提前在家等待，准备签收。然而，到了下午3点，快递并没有按时到达。小李有些失望，他打电话给快递公司询问情况。快递员小张解释说，由于交通拥堵，快递服务遭遇了延迟。新的预计送货时间是下午5点。小李虽然有些不高兴，但也理解了快递员的难处，决定继续等待。下午5点，快递终于准时送达，小李签收后，发现包装完好无损，心里的石头终于落了地。他打开包装，看到崭新的电子产品，感到非常满意。快递员也向小李表示了歉意，并承诺以后会尽量避免类似的情况发生。",
+        "QuestionsList": [
+            {
+                "Question": "小李在网上购买了什么？",
+                "OptionA": "衣服",
+                "OptionB": "电子产品",
+                "OptionC": "书籍",
+                "OptionD": "食品",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "小李为什么感到失望？",
+                "OptionA": "快递损坏",
+                "OptionB": "快递延迟",
+                "OptionC": "快递错误",
+                "OptionD": "快递丢失",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "快递员解释了什么情况？",
+                "OptionA": "交通拥堵",
+                "OptionB": "天气原因",
+                "OptionC": "订单错误",
+                "OptionD": "系统故障",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "新的预计送货时间是几点？",
+                "OptionA": "下午3点",
+                "OptionB": "下午4点",
+                "OptionC": "下午5点",
+                "OptionD": "下午6点",
+                "Answer": "OptionC"
+            },
+            {
+                "Question": "送快递的是谁？",
+                "OptionA": "小章",
+                "OptionB": "小林",
+                "OptionC": "小王",
+                "OptionD": "小张",
+                "Answer": "OptionD"
+            },
+            {
+                "Question": "小李对快递的产品满意吗？",
+                "OptionA": "满意",
+                "OptionB": "不满意",
+                "OptionC": "一般",
+                "OptionD": "无所谓",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "快递员向小李表示了什么？",
+                "OptionA": "感谢",
+                "OptionB": "歉意",
+                "OptionC": "祝贺",
+                "OptionD": "警告",
+                "Answer": "OptionB"
+            }
+        ]
+    },
+    {
+        "Story": "昨天，市中心的公园举办了一场盛大的音乐会。音乐会的主题是古典音乐，吸引了众多音乐爱好者前来欣赏。音乐会于晚上7点开始，公园内布置得十分精致，舞台背景是一幅巨大的古典风格画作。观众们早早地来到公园，找好位置坐下，期待着演出的开始。随着指挥家的一声令下，乐团开始演奏，美妙的旋律在空中回荡。演出中，乐团还特别演奏了一首贝多芬的《命运交响曲》，赢得了观众的热烈掌声。音乐会结束后，许多观众在公园内拍照留念，记录下这美好的夜晚。",
+        "QuestionsList": [
+            {
+                "Question": "音乐会的主题是什么？",
+                "OptionA": "爵士乐",
+                "OptionB": "古典音乐",
+                "OptionC": "摇滚乐",
+                "OptionD": "流行音乐",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "音乐会开始的时间是几点？",
+                "OptionA": "下午5点",
+                "OptionB": "晚上9点",
+                "OptionC": "晚上8点",
+                "OptionD": "晚上7点",
+                "Answer": "OptionD"
+            },
+            {
+                "Question": "舞台背景是什么？",
+                "OptionA": "现代画作",
+                "OptionB": "自然风光",
+                "OptionC": "古典风格画作",
+                "OptionD": "抽象艺术",
+                "Answer": "OptionC"
+            },
+            {
+                "Question": "乐团演奏了哪首著名曲目？",
+                "OptionA": "天鹅湖",
+                "OptionB": "命运交响曲",
+                "OptionC": "四季",
+                "OptionD": "胡桃夹子",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "观众们在音乐会结束后做了什么？",
+                "OptionA": "离开",
+                "OptionB": "拍照",
+                "OptionC": "交谈",
+                "OptionD": "跳舞",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "音乐会吸引了哪些人？",
+                "OptionA": "学生",
+                "OptionB": "音乐爱好者",
+                "OptionC": "游客",
+                "OptionD": "艺术家",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "音乐会的地点在哪里？",
+                "OptionA": "剧院",
+                "OptionB": "广场",
+                "OptionC": "体育馆",
+                "OptionD": "公园",
+                "Answer": "OptionD"
+            }
+        ]
+    },
+    {
+        "Story": "今天上午，学校举行了一场运动会。学生们都积极参与，运动场上充满了欢声笑语。运动会包括了跑步等项目。比赛开始前，学生们在操场上进行了热身运动，以确保比赛时能够发挥出最佳水平。随着裁判员的一声哨声，比赛正式开始。在跑步比赛中，学生们你追我赶，奋力向前。跳远比赛中，学生们展示了出色的跳跃能力，赢得了观众的阵阵掌声。投掷铅球比赛中，学生们用尽全力，铅球在空中划出一道道优美的弧线。比赛结束后，学校为获胜者颁发了奖状，鼓励他们继续努力，争取更好的成绩。",
+        "QuestionsList": [
+            {
+                "Question": "运动会包括哪种项目？",
+                "OptionA": "篮球",
+                "OptionB": "跑步",
+                "OptionC": "游泳",
+                "OptionD": "足球",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "学生们在比赛前做了什么？",
+                "OptionA": "休息",
+                "OptionB": "拍照",
+                "OptionC": "交谈",
+                "OptionD": "热身",
+                "Answer": "OptionD"
+            },
+            {
+                "Question": "比赛开始的信号是什么？",
+                "OptionA": "鼓声",
+                "OptionB": "铃声",
+                "OptionC": "哨声",
+                "OptionD": "音乐",
+                "Answer": "OptionC"
+            },
+            {
+                "Question": "跳远比赛中，学生们展示了什么能力？",
+                "OptionA": "速度",
+                "OptionB": "力量",
+                "OptionC": "跳跃",
+                "OptionD": "耐力",
+                "Answer": "OptionC"
+            },
+            {
+                "Question": "比赛结束后，学校颁发了什么？",
+                "OptionA": "证书",
+                "OptionB": "奖状",
+                "OptionC": "奖杯",
+                "OptionD": "奖品",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "运动会的地点在哪里？",
+                "OptionA": "操场",
+                "OptionB": "体育馆",
+                "OptionC": "教室",
+                "OptionD": "礼堂",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "运动会的氛围如何？",
+                "OptionA": "严肃",
+                "OptionB": "紧张",
+                "OptionC": "轻松",
+                "OptionD": "愉快",
+                "Answer": "OptionD"
+            }
+        ]
+    },
+    {
+        "Story": "昨天，社区举办了一场环保活动，旨在提高居民的环保意识。活动内容是讲座。讲座由张老师主讲，他详细地介绍了垃圾分类的重要性和方法。讲座结束后，居民们纷纷前往旧物交换市场，将自己不再需要的物品带来交换。市场上摆满了旧书，大家互相挑选，既节省了资源，又增进了邻里之间的友谊。活动还设置了问答环节，参与者答对问题可以获得小礼品。整个活动持续了3个小时，居民们积极参与，纷纷表示收获颇丰。",
+        "QuestionsList": [
+            {
+                "Question": "环保活动的目的是什么？",
+                "OptionA": "娱乐",
+                "OptionB": "教育",
+                "OptionC": "盈利",
+                "OptionD": "社交",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "活动内容是什么？",
+                "OptionA": "讲座",
+                "OptionB": "比赛",
+                "OptionC": "展览",
+                "OptionD": "表演",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "讲座的主讲人是谁？",
+                "OptionA": "李老师",
+                "OptionB": "王老师",
+                "OptionC": "张老师",
+                "OptionD": "赵老师",
+                "Answer": "OptionC"
+            },
+            {
+                "Question": "旧物交换市场上有哪些物品？",
+                "OptionA": "旧书",
+                "OptionB": "玩具",
+                "OptionC": "衣物",
+                "OptionD": "杯具",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "活动还设置了什么环节？",
+                "OptionA": "游戏",
+                "OptionB": "问答",
+                "OptionC": "抽奖",
+                "OptionD": "拍卖",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "活动持续了多久？",
+                "OptionA": "1",
+                "OptionB": "2",
+                "OptionC": "3",
+                "OptionD": "4",
+                "Answer": "OptionC"
+            },
+            {
+                "Question": "居民们对活动的评价如何？",
+                "OptionA": "一般",
+                "OptionB": "不满意",
+                "OptionC": "收获颇丰",
+                "OptionD": "无所谓",
+                "Answer": "OptionC"
+            }
+        ]
+    }
+]
