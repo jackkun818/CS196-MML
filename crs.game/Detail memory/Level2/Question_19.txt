@@ -1,0 +1,8 @@
+Difficulty 2
+The Museum's Modern Art Exhibition displays 25 works, and the exhibition will last until the end of the month.
+Question 19: When will the exhibition in the art gallery last?
+Early next month
+next week
+End of the month
+At the end of next month
+2

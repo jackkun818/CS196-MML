@@ -83,7 +83,7 @@ namespace crs.window.ViewModels
 
             if (_reportItems.Count == 0)
             {
-                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("请选择");
+                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("Please select");
                 return;
             }
             else
@@ -127,10 +127,10 @@ namespace crs.window.ViewModels
 
             var viewName = (selectedItem.Item1, parameter.Mode) switch
             {
-                (ReportType.评估报告, "MoCA") => Crs_Dialog.MocaReport,
-                (ReportType.评估报告, "MMSE") => Crs_Dialog.MmseReport,
-                (ReportType.评估报告, _) => Crs_Dialog.EvaluateReport,
-                (ReportType.训练报告, _) => Crs_Dialog.TrainReport,
+                (ReportType.Evaluation report, "MoCA") => Crs_Dialog.MocaReport,
+                (ReportType.Evaluation report, "MMSE") => Crs_Dialog.MmseReport,
+                (ReportType.Evaluation report, _) => Crs_Dialog.EvaluateReport,
+                (ReportType.Training Report, _) => Crs_Dialog.TrainReport,
                 _ => throw new NotImplementedException()
             };
 
@@ -160,7 +160,7 @@ namespace crs.window.ViewModels
 
             if (patient == null)
             {
-                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("当前患者信息为空");
+                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("The current patient information is empty");
                 return;
             }
 
@@ -169,19 +169,19 @@ namespace crs.window.ViewModels
             {
                 exception.Exception = async ex =>
                 {
-                    exception.Message = "获取数据报告信息错误";
+                    exception.Message = "Obtain data report information error";
                     return (false, $"{exception.Message},{ex.Message}", null);
                 };
 
 
                 var patientId = patient.Id;
 
-                // 查询数据库
+                // Query the database
 
                 var programQueryable = selectedItem.Item1 switch
                 {
-                    ReportType.评估报告 => db.Programs.AsNoTracking().Where(m => m.PatientId == patientId && m.Eval == true),
-                    ReportType.训练报告 => db.Programs.AsNoTracking().Where(m => m.PatientId == patientId && (m.Eval == null || m.Eval == false)),
+                    ReportType.Evaluation report => db.Programs.AsNoTracking().Where(m => m.PatientId == patientId && m.Eval == true),
+                    ReportType.Training Report => db.Programs.AsNoTracking().Where(m => m.PatientId == patientId && (m.Eval == null || m.Eval == false)),
                     _ => throw new NotImplementedException()
                 };
 
@@ -218,7 +218,7 @@ namespace crs.window.ViewModels
             var items = results.Select(m =>
             {
                 /*
-                 报告上只显示开始时间不用显示结束时间
+                 Only the start time is displayed on the report, but no end time is required.
                  */
                 var dateTime = $"{m.program.ActStartTime?.ToString("yyyy-MM-dd HH:mm")}";
                 //var dateTime = $"{(m.program.ActStartTime?.ToString("yyyy-MM-dd HH:mm") ?? "--")}~{(m.program.ActEndTime?.ToString("HH:mm") ?? "--")}";

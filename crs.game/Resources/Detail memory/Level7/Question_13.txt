@@ -1,0 +1,8 @@
+Difficulty 7
+The gym launched a new yoga class on Monday. The course will be held every day from 9:00 to 10:00.
+Question 13: When is the day of a yoga class?
+1:00 to 2:00 pm
+7 to 8 pm
+9:00 to 10:00 a.m.
+12:00 to 1:00 noon
+2

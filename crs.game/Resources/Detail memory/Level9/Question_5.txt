@@ -1,0 +1,8 @@
+Difficulty 9
+The City Art Exhibition was recently held at the City Museum, with 15 new works exhibited. The exhibition opens from 10 a.m. to 5 p.m., attracting many art lovers.
+Question 5: How many new works were displayed at the exhibition?
+10 width
+20 width
+12 widths
+15 width
+3

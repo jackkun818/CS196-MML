@@ -300,7 +300,7 @@ namespace test.websocket
         }
 
         /// <summary>
-        /// 更新WriteableBitmap
+        /// renewWriteableBitmap
         /// </summary>
         /// <param name="source"></param>
         /// <param name="bitmap"></param>

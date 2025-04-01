@@ -28,17 +28,17 @@
                     <behaviors:ChangePropertyAction
                         PropertyName="OriginName"
                         TargetObject="{Binding}"
-                        Value="定向力" />
+                        Value="Directional force" />
                 </behaviors:EventTrigger>
             </behaviors:Interaction.Triggers>
-            定向力
+            Directional force
         </TextBlock>
         <StackPanel
             Margin="0,30,0,0"
             VerticalAlignment="Center"
             DockPanel.Dock="Top"
             Orientation="Horizontal">
-            <TextBlock VerticalAlignment="Center" FontSize="28">我们现在在哪里</TextBlock>
+            <TextBlock VerticalAlignment="Center" FontSize="28">Where are we now</TextBlock>
             <ContentControl
                 Margin="10,0,0,0"
                 HorizontalAlignment="Center"
@@ -46,7 +46,7 @@
                 ContentTemplate="{StaticResource MMSE_MoCA_ToolTipTemplate}">
                 <ContentControl.Content>
                     <TextBlock TextTrimming="CharacterEllipsis" TextWrapping="Wrap">
-                        评分：请依次提问，“您能告诉我你住在什么省市吗”（区县、街道、什么地方、第几层楼）每答对一题得一分。
+                        Rating: Please ask questions in turn.“Can you tell me what province and city you live in”（Districts, counties, streets, places, and floors）Get one point for each correct answer.
                     </TextBlock>
                 </ContentControl.Content>
             </ContentControl>
@@ -57,7 +57,7 @@
                 BorderBrush="Transparent"
                 Click="ExecuteAudioPlayClick"
                 Cursor="Hand"
-                Tag="请您告诉我你住在哪个省市，哪个区或县，哪个街道或乡，什么地方，第几层楼">
+                Tag="Please tell me which province, city, district or county, street or township, place or floor you live in, which floor you have.">
 
                 <Button.Content>
                     <Image
@@ -65,7 +65,7 @@
                         Height="24"
                         VerticalAlignment="Center"
                         Cursor="Hand"
-                        Source="{StaticResource crs_声音}"
+                        Source="{StaticResource crs_sound}"
                         Stretch="Uniform" />
                 </Button.Content>
             </Button>
@@ -87,7 +87,7 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     TextTrimming="CharacterEllipsis">
-                    省市？
+                    Province and city?
                 </TextBlock>
             </DockPanel>
             <DockPanel>
@@ -102,7 +102,7 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     TextTrimming="CharacterEllipsis">
-                    区或县？
+                    District or county?
                 </TextBlock>
             </DockPanel>
             <DockPanel>
@@ -117,7 +117,7 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     TextTrimming="CharacterEllipsis">
-                    街道或乡？
+                    Street or township?
                 </TextBlock>
             </DockPanel>
             <DockPanel>
@@ -132,7 +132,7 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     TextTrimming="CharacterEllipsis">
-                    什么地方？
+                    Where?
                 </TextBlock>
             </DockPanel>
             <DockPanel>
@@ -147,7 +147,7 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     TextTrimming="CharacterEllipsis">
-                    第几层楼？
+                    Which floor?
                 </TextBlock>
             </DockPanel>
         </UniformGrid>

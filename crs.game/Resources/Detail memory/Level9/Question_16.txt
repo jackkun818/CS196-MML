@@ -1,0 +1,8 @@
+Difficulty 9
+The city’s winter market has just opened, with 20 stalls selling various handicrafts on the market. The market is open from 10 a.m. to 6 p.m.
+Question 16: How many stalls are there in the winter market?
+15
+20
+25
+18 pcs
+1

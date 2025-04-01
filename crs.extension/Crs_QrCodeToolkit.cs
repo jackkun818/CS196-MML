@@ -12,7 +12,7 @@ namespace crs.extension
     public static class Crs_QrCodeToolkit
     {
         /// <summary>
-        /// 返回二维码图片
+        /// Return to QR code picture
         /// </summary>
         public static Bitmap Encode(string text)
         {
@@ -25,13 +25,13 @@ namespace crs.extension
         }
 
         /// <summary>
-        /// 定义参数,生成二维码
+        /// Define parameters,Generate QR code
         /// </summary>
         public static void Create(string text, string path)
             => Encode(text).Save(path);
 
         /// <summary>
-        /// 返回二维码定义的字符串
+        /// Return the string defined by the QR code
         /// </summary>
         public static string Decode(Bitmap image)
         {
@@ -41,7 +41,7 @@ namespace crs.extension
         }
 
         /// <summary>
-        /// 返回二维码定义的字符串
+        /// Return the string defined by the QR code
         /// </summary>
         public static string Decode(string path)
             => Decode(new Bitmap(path));

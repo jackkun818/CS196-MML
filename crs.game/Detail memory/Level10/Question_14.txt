@@ -1,0 +1,8 @@
+Difficulty 10
+The restaurant's signature dishes include roast duck, spicy hotpot and sushi. Restaurants launch new dishes every month, and sometimes offer special discounts on holidays and weekends. The restaurant also offers takeaway and reservation services.
+Question: What are the restaurant’s signature dishes?
+Noodles and salad
+Barbecue and stir-fry
+Roast duck, spicy hot pot and sushi
+Hamburgers and pizza
+2

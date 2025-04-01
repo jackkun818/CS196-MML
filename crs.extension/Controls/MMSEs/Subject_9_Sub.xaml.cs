@@ -17,13 +17,13 @@ using System.Windows.Shapes;
 namespace crs.extension.Controls.MMSEs
 {
     /// <summary>
-    /// Subject_9_Sub.xaml 的交互逻辑
+    /// Subject_9_Sub.xaml Interaction logic
     /// </summary>
     public partial class Subject_9_Sub : UserControl
     {
         static ConcurrentDictionary<int, string> voiceDict = new ConcurrentDictionary<int, string>
         {
-            [0] = "等会治疗师会给您一张纸，请您按照我说的去做。现在开始,用右手拿着这张纸，用两只手将它对折起来，放在你的左腿上",
+            [0] = "The therapist will give you a piece of paper later, please do as I said. Start now,Hold the paper with your right hand, fold it in half with both hands and place it on your left leg",
         };
 
         public Subject_9_Sub()
@@ -40,7 +40,7 @@ namespace crs.extension.Controls.MMSEs
 
         private async void Subject_Sub_Loaded(object sender, RoutedEventArgs e)
         {
-            // 播放语音提示、启动定时器操作等
+            // Play voice prompts, start timer operations, etc.
 
             Crs_WaveOutToolkit.AudioCancel();
             _ = Crs_WaveInToolkit.RecordAudioCompleteAsync(true);

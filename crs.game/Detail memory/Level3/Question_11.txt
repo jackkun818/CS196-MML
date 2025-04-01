@@ -1,0 +1,8 @@
+Difficulty 3
+The art gallery exhibits 20 modern art works, and the exhibition will last from the 15th of this month until the end of the month.
+Question 11: When will the art gallery exhibition last?
+No. 15
+Early next month
+next week
+End of the month
+3

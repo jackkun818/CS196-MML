@@ -97,7 +97,7 @@ namespace crs.dialog.Views
 
             if (selectedItem.IsLast)
             {
-                var msg = "已完成全部答题！";
+                var msg = "Completed all answers！";
                 await Crs_DialogEx.MessageBoxShow(Crs_DialogToken.SubTopMessageBox).GetMessageBoxResultAsync(msg);
                 return;
             }

@@ -193,7 +193,7 @@ namespace crs.dialog.ViewModels
 
         async void ExecuteCancelCommand()
         {
-            if (await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("训练还未完成，是否退出？", button: MessageBoxButton.OKOrCancel) == null)
+            if (await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("The training has not been completed yet, will you exit?", button: MessageBoxButton.OKOrCancel) == null)
             {
                 return;
             }
@@ -231,7 +231,7 @@ namespace crs.dialog.ViewModels
 
             if (explanationExample == null)
             {
-                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("讲解示例未实现");
+                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("Explanation example not implemented");
                 return;
             }
 
@@ -241,7 +241,7 @@ namespace crs.dialog.ViewModels
 
             explanationExample.GameBeginAction = ExecuteStartCommand;
             explanationExample.VoicePlayFunc = async message => await (gameHost?.VoicePlayAsync(message) ?? Task.CompletedTask);
-            //LJN,在讲解模块开始的时候就需要把RuleAction赋值，不然无法调用对应的委托
+            //LJN,You need to start the explanation moduleRuleActionAssign value, otherwise the corresponding delegate will not be called
             explanationExample.RuleAction = async rule => gameHost?.SetRuleContent(rule);
             explanationExample.SetTitleVisibleAction = Visible => gameHost?.SetTitleVisible(Visible);
             //LJN
@@ -305,7 +305,7 @@ namespace crs.dialog.ViewModels
         async void ExecuteStopCommand()
         {
             bool? result;
-            if ((result = await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("训练还未完成，是否中断训练并生成报告？", button: MessageBoxButton.CustomReport)) == null)
+            if ((result = await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("Training has not been completed, is it interrupted and a report is generated?", button: MessageBoxButton.CustomReport)) == null)
             {
                 return;
             }
@@ -321,12 +321,12 @@ namespace crs.dialog.ViewModels
                 GameStatus = false;
                 /*
                  LJN
-                20241106新需求：点击 医生端的“结束训练”后，选择“生成报告”会有两个弹窗
-                原因是在选择生成报告后程序会多一个窗口出来，因此修改此部分显示逻辑
-                解决方案：多加IfGenerate标志位，来修改弹窗显示的内容
+                20241106 New Requirements: Click Doctor's side“End training”Afterwards, select“Generate a report”There will be two pop-up windows
+                The reason is that after selecting to generate a report, the program will have an extra window, so modify this part of the display logic.
+                Solution: MoreIfGenerateFlags to modify the content displayed in the pop-up window
                  */
-                //这个弹窗合并到TryProgramSelectedChanged()中
-                //await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("中断并生成报告成功");
+                //This pop-up window merged intoTryProgramSelectedChanged()middle
+                //await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("Interrupt and report generation successfully");
             }
             else
             {
@@ -402,26 +402,26 @@ namespace crs.dialog.ViewModels
 
                     /*
                         LJN
-                    20241106新需求：点击 医生端的“结束评估”后，选择“生成报告”会有两个弹窗
-                    原因是在选择生成报告后程序会多一个窗口出来，因此修改此部分显示逻辑
-                    解决方案：多加IfGenerate标志位，来修改弹窗显示的内容
+                    20241106 New Requirements: Click Doctor's side“End the assessment”Afterwards, select“Generate a report”There will be two pop-up windows
+                    The reason is that after selecting to generate a report, the program will have an extra window, so modify this part of the display logic.
+                    Solution: MoreIfGenerateFlags to modify the content displayed in the pop-up window
                         */
 
                     /*
-                     IfGenerate = true, IfEnd=false,中断并要生成报告
-                    IfGenerate = false, IfEnd=false,中断但不要生成报告
-                    IfGenerate = false, IfEnd=true,正常结束，同时生成报告
-                    IfGenerate = true, IfEnd=true,正常结束，同时生成报告
+                     IfGenerate = true, IfEnd=false,interrupt and report to be generated
+                    IfGenerate = false, IfEnd=false,Interrupt but don't generate a report
+                    IfGenerate = false, IfEnd=true,End normally, and generate a report at the same time
+                    IfGenerate = true, IfEnd=true,End normally, and generate a report at the same time
                      */
                     if (IfEnd == false)
-                    {//是中断的时候才会进入这个逻辑，正常结束的弹窗不在这个函数的逻辑内处理，而是在gameBase.GameEndAction中
+                    {//This logic will only enter when the interrupt is interrupted. The pop-up window that ends normally is not processed within the logic of this function, but isgameBase.GameEndActionmiddle
                         if (IfGenerate)
-                        {//如果是要生成报告的
-                            await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("训练结束，报告已保存至数据中心");
+                        {//If you want to generate a report
+                            await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("The training is over and the report has been saved to the data center");
                         }
                         else
-                        {//如果是不要生成报告的
-                            await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("训练结束");
+                        {//If so, don't generate a report
+                            await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("Training ends");
                         }
                     }
 
@@ -512,20 +512,20 @@ namespace crs.dialog.ViewModels
             var type = assembly?.GetType($"crs.game.Games.{selectedItem.Mode}");
             if (type == null)
             {
-                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync($"模块“{selectedItem.Mode}”未实现");
+                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync($"Module“{selectedItem.Mode}”Not implemented");
                 return false;
             }
 
             var constructorInfo = type.GetConstructor(Type.EmptyTypes);
             if (constructorInfo == null)
             {
-                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync($"模块“{selectedItem.Mode}”没有定义“无参构造函数”");
+                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync($"Module“{selectedItem.Mode}”No definition“No parameter constructor”");
                 return false;
             }
 
             if (type.BaseType != typeof(BaseUserControl) && type.BaseType != typeof(UserControl))
             {
-                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync($"模块“{selectedItem.Mode}”不是“BaseUserControl类型”或“UserControl类型”");
+                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync($"Module“{selectedItem.Mode}”no“BaseUserControltype”or“UserControltype”");
                 return false;
             }
 
@@ -533,7 +533,7 @@ namespace crs.dialog.ViewModels
             var gameBase = instance as IGameBase;
             if (gameBase == null)
             {
-                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync($"模块“{selectedItem.Mode}”未实现“IGameBase接口”");
+                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync($"Module“{selectedItem.Mode}”Not implemented“IGameBaseinterface”");
                 return false;
             }
 
@@ -561,7 +561,7 @@ namespace crs.dialog.ViewModels
                 GameStatus = false;
 
                 GameClear();
-                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("训练已完成，报告已保存至数据中心");
+                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("Training has been completed and the report has been saved to the data center");
 
                 await TryProgramSelectedChanged(IfEnd: true);
             });
@@ -634,7 +634,7 @@ namespace crs.dialog.ViewModels
             {
                 exception.Exception = async ex =>
                 {
-                    exception.Message = "获取方案信息错误";
+                    exception.Message = "Error in obtaining the scheme information";
                     return (false, $"{exception.Message},{ex.Message}", null);
                 };
 

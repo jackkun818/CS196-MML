@@ -33,10 +33,10 @@
                        FontWeight="Bold"
                        TextTrimming="CharacterEllipsis"
                        TextWrapping="Wrap">
-                这是命名测试，请您告诉我这个动物的名字
+                This is a naming test, please tell me the name of this animal
             </TextBlock>
             <hc:SimplePanel Margin="0,40">
-                <Image Width="1010" Source="{StaticResource crs_题目插图3_Big}" />
+                <Image Width="1010" Source="{StaticResource crs_Title Illustration 3_Big}" />
             </hc:SimplePanel>
         </DockPanel>
         <DockPanel Width="{Binding ActualWidth, RelativeSource={RelativeSource AncestorType=hc:Carousel}}" DataContext="{Binding ChildrenItems[1]}">
@@ -55,10 +55,10 @@
                        FontWeight="Bold"
                        TextTrimming="CharacterEllipsis"
                        TextWrapping="Wrap">
-                这是命名测试，请您告诉我这个动物的名字
+                This is a naming test, please tell me the name of this animal
             </TextBlock>
             <hc:SimplePanel Margin="0,40">
-                <Image Width="1110" Source="{StaticResource crs_题目插图1_Big}" />
+                <Image Width="1110" Source="{StaticResource crs_Title Illustration 1_Big}" />
             </hc:SimplePanel>
         </DockPanel>
         <DockPanel Width="{Binding ActualWidth, RelativeSource={RelativeSource AncestorType=hc:Carousel}}" DataContext="{Binding ChildrenItems[2]}">
@@ -77,10 +77,10 @@
                        FontWeight="Bold"
                        TextTrimming="CharacterEllipsis"
                        TextWrapping="Wrap">
-                这是命名测试，请您告诉我这个动物的名字
+                This is a naming test, please tell me the name of this animal
             </TextBlock>
             <hc:SimplePanel Margin="0,40">
-                <Image Width="1030" Source="{StaticResource crs_题目插图2_Big}" />
+                <Image Width="1030" Source="{StaticResource crs_Title Illustration 2_Big}" />
             </hc:SimplePanel>
         </DockPanel>
     </controls:Crs_Carousel>

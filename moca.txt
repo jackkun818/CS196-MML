@@ -1,108 +1,108 @@
 #
 
-#题目名称（ResultDetail.ValueName）命名规则
-#“题目”+“题目索引”+“.”+“子题目索引”+“.”+“题目对错选项索引”
+#Title name（ResultDetail.ValueName）Naming rules
+#“topic”+“Title Index”+“.”+“Sub-title index”+“.”+“Question Right and False Option Index”
 
-#以第一题为例：
-第一题可以划分为3个子题目，分别为 1：“交替连线测验”、2：“复制立方体”、3：“画钟”
+#Take the first question as an example:
+The first question can be divided into 3 sub-questions, respectively 1：“Alternating line test”、2：“Copy cube”、3：“Drawing clock”
 
-其中“交替连线测验”、“复制立方体”都只有1个“题目对错选项”
+in“Alternating line test”、“Copy cube”Only 1“Right or wrong question options”
 
-所以
+so
 
-“交替连线测验”	可以命名为	“题目1.1.1 ”(交替连线测验)
-“复制立方体”	可以命名为	“ ”(复制立方体)
+“Alternating line test”	Can be named	“Question 1.1.1 ”(Alternating line test)
+“Copy cube”	Can be named	“ ”(Copy cube)
 
-而“画钟”有3个“题目对错选项”
+and“Drawing clock”There are 3“Right or wrong question options”
 
-所以
+so
 
-“画钟”	可以命名为	“题目1.3.1 ”(画钟.轮廓)、“题目1.3.2 ”(画钟.数字)、“题目1.3.3 ”(画钟.指针)
+“Drawing clock”	Can be named	“Question 1.3.1 ”(Drawing clock.contour)、“Question 1.3.2 ”(Drawing clock.number)、“Question 1.3.3 ”(Drawing clock.pointer)
 
-因此
+therefore
 
-当数据插入数据库时，就要创建5个实体类保存（ResultDetail）
+When the data is inserted into the database, 5 entity classes are created to save（ResultDetail）
 
-#至于资源（图像、音频）
+#As for resources（Images, audio）
 
-第一题答题方式为”画图“，3个子题目就对应产生3条资源
+The answer to the first question is”Draw pictures“, 3 sub-questions will generate 3 resources
 
-其中
+in
 
-子题目1（题目1.1.1）							对应资源	(Bitmap.1)
-子题目2（题目1.2.1）							对应资源	(Bitmap.2)
-子题目3（题目1.3.1、题目1.3.2、题目1.3.3 ）		对应资源	(Bitmap.3)
+Sub-topic 1（Question 1.1.1）							Corresponding resources	(Bitmap.1)
+Sub-topic 2（Question 1.2.1）							Corresponding resources	(Bitmap.2)
+Sub-topic 3（Question 1.3.1. Question 1.3.2. Question 1.3.3 ）		Corresponding resources	(Bitmap.3)
 
-因此
+therefore
 
-当数据插入数据库时，就要创建3个实体类保存（EvaluateResult）
-保存后返回的EvaluateId，分别赋值到ResultDetail的EvaluateId
+When the data is inserted into the database, you need to create 3 entity classes to save（EvaluateResult）
+Returned after savingEvaluateId, assign values ​​toResultDetailofEvaluateId
 
 #
 
 
-题目1.1.1                            (交替连线测验)								(Bitmap.1)
-题目1.2.1                            (复制立方体)								(Bitmap.2)
-题目1.3.1                            (画钟.轮廓)								(Bitmap.3)
-题目1.3.2                            (画钟.数字)								(Bitmap.3)
-题目1.3.3                            (画钟.指针)								(Bitmap.3)
+Question 1.1.1                            (Alternating line test)								(Bitmap.1)
+Question 1.2.1                            (Copy cube)								(Bitmap.2)
+Question 1.3.1                            (Drawing clock.contour)								(Bitmap.3)
+Question 1.3.2                            (Drawing clock.number)								(Bitmap.3)
+Question 1.3.3                            (Drawing clock.pointer)								(Bitmap.3)
 
-题目2.1.1                            (动物1)									(Audio.1)
-题目2.2.1                            (动物2)									(Audio.2)
-题目2.3.1                            (动物3)									(Audio.3)
+Question 2.1.1                            (Animal 1)									(Audio.1)
+Question 2.2.1                            (Animal 2)									(Audio.2)
+Question 2.3.1                            (Animal 3)									(Audio.3)
 
-题目3.1.1                            (第1次.面孔)								(Audio.1)
-题目3.1.2                            (第1次.天鹅绒)								(Audio.1)
-题目3.1.3                            (第1次.教堂)								(Audio.1)
-题目3.1.4                            (第1次.菊花)								(Audio.1)
-题目3.1.5                            (第1次.红色)								(Audio.1)
-题目3.2.1                            (第2次.面孔)								(Audio.2)
-题目3.2.2                            (第2次.天鹅绒								(Audio.2)
-题目3.2.3                            (第2次.教堂)								(Audio.2)
-题目3.2.4                            (第2次.菊花)								(Audio.2)
-题目3.2.5                            (第2次.红色)								(Audio.2)
+Question 3.1.1                            (The first time.face)								(Audio.1)
+Question 3.1.2                            (The first time.Velvet)								(Audio.1)
+Question 3.1.3                            (The first time.church)								(Audio.1)
+Question 3.1.4                            (The first time.chrysanthemum)								(Audio.1)
+Question 3.1.5                            (The first time.red)								(Audio.1)
+Question 3.2.1                            (The second time.face)								(Audio.2)
+Question 3.2.2                            (The second time.Velvet								(Audio.2)
+Question 3.2.3                            (The second time.church)								(Audio.2)
+Question 3.2.4                            (The second time.chrysanthemum)								(Audio.2)
+Question 3.2.5                            (The second time.red)								(Audio.2)
 
-题目4.1.1                            (顺背)										(Audio.1)
-题目4.2.1                            (倒背)										(Audio.2)
+Question 4.1.1                            (Back)										(Audio.1)
+Question 4.2.1                            (Backward)										(Audio.2)
 
-题目5.1.1                            (52139411806215194511141905112)
+Question 5.1.1                            (52139411806215194511141905112)
 
-题目6.1.1                            (93)										(Bitmap.1)
-题目6.1.2                            (86)										(Bitmap.1)
-题目6.1.3                            (79)										(Bitmap.1)
-题目6.1.4                            (72)										(Bitmap.1)
-题目6.1.5                            (65)										(Bitmap.1)
+Question 6.1.1                            (93)										(Bitmap.1)
+Question 6.1.2                            (86)										(Bitmap.1)
+Question 6.1.3                            (79)										(Bitmap.1)
+Question 6.1.4                            (72)										(Bitmap.1)
+Question 6.1.5                            (65)										(Bitmap.1)
 
-题目7.1.1                            (我只知道今天李明是帮过忙的人)				(Audio.1)
-题目7.2.1                            (当狗在房间的时候，猫总是藏在沙发下)		(Audio.2)
+Question 7.1.1                            (I only know that Li Ming was a helper today)				(Audio.1)
+Question 7.2.1                            (When the dog is in the room, the cat always hides under the sofa)		(Audio.2)
 
-题目8.1.1                            (N≥11个词)									(Audio.1)
+Question 8.1.1                            (N≥11 words)									(Audio.1)
 
-题目9.1.1                            (火车——自行车)								(Audio.1)
-题目9.2.1                            (手表——尺)									(Audio.1)
+Question 9.1.1                            (train——bike)								(Audio.1)
+Question 9.2.1                            (watch——ruler)									(Audio.1)
 
-题目10.1.1                           (没有提示.面孔)							(Audio.1)
-题目10.1.2                           (没有提示.天鹅绒)							(Audio.1)
-题目10.1.3                           (没有提示.教堂)							(Audio.1)
-题目10.1.4                           (没有提示.菊花)							(Audio.1)
-题目10.1.5                           (没有提示.红色)							(Audio.1)
-题目10.2.1                           (类别提示.面孔)							(Audio.1)
-题目10.2.2                           (类别提示.天鹅绒							(Audio.1)
-题目10.2.3                           (类别提示.教堂)							(Audio.1)
-题目10.2.4                           (类别提示.菊花)							(Audio.1)
-题目10.2.5                           (类别提示.红色)							(Audio.1)
-题目10.3.1                           (多选提示.面孔)							(Audio.1)
-题目10.3.2                           (多选提示.天鹅绒							(Audio.1)
-题目10.3.3                           (多选提示.教堂)							(Audio.1)
-题目10.3.4                           (多选提示.菊花)							(Audio.1)
-题目10.3.5                           (多选提示.红色)							(Audio.1)
+Question 10.1.1                           (No prompt.face)							(Audio.1)
+Question 10.1.2                           (No prompt.Velvet)							(Audio.1)
+Question 10.1.3                           (No prompt.church)							(Audio.1)
+Question 10.1.4                           (No prompt.chrysanthemum)							(Audio.1)
+Question 10.1.5                           (No prompt.red)							(Audio.1)
+Question 10.2.1                           (Category Tips.face)							(Audio.1)
+Question 10.2.2                           (Category Tips.Velvet							(Audio.1)
+Question 10.2.3                           (Category Tips.church)							(Audio.1)
+Question 10.2.4                           (Category Tips.chrysanthemum)							(Audio.1)
+Question 10.2.5                           (Category Tips.red)							(Audio.1)
+Question 10.3.1                           (Multiple choice tips.face)							(Audio.1)
+Question 10.3.2                           (Multiple choice tips.Velvet							(Audio.1)
+Question 10.3.3                           (Multiple choice tips.church)							(Audio.1)
+Question 10.3.4                           (Multiple choice tips.chrysanthemum)							(Audio.1)
+Question 10.3.5                           (Multiple choice tips.red)							(Audio.1)
 
-题目11.1.1                           (星期)										(Audio.1)
-题目11.1.2                           (月份)										(Audio.1)
-题目11.1.3                           (年)										(Audio.1)
-题目11.1.4                           (日)										(Audio.1)
-题目11.2.1                           (地方)										(Audio.2)
-题目11.2.2                           (城市)										(Audio.2)
+Question 11.1.1                           (Week)										(Audio.1)
+Question 11.1.2                           (month)										(Audio.1)
+Question 11.1.3                           (Year)										(Audio.1)
+Question 11.1.4                           (day)										(Audio.1)
+Question 11.2.1                           (place)										(Audio.2)
+Question 11.2.2                           (City)										(Audio.2)
 
 
 

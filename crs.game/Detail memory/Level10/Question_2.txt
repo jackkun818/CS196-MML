@@ -1,0 +1,8 @@
+Difficulty 10
+The school holds two sports meetings a year, once in spring and once in autumn. The spring sports meets from March 1 to March 5, and the autumn sports meets from October 1 to October 5. Competition events include running, high jump and shot put.
+Question: When is the school’s autumn sports meeting?
+March 1 to March 5
+October 1 to October 5
+June 1 to June 5
+September 1 to September 5
+1

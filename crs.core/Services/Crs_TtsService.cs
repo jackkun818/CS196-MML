@@ -24,17 +24,17 @@ namespace crs.core.Services
         public class TtsParameter
         {
             /// <summary>
-            /// 输入文本
+            /// Enter text
             /// </summary>
             [JsonProperty("text")] public string Text { get; set; }
 
             /// <summary>
-            /// 选择语音：zh/en
+            /// Select voice:zh/en
             /// </summary>
             [JsonProperty("text_lang")] public string TextLanguage { get; set; } = "zh";
 
             /// <summary>
-            /// 分割符号
+            /// Split symbols
             /// </summary>
             [JsonProperty("cut_punc")] public string CutPunc { get; set; }
         }

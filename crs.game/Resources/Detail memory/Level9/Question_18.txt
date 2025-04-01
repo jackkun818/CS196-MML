@@ -1,0 +1,8 @@
+Difficulty 9
+The auto show was held at the Municipal Exhibition Center, showing 12 new cars. The auto show opens from 10 a.m. until it ends at 5 p.m.
+Question 18: How many new cars were displayed at the auto show?
+8 models
+10 models
+15 models
+12 models
+3

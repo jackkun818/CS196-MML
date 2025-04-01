@@ -31,11 +31,11 @@
                 Margin="10"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Top"
-                FontFamily="黑体"
+                FontFamily="Bold body"
                 FontSize="26"
                 FontWeight="Bold"
                 Foreground="#000000"
-                Text="账号管理" />
+                Text="Account Management" />
             <UniformGrid
                 Grid.Row="1"
                 Columns="1"
@@ -51,7 +51,7 @@
                         VerticalAlignment="Center"
                         FontSize="26"
                         Foreground="#000000"
-                        Text="账号" />
+                        Text="account" />
                     <hc:TextBox
                         Grid.Column="1"
                         Width="300"
@@ -81,14 +81,14 @@
                         VerticalAlignment="Center"
                         FontSize="26"
                         Foreground="#000000"
-                        Text="当前密码" />
+                        Text="Current Password" />
                     <hc:PasswordBox
                         Grid.Column="1"
                         Width="300"
                         Margin="20,6,0,6"
                         Padding="20,0"
                         HorizontalAlignment="Left"
-                        hc:InfoElement.Placeholder="请输入登录密码"
+                        hc:InfoElement.Placeholder="Please enter your login password"
                         hc:InfoElement.ShowClearButton="True"
                         Background="{StaticResource crs_SolidColorBrush.EFEFEF}"
                         FontSize="16"
@@ -107,14 +107,14 @@
                         VerticalAlignment="Center"
                         FontSize="26"
                         Foreground="#000000"
-                        Text="新密码" />
+                        Text="New Password" />
                     <hc:PasswordBox
                         Grid.Column="1"
                         Width="300"
                         Margin="20,6,0,6"
                         Padding="20,0"
                         HorizontalAlignment="Left"
-                        hc:InfoElement.Placeholder="请输入新密码"
+                        hc:InfoElement.Placeholder="Please enter a new password"
                         hc:InfoElement.ShowClearButton="True"
                         Background="{StaticResource crs_SolidColorBrush.EFEFEF}"
                         FontSize="16"
@@ -133,14 +133,14 @@
                         VerticalAlignment="Center"
                         FontSize="26"
                         Foreground="#000000"
-                        Text="确认密码" />
+                        Text="Confirm Password" />
                     <hc:PasswordBox
                         Grid.Column="1"
                         Width="300"
                         Margin="20,6,0,6"
                         Padding="20,0"
                         HorizontalAlignment="Left"
-                        hc:InfoElement.Placeholder="再次输入新密码"
+                        hc:InfoElement.Placeholder="Enter a new password again"
                         hc:InfoElement.ShowClearButton="True"
                         Background="{StaticResource crs_SolidColorBrush.EFEFEF}"
                         FontSize="16"
@@ -169,7 +169,7 @@
                         Foreground="#5e5e5e">
                         <Button.Style>
                             <Style BasedOn="{StaticResource ButtonBaseStyle}" TargetType="Button">
-                                <Setter Property="Content" Value="取消" />
+                                <Setter Property="Content" Value="Cancel" />
                             </Style>
                         </Button.Style>
                     </Button>
@@ -186,7 +186,7 @@
                         Foreground="White">
                         <Button.Style>
                             <Style BasedOn="{StaticResource ButtonBaseStyle}" TargetType="Button">
-                                <Setter Property="Content" Value="确定" />
+                                <Setter Property="Content" Value="Sure" />
                             </Style>
                         </Button.Style>
                     </Button>

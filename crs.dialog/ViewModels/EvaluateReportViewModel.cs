@@ -127,7 +127,7 @@ namespace crs.dialog.ViewModels
             {
                 exception.Exception = async ex =>
                 {
-                    exception.Message = "获取报告信息错误";
+                    exception.Message = "Get report information error";
                     return (false, $"{exception.Message},{ex.Message}", default);
                 };
 
@@ -180,11 +180,11 @@ namespace crs.dialog.ViewModels
 
 
                 /*DKY
-                2025.1.18新加需求：视野模块的表格修改
-                解决方案：
-                对视野模块的数据单独处理
+                2025.1.18 New requirements: Table modification of the field of vision module
+                Solution:
+                Data processing of the field of view module separately
                 */
-                if (ModuleItem.Name.Equals("视野"))
+                if (ModuleItem.Name.Equals("Vision"))
                 {
                     var table1 = new DataTable();
                     table1.Columns.Add("-");
@@ -197,7 +197,7 @@ namespace crs.dialog.ViewModels
 
                     foreach (var item in groups)
                     {
-                        //图表数据和非图表数据分开处理
+                        //Chart data and non-chart data are processed separately
                         if (string.IsNullOrWhiteSpace(item.FirstOrDefault(m => m.ValueName != null).Charttype))
                         {
                             var newRow = table1.NewRow();
@@ -290,7 +290,7 @@ namespace crs.dialog.ViewModels
 
                     ISeries[] series = firstItem.Charttype switch
                     {
-                        "柱状图" => [new ColumnSeries<ObservablePoint>
+                        "Bar chart" => [new ColumnSeries<ObservablePoint>
                         {
                             Name = firstItem.ValueName.Split(',').Length > 1 ? firstItem.ValueName.Split(',')[1] : null,
                             Values = m.rows.OrderBy(m=>m.Abscissa).Select(m=>new ObservablePoint{X=m.Abscissa,Y=m.Value}).ToList(),
@@ -298,7 +298,7 @@ namespace crs.dialog.ViewModels
                             Fill = new SolidColorPaint(SKColors.CornflowerBlue),
 
                         }],
-                        "折线图" => [new LineSeries<ObservablePoint>
+                        "Line chart" => [new LineSeries<ObservablePoint>
                         {
                             Name = firstItem.ValueName.Split(',').Length > 1 ? firstItem.ValueName.Split(',')[1] : null,
                             Values = m.rows.OrderBy(m=>m.Abscissa).Select(m=>new ObservablePoint{X=m.Abscissa,Y=m.Value}).ToList(),
@@ -331,7 +331,7 @@ namespace crs.dialog.ViewModels
 
                 ZValueChartItems = new ObservableCollection<KeyValueItem<string, double>>(
                     (from item in multiItem.results from _item in item.ResultDetails select _item)
-                    .Where(m => m.ValueName.Contains("Z值"))
+                    .Where(m => m.ValueName.Contains("Zvalue"))
                     .Select(m => new KeyValueItem<string, double>(m.ValueName, Math.Round(m.Value, 2))).ToList());
 
                 string conclusion = "";
@@ -339,35 +339,35 @@ namespace crs.dialog.ViewModels
                 {
                     if (item.Value >= 0)
                     {
-                        continue; // 值大于 0 时，不执行任何操作，直接跳过
+                        continue; // Value greater than 0 When performing no operation, just skip
                     }
 
-                    string severity = item.Value < -1 ? "非常差" : "较差"; // 小于 -1 为“非常差”，-1 到 0 之间为“较差”
+                    string severity = item.Value < -1 ? "Very bad" : "Poor"; // Less than -1 for“Very bad”，-1 arrive 0 Between“Poor”
 
                     conclusion += item.Key switch
                     {
-                        "Z值工作速度" => $"工作速度{severity}，建议使用“空间搜索能力”进行训练。",
-                        "无警告声Z值" => $"反应速度{severity}，建议使用“反应训练”进行训练。",
-                        "有警告声Z值" => $"反应速度{severity}，建议使用“警觉训练”进行训练。",
-                        "Z值反应控制值" => $"反应能力{severity}，建议使用“反应行为”进行训练。",
-                        "Z值反应速度值" => $"反应速度{severity}，建议使用“反应能力”进行训练。",
-                        "Z值正确答案的数目" => $"逻辑能力{severity}，建议使用“逻辑推理能力”进行训练。",
-                        "Z值语言学习能力" => $"词语记忆能力{severity}，建议使用“词语记忆能力”进行训练。",
-                        "Z值记忆广度" => $"记忆广度能力{severity}，建议使用“拓扑记忆能力”进行训练。",
+                        "ZValue working speed" => $"Working speed{severity}, recommended to use“Space search capability”Carry out training.",
+                        "No warning soundZvalue" => $"Response speed{severity}, recommended to use“Response training”Carry out training.",
+                        "There is a warning soundZvalue" => $"Response speed{severity}, recommended to use“Alert training”Carry out training.",
+                        "ZValue reaction control value" => $"Response ability{severity}, recommended to use“Response behavior”Carry out training.",
+                        "ZValue Response Speed ​​Value" => $"Response speed{severity}, recommended to use“Response ability”Carry out training.",
+                        "ZNumber of correct answers" => $"Logical ability{severity}, recommended to use“Logical reasoning ability”Carry out training.",
+                        "ZValue language learning ability" => $"Word memory ability{severity}, recommended to use“Word memory ability”Carry out training.",
+                        "ZValue memory breadth" => $"Memory breadth ability{severity}, recommended to use“Topological memory capability”Carry out training.",
                         _ => "",
                     };
                 }
 
-                if (ModuleItem.Name.Equals("视野") == true)
+                if (ModuleItem.Name.Equals("Vision") == true)
                 {
-                    conclusion += "建议使用“视空间训练”进行训练";
+                    conclusion += "Recommended to use“Visual space training”Carry out training";
                 }
                 if (conclusion.Equals("") == true)
                 {
-                    conclusion += "无推荐训练方案。";
+                    conclusion += "No recommended training program.";
                 }
 
-                Conclusion = "建议：" + conclusion;
+                Conclusion = "suggestion:" + conclusion;
             }
         }
 

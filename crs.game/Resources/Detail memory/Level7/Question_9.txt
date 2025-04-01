@@ -1,0 +1,8 @@
+Difficulty 7
+Yesterday morning, the train departed at 10 o'clock was delayed by 45 minutes. Passengers are notified that the new departure time is 10:45.
+Question 9: When was the original departure time of the train?
+9:30
+11 o'clock
+10:30
+10 o'clock
+3

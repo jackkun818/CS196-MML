@@ -14,6 +14,6 @@
              prism:ViewModelLocator.AutoWireViewModel="True"
              mc:Ignorable="d">
     <hc:SimplePanel>
-        <Image Height="420" Source="{StaticResource crs_插图}" />
+        <Image Height="420" Source="{StaticResource crs_illustration}" />
     </hc:SimplePanel>
 </UserControl>

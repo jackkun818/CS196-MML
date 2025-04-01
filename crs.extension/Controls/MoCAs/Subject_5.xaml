@@ -28,17 +28,17 @@
                     <behaviors:ChangePropertyAction
                         PropertyName="OriginName"
                         TargetObject="{Binding}"
-                        Value="注意力" />
+                        Value="Attention" />
                 </behaviors:EventTrigger>
             </behaviors:Interaction.Triggers>
-            注意力
+            Attention
         </TextBlock>
         <StackPanel
             Margin="0,30,0,0"
             VerticalAlignment="Center"
             DockPanel.Dock="Top"
             Orientation="Horizontal">
-            <TextBlock VerticalAlignment="Center" FontSize="28">现在我阅读一组字母，每当读到1时请用手敲打一下。错两个或更多0分。</TextBlock>
+            <TextBlock VerticalAlignment="Center" FontSize="28">Now I read a set of letters, and whenever I read 1, please tap it with my hands. Two or more wrong points.</TextBlock>
             <ContentControl
                 Margin="10,0,0,0"
                 HorizontalAlignment="Center"
@@ -46,7 +46,7 @@
                 ContentTemplate="{StaticResource MMSE_MoCA_ToolTipTemplate}">
                 <ContentControl.Content>
                     <TextBlock TextTrimming="CharacterEllipsis" TextWrapping="Wrap">
-                        评分：如果完全正确或只有一次错误则给1分，否则不给分（错误是指当读1时候漏敲。，或读其他数字时误敲）
+                        Rating: If it is completely correct or only once, give 1 point, otherwise no points will be given（An error refers to missing knocks when reading 1. , or accidentally knocked when reading other numbers）
                     </TextBlock>
                 </ContentControl.Content>
             </ContentControl>
@@ -57,7 +57,7 @@
                 BorderBrush="Transparent"
                 Click="ExecuteAudioPlayClick"
                 Cursor="Hand"
-                Tag="下面我要读出一系列数字，请注意听，每当我读到1的时候，您就拍一下手，当我读其他数字的时候不要按：五。二。一。三。九。四。一。一。八。零。六。二。一。五。一。九。四。五。一。一。一。四。一。九。零。五。一。一。二">
+                Tag="Below I want to read out a series of numbers. Please listen carefully. Whenever I read 1, you clap your hands. When I read other numbers, don’t press: five. two. one. three. Nine. Four. one. one. eight. zero. six. two. one. five. one. Nine. Four. five. one. one. one. Four. one. Nine. zero. five. one. one. two">
 
                 <Button.Content>
                     <Image
@@ -65,7 +65,7 @@
                         Height="24"
                         VerticalAlignment="Center"
                         Cursor="Hand"
-                        Source="{StaticResource crs_声音}"
+                        Source="{StaticResource crs_sound}"
                         Stretch="Uniform" />
                 </Button.Content>
             </Button>

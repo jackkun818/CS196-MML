@@ -1,0 +1,8 @@
+Difficulty 6
+The restaurant recently launched a new sushi menu, with new dishes including salmon sushi and cucumber sushi.
+Question 12: What sushi does the new menu contain?
+Beef Sushi
+Chicken Sushi
+Tofu sushi
+Salmon Sushi and Cucumber Sushi
+3

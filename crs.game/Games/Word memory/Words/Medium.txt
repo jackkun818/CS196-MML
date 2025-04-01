@@ -1,0 +1,100 @@
+﻿orange
+cat
+lamp
+pencil
+wheel
+Dining room
+friend
+sports
+trip
+garden
+vase
+television
+computer
+music
+Movie
+library
+supermarket
+shop
+garden
+School
+Hospital
+bank
+post office
+train
+airplane
+bike
+swim
+running
+basketball
+football
+baseball
+table tennis
+volleyball
+badminton
+fishing
+cooking
+bookstore
+Vegetable Market
+zoo
+aquarium
+Cinema
+museum
+Animation
+Game console
+newspaper
+Magazine
+notebook
+Picture album
+sofa
+floor
+dining table
+coffee table
+desk
+bookshelf
+Wardrobe
+tub
+toilet
+Hand sink
+balcony
+window
+Door
+wall
+floor
+ceiling
+elevator
+stairs
+Building
+Community
+garage
+flower bed
+swimming pool
+stadium
+Gym
+Conference Room
+lounge
+bedroom
+living room
+kitchen
+Dining room
+Sunlight
+Star
+moon
+Cloud
+rainbow
+Kite
+notes
+write a letter
+Photograph
+Record
+discuss
+share
+study
+teacher
+student
+textbook
+Handout
+Operation
+take an exam
+award
+Target

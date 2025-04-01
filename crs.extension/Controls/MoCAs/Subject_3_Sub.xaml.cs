@@ -20,14 +20,14 @@ using System.Windows.Shapes;
 namespace crs.extension.Controls.MoCAs
 {
     /// <summary>
-    /// Subject_3_Sub.xaml 的交互逻辑
+    /// Subject_3_Sub.xaml Interaction logic
     /// </summary>
     public partial class Subject_3_Sub : UserControl
     {
         static ConcurrentDictionary<int, string> voiceDict = new ConcurrentDictionary<int, string>
         {
-            [0] = "接下来我会给您读几个词，您要注意听，当我读完后，把您记住的词告诉我：面孔。。天鹅绒。。教堂。。菊花。。红色",
-            [1] = "我把这些词再读一遍，您努力去记并把您记住的词语告诉我：面孔。。天鹅绒。。教堂。。菊花。。红色",
+            [0] = "Next I will read a few words to you. You should listen carefully. After I finish reading, tell me the words you remember: Face. . Velvet. . church. . chrysanthemum. . red",
+            [1] = "I read these words again, and you try to remember and tell me the words you remember: Face. . Velvet. . church. . chrysanthemum. . red",
         };
 
         public Subject_3_Sub()
@@ -51,7 +51,7 @@ namespace crs.extension.Controls.MoCAs
 
         private async void Carousel_PageChanged(object sender, RoutedEventArgs e)
         {
-            // 播放语音提示、启动定时器操作等
+            // Play voice prompts, start timer operations, etc.
 
             Crs_WaveOutToolkit.AudioCancel();
             _ = Crs_WaveInToolkit.RecordAudioCompleteAsync(true);

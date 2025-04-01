@@ -1,0 +1,8 @@
+Difficulty 4
+A new artificial intelligence course has been added to colleges and universities this semester. The course content includes basic theory and practical exercises. Students can choose to take the elective.
+Question 9: What new courses have colleges and universities added?
+Foreign Language Courses
+Music courses
+Artificial Intelligence Course
+Data Science Courses
+2

@@ -1,0 +1,8 @@
+Difficulty 2
+The bookstore held a signature event this Friday, authored by famous writer Zhang Hua.
+Question 4: Who is the author of the bookstore signature event?
+Li Ming
+Zhang Hua
+Wang Qiang
+Liu Yang
+1

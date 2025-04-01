@@ -9,11 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Temps\Images\数字人默认图.png" />
+    <None Remove="Temps\Images\Digital people default picture.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Temps\Images\数字人默认图.png">
+    <Content Include="Temps\Images\Digital people default picture.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

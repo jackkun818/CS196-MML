@@ -1,0 +1,26 @@
+Difficulty 4
+Jiuzhaigou is located in Zhangzha Town, Jiuzhaigou County, Aba Tibetan and Qiang Autonomous Prefecture, Sichuan Province. It is a branch of Baihe River in the upper reaches of Baishuigou, with nine Tibetan villages.（Also known as He Yao Jiuzhai）He got the name. Jiuzhaigou is above 2,000 meters above sea level, covered with primeval forests, and 108 lakes are distributed in the ditch. Jiuzhaigou has charming scenery in all seasons. There are rich animal and plant resources, a wide variety of species, and there are scattered with primeval forests, which are home to more than a dozen rare and precious wild animals such as giant pandas. Looking at the distance, the snow peaks are towering, the sky is covered with snow all year round. The cultural landscape composed of collectors' wooden buildings, prayer flags, trestles, mills, traditional customs and myths and legends is known as“A beautiful fairy tale world”。
+Question 1: Which province is Jiuzhaigou located?
+Yunnan Province
+Sichuan Province
+Xinjiang Uygur Autonomous Region
+Tibet Autonomous Region
+1
+Question 2: How many meters is the altitude of Jiuzhaigou?
+1000 meters
+1500 meters
+2000 meters
+2500 meters
+2
+Question 3: How many lakes are distributed in Jiuzhaigou?
+106
+108
+110
+112
+1
+Question 4: Jiuzhaigou is rich in animal and plant resources, and is home to more than a dozen rare and precious wild animals. Which one is mentioned in this article?
+Giant panda
+Golden Monkey
+Peacock
+Rattlesnake
+0

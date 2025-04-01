@@ -1,0 +1,8 @@
+Difficulty 10
+The school library has more than 50,000 books, covering literature, history, science and other fields. The library provides e-book borrowing services and regularly updates the collection. Students can check the book status through the school website.
+Question: Does the school library provide e-book borrowing?
+Only some books are available for borrowing
+yes
+Only paper books are provided
+no
+1

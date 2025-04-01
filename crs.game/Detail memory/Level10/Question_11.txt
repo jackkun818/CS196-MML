@@ -1,0 +1,8 @@
+Difficulty 10
+The museum exhibition includes ancient artifacts, works of art and natural specimens. The exhibition is open every day, and special exhibitions are held during holidays and summer vacations. The museum provides audio guide services, and some exhibits have interactive experiences.
+Question: Does the museum provide audio guide services?
+Only available on holidays
+no
+Only some exhibits are available
+yes
+3

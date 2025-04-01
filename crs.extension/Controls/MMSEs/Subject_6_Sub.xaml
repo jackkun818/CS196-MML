@@ -31,14 +31,14 @@
                            FontWeight="Bold"
                            TextTrimming="CharacterEllipsis"
                            TextWrapping="Wrap">
-                    这个是语言能力测试，请回答下面图片是什么东西？
+                    This is a language proficiency test. Please answer what is the picture below?
                 </TextBlock>
 
                 <hc:SimplePanel Margin="0,40">
                     <Image Width="700"
                            Margin="0,-7,0,0"
                            HorizontalAlignment="Center"
-                           Source="{StaticResource crs_题目插图6_Big}" />
+                           Source="{StaticResource crs_Title Illustration 6_Big}" />
 
                 </hc:SimplePanel>
                 <controls:Crs_AudioButton Margin="0,0,0,40"
@@ -61,13 +61,13 @@
                            FontWeight="Bold"
                            TextTrimming="CharacterEllipsis"
                            TextWrapping="Wrap">
-                    这个是语言能力测试，请回答下面图片是什么东西？
+                    This is a language proficiency test. Please answer what is the picture below?
                 </TextBlock>
                 <hc:SimplePanel Margin="0,40">
                     <Image Width="700"
                            Margin="0,-7,0,0"
                            HorizontalAlignment="Center"
-                           Source="{StaticResource crs_题目插图7_Big}" />
+                           Source="{StaticResource crs_Title Illustration 7_Big}" />
                 </hc:SimplePanel>
                 <controls:Crs_AudioButton Margin="0,0,0,40"
                                           AudioData="{Binding AudioData}"

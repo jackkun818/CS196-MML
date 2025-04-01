@@ -1,0 +1,8 @@
+Difficulty 3
+The hospital outpatient hours are from 8 a.m. to 4 p.m., open Monday to Friday, and are closed on weekends.
+Question 9: Are hospital outpatient hours open on weekends?
+Open only on Saturdays
+Not open
+open
+Open only on Sundays
+1

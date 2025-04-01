@@ -28,17 +28,17 @@
                     <behaviors:ChangePropertyAction
                         PropertyName="OriginName"
                         TargetObject="{Binding}"
-                        Value="语言能力" />
+                        Value="Language skills" />
                 </behaviors:EventTrigger>
             </behaviors:Interaction.Triggers>
-            语言能力
+            Language skills
         </TextBlock>
         <StackPanel
             Margin="0,30,0,0"
             VerticalAlignment="Center"
             DockPanel.Dock="Top"
             Orientation="Horizontal">
-            <TextBlock VerticalAlignment="Center" FontSize="28">三步命令：我给您一张纸请您按照我说的去做，现在开始</TextBlock>
+            <TextBlock VerticalAlignment="Center" FontSize="28">Three-step command: I'll give you a piece of paper, please do what I said, start now</TextBlock>
             <ContentControl
                 Margin="10,0,0,0"
                 HorizontalAlignment="Center"
@@ -46,7 +46,7 @@
                 ContentTemplate="{StaticResource MMSE_MoCA_ToolTipTemplate}">
                 <ContentControl.Content>
                     <TextBlock TextTrimming="CharacterEllipsis" TextWrapping="Wrap">
-                        评分：三步命令，给被测试者一张空白的平纸，要求对方按你的命令去做，注意不要重复或示范。只有他们按正确顺序做的动作才算正确，每个正确的动作计1分。
+                        Rating: Three-step command, give the subject a blank sheet of flat paper, ask the other party to follow your order, be careful not to repeat or demonstrate. Only the movements they do in the correct order are considered correct, and each correct movement is 1 point.
                     </TextBlock>
                 </ContentControl.Content>
             </ContentControl>
@@ -57,7 +57,7 @@
                 BorderBrush="Transparent"
                 Click="ExecuteAudioPlayClick"
                 Cursor="Hand"
-                Tag="等会治疗师会给您一张纸，请您按照我说的去做。现在开始,用右手拿着这张纸，用两只手将它对折起来，放在你的左腿上">
+                Tag="The therapist will give you a piece of paper later, please do as I said. Start now,Hold the paper with your right hand, fold it in half with both hands and place it on your left leg">
 
                 <Button.Content>
                     <Image
@@ -65,7 +65,7 @@
                         Height="24"
                         VerticalAlignment="Center"
                         Cursor="Hand"
-                        Source="{StaticResource crs_声音}"
+                        Source="{StaticResource crs_sound}"
                         Stretch="Uniform" />
                 </Button.Content>
             </Button>
@@ -89,7 +89,7 @@
                     HorizontalAlignment="Left"
                     VerticalAlignment="Center"
                     TextTrimming="CharacterEllipsis">
-                    用右手拿着这张纸
+                    Hold this paper in your right hand
                 </TextBlock>
             </DockPanel>
             <DockPanel>
@@ -103,7 +103,7 @@
                     HorizontalAlignment="Left"
                     VerticalAlignment="Center"
                     TextTrimming="CharacterEllipsis">
-                    用两只手将它对折起来
+                    Fold it in half with both hands
                 </TextBlock>
             </DockPanel>
             <DockPanel>
@@ -117,7 +117,7 @@
                     HorizontalAlignment="Left"
                     VerticalAlignment="Center"
                     TextTrimming="CharacterEllipsis">
-                    放在你的左腿上
+                    Put it on your left leg
                 </TextBlock>
             </DockPanel>
         </UniformGrid>

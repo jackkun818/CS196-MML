@@ -29,7 +29,7 @@
                     <TextBlock.Text>
                         <MultiBinding
                             FallbackValue="--"
-                            StringFormat="{}现在由“{0}”为您讲解“{1}”"
+                            StringFormat="{}Now“{0}”Explain it for you“{1}”"
                             TargetNullValue="--">
                             <Binding Path="DigitalHumanItem.Name" />
                             <Binding Path="GameDemoMessage" />
@@ -46,7 +46,7 @@
 
     <hc:SimplePanel>
         <hc:SimplePanel.Background>
-            <ImageBrush ImageSource="{StaticResource crs_患者端背景2}" />
+            <ImageBrush ImageSource="{StaticResource crs_Patient side background 2}" />
         </hc:SimplePanel.Background>
         <DockPanel Margin="{Binding DockPanelMargin}">
             <Border
@@ -80,7 +80,7 @@
                         FontSize="28"
                         FontWeight="Bold"
                         Visibility="{Binding IsTitleVisible, Converter={StaticResource BoolToVisConverter}}">
-                        题目规则：
+                        Question rules:
                     </TextBlock>
                     <ScrollViewer
                         Height="180"
@@ -177,7 +177,7 @@
                                 Height="70"
                                 Background="White">
                                 <hc:SimplePanel.OpacityMask>
-                                    <ImageBrush ImageSource="{StaticResource crs_麦克风}" />
+                                    <ImageBrush ImageSource="{StaticResource crs_microphone}" />
                                 </hc:SimplePanel.OpacityMask>
                             </hc:SimplePanel>
                         </Button>

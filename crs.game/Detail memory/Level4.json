@@ -1,0 +1,375 @@
+[
+    {
+        "Story": "In the fruit market in the town, vendors are busy placing fresh fruits. In front of Apple's stalls, customers found that the number on the price tag was 20% higher than before. The market leader explained that this was due to the reduction in supply due to the recent bad weather, and prices had to be raised to cope with rising costs. Despite the price increase, customers have not reduced their demand for Apple, as they are a favorite among small town residents. At the same time, there are still crowds in front of the banana stalls, prices have not changed, and supply is sufficient.",
+        "QuestionsList": [
+            {
+                "Question": "Which fruit has risen?",
+                "OptionA": "watermelon",
+                "OptionB": "banana",
+                "OptionC": "Grape",
+                "OptionD": "apple",
+                "Answer": "OptionD"
+            },
+            {
+                "Question": "What is the reason for the price increase?",
+                "OptionA": "Increased demand",
+                "OptionB": "Reduced supply",
+                "OptionC": "Increased transportation costs",
+                "OptionD": "Bad weather",
+                "Answer": "OptionD"
+            },
+            {
+                "Question": "Which fruits remain the same?",
+                "OptionA": "watermelon",
+                "OptionB": "banana",
+                "OptionC": "Grape",
+                "OptionD": "orange",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "Which fruit is the favorite of town residents",
+                "OptionA": "watermelon",
+                "OptionB": "banana",
+                "OptionC": "apple",
+                "OptionD": "orange",
+                "Answer": "OptionC"
+            }
+        ]
+    },
+    {
+        "Story": "The school library is one of the favorite places for students. It is not only a treasure house of knowledge, but also a good place for students to relax and learn. Recently, in order to meet the students' reading needs, library administrators specially purchased four new popular science books. These new books have been added to the library's borrowing system, and students can easily search for these new books on their computers or mobile phones and borrow them. In order to allow more students to have more time to come to the library after class, the library's opening hours have also been adjusted from 9 a.m. to 6 p.m. to 8 a.m. to 9 p.m., so that students can come to the library to read and study after school.",
+        "QuestionsList": [
+            {
+                "Question": "How many new books have been added to the school library?",
+                "OptionA": "Eight books",
+                "OptionB": "Four books",
+                "OptionC": "Two books",
+                "OptionD": "Six books",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "What types of books are added to the school library?",
+                "OptionA": "History books",
+                "OptionB": "Art books",
+                "OptionC": "Popular Science Books",
+                "OptionD": "biography",
+                "Answer": "OptionC"
+            },
+            {
+                "Question": "During what time can students access the library after the library is expanded?",
+                "OptionA": "8 am to 6 pm",
+                "OptionB": "9 am to 8 pm",
+                "OptionC": "8 am to 9 pm",
+                "OptionD": "7am to 8pm",
+                "Answer": "OptionC"
+            },
+            {
+                "Question": "What is the main purpose of adding new books in the library?",
+                "OptionA": "Meet the reading needs of students",
+                "OptionB": "Increase library collection",
+                "OptionC": "Increase library revenue",
+                "OptionD": "Provide more self-study space",
+                "Answer": "OptionA"
+            }
+        ]
+    },
+    {
+        "Story": "Downtown hospitals have always been known for their high-quality medical services. In order to improve the medical level, hospital management decided to invest in the latest medical technology. Recently, the hospital purchased three new onesCTScanners, these devices are known for their high-speed imaging. The introduction of new devices allows doctors to obtain internal images of patients more quickly, which is crucial for diagnosing various diseases. In addition, newCTThe efficiency of the scanner also means that patients can reduce waiting and discomfort during the scanning process, thereby improving the patient's medical experience. The staff at the hospital are very excited about these new devices, and they believe that these devices will greatly improve diagnostic efficiency and accuracy and provide better medical services to patients.",
+        "QuestionsList": [
+            {
+                "Question": "Hospital purchases newCTWhat is the main purpose of the scanner?",
+                "OptionA": "Increase hospital income",
+                "OptionB": "Increase the number of beds in the hospital",
+                "OptionC": "Improve medical standards",
+                "OptionD": "Reduce the operating costs of hospitals",
+                "Answer": "OptionC"
+            },
+            {
+                "Question": "How many new ones have been purchased by the hospitalCTScanner?",
+                "OptionA": "One",
+                "OptionB": "Two units",
+                "OptionC": "Three units",
+                "OptionD": "Four units",
+                "Answer": "OptionC"
+            },
+            {
+                "Question": "What has the introduction of new devices allowed doctors to get patients faster?",
+                "OptionA": "Internal image",
+                "OptionB": "Personal Privacy",
+                "OptionC": "Physical data",
+                "OptionD": "Family information",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "newCTWhat are the characteristics of the scanner?",
+                "OptionA": "High-speed imaging",
+                "OptionB": "Low-speed and low-resolution imaging",
+                "OptionC": "Applicable only for specific types of disease diagnosis",
+                "OptionD": "It takes longer to train operators",
+                "Answer": "OptionA"
+            }
+        ]
+    },
+    {
+        "Story": "In the bustling city center, there is a popular sunshine mall. It not only has a wide variety of products, but also has considerate and thoughtful service. This weekend, in order to give back to the support and love of customers, the mall decided to hold a grand discount event. On the eve of the event, inside and outside the mall were decorated with colorful publicity posters, attracting the attention of passers-by. The poster clearly marked: All products enjoy a 20% discount, and this unprecedented intensity made many people excited. The discount range covers every corner of the mall, from fashionable clothing to exquisite and compact accessories, all of which are included. What is even more exciting is that customers who shop during the event can also receive extra gifts carefully prepared by the mall. These gifts are both practical and stylish, adding a surprise to customers' shopping trip.",
+        "QuestionsList": [
+            {
+                "Question": "What is the discount for the mall this weekend?",
+                "OptionA": "30% off",
+                "OptionB": "20% off",
+                "OptionC": "90% off",
+                "OptionD": "No discount",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "What additional benefits do customers get when shopping during the event?",
+                "OptionA": "Cash Back",
+                "OptionB": "Coupons",
+                "OptionC": "Giveaway",
+                "OptionD": "Free express delivery",
+                "Answer": "OptionC"
+            },
+            {
+                "Question": "What kind of people do the shopping mall promotional posters attract?",
+                "OptionA": "Elderly",
+                "OptionB": "Office workers",
+                "OptionC": "student",
+                "OptionD": "Passing pedestrians",
+                "Answer": "OptionD"
+            },
+            {
+                "Question": "What is the name of the mall?",
+                "OptionA": "Sunshine Mall",
+                "OptionB": "Baiyun Mall",
+                "OptionC": "Blue Sky Mall",
+                "OptionD": "Spring Breeze Mall",
+                "Answer": "OptionA"
+            }
+        ]
+    },
+    {
+        "Story": "In a corner of the quiet city, there is a park that is loved by residents. This park is not only a good place for people to walk and run, but also a paradise for children to play. Recently, in order to further enhance the recreationality and attractiveness of the park, the park manager decided to add a new children's playground. This decision quickly received a warm response from the community residents, and everyone was looking forward to the completion of the new playground. After intense construction and careful layout, the playground was finally officially opened to the public last week. The new playground mainly features slides, which wind down from the high platform, bringing endless fun to the children. The opening of the playground not only enriches children's extracurricular life, but also provides parents with a warm place to accompany their children's growth. Every weekend or holiday, the playground is always filled with the laughter of children, becoming a beautiful scenery in the park.",
+        "QuestionsList": [
+            {
+                "Question": "What new facilities have been added recently in the park?",
+                "OptionA": "Children's playground",
+                "OptionB": "Open-air theater",
+                "OptionC": "playground",
+                "OptionD": "Living Area",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "When will the new rides be opened?",
+                "OptionA": "This week",
+                "OptionB": "Last week",
+                "OptionC": "next week",
+                "OptionD": "last month",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "What are the main facilities in the playground?",
+                "OptionA": "Slide",
+                "OptionB": "Swing",
+                "OptionC": "swimming pool",
+                "OptionD": "football field",
+                "Answer": "OptionAA"
+            },
+            {
+                "Question": "Which group of people does the new playground bring fun to?",
+                "OptionA": "Elderly",
+                "OptionB": "Office workers",
+                "OptionC": "Children",
+                "OptionD": "pet",
+                "Answer": "OptionC"
+            }
+        ]
+    },
+    {
+        "Story": "In a quiet and warm spring breeze community, residents have always enjoyed a harmonious and peaceful living environment. However, as night falls, the lighting facilities in the community gradually appear to be a little overwhelmed, causing some inconvenience to residents traveling at night. In order to improve this situation, the community management decided to update and upgrade all street lights. After a series of careful preparations and construction, the new street lights have finally been installed and put into use recently. These new street lights not only have a more stylish and beautiful appearance, but also have significantly improved the lighting effect, adding a brightness and safety to the night environment of the community. Since the street lights were updated, the night lighting in the community has become more sufficient, and residents feel more at ease when walking at night and returning home. In addition, the overall environment of the community has been improved and has become more livable and comfortable. Residents expressed satisfaction with the update and praised the community management for their thoughtfulness and thoughtfulness.",
+        "QuestionsList": [
+            {
+                "Question": "What facilities have the community updated recently?",
+                "OptionA": "Street lights",
+                "OptionB": "flower bed",
+                "OptionC": "PARKING LOT",
+                "OptionD": "the way",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "After the street lights are updated, what will the night environment of the community become even better?",
+                "OptionA": "Bright",
+                "OptionB": "dark",
+                "OptionC": "Crowded",
+                "OptionD": "Dirty and messy",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "What attitude do residents have towards street light updates?",
+                "OptionA": "Dissatisfied",
+                "OptionB": "It doesn't matter",
+                "OptionC": "satisfy",
+                "OptionD": "Very dissatisfied",
+                "Answer": "OptionC"
+            },
+            {
+                "Question": "What is the name of the community in the story?",
+                "OptionA": "Sunshine Community",
+                "OptionB": "Bichun Community",
+                "OptionC": "Zhonghai Community",
+                "OptionD": "Chunfeng Community",
+                "Answer": "OptionD"
+            }
+        ]
+    },
+    {
+        "Story": "In a corner of a city full of cultural atmosphere, there is a bookstore that is loved by readers. This bookstore not only has a rich collection of books, but also often holds various cultural activities, providing a platform for book fans to communicate. This weekend, the bookstore held a new bookmarking ceremony to promote a highly anticipated new book. On the day of the event, the bookstore was decorated in a warm and elegant manner, and the bookshelf was filled with this new book, waiting for readers to read and purchase. The author also personally attended the scene to exchange creative experiences face to face with readers and share the stories and sources of inspiration in the book. The news quickly spread among the book fans, attracting a large number of readers who love reading to participate. Some of them are loyal fans of the author, and some are new readers who are curious about the content of the new book. Everyone has a love for books and participates in this cultural feast together.",
+        "QuestionsList": [
+            {
+                "Question": "What events did the bookstore hold?",
+                "OptionA": "Reading sharing session",
+                "OptionB": "Discount promotions",
+                "OptionC": "New bookmark sale",
+                "OptionD": "Book auction",
+                "Answer": "OptionC"
+            },
+            {
+                "Question": "Who is present to communicate with readers in person?",
+                "OptionA": "Bookstore owner",
+                "OptionB": "Publisher Editor",
+                "OptionC": "author",
+                "OptionD": "Reader representative",
+                "Answer": "OptionC"
+            },
+            {
+                "Question": "What kind of people did the event attract?",
+                "OptionA": "Visitors",
+                "OptionB": "Book fans",
+                "OptionC": "student",
+                "OptionD": "merchant",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "What is the main purpose of the new bookmark sale?",
+                "OptionA": "Promote new books",
+                "OptionB": "Promotional old books",
+                "OptionC": "Increase bookstore area",
+                "OptionD": "Hold a lecture",
+                "Answer": "OptionA"
+            }
+        ]
+    },
+    {
+        "Story": "In the downtown hospital, a health lecture was recently held on cardiovascular disease prevention. The lecture invited well-known experts to give explanations, attracting many citizens to attend. Experts not only share the causes and harms of cardiovascular disease, but also provide practical advice on prevention and control. The citizens listened with relish and asked their own questions from time to time. The experts answered patiently, and the atmosphere on the scene was very lively. After the lecture, citizens expressed that they benefited a lot and had a deeper understanding of how to maintain cardiovascular health. Through this lecture, the hospital not only improved the health awareness of citizens, but also won a reputation for the hospital.",
+        "QuestionsList": [
+            {
+                "Question": "What is the topic of the lecture?",
+                "OptionA": "Cardiovascular disease prevention",
+                "OptionB": "Fitness skills",
+                "OptionC": "Nutritious diet",
+                "OptionD": "Diabetes Management",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "Who were invited to the lecture?",
+                "OptionA": "Citizens",
+                "OptionB": "expert",
+                "OptionC": "doctor",
+                "OptionD": "Nurse",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "What did the citizens do in the lecture?",
+                "OptionA": "Ask a question",
+                "OptionB": "discuss",
+                "OptionC": "Record",
+                "OptionD": "observe",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "What did the hospital get through the lecture?",
+                "OptionA": "Reputation",
+                "OptionB": "Knowledge",
+                "OptionC": "funds",
+                "OptionD": "equipment",
+                "Answer": "OptionA"
+            }
+        ]
+    }
+    ,
+    {
+        "Story": "The exhibition hall in the city center is very lively because the annual auto show is being held here. In the exhibition hall, the lights are bright and the voices are buzzing. The latest models of cars and cutting-edge technologies have attracted the attention of countless car enthusiasts and industry experts. From energy-saving and environmentally friendly electric vehicles to high-tech autonomous driving systems, every car on display represents the latest developments in the automotive industry. Visitors shuttled between various booths, either taking photos or communicating with staff, or even having the opportunity to test drive in person. The exhibition demonstrated automotive technology, giving visitors a deeper understanding of the future of cars. During the three-day exhibition, there are different thematic activities every day, including new car launch conferences, technical seminars and speeches from industry leaders, making the entire exhibition rich in content and exciting.",
+        "QuestionsList": [
+            {
+                "Question": "Where is the auto show held?",
+                "OptionA": "Exhibition Hall",
+                "OptionB": "garden",
+                "OptionC": "hotel",
+                "OptionD": "stadium",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "What was displayed at the exhibition?",
+                "OptionA": "Automotive Technology",
+                "OptionB": "artwork",
+                "OptionC": "Electronics",
+                "OptionD": "clothing",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "What can visitors do at the exhibition?",
+                "OptionA": "Test drive",
+                "OptionB": "swim",
+                "OptionC": "running",
+                "OptionD": "Listen to the lecture",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "How many days did the exhibition last?",
+                "OptionA": "one day",
+                "OptionB": "Three days",
+                "OptionC": "Four days",
+                "OptionD": "Two days",
+                "Answer": "OptionB"
+            }
+        ]
+    }
+    ,
+    {
+        "Story": "In the suburbs of the city, there is a lively agricultural produce market, known for its fresh produce. This Friday, the market reopened after a period of rest and recuperation, attracting many citizens to come and buy. In the market, vendors enthusiastically sell home-grown agricultural products, including fresh tomatoes, crispy cucumbers, golden corn and juicy oranges. Citizens shuttled between various stalls, selecting their favorite ingredients, and their faces were filled with the pursuit of a healthy life. In the market, there are not only fresh agricultural products, but also jams and honey made on-site, as well as various handicrafts. Under the guidance of parents, the children were curiously observing various agricultural products and learning their growth process. The opening of the market every Friday not only provides citizens with a good place to buy fresh ingredients, but also provides local farmers with a platform to display and sell their own agricultural products.",
+        "QuestionsList": [
+            {
+                "Question": "Where is the agricultural product market?",
+                "OptionA": "suburbs",
+                "OptionB": "city ​​center",
+                "OptionC": "seaside",
+                "OptionD": "On the mountain",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "What is sold in the market?",
+                "OptionA": "clothing",
+                "OptionB": "seafood",
+                "OptionC": "meat",
+                "OptionD": "Agricultural Products",
+                "Answer": "OptionD"
+            },
+            {
+                "Question": "On what day will the market reopen?",
+                "OptionA": "This Friday",
+                "OptionB": "Monday",
+                "OptionC": "This Saturday",
+                "OptionD": "This Sunday",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "What week is the agricultural product market open?",
+                "OptionA": "weekend",
+                "OptionB": "Friday",
+                "OptionC": "on Monday",
+                "OptionD": "Wednesday",
+                "Answer": "OptionB"
+            }
+        ]
+    }
+    
+]

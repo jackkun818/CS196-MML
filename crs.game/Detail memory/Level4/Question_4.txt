@@ -1,0 +1,8 @@
+Difficulty 4
+The hospital recently purchased three new onesCTScanner. These devices will help improve diagnostic efficiency. The equipment has been put into use.
+Question 4: How many new ones have been purchased by the hospitalCTScanner?
+Three units
+Two units
+Five units
+Four units
+0

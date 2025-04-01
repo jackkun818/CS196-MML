@@ -1,0 +1,8 @@
+Difficulty 7
+This Friday, the museum will open a new exhibition. The exhibition will feature 15 antiques and will be open at 10 a.m.
+Question 12: How many antiques will be displayed in the museum exhibition?
+25 pieces
+20 pieces
+15 pieces
+10 pieces
+2

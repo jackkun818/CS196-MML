@@ -1,165 +1,165 @@
 {
   "BackgroundImage": 
   {
-    "Path": "组 14899.png",
+    "Path": "Group 14899.png",
     "PxPosition": {  "Left": 0, "Up": 0, "Right": 0, "Down": 0 },
     "Size": { "Height": 741, "Width": 1260 },
-    "Info": "两张电竞椅的办公室"
+    "Info": "Two e-sports chairs in the office"
   },
   "Images": 
   [
     {
-      "Path": "蒙版组 113.png",
+      "Path": "Mask group 113.png",
       "PxMargin": { "Left": 205, "Up": 0, "Right": 938, "Down": 611 },
       "Size": { "Height": 130, "Width": 117 },
-      "Info": "吊顶灯1",
+      "Info": "Ceiling light 1",
       "Index": 0
     },
     {
-      "Path": "蒙版组 114.png",
+      "Path": "Mask group 114.png",
       "PxMargin": { "Left": 575, "Up": 0, "Right": 568, "Down": 611 },
       "Size": { "Height": 130, "Width": 117 },
-      "Info": "吊顶灯2",
+      "Info": "Ceiling light 2",
       "Index": 1
     },
     {
-      "Path": "蒙版组 115.png",
+      "Path": "Mask group 115.png",
       "PxMargin": { "Left": 974, "Up": 0, "Right": 196, "Down": 611 },
       "Size": { "Height": 130, "Width": 117 },
-      "Info": "吊顶灯3",
+      "Info": "Ceiling light 3",
       "Index": 2
     },
     {
-      "Path": "组 14889.png",
+      "Path": "Group 14889.png",
       "PxMargin": { "Left": 56, "Up": 92, "Right": 1143, "Down": 564 },
       "Size": { "Width": 60.6, "Height": 85.39 },
-      "Info": "褐色花盆",
+      "Info": "Brown flower pot",
       "Index": 3
     },
     {
-      "Path": "组 14885.png",
+      "Path": "Group 14885.png",
       "PxMargin": { "Left": 183, "Up": 80, "Right": 994, "Down": 566 },
       "Size": { "Width": 82.89, "Height": 94.83 },
-      "Info": "黄色花盆",
+      "Info": "Yellow flower pot",
       "Index": 4
     },
     {
-      "Path": "组 14881.png",
+      "Path": "Group 14881.png",
       "PxMargin": { "Left": 336, "Up": 96, "Right": 869, "Down": 566 },
       "Size": { "Width": 55.25, "Height": 78.94 },
-      "Info": "白色花盆",
+      "Info": "White flower pot",
       "Index": 5
     },
     {
-      "Path": "组 14874.png",
+      "Path": "Group 14874.png",
       "PxMargin": { "Left": 455, "Up": 32, "Right": 718, "Down": 620 },
       "Size": { "Width": 87.4, "Height": 89.44 },
-      "Info": "挂钟",
+      "Info": "wall clock",
       "Index": 6
     },
     {
-      "Path": "组 14869.png",
+      "Path": "Group 14869.png",
       "PxMargin": { "Left": 701, "Up": 26, "Right": 368, "Down": 440 },
       "Size": { "Width": 190.79, "Height": 274.54 },
-      "Info": "玻璃窗",
+      "Info": "Glass windows",
       "Index": 7
     },
     {
-      "Path": "组 14872.png",
+      "Path": "Group 14872.png",
       "PxMargin": { "Left": 521, "Up": 133, "Right": 632, "Down": 444 },
       "Size": { "Width": 106.84, "Height": 163.84 },
-      "Info": "日历",
+      "Info": "calendar",
       "Index": 8
     },
     {
-      "Path": "组 14868.png",
+      "Path": "Group 14868.png",
       "PxMargin": { "Left": 1075, "Up": 62, "Right": 25, "Down": 70 },
       "Size": { "Width": 160.46, "Height": 208.93 },
-      "Info": "墙上便签",
+      "Info": "Notes on the wall",
       "Index": 9
     },
     {
-      "Path": "组 14861.png",
+      "Path": "Group 14861.png",
       "PxMargin": { "Left": 939, "Up": 285, "Right": 271, "Down": 407 },
       "Size": { "Width": 50.24, "Height": 49.16 },
-      "Info": "黄色杯子",
+      "Info": "Yellow cup",
       "Index": 10
     },
     {
-      "Path": "组 14856.png",
+      "Path": "Group 14856.png",
       "PxMargin": { "Left": 1050, "Up": 180, "Right": 72, "Down": 361 },
       "Size": { "Width": 137.99, "Height": 199.74 },
-      "Info": "电脑显示器1",
+      "Info": "Computer monitor 1",
       "Index": 11
     },
     {
-      "Path": "组 14863.png",
+      "Path": "Group 14863.png",
       "PxMargin": { "Left": 1122, "Up": 391, "Right": 102, "Down": 332 },
       "Size": { "Width": 35.66, "Height": 17.5 },
-      "Info": "鼠标",
+      "Info": "mouse",
       "Index": 12
     },
     {
-      "Path": "组 14865.png",
+      "Path": "Group 14865.png",
       "PxMargin": { "Left": 1011, "Up": 374, "Right": 145, "Down": 354 },
       "Size": { "Width": 103.78, "Height": 40.18 },
-      "Info": "键盘",
+      "Info": "keyboard",
       "Index": 13
     },
     {
-      "Path": "组 14850.png",
+      "Path": "Group 14850.png",
       "PxMargin": { "Left": 787, "Up": 297, "Right": 193, "Down": 107 },
       "Size": { "Width": 280.27, "Height": 337.42 },
-      "Info": "电竞椅1",
+      "Info": "E-sports chair 1",
       "Index": 14
     },
     {
-      "Path": "组 14864.png",
+      "Path": "Group 14864.png",
       "PxMargin": { "Left": 614, "Up": 153, "Right": 464, "Down": 244 },
       "Size": { "Width": 181.9, "Height": 343.84 },
-      "Info": "立盆栽",
+      "Info": "Bonsai",
       "Index": 15
     },
     {
-      "Path": "组 14844.png",
+      "Path": "Group 14844.png",
       "PxMargin": { "Left": 373, "Up": 262, "Right": 656, "Down": 314 },
       "Size": { "Width": 231.44, "Height": 164.8 },
-      "Info": "电脑显示器2",
+      "Info": "Computer monitor 2",
       "Index": 16
     },
     {
-      "Path": "组 14826.png",
+      "Path": "Group 14826.png",
       "PxMargin": { "Left": 246, "Up": 352, "Right": 825, "Down": 35 },
       "Size": { "Width": 189.41, "Height": 354.48 },
-      "Info": "电竞椅2",
+      "Info": "E-sports chair 2",
       "Index": 17
     },
     {
-      "Path": "组 14836.png",
+      "Path": "Group 14836.png",
       "PxMargin": { "Left": 134, "Up": 364, "Right": 1069, "Down": 321 },
       "Size": { "Width": 56.88, "Height": 56.07 },
-      "Info": "蓝色杯子",
+      "Info": "Blue cup",
       "Index": 18
     },
     {
-      "Path": "组 14887.png",
+      "Path": "Group 14887.png",
       "PxMargin": { "Left": 55, "Up": 162, "Right": 1139, "Down": 553 },
       "Size": { "Width": 65.87, "Height": 25.67 },
-      "Info": "黄色底影1",
+      "Info": "Yellow background 1",
       "Index": 19
     },
     {
-      "Path": "组 14883.png",
+      "Path": "Group 14883.png",
       "PxMargin": { "Left": 184, "Up": 159, "Right": 996, "Down": 556 },
       "Size": { "Width": 80.06, "Height": 25.67 },
-      "Info": "黄色底影2",
+      "Info": "Yellow background 2",
       "Index": 20
     },
     {
-      "Path": "组 14879.png",
+      "Path": "Group 14879.png",
       "PxMargin": { "Left": 323, "Up": 159, "Right": 857, "Down": 556 },
       "Size": { "Width": 80.06, "Height": 25.67 },
-      "Info": "黄色底影3",
+      "Info": "Yellow background 3",
       "Index": 21
     }
   ]

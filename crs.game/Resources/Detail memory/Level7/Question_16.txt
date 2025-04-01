@@ -1,0 +1,8 @@
+Difficulty 7
+Yesterday, the express delivery service encountered a delay. The original delivery time was 3 pm and is now expected to arrive at 5 pm.
+Question 16: When is the original delivery time for express delivery?
+4 pm
+3 pm
+2 pm
+6 pm
+1

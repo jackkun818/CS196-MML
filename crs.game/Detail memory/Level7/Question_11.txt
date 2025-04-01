@@ -1,0 +1,8 @@
+Difficulty 7
+The city swimming pool held a competition today. The competition includes 50m freestyle and 100m breaststroke. The game starts at 2 pm.
+Question 11: When is the start time of the swimming competition?
+2 pm
+12 noon
+10 am
+6 pm
+0

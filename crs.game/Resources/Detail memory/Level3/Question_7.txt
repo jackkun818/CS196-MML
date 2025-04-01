@@ -1,0 +1,8 @@
+Difficulty 3
+Restaurants offer a 10% discount on Fridays this month, and enjoy this discount for every meal.
+Question 7: When will the discount event be offered at restaurants?
+Every Wednesday
+Every Friday
+Every Monday
+Weekend
+1

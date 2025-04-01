@@ -75,7 +75,7 @@ namespace crs.window.ViewModels
                 return;
             }
 
-            if (await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("是否删除该患者", button: MessageBoxButton.OKOrCancel) == null)
+            if (await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("Whether to delete the patient", button: MessageBoxButton.OKOrCancel) == null)
             {
                 return;
             }
@@ -84,7 +84,7 @@ namespace crs.window.ViewModels
             {
                 exception.Exception = async ex =>
                 {
-                    exception.Message = "删除用户信息错误";
+                    exception.Message = "Error deleting user information";
                     return (false, $"{exception.Message},{ex.Message}");
                 };
 
@@ -95,7 +95,7 @@ namespace crs.window.ViewModels
                     item.SoftDeleted = true;
                     await db.SaveChangesAsync();
                 }
-                return (true, "删除用户信息成功");
+                return (true, "Delete user information successfully");
             });
 
             await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync(msg);
@@ -139,7 +139,7 @@ namespace crs.window.ViewModels
             {
                 exception.Exception = async ex =>
                 {
-                    exception.Message = "查询用户信息错误";
+                    exception.Message = "Error in querying user information";
                     return (false, $"{exception.Message},{ex.Message}", null);
                 };
 
@@ -170,7 +170,7 @@ namespace crs.window.ViewModels
 
         void ExecutePatientSelectedItemChangedCommand()
         {
-            // 通知改变主菜单页面的的“当前患者”信息
+            // Notification to change the main menu page“Current patient”information
             var patientSelectedItem = PatientSelectedItem;
             patient = patientSelectedItem?.Data;
             eventAggregator.GetEvent<PatientSelectedChangedEvent>().Publish(patientSelectedItem);

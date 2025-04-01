@@ -52,7 +52,7 @@
                             FontWeight="Bold"
                             Foreground="White"
                             IsEnabled="{Binding GameStatus}">
-                            暂停
+                            pause
                         </Button>
                         <Button
                             Width="241"
@@ -65,7 +65,7 @@
                             FontWeight="Bold"
                             Foreground="White"
                             IsEnabled="{Binding GameStatus, Converter={StaticResource crs_Boolean2ReversalConverter}}">
-                            开始
+                            start
                         </Button>
                     </UniformGrid>
                     <DockPanel
@@ -74,7 +74,7 @@
                         VerticalAlignment="Center"
                         TextBlock.FontSize="46"
                         TextBlock.FontWeight="Bold">
-                        <TextBlock>总计时：</TextBlock>
+                        <TextBlock>Total time:</TextBlock>
                         <TextBlock
                             Foreground="{StaticResource crs_SolidColorBrush.F89F00}"
                             Text="{Binding TotalCountdownTime, StringFormat={}{0:HH:mm:ss}, TargetNullValue=00:00:00, FallbackValue=00:00:00}"
@@ -95,7 +95,7 @@
                             FontWeight="Bold"
                             Foreground="White"
                             IsEnabled="{Binding GameStatus}">
-                            重做当前模块
+                            Rework the current module
                         </Button>
                         <Button
                             Width="241"
@@ -108,7 +108,7 @@
                             FontWeight="Bold"
                             Foreground="White"
                             IsEnabled="{Binding GameStatus}">
-                            结束评估
+                            End the assessment
                         </Button>
                     </UniformGrid>
                 </UniformGrid>
@@ -121,7 +121,7 @@
                         Command="{Binding CancelCommand}"
                         DockPanel.Dock="Left">
                         <Button.Background>
-                            <ImageBrush ImageSource="{StaticResource crs_返回}" />
+                            <ImageBrush ImageSource="{StaticResource crs_return}" />
                         </Button.Background>
                     </Button>
                     <hc:SimplePanel />
@@ -163,7 +163,7 @@
                                             Margin="5,0,0,0"
                                             VerticalAlignment="Center"
                                             FontSize="22">
-                                            题目列表
+                                            Question list
                                         </TextBlock>
                                     </StackPanel>
                                 </Border>
@@ -233,7 +233,7 @@
                                             Margin="5,0,0,0"
                                             VerticalAlignment="Center"
                                             FontSize="22">
-                                            题目说明
+                                            Title description
                                         </TextBlock>
                                     </StackPanel>
                                 </Border>
@@ -272,7 +272,7 @@
                                             Margin="5,0,0,0"
                                             VerticalAlignment="Center"
                                             FontSize="22">
-                                            统计
+                                            statistics
                                         </TextBlock>
                                     </StackPanel>
                                 </Border>
@@ -281,7 +281,7 @@
                                     Margin="20,15"
                                     HorizontalAlignment="Center"
                                     VerticalAlignment="Center"
-                                    Source="{StaticResource crs_暂无内容}" />
+                                    Source="{StaticResource crs_No content yet}" />
                             </DockPanel>
                         </Border>
                     </UniformGrid>
@@ -319,7 +319,7 @@
                                             Margin="5,0,0,0"
                                             VerticalAlignment="Center"
                                             FontSize="22">
-                                            本题内容
+                                            Content of this question
                                         </TextBlock>
                                     </StackPanel>
                                 </Border>
@@ -331,7 +331,7 @@
                                             DockPanel.Dock="Bottom"
                                             Orientation="Horizontal"
                                             TextBlock.FontSize="26">
-                                            <TextBlock VerticalAlignment="Bottom">本题计时：</TextBlock>
+                                            <TextBlock VerticalAlignment="Bottom">This question is timed:</TextBlock>
                                             <TextBlock
                                                 VerticalAlignment="Bottom"
                                                 FontWeight="Bold"
@@ -370,7 +370,7 @@
                                                         FontSize="20"
                                                         FontWeight="Bold"
                                                         Foreground="White">
-                                                        重复一遍
+                                                        Repeat it
                                                     </Button>
                                                     <Button
                                                         Width="112"
@@ -382,7 +382,7 @@
                                                         FontSize="20"
                                                         FontWeight="Bold"
                                                         Foreground="White">
-                                                        跳过
+                                                        jump over
                                                     </Button>
                                                 </UniformGrid>
                                                 <Button
@@ -399,7 +399,7 @@
                                                     FontWeight="Bold"
                                                     Foreground="White"
                                                     Visibility="{Binding GameStatus, Converter={StaticResource crs_Boolean2VisibilityHiddenConverter}}">
-                                                    下一题
+                                                    Next question
                                                 </Button>
                                             </DockPanel>
                                         </StackPanel>
@@ -464,7 +464,7 @@
                                             Margin="5,0,0,0"
                                             VerticalAlignment="Center"
                                             FontSize="22">
-                                            本题语音指令
+                                            Voice command for this question
                                         </TextBlock>
                                         <Button
                                             Width="51"
@@ -478,7 +478,7 @@
                                                     Height="24"
                                                     VerticalAlignment="Center"
                                                     Cursor="Hand"
-                                                    Source="{StaticResource crs_声音}"
+                                                    Source="{StaticResource crs_sound}"
                                                     Stretch="Uniform" />
                                             </Button.Content>
                                         </Button>

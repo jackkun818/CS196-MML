@@ -1,0 +1,8 @@
+Difficulty 2
+The library is open from 9 a.m. to 6 p.m. and is closed on Saturdays and Sundays.
+Question 15: Will the library be open on weekends?
+open
+Open only on Saturdays
+Not open
+Open only on Sundays
+2

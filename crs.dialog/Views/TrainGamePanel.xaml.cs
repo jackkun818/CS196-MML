@@ -19,17 +19,17 @@ namespace crs.dialog.Views
 
         private async void SimplePanel_MouseUp(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
-            //await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("非交互区域，请尝试点击返回按钮");
+            //await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("Non-interactive area, please try to click the return button");
         }
 
         private void ListBox_PreviewMouseWheel(object sender, System.Windows.Input.MouseWheelEventArgs e)
         {
             if (!e.Handled)
             {
-                // ListView拦截鼠标滚轮事件
+                // ListViewIntercept mouse wheel events
                 e.Handled = true;
 
-                // 激发一个鼠标滚轮事件，冒泡给外层ListView接收到
+                // Inspire a mouse wheel event and bubble to the outer layerListViewReceived
                 var eventArg = new MouseWheelEventArgs(e.MouseDevice, e.Timestamp, e.Delta);
                 eventArg.RoutedEvent = UIElement.MouseWheelEvent;
                 eventArg.Source = sender;

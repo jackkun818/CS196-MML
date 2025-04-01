@@ -1,0 +1,8 @@
+Difficulty 6
+The city hospital recently purchased a new modelCTScanner, new equipment started to be used last week.
+Question 10: NewCTWhen did the scanner start to be used?
+Last week
+today
+next month
+tomorrow
+0

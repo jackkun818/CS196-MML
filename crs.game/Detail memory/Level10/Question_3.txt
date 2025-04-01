@@ -1,0 +1,8 @@
+Difficulty 10
+The restaurant serves Chinese and Western cuisines. Chinese food includes dim sum, stir-fry and soup；Western cuisine includes steak, pasta and salad. The restaurant is open daily and offers a special menu on weekends. Special dishes are sometimes launched during holidays.
+Question: Does the restaurant offer Chinese food?
+Offer only on holidays
+Only available on weekdays
+no
+yes
+3

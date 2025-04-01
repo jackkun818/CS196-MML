@@ -31,11 +31,11 @@
                     Margin="10"
                     HorizontalAlignment="Center"
                     VerticalAlignment="Top"
-                    FontFamily="黑体"
+                    FontFamily="Bold body"
                     FontSize="26"
                     FontWeight="Bold"
                     Foreground="#404040"
-                    Text="关于我们" />
+                    Text="about Us" />
                 <Button
                     Width="52"
                     Height="57"
@@ -57,13 +57,13 @@
                 <Image
                     Grid.Column="0"
                     Width="100"
-                    Source="{StaticResource crs_公司LOGO1}" />
+                    Source="{StaticResource crs_companyLOGO1}" />
                 <TextBlock
                     Grid.Row="1"
                     HorizontalAlignment="Center"
                     FontSize="14"
                     Foreground="#aeaeae"
-                    Text="软件型号：V1.00.00.01" />
+                    Text="Software Model:V1.00.00.01" />
             </Grid>
             <Grid Grid.Row="2" Height="120">
                 <Grid.RowDefinitions>
@@ -81,7 +81,7 @@
                             VerticalAlignment="Center"
                             FontSize="16"
                             Foreground="#aeaeae"
-                            Text="发布版本号" />
+                            Text="Release version number" />
                         <TextBlock
                             Margin="0,0,30,0"
                             HorizontalAlignment="Right"
@@ -102,7 +102,7 @@
                             VerticalAlignment="Center"
                             FontSize="16"
                             Foreground="#aeaeae"
-                            Text="完整版本号" />
+                            Text="Full version number" />
                         <TextBlock
                             Margin="0,0,30,0"
                             HorizontalAlignment="Right"

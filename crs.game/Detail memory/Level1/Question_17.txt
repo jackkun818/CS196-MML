@@ -1,0 +1,8 @@
+Difficulty 1
+The restaurant recently launched a new seafood dish, which was warmly welcomed by customers. This dish uses the freshest ingredients, which tastes delicious and has received great reviews.
+Question 17: What are the new dishes launched by the restaurant?
+Hamburger
+steak
+spaghetti
+Seafood dishes
+3

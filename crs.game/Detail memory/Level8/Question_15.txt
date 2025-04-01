@@ -1,0 +1,8 @@
+Difficulty 8
+The barber shop opens at 10 a.m. every day and closes at 8 p.m.
+Question 15: What time is the opening time of the barber shop?
+2 pm
+9 am
+12 pm
+10 a.m.
+3

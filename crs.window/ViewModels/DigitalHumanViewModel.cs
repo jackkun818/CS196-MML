@@ -74,11 +74,11 @@ namespace crs.window.ViewModels
             var selectedItem = DigitalHumanSelectedItem;
             if (selectedItem == null)
             {
-                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("请选择");
+                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("Please select");
                 return;
             }
 
-            if (await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("是否删除", button: MessageBoxButton.OKOrCancel) == null)
+            if (await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("Whether to delete", button: MessageBoxButton.OKOrCancel) == null)
             {
                 return;
             }
@@ -87,7 +87,7 @@ namespace crs.window.ViewModels
             {
                 exception.Exception = async ex =>
                 {
-                    exception.Message = "删除数字人信息错误";
+                    exception.Message = "Error deleting digital information";
                     return (false, $"{exception.Message},{ex.Message}");
                 };
 
@@ -119,7 +119,7 @@ namespace crs.window.ViewModels
             {
                 exception.Exception = async ex =>
                 {
-                    exception.Message = "获取数字人信息错误";
+                    exception.Message = "Error in obtaining digital person information";
                     return (false, $"{exception.Message},{ex.Message}", null);
                 };
 

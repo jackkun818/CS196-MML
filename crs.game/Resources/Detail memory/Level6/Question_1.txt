@@ -1,0 +1,8 @@
+Difficulty 6
+A new book was released at the downtown library last night. The author of the new book is Li Ming.
+Question 1: Who is the author of the new book?
+Zhang Wei
+Wang Qiang
+Li Ming
+Chen Fang
+2

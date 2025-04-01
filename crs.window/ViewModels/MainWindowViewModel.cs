@@ -27,7 +27,7 @@ namespace crs.window.ViewModels
 
         void ExecuteLoadedCommand()
         {
-            // 跳转到登录页
+            // Jump to login page
             regionManager.RequestNavigate(Crs_Region.SubWindow, Crs_View.SubNull);
         }
     }

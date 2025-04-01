@@ -136,7 +136,7 @@ namespace crs.window.ViewModels
                 try
                 {
                     HistoryStaysOpen = true;
-                    await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync($"模式“{selectedItem.Mode}”已添加");
+                    await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync($"model“{selectedItem.Mode}”Added");
                 }
                 finally
                 {
@@ -202,7 +202,7 @@ namespace crs.window.ViewModels
         {
             if (patient == null)
             {
-                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("当前患者信息为空");
+                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("The current patient information is empty");
                 return;
             }
 
@@ -211,7 +211,7 @@ namespace crs.window.ViewModels
             {
                 exception.Exception = async ex =>
                 {
-                    exception.Message = "获取历史信息错误";
+                    exception.Message = "Error getting historical information";
                     return (false, $"{exception.Message},{ex.Message}", null);
                 };
 
@@ -251,7 +251,7 @@ namespace crs.window.ViewModels
 
                 if (modules.FirstOrDefault(m => m.Module?.Name?.Trim() == "MoCA") != null && modules.FirstOrDefault(m => m.Module?.Name?.Trim() == "MMSE") != null)
                 {
-                    var modeResult = EvaluateTestMode.标准评估;
+                    var modeResult = EvaluateTestMode.Standard evaluation;
                     var evaluateItem = new EvaluateTestItem { Mode = modeResult };
 
                     items.Add(new ProgramItem<EvaluateTestMode, EvaluateTestItem>
@@ -302,20 +302,20 @@ namespace crs.window.ViewModels
         {
             if (patient == null)
             {
-                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("当前患者信息为空");
+                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("The current patient information is empty");
                 return;
             }
 
             var selectedItem = EvaluateModuleSelectedItem;
             if (selectedItem == null)
             {
-                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("请选择");
+                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("Please select");
                 return;
             }
 
             if (EvaluateProgramItems != null && EvaluateProgramItems.FirstOrDefault(m => m.Item.Mode == selectedItem.Mode) != null)
             {
-                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync($"模式“{selectedItem.Mode}”已添加");
+                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync($"model“{selectedItem.Mode}”Added");
                 return;
             }
 
@@ -339,17 +339,17 @@ namespace crs.window.ViewModels
             var items = EvaluateProgramItems;
             if (items == null || items.Count == 0)
             {
-                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("请先添加方案");
+                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("Please add the plan first");
                 return;
             }
 
-            if (items.FirstOrDefault(m => m.Mode == EvaluateTestMode.标准评估) != null && items.FirstOrDefault(m => m.Mode != EvaluateTestMode.标准评估) != null)
+            if (items.FirstOrDefault(m => m.Mode == EvaluateTestMode.Standard evaluation) != null && items.FirstOrDefault(m => m.Mode != EvaluateTestMode.Standard evaluation) != null)
             {
-                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync($"模式“标准评估”不应跟其他模式混合");
+                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync($"model“Standard evaluation”It should not be mixed with other modes");
                 return;
             }
 
-            if (items.FirstOrDefault(m => m.Mode == EvaluateTestMode.标准评估) != null)
+            if (items.FirstOrDefault(m => m.Mode == EvaluateTestMode.Standard evaluation) != null)
             {
                 var programId = items.FirstOrDefault().Data?.ProgramId ?? -1;
                 var (status, msg, program) = await SaveProgramInfo(items.ToList(), programId);
@@ -367,10 +367,10 @@ namespace crs.window.ViewModels
                     .GetResultAsync<bool>();
 
                 /*LJN
-                20241115新加需求：在训练或者评估模块点击左上角中断返回后，需要自动删除右边已经选择的测试方案。
-                由于之前写的是评估完成了，有结果了，result不为false才清楚原本选择的
-                解决方案：
-                去掉根据result的判断，每次开始一个评估方案的时候就手动清除 EvaluateProgramItems?.Clear();
+                20241115 New requirements: After clicking the training or evaluation module to return after clicking the interrupt in the upper left corner, the test plan that has been selected on the right needs to be automatically deleted.
+                Since I wrote the evaluation before, there were results.resultNot forfalseOnly then did you know what you originally chose
+                Solution:
+                Remove the basisresultTo judge, manually clear each time an evaluation plan is started EvaluateProgramItems?.Clear();
                 */
                 //if (result)
                 //{
@@ -410,10 +410,10 @@ namespace crs.window.ViewModels
                     .GetResultAsync<bool>();
 
                 /*LJN
-                20241115新加需求：在训练或者评估模块点击左上角中断返回后，需要自动删除右边已经选择的测试方案。
-                由于之前写的是评估完成了，有结果了，result不为false才清楚原本选择的
-                解决方案：
-                去掉根据result的判断，每次开始一个评估方案的时候就手动清除 EvaluateProgramItems?.Clear();
+                20241115 New requirements: After clicking the training or evaluation module to return after clicking the interrupt in the upper left corner, the test plan that has been selected on the right needs to be automatically deleted.
+                Since I wrote the evaluation before, there were results.resultNot forfalseOnly then did you know what you originally chose
+                Solution:
+                Remove the basisresultTo judge, manually clear each time an evaluation plan is started EvaluateProgramItems?.Clear();
                 */
                 //if (result)
                 //{
@@ -432,19 +432,19 @@ namespace crs.window.ViewModels
             var items = EvaluateProgramItems;
             if (items == null || items.Count == 0)
             {
-                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("请先添加方案");
+                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("Please add the plan first");
                 return;
             }
 
-            if (items.FirstOrDefault(m => m.Mode == EvaluateTestMode.标准评估) != null && items.FirstOrDefault(m => m.Mode != EvaluateTestMode.标准评估) != null)
+            if (items.FirstOrDefault(m => m.Mode == EvaluateTestMode.Standard evaluation) != null && items.FirstOrDefault(m => m.Mode != EvaluateTestMode.Standard evaluation) != null)
             {
-                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync($"模式“标准评估”不应跟其他模式混合");
+                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync($"model“Standard evaluation”It should not be mixed with other modes");
                 return;
             }
 
             if (programId == null)
             {
-                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("方案ID为空");
+                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("planIDEmpty");
                 return;
             }
 
@@ -472,23 +472,23 @@ namespace crs.window.ViewModels
             {
                 exception.Exception = async ex =>
                 {
-                    exception.Message = "保存方案错误";
+                    exception.Message = "Save the scheme error";
                     return (false, $"{exception.Message},{ex.Message}", null);
                 };
 
                 (bool status, List<Module> modules) result_MoCA_MMSE = default;
 
-                if (items.FirstOrDefault(m => m.Mode == EvaluateTestMode.标准评估) != null)
+                if (items.FirstOrDefault(m => m.Mode == EvaluateTestMode.Standard evaluation) != null)
                 {
                     var modules = await db.Modules.AsNoTracking().Where(m => m.Type == "eval").ToListAsync();
                     if (modules.FirstOrDefault(m => m.Name?.Trim() == "MoCA") == null)
                     {
-                        return (true, "保存方案失败,数据库缺失“MoCA”模块", null);
+                        return (true, "Saving the plan failed,Database missing“MoCA”Module", null);
                     }
 
                     if (modules.FirstOrDefault(m => m.Name?.Trim() == "MMSE") == null)
                     {
-                        return (true, "保存方案失败,数据库缺失“MMSE”模块", null);
+                        return (true, "Saving the plan failed,Database missing“MMSE”Module", null);
                     }
 
                     result_MoCA_MMSE = (true, modules);
@@ -563,7 +563,7 @@ namespace crs.window.ViewModels
                     await db.SaveChangesAsync();
                     await transaction.CommitAsync();
 
-                    return (true, "保存方案成功", program);
+                    return (true, "Save the plan successfully", program);
                 }
                 catch (Exception ex)
                 {
@@ -585,7 +585,7 @@ namespace crs.window.ViewModels
             {
                 exception.Exception = async ex =>
                 {
-                    exception.Message = "获取评估测试模块信息错误";
+                    exception.Message = "Error in obtaining evaluation test module information";
                     return (false, $"{exception.Message},{ex.Message}", null, null);
                 };
 
@@ -618,7 +618,7 @@ namespace crs.window.ViewModels
                     return null;
                 }).Where(m => m != null).ToList();
 
-                items.Insert(0, new EvaluateTestItem { Mode = EvaluateTestMode.标准评估 });
+                items.Insert(0, new EvaluateTestItem { Mode = EvaluateTestMode.Standard evaluation });
                 EvaluateModuleItems = new ObservableCollection<EvaluateTestItem>(items);
             }
 

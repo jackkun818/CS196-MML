@@ -53,7 +53,7 @@ namespace crs.dialog.ViewModels
             this.db = db;
 
             var items = Enumerable.Range(1, 11).ToList();
-            subjectItems = new ObservableCollection<SubjectItem>(items.Select(index => new SubjectItem { Name = $"题目{index}" ,StandardType=EvaluateStandardType.MoCA量表}));
+            subjectItems = new ObservableCollection<SubjectItem>(items.Select(index => new SubjectItem { Name = $"topic{index}" ,StandardType=EvaluateStandardType.MoCAScale}));
         }
 
         #region Property
@@ -136,7 +136,7 @@ namespace crs.dialog.ViewModels
             {
                 exception.Exception = async ex =>
                 {
-                    exception.Message = "获取报告信息错误";
+                    exception.Message = "Get report information error";
                     return (false, $"{exception.Message},{ex.Message}", default);
                 };
 
@@ -183,7 +183,7 @@ namespace crs.dialog.ViewModels
                 return;
             }
 
-            var pattern = @"^题目\d+\.\d+\.\d+$";
+            var pattern = @"^topic\d+\.\d+\.\d+$";
             var resultDetails = result.ResultDetails.Where(m => Regex.IsMatch(m.ValueName, pattern)).ToList();
             var resultDetailGroups = resultDetails.GroupBy(m => m.ValueName.Split('.')[0]).ToList();
             var evaluateResults = multiItem.evaluateResults;
@@ -238,25 +238,25 @@ namespace crs.dialog.ViewModels
 
             AllFraction = $"{rightAnswerCount}/{allAnswerCount}";
 
-            var problem = $"MoCA量表实际得分{AllFraction}";
-            var conclusion = "无";
+            var problem = $"MoCAActual scores of the scale{AllFraction}";
+            var conclusion = "none";
 
             var severity = wrongAnswerCount switch
             {
-                > 20 => "重度",
-                > 10 => "中度",
-                > 0 => "轻度",
+                > 20 => "Heavy",
+                > 10 => "Moderate",
+                > 0 => "Mild",
                 _ => null
             };
 
             if (severity != null)
             {
-                problem = $"{problem}，判断为{severity}认知障碍";
+                problem = $"{problem}, judged as{severity}Cognitive impairment";
 
                 var problemItems = subjectItems.Where(m => !string.IsNullOrWhiteSpace(m.OriginName)).Where(m => m.WrongAnswerCount > 0).Select(m => m.OriginName).Distinct().ToList();
 
-                problem = $"{problem}，主要表现为：{string.Join("、", problemItems)}功能域受损。";
-                conclusion = $"进一步评估{string.Join("、", problemItems)}";
+                problem = $"{problem}, mainly manifested as:{string.Join("、", problemItems)}The functional domain is damaged.";
+                conclusion = $"Further evaluation{string.Join("、", problemItems)}";
             }
 
             Problem = problem;
@@ -266,7 +266,7 @@ namespace crs.dialog.ViewModels
 
             var cartesianData = new List<(string columnName, double allAnswerCount, double rightAnswerCount)>
             {
-                ("总得分", allAnswerCount, rightAnswerCount)
+                ("Total score", allAnswerCount, rightAnswerCount)
             };
             cartesianData.AddRange(subjectGroupItems.Select(m => (m.Key, (double)m.Sum(n => n.AllAnswerCount), (double)m.Sum(n => n.RightAnswerCount))));
 
@@ -293,7 +293,7 @@ namespace crs.dialog.ViewModels
                 [
                     new ColumnSeries<double>
                     {
-                        Name = "满分",
+                        Name = "Full marks",
                         Values = cartesianData.Select(m=>m.allAnswerCount).ToList(),
                         Stroke = null,
                         Fill = new SolidColorPaint(SKColors.CornflowerBlue),
@@ -302,7 +302,7 @@ namespace crs.dialog.ViewModels
                     },
                     new ColumnSeries<double>
                     {
-                        Name = "实际得分",
+                        Name = "Actual score",
                         Values = cartesianData.Select(m=>m.rightAnswerCount).ToList(),
                         Stroke = null,
                         Fill = new SolidColorPaint(SKColors.Orange),

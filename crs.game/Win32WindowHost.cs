@@ -12,7 +12,7 @@ namespace crs.game
 {
     public class Win32WindowHost : HwndHost
     {
-        //重新定义Handle为依赖属性，可以用于绑定
+        //RedefineHandleFor dependency attributes, it can be used for binding
         new public IntPtr Handle
         {
             get { return (IntPtr)GetValue(HandleProperty); }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace crs.theme.Extensions
 {
     /// <summary>
-    /// 通用操作
+    /// Usable operation
     /// </summary>
     public interface IDialogCommon
     {
@@ -15,7 +15,7 @@ namespace crs.theme.Extensions
     }
 
     /// <summary>
-    /// 通用操作
+    /// Usable operation
     /// </summary>
     public interface IDialogCommon<TParameter>
     {
@@ -23,7 +23,7 @@ namespace crs.theme.Extensions
     }
 
     /// <summary>
-    /// 通用操作
+    /// Usable operation
     /// </summary>
     public interface IDialogCommon<TParameter1, TParameter2>
     {
@@ -31,7 +31,7 @@ namespace crs.theme.Extensions
     }
 
     /// <summary>
-    /// 通用操作
+    /// Usable operation
     /// </summary>
     public interface IDialogCommon<TParameter1, TParameter2, TParameter3>
     {
@@ -39,7 +39,7 @@ namespace crs.theme.Extensions
     }
 
     /// <summary>
-    /// 通用操作
+    /// Usable operation
     /// </summary>
     public interface IDialogCommon<TParameter1, TParameter2, TParameter3, TParameter4>
     {
@@ -47,7 +47,7 @@ namespace crs.theme.Extensions
     }
 
     /// <summary>
-    /// 通用操作
+    /// Usable operation
     /// </summary>
     public interface IDialogCommon<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>
     {

@@ -1,0 +1,8 @@
+Difficulty 10
+The barber shop offers hair cuts, dyes and perm services. Special treatments such as scalp massage and hair mask treatments are available for an additional charge. The barber shop is closed every Monday and open at other times. Offers are sometimes launched during holidays.
+Question: Does the barber shop provide scalp massage services?
+no
+Only available on weekends
+Offer only on holidays
+yes
+3

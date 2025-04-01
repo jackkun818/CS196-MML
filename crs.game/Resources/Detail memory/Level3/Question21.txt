@@ -1,0 +1,20 @@
+Difficulty 3
+Oil is one of the main objects of geological exploration, a viscous dark brown liquid called"Industrial blood". Oil is stored in parts of the upper crust. Its main components are various alkanes, cycloalkanes and aromatic hydrocarbons. The oil-forming mechanism of petroleum includes two theories: biodeposition and petrochemical oil. It is mainly used as fuel and gasoline, and is also a raw material for many chemical industry products such as solutions, fertilizers, pesticides and plastics.
+Question 1: What color of liquid is oil?
+Dark brown
+black
+brown
+grey
+0
+Question 2: What is oil called?
+“The heart of industry“
+“The brain of industry”
+“Industrial blood”
+“The pulse of industry”
+2
+Question 3: The article mentioned that petroleum is the raw material for many chemical industry products, which one does not include?
+fertilizer
+Insecticides
+Soap
+plastic
+2

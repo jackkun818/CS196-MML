@@ -1,0 +1,8 @@
+Difficulty 2
+A new sculpture park was added in the city, which displays 10 artworks.
+Question 12: How many works of art are displayed in the Sculpture Park?
+15 pieces
+8 pieces
+10 pieces
+5 pieces
+2

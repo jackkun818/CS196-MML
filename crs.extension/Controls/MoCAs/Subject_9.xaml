@@ -28,17 +28,17 @@
                     <behaviors:ChangePropertyAction
                         PropertyName="OriginName"
                         TargetObject="{Binding}"
-                        Value="抽象能力" />
+                        Value="Abstract Ability" />
                 </behaviors:EventTrigger>
             </behaviors:Interaction.Triggers>
-            抽象能力
+            Abstract Ability
         </TextBlock>
         <StackPanel
             Margin="0,30,0,0"
             VerticalAlignment="Center"
             DockPanel.Dock="Top"
             Orientation="Horizontal">
-            <TextBlock VerticalAlignment="Center" FontSize="28">请说出它们的相似性。例如：香蕉——桔子＝水果</TextBlock>
+            <TextBlock VerticalAlignment="Center" FontSize="28">Please tell me their similarity. For example: banana——orange＝fruit</TextBlock>
             <ContentControl
                 Margin="10,0,0,0"
                 HorizontalAlignment="Center"
@@ -46,7 +46,7 @@
                 ContentTemplate="{StaticResource MMSE_MoCA_ToolTipTemplate}">
                 <ContentControl.Content>
                     <TextBlock TextTrimming="CharacterEllipsis" TextWrapping="Wrap">
-                        评分：只对后两组词的回答进行评分。回答正确，每组词分别给1分。只有下列的回答被视为正确：火车和自行车：运输工具；旅游用的。手表和尺子：测量仪器；测量用的。下列回答不能给分：火车和自行车：都有轮子。手表和尺子：都有数字。
+                        Rating: Only the answers to the last two groups of words are rated. If the answer is correct, each group of words will be given 1 point. Only the following answers are considered correct: Train and Bicycle: Transportation；For travel. Watches and rulers: Measuring instruments；For measurement. The following answers cannot be given points: Train and bicycle: Both wheels are available. Watches and rulers: both have numbers.
                     </TextBlock>
                 </ContentControl.Content>
             </ContentControl>
@@ -82,7 +82,7 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     TextTrimming="CharacterEllipsis">
-                    火车——自行车
+                    train——bike
                     <Button
                         Width="51"
                         Height="36"
@@ -90,7 +90,7 @@
                         BorderBrush="Transparent"
                         Click="ExecuteAudioPlayClick"
                         Cursor="Hand"
-                        Tag="下面我说出两个物体，请您说出这两个物体的相似性。，，火车和自行车的相似之处在哪">
+                        Tag="Next I will tell you about the similarity between these two objects. What are the similarities between trains and bicycles">
 
                         <Button.Content>
                             <Image
@@ -98,7 +98,7 @@
                                 Height="24"
                                 VerticalAlignment="Center"
                                 Cursor="Hand"
-                                Source="{StaticResource crs_声音}"
+                                Source="{StaticResource crs_sound}"
                                 Stretch="Uniform" />
                         </Button.Content>
                     </Button>
@@ -129,7 +129,7 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     TextTrimming="CharacterEllipsis">
-                    手表——尺
+                    watch——ruler
                     <Button
                         Width="51"
                         Height="36"
@@ -137,7 +137,7 @@
                         BorderBrush="Transparent"
                         Click="ExecuteAudioPlayClick"
                         Cursor="Hand"
-                        Tag="接下来我再说两个物体，请您说出这两个物体的相似性。，，手表和尺子的相似之处在哪">
+                        Tag="Next I will talk about two objects. Please tell me the similarity of these two objects. What are the similarities between watches and rulers">
 
                         <Button.Content>
                             <Image
@@ -145,7 +145,7 @@
                                 Height="24"
                                 VerticalAlignment="Center"
                                 Cursor="Hand"
-                                Source="{StaticResource crs_声音}"
+                                Source="{StaticResource crs_sound}"
                                 Stretch="Uniform" />
                         </Button.Content>
                     </Button>

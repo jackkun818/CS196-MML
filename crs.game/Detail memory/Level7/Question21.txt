@@ -1,0 +1,44 @@
+Difficulty 7
+The Summer Palace is an ancient royal garden in Beijing. It was formerly the Qingyi Garden. It is located in the western suburbs of Beijing, fifteen kilometers away from the urban area, covering an area of ​​about 290 hectares, and is adjacent to the Old Summer Palace. It is a large landscape garden built based on Kunming Lake and Wanshou Mountain and based on Hangzhou West Lake as its base, and absorbs the design techniques of Jiangnan gardens. It is also the most complete royal palace imperial garden. It is known as the "Imperial Palace" and is known as the "Imperial Palace" in the United States.“Royal Garden Museum”, is also a national key tourist attraction.
+Question 1: What was the predecessor of the Summer Palace?
+Qingshui Garden
+Qinglian Garden
+Ripple Garden
+Qingyi Garden
+3
+Question 2: Where is the Summer Palace located?
+Western Suburbs of Beijing
+Beijing North Suburbs
+South Suburbs of Beijing
+East Suburbs of Beijing
+0
+Question 3: How far is the Summer Palace from Beijing?
+14 km
+15 km
+16 km
+17 km
+1
+Question 4: What is the area of ​​the Summer Palace?
+270 hectares
+280 hectares
+290 hectares
+300 hectares
+2
+Question 5: What is the adjacent Summer Palace?
+Qingyi Garden
+Yuanmingyuan
+Wanshou Garden
+Kunming Garden
+1
+Question 6: What is the model of the Summer Palace?
+West Lake
+Taihu
+Nanhu
+Beihu
+0
+Question 7: What garden design techniques did the Summer Palace draw on?
+Jiangnan Garden
+Royal Gardens
+Private garden
+Lingnan Gardens
+0

@@ -55,15 +55,15 @@ namespace crs.extension.Models
             PhoneNumber = data.PhoneNumber;
             SexImgType = data.Sex switch
             {
-                0 => SexImgType.男生头像,
-                1 => SexImgType.女生头像,
-                _ => SexImgType.男生头像
+                0 => SexImgType.Boys avatar,
+                1 => SexImgType.Girls' avatar,
+                _ => SexImgType.Boys avatar
             };
             SexType = data.Sex switch
             {
-                0 => SexType.男,
-                1 => SexType.女,
-                _ => SexType.男
+                0 => SexType.male,
+                1 => SexType.female,
+                _ => SexType.male
             };
             Age = data.Age;
 

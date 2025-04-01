@@ -23,7 +23,7 @@
                         <Condition Binding="{Binding Tag, RelativeSource={RelativeSource Mode=Self}}" Value="{x:Null}" />
                     </MultiDataTrigger.Conditions>
                     <MultiDataTrigger.Setters>
-                        <Setter Property="Content" Value="开始答题" />
+                        <Setter Property="Content" Value="Start answering questions" />
                     </MultiDataTrigger.Setters>
                 </MultiDataTrigger>
                 <MultiDataTrigger>
@@ -32,11 +32,11 @@
                         <Condition Binding="{Binding Tag, RelativeSource={RelativeSource Mode=Self}, Converter={StaticResource Object2BooleanConverter}}" Value="True" />
                     </MultiDataTrigger.Conditions>
                     <MultiDataTrigger.Setters>
-                        <Setter Property="Content" Value="已答题" />
+                        <Setter Property="Content" Value="Questions answered" />
                     </MultiDataTrigger.Setters>
                 </MultiDataTrigger>
                 <DataTrigger Binding="{Binding IsChecked, RelativeSource={RelativeSource Mode=Self}}" Value="True">
-                    <Setter Property="Content" Value="答题中" />
+                    <Setter Property="Content" Value="Answering questions" />
                 </DataTrigger>
             </Style.Triggers>
         </Style>

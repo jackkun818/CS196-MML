@@ -28,7 +28,7 @@
                    FontWeight="Bold"
                    TextTrimming="CharacterEllipsis"
                    TextWrapping="Wrap">
-            这个是阅读能力测试，请您念念下面这句话，并按照上面的意思去做
+            This is a reading ability test. Please recite the following sentence and do it according to the above meaning
         </TextBlock>
         <controls:Crs_AudioButton Margin="0,0,0,40"
                                   AudioData="{Binding AudioData}"
@@ -44,7 +44,7 @@
                        TextAlignment="Center"
                        TextTrimming="CharacterEllipsis"
                        TextWrapping="Wrap">
-                闭上你的眼睛
+                Close your eyes
             </TextBlock>
         </hc:SimpleStackPanel>
     </DockPanel>

@@ -1,0 +1,8 @@
+Difficulty 3
+The Campus Games are scheduled to be held on the first Saturday of next month, and the event will last for one day and are available to all students.
+Question 4: How many days will the campus sports meet last?
+long time
+Three days
+Two days
+one day
+3

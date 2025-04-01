@@ -39,11 +39,11 @@ namespace crs.window
             this.Startup += App_Startup;
             this.Exit += App_Exit;
 
-            // UI线程未捕获异常处理事件
+            // UIThe thread does not catch exception handling event
             this.DispatcherUnhandledException += App_DispatcherUnhandledException;
-            // 非UI线程未捕获异常处理事件
+            // NoUIThe thread does not catch exception handling event
             AppDomain.CurrentDomain.UnhandledException += CurrentDomain_UnhandledException;
-            // Task线程内未捕获异常处理事件
+            // TaskException handling events are not caught in the thread
             TaskScheduler.UnobservedTaskException += TaskScheduler_UnobservedTaskException;
         }
 
@@ -77,12 +77,12 @@ namespace crs.window
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
-            LiveCharts.Configure(config => config.HasGlobalSKTypeface(SKFontManager.Default.MatchCharacter('汉')));
+            LiveCharts.Configure(config => config.HasGlobalSKTypeface(SKFontManager.Default.MatchCharacter('Chinese')));
         }
 
         protected override Window CreateShell()
         {
-            // 绑定Dialog的日志委托
+            // BindDialogLog delegation
             DialogEx.WriteDialogLog = Crs_LogHelper.Error;
             Crs_DialogEx.ContainerProvider = this.Container;
 
@@ -102,21 +102,21 @@ namespace crs.window
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            // 注册Db2Context为单例
+            // registerDb2ContextAs a single case
             containerRegistry.RegisterInstance(new Crs_Db2Context());
 
-            // 注册视图
-            containerRegistry.RegisterForNavigation<Login>(Crs_View.Login); // 登录
-            containerRegistry.RegisterForNavigation<Check>(Crs_View.Check); // 检测
-            containerRegistry.RegisterForNavigation<Menu>(Crs_View.Menu); // 主菜单
-            containerRegistry.RegisterForNavigation<UserManagement>(Crs_View.UserManagement); // 用户管理           
-            containerRegistry.RegisterForNavigation<EvaluateTestEx>(Crs_View.EvaluateTest); // 评估测试
-            containerRegistry.RegisterForNavigation<Train>(Crs_View.Train); // 康复训练
-            containerRegistry.RegisterForNavigation<ScheduleEx>(Crs_View.Schedule); // 排班查询
-            containerRegistry.RegisterForNavigation<Report>(Crs_View.Report); // 数据报告
-            containerRegistry.RegisterForNavigation<DigitalHuman>(Crs_View.DigitalHuman); // 数字人管理
-            containerRegistry.RegisterForNavigation<Null>(Crs_View.Null); // 空白页面
-            containerRegistry.RegisterForNavigation<SubNull>(Crs_View.SubNull); // 空白页面
+            // Register a view
+            containerRegistry.RegisterForNavigation<Login>(Crs_View.Login); // Log in
+            containerRegistry.RegisterForNavigation<Check>(Crs_View.Check); // Test
+            containerRegistry.RegisterForNavigation<Menu>(Crs_View.Menu); // Main Menu
+            containerRegistry.RegisterForNavigation<UserManagement>(Crs_View.UserManagement); // User Management           
+            containerRegistry.RegisterForNavigation<EvaluateTestEx>(Crs_View.EvaluateTest); // Evaluation test
+            containerRegistry.RegisterForNavigation<Train>(Crs_View.Train); // Rehabilitation training
+            containerRegistry.RegisterForNavigation<ScheduleEx>(Crs_View.Schedule); // Schedule inquiry
+            containerRegistry.RegisterForNavigation<Report>(Crs_View.Report); // Data Report
+            containerRegistry.RegisterForNavigation<DigitalHuman>(Crs_View.DigitalHuman); // Digital Man Management
+            containerRegistry.RegisterForNavigation<Null>(Crs_View.Null); // Blank page
+            containerRegistry.RegisterForNavigation<SubNull>(Crs_View.SubNull); // Blank page
 
         }
 
@@ -124,8 +124,8 @@ namespace crs.window
         {
             base.ConfigureModuleCatalog(moduleCatalog);
 
-            // 加载模块
-            moduleCatalog.AddModule<dialogModule>(); // 弹窗
+            // Loading module
+            moduleCatalog.AddModule<dialogModule>(); // Pop-up window
         }
     }
 }

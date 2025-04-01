@@ -24,37 +24,37 @@ namespace crs.core.Services
         public class GuideParameter
         {
             /// <summary>
-            /// 指定讲解内容的语⾔，⽀持中文，英文，其他如粤语，潮汕话由语⾳交互负责。
+            /// Specify the explanation of the content⾔，⽀Held Chinese, English, other such as Cantonese, Chaoshan dialect⾳Responsible for interaction.
             /// </summary>
             [JsonProperty("language")] public string Language { get; set; } = "Chinese";
 
             /// <summary>
-            /// 当前患者应该进⾏的康复活动名称或代码
+            /// The current patient should be⾏Rehabilitation activity name or code
             /// </summary>
             [JsonProperty("module_name")] public string ModuleName { get; set; }
 
             /// <summary>
-            /// 患者的唯⼀标识符
+            /// Patient's only⼀Identifier
             /// </summary>
             [JsonProperty("patient_name")] public string PatientName { get; set; }
 
             /// <summary>
-            /// 患者当前遇到的问题
+            /// The patient's current problems
             /// </summary>
             [JsonProperty("question")] public string Question { get; set; }
 
             /// <summary>
-            /// 数字⼈姓名
+            /// number⼈Name
             /// </summary>
             [JsonProperty("digital_person_name")] public string DigitalPersonName { get; set; }
 
             /// <summary>
-            /// 数字⼈与患者的关系
+            /// number⼈Relationship with patients
             /// </summary>
             [JsonProperty("relationship")] public string Relationship { get; set; }
 
             /// <summary>
-            /// 患者的性别
+            /// The gender of the patient
             /// </summary>
             [JsonProperty("patient_sex")] public string PatientSex { get; set; }
         }

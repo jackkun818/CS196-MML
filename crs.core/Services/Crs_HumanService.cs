@@ -26,7 +26,7 @@ namespace crs.core.Services
         public class HumanParameter
         {
             /// <summary>
-            /// 数字人类型
+            /// Digital people type
             /// </summary>
             [JsonProperty("name")] public string MetaType { get; set; }
         }

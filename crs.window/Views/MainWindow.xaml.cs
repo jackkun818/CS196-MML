@@ -107,7 +107,7 @@ namespace crs.window.Views
 
         private void MainWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            var result = Crs_MessageBox.Show("是否关闭程序？", button: MessageBoxButton.YesNo);
+            var result = Crs_MessageBox.Show("Is the program closed?", button: MessageBoxButton.YesNo);
             e.Cancel = result == MessageBoxResult.No;
         }
 
@@ -117,7 +117,7 @@ namespace crs.window.Views
             {
                 if (this.WindowState == WindowState.Maximized)
                 {
-                    // 在全屏模式下不允许拖动窗口
+                    // Not allowed to drag windows in full screen mode
                     handled = true;
                     return new IntPtr(HTCLIENT);
                 }
@@ -125,16 +125,16 @@ namespace crs.window.Views
             return IntPtr.Zero;
         }
 
-        // 窗体变化
+        // Form changes
         void WindowStateChanged(bool saveSetting)
         {
-            // 根据窗体句柄获取窗体所在的屏幕
+            // Get the screen where the form is located according to the form handle
             hwndSource ??= this.GetHwndSource();
             var screen = Screen.FromHandle(hwndSource.Handle);
 
             if (this.WindowState != WindowState.Maximized)
             {
-                // 最大化
+                // maximize
                 this.Top = screen.Bounds.Top;
                 this.Left = screen.Bounds.Left;
                 this.Width = screen.Bounds.Width;
@@ -145,7 +145,7 @@ namespace crs.window.Views
             }
             else
             {
-                // 还原
+                // reduction
                 this.Width = 1280d;
                 this.Height = 750d;
                 this.Top = screen.WorkingArea.Top + ((screen.WorkingArea.Height - this.Height) / 2);

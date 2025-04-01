@@ -19,14 +19,14 @@ using System.Windows.Shapes;
 namespace crs.extension.Controls.MoCAs
 {
     /// <summary>
-    /// Subject_9_Sub.xaml 的交互逻辑
+    /// Subject_9_Sub.xaml Interaction logic
     /// </summary>
     public partial class Subject_9_Sub : UserControl
     {
         static ConcurrentDictionary<int, string> voiceDict = new ConcurrentDictionary<int, string>
         {
-            [0] = "下面我说出两个物体，请您说出这两个物体的相似性。，，火车和自行车的相似之处在哪",
-            [1] = "接下来我再说两个物体，请您说出这两个物体的相似性。，，手表和尺子的相似之处在哪",
+            [0] = "Next I will tell you about the similarity between these two objects. What are the similarities between trains and bicycles",
+            [1] = "Next I will talk about two objects. Please tell me the similarity of these two objects. What are the similarities between watches and rulers",
         };
 
         public Subject_9_Sub()
@@ -50,7 +50,7 @@ namespace crs.extension.Controls.MoCAs
 
         private async void Carousel_PageChanged(object sender, RoutedEventArgs e)
         {
-            // 播放语音提示、启动定时器操作等
+            // Play voice prompts, start timer operations, etc.
 
             Crs_WaveOutToolkit.AudioCancel();
             _ = Crs_WaveInToolkit.RecordAudioCompleteAsync(true);

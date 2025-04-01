@@ -114,7 +114,7 @@ namespace crs.dialog.Views
             var digitalHumanItem = DigitalHumanItem;
             if (digitalHumanItem == null)
             {
-                await Crs_DialogEx.MessageBoxShow(Crs_DialogToken.SubTopMessageBox).GetMessageBoxResultAsync("数字人信息为空");
+                await Crs_DialogEx.MessageBoxShow(Crs_DialogToken.SubTopMessageBox).GetMessageBoxResultAsync("Digital people information is empty");
                 return;
             }
 
@@ -328,7 +328,7 @@ namespace crs.dialog.Views
                 await Crs_SpeechToTextService.Instance.StartAsync();
                 await StopMessageAsync();
 
-                this.microphoneTextBlock.Text = "您请说";
+                this.microphoneTextBlock.Text = "Please say";
 
                 this.microphoneNotify.Visibility = Visibility.Visible;
                 this.microphonePopup.IsOpen = true;
@@ -364,7 +364,7 @@ namespace crs.dialog.Views
                 this.timer.Stop();
                 this.lastText = null;
 
-                this.microphoneTextBlock.Text = "正在查询...";
+                this.microphoneTextBlock.Text = "Querying...";
 
                 await Crs_SpeechToTextService.Instance.StopAsync();
 
@@ -379,7 +379,7 @@ namespace crs.dialog.Views
                     Question = text,
                     DigitalPersonName = digitalHumanItem.Name,
                     PatientSex = patientItem.SexType.ToString(),
-                    Relationship = "其他",
+                    Relationship = "other",
                 };
 
                 this.guideClts?.Cancel();
@@ -474,7 +474,7 @@ namespace crs.dialog.Views
             {
                 if (!Crs_SpeechToTextService.Instance.IsInit)
                 {
-                    var msg = "服务正在启动中，请稍后...";
+                    var msg = "The service is starting, please wait...";
                     await Crs_DialogEx.MessageBoxShow(Crs_DialogToken.SubTopMessageBox).GetMessageBoxResultAsync(msg);
                     return;
                 }
@@ -483,7 +483,7 @@ namespace crs.dialog.Views
                 await OnMessageReceivedEventDispatcher(message, true);
 
                 //await Task.Delay(1000);
-                //await OnMessageReceivedEventDispatcher("请问我该做什么", true);
+                //await OnMessageReceivedEventDispatcher("What should I do", true);
                 return;
             }
 

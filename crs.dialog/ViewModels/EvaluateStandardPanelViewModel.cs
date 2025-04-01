@@ -143,7 +143,7 @@ namespace crs.dialog.ViewModels
 
         async void ExecuteCancelCommand()
         {
-            if (await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("评估还未完成，是否退出？", button: MessageBoxButton.OKOrCancel) == null)
+            if (await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("The evaluation has not been completed, will it be withdrawn?", button: MessageBoxButton.OKOrCancel) == null)
             {
                 return;
             }
@@ -261,7 +261,7 @@ namespace crs.dialog.ViewModels
 
                 //if ((item.IsUseAudio && item.AudioData == null) || (item.IsUseBitmap && item.BitmapData == null))
                 //{
-                //    return (false, $"患者未完成“{subjectItem.Name}{topicName}”答题");
+                //    return (false, $"Patient not completed“{subjectItem.Name}{topicName}”Answer questions");
                 //}
 
                 var answerItems = (from answerItem in item.AnswerItems.Where(m => m.IsUse) select answerItem).ToList();
@@ -297,7 +297,7 @@ namespace crs.dialog.ViewModels
 
                     if (isFind)
                     {
-                        return (false, $"治疗师未完成“{subjectItem.Name}{topicName}”打分");
+                        return (false, $"The therapist not finished“{subjectItem.Name}{topicName}”Rating");
                     }
                 }
             }
@@ -329,26 +329,26 @@ namespace crs.dialog.ViewModels
 
             if (programId == null)
             {
-                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("方案ID为空");
+                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("planIDEmpty");
                 return;
             }
 
             var module = selectedItem.Data;
             if (module == null)
             {
-                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("模块信息为空");
+                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("Module information is empty");
                 return;
             }
 
             bool? completeButtonResult;
-            if ((completeButtonResult = await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("是否结束并生成报告？", button: MessageBoxButton.CustomReport)) == null)
+            if ((completeButtonResult = await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("Is it over and a report generated?", button: MessageBoxButton.CustomReport)) == null)
             {
                 return;
             }
 
             if (!completeButtonResult.Value)
             {
-                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("评估结束");
+                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("Evaluation ends");
 
                 var _standardHost = StandardHost;
                 _standardHost?.Close();
@@ -362,7 +362,7 @@ namespace crs.dialog.ViewModels
             {
                 exception.Exception = async ex =>
                 {
-                    exception.Message = "保存结果错误";
+                    exception.Message = "Save result error";
                     return (false, $"{exception.Message},{ex.Message}");
                 };
 
@@ -448,7 +448,7 @@ namespace crs.dialog.ViewModels
                         item.IsComplete = true;
                     }
 
-                    return (true, "保存结果成功");
+                    return (true, "Save the result successfully");
                 }
                 catch (Exception ex)
                 {
@@ -470,7 +470,7 @@ namespace crs.dialog.ViewModels
                 return;
             }
 
-            await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("评估结束");
+            await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("Evaluation ends");
 
             var program = await db.Programs.FirstOrDefaultAsync(m => m.ProgramId == programId);
             if (program != null)
@@ -507,8 +507,8 @@ namespace crs.dialog.ViewModels
             {
                 var items = selectedItem.StandardType switch
                 {
-                    EvaluateStandardType.MoCA量表 => Enumerable.Range(1, 11).ToList(),
-                    EvaluateStandardType.MMSE量表 => Enumerable.Range(1, 11).ToList(),
+                    EvaluateStandardType.MoCAScale => Enumerable.Range(1, 11).ToList(),
+                    EvaluateStandardType.MMSEScale => Enumerable.Range(1, 11).ToList(),
                     _ => throw new NotImplementedException()
                 };
 
@@ -519,7 +519,7 @@ namespace crs.dialog.ViewModels
 
                     return new SubjectItem
                     {
-                        Name = $"题目{index}",
+                        Name = $"topic{index}",
                         StandardType = selectedItem.StandardType,
                         IsFirst = isFirst,
                         IsLast = isLast,
@@ -540,7 +540,7 @@ namespace crs.dialog.ViewModels
             {
                 exception.Exception = async ex =>
                 {
-                    exception.Message = "获取方案信息错误";
+                    exception.Message = "Error in obtaining the scheme information";
                     return (false, $"{exception.Message},{ex.Message}", null);
                 };
 
@@ -570,8 +570,8 @@ namespace crs.dialog.ViewModels
             {
                 var type = m switch
                 {
-                    EvaluateStandardType.MoCA量表 => "MoCA",
-                    EvaluateStandardType.MMSE量表 => "MMSE",
+                    EvaluateStandardType.MoCAScale => "MoCA",
+                    EvaluateStandardType.MMSEScale => "MMSE",
                     _ => null
                 };
 

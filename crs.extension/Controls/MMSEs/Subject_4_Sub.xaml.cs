@@ -17,13 +17,13 @@ using System.Windows.Shapes;
 namespace crs.extension.Controls.MMSEs
 {
     /// <summary>
-    /// Subject_4_Sub.xaml 的交互逻辑
+    /// Subject_4_Sub.xaml Interaction logic
     /// </summary>
     public partial class Subject_4_Sub : UserControl
     {
         static ConcurrentDictionary<int, string> voiceDict = new ConcurrentDictionary<int, string>
         {
-            [0] = "现在请您从一百减去7，然后从所得的数目再去减去7，共计算五次",
+            [0] = "Now please subtract 7 from one hundred, and then subtract 7 from the obtained number, and calculate five times in total",
         };
 
         public Subject_4_Sub()
@@ -40,7 +40,7 @@ namespace crs.extension.Controls.MMSEs
 
         private async void Subject_Sub_Loaded(object sender, RoutedEventArgs e)
         {
-            // 播放语音提示、启动定时器操作等
+            // Play voice prompts, start timer operations, etc.
 
             Crs_WaveOutToolkit.AudioCancel();
             _ = Crs_WaveInToolkit.RecordAudioCompleteAsync(true);

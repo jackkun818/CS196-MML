@@ -38,7 +38,7 @@
                            TextAlignment="Center"
                            TextTrimming="CharacterEllipsis"
                            TextWrapping="Wrap">
-                    现在我读出一句话，请清楚地重复一遍。
+                    Now I read a sentence, please repeat it clearly.
                 </TextBlock>
             </hc:SimpleStackPanel>
         </DockPanel>
@@ -63,7 +63,7 @@
                            TextAlignment="Center"
                            TextTrimming="CharacterEllipsis"
                            TextWrapping="Wrap">
-                    现在我再读出一句话，请清楚地重复一遍。
+                    Now I read another sentence, please repeat clearly.
                 </TextBlock>
             </hc:SimpleStackPanel>
         </DockPanel>

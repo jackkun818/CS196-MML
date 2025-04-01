@@ -1,96 +1,96 @@
 {
   "BackgroundImage": 
   {
-    "Path": "组 15245.png",
+    "Path": "Group 15245.png",
     "PxPosition": {  "Left": 0, "Up": 0, "Right": 0, "Down": 0 },
     "Size": {"Width": 1260 ,"Height": 741 },
-    "Info": "一群人滑雪"
+    "Info": "A group of people skiing"
   },
   "Images": 
   [
     {
-      "Path": "组 15188.png",
+      "Path": "Group 15188.png",
       "PxMargin": { "Left": 33, "Up": 134, "Right": 1141, "Down": 510 },
       "Size": { "Height": 97.37,"Width": 86.45 },
-      "Info": "绿长板兄弟",
+      "Info": "Green Longboard Brothers",
       "Index": 0
     },
     {
-      "Path": "组 15203.png",
+      "Path": "Group 15203.png",
       "PxMargin": { "Left": 458, "Up": 163, "Right": 679, "Down": 425 },
       "Size": { "Width": 122.72, "Height": 153.26 },
-      "Info": "双板兄弟",
+      "Info": "Double board brother",
       "Index": 1
     },
 	{
-      "Path": "组 15207.png",
+      "Path": "Group 15207.png",
       "PxMargin": { "Left": 957, "Up": 162, "Right": 210, "Down": 458 },
       "Size": { "Width": 93.45, "Height": 121.06 },
-      "Info": "棕板下滑",
+      "Info": "Brown board slides down",
       "Index": 2
     },
 	
 	{
-      "Path": "组 15243.png",
+      "Path": "Group 15243.png",
       "PxMargin": { "Left": 1100, "Up": 155, "Right": 0, "Down": 475 },
       "Size": { "Width": 159.72, "Height": 111.13 },
-      "Info": "绿板下滑",
+      "Info": "Green board slides down",
       "Index": 3
     },
 		
 	{
-      "Path": "组 15108.png",
+      "Path": "Group 15108.png",
       "PxMargin": { "Left": 430, "Up": 354, "Right": 682, "Down": 160 },
       "Size": { "Width": 147.71, "Height": 226.66 },
-      "Info": "三球雪人",
+      "Info": "Three-ball Snowman",
       "Index": 4
     },
 			
 	{
-      "Path": "组 15096.png",
+      "Path": "Group 15096.png",
       "PxMargin": { "Left": 621, "Up": 430, "Right": 486, "Down": 160 },
       "Size": { "Width": 153.37, "Height": 151.19 },
-      "Info": "左雪球",
+      "Info": "Left Snowball",
       "Index": 5
     },
 				
 	{
-      "Path": "组 15057.png",
+      "Path": "Group 15057.png",
       "PxMargin": { "Left": 820, "Up": 338, "Right": 247, "Down": 231 },
       "Size": { "Width": 193.02, "Height": 172.01 },
-      "Info": "双板绿裤",
+      "Info": "Double green pants",
       "Index": 6
     },
 					
 	{
-      "Path": "组 15026.png",
+      "Path": "Group 15026.png",
       "PxMargin": { "Left": 1039, "Up": 308, "Right": 18, "Down": 186 },
       "Size": { "Width": 203.18, "Height": 247.33 },
-      "Info": "长板小子",
+      "Info": "Longboard boy",
       "Index": 7
     },
 						
 	{
-      "Path": "组 15013.png",
+      "Path": "Group 15013.png",
       "PxMargin": { "Left": 6, "Up": 450, "Right": 1030, "Down": 41 },
       "Size": { "Width": 223.6, "Height": 250.32 },
-      "Info": "仰天笑",
+      "Info": "Smiling to the sky",
       "Index": 8
     },
 							
 	{
-      "Path": "组 14963.png",
+      "Path": "Group 14963.png",
       "PxMargin": { "Left": 196, "Up": 452, "Right": 873, "Down": 30 },
       "Size": { "Width": 191.36, "Height": 258.67 },
-      "Info": "沾花惹草姐",
+      "Info": "Flirting with the grass sister",
       "Index": 9
     },
 								
 	{
-      "Path": "组 15084.png",
+      "Path": "Group 15084.png",
       "PxMargin": { "Left": 769, "Up": 556, "Right": 351, "Down": 59 },
       "Size": { "Width": 139.53, "Height": 125.94 },
-      "Info": "右雪球",
+      "Info": "Right snowball",
       "Index": 10
     },
   ]

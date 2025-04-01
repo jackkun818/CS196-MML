@@ -1,0 +1,8 @@
+Difficulty 2
+The cinema screened a science fiction movie this week, with a 120-minute film duration.
+Question 2: How long is this science fiction movie lasting?
+150 minutes
+110 minutes
+90 minutes
+120 minutes
+3

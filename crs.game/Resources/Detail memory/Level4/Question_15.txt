@@ -1,0 +1,8 @@
+Difficulty 4
+The auto show is held in the exhibition hall in the city center. The exhibition displays the latest models of cars and technology. The exhibition lasts for three days.
+Question 15: How many days did the auto show last?
+one day
+Three days
+Four days
+Two days
+1

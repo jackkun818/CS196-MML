@@ -1,0 +1,682 @@
+[
+    {
+        "Story": "Located in the city center, Sunshine Gym attracts many fitness enthusiasts. Members can enjoy discounts and free courses, and there is only one type of membership card. The gym is fully equipped with a variety of fitness equipment, a swimming pool and a yoga room. On weekends, the gym offers cardio, attracting a large number of members to participate. During holidays, the gym will also host some additional activities, such as fitness challenges, to provide members with more fitness opportunities. In addition, members can relax with the gym's sauna facilities. The gym coaching team is also very professional and will develop fitness plans based on the needs of members. Many members have made like-minded friends here and pursue a healthy lifestyle together.",
+        "QuestionsList": [
+            {
+                "Question": "Which type of gym membership card is the only type?",
+                "OptionA": "Season Card",
+                "OptionB": "Monthly Card",
+                "OptionC": "Weekly Card",
+                "OptionD": "Annual card",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "What courses are available in the gym on weekends?",
+                "OptionA": "Yoga",
+                "OptionB": "dance",
+                "OptionC": "Aerobic exercise",
+                "OptionD": "boxing",
+                "Answer": "OptionC"
+            },
+            {
+                "Question": "What activities will the gym hold during holidays?",
+                "OptionA": "Fitness Challenge",
+                "OptionB": "Health Lecture",
+                "OptionC": "Yoga courses",
+                "OptionD": "Swimming competition",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "What other facilities can members use?",
+                "OptionA": "swimming pool",
+                "OptionB": "sauna",
+                "OptionC": "Yoga Room",
+                "OptionD": "Gym",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "What will a gym coach do?",
+                "OptionA": "Teach courses",
+                "OptionB": "Provide dietary advice",
+                "OptionC": "Organize activities",
+                "OptionD": "Develop a fitness plan",
+                "Answer": "OptionD"
+            },
+            {
+                "Question": "What can members meet here?",
+                "OptionA": "coach",
+                "OptionB": "friend",
+                "OptionC": "client",
+                "OptionD": "colleague",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "Where is the gym located?",
+                "OptionA": "city ​​center",
+                "OptionB": "suburbs",
+                "OptionC": "Community",
+                "OptionD": "garden",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "What facilities are included in the gym?",
+                "OptionA": "Fitness equipment",
+                "OptionB": "swimming pool",
+                "OptionC": "Yoga Room",
+                "OptionD": "sauna",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "What discounts can members enjoy?",
+                "OptionA": "Discount",
+                "OptionB": "Free courses",
+                "OptionC": "Free parking",
+                "OptionD": "Free drinks",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "What is the name of the gym?",
+                "OptionA": "Yoga gym",
+                "OptionB": "Spring Breeze Gym",
+                "OptionC": "Blue Sky Gym",
+                "OptionD": "Sunshine Gym",
+                "Answer": "OptionD"
+            }
+        ]
+    },
+    {
+        "Story": "Sunshine Cinema is located in a bustling area of ​​the city and is a good place for citizens to relax and entertain. The ticket price for adults is 100 yuan, the ticket price for children is 60 yuan, and the ticket price remains unchanged on weekends and holidays, providing the audience with a stable viewing experience. Some movies have special screenings, and the fares may vary, such as 3DMovies andIMAXThe ticket price for the movie will be higher. The cinema also provides membership cards and points redemption services, and members can enjoy discounted ticket purchase benefits. In addition, the cinema will hold theme movie screenings from time to time to attract many movie fans to watch. The cinema facilities are also very advanced, with comfortable seats and high-definition projection equipment, providing the audience with a high-quality viewing environment. The staff are enthusiastic and attentive and ready to help the audience. Many viewers have had a great time here and share their thoughts on the movie.",
+        "QuestionsList": [
+            {
+                "Question": "What are the adult tickets for cinemas?",
+                "OptionA": "100 yuan",
+                "OptionB": "80 yuan",
+                "OptionC": "90 yuan",
+                "OptionD": "RMB 120",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "What is the price of a child's fare?",
+                "OptionA": "40 yuan",
+                "OptionB": "60 yuan",
+                "OptionC": "50 yuan",
+                "OptionD": "70 yuan",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "How will the fares change on weekends and holidays?",
+                "OptionA": "rise",
+                "OptionB": "constant",
+                "OptionC": "decline",
+                "OptionD": "free",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "What might happen to the ticket price during the special show period?",
+                "OptionA": "same",
+                "OptionB": "free",
+                "OptionC": "Lower",
+                "OptionD": "higher",
+                "Answer": "OptionD"
+            },
+            {
+                "Question": "What benefits can you enjoy with a membership card?",
+                "OptionA": "Discount",
+                "OptionB": "Free parking",
+                "OptionC": "Free drinks",
+                "OptionD": "Free snacks",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "What events will the cinema hold?",
+                "OptionA": "Game competition",
+                "OptionB": "concert",
+                "OptionC": "Drama Performance",
+                "OptionD": "Theme movie exhibition",
+                "Answer": "OptionD"
+            },
+            {
+                "Question": "How about the seats in the cinema?",
+                "OptionA": "Crowded",
+                "OptionB": "hard",
+                "OptionC": "Comfortable",
+                "OptionD": "usually",
+                "Answer": "OptionC"
+            },
+            {
+                "Question": "What is the projection equipment?",
+                "OptionA": "HD",
+                "OptionB": "Old",
+                "OptionC": "Vague",
+                "OptionD": "usually",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "What is the attitude of the staff?",
+                "OptionA": "enthusiasm",
+                "OptionB": "cold",
+                "OptionC": "generally",
+                "OptionD": "Unfriendly",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "What can audiences share?",
+                "OptionA": "Movie",
+                "OptionB": "food",
+                "OptionC": "drinks",
+                "OptionD": "idea",
+                "Answer": "OptionD"
+            }
+        ]
+    },
+    {
+        "Story": "Moonlight Library is a modern building located in the city center. The museum has a rich collection of books, covering literature and fields. The library is free to all citizens and is open from 9 a.m. to 5 p.m. every day. There are many comfortable reading areas in the museum where readers can read and study quietly. In addition, the library also regularly holds various cultural events, such as writer signature meetings, which attracts many literary enthusiasts to participate. The library staff are friendly and always willing to help readers find the books they need. The library environment is very quiet, and many citizens have spent a fulfilling time here and enjoyed reading.",
+        "QuestionsList": [
+            {
+                "Question": "Where is the library located?",
+                "OptionA": "city ​​center",
+                "OptionB": "Quiet corner",
+                "OptionC": "suburbs",
+                "OptionD": "garden",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "Which field does the library's collection include?",
+                "OptionA": "literature",
+                "OptionB": "history",
+                "OptionC": "science",
+                "OptionD": "finance",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "Does the library charge citizens?",
+                "OptionA": "free",
+                "OptionB": "TOLL",
+                "OptionC": "Partial charges",
+                "OptionD": "Membership fees",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "What is the daily business hours of the library?",
+                "OptionA": "All day",
+                "OptionB": "9 a.m. to 5 p.m.",
+                "OptionC": "From afternoon to evening",
+                "OptionD": "All day weekend",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "What areas are there in the library?",
+                "OptionA": "Reading Room",
+                "OptionB": "Children's Area",
+                "OptionC": "Reading area",
+                "OptionD": "Smoke-free area",
+                "Answer": "OptionC"
+            },
+            {
+                "Question": "What activities will the library hold?",
+                "OptionA": "Sports Games",
+                "OptionB": "Reading sharing session",
+                "OptionC": "concert",
+                "OptionD": "Writer signature meeting",
+                "Answer": "OptionD"
+            },
+            {
+                "Question": "What is the attitude of the library staff?",
+                "OptionA": "friendly",
+                "OptionB": "cold",
+                "OptionC": "generally",
+                "OptionD": "Unfriendly",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "What can citizens do here?",
+                "OptionA": "Borrowing books",
+                "OptionB": "study",
+                "OptionC": "read",
+                "OptionD": "sleep",
+                "Answer": "OptionC"
+            },
+            {
+                "Question": "What is the architectural style of the library?",
+                "OptionA": "Tradition",
+                "OptionB": "modernization",
+                "OptionC": "classical",
+                "OptionD": "European style",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "What is the environment of the library?",
+                "OptionA": "usually",
+                "OptionB": "noisy",
+                "OptionC": "Crowded",
+                "OptionD": "Quiet",
+                "Answer": "OptionD"
+            }
+        ]
+    },
+    {
+        "Story": "Starlight Restaurant is a downtown upscale restaurant known for its exquisite dishes and elegant surroundings. The restaurant's chef is an internationally renowned chef who specializes in traditional cooking and brings a unique culinary experience to diners. Due to the variety of dishes, the restaurant’s menu is often updated. In addition, the restaurant also provides high-quality wine matching services to help diners enjoy the food better. The restaurant has elegant decor and soft lighting to create a romantic atmosphere. Many couples choose to dine here and enjoy high-quality catering services.",
+        "QuestionsList": [
+            {
+                "Question": "Where is Starlight Restaurant?",
+                "OptionA": "city ​​center",
+                "OptionB": "suburbs",
+                "OptionC": "seaside",
+                "OptionD": "garden",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "What is the chef of the restaurant good at?",
+                "OptionA": "Traditional cooking",
+                "OptionB": "Modern innovation",
+                "OptionC": "Combining tradition and innovation",
+                "OptionD": "fast food",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "What is the reason why the menu is updated frequently?",
+                "OptionA": "Fresh ingredients",
+                "OptionB": "Diversity of dishes",
+                "OptionC": "Diners' needs",
+                "OptionD": "All options",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "What services does the restaurant offer?",
+                "OptionA": "Wine pairing",
+                "OptionB": "takeout",
+                "OptionC": "fast food",
+                "OptionD": "buffet",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "What is the decorative style of the restaurant?",
+                "OptionA": "Simple",
+                "OptionB": "modern",
+                "OptionC": "Tradition",
+                "OptionD": "Elegant",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "What is the atmosphere of the restaurant?",
+                "OptionA": "romantic",
+                "OptionB": "noisy",
+                "OptionC": "usually",
+                "OptionD": "Business",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "What is the restaurant’s dishes famous for?",
+                "OptionA": "Quick",
+                "OptionB": "large",
+                "OptionC": "Cheap",
+                "OptionD": "Exquisite",
+                "Answer": "OptionD"
+            },
+            {
+                "Question": "What is the lighting in the restaurant?",
+                "OptionA": "Bright",
+                "OptionB": "soft",
+                "OptionC": "Glorious",
+                "OptionD": "dim",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "Who often chooses to dine here?",
+                "OptionA": "student",
+                "OptionB": "Business people",
+                "OptionC": "family",
+                "OptionD": "Couple",
+                "Answer": "OptionD"
+            },
+            {
+                "Question": "What is the environment of the restaurant?",
+                "OptionA": "grace",
+                "OptionB": "noisy",
+                "OptionC": "Crowded",
+                "OptionD": "usually",
+                "Answer": "OptionA"
+            }
+        ]
+    },
+    {
+        "Story": "Green Island Park is a large park located in the outskirts of the city, known for its beautiful natural scenery and abundant leisure activities. There are large areas of green space and lakes in the park, which are suitable for citizens to have picnics, and the lake is suitable for citizens to row. In addition, the park also has a children's play area, attracting many families and sports enthusiasts. Many seasonal flowers are also planted in the park, such as spring cherry blossoms, attracting a large number of tourists to come and watch. The park’s management team also pays great attention to environmental protection and regularly carries out greening and cleaning. There are also dance competitions in the park, where many citizens have a pleasant weekend and enjoy the beauty of nature.",
+        "QuestionsList": [
+            {
+                "Question": "Where is Green Island Park located?",
+                "OptionA": "city ​​center",
+                "OptionB": "City suburbs",
+                "OptionC": "seaside",
+                "OptionD": "Mountain area",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "What activities are suitable for the park?",
+                "OptionA": "picnic",
+                "OptionB": "swim",
+                "OptionC": "ski",
+                "OptionD": "surf",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "What facilities are there in the park?",
+                "OptionA": "Children's play area",
+                "OptionB": "swimming pool",
+                "OptionC": "Cinema",
+                "OptionD": "library",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "What flowers are planted in the park?",
+                "OptionA": "Rose",
+                "OptionB": "Cherry blossoms",
+                "OptionC": "peony",
+                "OptionD": "sunflower",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "What does the park’s management team focus on?",
+                "OptionA": "profit",
+                "OptionB": "Environmental protection",
+                "OptionC": "Business Activities",
+                "OptionD": "Advertising",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "What can citizens enjoy here?",
+                "OptionA": "Shopping",
+                "OptionB": "gourmet food",
+                "OptionC": "The beauty of nature",
+                "OptionD": "Entertainment performance",
+                "Answer": "OptionC"
+            },
+            {
+                "Question": "What other activities are there in the park?",
+                "OptionA": "concert",
+                "OptionB": "Bicycle lanes",
+                "OptionC": "Yoga courses",
+                "OptionD": "Dance competition",
+                "Answer": "OptionD"
+            },
+            {
+                "Question": "What is the right lake in the park?",
+                "OptionA": "swim",
+                "OptionB": "fishing",
+                "OptionC": "boating",
+                "OptionD": "diving",
+                "Answer": "OptionC"
+            },
+            {
+                "Question": "What is the name of the park?",
+                "OptionA": "Sunshine Park",
+                "OptionB": "Green Island Park",
+                "OptionC": "Bishui Park",
+                "OptionD": "Blue Sky Park",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "Who are the cherry blossoms in the park attracting?",
+                "OptionA": "student",
+                "OptionB": "family",
+                "OptionC": "Business people",
+                "OptionD": "Visitors",
+                "Answer": "OptionD"
+            }
+        ]
+    },
+    {
+        "Story": "Blue Ocean Art Center is a cultural and artistic venue located in the heart of the city, known for its diverse art exhibitions and cultural activities. The Art Center has multiple exhibition halls and regularly hosts various art exhibitions, such as painting, sculpture and photography exhibitions. In addition, the Arts Center also has a theater and a concert hall, which provides a variety of cultural activities such as drama, concerts and dance performances. The architectural style of the Art Center is classic, attracting many art lovers to visit. The Art Center also has an art shop that sells a variety of artworks and souvenirs. The staff of the Art Center are enthusiastic and provide high-quality guided tour services to the audience. Many citizens have spent a fulfilling cultural life here and improved their artistic cultivation.",
+        "QuestionsList": [
+            {
+                "Question": "Where is Blue Ocean Art Center located?",
+                "OptionA": "City suburbs",
+                "OptionB": "City Center",
+                "OptionC": "seaside",
+                "OptionD": "Mountain area",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "What exhibition halls are available in the Art Center?",
+                "OptionA": "Science and Technology Exhibition Hall",
+                "OptionB": "Nature Exhibition Hall",
+                "OptionC": "History Exhibition Hall",
+                "OptionD": "Art Exhibition Hall",
+                "Answer": "OptionD"
+            },
+            {
+                "Question": "What cultural activities does the Art Center hold?",
+                "OptionA": "Sports competitions",
+                "OptionB": "concert",
+                "OptionC": "Science and Technology Exhibition",
+                "OptionD": "Commercial Exhibition",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "What is the architectural style of the Art Center?",
+                "OptionA": "Tradition",
+                "OptionB": "modern",
+                "OptionC": "classical",
+                "OptionD": "Combining modern and traditional",
+                "Answer": "OptionC"
+            },
+            {
+                "Question": "What other facilities are available at the Art Center?",
+                "OptionA": "Dining room",
+                "OptionB": "Art Store",
+                "OptionC": "library",
+                "OptionD": "Cinema",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "What is the attitude of the staff at the Arts Center?",
+                "OptionA": "cold",
+                "OptionB": "enthusiasm",
+                "OptionC": "generally",
+                "OptionD": "Unfriendly",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "Who are the architectural styles of the Art Center attracting?",
+                "OptionA": "student",
+                "OptionB": "Visitors",
+                "OptionC": "Business people",
+                "OptionD": "Art lovers",
+                "Answer": "OptionD"
+            },
+            {
+                "Question": "What does the exhibition at the Art Center include?",
+                "OptionA": "science and technology",
+                "OptionB": "painting",
+                "OptionC": "history",
+                "OptionD": "nature",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "What does the Art Center performance include?",
+                "OptionA": "drama",
+                "OptionB": "physical education",
+                "OptionC": "science and technology",
+                "OptionD": "Business",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "What can citizens improve here?",
+                "OptionA": "Sports Skills",
+                "OptionB": "Business knowledge",
+                "OptionC": "Artistic cultivation",
+                "OptionD": "Technology capability",
+                "Answer": "OptionC"
+            }
+        ]
+    },
+    {
+        "Story": "Morning Café is a cozy café located in the heart of the city, known for its cozy environment and delicious coffee. The interior of the cafe is simple in style and offers a variety of coffee and exquisite desserts. In addition, the cafe also has a reading area for customers to read books while enjoying the coffee. The music in the cafe is gentle and soothing, creating a peaceful atmosphere. The cafe staff are very enthusiastic and are always willing to help customers. Many customers gather with friends here and enjoy a leisurely afternoon. The cafe also holds small concerts from time to time, attracting many music lovers.",
+        "QuestionsList": [
+            {
+                "Question": "Where is Chenxi Café located?",
+                "OptionA": "city ​​center",
+                "OptionB": "suburbs",
+                "OptionC": "seaside",
+                "OptionD": "garden",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "What other products does a cafe offer besides coffee?",
+                "OptionA": "coffee",
+                "OptionB": "fast food",
+                "OptionC": "drinks",
+                "OptionD": "dessert",
+                "Answer": "OptionD"
+            },
+            {
+                "Question": "What is the interior decoration style of the cafe?",
+                "OptionA": "classical",
+                "OptionB": "luxurious",
+                "OptionC": "Simple",
+                "OptionD": "modern",
+                "Answer": "OptionC"
+            },
+            {
+                "Question": "What areas are there for a cafe?",
+                "OptionA": "Reading area",
+                "OptionB": "Children's play area",
+                "OptionC": "Restaurant area",
+                "OptionD": "Fitness area",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "What is the atmosphere of a cafe?",
+                "OptionA": "noisy",
+                "OptionB": "peaceful",
+                "OptionC": "Business",
+                "OptionD": "lively",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "What is the attitude of the cafe staff?",
+                "OptionA": "cold",
+                "OptionB": "Very enthusiastic",
+                "OptionC": "generally",
+                "OptionD": "Unfriendly",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "What can customers do here?",
+                "OptionA": "Shopping",
+                "OptionB": "read",
+                "OptionC": "sports",
+                "OptionD": "Work",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "What other activities will the cafe hold?",
+                "OptionA": "Sports Games",
+                "OptionB": "concert",
+                "OptionC": "Lecture",
+                "OptionD": "exhibition",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "What is the music in the cafe?",
+                "OptionA": "Gentle and soothing",
+                "OptionB": "Rock",
+                "OptionC": "classical",
+                "OptionD": "Popularity",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "What time can customers enjoy here?",
+                "OptionA": "Busy",
+                "OptionB": "nervous",
+                "OptionC": "nervous",
+                "OptionD": "laid back",
+                "Answer": "OptionD"
+            }
+        ]
+    },
+    {
+        "Story": "Yinyue Bookstore is a cultural bookstore located in the suburbs and is loved by readers for its rich variety of books and a comfortable reading environment. The bookstore has a variety of literature, history, science and art books to meet the needs of different readers. In addition, the bookstore also has a coffee area for readers to enjoy coffee while reading. The bookstore has a classic decorative style, creating a quiet atmosphere. The bookstore also holds regular reading sharing sessions, attracting many literary enthusiasts to participate. The staff of the bookstore are characterized by their knowledge and are always willing to provide reading advice to readers. Many readers have spent fulfilling reading time here, enriching their knowledge and horizons.",
+        "QuestionsList": [
+            {
+                "Question": "Where is Yinyue Bookstore located?",
+                "OptionA": "city ​​center",
+                "OptionB": "suburbs",
+                "OptionC": "seaside",
+                "OptionD": "garden",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "What is the name of the bookstore?",
+                "OptionA": "Sunshine Bookstore",
+                "OptionB": "Black Bookstore",
+                "OptionC": "Golden Bookstore",
+                "OptionD": "Yinyue Bookstore",
+                "Answer": "OptionD"
+            },
+            {
+                "Question": "What other areas are there in the bookstore?",
+                "OptionA": "Dining room",
+                "OptionB": "Coffee area",
+                "OptionC": "Recreation area",
+                "OptionD": "Fitness area",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "What is the decorative style of the bookstore?",
+                "OptionA": "Simple",
+                "OptionB": "Elegant",
+                "OptionC": "modern",
+                "OptionD": "Tradition",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "What activities will the bookstore hold?",
+                "OptionA": "Sports Games",
+                "OptionB": "concert",
+                "OptionC": "Reading sharing session",
+                "OptionD": "exhibition",
+                "Answer": "OptionC"
+            },
+            {
+                "Question": "What are the characteristics of the bookstore employees?",
+                "OptionA": "Knowledgeable",
+                "OptionB": "cold",
+                "OptionC": "generally",
+                "OptionD": "Unfriendly",
+                "Answer": "OptionA"
+            },
+            {
+                "Question": "What can readers enjoy here?",
+                "OptionA": "Shopping",
+                "OptionB": "read",
+                "OptionC": "sports",
+                "OptionD": "entertainment",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "What is the atmosphere of a bookstore?",
+                "OptionA": "noisy",
+                "OptionB": "Quiet",
+                "OptionC": "Business",
+                "OptionD": "lively",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "What is the name of the bookstore?",
+                "OptionA": "Chenxi Bookstore",
+                "OptionB": "Yinyue Bookstore",
+                "OptionC": "Starlight Bookstore",
+                "OptionD": "Moonlight Bookstore",
+                "Answer": "OptionB"
+            },
+            {
+                "Question": "What can readers enrich here?",
+                "OptionA": "Sports Skills",
+                "OptionB": "Business knowledge",
+                "OptionC": "Knowledge and vision",
+                "OptionD": "Technology capability",
+                "Answer": "OptionC"
+            }
+        ]
+    }
+]

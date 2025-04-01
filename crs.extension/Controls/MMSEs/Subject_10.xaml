@@ -28,17 +28,17 @@
                     <behaviors:ChangePropertyAction
                         PropertyName="OriginName"
                         TargetObject="{Binding}"
-                        Value="书写能力" />
+                        Value="Writing ability" />
                 </behaviors:EventTrigger>
             </behaviors:Interaction.Triggers>
-            书写能力
+            Writing ability
         </TextBlock>
         <StackPanel
             Margin="0,30,0,0"
             VerticalAlignment="Center"
             DockPanel.Dock="Top"
             Orientation="Horizontal">
-            <TextBlock VerticalAlignment="Center" FontSize="28">要求手试者自己写一句完整的句子</TextBlock>
+            <TextBlock VerticalAlignment="Center" FontSize="28">Ask the examiner to write a complete sentence himself</TextBlock>
             <ContentControl
                 Margin="10,0,0,0"
                 HorizontalAlignment="Center"
@@ -46,7 +46,7 @@
                 ContentTemplate="{StaticResource MMSE_MoCA_ToolTipTemplate}">
                 <ContentControl.Content>
                     <TextBlock TextTrimming="CharacterEllipsis" TextWrapping="Wrap">
-                        评分：让患者再屏幕上自发写出一句完整的句子，句子必须有主语、动词，并有意义。注意你不能给予任何提示。语法和标点的错误可以忽略。
+                        Rating: Let the patient spontaneously write a complete sentence on the screen. The sentence must have a subject, a verb, and be meaningful. Be careful that you cannot give any prompts. Syntax and punctuation errors can be ignored.
                     </TextBlock>
                 </ContentControl.Content>
             </ContentControl>
@@ -57,7 +57,7 @@
                 BorderBrush="Transparent"
                 Click="ExecuteAudioPlayClick"
                 Cursor="Hand"
-                Tag="请您写出一句完整的句子,可在空白处作答，句子必须有主语、动词、有意义">
+                Tag="Please write a complete sentence,Can answer in the blank space, the sentence must have subject, verb, and meaningful">
 
                 <Button.Content>
                     <Image
@@ -65,7 +65,7 @@
                         Height="24"
                         VerticalAlignment="Center"
                         Cursor="Hand"
-                        Source="{StaticResource crs_声音}"
+                        Source="{StaticResource crs_sound}"
                         Stretch="Uniform" />
                 </Button.Content>
             </Button>
@@ -87,7 +87,7 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     TextTrimming="CharacterEllipsis">
-                    （句子必须有主语、动词、有意义）
+                    （Sentences must have subject, verb, and meaningful）
                 </TextBlock>
             </DockPanel>
         </UniformGrid>

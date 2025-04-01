@@ -35,7 +35,7 @@
                        TextAlignment="Center"
                        TextTrimming="CharacterEllipsis"
                        TextWrapping="Wrap">
-                这是一个回忆测验，请回忆并说出刚才记住的词语
+                This is a memory test, please recall and say the words you just remembered
             </TextBlock>
         </hc:SimplePanel>
     </DockPanel>

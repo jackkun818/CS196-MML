@@ -1,0 +1,8 @@
+Difficulty 3
+The restaurant has recently updated its menu and added 15 new dishes, including Chinese and Western dishes.
+Question 12: How many new dishes are there on the restaurant’s new menu?
+20
+15
+12
+10
+1

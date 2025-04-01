@@ -17,7 +17,7 @@ using System.Windows.Shapes;
 namespace crs.game
 {
     /// <summary>
-    /// HostWindow.xaml 的交互逻辑
+    /// HostWindow.xaml Interaction logic
     /// </summary>
     public partial class HostWindow : Window
     {
@@ -32,7 +32,7 @@ namespace crs.game
         {
             if (gameBase == null)
             {
-                MessageBox.Show("游戏未加载");
+                MessageBox.Show("The game is not loaded");
                 return;
             }
 
@@ -45,7 +45,7 @@ namespace crs.game
         {
             if (gameBase == null)
             {
-                MessageBox.Show("游戏未加载");
+                MessageBox.Show("The game is not loaded");
                 return;
             }
 
@@ -56,7 +56,7 @@ namespace crs.game
         {
             if (gameBase == null)
             {
-                MessageBox.Show("游戏未加载");
+                MessageBox.Show("The game is not loaded");
                 return;
             }
 
@@ -67,7 +67,7 @@ namespace crs.game
         {
             if (gameBase == null)
             {
-                MessageBox.Show("游戏未加载");
+                MessageBox.Show("The game is not loaded");
                 return;
             }
 
@@ -78,14 +78,14 @@ namespace crs.game
         {
             if (gameBase != null)
             {
-                MessageBox.Show("游戏已加载");
+                MessageBox.Show("The game has been loaded");
                 return;
             }
 
-            gameBase = new 专注注意力() as IGameBase;
+            gameBase = new Focus on attention() as IGameBase;
             if (gameBase == null)
             {
-                MessageBox.Show("游戏模块未实现IGameBase接口");
+                MessageBox.Show("The game module is not implementedIGameBaseinterface");
                 return;
             }
 
@@ -110,7 +110,7 @@ namespace crs.game
                 this.gameContentControl.Content = null;
                 gameBase = null;
 
-                MessageBox.Show("游戏结束");
+                MessageBox.Show("game over");
                 return;
             };
 

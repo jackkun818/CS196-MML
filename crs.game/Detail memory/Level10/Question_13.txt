@@ -1,0 +1,8 @@
+Difficulty 10
+The library will add 200 new books every month, covering novels, biographies and technology. The new book will be updated on the library website and readers can book or borrow directly. After the new book arrives, the library will sort it out.
+Question: How many new books does the library add every month?
+150 bottles
+200 bottles
+100 bottles
+300 bottles
+1

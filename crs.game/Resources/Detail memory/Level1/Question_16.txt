@@ -1,0 +1,8 @@
+Difficulty 1
+The bookstore started a 50% off promotion today for a week. The promotion attracted a large number of book fans, who came to buy their favorite books.
+Question 16: How long does the bookstore promotion last?
+Three days
+One week
+One month
+Two weeks
+1

@@ -1,0 +1,157 @@
+﻿<local:BaseUserControl x:Class="crs.game.Games.Word memory"
+                       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                       xmlns:hc="https://handyorg.github.io/handycontrol"
+                       xmlns:local="clr-namespace:crs.game"
+                       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                       Width="1340"
+                       Height="920"
+                       Background="#0000"
+                       mc:Ignorable="d">
+    <Grid Margin="20">
+        <!--
+            The following are the components during the memory phase
+        -->
+        <!--  The following oneTextBlockIt's in the memory stageTextBlock, after memory, it must be hidden, it is hidden by default, and needs to be displayed manually  -->
+        <StackPanel HorizontalAlignment="Center">
+            <TextBlock x:Name="MemorizeTipTextBlock"
+                       Width="1302"
+                       Height="57"
+                       Margin="0,50,0,0"
+                       FontFamily="Times New Roman"
+                       FontSize="57"
+                       FontWeight="Bold"
+                       Text="Please remember the following words"
+                       TextAlignment="Center" />
+            <TextBlock x:Name="WordsToMemorizeTextBLock"
+                       Width="1302"
+                       Height="200"
+                       Margin="0,200,0,0"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       FontFamily="Times New Roman"
+                       FontSize="57"
+                       FontWeight="Bold"
+                       Text="Words"
+                       TextAlignment="Center" />
+
+        </StackPanel>
+        <!--  The following oneButtonIt's in the memory stageButton, if clicked, it will be hidden, it will be hidden by default and needs to be displayed manually  -->
+        <Button Name="MemorizeOKButton"
+                Width="241"
+                Height="62"
+                Margin="0,600,0,50"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Background="#F89F00"
+                Click="MemorizeOKButtonClick"
+                Content="OK"
+                FontFamily="Microsoft YaHei"
+                FontSize="40"
+                FontWeight="Bold"
+                Foreground="White"
+                Visibility="Collapsed" />
+        <!--
+            The following is the training/Components during practice phase
+        -->
+        <Grid x:Name="PlayGrid">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="2*" />
+            </Grid.RowDefinitions>
+            <TextBlock x:Name="CountdownDisplay"
+                       Margin="0,0,0,0"
+                       HorizontalAlignment="Right"
+                       VerticalAlignment="Top"
+                       FontSize="40"
+                       RenderTransformOrigin="-1.45,0.497"
+                       Visibility="Collapsed" />
+            <!--  Changes in demand, countdown hidden  -->
+            <Border Grid.Row="1"
+                    Panel.ZIndex="10"
+                    BorderBrush="#c2c3c8"
+                    BorderThickness="0,15,0,15">
+                <Canvas x:Name="WordArea" Grid.Row="1" />
+            </Border>
+            <Rectangle x:Name="TargetArea"
+                       Grid.Row="1"
+                       Canvas.Left="1050"
+                       Canvas.Top="-13"
+                       Width="330"
+                       Height="290"
+                       Margin="920,0,0,0"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Top"
+                       Panel.ZIndex="20"
+                       Fill="Transparent"
+                       Stroke="Black"
+                       StrokeThickness="15" />
+            <!--  BundlerectanglePut it inborderCome outside to keep it inborderDisplay on the upper layer  -->
+
+            <!--  Button Focusable="False" Background="#F89F00" Foreground="White" Content="Finish" HorizontalAlignment="Right" Grid.Row="2" VerticalAlignment="Bottom" Height="67" Width="241"  FontSize="26"  Click="EndClick" Margin="0,0,309,55"/  -->
+            <Button x:Name="StartButton"
+                    Grid.Row="2"
+                    Width="241"
+                    Height="67"
+                    Margin="0,0,0,55"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Bottom"
+                    Background="#F89F00"
+                    Click="StartClick"
+                    Content="start"
+                    Focusable="False"
+                    FontFamily="Microsoft YaHei"
+                    FontSize="40"
+                    FontWeight="Bold"
+                    Foreground="White" />
+            <!--  Image controls for displaying feedback  -->
+            <Image x:Name="CorrectImage"
+                   Grid.Row="0"
+                   Width="300"
+                   Height="200"
+                   Margin="512,50,0,0"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+                   Visibility="Collapsed" />
+            <Image Name="ErrorImage"
+                   Grid.Row="0"
+                   Width="300"
+                   Height="200"
+                   Margin="512,50,0,0"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+                   Visibility="Collapsed" />
+            <!--  Text control for displaying feedback  -->
+            <TextBlock Name="CorrectTextBlock"
+                       Grid.Row="2"
+                       Width="150"
+                       Height="150"
+                       Margin="0,50,0,0"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Top"
+                       FontFamily="Microsoft YaHei"
+                       FontSize="40"
+                       FontWeight="Bold"
+                       Foreground="Green"
+                       Text="correct!"
+                       TextAlignment="Center"
+                       Visibility="Collapsed" />
+            <TextBlock Name="ErrorTextBlock"
+                       Grid.Row="2"
+                       Width="150"
+                       Height="150"
+                       Margin="0,50,0,0"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Top"
+                       FontFamily="Microsoft YaHei"
+                       FontSize="40"
+                       FontWeight="Bold"
+                       Foreground="Red"
+                       Text="mistake!"
+                       TextAlignment="Center"
+                       Visibility="Collapsed" />
+        </Grid>
+    </Grid>
+</local:BaseUserControl>

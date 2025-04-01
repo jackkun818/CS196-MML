@@ -38,7 +38,7 @@
                        TextAlignment="Center"
                        TextTrimming="CharacterEllipsis"
                        TextWrapping="Wrap">
-                这个是语言能力测验，请注意听并按照题目内容完成
+                This is a language proficiency test, please listen carefully and complete it according to the content of the question
             </TextBlock>
         </hc:SimpleStackPanel>
     </DockPanel>

@@ -33,7 +33,7 @@
                           BorderBrush="Black"
                           Click="FallbackButton_Click"
                           FontSize="20">
-                上一步
+                Previous
             </RepeatButton>
             <Button x:Name="ClearButton"
                     Width="120"
@@ -42,7 +42,7 @@
                     BorderBrush="Black"
                     Click="ClearButton_Click"
                     FontSize="20">
-                清除笔迹
+                Clear the handwriting
             </Button>
         </StackPanel>
     </hc:SimplePanel>

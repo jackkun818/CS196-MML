@@ -1,0 +1,8 @@
+Difficulty 9
+This Saturday, the auto show will open at the city exhibition center. The exhibition starts at 10 a.m. and lasts until 5 p.m.
+Question 20: When is the auto show open?
+9 a.m. to 4 p.m.
+11 a.m. to 6 p.m.
+10 a.m. to 6 p.m.
+10 a.m. to 5 p.m.
+3

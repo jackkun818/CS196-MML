@@ -21,7 +21,7 @@ using System.Windows.Shapes;
 namespace crs.extension.Controls
 {
     /// <summary>
-    /// Crs_DrawPanel.xaml 的交互逻辑
+    /// Crs_DrawPanel.xaml Interaction logic
     /// </summary>
     public partial class Crs_DrawPanel : UserControl
     {

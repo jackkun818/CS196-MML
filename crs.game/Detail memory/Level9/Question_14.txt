@@ -1,0 +1,8 @@
+Difficulty 9
+The downtown Career Expo is held at the Exhibition Center. There were 30 companies participating in the exhibition. The fair opens from 9 a.m. to 4 p.m.
+Question 14: How many companies participated in the exhibition at the Career Expo?
+35 companies
+20 companies
+30 companies
+25 companies
+2

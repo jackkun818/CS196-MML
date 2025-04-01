@@ -19,7 +19,7 @@
         <hc:SimplePanel Margin="15">
             <hc:SimplePanel Background="{StaticResource crs_SolidColorBrush.F89F00}">
                 <hc:SimplePanel.OpacityMask>
-                    <ImageBrush ImageSource="{StaticResource crs_加载}" />
+                    <ImageBrush ImageSource="{StaticResource crs_load}" />
                 </hc:SimplePanel.OpacityMask>
             </hc:SimplePanel>
             <ed:Arc x:Name="arc"

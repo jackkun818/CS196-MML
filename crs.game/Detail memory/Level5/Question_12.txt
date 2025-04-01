@@ -1,0 +1,8 @@
+Difficulty 5
+The pet shop held a pet adoption event today. The event lasts until 4 pm. Activities include free pet physical examinations. All pets need to receive a vaccine.
+Question 12: What events are held in the pet store?
+Inventory Cleanup Activities
+Discount activities
+Promotions
+Adoption activities
+3

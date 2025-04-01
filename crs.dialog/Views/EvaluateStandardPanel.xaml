@@ -46,7 +46,7 @@
                         BorderThickness="0"
                         Command="{Binding CancelCommand}">
                         <Button.Background>
-                            <ImageBrush ImageSource="{StaticResource crs_返回}" />
+                            <ImageBrush ImageSource="{StaticResource crs_return}" />
                         </Button.Background>
                     </Button>
                     <TextBlock
@@ -54,7 +54,7 @@
                         VerticalAlignment="Center"
                         FontSize="36"
                         FontWeight="Bold">
-                        标准评估
+                        Standard evaluation
                     </TextBlock>
                 </UniformGrid>
 
@@ -134,7 +134,7 @@
                                                     Command="{Binding LastCommand}"
                                                     FontSize="26"
                                                     Foreground="White">
-                                                    上一题
+                                                    Previous question
                                                 </Button>
                                                 <Button
                                                     x:Name="nextButton"
@@ -148,7 +148,7 @@
                                                     Foreground="White"
                                                     IsEnabled="{Binding NextButtonIsEnabledStatus}"
                                                     Visibility="{Binding NextButtonVisibilityStatus}">
-                                                    确认
+                                                    confirm
                                                 </Button>
                                                 <Button
                                                     x:Name="completeButton"
@@ -161,7 +161,7 @@
                                                     FontSize="26"
                                                     Foreground="White"
                                                     IsEnabled="{Binding SubjectSelectedItem.IsComplete, Converter={StaticResource crs_Boolean2ReversalConverter}}">
-                                                    完成
+                                                    Finish
                                                 </Button>
                                             </StackPanel>
                                             <DataTemplate.Triggers>
@@ -206,7 +206,7 @@
                                     Orientation="Horizontal"
                                     TextBlock.FontSize="32"
                                     TextBlock.FontWeight="Bold">
-                                    <TextBlock>得分：</TextBlock>
+                                    <TextBlock>Score:</TextBlock>
                                     <TextBlock
                                         DataContext="{Binding SubjectSelectedItem}"
                                         Foreground="{StaticResource crs_SolidColorBrush.F89F00}"

@@ -1,0 +1,8 @@
+Difficulty 7
+A downtown restaurant launched a new menu this Monday. The new menu includes 10 different dishes, including vegetarian and seafood options.
+Question 4: How many dishes does the restaurant’s new menu contain?
+12
+10
+8 channels
+15
+1

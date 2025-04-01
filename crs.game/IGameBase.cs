@@ -13,12 +13,12 @@ using System.Windows.Media.Imaging;
 namespace crs.game
 {
     /// <summary>
-    /// 参数
+    /// parameter
     /// </summary>
     public class GameBaseParameter
     {
         /// <summary>
-        /// 全局数据库上下文（懒加载）
+        /// Global database context（Lazy loading）
         /// </summary>
         readonly static Crs_Db2Context _db = new Lazy<Crs_Db2Context>(() => new Crs_Db2Context()).Value;
 
@@ -30,37 +30,37 @@ namespace crs.game
         }
 
         /// <summary>
-        /// 方案ID
+        /// planID
         /// </summary>
         public int ProgramId { get; private set; }
 
         /// <summary>
-        /// 模块ID
+        /// ModuleID
         /// </summary>
         public int ModuleId { get; private set; }
 
         /// <summary>
-        /// 数据库上下文，由客户端传入实例，若客户端没有传入实例，则自身实例化一个
+        /// Database context, instance is passed from the client. If the client does not pass in, it instantiates one itself.
         /// </summary>
         public Crs_Db2Context Db { get; private set; }
 
         /// <summary>
-        /// 排班ID（不一定有）
+        /// ScheduleID（Not necessarily）
         /// </summary>
         public int? ScheduleId { get; set; }
 
         /// <summary>
-        /// 模块参数列表（不一定有）
+        /// Module parameter list（Not necessarily）
         /// </summary>
         public List<ProgramModulePar> ProgramModulePars { get; set; }
 
         /// <summary>
-        /// 开始时间
+        /// Start time
         /// </summary>
         public DateTime? BeginTime { get; set; }
 
         /// <summary>
-        /// 结束时间
+        /// End time
         /// </summary>
         public DateTime? EndTime { get; set; }
     }
@@ -68,99 +68,99 @@ namespace crs.game
     public interface IGameBase
     {
         /// <summary>
-        /// 传入参数
+        /// Pass in parameters
         /// </summary>
         //public GameBaseParameter BaseParameter { get; set; }
 
         /// <summary>
-        /// 语音提示，在合适的时候调用，反显信息到客户端界面
+        /// Voice prompt, call it when appropriate, and display the information to the client interface
         /// </summary>
         Action<string> VoiceTipAction { get; set; }
 
         /// <summary>
-        /// 题目说明，在合适的时候调用，反显信息到客户端界面
+        /// Question description: call it when appropriate and display the information to the client interface
         /// </summary>
         Action<string> SynopsisAction { get; set; }
 
         /// <summary>
-        /// 题目规则，在合适的时候调用，反显信息到客户端界面
+        /// The question rules are called when appropriate, and the information is reversed to the client interface
         /// </summary>
         Action<string> RuleAction { get; set; }
 
         /// <summary>
-        /// 等级统计（当前数、最大数），在合适的时候调用，反显信息到客户端界面
+        /// Level statistics（Current number, maximum number）, call it when appropriate, and display the information to the client interface
         /// </summary>
         Action<int, int> LevelStatisticsAction { get; set; }
 
         /// <summary>
-        /// 正确统计（当前数、最大数），在合适的时候调用，反显信息到客户端界面
+        /// Correct statistics（Current number, maximum number）, call it when appropriate, and display the information to the client interface
         /// </summary>
         Action<int, int> RightStatisticsAction { get; set; }
 
         /// <summary>
-        /// 错误统计（当前数、最大数），在合适的时候调用，反显信息到客户端界面
+        /// Error statistics（Current number, maximum number）, call it when appropriate, and display the information to the client interface
         /// </summary>
         Action<int, int> WrongStatisticsAction { get; set; }
 
         /// <summary>
-        /// 耗时统计（总耗时、当前耗时），在合适的时候调用，反显信息到客户端界面
+        /// Time-consuming statistics（Total time, current time）, call it when appropriate, and display the information to the client interface
         /// </summary>
         Action<int?, int?> TimeStatisticsAction { get; set; }
 
         /// <summary>
-        /// 游戏开始（一般在讲解结束后调用）
+        /// The game begins（Usually called after the explanation）
         /// </summary>
         Action GameBeginAction { get; set; }
 
         /// <summary>
-        /// 游戏结束
+        /// game over
         /// </summary>
         Action GameEndAction { get; set; }
 
         /// <summary>
-        /// 语音播放
+        /// Voice playback
         /// </summary>
         Func<string, Task> VoicePlayFunc { get; set; }
 
         /// <summary>
-        /// 初始化（根据传入参数配置模块参数信息，可以调用委托返回“等级统计”、“正确统计”、“错误统计”等信息，其中委托中的“当前数”默认为0，“最大数”由参数配置）
+        /// initialization（According to the incoming parameter configuration module parameter information, you can call delegate to return“Level statistics”、“Correct statistics”、“Error statistics”etc., among which the“Current number”Default is 0,“Maximum number”Configure by parameters）
         /// </summary>
         Task InitAsync(int programId, int moduleId, Crs_Db2Context db = null);
 
         /// <summary>
-        /// 开始（开始游戏，可以调用委托返回“语音提示”、“题目说明”等信息）
+        /// start（Start the game, you can call the delegate to return“Voice prompts”、“Title description”Wait for information）
         /// </summary>
         Task StartAsync();
 
         /// <summary>
-        /// 结束（结束游戏，记录信息，释放资源等（定时器））
+        /// Finish（End the game, record information, release resources, etc.（Timer））
         /// </summary>
         Task StopAsync();
 
         /// <summary>
-        /// 暂停（暂停游戏）
+        /// pause（Pause the game）
         /// </summary>
         Task PauseAsync();
 
         /// <summary>
-        /// 下一题（切换到下一题）
+        /// Next question（Switch to the next question）
         /// </summary>
         Task NextAsync();
 
         /// <summary>
-        /// 记录信息
+        /// Record information
         /// </summary>
         Task ReportAsync();
 
         /// <summary>
-        /// 获取讲解示例
+        /// Get an explanation example
         /// </summary>
         /// <returns></returns>
         IGameBase GetExplanationExample();
 
         //LJN
         /// <summary>
-        /// 显示题目规则
+        /// Show questions rules
         /// </summary>
         /// <returns></returns>
         public Action<bool> SetTitleVisibleAction { get; set; }

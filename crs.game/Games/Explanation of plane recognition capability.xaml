@@ -1,0 +1,224 @@
+﻿<local:BaseUserControl x:Class="crs.game.Games.Explanation of plane recognition capability"
+                       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                       xmlns:hc="https://handyorg.github.io/handycontrol"
+                       xmlns:local="clr-namespace:crs.game"
+                       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                       Width="1340"
+                       Height="920"
+                       Background="#0000"
+                       PreviewKeyDown="Window_PreviewKeyDown"
+                       mc:Ignorable="d">
+    <!--  Capture global key press events  -->
+    <Grid Focusable="False">
+        <!--  prevent Grid Take the focus  -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.1*" />
+                <ColumnDefinition Width="3*" />
+                <ColumnDefinition />
+                <ColumnDefinition Width="0.1*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100" />
+                <RowDefinition Height="200" />
+                <RowDefinition Height="0.5*" />
+                <RowDefinition />
+                <RowDefinition Height="0.05*" />
+            </Grid.RowDefinitions>
+            <Image x:Name="judgement"
+                   Grid.Row="1"
+                   Grid.Column="1"
+                   Margin="500,0,0,0"
+                   HorizontalAlignment="Left" />
+            <Border Grid.Row="1"
+                    Grid.Column="1"
+                    Focusable="False" />
+            <Border Grid.Row="1"
+                    Grid.Column="2"
+                    Focusable="False" />
+            <Grid x:Name="ImageGrid"
+                  Grid.Row="2"
+                  Grid.Column="1"
+                  Focusable="False">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.2*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="0.6*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="0.6*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="0.6*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions />
+
+                <Image x:Name="image" Focusable="False" />
+                <Rectangle x:Name="SelectionBox"
+                           Grid.Row="1"
+                           Grid.Column="1"
+                           Margin="-6,-4,-6,-4"
+                           Stroke="#3a98d1"
+                           StrokeThickness="4"
+                           Visibility="Visible" />
+            </Grid>
+            <Grid Grid.Row="1"
+                  Grid.Column="2"
+                  Focusable="False">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition Height="0.2*" />
+                    <RowDefinition Height="0.2*" />
+                </Grid.RowDefinitions>
+                <Image x:Name="RandomImage"
+                       Width="200"
+                       Height="200"
+                       Margin="110,20,10,-450"
+                       Focusable="False" />
+                <Grid Grid.Row="2" Focusable="False">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                </Grid>
+            </Grid>
+
+
+        </Grid>
+
+        <Viewbox>
+            <Grid Width="1343" Height="990">
+                <Button x:Name="Button_1"
+                        Width="241"
+                        Height="67"
+                        Margin="189,850,0,0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        Background="#FFF89F00"
+                        Click="Button_1_Click"
+                        Content="Previous"
+                        Cursor="Hand"
+                        Focusable="False"
+                        FontFamily="Microsoft YaHei"
+                        FontSize="40"
+                        FontWeight="Bold"
+                        Foreground="White">
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="15" />
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <Button x:Name="Button_2"
+                        Width="241"
+                        Height="67"
+                        Margin="550,850,0,0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        Background="#FFF89F00"
+                        Click="Button_2_Click"
+                        Content="Next step"
+                        Cursor="Hand"
+                        Focusable="False"
+                        FontFamily="Microsoft YaHei"
+                        FontSize="40"
+                        FontWeight="Bold"
+                        Foreground="White">
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="15" />
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <Button x:Name="Button_3"
+                        Width="241"
+                        Height="67"
+                        Margin="911,850,0,0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        Background="#FFF89F00"
+                        Click="Button_3_Click"
+                        Content="jump over"
+                        Cursor="Hand"
+                        Focusable="False"
+                        FontFamily="Microsoft YaHei"
+                        FontSize="40"
+                        FontWeight="Bold"
+                        Foreground="White">
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="15" />
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <TextBlock x:Name="Text_1"
+                           Margin="0,55,0,0"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Top"
+                           Focusable="False"
+                           FontSize="40"
+                           Text="Now you can see 2 pictures on the interface, the original picture on the left and the left picture on the right and the left picture got after it rotated"
+                           TextWrapping="Wrap" />
+                <TextBlock x:Name="textblock"
+                           Margin="0,55,0,0"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Top"
+                           Focusable="False"
+                           FontSize="40"
+                           Text="Please select the next item you think is most in line with the rules"
+                           TextWrapping="Wrap"
+                           Visibility="Hidden" />
+                <Image x:Name="Image_1"
+                       Margin="234,302,234,465"
+                       Focusable="False"
+                       Source="./pic/VOR1/1.png"
+                       Stretch="Fill" />
+                <TextBlock x:Name="Text_2"
+                           Width="1000"
+                           Margin="0,55,0,0"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Top"
+                           Focusable="False"
+                           FontSize="40"
+                           Text="Now please select the picture rotated from the picture on the right from the picture below"
+                           TextWrapping="Wrap"
+                           Visibility="Hidden" />
+                <Image x:Name="Image_2"
+                       Margin="120,302,340,465"
+                       Focusable="False"
+                       Source="./pic/VOR1/2.png"
+                       Stretch="Fill"
+                       Visibility="Hidden" />
+                <Image x:Name="Image_3"
+                       Margin="1050,302,70,465"
+                       Focusable="False"
+                       Source="./pic/VOR1/3.png"
+                       Stretch="Fill"
+                       Visibility="Hidden" />
+                <TextBlock x:Name="reference"
+                           Grid.Row="0"
+                           Height="auto"
+                           Margin="1050,220,0,0"
+                           FontSize="40"
+                           Text="Reference image"
+                           TextAlignment="Center" />
+                <Button x:Name="OkButton"
+                        Grid.Column="2"
+                        Width="241"
+                        Height="67"
+                        Margin="1044,850,0,0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        Background="#FFF89F00"
+                        Click="OkButton_Click"
+                        Content="Enter training"
+                        Focusable="False"
+                        FontFamily="Microsoft YaHei"
+                        FontSize="40"
+                        FontWeight="Bold"
+                        Foreground="White"
+                        Visibility="Hidden" />
+            </Grid>
+        </Viewbox>
+    </Grid>
+</local:BaseUserControl>

@@ -11,7 +11,7 @@ namespace crs.extension
 {
     public class Crs_MessageBox
     {
-        public static MessageBoxResult Show(string message, string caption = "提示", MessageBoxButton button = MessageBoxButton.OK)
+        public static MessageBoxResult Show(string message, string caption = "hint", MessageBoxButton button = MessageBoxButton.OK)
         {
             return MessageBox.Show(new MessageBoxInfo
             {

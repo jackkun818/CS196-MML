@@ -1,0 +1,8 @@
+Difficulty 10
+Ticketing services, luggage storage and catering services are available at the train station. The station operates daily and the service hours may be adjusted during holidays. Passengers can find automatic ticket pickup machines and inquiry desks in the station.
+Question: Does the railway station provide luggage storage services?
+no
+yes
+Ticketing service only
+Offer only on holidays
+1

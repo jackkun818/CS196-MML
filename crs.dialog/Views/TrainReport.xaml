@@ -128,7 +128,7 @@
                         BorderThickness="0"
                         Command="{Binding CancelCommand}">
                         <Button.Background>
-                            <ImageBrush ImageSource="{StaticResource crs_返回}" />
+                            <ImageBrush ImageSource="{StaticResource crs_return}" />
                         </Button.Background>
                     </Button>
                     <TextBlock
@@ -136,7 +136,7 @@
                         VerticalAlignment="Center"
                         FontSize="36"
                         FontWeight="Bold">
-                        训练报告
+                        Training Report
                     </TextBlock>
                     <Button
                         Width="166"
@@ -153,8 +153,8 @@
                             <Image
                                 Width="30"
                                 VerticalAlignment="Center"
-                                Source="{StaticResource crs_导出报告}" />
-                            <TextBlock Margin="10,0,0,0" VerticalAlignment="Center">导出报告</TextBlock>
+                                Source="{StaticResource crs_Export the report}" />
+                            <TextBlock Margin="10,0,0,0" VerticalAlignment="Center">Export the report</TextBlock>
                         </StackPanel>
                     </Button>
                 </UniformGrid>
@@ -179,7 +179,7 @@
                                     Columns="3"
                                     Rows="2">
                                     <UniformGrid Columns="2" Rows="1">
-                                        <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center">姓名：</TextBlock>
+                                        <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center">Name:</TextBlock>
                                         <TextBlock
                                             HorizontalAlignment="Left"
                                             VerticalAlignment="Center"
@@ -187,7 +187,7 @@
                                             TextTrimming="CharacterEllipsis" />
                                     </UniformGrid>
                                     <UniformGrid Columns="2" Rows="1">
-                                        <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center">性别：</TextBlock>
+                                        <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center">gender:</TextBlock>
                                         <TextBlock
                                             HorizontalAlignment="Left"
                                             VerticalAlignment="Center"
@@ -195,15 +195,15 @@
                                             TextTrimming="CharacterEllipsis" />
                                     </UniformGrid>
                                     <UniformGrid Columns="2" Rows="1">
-                                        <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center">年龄：</TextBlock>
+                                        <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center">age:</TextBlock>
                                         <TextBlock
                                             HorizontalAlignment="Left"
                                             VerticalAlignment="Center"
-                                            Text="{Binding PatientItem.Age, StringFormat={}{0}岁, TargetNullValue=--, FallbackValue=--}"
+                                            Text="{Binding PatientItem.Age, StringFormat={}{0}age, TargetNullValue=--, FallbackValue=--}"
                                             TextTrimming="CharacterEllipsis" />
                                     </UniformGrid>
                                     <UniformGrid Columns="2" Rows="1">
-                                        <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center">训练用时：</TextBlock>
+                                        <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center">Training time:</TextBlock>
                                         <TextBlock
                                             HorizontalAlignment="Left"
                                             VerticalAlignment="Center"
@@ -211,7 +211,7 @@
                                             TextTrimming="CharacterEllipsis" />
                                     </UniformGrid>
                                     <UniformGrid Columns="2" Rows="1">
-                                        <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center">模式：</TextBlock>
+                                        <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center">model:</TextBlock>
                                         <TextBlock
                                             HorizontalAlignment="Left"
                                             VerticalAlignment="Center"
@@ -219,7 +219,7 @@
                                             TextTrimming="CharacterEllipsis" />
                                     </UniformGrid>
                                     <UniformGrid Columns="2" Rows="1">
-                                        <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center">报告时间：</TextBlock>
+                                        <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center">Report time:</TextBlock>
                                         <TextBlock
                                             HorizontalAlignment="Left"
                                             VerticalAlignment="Center"
@@ -244,7 +244,7 @@
                                     VerticalAlignment="Center"
                                     FontSize="30"
                                     FontWeight="Bold">
-                                    总体表现
+                                    Overall performance
                                 </TextBlock>
                             </StackPanel>
                             <Border
@@ -277,7 +277,7 @@
                                                     VerticalAlignment="Center"
                                                     FontSize="30"
                                                     FontWeight="Bold"
-                                                    Text="{Binding Key, StringFormat={}“{0}”统计}" />
+                                                    Text="{Binding Key, StringFormat={}“{0}”statistics}" />
                                             </StackPanel>
 
                                             <lcc:CartesianChart

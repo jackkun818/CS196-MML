@@ -28,7 +28,7 @@
                     DockPanel.Dock="Top"
                     FontSize="28"
                     FontWeight="Bold">
-                    新增数字人
+                    Added digital person
                 </TextBlock>
                 <hc:Gravatar
                     Width="360"
@@ -44,7 +44,7 @@
                     HorizontalAlignment="Center"
                     DockPanel.Dock="Top"
                     FontSize="26">
-                    （请用手机扫描二维码添加数字人）
+                    （Please scan the QR code with your mobile phone to add digital people）
                 </TextBlock>
             </DockPanel>
             <Button
@@ -56,7 +56,7 @@
                 Background="Black"
                 Command="{Binding CancelCommand}">
                 <Button.OpacityMask>
-                    <ImageBrush ImageSource="{StaticResource crs_关闭}" />
+                    <ImageBrush ImageSource="{StaticResource crs_closure}" />
                 </Button.OpacityMask>
             </Button>
         </hc:SimplePanel>

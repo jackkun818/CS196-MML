@@ -1,0 +1,8 @@
+Difficulty 4
+Three new bus routes were added in the city on Monday, and citizens said that travel was more convenient. Buses are shipped every 10 minutes. The new route covers the main commercial areas.
+Question 1: How many new bus routes have been added in the city?
+Two
+A
+Sanjo
+Four items
+2

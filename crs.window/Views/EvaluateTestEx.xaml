@@ -40,11 +40,11 @@
                         <Button.Style>
                             <Style BasedOn="{StaticResource ButtonDefault}" TargetType="Button">
                                 <Setter Property="Command" Value="{Binding StartCommand}" />
-                                <Setter Property="Content" Value="开始" />
+                                <Setter Property="Content" Value="start" />
                                 <Style.Triggers>
                                     <DataTrigger Binding="{Binding IsFromSchedule}" Value="True">
                                         <Setter Property="Command" Value="{Binding SaveCommand}" />
-                                        <Setter Property="Content" Value="保存" />
+                                        <Setter Property="Content" Value="keep" />
                                     </DataTrigger>
                                 </Style.Triggers>
                             </Style>
@@ -58,7 +58,7 @@
                             VerticalAlignment="Center"
                             FontSize="28"
                             FontWeight="Bold">
-                            测试方案
+                            Test plan
                         </TextBlock>
                         <Button
                             x:Name="historyToggleButton"
@@ -87,7 +87,7 @@
                                     VerticalAlignment="Center"
                                     Background="{Binding Foreground, RelativeSource={RelativeSource AncestorType=Button}}">
                                     <hc:SimplePanel.OpacityMask>
-                                        <ImageBrush ImageSource="{StaticResource crs_历史方案}" />
+                                        <ImageBrush ImageSource="{StaticResource crs_Historical Plan}" />
                                     </hc:SimplePanel.OpacityMask>
                                 </hc:SimplePanel>
                                 <TextBlock
@@ -96,7 +96,7 @@
                                     FontSize="22"
                                     FontWeight="Bold"
                                     Foreground="{Binding Foreground, RelativeSource={RelativeSource AncestorType=Button}}">
-                                    历史方案
+                                    Historical Plan
                                 </TextBlock>
                             </StackPanel>
                         </Button>
@@ -152,7 +152,7 @@
                                                                 FontSize="16"
                                                                 FontWeight="Bold"
                                                                 Foreground="White">
-                                                                导入
+                                                                Import
                                                             </Button>
                                                             <TextBlock
                                                                 Margin="15,0,0,0"
@@ -160,7 +160,7 @@
                                                                 FontSize="16.5"
                                                                 FontWeight="Bold"
                                                                 Opacity="0.7"
-                                                                Text="{Binding CreateTime, StringFormat={}日期：{0:yyyy-MM-dd HH:mm}, TargetNullValue=日期：--, FallbackValue=日期：--}" />
+                                                                Text="{Binding CreateTime, StringFormat={}date:{0:yyyy-MM-dd HH:mm}, TargetNullValue=date:--, FallbackValue=date:--}" />
                                                         </DockPanel>
                                                         <DockPanel Margin="0,10" DockPanel.Dock="Top">
                                                             <Button
@@ -171,7 +171,7 @@
                                                                 CommandParameter="{Binding}"
                                                                 DockPanel.Dock="Right">
                                                                 <Button.Background>
-                                                                    <ImageBrush ImageSource="{StaticResource crs_删除}" />
+                                                                    <ImageBrush ImageSource="{StaticResource crs_delete}" />
                                                                 </Button.Background>
                                                             </Button>
                                                             <Image
@@ -230,7 +230,7 @@
                                             CommandParameter="{Binding}"
                                             DockPanel.Dock="Right">
                                             <Button.Background>
-                                                <ImageBrush ImageSource="{StaticResource crs_删除}" />
+                                                <ImageBrush ImageSource="{StaticResource crs_delete}" />
                                             </Button.Background>
                                         </Button>
                                         <Image
@@ -272,7 +272,7 @@
                         FontSize="26"
                         FontWeight="Bold"
                         Foreground="White">
-                        添加
+                        Add to
                     </Button>
 
                     <StackPanel
@@ -284,13 +284,13 @@
                             Width="30"
                             Height="30"
                             VerticalAlignment="Center"
-                            Source="{StaticResource crs_模式选择}" />
+                            Source="{StaticResource crs_Mode selection}" />
                         <TextBlock
                             Margin="10,0,0,0"
                             VerticalAlignment="Center"
                             FontSize="28"
                             FontWeight="Bold">
-                            模式选择
+                            Mode selection
                         </TextBlock>
                     </StackPanel>
                     <ListBox
@@ -373,14 +373,14 @@
                 Height="35"
                 VerticalAlignment="Center"
                 DockPanel.Dock="Left"
-                Source="{StaticResource crs_提示灯}" />
+                Source="{StaticResource crs_Tips light}" />
             <TextBlock
                 Margin="5,0,0,0"
                 VerticalAlignment="Center"
                 FontSize="20"
                 FontWeight="DemiBold"
                 Opacity="0.6">
-                请按照医生开具的处方项目设定参数方案：
+                Please set the parameter plan according to the prescription items prescribed by the doctor:
             </TextBlock>
             <TextBlock
                 VerticalAlignment="Center"
@@ -394,7 +394,7 @@
                 FontWeight="DemiBold"
                 Opacity="0.6"
                 TextTrimming="CharacterEllipsis">
-                将方案添加至右侧后点击保存
+                Add the scheme to the right and click Save
             </TextBlock>
         </DockPanel>
     </hc:SimplePanel>

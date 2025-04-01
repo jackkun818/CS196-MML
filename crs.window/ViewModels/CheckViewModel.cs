@@ -60,7 +60,7 @@ namespace crs.window.ViewModels
 
                 await Task.Delay(1500);
 
-                // 自检成功,带上参数,跳转到主菜单页
+                // Self-test successful,Bring parameters,Jump to the main menu page
                 var parameters = new NavigationParameters
                 {
                     {"crs_user",user }

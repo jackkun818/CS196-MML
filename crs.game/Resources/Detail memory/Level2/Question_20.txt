@@ -1,0 +1,8 @@
+Difficulty 2
+The restaurant has just launched a new menu with 10 new dishes.
+Question 20: How many new dishes does the new menu include?
+15
+5 channels
+10
+8 channels
+2

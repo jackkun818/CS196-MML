@@ -1,0 +1,8 @@
+Difficulty 10
+The swimming pool is open daily and offers swimming and water sports classes. Additional water fitness classes are available on weekends and holidays. The swimming pool also has a dressing room and shower facilities.
+Question: Does the swimming pool offer water sports classes?
+Only available on holidays
+no
+yes
+Offered on weekends only
+2

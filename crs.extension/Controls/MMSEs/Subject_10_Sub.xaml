@@ -28,7 +28,7 @@
                    FontWeight="Bold"
                    TextTrimming="CharacterEllipsis"
                    TextWrapping="Wrap">
-            这个是书写能力测试，请您写出一句完整的句子
+            This is a writing ability test, please write a complete sentence
         </TextBlock>
         <hc:SimplePanel Margin="0,40">
 
@@ -39,7 +39,7 @@
                            VerticalAlignment="Center"
                            FontSize="28"
                            TextTrimming="CharacterEllipsis">
-                    （可在空白处作答，句子必须有主语、动词、有意义）
+                    （Can answer in the blank space, the sentence must have subject, verb, and meaningful）
                 </TextBlock>
 
             </hc:SimpleStackPanel>

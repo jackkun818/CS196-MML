@@ -1,0 +1,8 @@
+Difficulty 1
+The mall parking lot now provides electric vehicle charging services, each charging pile can be charged up to 3 hours. This move is welcomed by electric car owners and provides more convenience for their travel.
+Question 13: How long does it take to charge electric vehicle charging piles in shopping mall parking lots?
+2 hours
+1 hour
+4 hours
+3 hours
+3

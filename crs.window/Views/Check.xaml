@@ -21,7 +21,7 @@
                     Height="363"
                     VerticalAlignment="Center">
                 <Border.Background>
-                    <ImageBrush ImageSource="{StaticResource crs_插图2}" />
+                    <ImageBrush ImageSource="{StaticResource crs_Illustration 2}" />
                 </Border.Background>
                 <Button Width="127"
                         Height="50"
@@ -32,7 +32,7 @@
                         Command="{Binding CheckCommand}"
                         FontSize="26"
                         Foreground="White">
-                    确认
+                    confirm
                 </Button>
             </Border>
         </DataTemplate>
@@ -41,7 +41,7 @@
                 <hc:SimplePanel Width="344" Height="344">
                     <hc:SimplePanel Background="{StaticResource crs_SolidColorBrush.F89F00}">
                         <hc:SimplePanel.OpacityMask>
-                            <ImageBrush ImageSource="{StaticResource crs_加载}" />
+                            <ImageBrush ImageSource="{StaticResource crs_load}" />
                         </hc:SimplePanel.OpacityMask>
                     </hc:SimplePanel>
                     <ed:Arc x:Name="arc"
@@ -84,7 +84,7 @@
                            FontSize="50"
                            FontWeight="Bold"
                            Foreground="{StaticResource crs_SolidColorBrush.F89F00}">
-                    设备自检中...
+                    Equipment self-test...
                 </TextBlock>
             </StackPanel>
         </DataTemplate>
@@ -95,12 +95,12 @@
                Height="44"
                Margin="0,0,0,120"
                DockPanel.Dock="Bottom"
-               Source="{StaticResource crs_公司LOGO}" />
+               Source="{StaticResource crs_companyLOGO}" />
         <Image Width="307"
                Height="98"
                Margin="0,120,0,0"
                DockPanel.Dock="Top"
-               Source="{StaticResource crs_产品型号2}" />
+               Source="{StaticResource crs_Product Model 2}" />
 
         <ContentControl Content="{Binding}">
             <ContentControl.Style>

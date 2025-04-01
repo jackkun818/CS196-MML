@@ -1,0 +1,8 @@
+Difficulty 4
+The school library recently added four new books, including novels and popular science books. The new book has been updated in the borrowing system. The library has also expanded its opening hours.
+Question 3: How many new books have been added to the school library?
+Eight books
+Four books
+Two books
+Six books
+1

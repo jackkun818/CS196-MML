@@ -32,7 +32,7 @@
                         DockPanel.Dock="Right">
                     <Image Width="56"
                            Height="45"
-                           Source="{StaticResource crs_新增}" />
+                           Source="{StaticResource crs_New}" />
                 </Button>
                 <Button Width="95"
                         Height="73"
@@ -45,12 +45,12 @@
                         IsDefault="True">
                     <Image Width="56"
                            Height="45"
-                           Source="{StaticResource crs_搜索2}" />
+                           Source="{StaticResource crs_Search 2}" />
                 </Button>
                 <hc:SimplePanel>
                     <hc:TextBox Padding="100,0,30,0"
                                 hc:BorderElement.CornerRadius="9"
-                                hc:InfoElement.Placeholder="输入用户名/手机号进行查询"
+                                hc:InfoElement.Placeholder="Enter a username/Check your mobile phone number"
                                 hc:InfoElement.ShowClearButton="True"
                                 Background="{StaticResource crs_SolidColorBrush.F8F8F8}"
                                 FontSize="26"
@@ -59,7 +59,7 @@
                            Height="38"
                            Margin="40,0,0,0"
                            HorizontalAlignment="Left"
-                           Source="{StaticResource crs_搜索2}" />
+                           Source="{StaticResource crs_Search 2}" />
                 </hc:SimplePanel>
             </DockPanel>
             <ListBox Margin="75,0,75,165"
@@ -118,7 +118,7 @@
                                                HorizontalAlignment="Center"
                                                VerticalAlignment="Center"
                                                Opacity="0.68"
-                                               Text="{Binding PhoneNumber, TargetNullValue=手机号：--, FallbackValue=手机号：--, StringFormat={}手机号：{0}}"
+                                               Text="{Binding PhoneNumber, TargetNullValue=Phone number:--, FallbackValue=Phone number:--, StringFormat={}Phone number:{0}}"
                                                TextBlock.FontSize="18"
                                                TextBlock.Foreground="Black"
                                                TextTrimming="CharacterEllipsis" />
@@ -136,7 +136,7 @@
                                         DockPanel.Dock="Top"
                                         Opacity="0.68">
                                     <Button.OpacityMask>
-                                        <ImageBrush ImageSource="{StaticResource crs_编辑}" />
+                                        <ImageBrush ImageSource="{StaticResource crs_edit}" />
                                     </Button.OpacityMask>
                                 </Button>
                                 <Button x:Name="closeButton"
@@ -152,7 +152,7 @@
                                         DockPanel.Dock="Top"
                                         Opacity="0.68">
                                     <Button.OpacityMask>
-                                        <ImageBrush ImageSource="{StaticResource crs_关闭}" />
+                                        <ImageBrush ImageSource="{StaticResource crs_closure}" />
                                     </Button.OpacityMask>
                                 </Button>
                             </hc:SimplePanel>

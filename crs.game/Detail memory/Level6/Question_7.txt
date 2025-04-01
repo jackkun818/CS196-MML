@@ -1,0 +1,8 @@
+Difficulty 6
+There are half-price offers for the gym this month, with the offer starting today and continuing until the end of the month.
+Question 7: When will the gym offer last?
+next week
+next month
+today
+End of the month
+3

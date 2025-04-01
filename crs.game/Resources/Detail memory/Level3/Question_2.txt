@@ -1,0 +1,8 @@
+Difficulty 3
+The mall's festive promotions started last Friday and will last until this Sunday, with significant discounts and giveaways.
+Question 2: How many days did the mall’s holiday promotion last?
+7 days
+3 days
+10 days
+5 days
+3

@@ -19,13 +19,13 @@ using System.Windows.Shapes;
 namespace crs.extension.Controls.MoCAs
 {
     /// <summary>
-    /// Subject_10_Sub.xaml 的交互逻辑
+    /// Subject_10_Sub.xaml Interaction logic
     /// </summary>
     public partial class Subject_10_Sub : UserControl
     {
         static ConcurrentDictionary<int, string> voiceDict = new ConcurrentDictionary<int, string>
         {
-            [0] = "刚才我给您读了几个词让您记住，请您再尽量回忆一下，告诉我这些词都有什么",
+            [0] = "I just read a few words to you for your memory. Please try to recall them and tell me what these words are.",
         };
 
         public Subject_10_Sub()
@@ -42,7 +42,7 @@ namespace crs.extension.Controls.MoCAs
 
         private async void Subject_Sub_Loaded(object sender, RoutedEventArgs e)
         {
-            // 播放语音提示、启动定时器操作等
+            // Play voice prompts, start timer operations, etc.
 
             Crs_WaveOutToolkit.AudioCancel();
             _ = Crs_WaveInToolkit.RecordAudioCompleteAsync(true);

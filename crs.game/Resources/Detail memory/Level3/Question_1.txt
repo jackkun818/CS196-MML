@@ -1,0 +1,8 @@
+Difficulty 3
+The newly opened restaurant serves breakfast, which is open from 7am to 10am, and the breakfast price is RMB 20 per serving.
+Question 1: When is the restaurant open to when?
+From 9am to 12am
+From 7am to 10am
+From 8 a.m. to 11 a.m.
+From 6am to 9am
+1

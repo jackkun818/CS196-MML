@@ -1,0 +1,8 @@
+Difficulty 3
+The hospital has purchased a new ultrasonic equipment and a modern operating room, and the equipment has been put into use.
+Question 16: What new equipment has the hospital purchased?
+Ultrasonic equipment and operating rooms
+XOptical machine andCTScanner
+Diagnostic instrument and thermometer
+Magnetic resonance meter and electrocardiogram
+0

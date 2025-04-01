@@ -16,7 +16,7 @@ namespace crs.dialog.Views
 
         private async void SimplePanel_MouseUp(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
-            //await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("非交互区域，请尝试点击返回按钮");
+            //await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("Non-interactive area, please try to click the return button");
         }
 
         private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)

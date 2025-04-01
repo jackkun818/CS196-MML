@@ -20,7 +20,7 @@ using System.Windows.Shapes;
 namespace crs.extension.Controls
 {
     /// <summary>
-    /// Crs_Rate.xaml 的交互逻辑
+    /// Crs_Rate.xaml Interaction logic
     /// </summary>
     public partial class Crs_Rate : UserControl
     {
@@ -75,11 +75,11 @@ namespace crs.extension.Controls
             var count = item?.Count ?? control.defaultRateCount;
             var value = (double?)item?.Value ?? 0;
 
-            //  按等级比例填充星星
+            //  Fill in the stars according to the level ratio
             value = (double)value * Math.Min(count, control.maxShowViewCount) / count;
             count = Math.Min(count, control.maxShowViewCount);
 
-            //  value =>最接近的整数或半整数
+            //  value =>The closest integer or half integer
             value = (((value * 2) - (int)(value * 2)) < 0.5 ? (int)(value * 2) : (int)(value * 2 + 1)) / 2.0;
 
             Rate rateItem;

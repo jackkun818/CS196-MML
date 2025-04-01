@@ -1,0 +1,8 @@
+Difficulty 2
+The gym has introduced new treadmills and strength training equipment, which are open every Monday and Thursday.
+Question 6: On what date will the new gym equipment be opened?
+Wednesday and Friday
+Tuesday and Saturday
+Weekend
+Monday and Thursday
+3

@@ -1,0 +1,8 @@
+Difficulty 4
+The agricultural product market reopened this Friday. Fresh vegetables and fruits sold on the market are popular. The market is open every Friday.
+Question 17: What week is the agricultural product market open?
+weekend
+Friday
+on Monday
+Wednesday
+1

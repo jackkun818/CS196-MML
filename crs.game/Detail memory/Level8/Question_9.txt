@@ -1,0 +1,8 @@
+Difficulty 8
+The outpatient hours of the hospital are from 8 am to 5 pm. The emergency room is open 24 hours a day.
+Question 9: When is the emergency room open for the hospital?
+1:00 to 5:00 pm
+9pm to 8am
+24 hours
+8 am to 5 pm
+2

@@ -1,0 +1,132 @@
+[
+    {
+        "Story": "The new shopping mall opened in the East Side yesterday, attracting a large number of customers. The shopping center has a variety of brands of shops, restaurants and entertainment facilities, providing citizens with an ideal place to shop and relax.",
+        "QuestionsList": [
+            {
+                "Question": "Where will the new shopping mall open?",
+                "OptionA": "South District",
+                "OptionB": "West District",
+                "OptionC": "East District",
+                "OptionD": "North District",
+                "Answer": "OptionC"
+            }
+        ]
+    },
+    {
+        "Story": "The City Museum is closed on Monday and open at other times. The museum displays a wealth of historical relics and artistic works, attracting many citizens and tourists to visit.",
+        "QuestionsList": [
+            {
+                "Question": "When will the City Museum be closed?",
+                "OptionA": "Friday",
+                "OptionB": "Sunday",
+                "OptionC": "on Monday",
+                "OptionD": "Wednesday",
+                "Answer": "OptionC"
+            }
+        ]
+    },
+    {
+        "Story": "A new public transportation line has been opened in the city, passing through 10 major stations. The opening of the new transportation line has greatly facilitated the travel of citizens, especially commuters, who can arrive at work locations or return home more quickly.",
+        "QuestionsList": [
+            {
+                "Question": "How many stations does the newly opened public transportation line pass?",
+                "OptionA": "10",
+                "OptionB": "6",
+                "OptionC": "12",
+                "OptionD": "8",
+                "Answer": "OptionA"
+            }
+        ]
+    },
+    {
+        "Story": "Yesterday, the summer sports meeting was held in the gymnasium, attracting many citizens to come and watch the competition. The competition events are rich and diverse, including track and field, swimming, basketball, etc. The contestants performed well and won warm applause from the audience.",
+        "QuestionsList": [
+            {
+                "Question": "Where is the summer sports meeting held?",
+                "OptionA": "School",
+                "OptionB": "stadium",
+                "OptionC": "swimming pool",
+                "OptionD": "garden",
+                "Answer": "OptionB"
+            }
+        ]
+    },
+    {
+        "Story": "The snack stalls in the night market open at 7 pm, often attracting a lot of people. The night market has a wide variety of food and affordable prices, making it a good place for citizens to relax at night.",
+        "QuestionsList": [
+            {
+                "Question": "At what time does the night market snack stall start to open?",
+                "OptionA": "9",
+                "OptionB": "6",
+                "OptionC": "7",
+                "OptionD": "8",
+                "Answer": "OptionC"
+            }
+        ]
+    },
+    {
+        "Story": "A popular action movie was released in the cinema this weekend, and the film reviews were rave reviews. Many movie fans came to watch it, and the cinemas were almost full.",
+        "QuestionsList": [
+            {
+                "Question": "What type of movies will be released in the cinema this weekend?",
+                "OptionA": "Comedy",
+                "OptionB": "Drama",
+                "OptionC": "Action movie",
+                "OptionD": "Romance movies",
+                "Answer": "OptionC"
+            }
+        ]
+    },
+    {
+        "Story": "The subway station is undergoing renovation projects and is expected to be completed next month. After the renovation, the station will be more modern and provide more convenient services.",
+        "QuestionsList": [
+            {
+                "Question": "When is the renovation project of the subway station expected to be completed?",
+                "OptionA": "At the end of this year",
+                "OptionB": "next month",
+                "OptionC": "Early next year",
+                "OptionD": "this month",
+                "Answer": "OptionB"
+            }
+        ]
+    },
+    {
+        "Story": "The library has just launched a bestseller book, authored by famous writer Li Ming. Since its release, this book has been warmly welcomed by readers, and the number of borrowed books has remained high.",
+        "QuestionsList": [
+            {
+                "Question": "Who is the author of the new bestseller in the library?",
+                "OptionA": "Li Ming",
+                "OptionB": "Zhang Wei",
+                "OptionC": "Liu Yang",
+                "OptionD": "Wang Qiang",
+                "Answer": "OptionA"
+            }
+        ]
+    },
+    {
+        "Story": "The bookstore started a 50% off promotion today for a week. The promotion attracted a large number of book fans, who came to buy their favorite books.",
+        "QuestionsList": [
+            {
+                "Question": "How long does the bookstore promotion last?",
+                "OptionA": "Three days",
+                "OptionB": "One week",
+                "OptionC": "One month",
+                "OptionD": "Two weeks",
+                "Answer": "OptionB"
+            }
+        ]
+    },
+    {
+        "Story": "The lawn in the park was just trimmed yesterday and looked particularly tidy. The trimmed lawn is not only beautiful, but also provides a more comfortable environment for citizens who come to relax.",
+        "QuestionsList": [
+            {
+                "Question": "When are the park lawns mowed?",
+                "OptionA": "Last week",
+                "OptionB": "This spring",
+                "OptionC": "Earlier this month",
+                "OptionD": "yesterday",
+                "Answer": "OptionD"
+            }
+        ]
+    }
+]

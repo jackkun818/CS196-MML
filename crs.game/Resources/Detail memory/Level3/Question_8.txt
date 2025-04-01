@@ -1,0 +1,8 @@
+Difficulty 3
+The gym is open from 6 am to 10 pm every day, and members can use all equipment at any time.
+Question 8: What is the daily opening hours of the gym?
+7 a.m. to 9 p.m.
+8 am to 11 pm
+6 am to 10 pm
+6 a.m. to 9 p.m.
+2

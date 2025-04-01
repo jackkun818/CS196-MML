@@ -38,7 +38,7 @@
                            TextAlignment="Center"
                            TextTrimming="CharacterEllipsis"
                            TextWrapping="Wrap">
-                    这是一个注意力测验，请注意听回忆并说出刚刚的内容
+                    This is an attention test, please listen to memories and say what just now
                 </TextBlock>
                 <TextBlock Margin="0,150,0,0"
                            HorizontalAlignment="Center"
@@ -49,7 +49,7 @@
                            TextAlignment="Center"
                            TextTrimming="CharacterEllipsis"
                            TextWrapping="Wrap">
-                    顺背数字
+                    Back the numbers
                 </TextBlock>
             </hc:SimpleStackPanel>
         </DockPanel>
@@ -74,7 +74,7 @@
                            TextAlignment="Center"
                            TextTrimming="CharacterEllipsis"
                            TextWrapping="Wrap">
-                    这是一个注意力测验，请注意听回忆并说出刚刚的内容
+                    This is an attention test, please listen to memories and say what just now
                 </TextBlock>
                 <TextBlock Margin="0,150,0,0"
                            HorizontalAlignment="Center"
@@ -85,7 +85,7 @@
                            TextAlignment="Center"
                            TextTrimming="CharacterEllipsis"
                            TextWrapping="Wrap">
-                    倒背数字
+                    Recite numbers in reverse
                 </TextBlock>
             </hc:SimpleStackPanel>
         </DockPanel>

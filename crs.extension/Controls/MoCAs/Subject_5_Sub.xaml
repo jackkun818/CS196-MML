@@ -32,7 +32,7 @@
                        TextAlignment="Center"
                        TextTrimming="CharacterEllipsis"
                        TextWrapping="Wrap">
-                这是一个注意力测验，请注意听并按照题目内容完成
+                This is an attention test, please listen carefully and complete it according to the content of the question
             </TextBlock>
         </hc:SimplePanel>
     </DockPanel>

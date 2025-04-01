@@ -43,7 +43,7 @@
                         BorderThickness="0"
                         Command="{Binding CancelCommand}">
                         <Button.Background>
-                            <ImageBrush ImageSource="{StaticResource crs_返回}" />
+                            <ImageBrush ImageSource="{StaticResource crs_return}" />
                         </Button.Background>
                     </Button>
                     <TextBlock
@@ -51,7 +51,7 @@
                         VerticalAlignment="Center"
                         FontSize="36"
                         FontWeight="Bold">
-                        报告设置
+                        Report settings
                     </TextBlock>
                 </UniformGrid>
                 <Border
@@ -81,7 +81,7 @@
                                     VerticalAlignment="Center"
                                     FontSize="24"
                                     Foreground="#000000"
-                                    Text="评估报告-标题前缀：" />
+                                    Text="Evaluation report-Title prefix:" />
                                 <hc:TextBox
                                     Grid.Column="1"
                                     Width="400"
@@ -89,7 +89,7 @@
                                     Margin="20,0,0,0"
                                     Padding="20,0"
                                     HorizontalAlignment="Left"
-                                    hc:InfoElement.Placeholder="请输入报告前缀"
+                                    hc:InfoElement.Placeholder="Please enter a report prefix"
                                     hc:InfoElement.ShowClearButton="True"
                                     Background="{StaticResource crs_SolidColorBrush.EFEFEF}"
                                     FontSize="20"
@@ -107,7 +107,7 @@
                                     VerticalAlignment="Center"
                                     FontSize="24"
                                     Foreground="#000000"
-                                    Text="训练报告-标题前缀：" />
+                                    Text="Training Report-Title prefix:" />
                                 <hc:TextBox
                                     Grid.Column="1"
                                     Width="400"
@@ -115,7 +115,7 @@
                                     Margin="20,0,0,0"
                                     Padding="20,0"
                                     HorizontalAlignment="Left"
-                                    hc:InfoElement.Placeholder="请输入报告前缀"
+                                    hc:InfoElement.Placeholder="Please enter a report prefix"
                                     hc:InfoElement.ShowClearButton="True"
                                     Background="{StaticResource crs_SolidColorBrush.EFEFEF}"
                                     FontSize="20"
@@ -123,7 +123,7 @@
                                     Text="{Binding TrainReportTitlePrefix, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
                             </Grid>
                         </UniformGrid>
-                        <Image Grid.Row="1" Source="{StaticResource crs_报告设置背景图}" />
+                        <Image Grid.Row="1" Source="{StaticResource crs_Report settings background image}" />
                         <Button
                             Grid.Row="2"
                             Width="247"
@@ -138,7 +138,7 @@
                             Foreground="White">
                             <Button.Style>
                                 <Style BasedOn="{StaticResource ButtonBaseStyle}" TargetType="Button">
-                                    <Setter Property="Content" Value="确定" />
+                                    <Setter Property="Content" Value="Sure" />
                                 </Style>
                             </Button.Style>
                         </Button>

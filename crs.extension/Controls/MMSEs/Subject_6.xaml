@@ -28,17 +28,17 @@
                     <behaviors:ChangePropertyAction
                         PropertyName="OriginName"
                         TargetObject="{Binding}"
-                        Value="语言能力" />
+                        Value="Language skills" />
                 </behaviors:EventTrigger>
             </behaviors:Interaction.Triggers>
-            语言能力
+            Language skills
         </TextBlock>
         <StackPanel
             Margin="0,30,0,0"
             VerticalAlignment="Center"
             DockPanel.Dock="Top"
             Orientation="Horizontal">
-            <TextBlock VerticalAlignment="Center" FontSize="28">命名能力</TextBlock>
+            <TextBlock VerticalAlignment="Center" FontSize="28">Naming ability</TextBlock>
             <ContentControl
                 Margin="10,0,0,0"
                 HorizontalAlignment="Center"
@@ -46,7 +46,7 @@
                 ContentTemplate="{StaticResource MMSE_MoCA_ToolTipTemplate}">
                 <ContentControl.Content>
                     <TextBlock TextTrimming="CharacterEllipsis" TextWrapping="Wrap">
-                        评分：让测试者根据图片显示回答该物体名称。
+                        Rating: Ask the tester to answer the object name based on the picture.
                     </TextBlock>
                 </ContentControl.Content>
             </ContentControl>
@@ -57,7 +57,7 @@
                 BorderBrush="Transparent"
                 Click="ExecuteAudioPlayClick"
                 Cursor="Hand"
-                Tag="请回答下面图片是什么东西">
+                Tag="Please answer what the picture below is">
 
                 <Button.Content>
                     <Image
@@ -65,7 +65,7 @@
                         Height="24"
                         VerticalAlignment="Center"
                         Cursor="Hand"
-                        Source="{StaticResource crs_声音}"
+                        Source="{StaticResource crs_sound}"
                         Stretch="Uniform" />
                 </Button.Content>
             </Button>
@@ -89,7 +89,7 @@
                     HorizontalAlignment="Left"
                     VerticalAlignment="Center"
                     TextTrimming="CharacterEllipsis">
-                    展示手表图片，问这个是什么东西？
+                    Showing the watch picture, ask what this is?
                 </TextBlock>
             </DockPanel>
             <DockPanel>
@@ -104,7 +104,7 @@
                     HorizontalAlignment="Left"
                     VerticalAlignment="Center"
                     TextTrimming="CharacterEllipsis">
-                    展示铅笔图片，问这个是什么东西？
+                    Showing a picture of the pencil, ask what this is?
                 </TextBlock>
             </DockPanel>
         </UniformGrid>

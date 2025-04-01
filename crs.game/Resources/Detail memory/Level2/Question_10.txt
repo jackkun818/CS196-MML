@@ -1,0 +1,8 @@
+Difficulty 2
+The night market has recently added 5 new stalls, mainly selling snacks and drinks.
+Question 10: How many new stalls have been added to the night market?
+5
+3
+7
+10
+0

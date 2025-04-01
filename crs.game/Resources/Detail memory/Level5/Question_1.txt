@@ -1,0 +1,8 @@
+Difficulty 5
+Yesterday, a new children's playground was added to the city park. There are slides and swings in the playground. The slide is blue. There are four seats on the swing. The park is open for extended weekends.
+Question 1: Which place added a children's playground yesterday?
+stadium
+shopping center
+City Park
+Downtown Plaza
+2

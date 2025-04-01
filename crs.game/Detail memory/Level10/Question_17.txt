@@ -1,0 +1,8 @@
+Difficulty 10
+The restaurant offers takeaway services, including family set meals and à la carte dishes. Takeaway orders are usually delivered within 30 minutes and may take longer on holidays. The restaurant accepts online reservations and telephone orders.
+Question: How long does it usually take to take food in a restaurant?
+20 minutes
+1 hour
+30 minutes
+45 minutes
+2

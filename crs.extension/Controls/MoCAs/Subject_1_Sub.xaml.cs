@@ -24,15 +24,15 @@ using static crs.extension.Crs_Interface;
 namespace crs.extension.Controls.MoCAs
 {
     /// <summary>
-    /// Subject_1_Sub.xaml 的交互逻辑
+    /// Subject_1_Sub.xaml Interaction logic
     /// </summary>
     public partial class Subject_1_Sub : UserControl
     {
         static ConcurrentDictionary<int, string> voiceDict = new ConcurrentDictionary<int, string>
         {
-            [0] = "请按照顺序进行数字和文字交替连线",
-            [1] = "请根据以下图形在空白处进行模仿绘制立方体",
-            [2] = "请您在空白处画一个钟表，填上所有的数字并指出11点10分",
+            [0] = "Please alternate numbers and text in order",
+            [1] = "Please imitate and draw cubes in the blank space according to the following figure",
+            [2] = "Please draw a clock in the blank space, fill in all the numbers and point out 11:10",
         };
 
         public Subject_1_Sub()
@@ -56,7 +56,7 @@ namespace crs.extension.Controls.MoCAs
 
         private async void Carousel_PageChanged(object sender, RoutedEventArgs e)
         {
-            // 播放语音提示、启动定时器操作等
+            // Play voice prompts, start timer operations, etc.
 
             Crs_WaveOutToolkit.AudioCancel();
             _ = Crs_WaveInToolkit.RecordAudioCompleteAsync(true);

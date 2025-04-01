@@ -1,0 +1,8 @@
+Difficulty 3
+The library has added five new best-selling books, including novels, biographies and popular science books, which are expected to be released next week.
+Question 6: How many bestsellers have been added to the library?
+4
+5 bottles
+Three
+7 bottles
+1

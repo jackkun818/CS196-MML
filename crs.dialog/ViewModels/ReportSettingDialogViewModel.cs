@@ -70,7 +70,7 @@ namespace crs.dialog.ViewModels
                 }, Formatting.Indented));
                 streamWriter.Flush();
             }
-            await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("保存结果成功");
+            await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("Save the result successfully");
 
             await Crs_DialogEx.Show(Crs_Dialog.SettingPanel, Crs_DialogToken.TopContent)
                 .UseConfig_ContentStretch()

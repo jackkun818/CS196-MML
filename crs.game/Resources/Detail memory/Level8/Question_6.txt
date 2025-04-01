@@ -1,0 +1,8 @@
+Difficulty 8
+The shopping center opens at 10 o'clock every day and closes at 9 o'clock in the evening. Holiday times may vary.
+Question 6: What time is the closing time of the shopping mall every day?
+8 pm
+10 am
+9 pm
+5 pm
+2

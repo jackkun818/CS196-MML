@@ -1,0 +1,8 @@
+Difficulty 6
+At 8 o'clock this morning, the school cafeteria provided bread and milk. The canteen is open at 7 o'clock.
+Question 2: When will the school cafeteria be open?
+7 o'clock
+9 o'clock
+8 o'clock
+6 o'clock
+0

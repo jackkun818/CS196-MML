@@ -1,0 +1,8 @@
+Difficulty 10
+Supermarkets will have special offers every Tuesday and Thursday, with discounted items including fruits, vegetables and snacks. Member card users can receive additional discounts. During holidays, supermarkets will hold large-scale promotions and announce them in advance in advertisements.
+Question: When is the supermarket special offer usually?
+Weekend
+Monday and Friday
+Wednesday and Saturday
+Tuesday and Thursday
+3

@@ -20,13 +20,13 @@ using System.Windows.Shapes;
 namespace crs.extension.Controls.MoCAs
 {
     /// <summary>
-    /// Subject_5_Sub.xaml 的交互逻辑
+    /// Subject_5_Sub.xaml Interaction logic
     /// </summary>
     public partial class Subject_5_Sub : UserControl
     {
         static ConcurrentDictionary<int, string> voiceDict = new ConcurrentDictionary<int, string>
         {
-            [0] = "下面我要读出一系列数字，请注意听，每当我读到1的时候，您就拍一下手，当我读其他数字的时候不要按：五。二。一。三。九。四。一。一。八。零。六。二。一。五。一。九。四。五。一。一。一。四。一。九。零。五。一。一。二",
+            [0] = "Below I want to read out a series of numbers. Please listen carefully. Whenever I read 1, you clap your hands. When I read other numbers, don’t press: five. two. one. three. Nine. Four. one. one. eight. zero. six. two. one. five. one. Nine. Four. five. one. one. one. Four. one. Nine. zero. five. one. one. two",
         };
 
         public Subject_5_Sub()
@@ -43,7 +43,7 @@ namespace crs.extension.Controls.MoCAs
 
         private async void Subject_Sub_Loaded(object sender, RoutedEventArgs e)
         {            
-            // 播放语音提示、启动定时器操作等
+            // Play voice prompts, start timer operations, etc.
 
             Crs_WaveOutToolkit.AudioCancel();
             _ = Crs_WaveInToolkit.RecordAudioCompleteAsync(true);

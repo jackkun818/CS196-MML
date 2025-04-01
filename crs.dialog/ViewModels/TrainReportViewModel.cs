@@ -105,7 +105,7 @@ namespace crs.dialog.ViewModels
             {
                 exception.Exception = async ex =>
                 {
-                    exception.Message = "获取报告信息错误";
+                    exception.Message = "Get report information error";
                     return (false, $"{exception.Message},{ex.Message}", default);
                 };
 
@@ -199,14 +199,14 @@ namespace crs.dialog.ViewModels
 
                     ISeries[] series = firstItem.Charttype switch
                     {
-                        "柱状图" => [new ColumnSeries<double>
+                        "Bar chart" => [new ColumnSeries<double>
                         {
                             Name = m.column,
                             Values = m.rows.Select(m=>m.Value).ToList(),
                             Stroke = null,
                             Fill = new SolidColorPaint(SKColors.CornflowerBlue),
                         }],
-                        "折线图" => [new LineSeries<double>
+                        "Line chart" => [new LineSeries<double>
                         {
                             Name = m.column,
                             Values = m.rows.Select(m=>m.Value).ToList(),

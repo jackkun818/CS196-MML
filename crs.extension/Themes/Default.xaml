@@ -13,10 +13,10 @@
     <converter:Bitmap2ImageSourceConverter x:Key="crs_Bitmap2ImageSourceConverter" />
     <converter:Bitmap2ImageSourceConverter x:Key="crs_DigitalHumanBitmap2ImageSource_196_Converter"
                                            DecodePixelWidth="196"
-                                           DefaultImagePath="./Temps/Images/数字人默认图.png" />
+                                           DefaultImagePath="./Temps/Images/Digital people default picture.png" />
     <converter:Bitmap2ImageSourceConverter x:Key="crs_DigitalHumanBitmap2ImageSource_316_Converter"
                                            DecodePixelWidth="316"
-                                           DefaultImagePath="./Temps/Images/数字人默认图.png" />
+                                           DefaultImagePath="./Temps/Images/Digital people default picture.png" />
 
     <converter:Boolean2VisibilityConverter x:Key="crs_Boolean2VisibilityHiddenConverter" FalseVisibilityType="Hidden" />
     <converter:Boolean2VisibilityConverter x:Key="crs_Boolean2VisibilityCollapsedConverter" FalseVisibilityType="Collapsed" />

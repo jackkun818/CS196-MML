@@ -1,0 +1,8 @@
+Difficulty 1
+The new shopping mall opened in the East Side yesterday, attracting a large number of customers. The shopping center has a variety of brands of shops, restaurants and entertainment facilities, providing citizens with an ideal place to shop and relax.
+Question 2: Where will the new shopping mall open?
+South District
+West District
+East District
+North District
+2

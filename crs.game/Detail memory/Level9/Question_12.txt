@@ -1,0 +1,8 @@
+Difficulty 9
+The school’s opening ceremony was held in the school auditorium. At the ceremony, 15 new teachers were introduced to the students. The ceremony starts at 9 a.m. and ends at 12 noon.
+Question 12: How many new teachers were introduced at the opening ceremony?
+18
+10
+15
+12 bits
+2

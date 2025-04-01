@@ -38,7 +38,7 @@
                            TextAlignment="Center"
                            TextTrimming="CharacterEllipsis"
                            TextWrapping="Wrap">
-                    请说出以下物体的相似性。例如：香蕉—桔子=水果。
+                    Please tell me the similarity of the following objects. For example: banana—orange=fruit.
                 </TextBlock>
                 <TextBlock Margin="0,150,0,0"
                            HorizontalAlignment="Center"
@@ -49,7 +49,7 @@
                            TextAlignment="Center"
                            TextTrimming="CharacterEllipsis"
                            TextWrapping="Wrap">
-                    火车—自行车
+                    train—bike
                 </TextBlock>
             </hc:SimpleStackPanel>
         </DockPanel>
@@ -74,7 +74,7 @@
                            TextAlignment="Center"
                            TextTrimming="CharacterEllipsis"
                            TextWrapping="Wrap">
-                    请说出以下物体的相似性。例如：香蕉—桔子=水果。
+                    Please tell me the similarity of the following objects. For example: banana—orange=fruit.
                 </TextBlock>
                 <TextBlock Margin="0,150,0,0"
                            HorizontalAlignment="Center"
@@ -85,7 +85,7 @@
                            TextAlignment="Center"
                            TextTrimming="CharacterEllipsis"
                            TextWrapping="Wrap">
-                    手表—尺
+                    watch—ruler
                 </TextBlock>
             </hc:SimpleStackPanel>
         </DockPanel>

@@ -1,0 +1,8 @@
+Difficulty 5
+The bus routes in the city have been adjusted. After the adjustment, the bus added 10 stops. The new line passes through the main commercial area. Adjustments start next Monday.
+Question 14: How many stations have been added to the adjustment of bus routes?
+5
+15
+10
+20
+2

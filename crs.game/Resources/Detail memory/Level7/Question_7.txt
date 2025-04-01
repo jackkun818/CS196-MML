@@ -1,0 +1,8 @@
+Difficulty 7
+Last night, a new film was screened in the cinema. The movie starts at 7 o'clock and the screening ends at 9:30. There were a total of 100 viewers during the film screening.
+Question 7: What time is the end time of the movie screening?
+9 o'clock
+8 o'clock
+9:30
+10 o'clock
+2

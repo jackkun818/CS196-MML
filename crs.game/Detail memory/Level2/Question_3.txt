@@ -1,0 +1,8 @@
+Difficulty 2
+The art exhibition in the mall exhibits 50 paintings, which will last for two weeks.
+Question 3: How long does the art exhibition last?
+Half a year
+One week
+Two weeks
+One month
+2

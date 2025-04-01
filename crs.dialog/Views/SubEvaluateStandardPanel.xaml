@@ -18,7 +18,7 @@
 
     <hc:SimplePanel DataContext="{Binding DataContext}">
         <hc:SimplePanel.Background>
-            <ImageBrush ImageSource="{StaticResource crs_患者端背景2}" />
+            <ImageBrush ImageSource="{StaticResource crs_Patient side background 2}" />
         </hc:SimplePanel.Background>
 
         <ContentControl
@@ -41,7 +41,7 @@
             Click="completeButton_Click"
             FontSize="26"
             Foreground="White">
-            完成
+            Finish
         </Button>
         <Border
             Width="500"
@@ -58,7 +58,7 @@
                 TextAlignment="Center"
                 TextTrimming="CharacterEllipsis"
                 TextWrapping="Wrap">
-                等待治疗师打分
+                Waiting for the therapist to score
             </TextBlock>
         </Border>
 

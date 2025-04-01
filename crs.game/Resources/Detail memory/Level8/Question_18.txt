@@ -1,0 +1,8 @@
+Difficulty 8
+The auto repair shop opens at 9 a.m. every day and closes at 7 p.m.
+Question 18: What time is the closing time of the auto repair shop?
+7 pm
+10 am
+8 pm
+5 pm
+0

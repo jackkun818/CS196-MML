@@ -40,7 +40,7 @@
                            TextAlignment="Center"
                            TextTrimming="CharacterEllipsis"
                            TextWrapping="Wrap">
-                    这是一个定向力测验，请注意听并按照题目内容完成
+                    This is a directional force test, please listen carefully and complete it according to the content of the question
                 </TextBlock>
             </hc:SimpleStackPanel>
         </DockPanel>
@@ -67,7 +67,7 @@
                            TextAlignment="Center"
                            TextTrimming="CharacterEllipsis"
                            TextWrapping="Wrap">
-                    这是一个定向力测验，请注意听并按照题目内容完成
+                    This is a directional force test, please listen carefully and complete it according to the content of the question
                 </TextBlock>
             </hc:SimpleStackPanel>
         </DockPanel>
@@ -94,7 +94,7 @@
                            TextAlignment="Center"
                            TextTrimming="CharacterEllipsis"
                            TextWrapping="Wrap">
-                    这是一个定向力测验，请注意听并按照题目内容完成
+                    This is a directional force test, please listen carefully and complete it according to the content of the question
                 </TextBlock>
             </hc:SimpleStackPanel>
         </DockPanel>
@@ -121,7 +121,7 @@
                            TextAlignment="Center"
                            TextTrimming="CharacterEllipsis"
                            TextWrapping="Wrap">
-                    这是一个定向力测验，请注意听并按照题目内容完成
+                    This is a directional force test, please listen carefully and complete it according to the content of the question
                 </TextBlock>
             </hc:SimpleStackPanel>
         </DockPanel>
@@ -148,7 +148,7 @@
                            TextAlignment="Center"
                            TextTrimming="CharacterEllipsis"
                            TextWrapping="Wrap">
-                    这是一个定向力测验，请注意听并按照题目内容完成
+                    This is a directional force test, please listen carefully and complete it according to the content of the question
                 </TextBlock>
             </hc:SimpleStackPanel>
         </DockPanel>

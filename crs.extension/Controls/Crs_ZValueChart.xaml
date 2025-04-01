@@ -44,9 +44,9 @@
                                 HorizontalAlignment="Center"
                                 FontSize="24"
                                 TextWrapping="Wrap">
-                                T标准<LineBreak /><LineBreak />
-                                百分等级<LineBreak /><LineBreak />
-                                Z-标准</TextBlock>
+                                Tstandard<LineBreak /><LineBreak />
+                                Percent rating<LineBreak /><LineBreak />
+                                Z-standard</TextBlock>
                         </Grid>
                         <Grid Grid.Column="1">
                             <TextBlock

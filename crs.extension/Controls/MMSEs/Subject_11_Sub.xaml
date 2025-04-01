@@ -28,19 +28,19 @@
                    FontWeight="Bold"
                    TextTrimming="CharacterEllipsis"
                    TextWrapping="Wrap">
-            这是结构能力测试，请根据以下图案在空白处画下来
+            This is a structural capability test. Please draw it in the blanks according to the following pattern
         </TextBlock>
-        <!--  中心区域包含正五边形图案  -->
+        <!--  The center area contains regular pentagonal patterns  -->
         <hc:SimplePanel Margin="0,20,0,20">
             <Image Width="1000"
                    Margin="10,0,0,0"
                    HorizontalAlignment="Left"
-                   Source="{StaticResource crs_题目插图11_Big}" />
+                   Source="{StaticResource crs_Title Illustration 11_Big}" />
             <TextBlock Margin="450,90,0,0"
                        HorizontalAlignment="Left"
                        FontSize="30"
                        FontWeight="Bold"
-                       Text="(参考图)" />
+                       Text="(Reference image)" />
             <controls:Crs_DrawPanel DrawStrokes="{Binding StrokeItem}" />
         </hc:SimplePanel>
     </DockPanel>

@@ -1,0 +1,8 @@
+Difficulty 5
+The zoo has just opened a new lion exhibition. There are four lions in the exhibition. The exhibition area is open every day. The lions are most active at noon.
+Question 2: Where is the new lion exhibition?
+museum
+zoo
+Botanical Garden
+Aquarium
+1

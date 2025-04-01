@@ -47,7 +47,7 @@
                         BorderThickness="0"
                         Command="{Binding CancelCommand}">
                         <Button.Background>
-                            <ImageBrush ImageSource="{StaticResource crs_返回}" />
+                            <ImageBrush ImageSource="{StaticResource crs_return}" />
                         </Button.Background>
                     </Button>
                     <TextBlock
@@ -55,7 +55,7 @@
                         VerticalAlignment="Center"
                         FontSize="36"
                         FontWeight="Bold">
-                        MMSE量表报告
+                        MMSEScale Report
                     </TextBlock>
                     <Button
                         Width="166"
@@ -72,8 +72,8 @@
                             <Image
                                 Width="30"
                                 VerticalAlignment="Center"
-                                Source="{StaticResource crs_导出报告}" />
-                            <TextBlock Margin="10,0,0,0" VerticalAlignment="Center">导出报告</TextBlock>
+                                Source="{StaticResource crs_Export the report}" />
+                            <TextBlock Margin="10,0,0,0" VerticalAlignment="Center">Export the report</TextBlock>
                         </StackPanel>
                     </Button>
                 </UniformGrid>
@@ -98,7 +98,7 @@
                                     Columns="3"
                                     Rows="2">
                                     <UniformGrid Columns="2" Rows="1">
-                                        <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center">姓名：</TextBlock>
+                                        <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center">Name:</TextBlock>
                                         <TextBlock
                                             HorizontalAlignment="Left"
                                             VerticalAlignment="Center"
@@ -106,7 +106,7 @@
                                             TextTrimming="CharacterEllipsis" />
                                     </UniformGrid>
                                     <UniformGrid Columns="2" Rows="1">
-                                        <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center">性别：</TextBlock>
+                                        <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center">gender:</TextBlock>
                                         <TextBlock
                                             HorizontalAlignment="Left"
                                             VerticalAlignment="Center"
@@ -114,15 +114,15 @@
                                             TextTrimming="CharacterEllipsis" />
                                     </UniformGrid>
                                     <UniformGrid Columns="2" Rows="1">
-                                        <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center">年龄：</TextBlock>
+                                        <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center">age:</TextBlock>
                                         <TextBlock
                                             HorizontalAlignment="Left"
                                             VerticalAlignment="Center"
-                                            Text="{Binding PatientItem.Age, StringFormat={}{0}岁, TargetNullValue=--, FallbackValue=--}"
+                                            Text="{Binding PatientItem.Age, StringFormat={}{0}age, TargetNullValue=--, FallbackValue=--}"
                                             TextTrimming="CharacterEllipsis" />
                                     </UniformGrid>
                                     <UniformGrid Columns="2" Rows="1">
-                                        <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center">训练用时：</TextBlock>
+                                        <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center">Training time:</TextBlock>
                                         <TextBlock
                                             HorizontalAlignment="Left"
                                             VerticalAlignment="Center"
@@ -130,15 +130,15 @@
                                             TextTrimming="CharacterEllipsis" />
                                     </UniformGrid>
                                     <UniformGrid Columns="2" Rows="1">
-                                        <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center">模式：</TextBlock>
+                                        <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center">model:</TextBlock>
                                         <TextBlock
                                             HorizontalAlignment="Left"
                                             VerticalAlignment="Center"
-                                            Text="标准评估"
+                                            Text="Standard evaluation"
                                             TextTrimming="CharacterEllipsis" />
                                     </UniformGrid>
                                     <UniformGrid Columns="2" Rows="1">
-                                        <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center">报告时间：</TextBlock>
+                                        <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center">Report time:</TextBlock>
                                         <TextBlock
                                             HorizontalAlignment="Left"
                                             VerticalAlignment="Center"
@@ -163,7 +163,7 @@
                                     VerticalAlignment="Center"
                                     FontSize="30"
                                     FontWeight="Bold">
-                                    测评得分
+                                    Evaluation score
                                 </TextBlock>
                             </StackPanel>
                             <lcc:CartesianChart
@@ -180,7 +180,7 @@
                                 DockPanel.Dock="Top"
                                 TextBlock.FontSize="24"
                                 TextBlock.FontWeight="Bold">
-                                <TextBlock DockPanel.Dock="Left">主要问题：</TextBlock>
+                                <TextBlock DockPanel.Dock="Left">Main questions:</TextBlock>
                                 <TextBlock Text="{Binding Problem}" TextWrapping="Wrap" />
                             </DockPanel>
                             <Border
@@ -209,7 +209,7 @@
                                     VerticalAlignment="Center"
                                     FontSize="30"
                                     FontWeight="Bold">
-                                    量表详情
+                                    Scale details
                                 </TextBlock>
                             </StackPanel>
                             <StackPanel
@@ -221,13 +221,13 @@
                                     TextBlock.FontSize="26"
                                     TextBlock.FontWeight="Bold">
                                     <controls:Crs_SubjectReport.RightContent>
-                                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">得分</TextBlock>
+                                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">Score</TextBlock>
                                     </controls:Crs_SubjectReport.RightContent>
                                     <TextBlock
                                         Margin="20,0,0,0"
                                         HorizontalAlignment="Left"
                                         VerticalAlignment="Center">
-                                        定向力
+                                        Directional force
                                     </TextBlock>
                                 </controls:Crs_SubjectReport>
                                 <controls:Crs_SubjectReport DataContext="{Binding SubjectItems[0]}">
@@ -236,7 +236,7 @@
                                             <behaviors:ChangePropertyAction
                                                 PropertyName="OriginName"
                                                 TargetObject="{Binding}"
-                                                Value="定向力" />
+                                                Value="Directional force" />
                                         </behaviors:EventTrigger>
                                     </behaviors:Interaction.Triggers>
                                     <controls:Crs_SubjectReport.RightContent>
@@ -271,7 +271,7 @@
                                                     VerticalAlignment="Center"
                                                     DockPanel.Dock="Right"
                                                     TextTrimming="CharacterEllipsis">
-                                                    星期几
+                                                    What day of the week
                                                 </TextBlock>
                                             </DockPanel>
                                             <Border
@@ -283,7 +283,7 @@
                                                     Margin="20,0"
                                                     VerticalAlignment="Center"
                                                     DataContext="{Binding AnswerItems[0]}"
-                                                    Text="{Binding Remark, StringFormat={}记录：{0}, TargetNullValue=记录：, FallbackValue=记录：}"
+                                                    Text="{Binding Remark, StringFormat={}Record:{0}, TargetNullValue=Record:, FallbackValue=Record:}"
                                                     TextTrimming="CharacterEllipsis" />
                                             </Border>
                                         </theme:LineGrid>
@@ -304,7 +304,7 @@
                                                     VerticalAlignment="Center"
                                                     DockPanel.Dock="Right"
                                                     TextTrimming="CharacterEllipsis">
-                                                    几号
+                                                    What time
                                                 </TextBlock>
                                             </DockPanel>
                                             <Border
@@ -316,7 +316,7 @@
                                                     Margin="20,0"
                                                     VerticalAlignment="Center"
                                                     DataContext="{Binding AnswerItems[0]}"
-                                                    Text="{Binding Remark, StringFormat={}记录：{0}, TargetNullValue=记录：, FallbackValue=记录：}"
+                                                    Text="{Binding Remark, StringFormat={}Record:{0}, TargetNullValue=Record:, FallbackValue=Record:}"
                                                     TextTrimming="CharacterEllipsis" />
                                             </Border>
                                         </theme:LineGrid>
@@ -337,7 +337,7 @@
                                                     VerticalAlignment="Center"
                                                     DockPanel.Dock="Right"
                                                     TextTrimming="CharacterEllipsis">
-                                                    几月
+                                                    How many months
                                                 </TextBlock>
                                             </DockPanel>
                                             <Border
@@ -349,7 +349,7 @@
                                                     Margin="20,0"
                                                     VerticalAlignment="Center"
                                                     DataContext="{Binding AnswerItems[0]}"
-                                                    Text="{Binding Remark, StringFormat={}记录：{0}, TargetNullValue=记录：, FallbackValue=记录：}"
+                                                    Text="{Binding Remark, StringFormat={}Record:{0}, TargetNullValue=Record:, FallbackValue=Record:}"
                                                     TextTrimming="CharacterEllipsis" />
                                             </Border>
                                         </theme:LineGrid>
@@ -370,7 +370,7 @@
                                                     VerticalAlignment="Center"
                                                     DockPanel.Dock="Right"
                                                     TextTrimming="CharacterEllipsis">
-                                                    什么季节
+                                                    What season
                                                 </TextBlock>
                                             </DockPanel>
                                             <Border
@@ -382,7 +382,7 @@
                                                     Margin="20,0"
                                                     VerticalAlignment="Center"
                                                     DataContext="{Binding AnswerItems[0]}"
-                                                    Text="{Binding Remark, StringFormat={}记录：{0}, TargetNullValue=记录：, FallbackValue=记录：}"
+                                                    Text="{Binding Remark, StringFormat={}Record:{0}, TargetNullValue=Record:, FallbackValue=Record:}"
                                                     TextTrimming="CharacterEllipsis" />
                                             </Border>
                                         </theme:LineGrid>
@@ -403,7 +403,7 @@
                                                     VerticalAlignment="Center"
                                                     DockPanel.Dock="Right"
                                                     TextTrimming="CharacterEllipsis">
-                                                    哪一年
+                                                    Which year
                                                 </TextBlock>
                                             </DockPanel>
                                             <Border
@@ -415,7 +415,7 @@
                                                     Margin="20,0"
                                                     VerticalAlignment="Center"
                                                     DataContext="{Binding AnswerItems[0]}"
-                                                    Text="{Binding Remark, StringFormat={}记录：{0}, TargetNullValue=记录：, FallbackValue=记录：}"
+                                                    Text="{Binding Remark, StringFormat={}Record:{0}, TargetNullValue=Record:, FallbackValue=Record:}"
                                                     TextTrimming="CharacterEllipsis" />
                                             </Border>
                                         </theme:LineGrid>
@@ -427,7 +427,7 @@
                                             <behaviors:ChangePropertyAction
                                                 PropertyName="OriginName"
                                                 TargetObject="{Binding}"
-                                                Value="定向力" />
+                                                Value="Directional force" />
                                         </behaviors:EventTrigger>
                                     </behaviors:Interaction.Triggers>
                                     <controls:Crs_SubjectReport.RightContent>
@@ -462,7 +462,7 @@
                                                     VerticalAlignment="Center"
                                                     DockPanel.Dock="Right"
                                                     TextTrimming="CharacterEllipsis">
-                                                    省市
+                                                    Provincial and municipal
                                                 </TextBlock>
                                             </DockPanel>
                                             <Border
@@ -474,7 +474,7 @@
                                                     Margin="20,0"
                                                     VerticalAlignment="Center"
                                                     DataContext="{Binding AnswerItems[0]}"
-                                                    Text="{Binding Remark, StringFormat={}记录：{0}, TargetNullValue=记录：, FallbackValue=记录：}"
+                                                    Text="{Binding Remark, StringFormat={}Record:{0}, TargetNullValue=Record:, FallbackValue=Record:}"
                                                     TextTrimming="CharacterEllipsis" />
                                             </Border>
                                         </theme:LineGrid>
@@ -495,7 +495,7 @@
                                                     VerticalAlignment="Center"
                                                     DockPanel.Dock="Right"
                                                     TextTrimming="CharacterEllipsis">
-                                                    区或县
+                                                    District or county
                                                 </TextBlock>
                                             </DockPanel>
                                             <Border
@@ -507,7 +507,7 @@
                                                     Margin="20,0"
                                                     VerticalAlignment="Center"
                                                     DataContext="{Binding AnswerItems[0]}"
-                                                    Text="{Binding Remark, StringFormat={}记录：{0}, TargetNullValue=记录：, FallbackValue=记录：}"
+                                                    Text="{Binding Remark, StringFormat={}Record:{0}, TargetNullValue=Record:, FallbackValue=Record:}"
                                                     TextTrimming="CharacterEllipsis" />
                                             </Border>
                                         </theme:LineGrid>
@@ -528,7 +528,7 @@
                                                     VerticalAlignment="Center"
                                                     DockPanel.Dock="Right"
                                                     TextTrimming="CharacterEllipsis">
-                                                    街道或乡
+                                                    Street or township
                                                 </TextBlock>
                                             </DockPanel>
                                             <Border
@@ -540,7 +540,7 @@
                                                     Margin="20,0"
                                                     VerticalAlignment="Center"
                                                     DataContext="{Binding AnswerItems[0]}"
-                                                    Text="{Binding Remark, StringFormat={}记录：{0}, TargetNullValue=记录：, FallbackValue=记录：}"
+                                                    Text="{Binding Remark, StringFormat={}Record:{0}, TargetNullValue=Record:, FallbackValue=Record:}"
                                                     TextTrimming="CharacterEllipsis" />
                                             </Border>
                                         </theme:LineGrid>
@@ -561,7 +561,7 @@
                                                     VerticalAlignment="Center"
                                                     DockPanel.Dock="Right"
                                                     TextTrimming="CharacterEllipsis">
-                                                    什么地方
+                                                    Where
                                                 </TextBlock>
                                             </DockPanel>
                                             <Border
@@ -573,7 +573,7 @@
                                                     Margin="20,0"
                                                     VerticalAlignment="Center"
                                                     DataContext="{Binding AnswerItems[0]}"
-                                                    Text="{Binding Remark, StringFormat={}记录：{0}, TargetNullValue=记录：, FallbackValue=记录：}"
+                                                    Text="{Binding Remark, StringFormat={}Record:{0}, TargetNullValue=Record:, FallbackValue=Record:}"
                                                     TextTrimming="CharacterEllipsis" />
                                             </Border>
                                         </theme:LineGrid>
@@ -594,7 +594,7 @@
                                                     VerticalAlignment="Center"
                                                     DockPanel.Dock="Right"
                                                     TextTrimming="CharacterEllipsis">
-                                                    第几层楼
+                                                    Which floor
                                                 </TextBlock>
                                             </DockPanel>
                                             <Border
@@ -606,7 +606,7 @@
                                                     Margin="20,0"
                                                     VerticalAlignment="Center"
                                                     DataContext="{Binding AnswerItems[0]}"
-                                                    Text="{Binding Remark, StringFormat={}记录：{0}, TargetNullValue=记录：, FallbackValue=记录：}"
+                                                    Text="{Binding Remark, StringFormat={}Record:{0}, TargetNullValue=Record:, FallbackValue=Record:}"
                                                     TextTrimming="CharacterEllipsis" />
                                             </Border>
                                         </theme:LineGrid>
@@ -617,13 +617,13 @@
                                     TextBlock.FontSize="26"
                                     TextBlock.FontWeight="Bold">
                                     <controls:Crs_SubjectReport.RightContent>
-                                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">得分</TextBlock>
+                                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">Score</TextBlock>
                                     </controls:Crs_SubjectReport.RightContent>
                                     <TextBlock
                                         Margin="20,0,0,0"
                                         HorizontalAlignment="Left"
                                         VerticalAlignment="Center">
-                                        即时记忆力
+                                        Instant memory
                                     </TextBlock>
                                 </controls:Crs_SubjectReport>
                                 <controls:Crs_SubjectReport DataContext="{Binding SubjectItems[2]}">
@@ -632,7 +632,7 @@
                                             <behaviors:ChangePropertyAction
                                                 PropertyName="OriginName"
                                                 TargetObject="{Binding}"
-                                                Value="即时记忆力" />
+                                                Value="Instant memory" />
                                         </behaviors:EventTrigger>
                                     </behaviors:Interaction.Triggers>
                                     <controls:Crs_SubjectReport.RightContent>
@@ -653,7 +653,7 @@
                                             VerticalAlignment="Center"
                                             LineHeight="36"
                                             TextWrapping="Wrap">
-                                            读出下列词语，然后由患者重复上述过程重复2次，5分钟后回忆
+                                            Read the following words, and then repeat the above process twice by the patient, and recall it after 5 minutes.
                                         </TextBlock>
                                         <theme:LineGrid Grid.Column="1">
                                             <Grid.RowDefinitions>
@@ -673,21 +673,21 @@
                                                     HorizontalAlignment="Center"
                                                     VerticalAlignment="Center"
                                                     TextTrimming="CharacterEllipsis">
-                                                    皮球
+                                                    Ball
                                                 </TextBlock>
                                                 <TextBlock
                                                     Grid.Column="1"
                                                     HorizontalAlignment="Center"
                                                     VerticalAlignment="Center"
                                                     TextTrimming="CharacterEllipsis">
-                                                    国旗
+                                                    National flag
                                                 </TextBlock>
                                                 <TextBlock
                                                     Grid.Column="2"
                                                     HorizontalAlignment="Center"
                                                     VerticalAlignment="Center"
                                                     TextTrimming="CharacterEllipsis">
-                                                    树木
+                                                    Trees
                                                 </TextBlock>
 
                                             </theme:LineGrid>
@@ -748,13 +748,13 @@
                                     TextBlock.FontSize="26"
                                     TextBlock.FontWeight="Bold">
                                     <controls:Crs_SubjectReport.RightContent>
-                                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">得分</TextBlock>
+                                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">Score</TextBlock>
                                     </controls:Crs_SubjectReport.RightContent>
                                     <TextBlock
                                         Margin="20,0,0,0"
                                         HorizontalAlignment="Left"
                                         VerticalAlignment="Center">
-                                        注意力和计算能力
+                                        Attention and computing power
                                     </TextBlock>
                                 </controls:Crs_SubjectReport>
                                 <controls:Crs_SubjectReport DataContext="{Binding SubjectItems[3]}">
@@ -763,7 +763,7 @@
                                             <behaviors:ChangePropertyAction
                                                 PropertyName="OriginName"
                                                 TargetObject="{Binding}"
-                                                Value="注意力和计算能力" />
+                                                Value="Attention and computing power" />
                                         </behaviors:EventTrigger>
                                     </behaviors:Interaction.Triggers>
                                     <controls:Crs_SubjectReport.RightContent>
@@ -774,7 +774,7 @@
                                             Text="{Binding Fraction, TargetNullValue=--, FallbackValue=--}" />
                                     </controls:Crs_SubjectReport.RightContent>
                                     <DockPanel DataContext="{Binding ChildrenItems[0]}">
-                                        <TextBlock Margin="20,10" DockPanel.Dock="Bottom">4~5个正确给3分，2~3个正确给1分，全部错误给0分</TextBlock>
+                                        <TextBlock Margin="20,10" DockPanel.Dock="Bottom">4~5 correct points, 2~1 point for 3 correct one point, 0 points for all wrong mistakes</TextBlock>
                                         <theme:LineGrid>
                                             <Grid.ColumnDefinitions>
                                                 <ColumnDefinition Width="335" />
@@ -785,7 +785,7 @@
                                                 HorizontalAlignment="Left"
                                                 VerticalAlignment="Center"
                                                 TextWrapping="Wrap">
-                                                100连续减7
+                                                100 consecutively reduced 7
                                             </TextBlock>
                                             <theme:LineGrid Grid.Column="1">
                                                 <Grid.ColumnDefinitions>
@@ -822,7 +822,7 @@
                                                         <TextBlock
                                                             Margin="20,0"
                                                             VerticalAlignment="Center"
-                                                            Text="{Binding Remark, StringFormat={}记录：{0}, TargetNullValue=记录：, FallbackValue=记录：}"
+                                                            Text="{Binding Remark, StringFormat={}Record:{0}, TargetNullValue=Record:, FallbackValue=Record:}"
                                                             TextTrimming="CharacterEllipsis" />
                                                     </Border>
                                                 </theme:LineGrid>
@@ -853,7 +853,7 @@
                                                         <TextBlock
                                                             Margin="20,0"
                                                             VerticalAlignment="Center"
-                                                            Text="{Binding Remark, StringFormat={}记录：{0}, TargetNullValue=记录：, FallbackValue=记录：}"
+                                                            Text="{Binding Remark, StringFormat={}Record:{0}, TargetNullValue=Record:, FallbackValue=Record:}"
                                                             TextTrimming="CharacterEllipsis" />
                                                     </Border>
                                                 </theme:LineGrid>
@@ -884,7 +884,7 @@
                                                         <TextBlock
                                                             Margin="20,0"
                                                             VerticalAlignment="Center"
-                                                            Text="{Binding Remark, StringFormat={}记录：{0}, TargetNullValue=记录：, FallbackValue=记录：}"
+                                                            Text="{Binding Remark, StringFormat={}Record:{0}, TargetNullValue=Record:, FallbackValue=Record:}"
                                                             TextTrimming="CharacterEllipsis" />
                                                     </Border>
                                                 </theme:LineGrid>
@@ -915,7 +915,7 @@
                                                         <TextBlock
                                                             Margin="20,0"
                                                             VerticalAlignment="Center"
-                                                            Text="{Binding Remark, StringFormat={}记录：{0}, TargetNullValue=记录：, FallbackValue=记录：}"
+                                                            Text="{Binding Remark, StringFormat={}Record:{0}, TargetNullValue=Record:, FallbackValue=Record:}"
                                                             TextTrimming="CharacterEllipsis" />
                                                     </Border>
                                                 </theme:LineGrid>
@@ -946,7 +946,7 @@
                                                         <TextBlock
                                                             Margin="20,0"
                                                             VerticalAlignment="Center"
-                                                            Text="{Binding Remark, StringFormat={}记录：{0}, TargetNullValue=记录：, FallbackValue=记录：}"
+                                                            Text="{Binding Remark, StringFormat={}Record:{0}, TargetNullValue=Record:, FallbackValue=Record:}"
                                                             TextTrimming="CharacterEllipsis" />
                                                     </Border>
                                                 </theme:LineGrid>
@@ -959,13 +959,13 @@
                                     TextBlock.FontSize="26"
                                     TextBlock.FontWeight="Bold">
                                     <controls:Crs_SubjectReport.RightContent>
-                                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">得分</TextBlock>
+                                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">Score</TextBlock>
                                     </controls:Crs_SubjectReport.RightContent>
                                     <TextBlock
                                         Margin="20,0,0,0"
                                         HorizontalAlignment="Left"
                                         VerticalAlignment="Center">
-                                        回忆能力
+                                        Memory ability
                                     </TextBlock>
                                 </controls:Crs_SubjectReport>
                                 <controls:Crs_SubjectReport DataContext="{Binding SubjectItems[4]}">
@@ -974,7 +974,7 @@
                                             <behaviors:ChangePropertyAction
                                                 PropertyName="OriginName"
                                                 TargetObject="{Binding}"
-                                                Value="回忆能力" />
+                                                Value="Memory ability" />
                                         </behaviors:EventTrigger>
                                     </behaviors:Interaction.Triggers>
                                     <controls:Crs_SubjectReport.RightContent>
@@ -996,7 +996,7 @@
                                             LineHeight="36"
                                             TextWrapping="Wrap">
                                             <LineBreak />
-                                            回忆之前记住的词语<LineBreak />
+                                            Memorize the words I remembered before<LineBreak />
                                         </TextBlock>
                                         <theme:LineGrid Grid.Column="1">
                                             <Grid.RowDefinitions>
@@ -1016,21 +1016,21 @@
                                                     HorizontalAlignment="Center"
                                                     VerticalAlignment="Center"
                                                     TextTrimming="CharacterEllipsis">
-                                                    皮球
+                                                    Ball
                                                 </TextBlock>
                                                 <TextBlock
                                                     Grid.Column="1"
                                                     HorizontalAlignment="Center"
                                                     VerticalAlignment="Center"
                                                     TextTrimming="CharacterEllipsis">
-                                                    国旗
+                                                    National flag
                                                 </TextBlock>
                                                 <TextBlock
                                                     Grid.Column="2"
                                                     HorizontalAlignment="Center"
                                                     VerticalAlignment="Center"
                                                     TextTrimming="CharacterEllipsis">
-                                                    树木
+                                                    Trees
                                                 </TextBlock>
 
                                             </theme:LineGrid>
@@ -1091,13 +1091,13 @@
                                     TextBlock.FontSize="26"
                                     TextBlock.FontWeight="Bold">
                                     <controls:Crs_SubjectReport.RightContent>
-                                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">得分</TextBlock>
+                                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">Score</TextBlock>
                                     </controls:Crs_SubjectReport.RightContent>
                                     <TextBlock
                                         Margin="20,0,0,0"
                                         HorizontalAlignment="Left"
                                         VerticalAlignment="Center">
-                                        语言能力
+                                        Language skills
                                     </TextBlock>
                                 </controls:Crs_SubjectReport>
                                 <controls:Crs_SubjectReport DataContext="{Binding SubjectItems[5]}">
@@ -1106,7 +1106,7 @@
                                             <behaviors:ChangePropertyAction
                                                 PropertyName="OriginName"
                                                 TargetObject="{Binding}"
-                                                Value="语言能力" />
+                                                Value="Language skills" />
                                         </behaviors:EventTrigger>
                                     </behaviors:Interaction.Triggers>
                                     <controls:Crs_SubjectReport.RightContent>
@@ -1140,7 +1140,7 @@
                                                     VerticalAlignment="Center"
                                                     LineHeight="36"
                                                     TextWrapping="Wrap">
-                                                    展示手表图片，问这是什么。
+                                                    Show the watch picture and ask what it is.
                                                 </TextBlock>
                                             </DockPanel>
                                             <Border
@@ -1152,7 +1152,7 @@
                                                     Margin="20,0"
                                                     VerticalAlignment="Center"
                                                     DataContext="{Binding AnswerItems[0]}"
-                                                    Text="{Binding Remark, StringFormat={}记录：{0}, TargetNullValue=记录：, FallbackValue=记录：}"
+                                                    Text="{Binding Remark, StringFormat={}Record:{0}, TargetNullValue=Record:, FallbackValue=Record:}"
                                                     TextTrimming="CharacterEllipsis" />
                                             </Border>
                                         </theme:LineGrid>
@@ -1175,7 +1175,7 @@
                                                     VerticalAlignment="Center"
                                                     LineHeight="36"
                                                     TextWrapping="Wrap">
-                                                    展示钢笔图片，问这是什么。
+                                                    Show the pen picture and ask what this is.
                                                 </TextBlock>
                                             </DockPanel>
                                             <Border
@@ -1187,7 +1187,7 @@
                                                     Margin="20,0"
                                                     VerticalAlignment="Center"
                                                     DataContext="{Binding AnswerItems[0]}"
-                                                    Text="{Binding Remark, StringFormat={}记录：{0}, TargetNullValue=记录：, FallbackValue=记录：}"
+                                                    Text="{Binding Remark, StringFormat={}Record:{0}, TargetNullValue=Record:, FallbackValue=Record:}"
                                                     TextTrimming="CharacterEllipsis" />
                                             </Border>
                                         </theme:LineGrid>
@@ -1199,7 +1199,7 @@
                                             <behaviors:ChangePropertyAction
                                                 PropertyName="OriginName"
                                                 TargetObject="{Binding}"
-                                                Value="语言能力" />
+                                                Value="Language skills" />
                                         </behaviors:EventTrigger>
                                     </behaviors:Interaction.Triggers>
                                     <controls:Crs_SubjectReport.RightContent>
@@ -1232,7 +1232,7 @@
                                                     VerticalAlignment="Center"
                                                     LineHeight="36"
                                                     TextWrapping="Wrap">
-                                                    重复：四十四只石狮子。
+                                                    Repeat: Forty-four stone lions.
                                                 </TextBlock>
                                             </DockPanel>
                                             <Border
@@ -1244,7 +1244,7 @@
                                                     Margin="20,0"
                                                     VerticalAlignment="Center"
                                                     DataContext="{Binding AnswerItems[0]}"
-                                                    Text="{Binding Remark, StringFormat={}记录：{0}, TargetNullValue=记录：, FallbackValue=记录：}"
+                                                    Text="{Binding Remark, StringFormat={}Record:{0}, TargetNullValue=Record:, FallbackValue=Record:}"
                                                     TextTrimming="CharacterEllipsis" />
                                             </Border>
                                         </theme:LineGrid>
@@ -1256,13 +1256,13 @@
                                     TextBlock.FontSize="26"
                                     TextBlock.FontWeight="Bold">
                                     <controls:Crs_SubjectReport.RightContent>
-                                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">得分</TextBlock>
+                                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">Score</TextBlock>
                                     </controls:Crs_SubjectReport.RightContent>
                                     <TextBlock
                                         Margin="20,0,0,0"
                                         HorizontalAlignment="Left"
                                         VerticalAlignment="Center">
-                                        阅读能力
+                                        Reading ability
                                     </TextBlock>
                                 </controls:Crs_SubjectReport>
                                 <controls:Crs_SubjectReport DataContext="{Binding SubjectItems[7]}">
@@ -1271,7 +1271,7 @@
                                             <behaviors:ChangePropertyAction
                                                 PropertyName="OriginName"
                                                 TargetObject="{Binding}"
-                                                Value="阅读能力" />
+                                                Value="Reading ability" />
                                         </behaviors:EventTrigger>
                                     </behaviors:Interaction.Triggers>
                                     <controls:Crs_SubjectReport.RightContent>
@@ -1304,7 +1304,7 @@
                                                     VerticalAlignment="Center"
                                                     LineHeight="36"
                                                     TextWrapping="Wrap">
-                                                    阅读并照做：闭上你的眼睛。
+                                                    Read and do: Close your eyes.
                                                 </TextBlock>
                                             </DockPanel>
                                             <Border
@@ -1316,7 +1316,7 @@
                                                     Margin="20,0"
                                                     VerticalAlignment="Center"
                                                     DataContext="{Binding AnswerItems[0]}"
-                                                    Text="{Binding Remark, StringFormat={}记录：{0}, TargetNullValue=记录：, FallbackValue=记录：}"
+                                                    Text="{Binding Remark, StringFormat={}Record:{0}, TargetNullValue=Record:, FallbackValue=Record:}"
                                                     TextTrimming="CharacterEllipsis" />
                                             </Border>
                                         </theme:LineGrid>
@@ -1328,13 +1328,13 @@
                                     TextBlock.FontSize="26"
                                     TextBlock.FontWeight="Bold">
                                     <controls:Crs_SubjectReport.RightContent>
-                                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">得分</TextBlock>
+                                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">Score</TextBlock>
                                     </controls:Crs_SubjectReport.RightContent>
                                     <TextBlock
                                         Margin="20,0,0,0"
                                         HorizontalAlignment="Left"
                                         VerticalAlignment="Center">
-                                        语言能力
+                                        Language skills
                                     </TextBlock>
                                 </controls:Crs_SubjectReport>
                                 <controls:Crs_SubjectReport DataContext="{Binding SubjectItems[8]}">
@@ -1343,7 +1343,7 @@
                                             <behaviors:ChangePropertyAction
                                                 PropertyName="OriginName"
                                                 TargetObject="{Binding}"
-                                                Value="语言能力" />
+                                                Value="Language skills" />
                                         </behaviors:EventTrigger>
                                     </behaviors:Interaction.Triggers>
                                     <controls:Crs_SubjectReport.RightContent>
@@ -1378,7 +1378,7 @@
                                                     VerticalAlignment="Center"
                                                     LineHeight="36"
                                                     TextWrapping="Wrap">
-                                                    按要求做：用右手拿着这张纸。
+                                                    Do as required: Hold this piece of paper with your right hand.
                                                 </TextBlock>
                                             </DockPanel>
                                             <Border
@@ -1390,7 +1390,7 @@
                                                     Margin="20,0"
                                                     VerticalAlignment="Center"
                                                     DataContext="{Binding AnswerItems[0]}"
-                                                    Text="{Binding Remark, StringFormat={}记录：{0}, TargetNullValue=记录：, FallbackValue=记录：}"
+                                                    Text="{Binding Remark, StringFormat={}Record:{0}, TargetNullValue=Record:, FallbackValue=Record:}"
                                                     TextTrimming="CharacterEllipsis" />
                                             </Border>
                                         </theme:LineGrid>
@@ -1413,7 +1413,7 @@
                                                     VerticalAlignment="Center"
                                                     LineHeight="36"
                                                     TextWrapping="Wrap">
-                                                    按要求做：用两只手将它对折起来。
+                                                    Do as required: Fold it in half with both hands.
                                                 </TextBlock>
                                             </DockPanel>
                                             <Border
@@ -1425,7 +1425,7 @@
                                                     Margin="20,0"
                                                     VerticalAlignment="Center"
                                                     DataContext="{Binding AnswerItems[1]}"
-                                                    Text="{Binding Remark, StringFormat={}记录：{0}, TargetNullValue=记录：, FallbackValue=记录：}"
+                                                    Text="{Binding Remark, StringFormat={}Record:{0}, TargetNullValue=Record:, FallbackValue=Record:}"
                                                     TextTrimming="CharacterEllipsis" />
                                             </Border>
                                         </theme:LineGrid>
@@ -1448,7 +1448,7 @@
                                                     VerticalAlignment="Center"
                                                     LineHeight="36"
                                                     TextWrapping="Wrap">
-                                                    按要求做：放在你的左腿上。
+                                                    Do as required: Place it on your left leg.
                                                 </TextBlock>
                                             </DockPanel>
                                             <Border
@@ -1460,7 +1460,7 @@
                                                     Margin="20,0"
                                                     VerticalAlignment="Center"
                                                     DataContext="{Binding AnswerItems[2]}"
-                                                    Text="{Binding Remark, StringFormat={}记录：{0}, TargetNullValue=记录：, FallbackValue=记录：}"
+                                                    Text="{Binding Remark, StringFormat={}Record:{0}, TargetNullValue=Record:, FallbackValue=Record:}"
                                                     TextTrimming="CharacterEllipsis" />
                                             </Border>
                                         </theme:LineGrid>
@@ -1471,13 +1471,13 @@
                                     TextBlock.FontSize="26"
                                     TextBlock.FontWeight="Bold">
                                     <controls:Crs_SubjectReport.RightContent>
-                                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">得分</TextBlock>
+                                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">Score</TextBlock>
                                     </controls:Crs_SubjectReport.RightContent>
                                     <TextBlock
                                         Margin="20,0,0,0"
                                         HorizontalAlignment="Left"
                                         VerticalAlignment="Center">
-                                        书写能力
+                                        Writing ability
                                     </TextBlock>
                                 </controls:Crs_SubjectReport>
                                 <controls:Crs_SubjectReport DataContext="{Binding SubjectItems[9]}">
@@ -1486,7 +1486,7 @@
                                             <behaviors:ChangePropertyAction
                                                 PropertyName="OriginName"
                                                 TargetObject="{Binding}"
-                                                Value="书写能力" />
+                                                Value="Writing ability" />
                                         </behaviors:EventTrigger>
                                     </behaviors:Interaction.Triggers>
                                     <controls:Crs_SubjectReport.RightContent>
@@ -1508,7 +1508,7 @@
                                                 VerticalAlignment="Center"
                                                 LineHeight="36"
                                                 TextWrapping="Wrap">
-                                                写一句完整的句子，句子必须有主语、动词、有意义。
+                                                When writing a complete sentence, the sentence must have a subject, a verb, and meaningful.
                                             </TextBlock>
                                         </DockPanel>
                                         <DockPanel
@@ -1538,13 +1538,13 @@
                                     TextBlock.FontSize="26"
                                     TextBlock.FontWeight="Bold">
                                     <controls:Crs_SubjectReport.RightContent>
-                                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">得分</TextBlock>
+                                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">Score</TextBlock>
                                     </controls:Crs_SubjectReport.RightContent>
                                     <TextBlock
                                         Margin="20,0,0,0"
                                         HorizontalAlignment="Left"
                                         VerticalAlignment="Center">
-                                        结构能力
+                                        Structural capability
                                     </TextBlock>
                                 </controls:Crs_SubjectReport>
                                 <controls:Crs_SubjectReport DataContext="{Binding SubjectItems[10]}">
@@ -1553,7 +1553,7 @@
                                             <behaviors:ChangePropertyAction
                                                 PropertyName="OriginName"
                                                 TargetObject="{Binding}"
-                                                Value="结构能力" />
+                                                Value="Structural capability" />
                                         </behaviors:EventTrigger>
                                     </behaviors:Interaction.Triggers>
                                     <controls:Crs_SubjectReport.RightContent>
@@ -1575,7 +1575,7 @@
                                                 VerticalAlignment="Center"
                                                 LineHeight="36"
                                                 TextWrapping="Wrap">
-                                                照图案画下来。
+                                                Draw it according to the pattern.
                                             </TextBlock>
                                         </DockPanel>
                                         <DockPanel
@@ -1616,7 +1616,7 @@
                                         Margin="20,0,0,0"
                                         HorizontalAlignment="Left"
                                         VerticalAlignment="Center">
-                                        总分
+                                        Total points
                                     </TextBlock>
                                 </controls:Crs_SubjectReport>
                             </StackPanel>

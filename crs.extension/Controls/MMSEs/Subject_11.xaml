@@ -28,17 +28,17 @@
                     <behaviors:ChangePropertyAction
                         PropertyName="OriginName"
                         TargetObject="{Binding}"
-                        Value="结构能力" />
+                        Value="Structural capability" />
                 </behaviors:EventTrigger>
             </behaviors:Interaction.Triggers>
-            结构能力
+            Structural capability
         </TextBlock>
         <StackPanel
             Margin="0,30,0,0"
             VerticalAlignment="Center"
             DockPanel.Dock="Top"
             Orientation="Horizontal">
-            <TextBlock VerticalAlignment="Center" FontSize="28">画下来</TextBlock>
+            <TextBlock VerticalAlignment="Center" FontSize="28">Draw it down</TextBlock>
             <ContentControl
                 Margin="10,0,0,0"
                 HorizontalAlignment="Center"
@@ -47,7 +47,7 @@
                 <ContentControl.Content>
 
                     <TextBlock TextTrimming="CharacterEllipsis" TextWrapping="Wrap">
-                        评分：在屏幕上画有交叉的两个五边形，要求被测试者照样准确地画出。评分标准：五边形需要画出5个清楚地角和5个边，同时，两个五边形交叉处形成菱形，线条的抖动和图形的旋转可以忽略。
+                        Rating: Two pentagons with crosses are drawn on the screen, and the subjects are required to draw them accurately. Scoring criteria: The pentagon needs to draw 5 clear corners and 5 sides. At the same time, a diamond is formed at the intersection of the two pentagons, and the jitter of the lines and the rotation of the figure can be ignored.
                     </TextBlock>
 
                 </ContentControl.Content>
@@ -60,7 +60,7 @@
                 BorderBrush="Transparent"
                 Click="ExecuteAudioPlayClick"
                 Cursor="Hand"
-                Tag="请根据以下图案在空白处画下来">
+                Tag="Please draw it in the blank space according to the following pattern">
 
                 <Button.Content>
                     <Image
@@ -68,7 +68,7 @@
                         Height="24"
                         VerticalAlignment="Center"
                         Cursor="Hand"
-                        Source="{StaticResource crs_声音}"
+                        Source="{StaticResource crs_sound}"
                         Stretch="Uniform" />
                 </Button.Content>
             </Button>
@@ -86,12 +86,12 @@
                     Content="{Binding AnswerItems[0]}"
                     ContentTemplate="{StaticResource MMSE_MoCA_AnswerTemplate}"
                     DockPanel.Dock="Bottom" />
-                <Image Width="622" Source="{StaticResource crs_题目插图11}" />
+                <Image Width="622" Source="{StaticResource crs_Title Illustration 11}" />
                 <TextBlock
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     TextTrimming="CharacterEllipsis">
-                    请你照上面图案画下来！
+                    Please draw it according to the above pattern！
                 </TextBlock>
 
             </DockPanel>

@@ -1,0 +1,8 @@
+Difficulty 2
+The swimming pool is open every day from 9 a.m. to 8 p.m.
+Question 9: When is the swimming pool open every day?
+9 pm
+7 pm
+8 pm
+6 pm
+2

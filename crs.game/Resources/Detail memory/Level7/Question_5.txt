@@ -1,0 +1,8 @@
+Difficulty 7
+This weekend, a painting art exhibition will be held in the local art gallery. The exhibition will display 20 new works and will be open at 10 a.m.
+Question 5: When will the art exhibition open?
+12 noon
+10 am
+7 pm
+2 pm
+1

@@ -1,0 +1,8 @@
+Difficulty 2
+The mall recently added a children's play area and a seating area, each with its own settings.
+Question 13: How many new areas have been added to the mall?
+Three
+Four
+one
+two
+3

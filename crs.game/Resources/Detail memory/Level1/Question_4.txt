@@ -1,0 +1,8 @@
+Difficulty 1
+A new public transportation line has been opened in the city, passing through 10 major stations. The opening of the new transportation line has greatly facilitated the travel of citizens, especially commuters, who can arrive at work locations or return home more quickly.
+Question 4: How many stations does the newly opened public transportation line pass?
+10
+6
+12
+8
+0

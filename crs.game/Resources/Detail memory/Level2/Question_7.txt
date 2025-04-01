@@ -1,0 +1,8 @@
+Difficulty 2
+The restaurant has launched two new dishes, namely spicy beef and steamed fish.
+Question 7: How many new dishes have the restaurant launched?
+Two models
+Three models
+Four models
+One
+0

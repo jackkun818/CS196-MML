@@ -114,20 +114,20 @@ namespace crs.window.ViewModels
 
             if (parameter.PatientItem == null)
             {
-                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("患者数据异常");
+                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("Patient data abnormal");
                 return;
             }
 
             if (parameter.ProgramType == null)
             {
-                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("方案数据异常");
+                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("Scheme data exception");
                 return;
             }
 
             var programId = parameter.Data?.schedule?.ProgramId;
             if (programId == null)
             {
-                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("方案ID为空");
+                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("planIDEmpty");
                 return;
             }
 
@@ -144,8 +144,8 @@ namespace crs.window.ViewModels
 
             var menuType = parameter.ProgramType switch
             {
-                ProgramType.评估测试 => (MenuType?)MenuType.EvaluateTest,
-                ProgramType.康复训练 => (MenuType?)MenuType.Train,
+                ProgramType.Evaluation test => (MenuType?)MenuType.EvaluateTest,
+                ProgramType.Rehabilitation training => (MenuType?)MenuType.Train,
                 _ => throw new NotImplementedException()
             };
 
@@ -166,30 +166,30 @@ namespace crs.window.ViewModels
 
             if (parameter.PatientItem == null)
             {
-                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("患者数据异常");
+                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("Patient data abnormal");
                 return;
             }
 
             if (parameter.ProgramType == null)
             {
-                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("方案数据异常");
+                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("Scheme data exception");
                 return;
             }
 
             if (parameter.ProgramContent == null)
             {
-                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("未设置方案");
+                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("No plan is set");
                 return;
             }
 
             var programId = parameter.Data?.schedule?.ProgramId;
             if (programId == null)
             {
-                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("方案ID为空");
+                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("planIDEmpty");
                 return;
             }
 
-            if (parameter.ProgramContent == EvaluateTestMode.标准评估.ToString())
+            if (parameter.ProgramContent == EvaluateTestMode.Standard evaluation.ToString())
             {
                 await Crs_DialogEx.Show(Crs_Dialog.EvaluateStandardPanel, Crs_DialogToken.TopContent)
                     .UseConfig_ContentStretch()
@@ -208,8 +208,8 @@ namespace crs.window.ViewModels
 
             var viewName = parameter.ProgramType switch
             {
-                ProgramType.评估测试 => Crs_Dialog.EvaluateGamePanel,
-                ProgramType.康复训练 => Crs_Dialog.TrainGamePanel,
+                ProgramType.Evaluation test => Crs_Dialog.EvaluateGamePanel,
+                ProgramType.Rehabilitation training => Crs_Dialog.TrainGamePanel,
                 _ => throw new NotImplementedException()
             };
 
@@ -234,7 +234,7 @@ namespace crs.window.ViewModels
             {
                 exception.Exception = async ex =>
                 {
-                    exception.Message = "修改今日排班状态错误";
+                    exception.Message = "Modify today's schedule status error";
                     return (false, $"{exception.Message},{ex.Message}");
                 };
 
@@ -242,7 +242,7 @@ namespace crs.window.ViewModels
                 var schedule = await db.Schedules.FirstOrDefaultAsync(m => m.ScheduleId == scheduleId);
                 if (schedule == null)
                 {
-                    return (false, "修改今日排班状态失败,查找不到记录");
+                    return (false, "Failed to modify today's schedule status,Record not found");
                 }
 
                 schedule.Status = parameter.StatusSelectedItem.Item1.ToString();
@@ -297,10 +297,10 @@ namespace crs.window.ViewModels
             CalendarItems = null;
             EverydayScheduleItems = null;
 
-            // 查询数据库
+            // Query the database
             switch (scheduleTypeSelectedItem.Value)
             {
-                case ScheduleType.今日排班:
+                case ScheduleType.Schedule today:
                     {
                         calendarPage = null;
 
@@ -308,13 +308,13 @@ namespace crs.window.ViewModels
                         {
                             exception.Exception = async ex =>
                             {
-                                exception.Message = "获取今日排班信息错误";
+                                exception.Message = "Get the scheduling information today incorrectly";
                                 return (false, $"{exception.Message},{ex.Message}", null);
                             };
 
                             var today = DateTime.Today.Date;
 
-                            // 查询今日排班列表
+                            // Check today's schedule list
 
                             var multiItems = await (from schedule in db.Schedules.AsNoTracking().Include(m => m.Program).Where(m => m.CreateTime.Date == today)
                                                     join patient in db.OrganizationPatients.AsNoTracking() on schedule.PatientId equals patient.Id into patients
@@ -373,11 +373,11 @@ namespace crs.window.ViewModels
                         TodayScheduleItems = new ObservableCollection<ScheduleItem>(items);
                     }
                     break;
-                case ScheduleType.每日排班:
+                case ScheduleType.Daily shift schedule:
                     {
                         calendarPage ??= 0;
 
-                        var weeks = new string[] { "一", "二", "三", "四", "五", "六", "日" };
+                        var weeks = new string[] { "one", "two", "three", "Four", "five", "six", "day" };
                         var today = DateTime.Today.AddDays((int)calendarPage * 7);
                         var weekIndex = (int)today.DayOfWeek - 1;
                         weekIndex = weekIndex >= 0 ? weekIndex : 6;
@@ -397,14 +397,14 @@ namespace crs.window.ViewModels
                         {
                             exception.Exception = async ex =>
                             {
-                                exception.Message = "获取每日排班信息错误";
+                                exception.Message = "Error getting daily schedule information";
                                 return (false, $"{exception.Message},{ex.Message}", null);
                             };
 
                             var beginTime = calendarItems.FirstOrDefault().Item3;
                             var endTime = calendarItems.LastOrDefault().Item3.AddDays(1).AddTicks(-1);
 
-                            // 查询每日排班列表
+                            // Check the daily schedule list
 
                             var multiItems = await (from schedule in db.Schedules.AsNoTracking().Include(m => m.Program).Where(m => m.CreateTime >= beginTime && m.CreateTime <= endTime)
                                                     join patient in db.OrganizationPatients.AsNoTracking() on schedule.PatientId equals patient.Id into patients

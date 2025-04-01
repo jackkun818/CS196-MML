@@ -1,0 +1,8 @@
+Difficulty 1
+The hospital just introduced the latest modelCTScanner for improving diagnostic accuracy. The introduction of this equipment has brought the hospital to a new level in disease diagnosis.
+Question 14: What new equipment has the hospital introduced?
+XOptical machine
+Magnetic resonance meter
+CTScanner
+Ultrasonic equipment
+2

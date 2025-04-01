@@ -88,34 +88,34 @@ namespace crs.dialog.ViewModels
         {
             if (OldPassword.Equals(""))
             {
-                ErrorMessage = "请输入登录密码";
+                ErrorMessage = "Please enter your login password";
                 return;
             }
             if (NewPassword1.Equals(""))
             {
-                ErrorMessage = "请输入新密码";
+                ErrorMessage = "Please enter a new password";
                 return;
             }
             if (NewPassword2.Equals(""))
             {
-                ErrorMessage = "请再次输入新密码";
+                ErrorMessage = "Please enter the new password again";
                 return;
             }
             if (NewPassword1.All(char.IsDigit) == false || !(NewPassword1.Length >= 8 && NewPassword1.Length <= 16))
             {
-                ErrorMessage = "新密码只能是8-16位的数字";
+                ErrorMessage = "The new password can only be 8-16-digit number";
                 return;
             }
 
             var oldPasswordHash = GetPasswordHash(OldPassword);
             if (oldPasswordHash.Equals(PasswordHash) == false)
             {
-                ErrorMessage = "登录密码不正确";
+                ErrorMessage = "Login password is incorrect";
                 return;
             }
             if (NewPassword1.Equals(NewPassword2) == false)
             {
-                ErrorMessage = "两次输入的新密码不相同";
+                ErrorMessage = "The new password entered twice is different";
                 return;
             }
             var newPassword1Hash = GetPasswordHash(NewPassword1);
@@ -125,7 +125,7 @@ namespace crs.dialog.ViewModels
             {
                 exception.Exception = async ex =>
                 {
-                    exception.Message = "修改账号密码错误";
+                    exception.Message = "Incorrect password modification";
                     return (false, $"{exception.Message},{ex.Message}");
                 };
 
@@ -137,11 +137,11 @@ namespace crs.dialog.ViewModels
                     db.Users.Update(user);
                     db.SaveChanges();
 
-                    return (true, "修改账号密码成功");
+                    return (true, "Change the account password successfully");
                 }
                 else
                 {
-                    return (true, "修改账号密码成功");
+                    return (true, "Change the account password successfully");
                 }
             });
             await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync(msg);
@@ -161,10 +161,10 @@ namespace crs.dialog.ViewModels
         {
             using var sha256Hash = SHA256.Create();
 
-            // 将输入字符串转换为字节数组并计算哈希
+            // Convert input string to byte array and calculate hash
             var bytes = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(password));
 
-            // 将字节数组转换为十六进制字符串
+            // Convert a byte array to a hexadecimal string
             var builder = new StringBuilder();
             for (int i = 0; i < bytes.Length; i++)
             {

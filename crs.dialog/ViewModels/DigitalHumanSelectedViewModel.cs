@@ -96,7 +96,7 @@ namespace crs.dialog.ViewModels
             {
                 exception.Exception = async ex =>
                 {
-                    exception.Message = "获取数字人信息错误";
+                    exception.Message = "Error in obtaining digital person information";
                     return (false, $"{exception.Message},{ex.Message}", null);
                 };
 
@@ -122,12 +122,12 @@ namespace crs.dialog.ViewModels
 
         public Bitmap GetBitmapFromResource(string resourceKey)
         {
-            // 获取WPF资源
+            // GetWPFresource
             object resource = Application.Current.FindResource(resourceKey);
 
             if (resource is BitmapImage bitmapImage)
             {
-                // 将BitmapImage转换为System.Drawing.Bitmap
+                // WillBitmapImageConvert toSystem.Drawing.Bitmap
                 PngBitmapEncoder encoder = new PngBitmapEncoder();
                 encoder.Frames.Add(BitmapFrame.Create(bitmapImage));
 

@@ -1,0 +1,8 @@
+Difficulty 1
+The City Museum is closed on Monday and open at other times. The museum displays a wealth of historical relics and artistic works, attracting many citizens and tourists to visit.
+Question 3: When will the City Museum close?
+Friday
+Sunday
+on Monday
+Wednesday
+2

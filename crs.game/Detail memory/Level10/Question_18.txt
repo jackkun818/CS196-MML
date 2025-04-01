@@ -1,0 +1,8 @@
+Difficulty 10
+The city library has 30,000 books, including novels, non-fiction, history and science books. 200 new books are updated every month. The library also offers e-books and audio books.
+Question: How many new books does the city library update every month?
+200 bottles
+150 bottles
+250 bottles
+300 bottles
+0

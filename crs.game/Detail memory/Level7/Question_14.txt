@@ -1,0 +1,8 @@
+Difficulty 7
+Last weekend, the coffee shop launched a buy one and get one free event. The event time is from 8 am to 4 pm.
+Question 14: When is the promotion time for a coffee shop?
+From 9 a.m. to 3 p.m.
+From 12 noon to 8 pm
+From 8 a.m. to 4 p.m.
+From 7 a.m. to 5 p.m.
+2

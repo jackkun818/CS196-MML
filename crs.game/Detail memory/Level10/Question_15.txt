@@ -1,0 +1,8 @@
+Difficulty 10
+The park has trails, a playground and a garden. The park is open every day, and special events such as concerts and open-air movie screenings are held during holidays. Bicycle rental and picnic areas are available in the park.
+Question: Does the park provide bicycle rental services?
+yes
+Offer only on holidays
+no
+Only available on weekends
+0

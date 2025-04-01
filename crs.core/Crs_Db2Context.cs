@@ -7,7 +7,7 @@ namespace crs.core
 {
     public class Crs_Db2Context : Db2Context
     {
-        // 数据库迁移脚手架
+        // Database migration scaffolding
         // Scaffold-DbContext 'Data Source=rm-7xvoo8188db2fasr42o.sqlserver.rds.aliyuncs.com;Initial Catalog = db2; User ID = user2; Password =666@scut; Integrated Security=True; TrustServerCertificate=True; Trusted_Connection=False;' Microsoft.EntityFrameworkCore.SqlServer -o DbModels -f
 
         public Crs_Db2Context()

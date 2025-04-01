@@ -1,0 +1,8 @@
+Difficulty 10
+There are 20 stalls in the local food market, divided into 4 areas. There are 5 stalls in each area, selling fruits, vegetables, meat and seafood respectively. The market opens every day.
+Question: How many stalls are there in the local food market?
+30
+20
+15
+25
+1

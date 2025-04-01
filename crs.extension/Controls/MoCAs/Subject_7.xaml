@@ -28,17 +28,17 @@
                     <behaviors:ChangePropertyAction
                         PropertyName="OriginName"
                         TargetObject="{Binding}"
-                        Value="语言" />
+                        Value="language" />
                 </behaviors:EventTrigger>
             </behaviors:Interaction.Triggers>
-            语言
+            language
         </TextBlock>
         <StackPanel
             Margin="0,30,0,0"
             VerticalAlignment="Center"
             DockPanel.Dock="Top"
             Orientation="Horizontal">
-            <TextBlock VerticalAlignment="Center" FontSize="28">现在我说一句话，请清楚地重复一遍，这句话是：</TextBlock>
+            <TextBlock VerticalAlignment="Center" FontSize="28">Now I say something, please repeat it clearly, this sentence is:</TextBlock>
             <ContentControl
                 Margin="10,0,0,0"
                 HorizontalAlignment="Center"
@@ -46,7 +46,7 @@
                 ContentTemplate="{StaticResource MMSE_MoCA_ToolTipTemplate}">
                 <ContentControl.Content>
                     <TextBlock TextTrimming="CharacterEllipsis" TextWrapping="Wrap">
-                        评分：复述正确，每句话分别给1分。复述必须准确。注意复述时出现的省略（如，省略了”只“，”总是“）以及替换/增加（如 我只知道今天张亮......“说成”我知道张亮今天......“；或”房间“说成”房子“等）
+                        Rating: The retelling is correct, and each sentence is given 1 point. Retelling must be accurate. Pay attention to the omissions that occur during retelling（For example, omitted”Only“，”always“）And replacement/Increase（like I only know Zhang Liang today......“Say it”I know Zhang Liang today......“；or”Room“Say it”house“wait）
                     </TextBlock>
                 </ContentControl.Content>
             </ContentControl>
@@ -84,7 +84,7 @@
                     HorizontalAlignment="Left"
                     VerticalAlignment="Center"
                     TextTrimming="CharacterEllipsis">
-                    “我只知道今天李明是帮过忙的人”
+                    “I only know that Li Ming was a helper today”
                 </TextBlock>
                 <Button
                     Width="51"
@@ -93,7 +93,7 @@
                     BorderBrush="Transparent"
                     Click="ExecuteAudioPlayClick"
                     Cursor="Hand"
-                    Tag="下面我要读出一句话，请清楚地重复一遍。这句话是：我只知道今天李明是帮过忙的人">
+                    Tag="I want to read a sentence below, please repeat it clearly. This sentence is: I only know that Li Ming is a person who has helped today">
 
                     <Button.Content>
                         <Image
@@ -101,7 +101,7 @@
                             Height="24"
                             VerticalAlignment="Center"
                             Cursor="Hand"
-                            Source="{StaticResource crs_声音}"
+                            Source="{StaticResource crs_sound}"
                             Stretch="Uniform" />
                     </Button.Content>
                 </Button>
@@ -130,7 +130,7 @@
                     HorizontalAlignment="Left"
                     VerticalAlignment="Center"
                     TextTrimming="CharacterEllipsis">
-                    “当狗在房间的时候，猫总是藏在沙发下”
+                    “When the dog is in the room, the cat always hides under the sofa”
                 </TextBlock>
                 <Button
                     Width="51"
@@ -139,7 +139,7 @@
                     BorderBrush="Transparent"
                     Click="ExecuteAudioPlayClick"
                     Cursor="Hand"
-                    Tag="下面我要读出一句话，请清楚地重复一遍。这句话是：当狗在房间的时候，猫总是藏在沙发下">
+                    Tag="I want to read a sentence below, please repeat it clearly. This sentence is: When a dog is in the room, the cat always hides under the sofa">
 
                     <Button.Content>
                         <Image
@@ -147,7 +147,7 @@
                             Height="24"
                             VerticalAlignment="Center"
                             Cursor="Hand"
-                            Source="{StaticResource crs_声音}"
+                            Source="{StaticResource crs_sound}"
                             Stretch="Uniform" />
                     </Button.Content>
                 </Button>

@@ -46,7 +46,7 @@
                 <TextBox x:Name="message"
                          Margin="0,0,0,20"
                          FontSize="18"
-                         Text="中国是世界上历史最悠久的国家之一，有着光辉灿烂的文化和光荣的革命传统，世界遗产数量全球领先。"
+                         Text="China is one of the oldest countries in the world, with a brilliant culture and glorious revolutionary tradition, and the number of world heritage sites is the world's leading."
                          TextWrapping="Wrap" />
             </DockPanel>
         </DockPanel>

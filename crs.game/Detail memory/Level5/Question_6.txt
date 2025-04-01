@@ -1,0 +1,8 @@
+Difficulty 5
+The museum displays new artworks today. The exhibition includes 10 modern art works. The exhibits will be on display for one month. Opening hours are from 10 a.m. to 6 p.m.
+Question 6: What is on display in the museum?
+Cultural Relics
+Collection
+antique
+New artwork
+3

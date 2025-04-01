@@ -1,0 +1,8 @@
+Difficulty 5
+The university held a career counseling meeting today. There will be 20 companies participating in the consultation. The consultation will start at 10 a.m. Students can communicate with company representatives.
+Question 19: How many companies will participate in university career consulting?
+15 companies
+20 companies
+25 companies
+10 companies
+1

@@ -16,7 +16,7 @@ using System.Windows.Shapes;
 namespace crs.dialog.Views
 {
     /// <summary>
-    /// ReportSettingDialog.xaml 的交互逻辑
+    /// ReportSettingDialog.xaml Interaction logic
     /// </summary>
     public partial class ReportSettingDialog : UserControl
     {
@@ -27,7 +27,7 @@ namespace crs.dialog.Views
 
         private async void SimplePanel_MouseUp(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
-            //await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("非交互区域，请尝试点击返回按钮");
+            //await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("Non-interactive area, please try to click the return button");
         }
 
         private void DataGrid_PreviewMouseWheel(object sender, System.Windows.Input.MouseWheelEventArgs e)
@@ -36,7 +36,7 @@ namespace crs.dialog.Views
             {
                 e.Handled = true;
 
-                // 激发一个鼠标滚轮事件
+                // Inspire a mouse wheel event
                 var eventArg = new MouseWheelEventArgs(e.MouseDevice, e.Timestamp, e.Delta);
                 eventArg.RoutedEvent = UIElement.MouseWheelEvent;
                 eventArg.Source = sender;

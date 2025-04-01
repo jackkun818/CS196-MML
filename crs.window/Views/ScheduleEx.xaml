@@ -74,17 +74,17 @@
                                                        Height="30"
                                                        Margin="45,0,0,0"
                                                        VerticalAlignment="Center"
-                                                       Source="{StaticResource crs_方案}" />
+                                                       Source="{StaticResource crs_plan}" />
 
                                                 <TextBlock VerticalAlignment="Center"
                                                            FontSize="22"
                                                            Opacity="0.6">
                                                     <TextBlock.Style>
                                                         <Style BasedOn="{StaticResource {x:Type TextBlock}}" TargetType="TextBlock">
-                                                            <Setter Property="Text" Value="（已设定方案）" />
+                                                            <Setter Property="Text" Value="（Set up plan）" />
                                                             <Style.Triggers>
                                                                 <DataTrigger Binding="{Binding ProgramContent}" Value="{x:Null}">
-                                                                    <Setter Property="Text" Value="（未设定方案）" />
+                                                                    <Setter Property="Text" Value="（Unset plan）" />
                                                                 </DataTrigger>
                                                             </Style.Triggers>
                                                         </Style>
@@ -118,7 +118,7 @@
                                                              VerticalAlignment="Center"
                                                              HorizontalContentAlignment="Center"
                                                              hc:BorderElement.CornerRadius="8"
-                                                             hc:InfoElement.Placeholder="当前状态"
+                                                             hc:InfoElement.Placeholder="Current status"
                                                              Background="{StaticResource crs_SolidColorBrush.EFEFEF}"
                                                              BorderThickness="0"
                                                              DisplayMemberPath="Item1"
@@ -156,7 +156,7 @@
                                                     FontSize="19"
                                                     FontWeight="Bold"
                                                     Foreground="White">
-                                                设置方案
+                                                Setting up the plan
                                             </Button>
                                             <Button Width="110"
                                                     Height="42"
@@ -173,11 +173,11 @@
                                                         <Style TargetType="TextBlock">
                                                             <Setter Property="Text" Value="--" />
                                                             <Style.Triggers>
-                                                                <DataTrigger Binding="{Binding ProgramType}" Value="评估测试">
-                                                                    <Setter Property="Text" Value="开始评估" />
+                                                                <DataTrigger Binding="{Binding ProgramType}" Value="Evaluation test">
+                                                                    <Setter Property="Text" Value="Begin the evaluation" />
                                                                 </DataTrigger>
-                                                                <DataTrigger Binding="{Binding ProgramType}" Value="康复训练">
-                                                                    <Setter Property="Text" Value="开始训练" />
+                                                                <DataTrigger Binding="{Binding ProgramType}" Value="Rehabilitation training">
+                                                                    <Setter Property="Text" Value="Start training" />
                                                                 </DataTrigger>
                                                             </Style.Triggers>
                                                         </Style>
@@ -211,16 +211,16 @@
                                 <Setter TargetName="toprightStackPanel" Property="Visibility" Value="Hidden" />
                                 <Setter TargetName="bottomStackPanel" Property="Visibility" Value="Hidden" />
                             </DataTrigger>
-                            <DataTrigger Binding="{Binding StatusSelectedItem.Item1}" Value="未报道">
+                            <DataTrigger Binding="{Binding StatusSelectedItem.Item1}" Value="Not reported">
                                 <Setter TargetName="statusComboBox" Property="Background" Value="{StaticResource crs_SolidColorBrush.9B9B9B}" />
                             </DataTrigger>
-                            <DataTrigger Binding="{Binding StatusSelectedItem.Item1}" Value="已报道">
+                            <DataTrigger Binding="{Binding StatusSelectedItem.Item1}" Value="Reported">
                                 <Setter TargetName="statusComboBox" Property="Background" Value="{StaticResource crs_SolidColorBrush.248BFC}" />
                             </DataTrigger>
-                            <DataTrigger Binding="{Binding StatusSelectedItem.Item1}" Value="已过号">
+                            <DataTrigger Binding="{Binding StatusSelectedItem.Item1}" Value="Passed number">
                                 <Setter TargetName="statusComboBox" Property="Background" Value="{StaticResource crs_SolidColorBrush.FF5252}" />
                             </DataTrigger>
-                            <DataTrigger Binding="{Binding StatusSelectedItem.Item1}" Value="已完成">
+                            <DataTrigger Binding="{Binding StatusSelectedItem.Item1}" Value="Completed">
                                 <Setter TargetName="statusComboBox" Property="Background" Value="{StaticResource crs_SolidColorBrush.FFA300}" />
                                 <Setter TargetName="statusCanvas" Property="Visibility" Value="Visible" />
                                 <Setter TargetName="topleftStackPanel" Property="Visibility" Value="Hidden" />
@@ -460,7 +460,7 @@
                         BorderThickness="0"
                         Command="{Binding LastCalendarPageCommand}">
                     <Button.Background>
-                        <ImageBrush ImageSource="{StaticResource crs_左箭头}" />
+                        <ImageBrush ImageSource="{StaticResource crs_Left arrow}" />
                     </Button.Background>
                 </Button>
                 <Button Width="20"
@@ -471,7 +471,7 @@
                         BorderThickness="0"
                         Command="{Binding NextCalendarPageCommand}">
                     <Button.Background>
-                        <ImageBrush ImageSource="{StaticResource crs_右箭头}" />
+                        <ImageBrush ImageSource="{StaticResource crs_Right arrow}" />
                     </Button.Background>
                 </Button>
                 <Rectangle Width="1"
@@ -553,10 +553,10 @@
                     <Style TargetType="ContentControl">
                         <Setter Property="ContentTemplate" Value="{StaticResource Null}" />
                         <Style.Triggers>
-                            <DataTrigger Binding="{Binding ScheduleTypeSelectedItem.Value}" Value="今日排班">
+                            <DataTrigger Binding="{Binding ScheduleTypeSelectedItem.Value}" Value="Schedule today">
                                 <Setter Property="ContentTemplate" Value="{StaticResource TodayTemplate}" />
                             </DataTrigger>
-                            <DataTrigger Binding="{Binding ScheduleTypeSelectedItem.Value}" Value="每日排班">
+                            <DataTrigger Binding="{Binding ScheduleTypeSelectedItem.Value}" Value="Daily shift schedule">
                                 <Setter Property="ContentTemplate" Value="{StaticResource EverydayTemplate}" />
                             </DataTrigger>
                         </Style.Triggers>

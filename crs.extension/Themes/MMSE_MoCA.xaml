@@ -45,7 +45,7 @@
                     <Condition Binding="{Binding IsRight}" Value="True" />
                 </MultiDataTrigger.Conditions>
                 <MultiDataTrigger.Setters>
-                    <Setter TargetName="image" Property="Source" Value="{StaticResource crs_对-选中}" />
+                    <Setter TargetName="image" Property="Source" Value="{StaticResource crs_right-Select}" />
                 </MultiDataTrigger.Setters>
             </MultiDataTrigger>
             <MultiDataTrigger>
@@ -54,7 +54,7 @@
                     <Condition Binding="{Binding IsRight}" Value="False" />
                 </MultiDataTrigger.Conditions>
                 <MultiDataTrigger.Setters>
-                    <Setter TargetName="image" Property="Source" Value="{StaticResource crs_错-选中}" />
+                    <Setter TargetName="image" Property="Source" Value="{StaticResource crs_wrong-Select}" />
                 </MultiDataTrigger.Setters>
             </MultiDataTrigger>
         </DataTemplate.Triggers>
@@ -66,11 +66,11 @@
             <Setter.Value>
                 <ControlTemplate TargetType="RadioButton">
                     <Border Width="46" Height="46">
-                        <Image x:Name="image" Source="{StaticResource crs_错-未选中}" />
+                        <Image x:Name="image" Source="{StaticResource crs_wrong-Not selected}" />
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsChecked" Value="True">
-                            <Setter TargetName="image" Property="Source" Value="{StaticResource crs_错-选中}" />
+                            <Setter TargetName="image" Property="Source" Value="{StaticResource crs_wrong-Select}" />
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -82,11 +82,11 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="RadioButton">
                             <Border Width="46" Height="46">
-                                <Image x:Name="image" Source="{StaticResource crs_对-未选中}" />
+                                <Image x:Name="image" Source="{StaticResource crs_right-Not selected}" />
                             </Border>
                             <ControlTemplate.Triggers>
                                 <Trigger Property="IsChecked" Value="True">
-                                    <Setter TargetName="image" Property="Source" Value="{StaticResource crs_对-选中}" />
+                                    <Setter TargetName="image" Property="Source" Value="{StaticResource crs_right-Select}" />
                                 </Trigger>
                             </ControlTemplate.Triggers>
                         </ControlTemplate>
@@ -129,7 +129,7 @@
                           VerticalAlignment="Center"
                           hc:BorderElement.CornerRadius="16"
                           BorderThickness="0">
-                <Image Source="{StaticResource crs_问号}" />
+                <Image Source="{StaticResource crs_question mark}" />
             </ToggleButton>
             <theme:PopupEx AllowsTransparency="True"
                            HorizontalOffset="-153"
@@ -157,139 +157,139 @@
 
     <DataTemplate x:Key="MMSE_MoCA_Null" />
 
-    <DataTemplate x:Key="MoCA量表.题目1">
+    <DataTemplate x:Key="MoCAScale.Question 1">
         <mocas:Subject_1 />
     </DataTemplate>
-    <DataTemplate x:Key="MoCA量表.题目2">
+    <DataTemplate x:Key="MoCAScale.Question 2">
         <mocas:Subject_2 />
     </DataTemplate>
-    <DataTemplate x:Key="MoCA量表.题目3">
+    <DataTemplate x:Key="MoCAScale.Question 3">
         <mocas:Subject_3 />
     </DataTemplate>
-    <DataTemplate x:Key="MoCA量表.题目4">
+    <DataTemplate x:Key="MoCAScale.Question 4">
         <mocas:Subject_4 />
     </DataTemplate>
-    <DataTemplate x:Key="MoCA量表.题目5">
+    <DataTemplate x:Key="MoCAScale.Question 5">
         <mocas:Subject_5 />
     </DataTemplate>
-    <DataTemplate x:Key="MoCA量表.题目6">
+    <DataTemplate x:Key="MoCAScale.Question 6">
         <mocas:Subject_6 />
     </DataTemplate>
-    <DataTemplate x:Key="MoCA量表.题目7">
+    <DataTemplate x:Key="MoCAScale.Question 7">
         <mocas:Subject_7 />
     </DataTemplate>
-    <DataTemplate x:Key="MoCA量表.题目8">
+    <DataTemplate x:Key="MoCAScale.Question 8">
         <mocas:Subject_8 />
     </DataTemplate>
-    <DataTemplate x:Key="MoCA量表.题目9">
+    <DataTemplate x:Key="MoCAScale.Question 9">
         <mocas:Subject_9 />
     </DataTemplate>
-    <DataTemplate x:Key="MoCA量表.题目10">
+    <DataTemplate x:Key="MoCAScale.Question 10">
         <mocas:Subject_10 />
     </DataTemplate>
-    <DataTemplate x:Key="MoCA量表.题目11">
+    <DataTemplate x:Key="MoCAScale.Question 11">
         <mocas:Subject_11 />
     </DataTemplate>
 
-    <DataTemplate x:Key="MoCA量表.题目1.Sub">
+    <DataTemplate x:Key="MoCAScale.Question 1.Sub">
         <mocas:Subject_1_Sub />
     </DataTemplate>
-    <DataTemplate x:Key="MoCA量表.题目2.Sub">
+    <DataTemplate x:Key="MoCAScale.Question 2.Sub">
         <mocas:Subject_2_Sub />
     </DataTemplate>
-    <DataTemplate x:Key="MoCA量表.题目3.Sub">
+    <DataTemplate x:Key="MoCAScale.Question 3.Sub">
         <mocas:Subject_3_Sub />
     </DataTemplate>
-    <DataTemplate x:Key="MoCA量表.题目4.Sub">
+    <DataTemplate x:Key="MoCAScale.Question 4.Sub">
         <mocas:Subject_4_Sub />
     </DataTemplate>
-    <DataTemplate x:Key="MoCA量表.题目5.Sub">
+    <DataTemplate x:Key="MoCAScale.Question 5.Sub">
         <mocas:Subject_5_Sub />
     </DataTemplate>
-    <DataTemplate x:Key="MoCA量表.题目6.Sub">
+    <DataTemplate x:Key="MoCAScale.Question 6.Sub">
         <mocas:Subject_6_Sub />
     </DataTemplate>
-    <DataTemplate x:Key="MoCA量表.题目7.Sub">
+    <DataTemplate x:Key="MoCAScale.Question 7.Sub">
         <mocas:Subject_7_Sub />
     </DataTemplate>
-    <DataTemplate x:Key="MoCA量表.题目8.Sub">
+    <DataTemplate x:Key="MoCAScale.Question 8.Sub">
         <mocas:Subject_8_Sub />
     </DataTemplate>
-    <DataTemplate x:Key="MoCA量表.题目9.Sub">
+    <DataTemplate x:Key="MoCAScale.Question 9.Sub">
         <mocas:Subject_9_Sub />
     </DataTemplate>
-    <DataTemplate x:Key="MoCA量表.题目10.Sub">
+    <DataTemplate x:Key="MoCAScale.Question 10.Sub">
         <mocas:Subject_10_Sub />
     </DataTemplate>
-    <DataTemplate x:Key="MoCA量表.题目11.Sub">
+    <DataTemplate x:Key="MoCAScale.Question 11.Sub">
         <mocas:Subject_11_Sub />
     </DataTemplate>
 
-    <DataTemplate x:Key="MMSE量表.题目1">
+    <DataTemplate x:Key="MMSEScale.Question 1">
         <mmses:Subject_1 />
     </DataTemplate>
-    <DataTemplate x:Key="MMSE量表.题目2">
+    <DataTemplate x:Key="MMSEScale.Question 2">
         <mmses:Subject_2 />
     </DataTemplate>
-    <DataTemplate x:Key="MMSE量表.题目3">
+    <DataTemplate x:Key="MMSEScale.Question 3">
         <mmses:Subject_3 />
     </DataTemplate>
-    <DataTemplate x:Key="MMSE量表.题目4">
+    <DataTemplate x:Key="MMSEScale.Question 4">
         <mmses:Subject_4 />
     </DataTemplate>
-    <DataTemplate x:Key="MMSE量表.题目5">
+    <DataTemplate x:Key="MMSEScale.Question 5">
         <mmses:Subject_5 />
     </DataTemplate>
-    <DataTemplate x:Key="MMSE量表.题目6">
+    <DataTemplate x:Key="MMSEScale.Question 6">
         <mmses:Subject_6 />
     </DataTemplate>
-    <DataTemplate x:Key="MMSE量表.题目7">
+    <DataTemplate x:Key="MMSEScale.Question 7">
         <mmses:Subject_7 />
     </DataTemplate>
-    <DataTemplate x:Key="MMSE量表.题目8">
+    <DataTemplate x:Key="MMSEScale.Question 8">
         <mmses:Subject_8 />
     </DataTemplate>
-    <DataTemplate x:Key="MMSE量表.题目9">
+    <DataTemplate x:Key="MMSEScale.Question 9">
         <mmses:Subject_9 />
     </DataTemplate>
-    <DataTemplate x:Key="MMSE量表.题目10">
+    <DataTemplate x:Key="MMSEScale.Question 10">
         <mmses:Subject_10 />
     </DataTemplate>
-    <DataTemplate x:Key="MMSE量表.题目11">
+    <DataTemplate x:Key="MMSEScale.Question 11">
         <mmses:Subject_11 />
     </DataTemplate>
 
-    <DataTemplate x:Key="MMSE量表.题目1.Sub">
+    <DataTemplate x:Key="MMSEScale.Question 1.Sub">
         <mmses:Subject_1_Sub />
     </DataTemplate>
-    <DataTemplate x:Key="MMSE量表.题目2.Sub">
+    <DataTemplate x:Key="MMSEScale.Question 2.Sub">
         <mmses:Subject_2_Sub />
     </DataTemplate>
-    <DataTemplate x:Key="MMSE量表.题目3.Sub">
+    <DataTemplate x:Key="MMSEScale.Question 3.Sub">
         <mmses:Subject_3_Sub />
     </DataTemplate>
-    <DataTemplate x:Key="MMSE量表.题目4.Sub">
+    <DataTemplate x:Key="MMSEScale.Question 4.Sub">
         <mmses:Subject_4_Sub />
     </DataTemplate>
-    <DataTemplate x:Key="MMSE量表.题目5.Sub">
+    <DataTemplate x:Key="MMSEScale.Question 5.Sub">
         <mmses:Subject_5_Sub />
     </DataTemplate>
-    <DataTemplate x:Key="MMSE量表.题目6.Sub">
+    <DataTemplate x:Key="MMSEScale.Question 6.Sub">
         <mmses:Subject_6_Sub />
     </DataTemplate>
-    <DataTemplate x:Key="MMSE量表.题目7.Sub">
+    <DataTemplate x:Key="MMSEScale.Question 7.Sub">
         <mmses:Subject_7_Sub />
     </DataTemplate>
-    <DataTemplate x:Key="MMSE量表.题目8.Sub">
+    <DataTemplate x:Key="MMSEScale.Question 8.Sub">
         <mmses:Subject_8_Sub />
     </DataTemplate>
-    <DataTemplate x:Key="MMSE量表.题目9.Sub">
+    <DataTemplate x:Key="MMSEScale.Question 9.Sub">
         <mmses:Subject_9_Sub />
     </DataTemplate>
-    <DataTemplate x:Key="MMSE量表.题目10.Sub">
+    <DataTemplate x:Key="MMSEScale.Question 10.Sub">
         <mmses:Subject_10_Sub />
     </DataTemplate>
-    <DataTemplate x:Key="MMSE量表.题目11.Sub">
+    <DataTemplate x:Key="MMSEScale.Question 11.Sub">
         <mmses:Subject_11_Sub />
     </DataTemplate>
 </ResourceDictionary>

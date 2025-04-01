@@ -1,0 +1,8 @@
+Difficulty 7
+This weekend, tickets for the concert were sold out. The concert will begin at 8 p.m. and is expected to last for two hours.
+Question 10: How long is the concert expected to last?
+Two hours
+1.5 hours
+Three hours
+One hour
+0

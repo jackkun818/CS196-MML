@@ -1,0 +1,8 @@
+Difficulty 8
+The school’s summer vacation starts on July 1 and ends on August 31.
+Question 19: When will the school summer vacation begin?
+June 15
+September 1
+August 1
+July 1
+3

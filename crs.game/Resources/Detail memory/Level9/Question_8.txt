@@ -1,0 +1,8 @@
+Difficulty 9
+The new exhibition at the zoo shows 10 species of animals from Africa. The exhibition is open daily from 9 a.m. to 4 p.m. The exhibition was warmly welcomed by tourists.
+Question 8: How many animals are displayed in the new exhibition?
+10 kinds
+12 kinds
+8 kinds
+15 types
+0

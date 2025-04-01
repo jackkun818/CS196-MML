@@ -1,0 +1,8 @@
+Difficulty 9
+This year's summer film festival is held in cinemas in the city center. The festival displays 20 different types of movies. The film festival starts at 10 a.m. and ends at 11 p.m.
+Question 4: How many movies are displayed at the Summer Film Festival?
+20 pieces
+18 pieces
+22 pieces
+25 pieces
+0

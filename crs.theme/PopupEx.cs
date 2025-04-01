@@ -14,7 +14,7 @@ namespace crs.theme
     public class PopupEx : Popup
     {
         /// <summary>  
-        /// 是否窗口随动，默认为随动（true）  
+        /// Whether the window follows, the default is follow（true）  
         /// </summary>  
         public bool IsPositionUpdate
         {
@@ -31,7 +31,7 @@ namespace crs.theme
         }
 
         /// <summary>  
-        /// 加载窗口随动事件  
+        /// Loading window follow events  
         /// </summary>  
         public PopupEx()
         {
@@ -39,7 +39,7 @@ namespace crs.theme
         }
 
         /// <summary>  
-        /// 加载窗口随动事件  
+        /// Loading window follow events  
         /// </summary>  
         private void pup_Loaded(object sender, RoutedEventArgs e)
         {
@@ -65,7 +65,7 @@ namespace crs.theme
         }
 
         /// <summary>  
-        /// 刷新位置  
+        /// Refresh location  
         /// </summary>  
         private void PositionChanged(object sender, EventArgs e)
         {
@@ -83,7 +83,7 @@ namespace crs.theme
             }
         }
 
-        //是否最前默认为非最前（false）  
+        //Whether the first defaults to non-first（false）  
         public static DependencyProperty TopmostProperty = Window.TopmostProperty.AddOwner(typeof(Popup), new FrameworkPropertyMetadata(false, OnTopmostChanged));
         
         public bool Topmost
@@ -98,7 +98,7 @@ namespace crs.theme
         }
 
         /// <summary>  
-        /// 重写拉开方法，置于非最前  
+        /// Rewrite the pull-out method and put it in the front  
         /// </summary>  
         /// <param name="e"></param>  
         protected override void OnOpened(EventArgs e)
@@ -107,7 +107,7 @@ namespace crs.theme
         }
 
         /// <summary>  
-        /// 刷新Popup层级  
+        /// refreshPopupLevel  
         /// </summary>  
         private void UpdateWindow()
         {

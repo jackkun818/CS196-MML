@@ -1,0 +1,8 @@
+Difficulty 6
+The Museum of Modern Art recently exhibited ancient Chinese artworks. The exhibition will last until next month.
+Question 5: When will the exhibition last?
+next month
+next week
+today
+tomorrow
+0

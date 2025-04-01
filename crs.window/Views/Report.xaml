@@ -91,14 +91,14 @@
                         </DataGridTemplateColumn>
                         <DataGridTextColumn Width="*"
                                             Binding="{Binding DateTime, TargetNullValue=--, FallbackValue=--}"
-                                            Header="评估日期" />
+                                            Header="Evaluation date" />
                         <DataGridTextColumn Width="*"
                                             Binding="{Binding DurationTime, TargetNullValue=--, FallbackValue=--}"
-                                            Header="时长" />
+                                            Header="Duration" />
                         <DataGridTextColumn Width="*"
                                             Binding="{Binding Mode, TargetNullValue=--, FallbackValue=--}"
-                                            Header="模式选择" />
-                        <DataGridTemplateColumn Width="*" Header="查看报告">
+                                            Header="Mode selection" />
+                        <DataGridTemplateColumn Width="*" Header="View the report">
                             <DataGridTemplateColumn.CellTemplate>
                                 <DataTemplate>
                                     <Button Width="150"
@@ -109,7 +109,7 @@
                                             CommandParameter="{Binding}"
                                             FontSize="24"
                                             Foreground="White">
-                                        查看报告
+                                        View the report
                                     </Button>
                                 </DataTemplate>
                             </DataGridTemplateColumn.CellTemplate>
@@ -133,20 +133,20 @@
                         </DataGridTemplateColumn>
                         <DataGridTextColumn Width="1.5*"
                                             Binding="{Binding DateTime, TargetNullValue=--, FallbackValue=--}"
-                                            Header="训练日期" />
+                                            Header="Training date" />
                         <DataGridTextColumn Width="*"
                                             Binding="{Binding DurationTime, TargetNullValue=--, FallbackValue=--}"
-                                            Header="时长" />
+                                            Header="Duration" />
                         <DataGridTextColumn Width="*"
                                             Binding="{Binding Type, TargetNullValue=--, FallbackValue=--}"
-                                            Header="分类" />
+                                            Header="Classification" />
                         <DataGridTextColumn Width="*"
                                             Binding="{Binding Mode, TargetNullValue=--, FallbackValue=--}"
-                                            Header="模式选择" />
+                                            Header="Mode selection" />
                         <DataGridTextColumn Width="*"
                                             Binding="{Binding Level, TargetNullValue=--, FallbackValue=--}"
-                                            Header="难度等级" />
-                        <DataGridTemplateColumn Width="*" Header="查看报告">
+                                            Header="Difficulty level" />
+                        <DataGridTemplateColumn Width="*" Header="View the report">
                             <DataGridTemplateColumn.CellTemplate>
                                 <DataTemplate>
                                     <Button Width="150"
@@ -158,7 +158,7 @@
                                             CommandParameter="{Binding}"
                                             FontSize="24"
                                             Foreground="White">
-                                        查看报告
+                                        View the report
                                     </Button>
                                 </DataTemplate>
                             </DataGridTemplateColumn.CellTemplate>
@@ -238,7 +238,7 @@
                         FontSize="26"
                         FontWeight="Bold"
                         Foreground="White">
-                    删除
+                    delete
                 </Button>
 
                 <ContentControl Content="{Binding}">
@@ -246,10 +246,10 @@
                         <Style TargetType="ContentControl">
                             <Setter Property="ContentTemplate" Value="{StaticResource Null}" />
                             <Style.Triggers>
-                                <DataTrigger Binding="{Binding ReportTypeSelectedItem.Item1}" Value="评估报告">
+                                <DataTrigger Binding="{Binding ReportTypeSelectedItem.Item1}" Value="Evaluation report">
                                     <Setter Property="ContentTemplate" Value="{StaticResource EvaluateTestReport}" />
                                 </DataTrigger>
-                                <DataTrigger Binding="{Binding ReportTypeSelectedItem.Item1}" Value="训练报告">
+                                <DataTrigger Binding="{Binding ReportTypeSelectedItem.Item1}" Value="Training Report">
                                     <Setter Property="ContentTemplate" Value="{StaticResource TrainReport}" />
                                 </DataTrigger>
                             </Style.Triggers>

@@ -1,0 +1,8 @@
+Difficulty 10
+The zoo displays different animals every day, including lions, tigers and elephants. Special exhibitions are held during holidays and summer vacations. The zoo also offers a feeding experience and a guided tour. Visitors can purchase tickets to participate in special events.
+Question: Does the zoo provide guided tours?
+Offer only on holidays
+no
+yes
+Only available on weekends
+2

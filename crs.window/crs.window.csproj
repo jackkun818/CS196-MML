@@ -6,10 +6,10 @@
     <BaseOutputPath>..\publish\</BaseOutputPath>
     <StartupObject>crs.window.Startup</StartupObject>
     <Platforms>AnyCPU;x64</Platforms>
-    <ApplicationIcon>图标.ico</ApplicationIcon>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="图标.ico" />
+    <Content Include="icon.ico" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="FreeSpire.PDF" Version="10.2.0" />

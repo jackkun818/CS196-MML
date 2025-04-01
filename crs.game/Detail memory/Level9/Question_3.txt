@@ -1,0 +1,8 @@
+Difficulty 9
+The largest bookstore in the city recently held a promotion with 30% off on all books. The promotion starts at 9 a.m. and ends at 6 p.m. On the last day of the event, the bookstore was very lively.
+Question 3: How long has the bookstore promotion lasted?
+8 hours
+9 hours
+6 hours
+7 hours
+1

@@ -16,7 +16,7 @@ namespace crs.dialog
 
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            // 注册视图
+            // Register a view
             containerRegistry.RegisterForNavigation<Loading>(Crs_Dialog.Loading);
             containerRegistry.RegisterForNavigation<MessageBox>(Crs_Dialog.MessageBox);
             containerRegistry.RegisterForNavigation<PatientEdit>(Crs_Dialog.PatientEdit);

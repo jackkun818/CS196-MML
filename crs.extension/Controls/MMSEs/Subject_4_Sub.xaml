@@ -28,7 +28,7 @@
                    FontWeight="Bold"
                    TextTrimming="CharacterEllipsis"
                    TextWrapping="Wrap">
-            现在请您从100减去7，然后从所得的数目再去减去7，共计算五次
+            Now please subtract 7 from 100, and then subtract 7 from the obtained number, and calculate five times in total
         </TextBlock>
         <hc:SimplePanel Margin="0,40">
 
@@ -38,7 +38,7 @@
                 <TextBlock HorizontalAlignment="Center"
                            VerticalAlignment="Center"
                            FontSize="40">
-                    （可在空白处计算，并在白色方块内写下答案）
+                    （You can calculate in the blank space and write the answer in the white square）
                 </TextBlock>
                 <UniformGrid Margin="0,25,0,0"
                              HorizontalAlignment="Center"

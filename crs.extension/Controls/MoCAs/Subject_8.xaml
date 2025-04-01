@@ -28,17 +28,17 @@
                     <behaviors:ChangePropertyAction
                         PropertyName="OriginName"
                         TargetObject="{Binding}"
-                        Value="语言" />
+                        Value="language" />
                 </behaviors:EventTrigger>
             </behaviors:Interaction.Triggers>
-            语言
+            language
         </TextBlock>
         <StackPanel
             Margin="0,30,0,0"
             VerticalAlignment="Center"
             DockPanel.Dock="Top"
             Orientation="Horizontal">
-            <TextBlock VerticalAlignment="Center" FontSize="28">在一分钟内尽可能多地说出动物的名字</TextBlock>
+            <TextBlock VerticalAlignment="Center" FontSize="28">Name the animal as many animals as possible in one minute</TextBlock>
             <ContentControl
                 Margin="10,0,0,0"
                 HorizontalAlignment="Center"
@@ -46,7 +46,7 @@
                 ContentTemplate="{StaticResource MMSE_MoCA_ToolTipTemplate}">
                 <ContentControl.Content>
                     <TextBlock TextTrimming="CharacterEllipsis" TextWrapping="Wrap">
-                        评分：如果患者1分钟内说出的动物名称≥11个则记1分。同时在检查表背面或两边记下患者的回答内容。龙、凤凰、麒麟等神话动物也算正确
+                        Rating: If the patient said the animal name within 1 minute≥1 point will be awarded if 11 are given. At the same time, note down the patient's answers on the back or both sides of the examination form. Mythical animals such as dragons, phoenixes, and unicorns are also correct
                     </TextBlock>
                 </ContentControl.Content>
             </ContentControl>
@@ -57,7 +57,7 @@
                 BorderBrush="Transparent"
                 Click="ExecuteAudioPlayClick"
                 Cursor="Hand"
-                Tag="请在1分钟内尽可能多的说出动物的名字">
+                Tag="Please name the animal as much as possible within 1 minute">
 
                 <Button.Content>
                     <Image
@@ -65,7 +65,7 @@
                         Height="24"
                         VerticalAlignment="Center"
                         Cursor="Hand"
-                        Source="{StaticResource crs_声音}"
+                        Source="{StaticResource crs_sound}"
                         Stretch="Uniform" />
                 </Button.Content>
             </Button>
@@ -100,7 +100,7 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     TextTrimming="CharacterEllipsis">
-                    （N≥11个词）
+                    （N≥11 words）
                 </TextBlock>
             </DockPanel>
         </UniformGrid>

@@ -10,5 +10,5 @@
     </ResourceDictionary.MergedDictionaries>
 
     <converter:BitmapImageConverter x:Key="crs_BitmapImageConverter" />
-    <converter:BitmapImageConverter x:Key="crs_ModeBitmapImageConverter" DefaultBitmapImage="{StaticResource crs_默认模式}" />
+    <converter:BitmapImageConverter x:Key="crs_ModeBitmapImageConverter" DefaultBitmapImage="{StaticResource crs_Default Mode}" />
 </ResourceDictionary>

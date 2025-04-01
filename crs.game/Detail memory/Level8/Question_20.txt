@@ -1,0 +1,8 @@
+Difficulty 8
+The restaurant opens at 11 a.m. every day and closes at 10 p.m.
+Question 20: What time is the restaurant opening?
+10 am
+11 a.m.
+12 pm
+9 pm
+1

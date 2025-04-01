@@ -28,18 +28,18 @@
                     <behaviors:ChangePropertyAction
                         PropertyName="OriginName"
                         TargetObject="{Binding}"
-                        Value="注意力" />
+                        Value="Attention" />
                 </behaviors:EventTrigger>
             </behaviors:Interaction.Triggers>
-            注意力
+            Attention
         </TextBlock>
         <hc:SimplePanel Margin="0,30,0,0" DockPanel.Dock="Top">
             <WrapPanel VerticalAlignment="Center">
                 <TextBlock FontSize="28" TextWrapping="Wrap">
-                    现在请您从100减去7，然后从所得的数目再减去7，共计算五次。连减：4或5个正确得3分，2或3个正确得2分，
+                    Now please subtract 7 from 100, and then subtract 7 from the number obtained, and calculate five times in total. Continuous reduction: 4 or 5 correct scores 3 points, 2 or 3 correct scores 2 points,
                 </TextBlock>
                 <TextBlock FontSize="28" TextWrapping="Wrap">
-                    1个正确得1分，0个正确得0分
+                    1 point for correct one, 0 points for correct one
                 </TextBlock>
                 <ContentControl
                     Margin="10,0,0,0"
@@ -48,7 +48,7 @@
                     ContentTemplate="{StaticResource MMSE_MoCA_ToolTipTemplate}">
                     <ContentControl.Content>
                         <TextBlock TextTrimming="CharacterEllipsis" TextWrapping="Wrap">
-                            评分：本条目总分3分。全部错误记0分，一个正确给1分，两到三个正确给2分，四到五个正确给3分。从100开始计算正确的减数，每一个减数都单独评定，也就是说，如果患者减错了一次，而从这一个减数开始后续的减7正确，则后续的正确减数要给分。例如，如果患者的回答是93-85-78-71-64，85是错误的，而其他的结果都正确，因此给3分
+                            Rating: The total score of this entry is 3 points. All mistakes are given 0 points, one is given 1 point correctly, two to three are given 2 points correctly, and four to five are given 3 points correctly. Calculate the correct subtraction from 100, and each subtraction is evaluated separately. That is to say, if the patient reduces the error once and the subsequent subtraction from this subtraction is correct, the subsequent correct subtraction must be given points. For example, if the patient's answer is 93-85-78-71-64, 85 are wrong, and the other results are correct, so give 3 points
                         </TextBlock>
                     </ContentControl.Content>
                 </ContentControl>
@@ -59,7 +59,7 @@
                     BorderBrush="Transparent"
                     Click="ExecuteAudioPlayClick"
                     Cursor="Hand"
-                    Tag="现在请您从一百减去7，然后从所得的数目再去减去7，共计算五次">
+                    Tag="Now please subtract 7 from one hundred, and then subtract 7 from the obtained number, and calculate five times in total">
 
                     <Button.Content>
                         <Image
@@ -67,7 +67,7 @@
                             Height="24"
                             VerticalAlignment="Center"
                             Cursor="Hand"
-                            Source="{StaticResource crs_声音}"
+                            Source="{StaticResource crs_sound}"
                             Stretch="Uniform" />
                     </Button.Content>
                 </Button>
@@ -80,7 +80,7 @@
                 VerticalAlignment="Center"
                 FontSize="28"
                 FontWeight="Bold">
-                参考答案：
+                Reference answer:
             </TextBlock>
             <UniformGrid
                 Columns="5"

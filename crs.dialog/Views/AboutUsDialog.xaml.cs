@@ -18,7 +18,7 @@ using System.Windows.Shapes;
 namespace crs.dialog.Views
 {
     /// <summary>
-    /// AboutUsDialog.xaml 的交互逻辑
+    /// AboutUsDialog.xaml Interaction logic
     /// </summary>
     public partial class AboutUsDialog : UserControl
     {

@@ -255,7 +255,7 @@ to download pre-trained streaming models.
                 if (deviceIndex == PortAudio.NoDevice)
                 {
                     infoBuilder.AppendLine("No default input device found");
-                    tcls.TrySetResult((false, "未找到默认麦克风设备"));
+                    tcls.TrySetResult((false, "The default microphone device was not found"));
                     return;
                 }
 

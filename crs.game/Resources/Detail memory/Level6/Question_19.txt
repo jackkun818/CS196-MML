@@ -1,0 +1,8 @@
+Difficulty 6
+The ticket price of the cinema is now reduced to 50 yuan per ticket, and the discount activity continues until the end of the month.
+Question 19: How much does the movie ticket price have been reduced?
+40 yuan
+70 yuan
+50 yuan
+60 yuan
+2

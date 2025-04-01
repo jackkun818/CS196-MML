@@ -26,7 +26,7 @@
                     Command="{Binding OkCommand}"
                     FontSize="26"
                     Foreground="White">
-                确认
+                confirm
             </Button>
         </DataTemplate>
         <DataTemplate x:Key="CancelTemplate">
@@ -40,7 +40,7 @@
                     Command="{Binding CancelCommand}"
                     FontSize="26"
                     Foreground="{StaticResource crs_SolidColorBrush.9B9B9B}">
-                取消
+                Cancel
             </Button>
         </DataTemplate>
         <DataTemplate x:Key="OKOrCancelTemplate">
@@ -57,7 +57,7 @@
                         Command="{Binding OkCommand}"
                         FontSize="26"
                         Foreground="White">
-                    确认
+                    confirm
                 </Button>
                 <Button Width="127"
                         Height="50"
@@ -69,7 +69,7 @@
                         Command="{Binding CancelCommand}"
                         FontSize="26"
                         Foreground="{StaticResource crs_SolidColorBrush.9B9B9B}">
-                    取消
+                    Cancel
                 </Button>
             </UniformGrid>
         </DataTemplate>
@@ -87,7 +87,7 @@
                         Command="{Binding CancelCommand}"
                         FontSize="26"
                         Foreground="{StaticResource crs_SolidColorBrush.9B9B9B}">
-                    取消
+                    Cancel
                 </Button>
 
                 <Button Width="127"
@@ -100,7 +100,7 @@
                         Command="{Binding OkCommand}"
                         FontSize="26"
                         Foreground="White">
-                    生成
+                    generate
                 </Button>
                 <Button Width="127"
                         Height="50"
@@ -112,7 +112,7 @@
                         Command="{Binding NoCommand}"
                         FontSize="26"
                         Foreground="White">
-                    不生成
+                    Not generated
                 </Button>
             </UniformGrid>
         </DataTemplate>
@@ -134,7 +134,7 @@
                    Height="383"
                    Margin="-10"
                    VerticalAlignment="Top"
-                   Source="{StaticResource crs_提示框}"
+                   Source="{StaticResource crs_Prompt box}"
                    Stretch="Fill">
                 <Image.Clip>
                     <RectangleGeometry Rect="0 0 634 360" />

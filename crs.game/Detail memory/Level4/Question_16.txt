@@ -1,0 +1,8 @@
+Difficulty 4
+The store is conducting a big sale for inventory cleaning this month. All items are discounted, up to 50%. The event will last until the end of the month.
+Question 16: What is the highest discount in the promotion?
+40%
+30%
+50%
+20%
+2

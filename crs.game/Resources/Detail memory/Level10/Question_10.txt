@@ -1,0 +1,8 @@
+Difficulty 10
+The ticket price for adults in the cinema is 100 yuan, and the ticket price for children is 60 yuan. Fares remain unchanged on weekends and holidays. Some movies have special screenings, and ticket prices may vary. The cinema provides membership card and points redemption services.
+Question: What are the adult fares for cinemas?
+100 yuan
+80 yuan
+90 yuan
+RMB 120
+0

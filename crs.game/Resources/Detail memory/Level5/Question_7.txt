@@ -1,0 +1,8 @@
+Difficulty 5
+Supermarket launches special offer promotions. Promotional items include milk and bread. Specials will be sold today. Promotions last until weekends.
+Question 7: What are the promotions for supermarket specialty products?
+Vegetables and fruits
+books
+Milk and bread
+Cleaning supplies
+2

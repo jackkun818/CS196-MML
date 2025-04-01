@@ -1,0 +1,8 @@
+Difficulty 10
+The hospital's emergency department is open 24 hours a day. The emergency department will immediately deal with emergency situations, including car accidents, heart attacks, etc. Emergency treatment costs are high and usually require upfront fees. General outpatient and emergency departments shall be treated.
+Question: How does the hospital’s emergency department handle the car accident?
+Treat only minor injuries
+Handle it now
+Only processed during the day
+Waiting in line
+1

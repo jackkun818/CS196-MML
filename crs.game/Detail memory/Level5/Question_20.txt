@@ -1,0 +1,8 @@
+Difficulty 5
+The community pool has recently undergone water quality testing. The test results show that the water quality is qualified. The pool is open daily from 8 am to 9 pm. Water quality testing is performed once a month.
+Question 20: What are the results of the water quality test of community swimming pools?
+Not tested yet
+Need repair
+Pass
+Unqualified
+2

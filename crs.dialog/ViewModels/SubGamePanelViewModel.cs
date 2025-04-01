@@ -148,11 +148,11 @@ namespace crs.dialog.ViewModels
             GameDemoContent = element;
             GameDemoMessage = message;
             /*DKY
-            2025.2.27新加需求：算术游戏、拼图、打蚊子全屏显示
+            2025.2.27 new requirements: arithmetic games, puzzles, mosquito shooting full screen display
             */
             if (message != null)
             {
-                if (message.Equals("算术游戏") || message.Equals("拼图") || message.Equals("打蚊子"))
+                if (message.Equals("Arithmetic game") || message.Equals("puzzle") || message.Equals("Kill mosquitoes"))
                 {
                     DockPanelVisibility = Visibility.Collapsed;
                     DockPanelMargin = new Thickness(0);
@@ -172,12 +172,12 @@ namespace crs.dialog.ViewModels
         {
             GameContent = gameContent;
             /*LJN
-            20241105新加需求：真正开始玩游戏了才显示 “题目规则”这四个字，讲解试玩时不显示
-            解决方案：
-            在游戏区域开始绘制内容时，顺手把“题目规则”四个字显示出来
+            20241105 New requirements: Only when you really start playing games will you show “Question Rules”These four words are not displayed when explaining and trying them
+            Solution:
+            When you start drawing content in the game area, just put it in a while“Question Rules”Four words are displayed
             */
             IsTitleVisible = true;
-            //这里手动赋值为true是确保在游戏真正玩的时候能显示出来
+            //Here the manual assignment istrueIt is to ensure that the game can be displayed when it is actually played
             return true;
         }
 
@@ -186,7 +186,7 @@ namespace crs.dialog.ViewModels
             if (gameContent == null || gameContent == GameContent)
             {
                 IsTitleVisible = false;
-                //这里手动赋值为true是确保在游戏结束的时候能隐藏掉
+                //Here the manual assignment istrueIt is to ensure that it can be hidden at the end of the game
                 GameContent = null;
                 return true;
             }

@@ -1,0 +1,8 @@
+Difficulty 5
+The market is now selling fresh fruits. Fruits include apples and oranges. The market opens at 7 a.m. every day. There are discounts on fruits.
+Question 13: What is the market starting to sell now?
+Fresh vegetables
+Canned food
+Imported food
+Fresh fruit
+3

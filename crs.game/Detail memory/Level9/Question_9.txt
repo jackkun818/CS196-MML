@@ -1,0 +1,8 @@
+Difficulty 9
+The library recently released 5 new books. The new book includes novels, history and science. The press conference was held in the library lobby, attracting many readers to attend.
+Question 9: How many new books have the library released recently?
+4
+7 bottles
+5 bottles
+Six
+2

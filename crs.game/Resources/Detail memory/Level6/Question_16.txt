@@ -1,0 +1,8 @@
+Difficulty 6
+The post office is open from 8 a.m. to 4 p.m. Today the post office provides courier and parcel services.
+Question 16: From what time to what time does the post office open?
+7 o'clock to 3 o'clock
+8 o'clock to 4 o'clock
+10 o'clock to 6 o'clock
+9 o'clock to 5 o'clock
+1

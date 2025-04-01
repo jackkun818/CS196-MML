@@ -1,0 +1,8 @@
+Difficulty 8
+The library's book borrowing time is from 9 am to 6 pm every day.
+Question 17: When is the library’s time to borrow books?
+8 am to 4 pm
+10 a.m. to 5 p.m.
+1pm to 9pm
+9 am to 6 pm
+3

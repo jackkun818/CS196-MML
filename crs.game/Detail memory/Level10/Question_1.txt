@@ -1,0 +1,8 @@
+Difficulty 10
+The library opens at 8 am every day and closes at 8 pm. Books can be borrowed for 14 days, and there will be additional fees after the deadline. The weekends are open the same as those on weekdays. The rules for borrowing books on holidays will not change.
+Question: What additional costs will be paid for overdue library?
+Fees are exempt
+There are additional fees
+No extra fees
+The cost varies according to the type of book
+1

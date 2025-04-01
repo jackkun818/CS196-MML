@@ -1,0 +1,8 @@
+Difficulty 5
+The school held a sports meeting today. There were 200 students participating in the sports meeting. Competition events include running and high jump. The sports meeting begins at 9 a.m.
+Question 5: How many students will participate in the school’s sports?
+100
+200
+50
+300
+1

@@ -21,7 +21,7 @@ using System.Windows.Shapes;
 namespace crs.extension.Controls
 {
     /// <summary>
-    /// Crs_ZValueChart.xaml 的交互逻辑
+    /// Crs_ZValueChart.xaml Interaction logic
     /// </summary>
     public partial class Crs_ZValueChart : UserControl
     {
@@ -79,11 +79,11 @@ namespace crs.extension.Controls
 
                     //foreach (var item in zValueChart.itemsControl.Items)
                     //{
-                    //    // 将item转换为FrameworkElement，以便可以使用FindName
+                    //    // WillitemConvert toFrameworkElementso that it can be usedFindName
                     //    FrameworkElement container = zValueChart.itemsControl.ItemContainerGenerator.ContainerFromItem(item) as FrameworkElement;
                     //    if (container != null)
                     //    {
-                    //        // 使用FindName查找zValueTextBlock和zValueBar
+                    //        // useFindNameFindzValueTextBlockandzValueBar
                     //        TextBlock zValueTextBlock = container.FindName("zValueTextBlock") as TextBlock;
                     //        Rectangle zValueBar = container.FindName("zValueBar") as Rectangle;
                     //        var zValue = zValues.FirstOrDefault(m => m.Key.Equals(zValueTextBlock.Text));
@@ -236,7 +236,7 @@ namespace crs.extension.Controls
                 double val = (double)value;
                 return val > 0 ? HorizontalAlignment.Left : HorizontalAlignment.Right;
             }
-            return HorizontalAlignment.Stretch; // 默认值
+            return HorizontalAlignment.Stretch; // default value
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
@@ -253,7 +253,7 @@ namespace crs.extension.Controls
                 double val = (double)value;
                 return val < 0 ? HorizontalAlignment.Left : HorizontalAlignment.Right;
             }
-            return HorizontalAlignment.Stretch; // 默认值
+            return HorizontalAlignment.Stretch; // default value
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

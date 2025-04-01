@@ -1,0 +1,8 @@
+Difficulty 2
+A restaurant in the city recently launched a new healthy breakfast priced at 15 yuan per serving.
+Question 1: What is the price per serving of a new healthy breakfast?
+10 yuan
+RMB 25
+RMB 15
+20 yuan
+2

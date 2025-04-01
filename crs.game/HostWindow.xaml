@@ -21,7 +21,7 @@
                     Click="stopButton_Click"
                     DockPanel.Dock="Bottom"
                     Focusable="False">
-                结束
+                Finish
             </Button>
             <Button x:Name="nextButton"
                     Height="40"
@@ -29,7 +29,7 @@
                     Click="nextButton_Click"
                     DockPanel.Dock="Bottom"
                     Focusable="False">
-                下一题
+                Next question
             </Button>
             <Button x:Name="pauseButton"
                     Height="40"
@@ -37,7 +37,7 @@
                     Click="pauseButton_Click"
                     DockPanel.Dock="Bottom"
                     Focusable="False">
-                暂停
+                pause
             </Button>
             <Button x:Name="startButton"
                     Height="40"
@@ -45,7 +45,7 @@
                     Click="startButton_Click"
                     DockPanel.Dock="Bottom"
                     Focusable="False">
-                开始
+                start
             </Button>
             <Button x:Name="initButton"
                     Height="40"
@@ -53,12 +53,12 @@
                     Click="initButton_Click"
                     DockPanel.Dock="Bottom"
                     Focusable="False">
-                初始化
+                initialization
             </Button>
             <StackPanel Margin="5"
                         Background="Aquamarine"
                         DockPanel.Dock="Top">
-                <TextBlock Margin="5">语音指令：</TextBlock>
+                <TextBlock Margin="5">Voice command:</TextBlock>
                 <TextBlock x:Name="voiceTextBlock"
                            Margin="20,5,5,5"
                            TextWrapping="Wrap" />
@@ -66,7 +66,7 @@
             <StackPanel Margin="5"
                         Background="Aquamarine"
                         DockPanel.Dock="Top">
-                <TextBlock Margin="5">题目说明：</TextBlock>
+                <TextBlock Margin="5">Title description:</TextBlock>
                 <TextBlock x:Name="synopsisTextBlock"
                            Margin="20,5,5,5"
                            TextWrapping="Wrap" />
@@ -74,30 +74,30 @@
             <StackPanel Margin="5"
                         Background="Aquamarine"
                         DockPanel.Dock="Top">
-                <TextBlock Margin="5">统计：</TextBlock>
+                <TextBlock Margin="5">statistics:</TextBlock>
                 <StackPanel Margin="20,5,5,5" Orientation="Horizontal">
-                    <TextBlock>等级：</TextBlock>
+                    <TextBlock>grade:</TextBlock>
                     <TextBlock x:Name="levelTextBlock" />
                 </StackPanel>
                 <StackPanel Margin="20,5,5,5" Orientation="Horizontal">
-                    <TextBlock>正确次数：</TextBlock>
+                    <TextBlock>Correct number of times:</TextBlock>
                     <TextBlock x:Name="rightCountTextBlock" />
                 </StackPanel>
                 <StackPanel Margin="20,5,5,5" Orientation="Horizontal">
-                    <TextBlock>错误次数：</TextBlock>
+                    <TextBlock>Errors:</TextBlock>
                     <TextBlock x:Name="wrongCountTextBlock" />
                 </StackPanel>
             </StackPanel>
             <StackPanel Margin="5"
                         Background="Aquamarine"
                         DockPanel.Dock="Top">
-                <TextBlock Margin="5">用时：</TextBlock>
+                <TextBlock Margin="5">Time to use:</TextBlock>
                 <StackPanel Margin="20,5,5,5" Orientation="Horizontal">
-                    <TextBlock>总用时：</TextBlock>
+                    <TextBlock>Total time:</TextBlock>
                     <TextBlock x:Name="timeSumTextBlock" />
                 </StackPanel>
                 <StackPanel Margin="20,5,5,5" Orientation="Horizontal">
-                    <TextBlock>当前题目用时：</TextBlock>
+                    <TextBlock>Current question time:</TextBlock>
                     <TextBlock x:Name="timeTextBlock" />
                 </StackPanel>
             </StackPanel>

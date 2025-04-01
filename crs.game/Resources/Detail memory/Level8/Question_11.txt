@@ -1,0 +1,8 @@
+Difficulty 8
+The park opens at 7 a.m. every day and closes at 8 p.m.
+Question 11: What time is the park closed?
+8 pm
+6 pm
+7 a.m.
+9 pm
+0

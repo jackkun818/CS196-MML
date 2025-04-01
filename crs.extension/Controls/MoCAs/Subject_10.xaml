@@ -28,17 +28,17 @@
                     <behaviors:ChangePropertyAction
                         PropertyName="OriginName"
                         TargetObject="{Binding}"
-                        Value="延迟回忆" />
+                        Value="Delayed memory" />
                 </behaviors:EventTrigger>
             </behaviors:Interaction.Triggers>
-            延迟回忆
+            Delayed memory
         </TextBlock>
         <StackPanel
             Margin="0,30,0,0"
             VerticalAlignment="Center"
             DockPanel.Dock="Top"
             Orientation="Horizontal">
-            <TextBlock VerticalAlignment="Center" FontSize="28">“刚才我给您读了几个词让您记住，请您在尽量回忆一下，告诉我这些词都有什么？”</TextBlock>
+            <TextBlock VerticalAlignment="Center" FontSize="28">“I just read a few words to you for your memory. Please try to recall them and tell me what these words are all about?”</TextBlock>
             <ContentControl
                 Margin="10,0,0,0"
                 HorizontalAlignment="Center"
@@ -46,7 +46,7 @@
                 ContentTemplate="{StaticResource MMSE_MoCA_ToolTipTemplate}">
                 <ContentControl.Content>
                     <TextBlock TextTrimming="CharacterEllipsis" TextWrapping="Wrap">
-                        评分：在延迟自由回忆之后，对未能回忆起来的词，通过语义分类线索鼓励患者尽可能地回忆。经过分类提示成多选提示回忆正确者，在相应的空栏中打（√）作为标记。先进行分类提示，如果仍不能回忆起来，再进行多选提示。例如：“下列词语中哪一个是刚才记过的：鼻子、面孔、手掌?”
+                        Rating: After delaying free recollection, patients are encouraged to recall words that cannot be recalled through semantic classification cues. After the classification prompts to be a multiple-choice prompt, the correct one should be recalled, and then type in the corresponding empty column.（√）As a mark. First make a classification prompt. If you still cannot recall it, then make a multi-select prompt. For example:“Which of the following words is just recorded: nose, face, palm?”
                     </TextBlock>
                 </ContentControl.Content>
             </ContentControl>
@@ -57,14 +57,14 @@
                 BorderBrush="Transparent"
                 Click="ExecuteAudioPlayClick"
                 Cursor="Hand"
-                Tag="刚才我给您读了几个词让您记住，请您再尽量回忆一下，告诉我这些词都有什么">
+                Tag="I just read a few words to you for your memory. Please try to recall them and tell me what these words are.">
                 <Button.Content>
                     <Image
                         Width="28"
                         Height="24"
                         VerticalAlignment="Center"
                         Cursor="Hand"
-                        Source="{StaticResource crs_声音}"
+                        Source="{StaticResource crs_sound}"
                         Stretch="Uniform" />
                 </Button.Content>
             </Button>
@@ -81,9 +81,9 @@
                 Grid.Column="1"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center">
-                只在没有提示<LineBreak />
-                的情况下<LineBreak />
-                给分</TextBlock>
+                Only without prompts<LineBreak />
+                In the case of<LineBreak />
+                Give points</TextBlock>
             <theme:LineGrid Grid.Column="0">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition />
@@ -104,42 +104,42 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     TextTrimming="CharacterEllipsis">
-                    面孔
+                    face
                 </TextBlock>
                 <TextBlock
                     Grid.Column="2"
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     TextTrimming="CharacterEllipsis">
-                    天鹅绒
+                    Velvet
                 </TextBlock>
                 <TextBlock
                     Grid.Column="3"
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     TextTrimming="CharacterEllipsis">
-                    教堂
+                    church
                 </TextBlock>
                 <TextBlock
                     Grid.Column="4"
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     TextTrimming="CharacterEllipsis">
-                    菊花
+                    chrysanthemum
                 </TextBlock>
                 <TextBlock
                     Grid.Column="5"
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     TextTrimming="CharacterEllipsis">
-                    红色
+                    red
                 </TextBlock>
                 <TextBlock
                     Grid.Row="1"
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     TextTrimming="CharacterEllipsis">
-                    没有提示
+                    No prompt
                 </TextBlock>
                 <ContentControl
                     Grid.Row="1"
@@ -154,7 +154,7 @@
                             <behaviors:ChangePropertyAction
                                 PropertyName="GroupName"
                                 TargetObject="{Binding AnswerItems[0]}"
-                                Value="面孔" />
+                                Value="face" />
                         </behaviors:EventTrigger>
                     </behaviors:Interaction.Triggers>
                 </ContentControl>
@@ -171,7 +171,7 @@
                             <behaviors:ChangePropertyAction
                                 PropertyName="GroupName"
                                 TargetObject="{Binding AnswerItems[1]}"
-                                Value="天鹅绒" />
+                                Value="Velvet" />
                         </behaviors:EventTrigger>
                     </behaviors:Interaction.Triggers>
                 </ContentControl>
@@ -188,7 +188,7 @@
                             <behaviors:ChangePropertyAction
                                 PropertyName="GroupName"
                                 TargetObject="{Binding AnswerItems[2]}"
-                                Value="教堂" />
+                                Value="church" />
                         </behaviors:EventTrigger>
                     </behaviors:Interaction.Triggers>
                 </ContentControl>
@@ -205,7 +205,7 @@
                             <behaviors:ChangePropertyAction
                                 PropertyName="GroupName"
                                 TargetObject="{Binding AnswerItems[3]}"
-                                Value="菊花" />
+                                Value="chrysanthemum" />
                         </behaviors:EventTrigger>
                     </behaviors:Interaction.Triggers>
                 </ContentControl>
@@ -222,7 +222,7 @@
                             <behaviors:ChangePropertyAction
                                 PropertyName="GroupName"
                                 TargetObject="{Binding AnswerItems[4]}"
-                                Value="红色" />
+                                Value="red" />
                         </behaviors:EventTrigger>
                     </behaviors:Interaction.Triggers>
                 </ContentControl>
@@ -231,7 +231,7 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     TextTrimming="CharacterEllipsis">
-                    类别提示
+                    Category Tips
                 </TextBlock>
                 <ContentControl
                     Grid.Row="2"
@@ -246,7 +246,7 @@
                             <behaviors:ChangePropertyAction
                                 PropertyName="GroupName"
                                 TargetObject="{Binding Content, RelativeSource={RelativeSource AncestorType=ContentControl}}"
-                                Value="面孔" />
+                                Value="face" />
                             <behaviors:ChangePropertyAction
                                 PropertyName="Ignore"
                                 TargetObject="{Binding Content, RelativeSource={RelativeSource AncestorType=ContentControl}}"
@@ -267,7 +267,7 @@
                             <behaviors:ChangePropertyAction
                                 PropertyName="GroupName"
                                 TargetObject="{Binding Content, RelativeSource={RelativeSource AncestorType=ContentControl}}"
-                                Value="天鹅绒" />
+                                Value="Velvet" />
                             <behaviors:ChangePropertyAction
                                 PropertyName="Ignore"
                                 TargetObject="{Binding Content, RelativeSource={RelativeSource AncestorType=ContentControl}}"
@@ -288,7 +288,7 @@
                             <behaviors:ChangePropertyAction
                                 PropertyName="GroupName"
                                 TargetObject="{Binding Content, RelativeSource={RelativeSource AncestorType=ContentControl}}"
-                                Value="教堂" />
+                                Value="church" />
                             <behaviors:ChangePropertyAction
                                 PropertyName="Ignore"
                                 TargetObject="{Binding Content, RelativeSource={RelativeSource AncestorType=ContentControl}}"
@@ -309,7 +309,7 @@
                             <behaviors:ChangePropertyAction
                                 PropertyName="GroupName"
                                 TargetObject="{Binding Content, RelativeSource={RelativeSource AncestorType=ContentControl}}"
-                                Value="菊花" />
+                                Value="chrysanthemum" />
                             <behaviors:ChangePropertyAction
                                 PropertyName="Ignore"
                                 TargetObject="{Binding Content, RelativeSource={RelativeSource AncestorType=ContentControl}}"
@@ -330,7 +330,7 @@
                             <behaviors:ChangePropertyAction
                                 PropertyName="GroupName"
                                 TargetObject="{Binding Content, RelativeSource={RelativeSource AncestorType=ContentControl}}"
-                                Value="红色" />
+                                Value="red" />
                             <behaviors:ChangePropertyAction
                                 PropertyName="Ignore"
                                 TargetObject="{Binding Content, RelativeSource={RelativeSource AncestorType=ContentControl}}"
@@ -343,7 +343,7 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     TextTrimming="CharacterEllipsis">
-                    多选提示
+                    Multiple choice tips
                 </TextBlock>
                 <ContentControl
                     Grid.Row="3"
@@ -358,7 +358,7 @@
                             <behaviors:ChangePropertyAction
                                 PropertyName="GroupName"
                                 TargetObject="{Binding Content, RelativeSource={RelativeSource AncestorType=ContentControl}}"
-                                Value="面孔" />
+                                Value="face" />
                             <behaviors:ChangePropertyAction
                                 PropertyName="Ignore"
                                 TargetObject="{Binding Content, RelativeSource={RelativeSource AncestorType=ContentControl}}"
@@ -379,7 +379,7 @@
                             <behaviors:ChangePropertyAction
                                 PropertyName="GroupName"
                                 TargetObject="{Binding Content, RelativeSource={RelativeSource AncestorType=ContentControl}}"
-                                Value="天鹅绒" />
+                                Value="Velvet" />
                             <behaviors:ChangePropertyAction
                                 PropertyName="Ignore"
                                 TargetObject="{Binding Content, RelativeSource={RelativeSource AncestorType=ContentControl}}"
@@ -400,7 +400,7 @@
                             <behaviors:ChangePropertyAction
                                 PropertyName="GroupName"
                                 TargetObject="{Binding Content, RelativeSource={RelativeSource AncestorType=ContentControl}}"
-                                Value="教堂" />
+                                Value="church" />
                             <behaviors:ChangePropertyAction
                                 PropertyName="Ignore"
                                 TargetObject="{Binding Content, RelativeSource={RelativeSource AncestorType=ContentControl}}"
@@ -421,7 +421,7 @@
                             <behaviors:ChangePropertyAction
                                 PropertyName="GroupName"
                                 TargetObject="{Binding Content, RelativeSource={RelativeSource AncestorType=ContentControl}}"
-                                Value="菊花" />
+                                Value="chrysanthemum" />
                             <behaviors:ChangePropertyAction
                                 PropertyName="Ignore"
                                 TargetObject="{Binding Content, RelativeSource={RelativeSource AncestorType=ContentControl}}"
@@ -442,7 +442,7 @@
                             <behaviors:ChangePropertyAction
                                 PropertyName="GroupName"
                                 TargetObject="{Binding Content, RelativeSource={RelativeSource AncestorType=ContentControl}}"
-                                Value="红色" />
+                                Value="red" />
                             <behaviors:ChangePropertyAction
                                 PropertyName="Ignore"
                                 TargetObject="{Binding Content, RelativeSource={RelativeSource AncestorType=ContentControl}}"

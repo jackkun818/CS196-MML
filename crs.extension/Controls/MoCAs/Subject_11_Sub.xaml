@@ -38,7 +38,7 @@
                            TextAlignment="Center"
                            TextTrimming="CharacterEllipsis"
                            TextWrapping="Wrap">
-                    请告诉我今天是星期几,哪一年，哪一个月，哪一天？
+                    Please tell me what day of the week it is today,Which year, which month, and which day?
                 </TextBlock>
             </hc:SimpleStackPanel>
         </DockPanel>
@@ -63,7 +63,7 @@
                            TextAlignment="Center"
                            TextTrimming="CharacterEllipsis"
                            TextWrapping="Wrap">
-                    告诉我这是什么地方，它在哪个城市？
+                    Tell me where this is and which city it is in?
                 </TextBlock>
             </hc:SimpleStackPanel>
         </DockPanel>

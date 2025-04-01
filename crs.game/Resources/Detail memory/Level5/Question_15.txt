@@ -1,0 +1,8 @@
+Difficulty 5
+The cinema held a film exhibition. The film festival showed 20 classic movies. The film festival lasted for two weeks. Each movie has two screening times.
+Question 15: How many movies are displayed at the film festival?
+10 pieces
+20 pieces
+15 pieces
+25 pieces
+1

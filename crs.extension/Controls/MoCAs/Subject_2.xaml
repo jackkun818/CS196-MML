@@ -28,17 +28,17 @@
                     <behaviors:ChangePropertyAction
                         PropertyName="OriginName"
                         TargetObject="{Binding}"
-                        Value="命名" />
+                        Value="name" />
                 </behaviors:EventTrigger>
             </behaviors:Interaction.Triggers>
-            命名
+            name
         </TextBlock>
         <StackPanel
             Margin="0,30,0,0"
             VerticalAlignment="Center"
             DockPanel.Dock="Top"
             Orientation="Horizontal">
-            <TextBlock VerticalAlignment="Center" FontSize="28">请您告诉我每个动物的名字</TextBlock>
+            <TextBlock VerticalAlignment="Center" FontSize="28">Please tell me the name of each animal</TextBlock>
             <ContentControl
                 Margin="10,0,0,0"
                 HorizontalAlignment="Center"
@@ -46,10 +46,10 @@
                 ContentTemplate="{StaticResource MMSE_MoCA_ToolTipTemplate}">
                 <ContentControl.Content>
                     <TextBlock TextTrimming="CharacterEllipsis" TextWrapping="Wrap">
-                        评分：每答对一个给1分<LineBreak /><LineBreak />
-                        1.狮子<LineBreak />
-                        2.犀牛<LineBreak />
-                        3.骆驼或单峰骆驼</TextBlock>
+                        Rating: 1 point for each correct answer<LineBreak /><LineBreak />
+                        1.lion<LineBreak />
+                        2.rhino<LineBreak />
+                        3.Camel or dromedary</TextBlock>
                 </ContentControl.Content>
             </ContentControl>
             <Button
@@ -59,14 +59,14 @@
                 BorderBrush="Transparent"
                 Click="ExecuteAudioPlayClick"
                 Cursor="Hand"
-                Tag="请您告诉我这个动物的名字">
+                Tag="Please tell me the name of this animal">
                 <Button.Content>
                     <Image
                         Width="28"
                         Height="24"
                         VerticalAlignment="Center"
                         Cursor="Hand"
-                        Source="{StaticResource crs_声音}"
+                        Source="{StaticResource crs_sound}"
                         Stretch="Uniform" />
                 </Button.Content>
             </Button>
@@ -96,7 +96,7 @@
                     Width="322"
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
-                    Source="{StaticResource crs_题目插图3}" />
+                    Source="{StaticResource crs_Title Illustration 3}" />
             </DockPanel>
             <DockPanel HorizontalAlignment="Center" DataContext="{Binding ChildrenItems[1]}">
                 <ContentControl
@@ -122,7 +122,7 @@
                     Width="322"
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
-                    Source="{StaticResource crs_题目插图1}" />
+                    Source="{StaticResource crs_Title Illustration 1}" />
             </DockPanel>
 
             <DockPanel HorizontalAlignment="Center" DataContext="{Binding ChildrenItems[2]}">
@@ -149,7 +149,7 @@
                     Width="322"
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
-                    Source="{StaticResource crs_题目插图2}" />
+                    Source="{StaticResource crs_Title Illustration 2}" />
             </DockPanel>
         </UniformGrid>
     </DockPanel>

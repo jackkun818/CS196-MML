@@ -28,7 +28,7 @@
                         FontSize="28"
                         FontWeight="Bold"
                         Foreground="White">
-                    确定
+                    Sure
                 </Button>
                 <TextBlock Margin="0,20,0,35"
                            HorizontalAlignment="Center"
@@ -36,7 +36,7 @@
                            DockPanel.Dock="Top"
                            FontSize="28"
                            FontWeight="Bold">
-                    选择数字人
+                    Choose a digital person
                 </TextBlock>
                 <ListBox Margin="60,0"
                          HorizontalContentAlignment="Stretch"
@@ -103,7 +103,7 @@
                     Background="Black"
                     Command="{Binding CancelCommand}">
                 <Button.OpacityMask>
-                    <ImageBrush ImageSource="{StaticResource crs_关闭}" />
+                    <ImageBrush ImageSource="{StaticResource crs_closure}" />
                 </Button.OpacityMask>
             </Button>
         </hc:SimplePanel>

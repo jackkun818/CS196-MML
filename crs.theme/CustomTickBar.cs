@@ -21,10 +21,10 @@ namespace crs.theme
 
         public static readonly DependencyProperty TickCountProperty =
             DependencyProperty.Register("TickCount", typeof(int), typeof(CustomTickBar), new PropertyMetadata(6));
-        //默认刻度线个数为6
+        //The default number of tick marks is 6
         protected override void OnRender(DrawingContext drawingContext)
         {
-            //判断(max-min)/5 - 1
+            //Judgment(max-min)/5 - 1
             if((this.Maximum - this.Minimum)/5 - 1 <=0)
             {
                 TickCount = (int)(this.Maximum - this.Minimum) + 1;
@@ -45,11 +45,11 @@ namespace crs.theme
             {
                 var minimum = this.Minimum;
                 /*LJN
-                 20241113新加需求：slider下面的刻度线不能有小数
-                由于规定死了只有6条刻度线，所以当max-min不是5的倍数时会出现小数
-                解决方案：
-                如果(max-min)/5 > 1时，对刻度值进行四舍五入成整数
-                如果(max-min)/5 < 1时，强制四舍五入会有重复刻度出现，此时设置成max-min+1条刻度线
+                 20241113 new requirements:sliderThe following ticks cannot have decimals
+                Since there are only 6 scales,max-minDecimals will appear when they are not multiples of 5
+                Solution:
+                if(max-min)/5 > At 1, round the scale value into an integer
+                if(max-min)/5 < At 1, a repeated scale will appear for forced rounding. At this time, it is set tomax-min+1 tick line
                  */
                 //var text = string.Format("{0:0.00}", Math.Round(minimum + (tickFrequency * count), 2).ToString());
                 var text = Math.Round(minimum + (tickFrequency * count), 0).ToString("0");

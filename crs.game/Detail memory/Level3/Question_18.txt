@@ -1,0 +1,8 @@
+Difficulty 3
+The restaurant will host a special seafood festival every weekend next month, with events including cooking demonstrations and tastings.
+Question 18: When will the restaurant’s seafood festival be held?
+Every Friday
+Every weekend
+Every Wednesday
+Once a month
+1

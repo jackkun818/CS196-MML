@@ -10,7 +10,7 @@ namespace crs.extension
     public static class Crs_ClassMapper
     {
         /// <summary>
-        /// 类型映射
+        /// Type Mapping
         /// </summary>
         /// <typeparam name="TTarget"></typeparam>
         /// <typeparam name="TSource"></typeparam>
@@ -44,7 +44,7 @@ namespace crs.extension
         }
 
         /// <summary>
-        /// 类型复制并映射
+        /// Type copy and map
         /// </summary>
         /// <typeparam name="TTarget"></typeparam>
         /// <typeparam name="TSource"></typeparam>

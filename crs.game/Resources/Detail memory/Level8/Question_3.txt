@@ -1,0 +1,8 @@
+Difficulty 8
+The library opens at 9 o'clock every day and closes at 7 o'clock in the evening. The weekend opening hours are from 10 to 5 o'clock.
+Question 3: When is the library closed?
+7 pm
+5 pm
+9 am
+6 pm
+0

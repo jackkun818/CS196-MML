@@ -1,0 +1,8 @@
+Difficulty 8
+The concert starts at 8 pm and usually lasts for 2 hours.
+Question 12: How long does a concert usually last?
+1 hour
+2 hours
+4 hours
+3 hours
+1

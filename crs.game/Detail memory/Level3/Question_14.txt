@@ -1,0 +1,8 @@
+Difficulty 3
+The bookstore held a promotion this weekend with 20% off on all books, with a promotion time of two days.
+Question 14: How many days did the bookstore promotion last?
+Three days
+Two days
+one day
+Four days
+1

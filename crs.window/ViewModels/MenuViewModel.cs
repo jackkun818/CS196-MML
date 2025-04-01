@@ -59,7 +59,7 @@ namespace crs.window.ViewModels
             set { SetProperty(ref menuSelectedItem, value); }
         }
 
-        // 当前医生
+        // Current doctor
         private DoctorItem doctorItem;
         public DoctorItem DoctorItem
         {
@@ -67,7 +67,7 @@ namespace crs.window.ViewModels
             set { SetProperty(ref doctorItem, value); }
         }
 
-        // 当前患者
+        // Current patient
         private PatientItem patienttem;
         public PatientItem PatientItem
         {
@@ -146,7 +146,7 @@ namespace crs.window.ViewModels
                 DoctorItem = new DoctorItem().Update(user);
             }
 
-            // 创建功能选项
+            // Create feature options
             var menuItems = Enum.GetValues(typeof(MenuType)).Cast<MenuType>().Select(m =>
             {
                 var attributes = m.GetType().GetField(m.ToString()).GetCustomAttributes(typeof(DescriptionAttribute), false);
@@ -158,30 +158,30 @@ namespace crs.window.ViewModels
             MenuSelectedItem = MenuItems.FirstOrDefault();
 
             init = true;
-            // 触发查询第一项功能选项
+            // Trigger query first feature option
             MenuSelectedItemChangedCommand?.Execute();
 
-            // 订阅事件，当前患者(Patient)发生改变时触发
+            // Subscribe to events, current patient(Patient)Triggered when a change occurs
             eventAggregator.GetEvent<PatientSelectedChangedEvent>().Subscribe(PatientSelectedChangedEvent);
 
-            // 订阅事件，菜单选项发生改变时触发
+            // Subscribe to events, triggered when menu options change
             eventAggregator.GetEvent<MenuSelectedChangedEvent>().Subscribe(MenuSelectedChangedEvent);
         }
 
         public override void OnNavigatedFrom(NavigationContext navigationContext)
         {
-            // 取消订阅事件
+            // Unsubscribe Events
             eventAggregator.GetEvent<PatientSelectedChangedEvent>().Unsubscribe(PatientSelectedChangedEvent);
             eventAggregator.GetEvent<MenuSelectedChangedEvent>().Unsubscribe(MenuSelectedChangedEvent);
         }
 
-        // 当前患者(Patient)改变事件
+        // Current patient(Patient)Change events
         void PatientSelectedChangedEvent(PatientItem patientItem)
         {
             PatientItem = patientItem;
         }
 
-        // 当前患者(Patient)改变事件
+        // Current patient(Patient)Change events
         void MenuSelectedChangedEvent((MenuType, bool) menuItem)
         {
             var menuType = menuItem.Item1;

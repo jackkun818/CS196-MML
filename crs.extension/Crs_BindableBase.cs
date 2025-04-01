@@ -12,19 +12,19 @@ namespace crs.extension
     public class Crs_BindableBase : BindableBase, INavigationAware, IRegionMemberLifetime
     {
         /// <summary>
-        /// 是否在RegionManager保存View实例
+        /// Is it thereRegionManagerkeepViewExample
         /// </summary>
         public bool KeepAlive => false;
 
         /// <summary>
-        ///  指定当前View是否是导航目标，返回值为true则导航至该View实例。如果不是则返回false，RegionManager创建目标View的新实例。
+        ///  Specify the currentViewWhether it is a navigation target, the return value istrueNavigate to thisViewExample. If not, returnfalse，RegionManagerCreate a targetViewnew instance of .
         /// </summary>
         /// <param name="navigationContext"></param>
         /// <returns></returns>
         public bool IsNavigationTarget(NavigationContext navigationContext) => false;
 
         /// <summary>
-        /// 进入新View时调用
+        /// Enter newViewCalled on time
         /// </summary>
         /// <param name="navigationContext"></param>
         public virtual void OnNavigatedTo(NavigationContext navigationContext)
@@ -33,7 +33,7 @@ namespace crs.extension
         }
 
         /// <summary>
-        /// 从当前View离开时调用
+        /// From the currentViewCalled when leaving
         /// </summary>
         /// <param name="navigationContext"></param>
         public virtual void OnNavigatedFrom(NavigationContext navigationContext)

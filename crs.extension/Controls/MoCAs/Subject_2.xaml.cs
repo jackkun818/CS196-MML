@@ -16,7 +16,7 @@ using System.Windows.Shapes;
 namespace crs.extension.Controls.MoCAs
 {
     /// <summary>
-    /// Subject_2.xaml 的交互逻辑
+    /// Subject_2.xaml Interaction logic
     /// </summary>
     public partial class Subject_2 : UserControl
     {
@@ -25,7 +25,7 @@ namespace crs.extension.Controls.MoCAs
             InitializeComponent();
         }
 
-        #region 播放语音功能
+        #region Voice playback function
 
         async private void ExecuteAudioPlayClick(object sender, RoutedEventArgs e)
         {

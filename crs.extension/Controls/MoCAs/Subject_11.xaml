@@ -28,17 +28,17 @@
                     <behaviors:ChangePropertyAction
                         PropertyName="OriginName"
                         TargetObject="{Binding}"
-                        Value="定向力" />
+                        Value="Directional force" />
                 </behaviors:EventTrigger>
             </behaviors:Interaction.Triggers>
-            定向力
+            Directional force
         </TextBlock>
         <StackPanel
             Margin="0,30,0,0"
             VerticalAlignment="Center"
             DockPanel.Dock="Top"
             Orientation="Horizontal">
-            <TextBlock VerticalAlignment="Center" FontSize="28">“告诉我今天是什么日期？“”告诉我这是什么地方，它在哪个城市？”</TextBlock>
+            <TextBlock VerticalAlignment="Center" FontSize="28">“Tell me what date it is today?“”Tell me where this is and which city it is in?”</TextBlock>
             <ContentControl
                 Margin="10,0,0,0"
                 HorizontalAlignment="Center"
@@ -46,7 +46,7 @@
                 ContentTemplate="{StaticResource MMSE_MoCA_ToolTipTemplate}">
                 <ContentControl.Content>
                     <TextBlock TextTrimming="CharacterEllipsis" TextWrapping="Wrap">
-                        评分：每正确回答一项给1分。患者必须回答精确的日期和地点（医院、诊所、办公室的名称）。日期上多一天或少一天都算错误，不给分
+                        Rating: 1 point is given for each correct answer. Patients must answer the exact date and location（Name of hospital, clinic, office）. One more day or one less day on the date is wrong, no points will be given
                     </TextBlock>
                 </ContentControl.Content>
             </ContentControl>
@@ -57,14 +57,14 @@
                 BorderBrush="Transparent"
                 Click="ExecuteAudioPlayClick"
                 Cursor="Hand"
-                Tag="下面我会提出几个问题，请告诉我答案。请告诉我今天是星期几,是哪一年，哪一个月，哪一天,这是什么地方，它在哪个城市">
+                Tag="I will ask a few questions below, please tell me the answer. Please tell me what day of the week it is today,Which year, month, and day,What is this place and what city is it in">
                 <Button.Content>
                     <Image
                         Width="28"
                         Height="24"
                         VerticalAlignment="Center"
                         Cursor="Hand"
-                        Source="{StaticResource crs_声音}"
+                        Source="{StaticResource crs_sound}"
                         Stretch="Uniform" />
                 </Button.Content>
             </Button>
@@ -98,7 +98,7 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     TextTrimming="CharacterEllipsis">
-                    星期
+                    Week
                 </TextBlock>
             </DockPanel>
             <DockPanel DataContext="{Binding ChildrenItems[0]}">
@@ -125,7 +125,7 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     TextTrimming="CharacterEllipsis">
-                    年
+                    Year
                 </TextBlock>
             </DockPanel>
             <DockPanel DataContext="{Binding ChildrenItems[0]}">
@@ -153,7 +153,7 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     TextTrimming="CharacterEllipsis">
-                    月
+                    moon
                 </TextBlock>
             </DockPanel>
             <DockPanel DataContext="{Binding ChildrenItems[0]}">
@@ -180,7 +180,7 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     TextTrimming="CharacterEllipsis">
-                    日
+                    day
                 </TextBlock>
             </DockPanel>
             <DockPanel DataContext="{Binding ChildrenItems[1]}">
@@ -207,7 +207,7 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     TextTrimming="CharacterEllipsis">
-                    地方
+                    place
                 </TextBlock>
             </DockPanel>
             <DockPanel DataContext="{Binding ChildrenItems[1]}">
@@ -234,7 +234,7 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     TextTrimming="CharacterEllipsis">
-                    城市
+                    City
                 </TextBlock>
             </DockPanel>
         </UniformGrid>

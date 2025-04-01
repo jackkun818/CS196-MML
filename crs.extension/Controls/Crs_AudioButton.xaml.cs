@@ -18,7 +18,7 @@ using System.Windows.Shapes;
 namespace crs.extension.Controls
 {
     /// <summary>
-    /// Crs_AudioButton.xaml 的交互逻辑
+    /// Crs_AudioButton.xaml Interaction logic
     /// </summary>
     public partial class Crs_AudioButton : UserControl
     {

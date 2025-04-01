@@ -1,0 +1,8 @@
+Difficulty 1
+A popular action movie was released in the cinema this weekend, and the film reviews were rave reviews. Many movie fans came to watch it, and the cinemas were almost full.
+Question 8: What type of movies are released in the cinema this weekend?
+Comedy
+Drama
+Action movie
+Romance movies
+2

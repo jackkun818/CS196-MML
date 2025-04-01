@@ -1,0 +1,8 @@
+Difficulty 1
+The Municipal Hospital will have a health lecture on nutrition tonight, and the lecture will be open for free. The lecturer is a famous nutrition expert and is expected to be a large number of citizens coming to listen.
+Question 11: What is the theme of the Municipal Hospital’s health lecture tonight?
+psychology
+Nutrition
+first aid
+sports
+1

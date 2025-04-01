@@ -83,7 +83,7 @@ namespace crs.extension.Models
                 var selectedItems = feedbackModuleParItems.Where(m => m.IsChecked).ToList();
                 if (selectedItems.Count > 0)
                 {
-                    builder.AppendLine($"反馈：{string.Join("、", selectedItems.Select(m => m.Name))}");
+                    builder.AppendLine($"feedback:{string.Join("、", selectedItems.Select(m => m.Name))}");
                 }
             }
 

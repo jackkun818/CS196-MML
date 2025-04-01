@@ -62,7 +62,7 @@ namespace crs.dialog.ViewModels
             {
                 exception.Exception = async ex =>
                 {
-                    exception.Message = "新增数字人信息错误";
+                    exception.Message = "New digital person information error";
                     return (false, $"{exception.Message},{ex.Message}", null);
                 };
 

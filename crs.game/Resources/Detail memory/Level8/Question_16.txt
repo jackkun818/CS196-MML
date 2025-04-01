@@ -1,0 +1,8 @@
+Difficulty 8
+The art gallery is open Wednesday to Monday, from 10 a.m. to 5 p.m.
+Question 16: How many days per week are the art gallery open?
+5 days
+7 days
+6 days
+4 days
+2

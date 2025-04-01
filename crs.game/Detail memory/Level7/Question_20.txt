@@ -1,0 +1,8 @@
+Difficulty 7
+Yesterday was the school’s anniversary. The event includes art performances and sports competitions, which starts at 3 pm and lasts for five hours.
+Question 20: How long does the school anniversary event last?
+Three hours
+Four hours
+Five hours
+Six hours
+2

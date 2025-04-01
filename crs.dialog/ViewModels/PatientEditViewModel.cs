@@ -115,31 +115,31 @@ namespace crs.dialog.ViewModels
         {
             if (string.IsNullOrWhiteSpace(Name))
             {
-                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("请输入姓名");
+                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("Please enter a name");
                 return;
             }
 
             if (!SexMan && !SexWoman)
             {
-                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("请选择性别");
+                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("Please choose gender");
                 return;
             }
 
             if (string.IsNullOrWhiteSpace(Age))
             {
-                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("请输入年龄");
+                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("Please enter your age");
                 return;
             }
 
             if (!int.TryParse(Age, out int AgeValue))
             {
-                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("年龄格式错误");
+                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("Age format error");
                 return;
             }
 
             if (!string.IsNullOrWhiteSpace(PhoneNumber) && !Int64.TryParse(PhoneNumber, out Int64 PhoneNumberValue))
             {
-                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("手机号格式错误");
+                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("Mobile phone number format error");
                 return;
             }
 
@@ -147,7 +147,7 @@ namespace crs.dialog.ViewModels
             {
                 exception.Exception = async ex =>
                 {
-                    exception.Message = "编辑用户信息错误";
+                    exception.Message = "Error editing user information";
                     return (false, $"{exception.Message},{ex.Message}");
                 };
 
@@ -169,7 +169,7 @@ namespace crs.dialog.ViewModels
                     db.OrganizationPatients.Update(patient);
                     db.SaveChanges();
 
-                    return (true, "修改用户信息成功");
+                    return (true, "User information was modified successfully");
                 }
                 else
                 {
@@ -189,7 +189,7 @@ namespace crs.dialog.ViewModels
                     db.OrganizationPatients.Add(patient);
                     db.SaveChanges();
 
-                    return (true, "创建用户信息成功");
+                    return (true, "Create user information successfully");
                 }
             });
 

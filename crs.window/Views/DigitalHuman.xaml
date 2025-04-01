@@ -35,7 +35,7 @@
                         FontSize="26"
                         FontWeight="Bold"
                         Foreground="White">
-                    新增数字人
+                    Added digital person
                 </Button>
                 <Button Width="241"
                         Height="67"
@@ -46,7 +46,7 @@
                         FontSize="26"
                         FontWeight="Bold"
                         Foreground="White">
-                    删除数字人
+                    Delete digital people
                 </Button>
             </UniformGrid>
 

@@ -1,0 +1,32 @@
+Difficulty 5
+Himalayas, Tibetan meaning“The hometown of snow”, located on the edge of the southern top of the Qinghai-Tibet Plateau, is the highest mountain range in the world, with more than 110 peaks reaching or exceeding 7,350 meters above sea level. It is a natural mountain between the East Asian continent and the South Asian subcontinent, and it is also a natural border between China and India, Nepal, Bhutan, Pakistan and other countries. It starts from Nanga, Kashmir in the west.-Parbat Peak, east to Nangabawa Peak at the corner of the Yarlung Zangbo River, with a total length of 2450km, 200 wide~350km. The main peak is Mount Everest, the highest peak in the world. It means the third goddess in Tibetan, with an altitude of 8844..43 meters. According to the latest measurement data, Mount Everest has an average increase of 1 cm per year.
+Question 1: How many peaks are there in the Himalayas that are as high as or exceed 7350 meters above sea level?
+More than 100 towers
+More than 110 buildings
+More than 120 buildings
+More than 130 buildings
+1
+Question 2: The Himalayas are the natural border between China and many countries, which of the following countries are not included?
+India
+Nepal
+Pakistan
+Vietnam
+3
+Question 3: What does Mount Everest mean in Tibetan?
+The second goddess
+The third goddess
+The fourth goddess
+The fifth goddess
+1
+Question 4: The article mentioned, how many meters is Mount Everest at an altitude?
+8844.43 meters
+8845.43 meters
+8846.43 meters
+8847.43 meters
+0
+Question 5: According to the latest measured data, how much does Mount Everest increase on average annually?
+1 mm
+1 cm
+1 minute meter
+1 meter
+1

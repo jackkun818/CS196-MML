@@ -1,0 +1,8 @@
+Difficulty 10
+The speed limit for all streets in the city is 50 km/h. The speed limit in the school area is 30 km/h. Traffic signs and signal lights are provided on every street.
+Question: What is the speed limit in the school area?
+50 km/h
+60 km/h
+30 km/h
+40 km/h
+2

@@ -145,7 +145,7 @@ namespace crs.window.ViewModels
                 try
                 {
                     HistoryStaysOpen = true;
-                    await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync($"模式“{selectedItem.Mode}”已添加");
+                    await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync($"model“{selectedItem.Mode}”Added");
                 }
                 finally
                 {
@@ -213,7 +213,7 @@ namespace crs.window.ViewModels
         {
             if (patient == null)
             {
-                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("当前患者信息为空");
+                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("The current patient information is empty");
                 return;
             }
 
@@ -222,7 +222,7 @@ namespace crs.window.ViewModels
             {
                 exception.Exception = async ex =>
                 {
-                    exception.Message = "获取历史信息错误";
+                    exception.Message = "Error getting historical information";
                     return (false, $"{exception.Message},{ex.Message}", null);
                 };
 
@@ -326,27 +326,27 @@ namespace crs.window.ViewModels
         {
             if (patient == null)
             {
-                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("当前患者信息为空");
+                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("The current patient information is empty");
                 return;
             }
 
             var selectedItem = TrainModeSelectedItem;
             if (selectedItem == null)
             {
-                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("请选择");
+                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("Please select");
                 return;
             }
 
             var parItems = selectedItem.ModuleParItems;
             if (parItems == null || parItems.Count == 0)
             {
-                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("请设置参数");
+                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("Please set parameters");
                 return;
             }
 
             if (TrainProgramItems != null && TrainProgramItems.FirstOrDefault(m => m.Item.Mode == selectedItem.Mode) != null)
             {
-                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync($"模式“{selectedItem.Mode}”已添加");
+                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync($"model“{selectedItem.Mode}”Added");
                 return;
             }
 
@@ -372,7 +372,7 @@ namespace crs.window.ViewModels
             var items = TrainProgramItems;
             if (items == null || items.Count == 0)
             {
-                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("请先添加方案");
+                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("Please add the plan first");
                 return;
             }
 
@@ -405,10 +405,10 @@ namespace crs.window.ViewModels
                 .GetResultAsync<bool>();
 
             /*LJN
-            20241115新加需求：在训练或者评估模块点击左上角中断返回后，需要自动删除右边已经选择的测试方案。
-            由于之前写的是评估完成了，有结果了，result不为false才清楚原本选择的
-            解决方案：
-            去掉根据result的判断，每次开始一个评估方案的时候就手动清除 EvaluateProgramItems?.Clear();
+            20241115 New requirements: After clicking the training or evaluation module to return after clicking the interrupt in the upper left corner, the test plan that has been selected on the right needs to be automatically deleted.
+            Since I wrote the evaluation before, there were results.resultNot forfalseOnly then did you know what you originally chose
+            Solution:
+            Remove the basisresultTo judge, manually clear each time an evaluation plan is started EvaluateProgramItems?.Clear();
             */
             //if (result)
             //{
@@ -426,13 +426,13 @@ namespace crs.window.ViewModels
             var items = TrainProgramItems;
             if (items == null || items.Count == 0)
             {
-                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("请先添加方案");
+                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("Please add the plan first");
                 return;
             }
 
             if (programId == null)
             {
-                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("方案ID为空");
+                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("planIDEmpty");
                 return;
             }
 
@@ -459,7 +459,7 @@ namespace crs.window.ViewModels
             {
                 exception.Exception = async ex =>
                 {
-                    exception.Message = "保存方案错误";
+                    exception.Message = "Save the scheme error";
                     return (false, $"{exception.Message},{ex.Message}", null);
                 };
 
@@ -531,7 +531,7 @@ namespace crs.window.ViewModels
                     await db.SaveChangesAsync();
                     await transaction.CommitAsync();
 
-                    return (true, "保存方案成功", program);
+                    return (true, "Save the plan successfully", program);
                 }
                 catch (Exception ex)
                 {
@@ -598,7 +598,7 @@ namespace crs.window.ViewModels
             {
                 exception.Exception = async ex =>
                 {
-                    exception.Message = "获取康复训练模块信息错误";
+                    exception.Message = "Error in obtaining rehabilitation training module information";
                     return (false, $"{exception.Message},{ex.Message}", null, null);
                 };
 

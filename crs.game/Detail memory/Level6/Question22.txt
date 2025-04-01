@@ -1,0 +1,38 @@
+Difficulty 6
+Typhoon No. 3 this year on July 21, 2024“Gemei”The center is located on the ocean surface about 520 kilometers northeast of Manila, Philippines, and the maximum wind speed near the center is level 10. Expected“Gemei”It will slowly move northward at a speed of about 5 to 10 kilometers per hour, gradually approaching the sea surface of the eastern part of Taiwan Island. It will enter the East China Sea from the evening to night on the 24th, with the intensity gradually increasing, and the strongest can reach a strong typhoon level or a super typhoon level. Starting from the 22nd, affected by the periphery of the typhoon, the wind force in the southeastern sea of ​​the East China Sea will gradually increase. Among them, the wind force will increase to level 12 to level 14 from the 24th to the 25th, and the wind force passing through the sea near the typhoon center can reach level 13 to level 16.
+Question 1: Typhoon No. 3 this year“Gemei”When was the center located on the ocean surface about 520 kilometers northeast of Manila, Philippines?
+July 21 at 15:00
+July 21 at 16:00
+July 21 at 17:00
+July 22 at 17:00
+2
+Question 2: Typhoon“Gemei”Which typhoon is this year?
+No. 1
+No. 2
+No. 3
+No. 4
+2
+Question 3: What is the name of Typhoon No. 3 this year?
+“Gemei”
+“Beautiful”
+“Gree”
+“Meg”
+0
+Question 4: Typhoon No. 3 this year on July 21, 2024“Gemei”What is the maximum wind speed near the center?
+Level 7
+Level 8
+Level 9
+Level 10
+3
+Question 5: Expected“Gemei”It will slowly move northward at a speed of about 5 to 10 kilometers per hour, and gradually approach where will it?
+Sea surface in the eastern part of Taiwan Island
+The sea surface of the western Taiwan Island
+The sea surface of the southern part of Taiwan Island
+The sea surface of the northern Taiwan Island
+0
+Question 6: Expected“Gemei”When will it enter the East China Sea?
+At night from the 24th
+From morning to afternoon on the 24th
+From the afternoon to the evening on the 24th
+25th to night
+0

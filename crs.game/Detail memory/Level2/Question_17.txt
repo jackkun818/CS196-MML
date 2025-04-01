@@ -1,0 +1,8 @@
+Difficulty 2
+Restaurants offer buy one get one get one get one get one on Friday and Saturday of this month.
+Question 17: When will the restaurant offer be offered?
+Working Day
+weekend
+Friday and Saturday
+Monday and Wednesday
+2

@@ -1,0 +1,8 @@
+Difficulty 4
+The University Games were successfully held last weekend. Competitions include track and field and basketball. The students actively participate.
+Question 11: What events are included in the University Sports Games?
+Swimming and badminton
+Football and volleyball
+Tennis and table tennis
+Track and field and basketball
+3

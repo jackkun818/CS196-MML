@@ -1,0 +1,8 @@
+Difficulty 1
+The library has just launched a bestseller book, authored by famous writer Li Ming. Since its release, this book has been warmly welcomed by readers, and the number of borrowed books has remained high.
+Question 10: Who is the author of the new bestseller in the library?
+Li Ming
+Zhang Wei
+Liu Yang
+Wang Qiang
+0

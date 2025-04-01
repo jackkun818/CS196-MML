@@ -17,13 +17,13 @@ using System.Windows.Shapes;
 namespace crs.extension.Controls.MMSEs
 {
     /// <summary>
-    /// Subject_10_Sub.xaml 的交互逻辑
+    /// Subject_10_Sub.xaml Interaction logic
     /// </summary>
     public partial class Subject_10_Sub : UserControl
     {
         static ConcurrentDictionary<int, string> voiceDict = new ConcurrentDictionary<int, string>
         {
-            [0] = "请您写出一句完整的句子,可在空白处作答，句子必须有主语、动词、有意义",
+            [0] = "Please write a complete sentence,Can answer in the blank space, the sentence must have subject, verb, and meaningful",
         };
 
         public Subject_10_Sub()
@@ -40,7 +40,7 @@ namespace crs.extension.Controls.MMSEs
 
         private async void Subject_Sub_Loaded(object sender, RoutedEventArgs e)
         {
-            // 播放语音提示、启动定时器操作等
+            // Play voice prompts, start timer operations, etc.
 
             Crs_WaveOutToolkit.AudioCancel();
             _ = Crs_WaveInToolkit.RecordAudioCompleteAsync(true);

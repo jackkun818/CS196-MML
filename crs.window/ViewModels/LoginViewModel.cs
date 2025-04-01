@@ -76,7 +76,7 @@ namespace crs.window.ViewModels
             set { SetProperty(ref rememberPassword, value); }
         }
 
-        // 控制绑定了LoginCommand的控件的IsEnable
+        // Control boundLoginCommandcontrol ofIsEnable
         private bool loginCommandCanExecute = true;
         public bool LoginCommandCanExecute
         {
@@ -96,13 +96,13 @@ namespace crs.window.ViewModels
 
             if (string.IsNullOrWhiteSpace(account))
             {
-                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("请输入账号");
+                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("Please enter your account number");
                 return;
             }
 
             if (string.IsNullOrWhiteSpace(password))
             {
-                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("请输入密码");
+                await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("Please enter your password");
                 return;
             }
 
@@ -110,18 +110,18 @@ namespace crs.window.ViewModels
             {
                 exception.Exception = ex =>
                 {
-                    exception.Message = "登录错误";
+                    exception.Message = "Login error";
                     return (false, $"{exception.Message},{ex.Message}", null);
                 };
 
                 var user = db.Users.AsNoTracking().FirstOrDefault(m => m.PhoneNumber == account);
-                if (user == null) return (false, "用户不存在", null);
+                if (user == null) return (false, "The user does not exist", null);
 
                 var employee = db.Employees.AsNoTracking().FirstOrDefault(m => m.Id == user.Id);
-                if (employee == null) return (false, "该用户不是医生", null);
+                if (employee == null) return (false, "This user is not a doctor", null);
 
                 var passwordHash = GetPasswordHash(password);
-                if (user.PasswordHash != passwordHash) return (false, "密码错误", null);
+                if (user.PasswordHash != passwordHash) return (false, "Error password", null);
 
                 return (true, null, user);
             });
@@ -132,7 +132,7 @@ namespace crs.window.ViewModels
                 return;
             }
 
-            // 登录成功,带上参数,跳转到自检页
+            // Login successfully,Bring parameters,Jump to self-test page
             var parameters = new NavigationParameters
             {
                 {"crs_user",user }
@@ -140,7 +140,7 @@ namespace crs.window.ViewModels
             regionManager.RequestNavigate(Crs_Region.MainWindow, Crs_View.Check, navigationParameters: parameters);
         }
 
-        // 在进入新View时调用
+        // Entering newViewCalled on time
         public override void OnNavigatedTo(NavigationContext navigationContext)
         {
             if (File.Exists(configPath))
@@ -156,7 +156,7 @@ namespace crs.window.ViewModels
             }
         }
 
-        // 从当前View离开时调用
+        // From the currentViewCalled when leaving
         public override void OnNavigatedFrom(NavigationContext navigationContext)
         {
             using (var fileStream = new FileStream(configPath, FileMode.Create))
@@ -176,10 +176,10 @@ namespace crs.window.ViewModels
         {
             using var sha256Hash = SHA256.Create();
 
-            // 将输入字符串转换为字节数组并计算哈希
+            // Convert input string to byte array and calculate hash
             var bytes = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(password));
 
-            // 将字节数组转换为十六进制字符串
+            // Convert a byte array to a hexadecimal string
             var builder = new StringBuilder();
             for (int i = 0; i < bytes.Length; i++)
             {

@@ -36,7 +36,7 @@ namespace crs.window.Views
 
         private async void CloseButton_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-            if (await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("是否关闭程序？", button: MessageBoxButton.OKOrCancel) == null)
+            if (await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync("Is the program closed?", button: MessageBoxButton.OKOrCancel) == null)
             {
                 return;
             }

@@ -1,0 +1,8 @@
+Difficulty 8
+Last night at 8 pm, dinner time in the restaurant began. At about 9:30, all the guests finished eating.
+Question 1: When does the dinner time start in the restaurant?
+10 pm
+9 pm
+7 pm
+8 pm
+3

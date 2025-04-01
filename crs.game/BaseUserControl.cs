@@ -54,7 +54,7 @@ namespace crs.game
         }
 
         /// <summary>
-        /// HostWindow_KeyDown的虚方法，应在子类重载该方法
+        /// HostWindow_KeyDownThe virtual method should be overloaded in the subclass
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -83,7 +83,7 @@ namespace crs.game
         //LJN
 
         /// <summary>
-        /// 通知客户端开始游戏
+        /// Notify the client to start the game
         /// </summary>
         protected void OnGameBegin()
         {
@@ -92,11 +92,11 @@ namespace crs.game
         }
 
         /// <summary>
-        /// 通知客户端游戏结束
+        /// Notify the client of the game to end
         /// </summary>
         protected void OnGameEnd()
         {
-            // 记录结束时间
+            // Record the end time
             var baseParameter = BaseParameter;
             if (baseParameter != null)
             {
@@ -108,7 +108,7 @@ namespace crs.game
         }
 
         /// <summary>
-        /// 语音播放
+        /// Voice playback
         /// </summary>
         /// <param name="message"></param>
         /// <returns></returns>
@@ -120,12 +120,12 @@ namespace crs.game
 
         async Task IGameBase.InitAsync(int programId, int moduleId, Crs_Db2Context db)
         {
-            // 实例化参数类
+            // Instantiated parameter class
             var baseParameter = new GameBaseParameter(programId, moduleId, db);
 
             db = baseParameter.Db;
 
-            // 查询模块参数信息
+            // Query module parameter information
             baseParameter.ScheduleId = db.Schedules.AsNoTracking().FirstOrDefault(m => m.ProgramId == programId)?.ScheduleId;
             baseParameter.ProgramModulePars = db.ProgramModulePars.AsNoTracking()
                 .Include(m => m.ModulePar)
@@ -138,7 +138,7 @@ namespace crs.game
         }
 
         /// <summary>
-        /// InitAsync(初始化)的虚方法，应在子类重载该方法
+        /// InitAsync(initialization)The virtual method should be overloaded in the subclass
         /// </summary>
         /// <returns></returns>
         protected virtual async Task OnInitAsync()
@@ -148,7 +148,7 @@ namespace crs.game
 
         async Task IGameBase.StartAsync()
         {
-            // 记录开始时间
+            // Record the start time
             var baseParameter = BaseParameter;
             if (baseParameter != null)
             {
@@ -159,7 +159,7 @@ namespace crs.game
         }
 
         /// <summary>
-        /// StartAsync(开始)的虚方法，应在子类重载该方法
+        /// StartAsync(start)The virtual method should be overloaded in the subclass
         /// </summary>
         /// <returns></returns>
         protected virtual async Task OnStartAsync()
@@ -169,7 +169,7 @@ namespace crs.game
 
         async Task IGameBase.StopAsync()
         {
-            // 记录结束时间
+            // Record the end time
             var baseParameter = BaseParameter;
             if (baseParameter != null)
             {
@@ -180,7 +180,7 @@ namespace crs.game
         }
 
         /// <summary>
-        /// StopAsync(结束)的虚方法，应在子类重载该方法
+        /// StopAsync(Finish)The virtual method should be overloaded in the subclass
         /// </summary>
         /// <returns></returns>
         protected virtual async Task OnStopAsync()
@@ -194,7 +194,7 @@ namespace crs.game
         }
 
         /// <summary>
-        /// PauseAsync(暂停)的虚方法，应在子类重载该方法
+        /// PauseAsync(pause)The virtual method should be overloaded in the subclass
         /// </summary>
         /// <returns></returns>
         protected virtual async Task OnPauseAsync()
@@ -208,7 +208,7 @@ namespace crs.game
         }
 
         /// <summary>
-        /// NextAsync(下一题)的虚方法，应在子类重载该方法
+        /// NextAsync(Next question)The virtual method should be overloaded in the subclass
         /// </summary>
         /// <returns></returns>
         protected virtual async Task OnNextAsync()
@@ -222,7 +222,7 @@ namespace crs.game
         }
 
         /// <summary>
-        /// ReportAsync(记录信息)的虚方法，应在子类重载该方法
+        /// ReportAsync(Record information)The virtual method should be overloaded in the subclass
         /// </summary>
         /// <returns></returns>
         protected virtual async Task OnReportAsync()
@@ -236,7 +236,7 @@ namespace crs.game
         }
 
         /// <summary>
-        /// GetExplanationExample(获取讲解示例)的虚方法，应在子类重载该方法
+        /// GetExplanationExample(Get an explanation example)The virtual method should be overloaded in the subclass
         /// </summary>
         /// <returns></returns>
         protected virtual IGameBase OnGetExplanationExample()

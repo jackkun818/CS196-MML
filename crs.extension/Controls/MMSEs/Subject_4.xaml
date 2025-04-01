@@ -28,17 +28,17 @@
                     <behaviors:ChangePropertyAction
                         PropertyName="OriginName"
                         TargetObject="{Binding}"
-                        Value="注意力和计算能力" />
+                        Value="Attention and computing power" />
                 </behaviors:EventTrigger>
             </behaviors:Interaction.Triggers>
-            注意力和计算能力
+            Attention and computing power
         </TextBlock>
         <StackPanel
             Margin="0,30,0,0"
             VerticalAlignment="Center"
             DockPanel.Dock="Top"
             Orientation="Horizontal">
-            <TextBlock VerticalAlignment="Center" FontSize="28">请您算一算100-7＝？连续减5次。（若错了，但下一个答案正确，只记一次错误）</TextBlock>
+            <TextBlock VerticalAlignment="Center" FontSize="28">Please calculate 100-7＝? Reduce 5 times in a row.（If it is wrong, but the next answer is correct, only one error is remembered）</TextBlock>
             <ContentControl
                 Margin="10,0,0,0"
                 HorizontalAlignment="Center"
@@ -46,7 +46,7 @@
                 ContentTemplate="{StaticResource MMSE_MoCA_ToolTipTemplate}">
                 <ContentControl.Content>
                     <TextBlock TextTrimming="CharacterEllipsis" TextWrapping="Wrap">
-                        评分：要求病人从100开始减7，之后再减7，一直减5次（即93、86、79、72、65）每答对1个得一分，如果前次错了，但下一个答案是对的，也得1分。
+                        Rating: The patient is required to reduce 7 from 100, then reduce 7, and keep reducing 5 times.（That is, 93, 86, 79, 72, 65）Each answer is correct and you will get one point. If you are wrong the previous time, but the next answer is correct, you will get one point.
                     </TextBlock>
                 </ContentControl.Content>
             </ContentControl>
@@ -57,7 +57,7 @@
                 BorderBrush="Transparent"
                 Click="ExecuteAudioPlayClick"
                 Cursor="Hand"
-                Tag="现在请您从一百减去7，然后从所得的数目再去减去7，共计算五次">
+                Tag="Now please subtract 7 from one hundred, and then subtract 7 from the obtained number, and calculate five times in total">
 
                 <Button.Content>
                     <Image
@@ -65,7 +65,7 @@
                         Height="24"
                         VerticalAlignment="Center"
                         Cursor="Hand"
-                        Source="{StaticResource crs_声音}"
+                        Source="{StaticResource crs_sound}"
                         Stretch="Uniform" />
                 </Button.Content>
             </Button>
@@ -77,7 +77,7 @@
                 VerticalAlignment="Center"
                 FontSize="28"
                 FontWeight="Bold">
-                参考答案：
+                Reference answer:
             </TextBlock>
             <UniformGrid
                 Columns="5"

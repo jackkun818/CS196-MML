@@ -1,0 +1,8 @@
+Difficulty 3
+A new stall in the night market specializes in handmade ice cream, and is open from 5 to 10 pm.
+Question 20: What are the business hours of the new stall?
+7:00 to 12:00 pm
+6:00 to 11:00 pm
+5 to 10 pm
+4 to 9 pm
+2

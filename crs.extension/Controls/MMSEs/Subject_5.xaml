@@ -28,17 +28,17 @@
                     <behaviors:ChangePropertyAction
                         PropertyName="OriginName"
                         TargetObject="{Binding}"
-                        Value="回忆能力" />
+                        Value="Memory ability" />
                 </behaviors:EventTrigger>
             </behaviors:Interaction.Triggers>
-            回忆能力
+            Memory ability
         </TextBlock>
         <StackPanel
             Margin="0,30,0,0"
             VerticalAlignment="Center"
             DockPanel.Dock="Top"
             Orientation="Horizontal">
-            <TextBlock VerticalAlignment="Center" FontSize="28">请你说出我刚才告诉你让你记住的那些东西？</TextBlock>
+            <TextBlock VerticalAlignment="Center" FontSize="28">Please tell me what I just told you to remember?</TextBlock>
             <ContentControl
                 Margin="10,0,0,0"
                 HorizontalAlignment="Center"
@@ -46,7 +46,7 @@
                 ContentTemplate="{StaticResource MMSE_MoCA_ToolTipTemplate}">
                 <ContentControl.Content>
                     <TextBlock TextTrimming="CharacterEllipsis" TextWrapping="Wrap">
-                        评分如果前次被测试者完全记住了3个名称，现在就让他们再重复一遍，每正确重复1个得1分，最高3分。
+                        Rating If the subjects who were tested completely remembered 3 names for the previous time, let them repeat it again now. Each correct repeat is 1 point, with a maximum of 3 points.
                     </TextBlock>
                 </ContentControl.Content>
             </ContentControl>
@@ -57,7 +57,7 @@
                 BorderBrush="Transparent"
                 Click="ExecuteAudioPlayClick"
                 Cursor="Hand"
-                Tag="刚才我给您读了几个词让您记住，请您再尽量回忆一下，告诉我这些词都有什么">
+                Tag="I just read a few words to you for your memory. Please try to recall them and tell me what these words are.">
 
                 <Button.Content>
                     <Image
@@ -65,7 +65,7 @@
                         Height="24"
                         VerticalAlignment="Center"
                         Cursor="Hand"
-                        Source="{StaticResource crs_声音}"
+                        Source="{StaticResource crs_sound}"
                         Stretch="Uniform" />
                 </Button.Content>
             </Button>
@@ -87,7 +87,7 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     TextTrimming="CharacterEllipsis">
-                    皮球
+                    Ball
                 </TextBlock>
             </DockPanel>
             <DockPanel>
@@ -101,7 +101,7 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     TextTrimming="CharacterEllipsis">
-                    国旗
+                    National flag
                 </TextBlock>
             </DockPanel>
             <DockPanel>
@@ -115,7 +115,7 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     TextTrimming="CharacterEllipsis">
-                    树木
+                    Trees
                 </TextBlock>
             </DockPanel>
         </UniformGrid>

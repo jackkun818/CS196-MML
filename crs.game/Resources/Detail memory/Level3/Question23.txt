@@ -1,0 +1,20 @@
+Difficulty 3
+The Tiananmen Gate Tower is one of the most magnificent city towers in ancient China. It is located at the northern end of Tiananmen Square, the capital of Beijing, the capital of the People's Republic of China, and the dividing point of the four regions of Dongcheng, Xicheng, Chongwen and Xuanwu. It is facing Chang'an Street. Opposite is Tiananmen Square, the Monument to the People's Heroes, Chairman Mao Memorial Hall, the Great Hall of the People, and the National Museum of China. It has attracted the attention of the world for its outstanding architectural art and special political status. On October 1, 1949, Chairman Mao Zedong solemnly declared:“The People's Republic of China was founded”, and personally raised the first five-star red flag. The Tiananmen Gate Tower pattern appears in the national emblem of the People's Republic of China and becomes a symbol of the People's Republic of China.
+Question 1: Which end of Tiananmen Square is located in Tiananmen Square?
+East Terminal
+South End
+The West End
+North End
+3
+Question 2: The Tiananmen Gate Tower is the dividing point of four areas, which of the following is not included?
+Dongcheng
+Chongwen
+South City
+Xuanwu
+2
+Question 3: Which of the following buildings is not opposite the Tiananmen Gate Tower?
+Tiananmen Square
+Chairman Mao Memorial Hall
+Forbidden City
+National Museum of China
+2

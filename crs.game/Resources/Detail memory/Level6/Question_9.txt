@@ -1,0 +1,8 @@
+Difficulty 6
+City Bookstores will be discounted this weekend, with 30% off on all books, and the discount will be from Friday to Sunday.
+Question 9: When to when does the discount time come?
+weekend
+Friday to Sunday
+The whole month
+Monday to Friday
+1

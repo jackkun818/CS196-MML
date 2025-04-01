@@ -1,0 +1,8 @@
+Difficulty 8
+The school's sports meeting begins at 10 a.m. At 1 pm, the game ended.
+Question 2: When will the school sports meet begin?
+11 a.m.
+1 pm
+12 pm
+10 am
+3

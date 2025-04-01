@@ -45,7 +45,7 @@
                         BorderThickness="0"
                         Command="{Binding CancelCommand}">
                         <Button.Background>
-                            <ImageBrush ImageSource="{StaticResource crs_返回}" />
+                            <ImageBrush ImageSource="{StaticResource crs_return}" />
                         </Button.Background>
                     </Button>
                     <TextBlock
@@ -53,7 +53,7 @@
                         VerticalAlignment="Center"
                         FontSize="36"
                         FontWeight="Bold">
-                        设置
+                        set up
                     </TextBlock>
                 </UniformGrid>
                 <Border
@@ -82,7 +82,7 @@
                                         <TextBlock
                                             Margin="10,0,0,0"
                                             VerticalAlignment="Center"
-                                            FontSize="28"><Run Text="账号管理" /></TextBlock>
+                                            FontSize="28"><Run Text="Account Management" /></TextBlock>
                                     </StackPanel>
                                 </Button>
                             </Border>
@@ -104,7 +104,7 @@
                                         <TextBlock
                                             Margin="10,0,0,0"
                                             VerticalAlignment="Center"
-                                            FontSize="28"><Run Text="报告设置" /></TextBlock>
+                                            FontSize="28"><Run Text="Report settings" /></TextBlock>
                                     </StackPanel>
                                 </Button>
                             </Border>
@@ -127,7 +127,7 @@
                                         <TextBlock
                                             Margin="10,0,0,0"
                                             VerticalAlignment="Center"
-                                            FontSize="28"><Run Text="关于我们" /></TextBlock>
+                                            FontSize="28"><Run Text="about Us" /></TextBlock>
                                     </StackPanel>
                                 </Button>
                             </Border>

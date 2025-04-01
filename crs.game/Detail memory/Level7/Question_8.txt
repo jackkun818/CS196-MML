@@ -1,0 +1,8 @@
+Difficulty 7
+Yesterday afternoon, the supermarket held a promotion. The event time is from 2:00 to 6:00, and customers can enjoy a 20% discount.
+Question 8: When is the time for supermarket promotions?
+From 3 o'clock to 7 o'clock
+From 10 o'clock to 4 o'clock
+From 2 o'clock to 6 o'clock
+From 1 o'clock to 5 o'clock
+2

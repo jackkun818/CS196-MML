@@ -1,0 +1,8 @@
+Difficulty 9
+A new restaurant has just opened in the city center, specializing in Italian cuisine. The name of the restaurant is“Italian style”, it attracted many diners on the opening day. The restaurant is open from 10 am to 10 pm.
+Question 2: What is the name of the new restaurant?
+Italian Delicious
+Italian tradition
+Italian kitchen
+Italian style
+3

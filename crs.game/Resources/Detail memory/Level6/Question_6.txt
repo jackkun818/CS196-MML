@@ -1,0 +1,8 @@
+Difficulty 6
+Pasta and pizza are available in the restaurant tonight. Dinner starts at 7:30.
+Question 6: At what time does the restaurant start serving dinner?
+9 o'clock
+6 o'clock
+7:30
+8 o'clock
+2

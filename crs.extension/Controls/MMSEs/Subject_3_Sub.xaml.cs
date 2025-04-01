@@ -18,13 +18,13 @@ using System.Windows.Shapes;
 namespace crs.extension.Controls.MMSEs
 {
     /// <summary>
-    /// Subject_3_Sub.xaml 的交互逻辑
+    /// Subject_3_Sub.xaml Interaction logic
     /// </summary>
     public partial class Subject_3_Sub : UserControl
     {
         static ConcurrentDictionary<int, string> voiceDict = new ConcurrentDictionary<int, string>
         {
-            [0] = "现在我要说三种东西，在我说完后，请您重复说一遍，并记住这三样东西，因为几分钟后要再问您的。皮球 国旗 树木",
+            [0] = "Now I want to say three things. After I finish speaking, please repeat them and remember these three things, because I will ask you again in a few minutes. Ball National flag Trees",
         };
 
         public Subject_3_Sub()
@@ -48,7 +48,7 @@ namespace crs.extension.Controls.MMSEs
 
         private async void Carousel_PageChanged(object sender, RoutedEventArgs e)
         {
-            // 播放语音提示、启动定时器操作等
+            // Play voice prompts, start timer operations, etc.
 
             Crs_WaveOutToolkit.AudioCancel();
             _ = Crs_WaveInToolkit.RecordAudioCompleteAsync(true);

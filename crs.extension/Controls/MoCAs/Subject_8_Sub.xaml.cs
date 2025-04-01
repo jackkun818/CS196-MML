@@ -21,13 +21,13 @@ using System.Windows.Threading;
 namespace crs.extension.Controls.MoCAs
 {
     /// <summary>
-    /// Subject_8_Sub.xaml 的交互逻辑
+    /// Subject_8_Sub.xaml Interaction logic
     /// </summary>
     public partial class Subject_8_Sub : UserControl
     {
         static ConcurrentDictionary<int, string> voiceDict = new ConcurrentDictionary<int, string>
         {
-            [0] = "请在1分钟内尽可能多的说出动物的名字",
+            [0] = "Please name the animal as much as possible within 1 minute",
         };
 
         int second = -1;
@@ -51,7 +51,7 @@ namespace crs.extension.Controls.MoCAs
 
         private async void Subject_Sub_Loaded(object sender, RoutedEventArgs e)
         {
-            // 播放语音提示、启动定时器操作等
+            // Play voice prompts, start timer operations, etc.
 
             _dispatcherTimer = new DispatcherTimer(DispatcherPriority.Render)
             {

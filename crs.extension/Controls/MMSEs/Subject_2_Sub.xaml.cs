@@ -17,18 +17,18 @@ using System.Windows.Shapes;
 namespace crs.extension.Controls.MMSEs
 {
     /// <summary>
-    /// Subject_2_Sub.xaml 的交互逻辑
+    /// Subject_2_Sub.xaml Interaction logic
     /// </summary>
     public partial class Subject_2_Sub : UserControl
     {
         
         static ConcurrentDictionary<int, string> voiceDict = new ConcurrentDictionary<int, string>
         {
-            [0] = "请您告诉我你住在哪个省市",
-            [1] = "请您告诉我你住在哪个区或县",
-            [2] = "请您告诉我你住在哪个街道",
-            [3] = "请您告诉我你住在什么地方",
-            [4] = "请您告诉我你住在第几层楼",
+            [0] = "Please tell me which province you live in.",
+            [1] = "Please tell me which district or county you live in",
+            [2] = "Please tell me which street you live in",
+            [3] = "Please tell me where you live",
+            [4] = "Please tell me which floor you live in",
         };
 
         public Subject_2_Sub()
@@ -52,7 +52,7 @@ namespace crs.extension.Controls.MMSEs
 
         private async void Carousel_PageChanged(object sender, RoutedEventArgs e)
         {
-            // 播放语音提示、启动定时器操作等
+            // Play voice prompts, start timer operations, etc.
 
             Crs_WaveOutToolkit.AudioCancel();
             _ = Crs_WaveInToolkit.RecordAudioCompleteAsync(true);

@@ -1,0 +1,8 @@
+Difficulty 6
+Yesterday, the new tram line was opened in the East District, and the new tram was run every ten minutes.
+Question 4: In which area is the new tram line opened?
+South District
+North District
+East District
+West District
+2

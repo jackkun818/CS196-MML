@@ -16,7 +16,7 @@ using System.Windows.Shapes;
 namespace crs.extension.Controls.MMSEs
 {
     /// <summary>
-    /// Subject_9.xaml 的交互逻辑
+    /// Subject_9.xaml Interaction logic
     /// </summary>
     public partial class Subject_9 : UserControl
     {
@@ -25,7 +25,7 @@ namespace crs.extension.Controls.MMSEs
             InitializeComponent();
         }
 
-        #region 播放语音功能
+        #region Voice playback function
 
         async private void ExecuteAudioPlayClick(object sender, RoutedEventArgs e)
         {

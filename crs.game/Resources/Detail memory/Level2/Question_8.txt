@@ -1,0 +1,8 @@
+Difficulty 2
+The hospital's outpatient hours are from 8 am to 5 pm and are closed on weekends.
+Question 8: What is the outpatient time of the hospital?
+8 am to 6 pm
+7 a.m. to 5 p.m.
+9 am to 4 pm
+8 am to 5 pm
+3

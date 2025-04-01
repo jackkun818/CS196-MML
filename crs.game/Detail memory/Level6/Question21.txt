@@ -1,0 +1,38 @@
+Difficulty 6
+The Eiffel Tower stands in the Place de War in Paris, France. It is a world-famous building and one of the symbols of French culture. It is one of the city landmarks of Paris. It is also the tallest building in Paris. It is 300 meters high, with an antenna 24 meters high and a total height of 324 meters. It was built in 1889 and is named after Gustav, a famous architect and structural engineer who designed it.·Eiffel. The tower is novel and unique in design, it is a technical masterpiece in the history of world architecture, and an important attraction and prominent symbol of Paris, France.
+Question 1: Where is the Eiffel Tower located?
+London
+New York
+Paris
+Beijing
+2
+Question 2: What is the square where the Eiffel Tower is located is called?
+God of War Square
+Battle Square
+Goddess Square
+Tower Square
+0
+Question 3: How high is the Eiffel Tower?
+200 meters
+250 meters
+300 meters
+350 meters
+2
+Question 4: How high is the antenna of the Eiffel Tower?
+22 meters
+24 meters
+26 meters
+28 meters
+1
+Question 5: In what year was the Eiffel Tower built?
+1888
+1889
+1890
+1891
+1
+Question 6: Who are the architects and structural engineers who designed the Eiffel Tower?
+Gustav·Eiffel
+Fernan·Eiffel
+Florent·Eiffel
+Geral·Eiffel
+0

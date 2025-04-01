@@ -1,0 +1,8 @@
+Difficulty 5
+The bookstore launched a signature book of the author today. The signature book includes five new books. Signature books are only available for purchase in bookstores. The bookstore is open from 10 a.m. to 5 p.m.
+Question 10: What special books have the bookstore launched?
+Limited edition books
+Classic books
+Signature book of the author
+Second-hand books
+2
