@@ -22,7 +22,7 @@ namespace crs.game.Games
     /// <summary>
     /// BILD.xaml Interaction logic
     /// </summary>
-    public partial class Graphic memory : BaseUserControl
+    public partial class Graphic_memory : BaseUserControl
     {
         private readonly string[][] imagePaths = new string[][]
         {
@@ -138,7 +138,7 @@ namespace crs.game.Games
             public bool AnimationCanceled { get; set; } = false;
         }
 
-        public Graphic memory(int hardness_, int training_mode, int[] correctAnswers1, int[] wrongAnswers1, int[] ignoreAnswers1)
+        public Graphic_memory(int hardness_, int training_mode, int[] correctAnswers1, int[] wrongAnswers1, int[] ignoreAnswers1)
         {//It seems that this constructor will not be called
             InitializeComponent();
             correctAnswers = correctAnswers1;
@@ -167,7 +167,7 @@ namespace crs.game.Games
                 SetTextsVisible();
             }
         }
-        public Graphic memory()
+        public Graphic_memory()
         {
             InitializeComponent();
         }
@@ -1736,7 +1736,7 @@ namespace crs.game.Games
         }
     }
 
-    public partial class Graphic memory : BaseUserControl
+    public partial class Graphic_memory : BaseUserControl
     {
         private bool is_pause = false;
 
@@ -1944,7 +1944,7 @@ namespace crs.game.Games
 
         protected override IGameBase OnGetExplanationExample()
         {
-            return new Graphic memory explanation();
+            return new Graphic_memory_explanation();
         }
 
         private int GetCorrectNum(int difficultylevel)

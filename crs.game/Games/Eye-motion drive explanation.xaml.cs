@@ -23,7 +23,7 @@ namespace crs.game.Games
     /// <summary>
     /// Eye-motion drive explanation.xaml Interaction logic
     /// </summary>
-    public partial class Eye-motion drive explanation : BaseUserControl
+    public partial class Eye_motion_drive_explanation : BaseUserControl
     {
         public class EyeTrackerWrapper
         {
@@ -55,7 +55,7 @@ namespace crs.game.Games
         Image playerImage;
         Ellipse curGaze;
         TextBlock textBlock123;
-        public Eye-motion drive explanation()
+        public Eye_motion_drive_explanation()
         {
             InitializeComponent();
             InitializeEyeTracker();
@@ -131,10 +131,10 @@ namespace crs.game.Games
             timeStart123 = 3;
             _timerStart123.Tick += TimerStart123_Tick;
 
-            this.Loaded += Eye-motion drive explanation_Loaded;
+            this.Loaded += Eye_motion_drive_explanation_Loaded;
         }
 
-        private void Eye-motion drive explanation_Loaded(object sender, RoutedEventArgs e)
+        private void Eye_motion_drive_explanation_Loaded(object sender, RoutedEventArgs e)
         {
 
             nextButton_Click(null, null);

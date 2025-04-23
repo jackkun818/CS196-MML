@@ -18,7 +18,7 @@ namespace crs.game.Games
     /// <summary>
     /// Alert ability.xaml Interaction logic
     /// </summary>
-    public partial class Alert ability : BaseUserControl
+    public partial class Alert_ability : BaseUserControl
     {
         private List<double> soundReactionTimes = new List<double>(); // Response time with sound
         private List<double> noSoundReactionTimes = new List<double>(); // When there is no sound reaction
@@ -82,7 +82,7 @@ namespace crs.game.Games
         /*
     while (true)
     {
-        // Check if the current directory exists“crs.game”Folders
+        // Check if the current directory exists"crs.game"Folders
         string targetParentDirectory = Path.Combine(currentDirectory, "crs.game");
         if (Directory.Exists(targetParentDirectory))
         {
@@ -105,7 +105,7 @@ namespace crs.game.Games
     return null; // No folder found
     */
 
-        public Alert ability()
+        public Alert_ability()
         {
             InitializeComponent();
             this.Focusable = true;
@@ -317,7 +317,7 @@ namespace crs.game.Games
             cts?.Dispose(); // Free up resources
         }
     }
-    public partial class Alert ability : BaseUserControl
+    public partial class Alert_ability : BaseUserControl
     {
 
         protected override async Task OnInitAsync()
@@ -332,7 +332,7 @@ namespace crs.game.Games
             }
             else
             {
-                MessageBox.Show("No name found“Alert ability”folder.", "mistake", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("No name found \"Alert ability\" folder.", "mistake", MessageBoxButton.OK, MessageBoxImage.Error);
                 OnGameEnd();
             }
             LevelStatisticsAction?.Invoke(0, 0);
@@ -386,7 +386,7 @@ namespace crs.game.Games
 
         protected override IGameBase OnGetExplanationExample()
         {
-            return new Explanation of alertness();
+            return new Explanation_of_alertness();
         }
 
         private int GetCorrectNum()

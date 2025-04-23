@@ -16,7 +16,7 @@ namespace crs.game.Games
     /// <summary>
     /// Select attention.xaml Interaction logic
     /// </summary>
-    public partial class Select attention : BaseUserControl
+    public partial class Select_attention : BaseUserControl
     {
         private string imagePath; // Store the found folder path
         private string[] imagePaths;
@@ -141,7 +141,7 @@ namespace crs.game.Games
             }
         }
 
-        public Select attention()
+        public Select_attention()
         {
             InitializeComponent();
         }
@@ -175,7 +175,7 @@ namespace crs.game.Games
 
             while (true)
             {
-                // Check if the current directory exists“crs.game”Folders
+                // Check if the current directory exists"crs.game"Folders
                 string targetParentDirectory = Path.Combine(currentDirectory, "crs.game");
                 if (Directory.Exists(targetParentDirectory))
                 {
@@ -339,7 +339,7 @@ namespace crs.game.Games
 
         }
     }
-    public partial class Select attention : BaseUserControl
+    public partial class Select_attention : BaseUserControl
     {
         protected override async Task OnInitAsync()
         {
@@ -365,7 +365,7 @@ namespace crs.game.Games
             gameTimer.Interval = TimeSpan.FromSeconds(1); // Updated once every second
         }
 
-        //Add code to bind the keyboardenterKeys and“confirm”Button
+        //Add code to bind the keyboardenterKeys and"confirm"Button
         protected override void OnHostWindow_KeyDown(object sender, System.Windows.Input.KeyEventArgs e)
         {
             // Check whether the key you pressed is the key you specified
@@ -470,7 +470,7 @@ namespace crs.game.Games
 
                         // use score As the correct number
                         double averageReactionTime = score > 0 ? correctTotalReactionTime / score : 0;
-                        // calculate ZValue Response Speed ​​Value
+                        // calculate ZValue Response Speed  Value
                         double zSpeedValue = Math.Round((double)(435 - averageReactionTime) / 87, 2);
 
                         // create Result Record
@@ -527,7 +527,7 @@ namespace crs.game.Games
                                  new ResultDetail
                                 {
                                     ResultId = result_id,
-                                    ValueName = "ZValue Response Speed ​​Value",
+                                    ValueName = "ZValue Response Speed  Value",
                                     Value = Math.Round(zSpeedValue, 2),
                                     ModuleId = BaseParameter.ModuleId
                                  },

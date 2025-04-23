@@ -82,7 +82,7 @@ namespace crs.game
                 return;
             }
 
-            gameBase = new Focus on attention() as IGameBase;
+            gameBase = new Focus_on_attention() as IGameBase;
             if (gameBase == null)
             {
                 MessageBox.Show("The game module is not implementedIGameBaseinterface");

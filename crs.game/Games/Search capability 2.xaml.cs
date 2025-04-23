@@ -27,7 +27,7 @@ namespace crs.game.Games
     /// <summary>
     /// EXO.xaml Interaction logic
     /// </summary>
-    public partial class Search capability 2 : BaseUserControl
+    public partial class Search_capability_2 : BaseUserControl
     {
         private readonly string[][][] imagePaths = new string[][][]
         {
@@ -126,7 +126,7 @@ namespace crs.game.Games
         private double MainGridMaxHeight = 828;//MainGrid What is the maximum visual test
         private double OverLayImageGridHeight = 0;
         private double SelectImageGridHeight = 0;//What are the heights of these two lines? Given a specified value for later calculation
-        public Search capability 2()
+        public Search_capability_2()
         {
             InitializeComponent();
             this.Cursor = Cursors.None; // Hide the default cursor
@@ -715,7 +715,7 @@ namespace crs.game.Games
         }
 
     }
-    public partial class Search capability 2 : BaseUserControl
+    public partial class Search_capability_2 : BaseUserControl
     {
         protected override async Task OnInitAsync()
         {
@@ -844,7 +844,7 @@ namespace crs.game.Games
 
         protected override IGameBase OnGetExplanationExample()
         {
-            return new Search ability 2 explanation();
+            return new Search_ability_2_explanation();
         }
 
         // Insert writing
@@ -900,7 +900,7 @@ namespace crs.game.Games
                         var newResult = new Result
                         {
                             ProgramId = program_id, // program_id
-                            Report = "Search capability 2",
+                            Report = "Search_capability_2",
                             Eval = false,
                             Lv = max_hardness, // Current difficulty level
                             ScheduleId = BaseParameter.ScheduleId ?? null// Assumption Schedule_id, can be replaced with the actual value
@@ -1012,7 +1012,7 @@ namespace crs.game.Games
             //                var newResult = new Result
             //                {
             //                    ProgramId = program_id, // program_id
-            //                    Report = "Search capability 2",
+            //                    Report = "Search_capability_2",
             //                    Eval = false,
             //                    Lv = lv, // Current difficulty level
             //                    ScheduleId = BaseParameter.ScheduleId ?? null// Assumption Schedule_id, can be replaced with the actual value

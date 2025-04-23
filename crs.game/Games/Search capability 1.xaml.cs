@@ -25,7 +25,7 @@ namespace crs.game.Games
     /// <summary>
     /// EXO.xaml Interaction logic
     /// </summary>
-    public partial class Search capability 1 : BaseUserControl
+    public partial class Search_capability_1 : BaseUserControl
     {
         /*
          Game parameters
@@ -83,7 +83,7 @@ namespace crs.game.Games
         private int ErrorCount = 2;//How many times can a patient find the wrong number in a question?
         private int ErrorLimit = 2;
 
-        public Search capability 1()
+        public Search_capability_1()
         {
             InitializeComponent();
 
@@ -724,7 +724,7 @@ namespace crs.game.Games
             CustomCursor.Clip = new RectangleGeometry(clipRect);  // Crop areas using rectangles
         }
     }
-    public partial class Search capability 1 : BaseUserControl
+    public partial class Search_capability_1 : BaseUserControl
     {
         protected override async Task OnInitAsync()
         {
@@ -863,7 +863,7 @@ namespace crs.game.Games
 
         protected override IGameBase OnGetExplanationExample()
         {
-            return new Search ability 1 explanation();
+            return new Search_ability_1_explanation();
         }
 
 
@@ -921,7 +921,7 @@ namespace crs.game.Games
                         var newResult = new Result
                         {
                             ProgramId = program_id, // program_id
-                            Report = "Search capability 1",
+                            Report = "Search_capability_1",
                             Eval = false,
                             Lv = max_hardness, // Current difficulty level
                             ScheduleId = BaseParameter.ScheduleId ?? null// Assumption Schedule_id, can be replaced with the actual value

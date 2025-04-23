@@ -119,7 +119,7 @@ namespace crs.game.Games
 
         }
     }
-    public partial class Appearance and memory : BaseUserControl
+    public partial class Appearance_and_memory : BaseUserControl
     {
         private Border selectedThumbnailBorder;
         private string[] memorizedImages; // Image paths for users' memory
@@ -838,7 +838,7 @@ namespace crs.game.Games
             ClearMainImage();
         }
 
-        public Appearance and memory()
+        public Appearance_and_memory()
         {
             InitializeComponent();
         }
@@ -1345,7 +1345,7 @@ namespace crs.game.Games
         }
 
     }
-    public partial class Appearance and memory : BaseUserControl
+    public partial class Appearance_and_memory : BaseUserControl
     {
         protected override async Task OnInitAsync()
         {

@@ -1,4 +1,4 @@
-﻿<local:BaseUserControl x:Class="crs.game.Games.Explanation of word memory ability"
+﻿<local:BaseUserControl x:Class="crs.game.Games.Explanation_of_word_memory_ability"
                        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -188,7 +188,7 @@
                            HorizontalAlignment="Center"
                            VerticalAlignment="Top"
                            FontSize="45"
-                           Text="After the memory stage is over, please determine whether the two-character words appear are the same as the memory stage and repeat the selection.“OK”, otherwise choose“jump over”"
+                          Text="After the memory stage is over, please determine whether the two-character words appear are the same as the memory stage and repeat the selection. &quot;OK&quot;, otherwise choose &quot;jump over&quot;"
                            TextWrapping="Wrap"
                            Visibility="Hidden" />
 

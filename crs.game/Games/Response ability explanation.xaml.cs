@@ -19,7 +19,7 @@ namespace crs.game.Games
     /// <summary>
     /// Response ability explanation.xaml Interaction logic
     /// </summary>
-    public partial class Response ability explanation : BaseUserControl
+    public partial class Response_ability_explanation : BaseUserControl
     {
         private DispatcherTimer timer;
 
@@ -27,7 +27,7 @@ namespace crs.game.Games
 
         public Func<string, Task> VoicePlayFunc { get; set; }
 
-        public Response ability explanation()
+        public Response_ability_explanation()
         {
             InitializeComponent();
 
@@ -38,12 +38,12 @@ namespace crs.game.Games
             timer.Interval = TimeSpan.FromSeconds(2);
             timer.Tick += Timer_Tick;
 
-            this.Loaded += Response ability explanation_Loaded;
+            this.Loaded += Response_ability_explanation_Loaded;
 
 
         }
 
-        private void Response ability explanation_Loaded(object sender, RoutedEventArgs e)
+        private void Response_ability_explanation_Loaded(object sender, RoutedEventArgs e)
         {
             // Ensure key presses and focus behavior when page loads
             Button_2_Click(null, null);

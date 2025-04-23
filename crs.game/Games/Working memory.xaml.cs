@@ -28,7 +28,7 @@ namespace crs.game.Games
     /// <summary>
     /// WOME.xaml Interaction logic
     /// </summary>
-    public partial class Working memory : BaseUserControl
+    public partial class Working_memory : BaseUserControl
     {
 
         // CustomizeAdornerkind
@@ -229,7 +229,7 @@ namespace crs.game.Games
             };
             gameTimer.Tick += GameTimer_Tick;
         }
-        public Working memory()
+        public Working_memory()
         {
             InitializeComponent();
         }
@@ -1728,7 +1728,7 @@ namespace crs.game.Games
             image.Visibility = Visibility.Collapsed;
         }
     }
-    public partial class Working memory : BaseUserControl
+    public partial class Working_memory : BaseUserControl
     {
         protected override async Task OnInitAsync()
         {
@@ -1974,7 +1974,7 @@ namespace crs.game.Games
 
         protected override IGameBase OnGetExplanationExample()
         {
-            return new Working memory explanation();
+            return new Working_memory_explanation();
         }
 
         // Insert writing

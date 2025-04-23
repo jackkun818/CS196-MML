@@ -29,7 +29,7 @@ namespace crs.game.Games
     /// <summary>
     /// VIG.xaml Interaction logic
     /// </summary>
-    public partial class Beware of training : BaseUserControl
+    public partial class Beware_of_training : BaseUserControl
     {
             //Game parameters that need to be read from the database
         private int Level = 0;//Current game level, 1-9
@@ -101,7 +101,7 @@ namespace crs.game.Games
         private int LevelIgnore = 0;//Floating pastItemsInLevelindivualItemHow many missing answers have been answered? The difficulty level has been updated and cleared by 0.
         
 
-        public Beware of training()
+        public Beware_of_training()
         {
             InitializeComponent();
             //Call the class constructor first, then call itOnInitAsync()
@@ -700,7 +700,7 @@ namespace crs.game.Games
             image.Visibility = Visibility.Collapsed;
         }
     }
-    public partial class Beware of training : BaseUserControl
+    public partial class Beware_of_training : BaseUserControl
     {
         protected override async Task OnInitAsync()
         {

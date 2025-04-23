@@ -18,7 +18,7 @@ namespace crs.game.Games
     /// <summary>
     /// Eye movement training explanation.xaml Interaction logic
     /// </summary>
-    public partial class Eye movement training explanation : BaseUserControl
+    public partial class Eye_movement_training_explanation : BaseUserControl
     {
         private string[] JudgementPath = new string[]
         {
@@ -78,7 +78,7 @@ namespace crs.game.Games
 
         public Func<string, Task> VoicePlayFunc { get; set; }
 
-        public Eye movement training explanation()
+        public Eye_movement_training_explanation()
         {
             InitializeComponent();
 
@@ -113,12 +113,12 @@ namespace crs.game.Games
             trainingTimer.Start(); // Start the training timer
            
 
-            this.Loaded += Eye movement training explanation_Loaded;
+            this.Loaded += Eye_movement_training_explanation_Loaded;
 
 
         }
 
-        private void Eye movement training explanation_Loaded(object sender, RoutedEventArgs e)
+        private void Eye_movement_training_explanation_Loaded(object sender, RoutedEventArgs e)
         {
             // Ensure key presses and focus behavior when page loads
             Button_2_Click(null, null);

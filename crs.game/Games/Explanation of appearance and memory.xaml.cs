@@ -22,7 +22,7 @@ namespace crs.game.Games
     /// <summary>
     /// Explanation of appearance and memory.xaml Interaction logic
     /// </summary>
-    public partial class Explanation of appearance and memory : BaseUserControl
+    public partial class Explanation_of_appearance_and_memory : BaseUserControl
     {
         private string[] imagePaths;
         private string selectedImagePath;
@@ -34,7 +34,7 @@ namespace crs.game.Games
         public Func<string, Task> VoicePlayFunc { get; set; }
 
 
-        public Explanation of appearance and memory()
+        public Explanation_of_appearance_and_memory()
         {
             InitializeComponent();
             // Get the picture folder under the relative path
@@ -49,7 +49,7 @@ namespace crs.game.Games
             // hidebutton3
             button3.Visibility = Visibility.Collapsed;
             
-            this.Loaded += Explanation of appearance and memory_Loaded;
+            this.Loaded += Explanation_of_appearance_and_memory_Loaded;
         }
 
         protected override void OnHostWindow_KeyDown(object sender, System.Windows.Input.KeyEventArgs e)
@@ -134,7 +134,7 @@ namespace crs.game.Games
         // Helpful methods for selecting thumbnails
 
 
-        private void Explanation of appearance and memory_Loaded(object sender, RoutedEventArgs e)
+        private void Explanation_of_appearance_and_memory_Loaded(object sender, RoutedEventArgs e)
         {
             Button_2_Click(null, null);
         }

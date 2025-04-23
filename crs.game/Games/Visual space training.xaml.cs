@@ -23,7 +23,7 @@ namespace crs.game.Games
     /// <summary>
     /// SAKA.xaml Interaction logic
     /// </summary>
-    public partial class Visual space training : BaseUserControl
+    public partial class Visual_space_training : BaseUserControl
     {
         private string[] JudgementPath = new string[]
         {
@@ -321,7 +321,7 @@ namespace crs.game.Games
             image.Visibility = Visibility.Collapsed;
         }
 
-        public Visual space training()
+        public Visual_space_training()
         {
             InitializeComponent();
         }
@@ -1826,7 +1826,7 @@ namespace crs.game.Games
             }
         }
     }
-    public partial class Visual space training : BaseUserControl
+    public partial class Visual_space_training : BaseUserControl
     {
         protected override async Task OnInitAsync()
         {

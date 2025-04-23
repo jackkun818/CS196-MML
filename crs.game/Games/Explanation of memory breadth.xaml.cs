@@ -23,7 +23,7 @@ namespace crs.game.Games
     /// <summary>
     /// Explanation of memory breadth.xaml Interaction logic
     /// </summary>
-    public partial class Explanation of memory breadth : BaseUserControl
+    public partial class Explanation_of_memory_breadth : BaseUserControl
     {
         private bool istrue;
         private const int GridSize = 5;
@@ -40,15 +40,15 @@ namespace crs.game.Games
 
 
 
-        public Explanation of memory breadth()
+        public Explanation_of_memory_breadth()
         {
             InitializeComponent();
             InitializeGrid();
 
-            this.Loaded += Explanation of memory breadth_Loaded;
+            this.Loaded += Explanation_of_memory_breadth_Loaded;
         }
 
-        private void Explanation of memory breadth_Loaded(object sender, RoutedEventArgs e)
+        private void Explanation_of_memory_breadth_Loaded(object sender, RoutedEventArgs e)
         {
             Button_2_Click(null, null);
         }

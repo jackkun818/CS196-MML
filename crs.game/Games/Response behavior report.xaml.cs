@@ -17,7 +17,7 @@ namespace crs.game.Games
     /// <summary>
     /// REVE_report.xaml Interaction logic
     /// </summary>
-    public partial class Response behavior report : Window
+    public partial class Response_behavior_report : Window
     {
         private int[] Answers;
         private int[] wrongAnswers;
@@ -30,7 +30,7 @@ namespace crs.game.Games
             public double Accuracy { get; set; }
         }
 
-        public Response behavior report(double increase,double decrease, int STIMULI_AMOUNT, int STIMULI_INTERVAL, bool IS_BEEP, bool IS_SCREEN,int[] Answers, int[] wrongAnswers)
+        public Response_behavior_report(double increase,double decrease, int STIMULI_AMOUNT, int STIMULI_INTERVAL, bool IS_BEEP, bool IS_SCREEN,int[] Answers, int[] wrongAnswers)
         {
             InitializeComponent();
             this.Answers = Answers;

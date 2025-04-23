@@ -144,8 +144,8 @@ namespace crs.window.ViewModels
 
             var menuType = parameter.ProgramType switch
             {
-                ProgramType.Evaluation test => (MenuType?)MenuType.EvaluateTest,
-                ProgramType.Rehabilitation training => (MenuType?)MenuType.Train,
+                ProgramType.评估测试 => (MenuType?)MenuType.EvaluateTest,
+                ProgramType.康复训练 => (MenuType?)MenuType.Train,
                 _ => throw new NotImplementedException()
             };
 
@@ -189,7 +189,7 @@ namespace crs.window.ViewModels
                 return;
             }
 
-            if (parameter.ProgramContent == EvaluateTestMode.Standard evaluation.ToString())
+            if (parameter.ProgramContent == EvaluateTestMode.标准评估.ToString())
             {
                 await Crs_DialogEx.Show(Crs_Dialog.EvaluateStandardPanel, Crs_DialogToken.TopContent)
                     .UseConfig_ContentStretch()
@@ -208,8 +208,8 @@ namespace crs.window.ViewModels
 
             var viewName = parameter.ProgramType switch
             {
-                ProgramType.Evaluation test => Crs_Dialog.EvaluateGamePanel,
-                ProgramType.Rehabilitation training => Crs_Dialog.TrainGamePanel,
+                ProgramType.评估测试 => Crs_Dialog.EvaluateGamePanel,
+                ProgramType.康复训练 => Crs_Dialog.TrainGamePanel,
                 _ => throw new NotImplementedException()
             };
 
@@ -300,7 +300,7 @@ namespace crs.window.ViewModels
             // Query the database
             switch (scheduleTypeSelectedItem.Value)
             {
-                case ScheduleType.Schedule today:
+                case ScheduleType.今日排班:
                     {
                         calendarPage = null;
 
@@ -373,7 +373,7 @@ namespace crs.window.ViewModels
                         TodayScheduleItems = new ObservableCollection<ScheduleItem>(items);
                     }
                     break;
-                case ScheduleType.Daily shift schedule:
+                case ScheduleType.每日排班:
                     {
                         calendarPage ??= 0;
 

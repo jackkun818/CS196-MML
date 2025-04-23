@@ -48,7 +48,7 @@ namespace crs.dialog.ViewModels
             this.db = db;
 
             var items = Enumerable.Range(1, 11).ToList();
-            subjectItems = new ObservableCollection<SubjectItem>(items.Select(index => new SubjectItem { Name = $"topic{index}", StandardType = EvaluateStandardType.MMSEScale }));
+            subjectItems = new ObservableCollection<SubjectItem>(items.Select(index => new SubjectItem { Name = $"topic{index}", StandardType = EvaluateStandardType.MMSE量表 }));
         }
 
         #region Property

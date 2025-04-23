@@ -7,7 +7,7 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace crs.game.Games
 {
-    public partial class Focus on attention report : Window
+    public partial class Focus_on_attention_report : Window
     {
         private int[] correctAnswers;
         private int[] wrongAnswers;
@@ -23,7 +23,7 @@ namespace crs.game.Games
             public double Accuracy { get; set; } // Add to Accuracy property
         }
 
-        public Focus on attention report(double increase, double decrease, int mt, int tt, bool irt, bool ib, int[] correctAnswers, int[] wrongAnswers, int[] ignoreAnswer)
+        public Focus_on_attention_report(double increase, double decrease, int mt, int tt, bool irt, bool ib, int[] correctAnswers, int[] wrongAnswers, int[] ignoreAnswer)
         {
             InitializeComponent();
             this.correctAnswers = correctAnswers;

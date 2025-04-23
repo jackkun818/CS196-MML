@@ -18,7 +18,7 @@ namespace crs.game.Games
     /// <summary>
     /// Reaction behavior explanation.xaml Interaction logic
     /// </summary>
-    public partial class Explanation of plane recognition capability : BaseUserControl
+    public partial class Explanation_of_plane_recognition_capability : BaseUserControl
     {
         private string[] JudgementPath = new string[]
         {
@@ -154,7 +154,7 @@ namespace crs.game.Games
 
         public Func<string, Task> VoicePlayFunc { get; set; }
 
-        public Explanation of plane recognition capability()
+        public Explanation_of_plane_recognition_capability()
         {
             InitializeComponent();
             max_time = 60;
@@ -195,7 +195,7 @@ namespace crs.game.Games
             left = 1;
             top = 1;
 
-            this.Loaded += Explanation of plane recognition capability_Loaded;
+            this.Loaded += Explanation_of_plane_recognition_capability_Loaded;
             // Capture global key press events, use PreviewKeyDown Capture events earlier
             this.PreviewKeyDown += Window_PreviewKeyDown;
 
@@ -205,7 +205,7 @@ namespace crs.game.Games
 
         }
 
-        private void Explanation of plane recognition capability_Loaded(object sender, RoutedEventArgs e)
+        private void Explanation_of_plane_recognition_capability_Loaded(object sender, RoutedEventArgs e)
         {
             // Ensure key presses and focus behavior when page loads
             Button_2_Click(null, null);

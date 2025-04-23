@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Windows;
@@ -20,7 +19,7 @@ namespace crs.game.Games
     /// <summary>
     /// Explanation of word memory.xaml Interaction logic
     /// </summary>
-    public partial class Explanation of word memory : BaseUserControl
+    public partial class Explanation_of_word_memory : BaseUserControl
     {
         private int NumberOfTextBlocks = 3;//Number of words to pass by
         private List<string> WordList = new List<string> { "This is not", "I", "unnecessary", "Don't remember", "have to", "land", "Double words" };
@@ -36,7 +35,7 @@ namespace crs.game.Games
 
         public Func<string, Task> VoicePlayFunc { get; set; }
 
-        public Explanation of word memory()
+        public Explanation_of_word_memory()
         {
             InitializeComponent();
 
@@ -65,12 +64,12 @@ namespace crs.game.Games
             ErrorImage.Source = new BitmapImage(new Uri(Path.Combine(BaseDirectory, "Error.png"), UriKind.RelativeOrAbsolute));
             TextBlockAnimations = new List<Storyboard>(); // Initialize the animation list
 
-            this.Loaded += Explanation of word memory_Loaded;
+            this.Loaded += Explanation_of_word_memory_Loaded;
 
 
         }
 
-        private void Explanation of word memory_Loaded(object sender, RoutedEventArgs e)
+        private void Explanation_of_word_memory_Loaded(object sender, RoutedEventArgs e)
         {
             // Ensure key presses and focus behavior when page loads
             Button_2_Click(null, null);

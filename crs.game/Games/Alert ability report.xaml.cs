@@ -17,22 +17,22 @@ namespace crs.game.Games
     /// <summary>
     /// Alert ability report.xaml Interaction logic
     /// </summary>
-    public partial class Alert ability report : Window
+    public partial class Alert_ability_report : Window
     {
-        public Alert ability report(double average_time,bool is_beep,int forget)
+        public Alert_ability_report(double average_time,bool is_beep,int forget)
         {
             InitializeComponent();
-            var reportData = new ReportDataAlert ability
+            var reportData = new ReportDataAlert_ability
             {
                 Alarm = is_beep?"There is a warning sound":"No warning tone",
                 Forget = forget,
                 Average_time = average_time,
                 Date = DateTime.Now// Set date
             };
-            dataGrid.ItemsSource = new List<ReportDataAlert ability> { reportData };
+            dataGrid.ItemsSource = new List<ReportDataAlert_ability> { reportData };
         }
     }
-    public class ReportDataAlert ability
+    public class ReportDataAlert_ability
     {
         public DateTime Date { get; set; } // date
         public string Alarm { get; set; } // situation

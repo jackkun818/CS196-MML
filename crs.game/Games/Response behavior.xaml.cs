@@ -18,7 +18,7 @@ using System.Windows.Threading;
 
 namespace crs.game.Games
 {
-    public partial class Response behavior : BaseUserControl
+    public partial class Response_behavior : BaseUserControl
     {
         private readonly string[] imagePaths =
         {
@@ -64,7 +64,7 @@ namespace crs.game.Games
         /// </summary>
         DateTime startTime = new DateTime();
         DateTime endTime = new DateTime();
-        public Response behavior()
+        public Response_behavior()
         {
             InitializeComponent();
 
@@ -616,7 +616,7 @@ namespace crs.game.Games
         }
     }
 
-    public partial class Response behavior : BaseUserControl
+    public partial class Response_behavior : BaseUserControl
     {
         protected override async Task OnInitAsync()
         {
@@ -748,7 +748,7 @@ namespace crs.game.Games
 
         protected override IGameBase OnGetExplanationExample()
         {
-            return new Reaction behavior explanation();
+            return new Reaction_behavior_explanation();
         }
 
         private int GetCorrectNum()

@@ -18,7 +18,7 @@ namespace crs.game.Games
     /// <summary>
     /// Select attention explanation.xaml Interaction logic
     /// </summary>
-    public partial class Select attention explanation : BaseUserControl
+    public partial class Select_attention_explanation : BaseUserControl
     {
         private DispatcherTimer waitTimer;
         private DispatcherTimer timer;
@@ -29,7 +29,7 @@ namespace crs.game.Games
 
         public Func<string, Task> VoicePlayFunc { get; set; }
 
-        public Select attention explanation()
+        public Select_attention_explanation()
         {
             InitializeComponent();
 
@@ -37,12 +37,12 @@ namespace crs.game.Games
             istrue = true;
             
 
-            this.Loaded += Select attention explanation_Loaded;
+            this.Loaded += Select_attention_explanation_Loaded;
 
 
         }
 
-        private void Select attention explanation_Loaded(object sender, RoutedEventArgs e)
+        private void Select_attention_explanation_Loaded(object sender, RoutedEventArgs e)
         {
             // Ensure key presses and focus behavior when page loads
             Button_2_Click(null, null);
@@ -141,7 +141,7 @@ namespace crs.game.Games
             waitTimer.Start(); // Start the timer
         }
 
-        //Add code to bind the keyboardenterKeys and“confirm”Button
+        //Add code to bind the keyboardenterKeys and"confirm"Button
         protected override void OnHostWindow_KeyDown(object sender, System.Windows.Input.KeyEventArgs e)
         {
             // Check whether the key you pressed is the key you specified

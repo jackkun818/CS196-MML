@@ -20,7 +20,7 @@ namespace crs.game.Games
     /// <summary>
     /// Explanation of spatial digital search.xaml Interaction logic
     /// </summary>
-    public partial class Explanation of spatial digital search : BaseUserControl
+    public partial class Explanation_of_spatial_digital_search : BaseUserControl
     {
         private List<int> numbers;
         private int lastClickedNumber;
@@ -29,7 +29,7 @@ namespace crs.game.Games
         public Action GameBeginAction { get; set; }
 
         public Func<string, Task> VoicePlayFunc { get; set; }
-        public Explanation of spatial digital search()
+        public Explanation_of_spatial_digital_search()
         {
             InitializeComponent();
 
@@ -40,12 +40,12 @@ namespace crs.game.Games
             defaultButtonBackground = Brushes.White; // Change place:---》Set the default background color to change gray to white
             InitializeNumberGrid();
 
-            this.Loaded += Explanation of spatial digital search_Loaded;
+            this.Loaded += Explanation_of_spatial_digital_search_Loaded;
 
 
         }
 
-        private void Explanation of spatial digital search_Loaded(object sender, RoutedEventArgs e)
+        private void Explanation_of_spatial_digital_search_Loaded(object sender, RoutedEventArgs e)
         {
             // Ensure key presses and focus behavior when page loads
             Button_2_Click(null, null);
@@ -163,7 +163,7 @@ namespace crs.game.Games
                     if (maxConsecutiveNumber == 5) // Change place---》 modified to five numbers displayed, 4---》5
                     {
                     
-                        FeedbackImage.Source = new BitmapImage(new Uri("./pic/NUQU/right.png", UriKind.Relative)); //Change the place: Change the correct answer to the picture to display, set the correct picture,Bundle“Congratulations on getting right”Replace
+                        FeedbackImage.Source = new BitmapImage(new Uri("./pic/NUQU/right.png", UriKind.Relative)); //Change the place: Change the correct answer to the picture to display, set the correct picture,Bundle"Congratulations on getting right"Replace
                         FeedbackImage.Visibility = Visibility.Visible;
                         OkButton.Visibility = Visibility.Visible;
                         tipblock.Visibility = Visibility.Collapsed;//Change place---》If the answer is correct, please find the text of the number
@@ -174,7 +174,7 @@ namespace crs.game.Games
                     FeedbackImage.Visibility = Visibility.Visible; //Change place---》The correct answer is displayed only if the answer is correct, the correct answer is correct. You can read it herexamlFile, I separate the correct answer and the text box that asks to find the number.
                     clickedButton.Background = Brushes.Black; // Set button background to black
 
-                    FeedbackImage.Source = new BitmapImage(new Uri("./pic/NUQU/error.png", UriKind.Relative)); // Change place: Change the wrong answer to the picture display, set the wrong picture, and“Sorry to answer wrong”Replace
+                    FeedbackImage.Source = new BitmapImage(new Uri("./pic/NUQU/error.png", UriKind.Relative)); // Change place: Change the wrong answer to the picture display, set the wrong picture, and"Sorry to answer wrong"Replace
                     FeedbackImage.Visibility = Visibility.Visible;
 
                     // Waiting for 0.Restore color in 5 seconds

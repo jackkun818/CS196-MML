@@ -27,7 +27,7 @@ namespace crs.game.Games
     /// <summary>
     /// EXO.xaml Interaction logic
     /// </summary>
-    public partial class Search ability 3 explanation : BaseUserControl
+    public partial class Search_ability_3_explanation : BaseUserControl
     {
         private readonly string[][] imagePaths = new string[][]
         {
@@ -137,7 +137,7 @@ namespace crs.game.Games
 
         private int CurrentPage = 1;//Where is the current page
 
-        public Search ability 3 explanation(int TrainMode=3)//Ontology reading training mode can be passed
+        public Search_ability_3_explanation(int TrainMode=3)//Ontology reading training mode can be passed
         {
             InitializeComponent();
 
@@ -1155,7 +1155,7 @@ namespace crs.game.Games
                 RuleAction?.Invoke("Please count the number of times the image object below appears in the image above and enter it on the keyboard on the right");
                 SetupFindCountMode();
             }
-            SetTitleVisibleAction?.Invoke(true);//Bundle“Question Rules”Four words are also displayed
+            SetTitleVisibleAction?.Invoke(true);//Bundle"Question Rules"Four words are also displayed
         }
 
         private void PlayTimer_Tick(object sender, EventArgs e)//Response time limit

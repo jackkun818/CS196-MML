@@ -15,7 +15,7 @@ namespace crs.game.Games
     /// <summary>
     /// Space digital search.xaml Interaction logic
     /// </summary>
-    public partial class Space digital search : BaseUserControl
+    public partial class Space_digital_search : BaseUserControl
     {
         private List<int> numbers;
         private int lastClickedNumber;
@@ -45,7 +45,7 @@ namespace crs.game.Games
 
         }
 
-        public Space digital search()
+        public Space_digital_search()
         {
             InitializeComponent();
             previousTime = TimeSpan.Zero;   // Initial setting to zero
@@ -201,7 +201,7 @@ namespace crs.game.Games
             OnGameEnd();
         }
     }
-    public partial class Space digital search : BaseUserControl
+    public partial class Space_digital_search : BaseUserControl
     {
         protected override async Task OnInitAsync()
         {
@@ -318,7 +318,7 @@ namespace crs.game.Games
 
         protected override IGameBase OnGetExplanationExample()
         {
-            return new Explanation of spatial digital search();
+            return new Explanation_of_spatial_digital_search();
         }
 
         private int GetCorrectNum()

@@ -12,7 +12,7 @@ using System.Windows.Threading;
 
 namespace crs.game.Games
 {
-    public partial class Explanation of logical thinking ability : BaseUserControl
+    public partial class Explanation_of_logical_thinking_ability : BaseUserControl
     {
         private const int MAX_DELAY = 5000; // 5 seconds
         private string imagePath;
@@ -38,7 +38,7 @@ namespace crs.game.Games
         public Action GameBeginAction { get; set; }
         public Func<string, Task> VoicePlayFunc { get; set; }
 
-        public Explanation of logical thinking ability()
+        public Explanation_of_logical_thinking_ability()
         {
             InitializeComponent();
             hardness = 1;
@@ -66,14 +66,14 @@ namespace crs.game.Games
             }
             else
             {
-                MessageBox.Show("No name found“Logical thinking ability”folder.", "mistake", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("No name found"Logical thinking ability"folder.", "mistake", MessageBoxButton.OK, MessageBoxImage.Error);
                 this.Close();
             }
 
-            this.Loaded += Explanation of logical thinking ability_Loaded;
+            this.Loaded += Explanation_of_logical_thinking_ability_Loaded;
         }
 
-        private void Explanation of logical thinking ability_Loaded(object sender, RoutedEventArgs e)
+        private void Explanation_of_logical_thinking_ability_Loaded(object sender, RoutedEventArgs e)
         {
             Button_2_Click(null, null);
         }

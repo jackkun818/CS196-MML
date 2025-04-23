@@ -84,9 +84,9 @@ namespace crs.extension.Models
             {
                 ProgramType = program.Eval switch
                 {
-                    true => Crs_Enum.ProgramType.Evaluation test,
-                    false => Crs_Enum.ProgramType.Rehabilitation training,
-                    _ => Crs_Enum.ProgramType.Rehabilitation training
+                    true => Crs_Enum.ProgramType.评估测试,
+                    false => Crs_Enum.ProgramType.康复训练,
+                    _ => Crs_Enum.ProgramType.康复训练
                 };
             }
 
@@ -98,7 +98,7 @@ namespace crs.extension.Models
                 {
                     if (modules.FirstOrDefault(m => m.Name?.Trim() == "MoCA") != null && modules.FirstOrDefault(m => m.Name?.Trim() == "MMSE") != null)
                     {
-                        ProgramContent = EvaluateTestMode.Standard evaluation.ToString();
+                        ProgramContent = EvaluateTestMode.标准评估.ToString();
                     }
                     else
                     {

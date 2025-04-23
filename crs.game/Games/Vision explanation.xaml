@@ -1,5 +1,5 @@
 ﻿<local:BaseUserControl
-    x:Class="crs.game.Games.Vision explanation"
+    x:Class="crs.game.Games.Vision_explanation"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -243,7 +243,7 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Top"
                     FontSize="40"
-                    Text="When you see the following figure, press“OK”key"
+                    Text="When you see the following figure, press OK key"
                     TextWrapping="Wrap"
                     Visibility="Hidden" />
 

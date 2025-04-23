@@ -28,7 +28,7 @@ namespace crs.game.Games
     /// <summary>
     /// EXO.xaml Interaction logic
     /// </summary>
-    public partial class Search capability 3 : BaseUserControl
+    public partial class Search_capability_3 : BaseUserControl
     {
         private readonly List<List<string>> imagePaths = new List<List<string>>
         {
@@ -138,7 +138,7 @@ namespace crs.game.Games
 
         private int repet_count = 0;
 
-        public Search capability 3()
+        public Search_capability_3()
         {
             InitializeComponent();
             this.Cursor = Cursors.None; // Hide the default cursor
@@ -1243,7 +1243,7 @@ namespace crs.game.Games
 
 
     }
-    public partial class Search capability 3 : BaseUserControl
+    public partial class Search_capability_3 : BaseUserControl
     {
         protected override async Task OnInitAsync()
         {
@@ -1394,7 +1394,7 @@ namespace crs.game.Games
 
         protected override IGameBase OnGetExplanationExample()
         {//Because I gave the body firstinitSo at this timetrain_modeThe value has been read and can be passed
-            return new Search ability 3 explanation(train_mode);
+            return new Search_ability_3_explanation(train_mode);
         }
 
 
@@ -1452,7 +1452,7 @@ namespace crs.game.Games
                         var newResult = new Result
                         {
                             ProgramId = program_id, // program_id
-                            Report = "Search capability 3",
+                            Report = "Search_capability_3",
                             Eval = false,
                             Lv = max_hardness, // Current difficulty level
                             ScheduleId = BaseParameter.ScheduleId ?? null// Assumption Schedule_id, can be replaced with the actual value
@@ -1572,7 +1572,7 @@ namespace crs.game.Games
             //                var newResult = new Result
             //                {
             //                    ProgramId = program_id, // program_id
-            //                    Report = "Search capability 2",
+            //                    Report = "Search_capability_3",
             //                    Eval = false,
             //                    Lv = lv, // Current difficulty level
             //                    ScheduleId = BaseParameter.ScheduleId ?? null// Assumption Schedule_id, can be replaced with the actual value
@@ -1660,7 +1660,7 @@ namespace crs.game.Games
 
     }
 
-    public partial class Search capability 3
+    public partial class Search_capability_3
     {
         /*
          JsonFile reading

@@ -19,12 +19,12 @@ namespace crs.game.Games
     /// <summary>
     /// Select Attention Report.xaml Interaction logic
     /// </summary>
-    public partial class Select Attention Report : Window
+    public partial class Select_Attention_Report : Window
     {
-        public Select Attention Report(double average_time,int correct,int wrong,int forget)
+        public Select_Attention_Report(double average_time,int correct,int wrong,int forget)
         {
             InitializeComponent();
-            var reportData = new ReportDataSelect attention
+            var reportData = new ReportDataSelect_attention
             {
                 CorrectCount = correct,
                 IncorrectCount = wrong,
@@ -32,9 +32,9 @@ namespace crs.game.Games
                 ForgetCount = forget,
                 Date = DateTime.Now// Set date
             };
-            dataGrid.ItemsSource = new List<ReportDataSelect attention> { reportData };
+            dataGrid.ItemsSource = new List<ReportDataSelect_attention> { reportData };
         }
-        public class ReportDataSelect attention
+        public class ReportDataSelect_attention
         {
             public DateTime Date { get; set; } // date
             public int CorrectCount { get; set; } 

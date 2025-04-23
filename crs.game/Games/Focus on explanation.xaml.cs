@@ -18,11 +18,11 @@ namespace crs.game.Games
     /// <summary>
     /// Focus on explanation.xaml Interaction logic
     /// </summary>
-    public partial class Focus on explanation : BaseUserControl
+    public partial class Focus_on_explanation : BaseUserControl
     {
         private int left = 1;
 
-        public Focus on explanation()
+        public Focus_on_explanation()
         {
             InitializeComponent();
             TipBlock.Text = null;// "Please find the same picture as the right one from the three pictures on the left, through←→Press the key to control the movement of the selected box. After the selected box is moved to the target picture, pressenterkey.";
@@ -34,10 +34,10 @@ namespace crs.game.Games
             Image6.Source = new BitmapImage(new Uri("Focus on attention/1/2.png", UriKind.Relative));
             TargetImage.Source = new BitmapImage(new Uri("Focus on attention/1/3.png", UriKind.Relative));
 
-            this.Loaded += Focus on explanation_Loaded;
+            this.Loaded += Focus_on_explanation_Loaded;
         }
 
-        private void Focus on explanation_Loaded(object sender, RoutedEventArgs e)
+        private void Focus_on_explanation_Loaded(object sender, RoutedEventArgs e)
         {
             nextButton_Click(null, null);
         }

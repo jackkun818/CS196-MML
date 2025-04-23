@@ -18,7 +18,7 @@ namespace crs.game.Games
     /// <summary>
     /// Working memory explanation.xaml Interaction logic
     /// </summary>
-    public partial class Working memory explanation : BaseUserControl
+    public partial class Working_memory_explanation : BaseUserControl
     {
         private readonly string[][] imagePaths = new string[][]
          {
@@ -71,7 +71,7 @@ namespace crs.game.Games
 
         public Func<string, Task> VoicePlayFunc { get; set; }
 
-        public Working memory explanation()
+        public Working_memory_explanation()
         {
             InitializeComponent();
             InitializeGameSettings();
@@ -79,12 +79,12 @@ namespace crs.game.Games
             // Started when the window is loadedmax_timeTimer
             gameTimer.Start();
 
-            this.Loaded += Working memory explanation_Loaded;
+            this.Loaded += Working_memory_explanation_Loaded;
 
 
         }
 
-        private void Working memory explanation_Loaded(object sender, RoutedEventArgs e)
+        private void Working_memory_explanation_Loaded(object sender, RoutedEventArgs e)
         {
             // Ensure key presses and focus behavior when page loads
             Button_2_Click(null, null);

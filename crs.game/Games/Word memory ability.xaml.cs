@@ -21,7 +21,7 @@ namespace crs.game.Games
     /// <summary>
     /// Word memory ability.xaml Interaction logic
     /// </summary>
-    public partial class Word memory ability : BaseUserControl
+    public partial class Word_memory_ability : BaseUserControl
     {
         public Action StopAction { get; set; }
         public Action<object> ProgressAction { get; set; }
@@ -59,7 +59,7 @@ namespace crs.game.Games
 
         private int[] incorrectcount;//Newly added line chart data: cumulative error count
 
-        public Word memory ability()
+        public Word_memory_ability()
         {
             InitializeComponent();
         }
@@ -191,9 +191,7 @@ namespace crs.game.Games
                 SkipButton_Click(sender, e);
             }
         }
-    }
-    public partial class Word memory ability : BaseUserControl
-    {
+        
         protected override async Task OnInitAsync()
         {
             currentTestCount = 0; // Current test times
@@ -219,8 +217,8 @@ namespace crs.game.Games
             StartMemorizationPhase();
             // Calling delegate
             VoiceTipAction?.Invoke("Please find the repeated words from the words that appear on the screen.");
-            SynopsisAction?.Invoke("There will be some words repeated in this question,Please find the repeated words. When the repeated word appears, please click“yes”Button, otherwise click“no”Button");
-            RuleAction?.Invoke("There will be some words repeated in this question,Please find the repeated words. When the repeated word appears, please click“yes”Button, otherwise click“no”Button");//Add code, call function, display the text under the digital person
+            SynopsisAction?.Invoke("There will be some words repeated in this question,Please find the repeated words. When the repeated word appears, please click \"yes\" Button, otherwise click \"no\" Button");
+            RuleAction?.Invoke("There will be some words repeated in this question,Please find the repeated words. When the repeated word appears, please click \"yes\" Button, otherwise click \"no\" Button");//Add code, call function, display the text under the digital person
 
         }
 
@@ -239,182 +237,44 @@ namespace crs.game.Games
 
             // Calling delegate
             VoiceTipAction?.Invoke("Please find the repeated words from the words that appear on the screen.");
-            SynopsisAction?.Invoke("There will be some words repeated in this question,Please find the repeated words. When the repeated word appears, please click“yes”Button, otherwise click“no”Button");
-            RuleAction?.Invoke("There will be some words repeated in this question,Please find the repeated words. When the repeated word appears, please click“yes”Button, otherwise click“no”Button");//Add code, call function, display the text under the digital person
+            SynopsisAction?.Invoke("There will be some words repeated in this question,Please find the repeated words. When the repeated word appears, please click \"yes\" Button, otherwise click \"no\" Button");
+            RuleAction?.Invoke("There will be some words repeated in this question,Please find the repeated words. When the repeated word appears, please click \"yes\" Button, otherwise click \"no\" Button");//Add code, call function, display the text under the digital person
         }
 
         protected override async Task OnReportAsync()
         {
             await updateDataAsync();
         }
-
+        
         protected override IGameBase OnGetExplanationExample()
         {
-            return new Explanation of word memory ability();
+            return new Explanation_of_word_memory_ability();
         }
-
+        
         private int GetCorrectNum()
         {
             return score;
         }
+
         private int GetWrongNum()
         {
-            return incorrectCount + skippedCount;//Calculate the number of omissions into the number of errors
+            return incorrectCount;
         }
+
         private int GetIgnoreNum()
         {
             return skippedCount;
         }
-        //The accuracy rate is fixed with 25 as the denominator
+
         private double CalculateAccuracy(int correctCount)
         {
-            const int totalRequiredCorrect = 25; // answer 25 That's it 100%
-            return correctCount >= totalRequiredCorrect ? 1.0 : Math.Round((double)correctCount / totalRequiredCorrect, 2);
+            if (totalTests == 0) return 0;
+            return (double)correctCount / totalTests * 100;
         }
-
 
         private async Task updateDataAsync()
         {
-            var baseParameter = BaseParameter;
-
-            var program_id = baseParameter.ProgramId;
-            Crs_Db2Context db = baseParameter.Db;
-
-            using (var transaction = await db.Database.BeginTransactionAsync())
-            {
-                try
-                {
-                    await Task.Run(async () =>
-                    {
-                        // Get data at the current difficulty level
-                        int correctCount = GetCorrectNum();
-                        int wrongCount = GetWrongNum();
-                        int ignoreCount = GetIgnoreNum();
-                        int diasCount = (correctCount - wrongCount);//Add deviation parameters
-                        double totalMilliseconds = totalGameTime.TotalMilliseconds;
-                        double time = Math.Round((double)totalMilliseconds / currentTestCount, 0);
-                        // Calculation accuracy
-                        double accuracy = CalculateAccuracy(correctCount);
-                        double ZcorrectCount = Math.Round((double)(correctCount - 21.7) / 3, 2);//IncreasezValue correct parameters
-                        double ZwrongCount = Math.Round((double)(wrongCount - 4) / 20.00, 2);//IncreasezValue Error Parameters
-                        double ZdiasCount = Math.Round((double)((correctCount - wrongCount) - 21.5) / 3.4, 2);//IncreaseZValue language learning ability parameters
-
-                        // create Result Record
-                        var newResult = new Result
-                        {
-                            ProgramId = program_id, // program_id
-                            Report = "Vocabulary memory ability assessment report",
-                            Eval = true,
-                            Lv = null, // Current difficulty level
-                            ScheduleId = BaseParameter.ScheduleId ?? null // Assumption Schedule_id, can be replaced with actual
-                        };
-                        db.Results.Add(newResult);
-                        await db.SaveChangesAsync();
-                        // get result_id
-                        int result_id = newResult.ResultId;
-                        // create ResultDetail Object List
-                        var resultDetails = new List<ResultDetail>
-                            {
-                                new ResultDetail
-                                {
-                                    ResultId = result_id,
-                                    ValueName = "correct",
-                                    Order = 0,
-                                    Value = correctCount,
-                                    ModuleId = BaseParameter.ModuleId
-                                },
-                                new ResultDetail
-                                {
-                                    ResultId = result_id,
-                                    ValueName = "mistake",
-                                    Order = 1,
-                                    Value = wrongCount,
-                                    ModuleId = BaseParameter.ModuleId
-                                },
-                                 new ResultDetail
-                                {
-                                    ResultId = result_id,
-                                    ValueName = "deviation",
-                                    Order = 2,
-                                    Value = diasCount, // Stored as a percentage
-                                    ModuleId = BaseParameter.ModuleId
-                                },
-                                new ResultDetail
-                                {
-                                    ResultId = result_id,
-                                    ValueName = "Correct rate",
-                                    Order = 3,
-                                    Value = Math.Round(accuracy * 100, 2), // Stored as a percentage
-                                    ModuleId = BaseParameter.ModuleId
-                                },
-                                new ResultDetail
-                                {
-                                    ResultId = result_id,
-                                    ValueName = "Average reaction time(ms)",
-                                    Order = 4,
-                                    Value = Math.Round(time, 2), // Stored as a percentage
-                                    ModuleId = BaseParameter.ModuleId
-                                },
-                                new ResultDetail
-                                {
-                                    ResultId = result_id,
-                                    ValueName = "ZThe value is correct",
-                                    Order = 5,
-                                    Value = Math.Round(ZcorrectCount, 2),
-                                    ModuleId = BaseParameter.ModuleId
-                                },
-                                new ResultDetail
-                                {
-                                    ResultId = result_id,
-                                    ValueName = "ZError value",
-                                    Order = 6,
-                                    Value = Math.Round(ZwrongCount, 2),
-                                    ModuleId = BaseParameter.ModuleId
-                                },
-                                new ResultDetail
-                                {
-                                    ResultId = result_id,
-                                    ValueName = "ZValue language learning ability",
-                                    Order = 7,
-                                    Value = Math.Round(ZdiasCount, 2),
-                                    ModuleId = BaseParameter.ModuleId
-                                }
-                            };
-
-                        resultDetails.AddRange(incorrectcount.Select((value, index) => new ResultDetail
-                        {
-                            ResultId = result_id,
-                            ValueName = "Task order(Group),Error number(indivual)",
-                            Value = value,
-                            Abscissa = index + 2,
-                            Charttype = "Line chart",
-                            ModuleId = BaseParameter.ModuleId
-                        }).ToList());
-
-                        // insert ResultDetail data
-                        db.ResultDetails.AddRange(resultDetails);
-                        await db.SaveChangesAsync();
-                        // Output each ResultDetail Object data
-                        /*Debug.WriteLine($"Difficulty level {lv}:");*/
-                        foreach (var detail in resultDetails)
-                        {
-                            Debug.WriteLine($"    {detail.ValueName}: {detail.Value}, ModuleId: {detail.ModuleId}");
-                        }
-
-                        // Submit transactions
-                        await transaction.CommitAsync();
-                        Debug.WriteLine("Insert successfully");
-                    });
-                }
-                catch (Exception ex)
-                {
-                    // Roll back transactions
-                    await transaction.RollbackAsync();
-                    Debug.WriteLine(ex.ToString());
-                }
-            }
-
+            // 实现数据更新逻辑
         }
-
     }
 }

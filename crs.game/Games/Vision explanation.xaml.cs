@@ -20,9 +20,9 @@ namespace crs.game.Games
     /// <summary>
     /// Vision explanation.xaml Interaction logic
     /// </summary>
-    public partial class Vision explanation : BaseUserControl
+    public partial class Vision_explanation : BaseUserControl
     {
-        public Vision explanation()
+        public Vision_explanation()
         {
             InitializeComponent();
 
@@ -34,12 +34,12 @@ namespace crs.game.Games
             CorrectImage.Source = new BitmapImage(new Uri(System.IO.Path.Combine(BaseDirectory, ResourcesPath, "Effects", "Correct.png"), UriKind.RelativeOrAbsolute));
             ErrorImage.Source = new BitmapImage(new Uri(System.IO.Path.Combine(BaseDirectory, ResourcesPath, "Effects", "Error.png"), UriKind.RelativeOrAbsolute));
 
-            this.Loaded += Vision explanation_Loaded;
+            this.Loaded += Vision_explanation_Loaded;
 
 
         }
 
-        private void Vision explanation_Loaded(object sender, RoutedEventArgs e)
+        private void Vision_explanation_Loaded(object sender, RoutedEventArgs e)
         {
             Button_2_Click(null, null);
         }
@@ -823,7 +823,7 @@ namespace crs.game.Games
                         this.Focus();
                         //LJN, instructing the delegate in the explanation module
                         SetTitleVisibleAction?.Invoke(true);
-                        RuleAction?.Invoke("Now you will first see an orange center on the screen. When the center of the circle is connected or overlapped, please press“OK”Please do not react in the rest of the situation.");//Add code, call function, display the text under the digital person
+                        RuleAction?.Invoke("Now you will first see an orange center on the screen. When the center of the circle is connected or overlapped, please press"OK"Please do not react in the rest of the situation.");//Add code, call function, display the text under the digital person
                         //LJN
 
                     }

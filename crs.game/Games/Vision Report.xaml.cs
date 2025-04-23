@@ -12,16 +12,16 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using static crs.game.Games.Logical reasoning ability report;
+using static crs.game.Games.Logical_reasoning_ability_report;
 
 namespace crs.game.Games
 {
     /// <summary>
     /// Vision Report.xaml Interaction logic
     /// </summary>
-    public partial class Vision Report : Window
+    public partial class Vision_Report : Window
     {
-        public Vision Report(double average_time,int correct,int wrong,int forget)
+        public Vision_Report(double average_time,int correct,int wrong,int forget)
         {
             InitializeComponent();
             var reportData = new ReportDataVision

@@ -127,10 +127,10 @@ namespace crs.window.ViewModels
 
             var viewName = (selectedItem.Item1, parameter.Mode) switch
             {
-                (ReportType.Evaluation report, "MoCA") => Crs_Dialog.MocaReport,
-                (ReportType.Evaluation report, "MMSE") => Crs_Dialog.MmseReport,
-                (ReportType.Evaluation report, _) => Crs_Dialog.EvaluateReport,
-                (ReportType.Training Report, _) => Crs_Dialog.TrainReport,
+                (ReportType.评估报告, "MoCA") => Crs_Dialog.MocaReport,
+                (ReportType.评估报告, "MMSE") => Crs_Dialog.MmseReport,
+                (ReportType.评估报告, _) => Crs_Dialog.EvaluateReport,
+                (ReportType.训练报告, _) => Crs_Dialog.TrainReport,
                 _ => throw new NotImplementedException()
             };
 
@@ -180,8 +180,8 @@ namespace crs.window.ViewModels
 
                 var programQueryable = selectedItem.Item1 switch
                 {
-                    ReportType.Evaluation report => db.Programs.AsNoTracking().Where(m => m.PatientId == patientId && m.Eval == true),
-                    ReportType.Training Report => db.Programs.AsNoTracking().Where(m => m.PatientId == patientId && (m.Eval == null || m.Eval == false)),
+                    ReportType.评估报告 => db.Programs.AsNoTracking().Where(m => m.PatientId == patientId && m.Eval == true),
+                    ReportType.训练报告 => db.Programs.AsNoTracking().Where(m => m.PatientId == patientId && (m.Eval == null || m.Eval == false)),
                     _ => throw new NotImplementedException()
                 };
 

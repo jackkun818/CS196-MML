@@ -18,17 +18,17 @@ namespace crs.game.Games
     /// <summary>
     /// Space digital search report.xaml Interaction logic
     /// </summary>
-    public partial class Space digital search report : Window
+    public partial class Space_digital_search_report : Window
     {
-        public Space digital search report(int incorrectCount, double[] timesInterval)
+        public Space_digital_search_report(int incorrectCount, double[] timesInterval)
         {
             InitializeComponent();
-            var reportData = new ReportDataSpace digital search
+            var reportData = new ReportDataSpace_digital_search
             {
                 IncorrectCount = incorrectCount,
                 Date = DateTime.Now// Set date
             };
-            dataGrid.ItemsSource = new List<ReportDataSpace digital search> { reportData };
+            dataGrid.ItemsSource = new List<ReportDataSpace_digital_search> { reportData };
             int itemsToDisplay = Math.Min(24, timesInterval.Length);
 
             for (int i = 0; i < itemsToDisplay; i++)
@@ -46,7 +46,7 @@ namespace crs.game.Games
                 timesIntervalGrid.Children.Add(textBlock);
             }
         }
-        public class ReportDataSpace digital search
+        public class ReportDataSpace_digital_search
         {
             public DateTime Date { get; set; } // date
             public int IncorrectCount { get; set; }

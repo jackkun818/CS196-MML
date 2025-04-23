@@ -507,8 +507,8 @@ namespace crs.dialog.ViewModels
             {
                 var items = selectedItem.StandardType switch
                 {
-                    EvaluateStandardType.MoCAScale => Enumerable.Range(1, 11).ToList(),
-                    EvaluateStandardType.MMSEScale => Enumerable.Range(1, 11).ToList(),
+                    EvaluateStandardType.MoCA量表 => Enumerable.Range(1, 11).ToList(),
+                    EvaluateStandardType.MMSE量表 => Enumerable.Range(1, 11).ToList(),
                     _ => throw new NotImplementedException()
                 };
 
@@ -570,8 +570,8 @@ namespace crs.dialog.ViewModels
             {
                 var type = m switch
                 {
-                    EvaluateStandardType.MoCAScale => "MoCA",
-                    EvaluateStandardType.MMSEScale => "MMSE",
+                    EvaluateStandardType.MoCA量表 => "MoCA",
+                    EvaluateStandardType.MMSE量表 => "MMSE",
                     _ => null
                 };
 

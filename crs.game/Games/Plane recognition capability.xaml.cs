@@ -29,7 +29,7 @@ namespace crs.game.Games
     /// <summary>
     /// VOR.xaml Interaction logic
     /// </summary>
-    public partial class Plane recognition capability : BaseUserControl
+    public partial class Plane_recognition_capability : BaseUserControl
     {
         private string[] JudgementPath = new string[]
         {
@@ -180,7 +180,7 @@ new string[]
         private bool is_game = true;
         private bool is_auto = true; // Whether it jumps automatically
         private bool is_enter = false;
-        public Plane recognition capability()
+        public Plane_recognition_capability()
         {
             InitializeComponent();
         }
@@ -571,7 +571,7 @@ new string[]
 
 
     }
-    public partial class Plane recognition capability : BaseUserControl
+    public partial class Plane_recognition_capability : BaseUserControl
     {
 
         protected override async Task OnInitAsync()

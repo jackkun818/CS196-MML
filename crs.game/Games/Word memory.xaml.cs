@@ -24,7 +24,7 @@ namespace crs.game.Games
     /// <summary>
     /// Word memory.xaml Interaction logic
     /// </summary>
-    public partial class Word memory : BaseUserControl
+    public partial class Word_memory : BaseUserControl
     {
         /*
          * Store game parameters, requiredcoderModify, or read and write from the database
@@ -500,7 +500,7 @@ namespace crs.game.Games
         private void ParameterSet()
         {//This is after the parameter modification, manually synchronize to the game settings to ensure that the modification takes effect
             switch (TrainingMode)
-            {// Only when mixed vocabulary is selected, you need to change the vocabulary difficulty in real time according to the difficulty table. If you don’t need any other situations, you can fix it.
+            {// Only when mixed vocabulary is selected, you need to change the vocabulary difficulty in real time according to the difficulty table. If you don't need any other situations, you can fix it.
                 case 1: TrainingMode = 1; break;
                 case 2: TrainingMode = 2; break;
                 case 3: TrainingMode = 3; break;
@@ -893,9 +893,9 @@ namespace crs.game.Games
 
     }
 
-    public partial class Word memory : BaseUserControl
+    public partial class Word_memory : BaseUserControl
     {
-        public Word memory()
+        public Word_memory()
         {
             InitializeComponent();
         }

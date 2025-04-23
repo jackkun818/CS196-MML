@@ -77,7 +77,7 @@ namespace crs.window
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
-            LiveCharts.Configure(config => config.HasGlobalSKTypeface(SKFontManager.Default.MatchCharacter('Chinese')));
+            LiveCharts.Configure(config => config.HasGlobalSKTypeface(SKFontManager.Default.MatchCharacter('汉')));
         }
 
         protected override Window CreateShell()

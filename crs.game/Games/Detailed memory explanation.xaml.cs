@@ -21,11 +21,11 @@ namespace crs.game.Games
     /// <summary>
     /// Detailed memory explanation.xaml Interaction logic
     /// </summary>
-    public partial class Detailed memory explanation : BaseUserControl
+    public partial class Detailed_memory_explanation : BaseUserControl
     {
 
 
-        public Detailed memory explanation()
+        public Detailed_memory_explanation()
         {
             InitializeComponent();
 
@@ -39,10 +39,10 @@ namespace crs.game.Games
             NextRound();
 
 
-            this.Loaded += Detailed memory explanation_Loaded;
+            this.Loaded += Detailed_memory_explanation_Loaded;
         }
 
-        private void Detailed memory explanation_Loaded(object sender, RoutedEventArgs e)
+        private void Detailed_memory_explanation_Loaded(object sender, RoutedEventArgs e)
         {
             Button_2_Click(null, null);
         }

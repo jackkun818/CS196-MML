@@ -29,7 +29,7 @@ namespace crs.game.Games
     /// <summary>
     /// EXO.xaml Interaction logic
     /// </summary>
-    public partial class Search ability 2 explanation : BaseUserControl
+    public partial class Search_ability_2_explanation : BaseUserControl
     {
         private readonly string[][] imagePaths = new string[][]
         {
@@ -107,7 +107,7 @@ namespace crs.game.Games
 
         private int CurrentPage = 1;//Used to indicate which page is currently, and the corresponding components need to be displayed and hidden
         private bool IsCorrect = false;//Used to determine whether the user has answered this question correctly
-        public Search ability 2 explanation()
+        public Search_ability_2_explanation()
         {
             InitializeComponent();
             //The explanation is different from the ontology, so I have to write it here
@@ -806,7 +806,7 @@ namespace crs.game.Games
 
 
     }
-    public partial class Search ability 2 explanation : BaseUserControl
+    public partial class Search_ability_2_explanation : BaseUserControl
     {
         protected override async Task OnInitAsync()
         {
@@ -941,7 +941,7 @@ namespace crs.game.Games
 
         protected override IGameBase OnGetExplanationExample()
         {
-            return new Search ability 2 explanation();
+            return new Search_ability_2_explanation();
         }
 
         // Insert writing

@@ -18,7 +18,7 @@ namespace crs.game.Games
     /// <summary>
     /// Explanation of visual repair training.xaml Interaction logic
     /// </summary>
-    public partial class Explanation of visual repair training : BaseUserControl
+    public partial class Explanation_of_visual_repair_training : BaseUserControl
     {
         private Polygon _triangle;
         private Rectangle _whiteSquare;
@@ -41,18 +41,18 @@ namespace crs.game.Games
 
         public Func<string, Task> VoicePlayFunc { get; set; }
 
-        public Explanation of visual repair training()
+        public Explanation_of_visual_repair_training()
         {
             InitializeComponent();
 
 
 
-            this.Loaded += Explanation of visual repair training_Loaded;
+            this.Loaded += Explanation_of_visual_repair_training_Loaded;
             Focus();
 
         }
 
-        private void Explanation of visual repair training_Loaded(object sender, RoutedEventArgs e)
+        private void Explanation_of_visual_repair_training_Loaded(object sender, RoutedEventArgs e)
         {
             // Ensure key presses and focus behavior when page loads
             Button_2_Click(null, null);

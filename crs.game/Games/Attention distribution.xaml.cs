@@ -29,9 +29,9 @@ using Point = System.Windows.Point;
 
 namespace crs.game.Games
 {
-    public partial class Attention distribution : BaseUserControl, IGameBase
+    public partial class Attention_distribution : BaseUserControl, IGameBase
     {
-        public Attention distribution()
+        public Attention_distribution()
         {
             InitializeComponent();
         }
@@ -554,7 +554,7 @@ namespace crs.game.Games
         #endregion
 
     }
-    public partial class Attention distribution : BaseUserControl, IGameBase
+    public partial class Attention_distribution : BaseUserControl, IGameBase
     {
 
 
@@ -876,7 +876,7 @@ namespace crs.game.Games
 
         protected override IGameBase OnGetExplanationExample()
         {
-            return new Attention distribution explanation();
+            return new Attention_distribution_explanation();
         }
 
 

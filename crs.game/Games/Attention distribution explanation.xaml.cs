@@ -25,9 +25,9 @@ namespace crs.game.Games
     /// <summary>
     /// Attention distribution explanation.xaml Interaction logic
     /// </summary>
-    public partial class Attention distribution explanation : BaseUserControl
+    public partial class Attention_distribution_explanation : BaseUserControl
     {
-        public Attention distribution explanation()
+        public Attention_distribution_explanation()
         {
             InitializeComponent();
 
@@ -36,10 +36,10 @@ namespace crs.game.Games
 
 
 
-            this.Loaded += Attention distribution explanation_Loaded;
+            this.Loaded += Attention_distribution_explanation_Loaded;
         }
 
-        private void Attention distribution explanation_Loaded(object sender, RoutedEventArgs e)
+        private void Attention_distribution_explanation_Loaded(object sender, RoutedEventArgs e)
         {
             Button_2_Click(null, null);
         }

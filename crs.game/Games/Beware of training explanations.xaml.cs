@@ -31,7 +31,7 @@ namespace crs.game.Games
     /// <summary>
     /// VIG.xaml Interaction logic
     /// </summary>
-    public partial class Beware of training explanations : BaseUserControl
+    public partial class Beware_of_training_explanations : BaseUserControl
     {
         //Game parameters that need to be read from the database
         private int Level = 3;//Current game level, 1-9
@@ -108,7 +108,7 @@ namespace crs.game.Games
 
         private bool IfTryClicked = false;
 
-        public Beware of training explanations()
+        public Beware_of_training_explanations()
         {
             InitializeComponent();
             //The first thing I entered is the trial explanation part
@@ -720,7 +720,7 @@ namespace crs.game.Games
             image.Visibility = Visibility.Collapsed;
         }
     }
-    public partial class Beware of training explanations : BaseUserControl
+    public partial class Beware_of_training_explanations : BaseUserControl
     {
         private void LastStep_Click(object sender, RoutedEventArgs e)
         {

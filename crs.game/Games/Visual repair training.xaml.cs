@@ -24,7 +24,7 @@ namespace crs.game.Games
     /// <summary>
     /// Visual repair training.xaml Interaction logic
     /// </summary>
-    public partial class Visual repair training : BaseUserControl
+    public partial class Visual_repair_training : BaseUserControl
     {   // Parameters to be uploaded to the report
         private int totalShapeChanges = 0; // The number of times the fixed point in the center of the screen changes
         private int successfulFocusPresses = 0; // The number of times the patient successfully responds to changes in the center of the screen
@@ -512,7 +512,7 @@ namespace crs.game.Games
             image.Visibility = Visibility.Collapsed;
         }
     }
-    public partial class Visual repair training : BaseUserControl
+    public partial class Visual_repair_training : BaseUserControl
     {
         protected override async Task OnInitAsync()
         {

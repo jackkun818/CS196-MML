@@ -19,7 +19,7 @@ namespace crs.game.Games
     /// <summary>
     /// Reaction behavior explanation.xaml Interaction logic
     /// </summary>
-    public partial class Reaction behavior explanation : BaseUserControl
+    public partial class Reaction_behavior_explanation : BaseUserControl
     {
         private DispatcherTimer timer;
 
@@ -27,7 +27,7 @@ namespace crs.game.Games
 
         public Func<string, Task> VoicePlayFunc { get; set; }
 
-        public Reaction behavior explanation()
+        public Reaction_behavior_explanation()
         {
             InitializeComponent();
             TipBlock.Text = null;// "Please press the corresponding button after the picture appears on the left according to the prompt.";
@@ -39,7 +39,7 @@ namespace crs.game.Games
             timer.Interval = TimeSpan.FromSeconds(2);  // Timer set to 2 seconds
             timer.Tick += Timer_Tick;  // Bind timer event
 
-            this.Loaded += Reaction behavior explanation_Loaded;
+            this.Loaded += Reaction_behavior_explanation_Loaded;
 
             // Capture global key press events, use PreviewKeyDown Capture events earlier
             this.PreviewKeyDown += Window_PreviewKeyDown;
@@ -49,7 +49,7 @@ namespace crs.game.Games
             this.Focus();  // Force focus to the current window
         }
 
-        private void Reaction behavior explanation_Loaded(object sender, RoutedEventArgs e)
+        private void Reaction_behavior_explanation_Loaded(object sender, RoutedEventArgs e)
         {
             // Ensure key presses and focus behavior when page loads
             Button_2_Click(null, null);

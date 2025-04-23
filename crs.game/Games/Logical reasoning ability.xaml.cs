@@ -17,7 +17,7 @@ namespace crs.game.Games
     /// <summary>
     /// Logical reasoning ability.xaml Interaction logic
     /// </summary>
-    public partial class Logical reasoning ability : BaseUserControl
+    public partial class Logical_reasoning_ability : BaseUserControl
     {
         private string imagePath; // Store the found folder path
         private const int MAX_GAME = 10;
@@ -46,7 +46,7 @@ namespace crs.game.Games
 
         }
 
-        public Logical reasoning ability()
+        public Logical_reasoning_ability()
         {
             InitializeComponent();
         }
@@ -79,7 +79,7 @@ namespace crs.game.Games
 
             while (true)
             {
-                // Check if the current directory exists“crs.game”Folders
+                // Check if the current directory exists"crs.game"Folders
                 string targetParentDirectory = Path.Combine(currentDirectory, "crs.game");
                 if (Directory.Exists(targetParentDirectory))
                 {
@@ -289,7 +289,7 @@ namespace crs.game.Games
 
 
     }
-    public partial class Logical reasoning ability : BaseUserControl
+    public partial class Logical_reasoning_ability : BaseUserControl
     {
         protected override async Task OnInitAsync()
         {
@@ -310,7 +310,7 @@ namespace crs.game.Games
             imagePath = FindImagePath();
             if (imagePath == null)
             {
-                MessageBox.Show("No name found“Logical reasoning ability”folder.", "mistake", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("No name found"Logical reasoning ability"folder.", "mistake", MessageBoxButton.OK, MessageBoxImage.Error);
                 OnGameEnd();
             }
             LevelStatisticsAction?.Invoke(0, 0);

@@ -13,14 +13,14 @@ using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Windows.Threading;
-using static crs.game.Games.Graphic memory;
+using static crs.game.Games.Graphic_memory;
 
 namespace crs.game.Games
 {
     /// <summary>
     /// Graphic memory explanation.xaml Interaction logic
     /// </summary>
-    public partial class Graphic memory explanation : BaseUserControl
+    public partial class Graphic_memory_explanation : BaseUserControl
     {
         private readonly string[][] imagePaths = new string[][]
          {
@@ -114,7 +114,7 @@ new string[]
 
         public Func<string, Task> VoicePlayFunc { get; set; }
 
-        public Graphic memory explanation()
+        public Graphic_memory_explanation()
         {
             InitializeComponent();
 
@@ -145,13 +145,13 @@ new string[]
                 // Show text, hide pictures
                 SetTextsVisible();
             }
-            this.Loaded += Graphic memory explanation_Loaded;
+            this.Loaded += Graphic_memory_explanation_Loaded;
 
         
         
         }
 
-        private void Graphic memory explanation_Loaded(object sender, RoutedEventArgs e)
+        private void Graphic_memory_explanation_Loaded(object sender, RoutedEventArgs e)
         {
             Button_2_Click(null, null);
 this.Focus();  

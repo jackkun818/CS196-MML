@@ -19,7 +19,7 @@ namespace crs.game.Games
     /// <summary>
     /// Explanation of vocabulary memory ability.xaml Interaction logic
     /// </summary>
-    public partial class Explanation of word memory ability : BaseUserControl
+    public partial class Explanation_of_word_memory_ability : BaseUserControl
     {
         private int gametime;
         private bool istrue;
@@ -30,16 +30,16 @@ namespace crs.game.Games
 
         public Func<string, Task> VoicePlayFunc { get; set; }
 
-        public Explanation of word memory ability()
+        public Explanation_of_word_memory_ability()
         {
             InitializeComponent();
             gameTimer = new DispatcherTimer();
             gameTimer.Interval = TimeSpan.FromSeconds(4);
             gameTimer.Tick += GameTimer_Tick;
-            this.Loaded += Explanation of vocabulary memory ability_Loaded;                       
+            this.Loaded += Explanation_of_vocabulary_memory_ability_Loaded;                       
         }
 
-        private void Explanation of vocabulary memory ability_Loaded(object sender, RoutedEventArgs e)
+        private void Explanation_of_vocabulary_memory_ability_Loaded(object sender, RoutedEventArgs e)
         {
             // Ensure key presses and focus behavior when page loads
             Button_2_Click(null, null);
@@ -93,7 +93,7 @@ namespace crs.game.Games
             if (gametime==3 && !istrue)
             {
                 
-                FeedbackImage.Source = new BitmapImage(new Uri("./pic/WOMT/error.png", UriKind.Relative)); //Change place: Change the wrong answer to the picture to display, set the wrong picture,Bundle“Sorry to answer wrong”Replace
+                FeedbackImage.Source = new BitmapImage(new Uri("./pic/WOMT/error.png", UriKind.Relative)); //Change place: Change the wrong answer to the picture to display, set the wrong picture,Bundle"Sorry to answer wrong"Replace
                 FeedbackImage.Visibility = Visibility.Visible;
                 OkButton.Visibility = Visibility.Collapsed;
                 anjian1.Visibility=Visibility.Collapsed;
@@ -107,7 +107,7 @@ namespace crs.game.Games
             }
             else if(gametime == 3 && istrue)
             {
-                FeedbackImage.Source = new BitmapImage(new Uri("./pic/WOMT/right.png", UriKind.Relative)); //Change the place: Change the correct answer to the picture to display, set the correct picture,Bundle“Congratulations on getting right”Replace
+                FeedbackImage.Source = new BitmapImage(new Uri("./pic/WOMT/right.png", UriKind.Relative)); //Change the place: Change the correct answer to the picture to display, set the correct picture,Bundle"Congratulations on getting right"Replace
                 FeedbackImage.Visibility = Visibility.Visible;
                 OkButton.Visibility = Visibility.Visible;
                 anjian1.Visibility = Visibility.Collapsed;
@@ -121,12 +121,12 @@ namespace crs.game.Games
             // Check whether the pressed key is a left or right direction key
             if (e.Key == Key.Left)
             {
-                // simulation“yes”Click the button, call Button_Click method
+                // simulation"yes"Click the button, call Button_Click method
                 Button_Click(anjian1, null);  // Simulation click"yes"Button
             }
             else if (e.Key == Key.Right)
             {
-                // simulation“no”Click the button, call Button_Click_1 method
+                // simulation"no"Click the button, call Button_Click_1 method
                 Button_Click_1(anjian2, null);  // Simulation click"no"Button
             }
 
@@ -157,7 +157,7 @@ namespace crs.game.Games
             }
             if (gametime == 3 && istrue)
             {
-                FeedbackImage.Source = new BitmapImage(new Uri("./pic/WOMT/right.png", UriKind.Relative)); //Change the place: Change the correct answer to the picture to display, set the correct picture,Bundle“Congratulations on getting right”Replace
+                FeedbackImage.Source = new BitmapImage(new Uri("./pic/WOMT/right.png", UriKind.Relative)); //Change the place: Change the correct answer to the picture to display, set the correct picture,Bundle"Congratulations on getting right"Replace
                 FeedbackImage.Visibility = Visibility.Visible;
                 OkButton.Visibility = Visibility.Visible;
                 anjian1.Visibility = Visibility.Collapsed;
@@ -165,7 +165,7 @@ namespace crs.game.Games
             }
             else if (gametime == 3 && !istrue)
             {
-                FeedbackImage.Source = new BitmapImage(new Uri("./pic/WOMT/error.png", UriKind.Relative)); //Change place: Change the wrong answer to the picture to display, set the wrong picture,Bundle“Sorry to answer wrong”Replace
+                FeedbackImage.Source = new BitmapImage(new Uri("./pic/WOMT/error.png", UriKind.Relative)); //Change place: Change the wrong answer to the picture to display, set the wrong picture,Bundle"Sorry to answer wrong"Replace
                 FeedbackImage.Visibility = Visibility.Visible;
                 OkButton.Visibility = Visibility.Collapsed;
                 anjian1.Visibility = Visibility.Collapsed;
@@ -248,7 +248,7 @@ namespace crs.game.Games
                         Button_3.Visibility = Visibility.Collapsed;
                         //LJN, instructing the delegate in the explanation module
                         SetTitleVisibleAction?.Invoke(true);
-                        RuleAction?.Invoke("There will be some words repeated on the screen,Please find the repeated words. When the repeated words appear, please click on the screen“yes”Button, otherwise click“no”Button");//Add code, call function, display the text under the digital person
+                        RuleAction?.Invoke("There will be some words repeated on the screen,Please find the repeated words. When the repeated words appear, please click on the screen"yes"Button, otherwise click"no"Button");//Add code, call function, display the text under the digital person
                         
                         //LJN
                         startgame();

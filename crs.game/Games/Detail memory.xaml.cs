@@ -29,10 +29,10 @@ namespace crs.game.Games
     /// <summary>
     /// Detail memory.xaml Interaction logic
     /// </summary>
-    public partial class Detail memory : BaseUserControl
+    public partial class Detail_memory : BaseUserControl
     {
 
-        public Detail memory()
+        public Detail_memory()
         {
             InitializeComponent();
         }
@@ -801,7 +801,7 @@ namespace crs.game.Games
         }
 
     }
-    public partial class Detail memory : BaseUserControl, IGameBase
+    public partial class Detail_memory : BaseUserControl, IGameBase
     {
 
         protected override async Task OnInitAsync()
@@ -1062,7 +1062,7 @@ namespace crs.game.Games
 
         protected override IGameBase OnGetExplanationExample()
         {
-            return new Detailed memory explanation();
+            return new Detailed_memory_explanation();
         }
 
 

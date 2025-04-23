@@ -22,7 +22,7 @@ namespace crs.game.Games
     /// <summary>
     /// Broadness of memory.xaml Interaction logic
     /// </summary>
-    public partial class Broadness of memory : BaseUserControl
+    public partial class Broadness_of_memory : BaseUserControl
     {
 
         /*20241110 New Requirements
@@ -55,7 +55,7 @@ namespace crs.game.Games
         private int IfEverWrong = 0;//Used to record the number of consecutive errors, and end the evaluation directly with two consecutive errors.
         private int[] PositionErrorNums = new int[MAX_BLOCKS - 1];//The position error means that you clicked the memory display blocks to calculate the position error, and the calculation unit is the number of questions.
         private int[] OrrderErrorNums = new int[MAX_BLOCKS - 1];//The order is wrong, the order is that the squares you point are all the squares that he displays the key points, but the order is wrong, the calculation unit is the number of questions
-        public Broadness of memory()
+        public Broadness_of_memory()
         {
             InitializeComponent();
         }
@@ -490,7 +490,7 @@ namespace crs.game.Games
             return maxIndex + 2;
         }
     }
-    public partial class Broadness of memory : BaseUserControl
+    public partial class Broadness_of_memory : BaseUserControl
     {
 
         protected override async Task OnInitAsync()
@@ -596,7 +596,7 @@ namespace crs.game.Games
 
         protected override IGameBase OnGetExplanationExample()
         {
-            return new Explanation of memory breadth();
+            return new Explanation_of_memory_breadth();
         }
 
         private int GetCorrectNum()

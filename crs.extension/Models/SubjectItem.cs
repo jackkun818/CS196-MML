@@ -114,7 +114,7 @@ namespace crs.extension.Models
             {
                 var answerItems = (from childrenItem in ChildrenItems.Where(m => m.IsUse) from answerItem in childrenItem.AnswerItems.Where(m => m.IsUse) select answerItem).ToList();
 
-                if (StandardType == EvaluateStandardType.MoCAScale && (Name == "Question 3" || Name == "Question 10"))
+                if (StandardType == EvaluateStandardType.MoCA量表 && (Name == "Question3" || Name == "题目10"))
                 {
                     AllAnswerCount = answerItems.Count(m => !m.Ignore);
                     RightAnswerCount = answerItems.Count(m => !m.Ignore && m.IsRight);
@@ -122,7 +122,7 @@ namespace crs.extension.Models
                     return;
                 }
 
-                if (StandardType == EvaluateStandardType.MoCAScale && Name == "Question 6")
+                if (StandardType == EvaluateStandardType.MoCA量表 && Name == "Question6")
                 {
                     AllAnswerCount = 3;
                     RightAnswerCount = answerItems.Count(m => m.IsRight) switch
@@ -142,9 +142,9 @@ namespace crs.extension.Models
             }
             finally
             {
-                if ((StandardType == EvaluateStandardType.MoCAScale && Name == "Question 3"))
+                if ((StandardType == EvaluateStandardType.MoCA量表 && Name == "Question 3"))
                 {
-                    Fraction = "No score";
+                    Fraction = "No score.";
                 }
                 else
                 {

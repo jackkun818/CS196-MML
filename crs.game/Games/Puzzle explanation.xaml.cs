@@ -24,14 +24,14 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar;
 
 namespace crs.game.Games
 {
-    public partial class Puzzle explanation : BaseUserControl, IGameBase
+    public partial class Puzzle_explanation : BaseUserControl, IGameBase
     {
-        public Puzzle explanation()
+        public Puzzle_explanation()
         {
             InitializeComponent();
         }
     }
-    public partial class Puzzle explanation : BaseUserControl, IGameBase
+    public partial class Puzzle_explanation : BaseUserControl, IGameBase
     {
         private int CurrentPage = 1;
 

@@ -17,22 +17,22 @@ namespace crs.game.Games
     /// <summary>
     /// Logical reasoning ability report.xaml Interaction logic
     /// </summary>
-    public partial class Logical reasoning ability report : Window
+    public partial class Logical_reasoning_ability_report : Window
     {
-        public Logical reasoning ability report(double average_time,int correctCount,int incorrectCount)
+        public Logical_reasoning_ability_report(double average_time,int correctCount,int incorrectCount)
         {
             InitializeComponent();
 
-            var reportData = new ReportDataLogical reasoning ability
+            var reportData = new ReportDataLogical_reasoning_ability
             {
                 CorrectCount=correctCount,
                 IncorrectCount=incorrectCount,
                 Average_time = average_time,
                 Date = DateTime.Now// Set date
             };
-            dataGrid.ItemsSource = new List<ReportDataLogical reasoning ability> { reportData };
+            dataGrid.ItemsSource = new List<ReportDataLogical_reasoning_ability> { reportData };
         }
-        public class ReportDataLogical reasoning ability
+        public class ReportDataLogical_reasoning_ability
         {
             public DateTime Date { get; set; } // date
             public int CorrectCount { get; set; } 

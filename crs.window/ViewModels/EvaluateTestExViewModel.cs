@@ -251,7 +251,7 @@ namespace crs.window.ViewModels
 
                 if (modules.FirstOrDefault(m => m.Module?.Name?.Trim() == "MoCA") != null && modules.FirstOrDefault(m => m.Module?.Name?.Trim() == "MMSE") != null)
                 {
-                    var modeResult = EvaluateTestMode.Standard evaluation;
+                    var modeResult = EvaluateTestMode.标准评估;
                     var evaluateItem = new EvaluateTestItem { Mode = modeResult };
 
                     items.Add(new ProgramItem<EvaluateTestMode, EvaluateTestItem>
@@ -343,13 +343,13 @@ namespace crs.window.ViewModels
                 return;
             }
 
-            if (items.FirstOrDefault(m => m.Mode == EvaluateTestMode.Standard evaluation) != null && items.FirstOrDefault(m => m.Mode != EvaluateTestMode.Standard evaluation) != null)
+            if (items.FirstOrDefault(m => m.Mode == EvaluateTestMode.标准评估) != null && items.FirstOrDefault(m => m.Mode != EvaluateTestMode.标准评估) != null)
             {
                 await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync($"model“Standard evaluation”It should not be mixed with other modes");
                 return;
             }
 
-            if (items.FirstOrDefault(m => m.Mode == EvaluateTestMode.Standard evaluation) != null)
+            if (items.FirstOrDefault(m => m.Mode == EvaluateTestMode.标准评估) != null)
             {
                 var programId = items.FirstOrDefault().Data?.ProgramId ?? -1;
                 var (status, msg, program) = await SaveProgramInfo(items.ToList(), programId);
@@ -436,7 +436,7 @@ namespace crs.window.ViewModels
                 return;
             }
 
-            if (items.FirstOrDefault(m => m.Mode == EvaluateTestMode.Standard evaluation) != null && items.FirstOrDefault(m => m.Mode != EvaluateTestMode.Standard evaluation) != null)
+            if (items.FirstOrDefault(m => m.Mode == EvaluateTestMode.标准评估) != null && items.FirstOrDefault(m => m.Mode != EvaluateTestMode.标准评估) != null)
             {
                 await Crs_DialogEx.MessageBoxShow().GetMessageBoxResultAsync($"model“Standard evaluation”It should not be mixed with other modes");
                 return;
@@ -478,7 +478,7 @@ namespace crs.window.ViewModels
 
                 (bool status, List<Module> modules) result_MoCA_MMSE = default;
 
-                if (items.FirstOrDefault(m => m.Mode == EvaluateTestMode.Standard evaluation) != null)
+                if (items.FirstOrDefault(m => m.Mode == EvaluateTestMode.标准评估) != null)
                 {
                     var modules = await db.Modules.AsNoTracking().Where(m => m.Type == "eval").ToListAsync();
                     if (modules.FirstOrDefault(m => m.Name?.Trim() == "MoCA") == null)
@@ -618,7 +618,7 @@ namespace crs.window.ViewModels
                     return null;
                 }).Where(m => m != null).ToList();
 
-                items.Insert(0, new EvaluateTestItem { Mode = EvaluateTestMode.Standard evaluation });
+                items.Insert(0, new EvaluateTestItem { Mode = EvaluateTestMode.标准评估 });
                 EvaluateModuleItems = new ObservableCollection<EvaluateTestItem>(items);
             }
 

@@ -24,14 +24,14 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar;
 
 namespace crs.game.Games
 {
-    public partial class Explanation of killing mosquitoes : BaseUserControl, IGameBase
+    public partial class Explanation_of_killing_mosquitoes : BaseUserControl, IGameBase
     {
-        public Explanation of killing mosquitoes()
+        public Explanation_of_killing_mosquitoes()
         {
             InitializeComponent();
         }
     }
-    public partial class Explanation of killing mosquitoes : BaseUserControl, IGameBase
+    public partial class Explanation_of_killing_mosquitoes : BaseUserControl, IGameBase
     {
         private int CurrentPage = 1;
 

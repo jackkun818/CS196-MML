@@ -1,4 +1,4 @@
-﻿<local:BaseUserControl x:Class="crs.game.Games.Explanation of spatial digital search"
+﻿<local:BaseUserControl x:Class="crs.game.Games.Explanation_of_spatial_digital_search"
                        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"

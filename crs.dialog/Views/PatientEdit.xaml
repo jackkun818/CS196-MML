@@ -32,7 +32,7 @@
                         Command="{Binding CancelCommand}"
                         DockPanel.Dock="Top">
                     <Button.Background>
-                        <ImageBrush ImageSource="{StaticResource crs_return}" />
+                        <ImageBrush ImageSource="{StaticResource crs_返回}" />
                     </Button.Background>
                 </Button>
                 <Border Width="310"
@@ -48,10 +48,10 @@
                                    FontWeight="Bold">
                             <TextBlock.Style>
                                 <Style TargetType="TextBlock">
-                                    <Setter Property="Text" Value="Modify the user" />
+                                    <Setter Property="Text" Value="修改用户" />
                                     <Style.Triggers>
                                         <DataTrigger Binding="{Binding PatientItem}" Value="{x:Null}">
-                                            <Setter Property="Text" Value="Create a new user" />
+                                            <Setter Property="Text" Value="新建用户" />
                                         </DataTrigger>
                                     </Style.Triggers>
                                 </Style>
@@ -68,10 +68,10 @@
                                     <Style TargetType="Image">
                                         <Style.Triggers>
                                             <DataTrigger Binding="{Binding SexMan}" Value="True">
-                                                <Setter Property="Source" Value="{StaticResource crs_Boys avatar}" />
+                                                <Setter Property="Source" Value="{StaticResource crs_男生头像}" />
                                             </DataTrigger>
                                             <DataTrigger Binding="{Binding SexWoman}" Value="True">
-                                                <Setter Property="Source" Value="{StaticResource crs_Girls' avatar}" />
+                                                <Setter Property="Source" Value="{StaticResource crs_女生头像}" />
                                             </DataTrigger>
                                         </Style.Triggers>
                                     </Style>
@@ -89,10 +89,10 @@
                                 Foreground="White">
                             <Button.Style>
                                 <Style BasedOn="{StaticResource ButtonBaseStyle}" TargetType="Button">
-                                    <Setter Property="Content" Value="Revise" />
+                                    <Setter Property="Content" Value="修改" />
                                     <Style.Triggers>
                                         <DataTrigger Binding="{Binding PatientItem}" Value="{x:Null}">
-                                            <Setter Property="Content" Value="create" />
+                                            <Setter Property="Content" Value="创建" />
                                         </DataTrigger>
                                     </Style.Triggers>
                                 </Style>
@@ -105,7 +105,7 @@
                     <DockPanel Height="327"
                                Margin="70,20,0,0"
                                DockPanel.Dock="Bottom">
-                        <TextBlock>Remark</TextBlock>
+                        <TextBlock>备注</TextBlock>
                         <hc:TextBox Margin="60,0,0,0"
                                     Padding="20,0"
                                     hc:InfoElement.ShowClearButton="True"
@@ -118,19 +118,19 @@
                                  Rows="4">
                         <DockPanel Margin="70,0,0,0">
                             <TextBlock VerticalAlignment="Center" Foreground="{StaticResource crs_SolidColorBrush.FF5252}">*</TextBlock>
-                            <TextBlock VerticalAlignment="Center">Name</TextBlock>
+                            <TextBlock VerticalAlignment="Center">姓名</TextBlock>
                             <hc:TextBox Width="398"
                                         Height="69"
                                         Padding="20,0"
                                         HorizontalAlignment="Right"
-                                        hc:InfoElement.Placeholder="Please enter your real name"
+                                        hc:InfoElement.Placeholder="请输入您的真实姓名"
                                         hc:InfoElement.ShowClearButton="True"
                                         Background="{StaticResource crs_SolidColorBrush.EFEFEF}"
                                         Text="{Binding Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
                         </DockPanel>
                         <DockPanel Margin="70,0,0,0">
                             <TextBlock VerticalAlignment="Center" Foreground="{StaticResource crs_SolidColorBrush.FF5252}">*</TextBlock>
-                            <TextBlock VerticalAlignment="Center">gender</TextBlock>
+                            <TextBlock VerticalAlignment="Center">性别</TextBlock>
                             <UniformGrid Width="398"
                                          Height="69"
                                          HorizontalAlignment="Right"
@@ -177,42 +177,42 @@
                                              GroupName="Sex"
                                              IsChecked="{Binding SexMan, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
                                     <StackPanel Orientation="Horizontal">
-                                        <TextBlock VerticalAlignment="Center">male</TextBlock>
+                                        <TextBlock VerticalAlignment="Center">男</TextBlock>
                                         <Image Width="21"
                                                Height="21"
                                                Margin="10,0,0,0"
                                                VerticalAlignment="Center"
-                                               Source="{StaticResource crs_male}" />
+                                               Source="{StaticResource crs_男}" />
                                     </StackPanel>
                                 </RadioButton>
                                 <RadioButton Margin="15,0,0,0"
                                              GroupName="Sex"
                                              IsChecked="{Binding SexWoman, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
                                     <StackPanel Orientation="Horizontal">
-                                        <TextBlock VerticalAlignment="Center">female</TextBlock>
+                                        <TextBlock VerticalAlignment="Center">女</TextBlock>
                                         <Image Width="21"
                                                Height="21"
                                                Margin="10,0,0,0"
                                                VerticalAlignment="Center"
-                                               Source="{StaticResource crs_female}" />
+                                               Source="{StaticResource crs_女}" />
                                     </StackPanel>
                                 </RadioButton>
                             </UniformGrid>
                         </DockPanel>
                         <DockPanel Margin="70,0,0,0">
                             <TextBlock VerticalAlignment="Center" Foreground="{StaticResource crs_SolidColorBrush.FF5252}">*</TextBlock>
-                            <TextBlock VerticalAlignment="Center">age</TextBlock>
+                            <TextBlock VerticalAlignment="Center">年龄</TextBlock>
                             <hc:TextBox Width="398"
                                         Height="69"
                                         Padding="20,0"
                                         HorizontalAlignment="Right"
-                                        hc:InfoElement.Placeholder="Please enter your real age"
+                                        hc:InfoElement.Placeholder="请输入您的真实年龄"
                                         hc:InfoElement.ShowClearButton="True"
                                         Background="{StaticResource crs_SolidColorBrush.EFEFEF}"
                                         Text="{Binding Age, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
                         </DockPanel>
                         <DockPanel Margin="70,0,0,0">
-                            <TextBlock VerticalAlignment="Center">Hometown</TextBlock>
+                            <TextBlock VerticalAlignment="Center">籍贯</TextBlock>
                             <hc:TextBox Width="398"
                                         Height="69"
                                         Padding="20,0"
@@ -223,7 +223,7 @@
                                         Text="{Binding Province, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
                         </DockPanel>
                         <DockPanel Margin="70,0,0,0">
-                            <TextBlock VerticalAlignment="Center">&#160;&#160;Profession</TextBlock>
+                            <TextBlock VerticalAlignment="Center">&#160;&#160;职业</TextBlock>
                             <hc:TextBox Width="398"
                                         Height="69"
                                         Padding="20,0"
@@ -234,7 +234,7 @@
                                         Text="{Binding Career, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
                         </DockPanel>
                         <DockPanel Margin="70,0,0,0">
-                            <TextBlock VerticalAlignment="Center">Phone number</TextBlock>
+                            <TextBlock VerticalAlignment="Center">手机号</TextBlock>
                             <hc:TextBox Width="355"
                                         Height="69"
                                         Padding="20,0"
@@ -245,7 +245,7 @@
                                         Text="{Binding PhoneNumber, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
                         </DockPanel>
                         <DockPanel Margin="70,0,0,0">
-                            <TextBlock VerticalAlignment="Center">Admission date</TextBlock>
+                            <TextBlock VerticalAlignment="Center">入院日期</TextBlock>
                             <hc:DatePicker Width="355"
                                            Height="69"
                                            Padding="20,0"
@@ -255,7 +255,7 @@
                                            SelectedDate="{Binding CreateOn, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
                         </DockPanel>
                         <DockPanel Margin="70,0,0,0">
-                            <TextBlock VerticalAlignment="Center">Record date</TextBlock>
+                            <TextBlock VerticalAlignment="Center">记录日期</TextBlock>
                             <hc:DatePicker Width="355"
                                            Height="69"
                                            Padding="20,0"

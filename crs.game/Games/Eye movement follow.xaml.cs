@@ -33,7 +33,7 @@ namespace crs.game.Games
     /// <summary>
     /// SAKA.xaml Interaction logic
     /// </summary>
-    public partial class Eye movement follow : BaseUserControl
+    public partial class Eye_movement_follow : BaseUserControl
     {
         public class UdpServer
         {
@@ -299,7 +299,7 @@ namespace crs.game.Games
 
 
 
-        public Eye movement follow()
+        public Eye_movement_follow()
         {
             InitializeComponent();
         }
@@ -897,7 +897,7 @@ namespace crs.game.Games
 
 
     }
-    public partial class Eye movement follow : BaseUserControl
+    public partial class Eye_movement_follow : BaseUserControl
     {
         protected override async Task OnInitAsync()
         {

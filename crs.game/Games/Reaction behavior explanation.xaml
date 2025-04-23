@@ -1,5 +1,5 @@
 ﻿<local:BaseUserControl
-    x:Class="crs.game.Games.Reaction behavior explanation"
+    x:Class="crs.game.Games.Reaction_behavior_explanation"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"

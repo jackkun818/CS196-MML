@@ -30,9 +30,12 @@ using Point = System.Windows.Point;
 
 namespace crs.game.Games
 {
-    public partial class Kill mosquitoes : BaseUserControl, IGameBase
+    /// <summary>
+    /// Kill mosquitoes.xaml
+    /// </summary>
+    public partial class Kill_mosquitoes : BaseUserControl, IGameBase
     {
-        public Kill mosquitoes()
+        public Kill_mosquitoes()
         {
             InitializeComponent();
         }
@@ -514,7 +517,7 @@ namespace crs.game.Games
 
         protected override IGameBase OnGetExplanationExample()
         {
-            return new Explanation of killing mosquitoes();
+            return new Explanation_of_killing_mosquitoes();
         }
 
 

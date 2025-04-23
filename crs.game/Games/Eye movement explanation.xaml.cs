@@ -27,7 +27,7 @@ namespace crs.game.Games
     /// <summary>
     /// Eye movement explanation.xaml Interaction logic
     /// </summary>
-    public partial class Eye movement explanation : BaseUserControl
+    public partial class Eye_movement_explanation : BaseUserControl
     {
         public class EyeTrackerWrapper
         {
@@ -59,7 +59,7 @@ namespace crs.game.Games
         Image playerImage;
         Ellipse curGaze;
         TextBlock textBlock123;
-        public Eye movement explanation()
+        public Eye_movement_explanation()
         {
             InitializeComponent();
             InitializeEyeTracker();
@@ -123,7 +123,7 @@ namespace crs.game.Games
             timeStart123 = 3;
             _timerStart123.Tick += TimerStart123_Tick;
 
-            this.Loaded += Eye movement training 2 explanation_Loaded;
+            this.Loaded += Eye_movement_training_2_explanation_Loaded;
         }
 
         void InitializeEyeTracker()
@@ -140,7 +140,7 @@ namespace crs.game.Games
                 Debug.Write("Failed to initialize eye tracker. Falling back to random coordinates.\n");
             }
         }
-        private void Eye movement training 2 explanation_Loaded(object sender, RoutedEventArgs e)
+        private void Eye_movement_training_2_explanation_Loaded(object sender, RoutedEventArgs e)
         {
 
             nextButton_Click(null, null);

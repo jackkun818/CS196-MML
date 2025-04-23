@@ -21,9 +21,9 @@ namespace crs.game.Games
     /// <summary>
     /// Alert training explanation.xaml Interaction logic
     /// </summary>
-    public partial class Alert training explanation : BaseUserControl
+    public partial class Alert_training_explanation : BaseUserControl
     {
-        public Alert training explanation()
+        public Alert_training_explanation()
         {
             InitializeComponent();
 
@@ -49,10 +49,10 @@ namespace crs.game.Games
             pauseState = false;
 
 
-            this.Loaded += Alert training explanation_Loaded;
+            this.Loaded += Alert_training_explanation_Loaded;
         }
 
-        private void Alert training explanation_Loaded(object sender, RoutedEventArgs e)
+        private void Alert_training_explanation_Loaded(object sender, RoutedEventArgs e)
         {
             Button_2_Click(null, null);
         }

@@ -9,14 +9,14 @@ namespace crs.game.Games
     /// <summary>
     /// Memory Broadness Report.xaml Interaction logic
     /// </summary>
-    public partial class Memory Broadness Report : Window
+    public partial class Memory_Broadness_Report : Window
     {
-        public Memory Broadness Report(Dictionary<int, int> errorCounts)
+        public Memory_Broadness_Report(Dictionary<int, int> errorCounts)
         {
             InitializeComponent();
 
             // Create a list to store all report data
-            List<ReportDataBroadness of memory> reportDataList = new List<ReportDataBroadness of memory>();
+            List<ReportDataBroadness_of_memory> reportDataList = new List<ReportDataBroadness_of_memory>();
 
             // Traversal errorCounts dictionary
             foreach (var entry in errorCounts)
@@ -25,7 +25,7 @@ namespace crs.game.Games
                 int incorrectCount = entry.Value; // Errors
 
                 // Create a new ReportData Example
-                var reportData = new ReportDataBroadness of memory
+                var reportData = new ReportDataBroadness_of_memory
                 {
                     Level = level,
                     Score = 2 * level - incorrectCount, // Calculate the score
@@ -41,7 +41,7 @@ namespace crs.game.Games
             dataGrid.ItemsSource = reportDataList; // Assumptions dataGrid It's yours DataGrid Controls
         }
 
-        public class ReportDataBroadness of memory
+        public class ReportDataBroadness_of_memory
         {
             public int Level { get; set; }
             public int Score { get; set; }

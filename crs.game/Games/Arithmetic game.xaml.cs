@@ -30,9 +30,9 @@ using Point = System.Windows.Point;
 
 namespace crs.game.Games
 {
-    public partial class Arithmetic game : BaseUserControl, IGameBase
+    public partial class Arithmetic_game : BaseUserControl, IGameBase
     {
-        public Arithmetic game()
+        public Arithmetic_game()
         {
             InitializeComponent();
         }
@@ -427,7 +427,7 @@ namespace crs.game.Games
         #endregion
 
     }
-    public partial class Arithmetic game : BaseUserControl, IGameBase
+    public partial class Arithmetic_game : BaseUserControl, IGameBase
     {
 
 
@@ -514,7 +514,7 @@ namespace crs.game.Games
 
         protected override IGameBase OnGetExplanationExample()
         {
-            return new Arithmetic game explanation();
+            return new Arithmetic_game_explanation();
         }
 
 

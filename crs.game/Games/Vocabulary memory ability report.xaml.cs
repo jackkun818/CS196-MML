@@ -4,9 +4,9 @@ using System.Windows;
 
 namespace crs.game.Games
 {
-    public partial class Vocabulary memory ability report : Window
+    public partial class Vocabulary_memory_ability_report : Window
     {
-        public Vocabulary memory ability report(int score, int totalTests, int incorrectCount, int skippedCount)
+        public Vocabulary_memory_ability_report(int score, int totalTests, int incorrectCount, int skippedCount)
         {
             InitializeComponent();
 

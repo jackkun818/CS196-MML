@@ -153,7 +153,7 @@ namespace crs.game.Games
     }
 
     // Main interface
-    public partial class Topological memory : BaseUserControl
+    public partial class Topological_memory : BaseUserControl
     {
 
         private TimeSpan _trainTime; // Total training time
@@ -193,7 +193,7 @@ namespace crs.game.Games
 
         private bool AnswerState = false;   // false Represents memories, trueRepresentative answer
 
-        public Topological memory()
+        public Topological_memory()
         {
             this.Loaded += OnLoaded;
             this.KeyDown += OnKeyDown;
@@ -917,7 +917,7 @@ namespace crs.game.Games
 
 
     }
-    public partial class Topological memory : BaseUserControl
+    public partial class Topological_memory : BaseUserControl
     {
 
         private void MEMO_Loaded(object sender, RoutedEventArgs e)
@@ -1078,7 +1078,7 @@ namespace crs.game.Games
 
         protected override IGameBase OnGetExplanationExample()
         {
-            return new Topological memory explanation();
+            return new Topological_memory_explanation();
         }
 
         private async Task updateDataAsync()

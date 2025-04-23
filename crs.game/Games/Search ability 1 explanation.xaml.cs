@@ -23,7 +23,7 @@ namespace crs.game.Games
     /// <summary>
     /// Search ability 2 explanation.xaml Interaction logic
     /// </summary>
-    public partial class Search ability 1 explanation : BaseUserControl
+    public partial class Search_ability_1_explanation : BaseUserControl
     {
         private readonly string[][] imagePaths = new string[][]
         {
@@ -99,7 +99,7 @@ namespace crs.game.Games
         private List<int> AllNumbers = new List<int>();//A list of all numbers used to store
         private int ErrorCount = 0;
         private int ErrorLimit = 2;
-        public Search ability 1 explanation()
+        public Search_ability_1_explanation()
         {
             InitializeComponent();
             InitializeGame();
@@ -117,7 +117,7 @@ namespace crs.game.Games
             IntervalTimer = new DispatcherTimer();
             IntervalTimer.Tick += IntervalTimer_Tick;
 
-            this.Loaded += Search ability 1 explanation_Loaded;
+            this.Loaded += Search_ability_1_explanation_Loaded;
 
             this.Cursor = Cursors.None; // Hide the default cursor
             CustomCursor.Visibility = Visibility.Visible; // Show custom cursor
@@ -127,7 +127,7 @@ namespace crs.game.Games
 
         }
 
-        private void Search ability 1 explanation_Loaded(object sender, RoutedEventArgs e)
+        private void Search_ability_1_explanation_Loaded(object sender, RoutedEventArgs e)
         {
             // Ensure key presses and focus behavior when page loads
             Button_2_Click(null, null);
@@ -1610,7 +1610,7 @@ namespace crs.game.Games
                     }
                     else
                     {
-                        // All modes have been tried and displayed“Enter the module”Button
+                        // All modes have been tried and displayed"Enter the module"Button
                         isTrialPhase = false;
                         Panel.SetZIndex(end, 999);
                         end.Visibility = Visibility.Visible;

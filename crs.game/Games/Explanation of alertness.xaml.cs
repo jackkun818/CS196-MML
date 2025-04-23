@@ -20,7 +20,7 @@ namespace crs.game.Games
     /// <summary>
     /// Explanation of alertness.xaml Interaction logic
     /// </summary>
-    public partial class Explanation of alertness : BaseUserControl
+    public partial class Explanation_of_alertness : BaseUserControl
     {
         private DispatcherTimer waitTimer;
         private DispatcherTimer waitTimer_withoutSound;
@@ -35,14 +35,14 @@ namespace crs.game.Games
         public bool Sound = false;
         public Func<string, Task> VoicePlayFunc { get; set; }
 
-        public Explanation of alertness()
+        public Explanation_of_alertness()
         {
             InitializeComponent();
 
             this.Focusable = true;
             this.Focus();
 
-            this.Loaded += Explanation of alertness_Loaded;
+            this.Loaded += Explanation_of_alertness_Loaded;
             init_path();
 
 
@@ -55,7 +55,7 @@ namespace crs.game.Games
             FolderPath = Path.Combine(targetDirectory, "Alert ability");
         }
 
-        private void Explanation of alertness_Loaded(object sender, RoutedEventArgs e)
+        private void Explanation_of_alertness_Loaded(object sender, RoutedEventArgs e)
         {
             // Ensure key presses and focus behavior when page loads
             Button_2_Click(null, null);

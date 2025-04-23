@@ -28,9 +28,9 @@ using Newtonsoft.Json;
 namespace crs.game.Games
 {
 
-    public partial class Eye movement drive : BaseUserControl, IGameBase
+    public partial class Eye_movement_drive : BaseUserControl, IGameBase
     {
-        public Eye movement drive()
+        public Eye_movement_drive()
         {
             InitializeComponent();
         }
@@ -1167,7 +1167,7 @@ namespace crs.game.Games
 
 
     }
-    public partial class Eye movement drive : BaseUserControl
+    public partial class Eye_movement_drive : BaseUserControl
     {
 
 

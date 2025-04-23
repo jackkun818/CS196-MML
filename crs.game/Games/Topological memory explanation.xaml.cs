@@ -21,7 +21,7 @@ namespace crs.game.Games
     /// <summary>
     /// Topological memory explanation.xaml Interaction logic
     /// </summary>
-    public partial class Topological memory explanation : BaseUserControl
+    public partial class Topological_memory_explanation : BaseUserControl
     {
         private Button[] buttons;
         private string[] imagePaths = { "Resources/MEMO/general/sample1.jpg", "Resources/MEMO/general/sample2.jpg", "Resources/MEMO/general/sample3.jpg" };
@@ -40,7 +40,7 @@ namespace crs.game.Games
         private SoundPlayer soundPlayer; // Used to sing
         public string ErrorSoundPath;//The wrong sound file path, inOnStartAsync()Medium configuration
         public string CorrectSoundPath;//The correct sound file path is inOnStartAsync()Medium configuration
-        public Topological memory explanation()
+        public Topological_memory_explanation()
         {
             InitializeComponent();
 
@@ -89,12 +89,12 @@ namespace crs.game.Games
             timer.Interval = TimeSpan.FromSeconds(1);
             timer.Tick += Timer_Tick;
 
-            this.Loaded += Topological memory explanation_Loaded;
+            this.Loaded += Topological_memory_explanation_Loaded;
 
 
         }
 
-        private void Topological memory explanation_Loaded(object sender, RoutedEventArgs e)
+        private void Topological_memory_explanation_Loaded(object sender, RoutedEventArgs e)
         {
             Button_2_Click(null, null);
         }
@@ -314,7 +314,7 @@ namespace crs.game.Games
 
                         //LJN, instructing the delegate in the explanation module
                         SetTitleVisibleAction?.Invoke(true);
-                        RuleAction?.Invoke("You will see three graphics on the interface. Please remember their order quickly. After the countdown is over, the three graphics will be overwritten. Please find out and select the location corresponding to the target graphics on the right side of the screen as quickly as possible. according to“↑↓←→”Select and press“Enter”confirmOK");//Add code, call function, display the text under the digital person
+                        RuleAction?.Invoke("You will see three graphics on the interface. Please remember their order quickly. After the countdown is over, the three graphics will be overwritten. Please find out and select the location corresponding to the target graphics on the right side of the screen as quickly as possible. according to"↑↓←→"Select and press"Enter"confirmOK");//Add code, call function, display the text under the digital person
                         //LJN
 
                     }

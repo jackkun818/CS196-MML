@@ -29,7 +29,7 @@ namespace crs.game.Games
     /// <summary>
     /// LODE.xaml Interaction logic
     /// </summary>
-    public partial class Logical thinking ability : BaseUserControl
+    public partial class Logical_thinking_ability : BaseUserControl
     {
         private int countdownTime;
         private const int MAX_DELAY = 5000; // 5 seconds
@@ -77,7 +77,7 @@ namespace crs.game.Games
         private int LevelUp = 3; // Increase the threshold for difficulty
         private int LevelDown = 3; // Threshold for reducing difficulty
         private int stimulus_interval = 3;
-        public Logical thinking ability()
+        public Logical_thinking_ability()
         {
             InitializeComponent();
         }
@@ -458,7 +458,7 @@ namespace crs.game.Games
         //Add a timer to synchronize the stars on the therapist side
         private DispatcherTimer StarTimer = new DispatcherTimer();
     }
-    public partial class Logical thinking ability : BaseUserControl
+    public partial class Logical_thinking_ability : BaseUserControl
     {
         protected override async Task OnInitAsync()
         {

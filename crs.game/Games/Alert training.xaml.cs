@@ -29,9 +29,9 @@ namespace crs.game.Games
     /// <summary>
     /// Alert training.xaml Interaction logic
     /// </summary>
-    public partial class Alert training : BaseUserControl
+    public partial class Alert_training : BaseUserControl
     {
-        public Alert training()
+        public Alert_training()
         {
             InitializeComponent();
 
@@ -953,7 +953,7 @@ namespace crs.game.Games
         }
 
     }
-    public partial class Alert training : BaseUserControl, IGameBase
+    public partial class Alert_training : BaseUserControl, IGameBase
     {
 
 
@@ -1222,7 +1222,7 @@ namespace crs.game.Games
         }
         protected override IGameBase OnGetExplanationExample()
         {
-            return new Alert training explanation();
+            return new Alert_training_explanation();
         }
 
     }

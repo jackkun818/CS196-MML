@@ -19,7 +19,7 @@ using System.Runtime.InteropServices;
 
 namespace crs.game.Games
 {
-    public partial class Focus on attention : BaseUserControl
+    public partial class Focus_on_attention : BaseUserControl
     {
         private readonly string[] JudgementPath = new string[]
         {
@@ -172,7 +172,7 @@ new string[]
         DateTime startTime = new DateTime();
         DateTime endTime = new DateTime();
 
-        public Focus on attention()
+        public Focus_on_attention()
         {
             InitializeComponent();
             this.UpdateLayout();
@@ -502,7 +502,7 @@ new string[]
         }
     }
 
-    public partial class Focus on attention : BaseUserControl
+    public partial class Focus_on_attention : BaseUserControl
     {
         protected override async Task OnInitAsync()
         {
