@@ -1,8 +1,8 @@
-难度3
-商场的节日促销活动在上周五开始，将持续到本周日，包含大幅折扣和赠品。
-问题2：商场的节日促销活动持续了多少天？
-7天
-3天
-10天
-5天
+Difficulty 3
+The mall's holiday promotions started last Friday and will last until this Sunday, with significant discounts and giveaways.
+Question 2: How many days did the mall’s holiday promotion last?
+7 days
+3 days
+10 days
+5 days
 3

@@ -1,8 +1,8 @@
-难度5
-小学最近举办了绘画比赛。比赛有100名学生参加。所有参赛作品将展示在学校大厅。比赛评选将在下周进行。
-问题16：小学绘画比赛有多少名学生参加？
-50名
-100名
-75名
-200名
+Difficulty 5
+The primary school recently held a painting competition. The competition was attended by 100 students. All entries will be displayed in the school lobby. The competition will be held next week.
+Question 16: How many students participated in the primary school painting competition?
+50
+100
+75
+200
 1

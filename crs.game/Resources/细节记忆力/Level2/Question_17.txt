@@ -1,8 +1,8 @@
-难度2
-餐馆在这个月的周五和周六提供买一送一的优惠。
-问题17：餐馆的优惠活动在什么时间提供？
-工作日
-周末
-周五和周六
-周一和周三
+Difficulty 2
+Restaurants offer buy one get one get one get one get one on Friday and Saturday of this month.
+Question 17: When will the restaurant offer be offered?
+Working Day
+weekend
+Friday and Saturday
+Monday and Wednesday
 2

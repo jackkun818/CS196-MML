@@ -1,8 +1,8 @@
-难度6
-旅行展览在本周五开始，展览内容包括旅游目的地和旅行装备。
-问题20：旅行展览什么时候开始？
-明天
-下周
-今天
-本周五
+Difficulty 6
+The travel exhibition begins this Friday, with the exhibition including travel destinations and travel equipment.
+Question 20: When will the travel exhibition begin?
+tomorrow
+next week
+today
+This Friday
 3

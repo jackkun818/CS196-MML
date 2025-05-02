@@ -1,8 +1,8 @@
-难度5
-新开的咖啡店在市中心。咖啡店提供各种咖啡和甜点。开张首周有折扣优惠。咖啡店每天开放到晚上8点。
-问题11：新开的咖啡店在哪里？
-市中心
-车站附近
-市郊
-商场
+Difficulty 5
+Newly opened coffee shop in the city center. The coffee shop offers a variety of coffee and desserts. There are discounts for the first week of opening. The coffee shop is open until 8 pm every day.
+Question 11: Where is the newly opened coffee shop?
+city ​​center
+Near the station
+suburb
+shopping mall
 0

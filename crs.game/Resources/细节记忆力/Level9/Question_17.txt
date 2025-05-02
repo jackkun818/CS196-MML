@@ -1,8 +1,8 @@
-难度9
-社区庆祝活动在市中心的广场上举行。活动包括音乐表演和舞蹈表演。活动从下午3点开始，一直到晚上9点结束。
-问题17：庆祝活动在哪里举行？
-市中心的剧院
-市中心的广场
-市中心的公园
-市中心的博物馆
+Difficulty 9
+Community celebrations are held in the square in the city center. Activities include musical performances and dance performances. The event starts at 3pm and ends at 9pm.
+Question 17: Where is the celebration held?
+Theatres in the city center
+The square in the city center
+Parks in the city center
+Museums in the city center
 1

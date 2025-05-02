@@ -1,26 +1,26 @@
-难度4
-九寨沟位于四川省阿坝藏族羌族自治州九寨沟县漳扎镇，是白水沟上游白河的支沟，以有九个藏族村寨（又称何药九寨）而得名。九寨沟海拔在2000米以上，遍布原始森林，沟内分布108个湖泊。九寨沟四季景色迷人。动植物资源丰富，种类繁多，原始森林遍布，栖息着大熊猫等十多种稀有和珍贵野生动物。远望雪峰林立，高耸云天，终年白雪皑皑，加上藏家木楼、晾架经幡、栈桥、磨房、传统习俗及神话传说构成的人文景观，被誉为“美丽的童话世界”。
-问题1：九寨沟位于哪个省？
-云南省
-四川省
-新疆维吾尔自治区
-西藏自治区
+Difficulty 4
+Jiuzhaigou is located in Zhangzha Town, Jiuzhaigou County, Aba Tibetan and Qiang Autonomous Prefecture, Sichuan Province. It is a branch of Baihe River in the upper reaches of Baishuigou, with nine Tibetan villages.（Also known as He Yao Jiuzhai）He got the name. Jiuzhaigou is above 2,000 meters above sea level, covered with virgin forests, and 108 lakes are distributed in the ditch. Jiuzhaigou has charming scenery in all seasons. There are rich animal and plant resources, a wide variety of species, and there are scattered with primeval forests, which are home to more than a dozen rare and precious wild animals such as giant pandas. Looking at the distance, the snow peaks are towering, and the sky is covered with snow all year round. The cultural landscape composed of collectors' wooden buildings, prayer flags, trestles, mills, traditional customs and myths and legends is known as“A beautiful fairy tale world”。
+Question 1: Which province is Jiuzhaigou located?
+Yunnan Province
+Sichuan Province
+Xinjiang Uygur Autonomous Region
+Tibet Autonomous Region
 1
-问题2：九寨沟的海拔在多少米以上？
-1000米
-1500米
-2000米
-2500米
+Question 2: How many meters is the altitude of Jiuzhaigou?
+1000 meters
+1500 meters
+2000 meters
+2500 meters
 2
-问题3：九寨沟沟内分布有多少个湖泊？
-106个
-108个
-110个
-112个
+Question 3: How many lakes are distributed in Jiuzhaigou?
+106
+108
+110
+112
 1
-问题4：九寨沟动植物资源丰富，栖息着十多种稀有和珍贵野生动物，其中文中提到了哪一种？
-大熊猫
-金丝猴
-孔雀
-响尾蛇
+Question 4: Jiuzhaigou is rich in animal and plant resources, and is home to more than a dozen rare and precious wild animals. Which one is mentioned in this article?
+Giant panda
+Golden Monkey
+Peacock
+Rattlesnake
 0

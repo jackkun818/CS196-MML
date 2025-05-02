@@ -1,8 +1,8 @@
-难度9
-车展在市展览中心举行，展示了12款新车。车展从上午10点开放，一直到晚上5点结束。
-问题18：车展展示了多少款新车？
-8款
-10款
-15款
-12款
+Difficulty 9
+The auto show was held at the Municipal Exhibition Center, showing 12 new cars. The auto show opens from 10 a.m. until it ends at 5 p.m.
+Question 18: How many new cars were displayed at the auto show?
+8 models
+10 models
+15 models
+12 models
 3

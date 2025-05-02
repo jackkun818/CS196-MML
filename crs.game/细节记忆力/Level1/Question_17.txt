@@ -1,8 +1,8 @@
-难度1
-餐厅最近推出了一道新的海鲜菜品，受到顾客的热烈欢迎。这道菜品选用了最新鲜的食材，味道鲜美，备受好评。
-问题17：餐厅推出的新菜品是什么？
-汉堡
-牛排
-意大利面
-海鲜菜品
+Difficulty 1
+The restaurant recently launched a new seafood dish, which was warmly welcomed by customers. This dish uses the freshest ingredients, which tastes delicious and has received great reviews.
+Question 17: What are the new dishes launched by the restaurant?
+Hamburger
+steak
+spaghetti
+Seafood dishes
 3

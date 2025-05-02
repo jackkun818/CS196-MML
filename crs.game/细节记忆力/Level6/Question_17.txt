@@ -1,8 +1,8 @@
-难度6
-新咖啡店今天在市区开业，店内提供了各种咖啡和糕点。
-问题17：新咖啡店提供什么？
-咖啡和糕点
-早餐
-午餐
-晚餐
+Difficulty 6
+The new coffee shop opened in the city today and offers a variety of coffee and pastries on site.
+Question 17: What does the new coffee shop offer?
+Coffee and pastries
+breakfast
+Lunch
+dinner
 0

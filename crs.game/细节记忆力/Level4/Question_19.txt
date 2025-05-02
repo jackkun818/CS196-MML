@@ -1,8 +1,8 @@
-难度4
-学校食堂本学期推出了新菜单。菜单包括健康的素食和传统菜肴。学生们表示满意。
-问题19：学校食堂的新菜单包括哪些菜肴？
-仅有甜点
-素食和传统菜肴
-仅有西餐
-仅有快餐
+Difficulty 4
+The school cafeteria has launched a new menu this semester. The menu includes healthy vegetarian and traditional dishes. The students expressed satisfaction.
+Question 19: What dishes are included in the new menu in the school cafeteria?
+Dessert only
+Vegetarian and traditional dishes
+Western food only
+Fast food only
 1

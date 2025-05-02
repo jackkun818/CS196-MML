@@ -1,8 +1,8 @@
-难度7
-上周六，本地艺术工作坊进行了特别活动。活动包括绘画和雕塑课程，时间是下午1点到4点。
-问题17：艺术工作坊特别活动的时间是什么时候？
-中午12点到3点
-上午9点到12点
-晚上6点到9点
-下午1点到4点
+Difficulty 7
+Last Saturday, a special event was held at the local art workshop. Activities include painting and sculpture classes, from 1 to 4 p.m.
+Question 17: When is the special event for the art workshop?
+12:00 to 3:00 noon
+9:00 to 12:00 a.m.
+6:00 to 9:00 pm
+1:00 to 4:00 pm
 3

@@ -1,32 +1,32 @@
-难度5
-东坡肉又名滚肉、红烧肉。东坡焖肉，因大诗人苏轼而来。宋哲宗元祐四年，苏轼在杭州任知州，恰逢太湖泛滥，庄稼大片被淹，苏轼当机立断，组织民工疏浚西湖，筑堤建桥，帮助浙西一带的人民度过了最困难的时候。杭州的老百姓感谢苏轼的恩德，过年时，抬猪担酒，拿来给他拜年。苏轼不肯收老百姓的礼物，于是指点家人，将猪肉切成方块，烧得红酥酥的，分给参加疏浚西湖的民工们吃，大家吃后无不称奇，更敬重苏东坡清正廉明、爱民如子的品德，就把他送来的肉亲切地称为“东坡肉”，并流传至今。
-问题1：东坡肉来源于哪位诗人？
-苏轼
-苏辙
-苏洵
-苏过
+Difficulty 5
+Dongpo pork is also known as boiling pork and braised pork. Dongpo stewed meat comes from the great poet Su Shi. In the fourth year of Yuanyou of Emperor Zhezong of Song Dynasty, Su Shi served as the governor of Hangzhou. When Taihu Lake was flooded and large areas of crops were flooded, Su Shi made a quick decision and organized migrant workers to dredge the West Lake, build dikes and bridges, helping the people in western Zhejiang to survive the most difficult times. The people of Hangzhou thanked Su Shi for his kindness. During the Chinese New Year, they carried pigs and wine to greet him. Su Shi refused to accept gifts from the people, so he instructed his family to cut the pork into cubes, cooked it red and crispy, and distributed it to the migrant workers who participated in the dredging of the West Lake. After eating, everyone was surprised and respected Su Dongpo's moral integrity and integrity, and loved the people as much as his son. He affectionately called the meat he sent.“Dongpo meat”, and has been passed down to this day.
+Question 1: Which poet does Dongpo Pork come from?
+Su Shi
+Su Zhe
+Su Xun
+Su Guo
 0
-问题2：宋哲宗元祐四年，苏轼在哪里任知州？
-嘉兴
-杭州
-宁波
-湖州
+Question 2: In the fourth year of Yuanyou of Emperor Zhezong of Song Dynasty, where did Su Shi become the governor?
+Jiaxing
+Hangzhou
+Ningbo
+Huzhou
 1
-问题3：宋哲宗元祐四年，苏轼在杭州任什么职位？
-知县
-知府
-知州
-巡抚
+Question 3: What position did Su Shi hold in Hangzhou in the fourth year of Yuanyou of Emperor Zhezong of Song Dynasty?
+County magistrate
+Prefect
+Prefectural State
+Governor
 2
-问题4：苏轼帮助了哪里的人民度过了最困难的时候？
-浙北
-浙南
-浙西
-浙东
+Question 4: Where did Su Shi help people through the most difficult time?
+North Zhejiang
+Southern Zhejiang
+West Zhejiang
+East Zhejiang
 2
-问题5：东坡肉是什么动物的肉？
-猪
-牛
-羊
-鸡
+Question 5: What kind of animal meat is Dongpo pork?
+pig
+ox
+sheep
+chicken
 0

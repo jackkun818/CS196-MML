@@ -1,8 +1,8 @@
-难度1
-博物馆目前有一个关于古代文明的展览，展览将持续到月底。展览内容丰富，包括古代文物、绘画和雕塑等，吸引了众多历史爱好者前来参观。
-问题12：博物馆的古代文明展览持续到什么时候？
-下周
-明年初
-月底
-下个月
+Difficulty 1
+The museum currently has an exhibition about ancient civilizations, which will last until the end of the month. The exhibition is rich in content, including ancient cultural relics, paintings and sculptures, which attracts many history lovers to visit.
+Question 12: When will the museum’s exhibition of ancient civilizations last?
+next week
+Early next year
+End of the month
+next month
 2

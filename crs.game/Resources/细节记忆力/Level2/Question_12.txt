@@ -1,8 +1,8 @@
-难度2
-市区新增了一座雕塑公园，里面展示了10件艺术品。
-问题12：雕塑公园内展示了多少件艺术品？
-15件
-8件
-10件
-5件
+Difficulty 2
+A new sculpture park was added in the city, which displays 10 artworks.
+Question 12: How many works of art are displayed in the Sculpture Park?
+15 pieces
+8 pieces
+10 pieces
+5 pieces
 2

@@ -1,8 +1,8 @@
-难度5
-宠物店今天举办了宠物领养活动。活动持续到下午4点。活动包括免费宠物体检。所有宠物都需要领取疫苗。
-问题12：宠物店举办了什么活动？
-库存清理活动
-打折活动
-促销活动
-领养活动
+Difficulty 5
+The pet shop held a pet adoption event today. The event lasts until 4 pm. Activities include free pet physical examinations. All pets need to receive a vaccine.
+Question 12: What events are held in the pet store?
+Inventory Cleanup Activities
+Discount activities
+Promotions
+Adoption activities
 3

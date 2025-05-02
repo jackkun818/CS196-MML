@@ -1,8 +1,8 @@
-难度4
-商场本周末有全场打八折的优惠活动。活动包括所有服装和配件。顾客还可以获得赠品。
-问题5：商场的优惠活动包括哪些商品？
-仅限家居用品
-仅限电子产品
-所有服装和配件
-仅限食品
+Difficulty 4
+The mall will have 20% discount on the whole venue this weekend. The event includes all clothing and accessories. Customers can also receive gifts.
+Question 5: What products do mall offers include?
+Household supplies only
+Electronics only
+All clothing and accessories
+Food only
 2

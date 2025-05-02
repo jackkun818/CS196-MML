@@ -1,8 +1,8 @@
-难度9
-城市公园有3个篮球场、2个足球场和一个游泳池。公园内还有一个儿童游乐区和一个野餐区。公园每天开放。
-问题19：城市公园有多少个足球场？
-3个
-2个
-4个
-1个
+Difficulty 9
+The city park has 3 basketball courts, 2 football fields and a swimming pool. There is also a children's play area and a picnic area in the park. The park is open every day.
+Question 19: How many football fields are there in the city park?
+3
+2
+4
+1
 1

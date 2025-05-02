@@ -1,8 +1,8 @@
-难度7
-昨晚，家里的晚餐聚会从晚上7点开始，持续了三个小时。
-问题19：晚餐聚会持续了多长时间？
-两个小时
-三个小时
-四个小时
-一个小时
+Difficulty 7
+Last night, the family dinner party started at 7 p.m. and lasted for three hours.
+Question 19: How long does the dinner party last?
+Two hours
+Three hours
+Four hours
+One hour
 1

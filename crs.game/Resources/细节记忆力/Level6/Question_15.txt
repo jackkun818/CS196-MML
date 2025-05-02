@@ -1,8 +1,8 @@
-难度6
-昨天的足球比赛在市体育馆举行，比赛结果是主队赢得了比赛。
-问题15：足球比赛在哪里举行的？
-市体育馆
-市立公园
-大学体育场
-市中心
+Difficulty 6
+Yesterday's football match was held at the city gymnasium, and the result was that the home team won the game.
+Question 15: Where is the football match held?
+City Stadium
+Municipal Park
+University Stadium
+city ​​center
 0

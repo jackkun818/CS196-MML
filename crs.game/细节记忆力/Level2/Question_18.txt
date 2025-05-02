@@ -1,8 +1,8 @@
-难度2
-校园内的音乐节定于下周四举行，持续时间为一天。
-问题18：校园音乐节持续多久？
-两天
-半天
-一天
-三天
+Difficulty 2
+The music festival on campus is scheduled to take place next Thursday and lasts for one day.
+Question 18: How long does the campus music festival last?
+Two days
+long time
+one day
+Three days
 2

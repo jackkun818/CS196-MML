@@ -1,8 +1,8 @@
-难度1
-校园图书馆每天开放时间是早上8点到晚上10点。图书馆为学生和教职工提供了一个安静的学习和研究环境，同时还定期举办各种讲座和读书会。
-问题1：校园图书馆的开放时间是什么？
-早上8点到晚上9点
-早上8点到晚上10点
-早上7点到晚上11点
-早上9点到晚上9点
+Difficulty 1
+The campus library is open from 8 am to 10 pm every day. The library provides students and staff with a quiet learning and research environment, while also hosting various lectures and reading sessions regularly.
+Question 1: What are the opening hours of the campus library?
+8 am to 9 pm
+8 am to 10 pm
+7 a.m. to 11 p.m.
+9 a.m. to 9 p.m.
 1

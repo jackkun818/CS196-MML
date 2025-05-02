@@ -1,8 +1,8 @@
-难度10
-餐厅提供外卖服务，包括家庭套餐和单点菜品。外卖订单通常在30分钟内送达，节假日可能需要更长时间。餐厅接受在线预订和电话订餐。
-问题：餐厅的外卖服务通常需要多长时间？
-20分钟
-1小时
-30分钟
-45分钟
+Difficulty 10
+The restaurant offers takeaway services, including family set meals and à la carte dishes. Takeaway orders are usually delivered within 30 minutes and may take longer on holidays. The restaurant accepts online reservations and telephone orders.
+Question: How long does it usually take to take food in a restaurant?
+20 minutes
+1 hour
+30 minutes
+45 minutes
 2

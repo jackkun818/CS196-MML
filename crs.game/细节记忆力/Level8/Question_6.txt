@@ -1,8 +1,8 @@
-难度8
-购物中心每天10点开门，晚上9点闭馆。节假日时间可能不同。
-问题6：购物中心每天的闭馆时间是几点？
-晚上8点
-上午10点
-晚上9点
-下午5点
+Difficulty 8
+The shopping center opens at 10 o'clock every day and closes at 9 o'clock in the evening. Holiday times may vary.
+Question 6: What time is the closing time of the shopping mall every day?
+8 pm
+10 am
+9 pm
+5 pm
 2

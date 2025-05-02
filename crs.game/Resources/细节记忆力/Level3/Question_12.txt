@@ -1,8 +1,8 @@
-难度3
-餐馆最近更新了菜单，新增了15道菜品，菜单上包括中餐和西餐。
-问题12：餐馆新菜单上有多少道新菜品？
-20道
-15道
-12道
-10道
+Difficulty 3
+The restaurant has recently updated its menu and added 15 new dishes, including Chinese and Western dishes.
+Question 12: How many new dishes are there on the restaurant’s new menu?
+20
+15
+12
+10
 1

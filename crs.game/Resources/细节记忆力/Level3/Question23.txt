@@ -1,20 +1,20 @@
-难度3
-天安门城楼是中国古代最壮丽的城楼之一，位于中华人民共和国首都北京的天安门广场北端，东城、西城、崇文、宣武四个区域的分界点，面临长安街，对面是天安门广场以及人民英雄纪念碑、毛主席纪念堂、人民大会堂、中国国家博物馆，以杰出的建筑艺术和特殊的政治地位为世人所瞩目。1949年10月1日，毛泽东主席在这里庄严宣告：“中华人民共和国成立了”，并亲自升起了第一面五星红旗。天安门城楼图案出现在中华人民共和国国徽中，成为了中华人民共和国的象征。
-问题1：天安门城楼位于天安门广场的哪一端？
-东端
-南端
-西端
-北端
+Difficulty 3
+The Tiananmen Gate Tower is one of the most magnificent city towers in ancient China. It is located at the northern end of Tiananmen Square, the capital of Beijing, the capital of the People's Republic of China, and the dividing point of the four regions of Dongcheng, Xicheng, Chongwen and Xuanwu. It is facing Chang'an Street. Opposite is Tiananmen Square, the Monument to the People's Heroes, Chairman Mao Memorial Hall, the Great Hall of the People, and the National Museum of China. It has attracted the attention of the world for its outstanding architectural art and special political status. On October 1, 1949, Chairman Mao Zedong solemnly declared here:“The People's Republic of China was founded”, and personally raised the first five-star red flag. The Tiananmen Gate Tower pattern appears in the national emblem of the People's Republic of China and becomes a symbol of the People's Republic of China.
+Question 1: Where is the Tiananmen Square Tower located at Tiananmen Square?
+East Terminal
+South End
+The West End
+North End
 3
-问题2：天安门城楼是四个区域的分界点，其中不包括以下哪个？
-东城
-崇文
-南城
-宣武
+Question 2: The Tiananmen Gate Tower is the dividing point of four areas, which of the following is not included?
+Dongcheng
+Chongwen
+South City
+Xuanwu
 2
-问题3：天安门城楼对面没有以下哪个建筑？
-天安门广场
-毛主席纪念堂
-故宫
-中国国家博物馆
+Question 3: Which of the following buildings is not opposite the Tiananmen Gate Tower?
+Tiananmen Square
+Chairman Mao Memorial Hall
+Forbidden City
+National Museum of China
 2

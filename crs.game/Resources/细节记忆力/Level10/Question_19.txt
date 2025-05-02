@@ -1,8 +1,8 @@
-难度10
-城市所有街道的限速为50公里每小时。学校区域内的限速为30公里每小时。每个街道都设有交通标志和信号灯。
-问题：学校区域内的限速是多少？
-50公里每小时
-60公里每小时
-30公里每小时
-40公里每小时
+Difficulty 10
+The speed limit for all streets in the city is 50 km/h. The speed limit in the school area is 30 km/h. Traffic signs and signal lights are provided on every street.
+Question: What is the speed limit in the school area?
+50 km/h
+60 km/h
+30 km/h
+40 km/h
 2

@@ -1,8 +1,8 @@
-难度1
-市立医院今晚有一场关于营养的健康讲座，讲座免费开放。讲座的主讲人是著名的营养学专家，预计将有大量市民前来听讲。
-问题11：市立医院今晚的健康讲座是什么主题？
-心理
-营养
-急救
-运动
+Difficulty 1
+The Municipal Hospital will have a health lecture on nutrition tonight, and the lecture will be open for free. The lecturer is a famous nutrition expert and is expected to be a large number of citizens coming to listen.
+Question 11: What is the theme of the Municipal Hospital’s health lecture tonight?
+psychology
+Nutrition
+first aid
+sports
 1

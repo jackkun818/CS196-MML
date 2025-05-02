@@ -1,8 +1,8 @@
-难度10
-餐馆提供中餐和西餐。中餐包括点心、炒菜和汤；西餐包括牛排、意大利面和沙拉。餐馆每天营业，周末提供特价菜单。节假日期间有时会推出特别菜品。
-问题：餐馆是否提供中餐？
-仅节假日提供
-只在工作日提供
-否
-是
+Difficulty 10
+The restaurant serves Chinese and Western cuisines. Chinese food includes dim sum, stir-fry and soup；Western cuisine includes steak, pasta and salad. The restaurant is open daily and offers a special menu on weekends. Special dishes are sometimes launched during holidays.
+Question: Does the restaurant offer Chinese food?
+Offer only on holidays
+Only available on weekdays
+no
+yes
 3

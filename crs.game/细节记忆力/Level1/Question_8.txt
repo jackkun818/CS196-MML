@@ -1,8 +1,8 @@
-难度1
-电影院本周末上映一部热门动作片，影评好评如潮。许多影迷专程前来观看，电影院几乎场场爆满。
-问题8：电影院本周末上映了什么类型的电影？
-喜剧片
-剧情片
-动作片
-爱情片
+Difficulty 1
+A popular action movie was released in the cinema this weekend, and the film reviews were rave reviews. Many movie fans came to watch it, and the cinemas were almost full.
+Question 8: What type of movies are released in the cinema this weekend?
+Comedy
+Drama
+Action movie
+Romance movies
 2

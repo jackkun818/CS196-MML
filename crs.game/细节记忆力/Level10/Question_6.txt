@@ -1,8 +1,8 @@
-难度10
-动物园每天展示不同的动物，包括狮子、老虎和大象。特殊展览在节假日和暑假期间举办。动物园还提供喂食体验和导览服务。游客可以购买门票参加特别活动。
-问题：动物园是否提供导览服务？
-仅节假日提供
-否
-是
-只在周末提供
+Difficulty 10
+The zoo displays different animals every day, including lions, tigers and elephants. Special exhibitions are held during holidays and summer vacations. The zoo also offers a feeding experience and a guided tour. Visitors can purchase tickets to participate in special events.
+Question: Does the zoo provide guided tours?
+Offer only on holidays
+no
+yes
+Only available on weekends
 2

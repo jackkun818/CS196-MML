@@ -1,8 +1,8 @@
-难度2
-商场内的艺术展览展出了50幅画作，展览将持续两周。
-问题3：艺术展览持续多久？
-半年
-一周
-两周
-一个月
+Difficulty 2
+The art exhibition in the mall exhibits 50 paintings, which will last for two weeks.
+Question 3: How long does the art exhibition last?
+Half a year
+One week
+Two weeks
+One month
 2

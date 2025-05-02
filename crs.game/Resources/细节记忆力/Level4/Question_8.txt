@@ -1,8 +1,8 @@
-难度4
-市中心最近开了一家新餐厅。餐厅提供各种本地特色菜肴。开业当天吸引了大量顾客。
-问题8：新开的餐厅主要提供什么？
-快餐
-日本料理
-西餐
-本地特色菜肴
+Difficulty 4
+A new restaurant has recently opened in the city center. The restaurant offers a variety of local specialities. It attracted a large number of customers on the opening day.
+Question 8: What do newly opened restaurants mainly offer?
+fast food
+Japanese cuisine
+Western food
+Local specialties
 3

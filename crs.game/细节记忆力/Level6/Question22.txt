@@ -1,38 +1,38 @@
-难度6
-2024年7月21日17时，今年第3号台风“格美”中心位于距离菲律宾马尼拉东偏北方向约520公里的洋面上，中心附近最大风速10级。预计“格美”将以每小时5至10公里左右的速度向偏北方向缓慢移动，逐渐向台湾岛东部海面靠近，将于24日傍晚到夜里进入东海，强度逐渐增强，最强可达强台风级或超强台风级。22日起，受台风外围影响，东海东南部海域风力将逐渐增强，其中，24日至25日风力增大到12至14级，台风中心附近经过海域风力可达13至16级。
-问题1：今年第3号台风“格美”于什么时候中心位于距离菲律宾马尼拉东偏北方向约520公里的洋面上？
-7月21日15时
-7月21日16时
-7月21日17时
-7月22日17时
+Difficulty 6
+Typhoon No. 3 this year on July 21, 2024“Gemei”The center is located on the ocean surface about 520 kilometers northeast of Manila, Philippines, and the maximum wind speed near the center is level 10. Expected“Gemei”It will slowly move northward at a speed of about 5 to 10 kilometers per hour, gradually approaching the sea surface of the eastern part of Taiwan Island. It will enter the East China Sea from the evening to night on the 24th, with the intensity gradually increasing, and the strongest can reach a strong typhoon level or a super typhoon level. Starting from the 22nd, affected by the periphery of the typhoon, the wind force in the southeastern sea of ​​the East China Sea will gradually increase. Among them, the wind force will increase to level 12 to level 14 from the 24th to the 25th, and the wind force passing through the sea near the typhoon center can reach level 13 to level 16.
+Question 1: Typhoon No. 3 this year“Gemei”When was the center located on the ocean surface about 520 kilometers northeast of Manila, Philippines?
+July 21 at 15:00
+July 21 at 16:00
+July 21 at 17:00
+July 22 at 17:00
 2
-问题2：台风“格美”是今年第几号台风？
-第1号
-第2号
-第3号
-第4号
+Question 2: Typhoon“Gemei”Which typhoon is this year?
+No. 1
+No. 2
+No. 3
+No. 4
 2
-问题3：今年第3号台风叫什么？
-“格美”
-“美的”
-“格力”
-“美格”
+Question 3: What is the name of Typhoon No. 3 this year?
+“Gemei”
+“Beautiful”
+“Gree”
+“Meg”
 0
-问题4：2024年7月21日17时，今年第3号台风“格美”中心附近最大风速为多少级？
-7级
-8级
-9级
-10级
+Question 4: Typhoon No. 3 this year on July 21, 2024“Gemei”What is the maximum wind speed near the center?
+Level 7
+Level 8
+Level 9
+Level 10
 3
-问题5：预计“格美”将以每小时5至10公里左右的速度向偏北方向缓慢移动，逐渐向哪里靠近？
-台湾岛东部海面
-台湾岛西部海面
-台湾岛南部海面
-台湾岛北部海面
+Question 5: Expected“Gemei”It will slowly move northward at a speed of about 5 to 10 kilometers per hour, and gradually approach where?
+Sea surface in the eastern part of Taiwan Island
+The sea surface of the western Taiwan Island
+The sea surface of the southern Taiwan Island
+The sea surface of the northern Taiwan Island
 0
-问题6：预计“格美”将于什么时候进入东海？
-24日傍晚到夜里
-24日早晨到下午
-24日下午到傍晚
-25日傍晚到夜里
+Question 6: Expected“Gemei”When will it enter the East China Sea?
+24th to night
+From morning to afternoon on the 24th
+From the afternoon to the evening on the 24th
+25th to night
 0

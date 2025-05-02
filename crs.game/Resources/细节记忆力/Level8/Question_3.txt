@@ -1,8 +1,8 @@
-难度8
-图书馆每天9点开门，晚上7点闭馆。周末开放时间是10点到5点。
-问题3：图书馆的闭馆时间是什么时候？
-晚上7点
-下午5点
-上午9点
-晚上6点
+Difficulty 8
+The library opens at 9 o'clock every day and closes at 7 o'clock in the evening. The weekend opening hours are from 10 to 5 o'clock.
+Question 3: When is the library closed?
+7 pm
+5 pm
+9 am
+6 pm
 0

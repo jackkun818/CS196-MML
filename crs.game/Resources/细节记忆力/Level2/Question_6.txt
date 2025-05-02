@@ -1,8 +1,8 @@
-难度2
-健身房引进了新的跑步机和力量训练设备，每周一和周四开放。
-问题6：健身房的新设备在什么日期开放？
-每周三和周五
-每周二和周六
-每周末
-每周一和周四
+Difficulty 2
+The gym has introduced new treadmills and strength training equipment, which are open every Monday and Thursday.
+Question 6: On what date will the new gym equipment be opened?
+Wednesday and Friday
+Tuesday and Saturday
+Weekend
+Monday and Thursday
 3

@@ -1,44 +1,44 @@
-难度7
-颐和园，北京市古代皇家园林，前身为清漪园，坐落在北京西郊，距城区十五公里，占地约二百九十公顷，与圆明园毗邻。它是以昆明湖、万寿山为基址，以杭州西湖为蓝本，汲取江南园林的设计手法而建成的一座大型山水园林，也是保存最完整的一座皇家行宫御苑，被誉为“皇家园林博物馆”，也是国家重点旅游景点。
-问题1：颐和园的前身是什么？
-清水园
-清涟园
-涟漪园
-清漪园
+Difficulty 7
+The Summer Palace is an ancient royal garden in Beijing. It was formerly the Qingyi Garden. It is located in the western suburbs of Beijing, fifteen kilometers away from the city, covering an area of ​​about 290 hectares, and is adjacent to the Old Summer Palace. It is a large landscape garden built based on Kunming Lake and Wanshou Mountain and based on Hangzhou West Lake as its base, and absorbs the design techniques of Jiangnan gardens. It is also the most complete royal palace imperial garden. It is known as the "Imperial Palace" and is known as the "Imperial Palace" in the United States.“Royal Garden Museum”, is also a national key tourist attraction.
+Question 1: What was the predecessor of the Summer Palace?
+Qingshui Garden
+Qinglian Garden
+Ripple Garden
+Qingyi Garden
 3
-问题2：颐和园坐落在哪里？
-北京西郊
-北京北郊
-北京南郊
-北京东郊
+Question 2: Where is the Summer Palace located?
+Western Suburbs of Beijing
+Beijing North Suburbs
+South Suburbs of Beijing
+East Suburbs of Beijing
 0
-问题3：颐和园距北京城区多远？
-14公里
-15公里
-16公里
-17公里
+Question 3: How far is the Summer Palace from Beijing?
+14 km
+15 km
+16 km
+17 km
 1
-问题4：颐和园占地面积约为多少？
-270公顷
-280公顷
-290公顷
-300公顷
+Question 4: What is the area of ​​the Summer Palace?
+270 hectares
+280 hectares
+290 hectares
+300 hectares
 2
-问题5：颐和园与什么毗邻？
-清漪园
-圆明园
-万寿园
-昆明园
+Question 5: What is the adjacent Summer Palace?
+Qingyi Garden
+Yuanmingyuan
+Wanshou Garden
+Kunming Garden
 1
-问题6：颐和园以什么为蓝本？
-西湖
-太湖
-南湖
-北湖
+Question 6: What is the model of the Summer Palace?
+West Lake
+Taihu
+Nanhu
+Beihu
 0
-问题7：颐和园汲取了什么园林的设计手法？
-江南园林
-皇家园林
-私家园林
-岭南园林
+Question 7: What garden design techniques did the Summer Palace draw on?
+Jiangnan Garden
+Royal Gardens
+Private garden
+Lingnan Gardens
 0

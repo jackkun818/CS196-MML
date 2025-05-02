@@ -1,8 +1,8 @@
-难度6
-餐厅最近推出了新的寿司菜单，新菜品包括三文鱼寿司和黄瓜寿司。
-问题12：新菜单包含哪些寿司？
-牛肉寿司
-鸡肉寿司
-豆腐寿司
-三文鱼寿司和黄瓜寿司
+Difficulty 6
+The restaurant recently launched a new sushi menu, with new dishes including salmon sushi and cucumber sushi.
+Question 12: What sushi does the new menu contain?
+Beef Sushi
+Chicken Sushi
+Tofu sushi
+Salmon Sushi and Cucumber Sushi
 3

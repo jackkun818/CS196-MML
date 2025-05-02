@@ -1,8 +1,8 @@
-难度9
-音乐会在市剧院举行，演奏了14首新曲目。音乐会从晚上8点开始，持续了两个小时。观众们对这些新曲目反响热烈。
-问题10：音乐会演奏了多少首新曲目？
-18首
-16首
-12首
-14首
+Difficulty 9
+The concert was held at the Municipal Theater, with 14 new repertoires performed. The concert started at 8 p.m. and lasted for two hours. The audience responded enthusiastically to these new tracks.
+Question 10: How many new repertoires were played in the concert?
+18 songs
+16
+12 songs
+14 pieces
 3

@@ -1,8 +1,8 @@
-难度2
-电影院这周放映了一部科幻电影，影片时长为120分钟。
-问题2：这部科幻电影的时长是多少分钟？
-150分钟
-110分钟
-90分钟
-120分钟
+Difficulty 2
+The cinema screened a science fiction movie this week, with a 120-minute film duration.
+Question 2: How long is this science fiction movie lasting?
+150 minutes
+110 minutes
+90 minutes
+120 minutes
 3

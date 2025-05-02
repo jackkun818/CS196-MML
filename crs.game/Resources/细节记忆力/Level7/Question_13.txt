@@ -1,8 +1,8 @@
-难度7
-健身房在周一推出了新的瑜伽课程。课程每天上午9点到10点进行。
-问题13：瑜伽课程每天的时间是什么时候？
-下午1点到2点
-晚上7点到8点
-上午9点到10点
-中午12点到1点
+Difficulty 7
+The gym launched a new yoga class on Monday. The course will be held every day from 9:00 to 10:00.
+Question 13: When is the day of a yoga class?
+1:00 to 2:00 pm
+7 to 8 pm
+9:00 to 10:00 a.m.
+12:00 to 1:00 noon
 2

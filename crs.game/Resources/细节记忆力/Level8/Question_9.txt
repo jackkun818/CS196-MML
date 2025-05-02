@@ -1,8 +1,8 @@
-难度8
-医院的门诊时间是早上8点到下午5点。急诊24小时开放。
-问题9：医院的急诊开放时间是什么时候？
-下午1点到5点
-晚上9点到早上8点
-24小时
-上午8点到下午5点
+Difficulty 8
+The outpatient hours of the hospital are from 8 am to 5 pm. The emergency room is open 24 hours a day.
+Question 9: When is the emergency room open for the hospital?
+1:00 to 5:00 pm
+9pm to 8am
+24 hours
+8 am to 5 pm
 2

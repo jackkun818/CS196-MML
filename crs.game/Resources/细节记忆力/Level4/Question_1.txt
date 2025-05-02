@@ -1,8 +1,8 @@
-难度4
-本周一市区新增了三条公交线路，市民反映出行更加方便。公交车每隔10分钟就有一班。新线路覆盖了主要商业区。
-问题1：市区新增了多少条公交线路？
-两条
-一条
-三条
-四条
+Difficulty 4
+Three new bus routes were added in the city on Monday, and citizens said that travel was more convenient. Buses are shipped every 10 minutes. The new route covers the main commercial areas.
+Question 1: How many new bus routes have been added in the city?
+Two
+A
+Sanjo
+Four items
 2

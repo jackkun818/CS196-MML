@@ -1,8 +1,8 @@
-难度6
-昨天晚上在市中心图书馆发布了一本新书。新书的作者是李明。
-问题1：新书的作者是谁？
-张伟
-王强
-李明
-陈芳
+Difficulty 6
+A new book was released at the downtown library last night. The author of the new book is Li Ming.
+Question 1: Who is the author of the new book?
+Zhang Wei
+Wang Qiang
+Li Ming
+Chen Fang
 2

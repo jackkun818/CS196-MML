@@ -1,8 +1,8 @@
-难度1
-健身房本周末有优惠活动，会员可以享受半价课程。此次促销活动吸引了许多健身爱好者，他们纷纷前来报名参加课程。
-问题6：健身房的优惠活动是什么？
-会员半价课程
-会员全免课程
-会员免费健身
-非会员打折课程
+Difficulty 1
+There are discounts at the gym this weekend, and members can enjoy half-price classes. The promotion attracted many fitness enthusiasts, who came to sign up for the course.
+Question 6: What are the offers for gyms?
+Member half price course
+All members are exempt from courses
+Free fitness for members
+Discounted courses for non-members
 0

@@ -1,8 +1,8 @@
-难度8
-学校的暑假从7月1号开始，8月31号结束。
-问题19：学校的暑假什么时候开始？
-6月15号
-9月1号
-8月1号
-7月1号
+Difficulty 8
+The school’s summer vacation starts on July 1 and ends on August 31.
+Question 19: When will the school summer vacation begin?
+June 15
+September 1
+August 1
+July 1
 3

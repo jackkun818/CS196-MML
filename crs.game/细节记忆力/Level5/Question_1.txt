@@ -1,8 +1,8 @@
-难度5
-昨天，城市公园新增了一座儿童游乐场。游乐场里有滑梯和秋千。滑梯是蓝色的。秋千有四个座位。公园在周末开放时间延长。
-问题1：昨天哪个地方新增了儿童游乐场？
-体育馆
-购物中心
-城市公园
-市中心广场
+Difficulty 5
+Yesterday, a new children's playground was added to the city park. There are slides and swings in the playground. The slide is blue. There are four seats on the swing. The park is open for extended weekends.
+Question 1: Which place added a children's playground yesterday?
+stadium
+shopping center
+City Park
+Downtown Plaza
 2

@@ -1,8 +1,8 @@
-难度8
-每周六早上9点，市中心的市场开始营业，下午4点结束。
-问题4：市场什么时候结束？
-下午4点
-上午11点
-下午5点
-下午3点
+Difficulty 8
+The market in the city center begins every Saturday at 9 a.m. and ends at 4 p.m.
+Question 4: When will the market end?
+4 pm
+11 a.m.
+5 pm
+3 pm
 0

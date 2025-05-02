@@ -1,8 +1,8 @@
-难度5
-市中心的餐厅推出了新菜单。新菜单上有五道新菜。餐厅从中午12点开放。新菜包括意大利面和寿司。
-问题4：市中心的餐厅推出了什么？
-新员工
-新装修
-打折促销
-新菜单
+Difficulty 5
+Downtown restaurants have launched a new menu. There are five new dishes on the new menu. The restaurant is open from 12 noon. New dishes include pasta and sushi.
+Question 4: What are the restaurants in the city center?
+New employees
+New decoration
+Discount promotion
+New menu
 3

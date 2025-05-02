@@ -1,8 +1,8 @@
-难度7
-本周五，博物馆将开设一个新展览。展览将展出15件古董，并于上午10点开放。
-问题12：博物馆展览将展出多少件古董？
-25件
-20件
-15件
-10件
+Difficulty 7
+This Friday, the museum will open a new exhibition. The exhibition will feature 15 antiques and will be open at 10 a.m.
+Question 12: How many antiques will be displayed in the museum exhibition?
+25 pieces
+20 pieces
+15 pieces
+10 pieces
 2

@@ -1,8 +1,8 @@
-难度7
-昨天，快递服务遭遇了延迟。原定的送货时间是下午3点，现在预计下午5点送达。
-问题16：快递原定的送货时间是什么时候？
-下午4点
-下午3点
-下午2点
-晚上6点
+Difficulty 7
+Yesterday, the express delivery service encountered a delay. The original delivery time was 3 pm and is now expected to arrive at 5 pm.
+Question 16: When is the original delivery time for express delivery?
+4 pm
+3 pm
+2 pm
+6 pm
 1

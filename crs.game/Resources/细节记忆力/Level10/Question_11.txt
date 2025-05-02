@@ -1,8 +1,8 @@
-难度10
-博物馆展览包括古代文物、艺术作品和自然标本。展览每天开放，特别展览在节假日和暑假期间举行。博物馆提供音频导览服务，部分展品有互动体验。
-问题：博物馆是否提供音频导览服务？
-只在节假日提供
-否
-仅部分展品提供
-是
+Difficulty 10
+The museum exhibition includes ancient artifacts, works of art and natural specimens. The exhibition is open every day, and special exhibitions are held during holidays and summer vacations. The museum provides audio guide services, and some exhibits have interactive experiences.
+Question: Does the museum provide audio guide services?
+Only available on holidays
+no
+Only some exhibits are available
+yes
 3

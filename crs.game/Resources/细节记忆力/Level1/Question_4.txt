@@ -1,8 +1,8 @@
-难度1
-市区新开了一条公共交通线，途经10个主要车站。新交通线的开通极大地方便了市民的出行，尤其是通勤族，他们可以更快捷地到达工作地点或返回家中。
-问题4：新开的公共交通线经过几个车站？
-10个
-6个
-12个
-8个
+Difficulty 1
+A new public transportation line has been opened in the city, passing through 10 major stations. The opening of the new transportation line has greatly facilitated the travel of citizens, especially commuters, who can arrive at work locations or return home more quickly.
+Question 4: How many stations does the newly opened public transportation line pass?
+10
+6
+12
+8
 0

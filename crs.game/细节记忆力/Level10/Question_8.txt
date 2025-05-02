@@ -1,8 +1,8 @@
-难度10
-健身房会员可以享受折扣和免费课程。会员卡分为月卡和年卡。周末提供特别的团体课程，节假日有时会有额外活动。会员还可以使用健身房的桑拿设施。
-问题：健身房会员卡分为哪些类型？
-季卡和半年卡
-月卡和年卡
-周卡和年卡
-年卡和季度卡
+Difficulty 10
+Gym members can enjoy discounts and free classes. Membership cards are divided into monthly and annual cards. Special group classes are available on weekends and extra activities are sometimes available on holidays. Members can also use the gym’s sauna facilities.
+Question: What are the types of gym membership cards?
+Seasonal and semi-annual cards
+Monthly and annual cards
+Weekly and Annual Cards
+Annual and quarterly cards
 1

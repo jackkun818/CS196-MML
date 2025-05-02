@@ -1,8 +1,8 @@
-难度6
-公园在这个周末有音乐节，活动从下午2点开始到晚上9点结束。
-问题13：音乐节活动从什么时候开始？
-下午1点
-下午2点
-晚上8点
-早上10点
+Difficulty 6
+The park has a music festival this weekend, and the event starts from 2pm to 9pm.
+Question 13: When will the festival start?
+1 pm
+2 pm
+8 pm
+10 a.m.
 1

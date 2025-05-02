@@ -1,8 +1,8 @@
-难度9
-城市的冬季市场刚刚开幕，市场上有20个摊位出售各种手工艺品。市场从上午10点开放到晚上6点。
-问题16：冬季市场上有多少个摊位？
-15个
-20个
-25个
-18个
+Difficulty 9
+The city’s winter market has just opened, with 20 stalls selling various handicrafts on the market. The market is open from 10 a.m. to 6 p.m.
+Question 16: How many stalls are there in the winter market?
+15
+20
+25
+18 pcs
 1

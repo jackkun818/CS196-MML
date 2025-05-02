@@ -1,8 +1,8 @@
-难度3
-健身房每天开放时间是从早上6点到晚上10点，会员可随时使用所有设备。
-问题8：健身房每天的开放时间是什么？
-早上7点到晚上9点
-早上8点到晚上11点
-早上6点到晚上10点
-早上6点到晚上9点
+Difficulty 3
+The gym is open from 6 am to 10 pm every day, and members can use all equipment at any time.
+Question 8: What is the daily opening hours of the gym?
+7 a.m. to 9 p.m.
+8 am to 11 pm
+6 am to 10 pm
+6 a.m. to 9 p.m.
 2

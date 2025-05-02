@@ -1,372 +1,372 @@
 [
     {
-        "Story": "在小镇的水果市场上，商贩们忙碌着摆放新鲜的水果。苹果的摊位前，顾客们发现价格标签上的数字比以往高出了20%。市场负责人解释说，这是由于近期的恶劣天气导致供应量减少，不得不提高价格以应对成本上升。尽管价格上涨，但顾客们对苹果的需求并未减少，因为它们是小镇居民的最爱。与此同时，香蕉的摊位前依然人流如织，价格没有变动，供应也充足。",
+        "Story": "In the fruit market in the town, vendors are busy placing fresh fruits. In front of Apple's stalls, customers found that the number on the price tag was 20% higher than before. The market leader explained that this was due to the recent severe weather that caused a decrease in supply and had to raise prices to cope with rising costs. Despite the price increase, customers have not reduced their demand for Apple, as they are a favorite among small town residents. At the same time, there are still crowds in front of the banana stalls, prices have not changed, and supply is sufficient.",
         "QuestionsList": [
             {
-                "Question": "哪种水果的价格上涨了？",
-                "OptionA": "西瓜",
-                "OptionB": "香蕉",
-                "OptionC": "葡萄",
-                "OptionD": "苹果",
+                "Question": "Which fruit has risen?",
+                "OptionA": "watermelon",
+                "OptionB": "banana",
+                "OptionC": "Grape",
+                "OptionD": "apple",
                 "Answer": "OptionD"
             },
             {
-                "Question": "价格上涨的原因是什么？",
-                "OptionA": "需求增加",
-                "OptionB": "供应减少",
-                "OptionC": "运输成本增加",
-                "OptionD": "恶劣天气",
+                "Question": "What is the reason for the price increase?",
+                "OptionA": "Increased demand",
+                "OptionB": "Reduced supply",
+                "OptionC": "Increased transportation costs",
+                "OptionD": "Bad weather",
                 "Answer": "OptionD"
             },
             {
-                "Question": "哪种水果的价格保持不变？",
-                "OptionA": "西瓜",
-                "OptionB": "香蕉",
-                "OptionC": "葡萄",
-                "OptionD": "橙子",
+                "Question": "Which fruits remain the same?",
+                "OptionA": "watermelon",
+                "OptionB": "banana",
+                "OptionC": "Grape",
+                "OptionD": "orange",
                 "Answer": "OptionB"
             },
             {
-                "Question": "哪种水果是小镇居民的最爱",
-                "OptionA": "西瓜",
-                "OptionB": "香蕉",
-                "OptionC": "苹果",
-                "OptionD": "橙子",
+                "Question": "Which fruit is the favorite of town residents",
+                "OptionA": "watermelon",
+                "OptionB": "banana",
+                "OptionC": "apple",
+                "OptionD": "orange",
                 "Answer": "OptionC"
             }
         ]
     },
     {
-        "Story": "学校图书馆是学生们最喜欢的地方之一，它不仅是知识的宝库，也是学生们放松和学习的好去处。最近，图书馆管理员们为了满足学生们的阅读需求，特意采购了四本新的科普书籍。这些新书已经加入到了图书馆的借阅系统中，学生们可以通过电脑或者手机轻松地搜索到这些新书，并进行借阅。为了让更多的学生能够在课后有更多的时间来图书馆，图书馆的开放时间也从原来的早上九点到晚上六点，调整为早上八点到晚上九点，这样学生们在放学后也可以来图书馆阅读和学习。",
+        "Story": "The school library is one of the favorite places for students. It is not only a treasure house of knowledge, but also a good place for students to relax and learn. Recently, in order to meet the students' reading needs, library administrators specially purchased four new popular science books. These new books have been added to the library's borrowing system, and students can easily search for these new books on their computers or mobile phones and borrow them. In order to allow more students to have more time to come to the library after class, the library's opening hours have also been adjusted from 9 a.m. to 6 p.m. to 8 a.m. to 9 p.m., so that students can come to the library to read and study after school.",
         "QuestionsList": [
             {
-                "Question": "学校图书馆新增了多少本新书？",
-                "OptionA": "八本",
-                "OptionB": "四本",
-                "OptionC": "两本",
-                "OptionD": "六本",
+                "Question": "How many new books have been added to the school library?",
+                "OptionA": "Eight books",
+                "OptionB": "Four books",
+                "OptionC": "Two books",
+                "OptionD": "Six books",
                 "Answer": "OptionB"
             },
             {
-                "Question": "学校图书馆新增的书籍类型是哪种？",
-                "OptionA": "历史书籍",
-                "OptionB": "艺术书籍",
-                "OptionC": "科普书籍",
-                "OptionD": "传记",
+                "Question": "What types of books are added to the school library?",
+                "OptionA": "History books",
+                "OptionB": "Art books",
+                "OptionC": "Popular Science Books",
+                "OptionD": "biography",
                 "Answer": "OptionC"
             },
             {
-                "Question": "图书馆扩大开放时间后，学生们可以在什么时间段内访问图书馆？",
-                "OptionA": "早上八点到晚上六点",
-                "OptionB": "早上九点到晚上八点",
-                "OptionC": "早上八点到晚上九点",
-                "OptionD": "早上七点到晚上八点",
+                "Question": "During what time can students access the library after the library is expanded?",
+                "OptionA": "8 am to 6 pm",
+                "OptionB": "Nine in the morning to eight in the evening",
+                "OptionC": "8 am to 9 pm",
+                "OptionD": "7am to 8pm",
                 "Answer": "OptionC"
             },
             {
-                "Question": "图书馆增加新书的主要目的是什么？",
-                "OptionA": "满足学生们的阅读需求",
-                "OptionB": "提高图书馆的藏书量",
-                "OptionC": "增加图书馆的收入",
-                "OptionD": "提供更多的自习空间",
+                "Question": "What is the main purpose of adding new books in the library?",
+                "OptionA": "Meet the reading needs of students",
+                "OptionB": "Increase library collection",
+                "OptionC": "Increase library revenue",
+                "OptionD": "Provide more self-study space",
                 "Answer": "OptionA"
             }
         ]
     },
     {
-        "Story": "市中心的医院一直以其高质量的医疗服务而闻名。为了提升医疗水平，医院管理层决定投资最新的医疗技术。最近，医院购置了三台新的CT扫描仪，这些设备以其高速成像而著称。新设备的引入，使得医生能够更快地获得患者的内部图像，这对于诊断各种疾病至关重要。此外，新CT扫描仪的高效性也意味着患者可以减少在扫描过程中的等待和不适，从而提高了患者的就医体验。医院的工作人员对这些新设备感到非常兴奋，他们相信这些设备将极大地提高诊断效率和准确性，为患者提供更好的医疗服务。",
+        "Story": "Downtown hospitals have always been known for their high-quality medical services. In order to improve the medical level, hospital management decided to invest in the latest medical technology. Recently, the hospital purchased three new onesCTScanners, these devices are known for their high-speed imaging. The introduction of new devices allows doctors to obtain internal images of patients more quickly, which is crucial for diagnosing various diseases. In addition, newCTThe efficiency of the scanner also means that patients can reduce waiting and discomfort during the scanning process, thereby improving the patient's medical experience. The staff at the hospital are very excited about these new devices, and they believe that these devices will greatly improve diagnostic efficiency and accuracy and provide better medical services to patients.",
         "QuestionsList": [
             {
-                "Question": "医院购置新CT扫描仪的主要目的是什么？",
-                "OptionA": "增加医院的收入",
-                "OptionB": "增加医院的床位数量",
-                "OptionC": "提升医疗水平",
-                "OptionD": "减少医院的运营成本",
+                "Question": "Hospital purchases newCTWhat is the main purpose of the scanner?",
+                "OptionA": "Increase hospital income",
+                "OptionB": "Increase the number of beds in the hospital",
+                "OptionC": "Improve medical standards",
+                "OptionD": "Reduce the operating costs of hospitals",
                 "Answer": "OptionC"
             },
             {
-                "Question": "医院购置了多少台新的CT扫描仪？",
-                "OptionA": "一台",
-                "OptionB": "两台",
-                "OptionC": "三台",
-                "OptionD": "四台",
+                "Question": "How many new ones have been purchased by the hospitalCTScanner?",
+                "OptionA": "One",
+                "OptionB": "Two units",
+                "OptionC": "Three units",
+                "OptionD": "Four units",
                 "Answer": "OptionC"
             },
             {
-                "Question": "新设备的引入，使得医生能够更快地获得患者的什么？",
-                "OptionA": "内部图像",
-                "OptionB": "个人隐私",
-                "OptionC": "身体数据",
-                "OptionD": "家庭信息",
+                "Question": "What has the introduction of new devices allowed doctors to get patients faster?",
+                "OptionA": "Internal image",
+                "OptionB": "Personal Privacy",
+                "OptionC": "Physical data",
+                "OptionD": "Family information",
                 "Answer": "OptionA"
             },
             {
-                "Question": "新CT扫描仪的特点是什么？",
-                "OptionA": "高速成像",
-                "OptionB": "低速和低分辨率成像",
-                "OptionC": "仅适用于特定类型的疾病诊断",
-                "OptionD": "需要更长的时间来培训操作人员",
+                "Question": "newCTWhat are the characteristics of the scanner?",
+                "OptionA": "High-speed imaging",
+                "OptionB": "Low-speed and low-resolution imaging",
+                "OptionC": "Applicable only for specific types of disease diagnosis",
+                "OptionD": "It takes longer to train operators",
                 "Answer": "OptionA"
             }
         ]
     },
     {
-        "Story": "在繁华的都市中心，有一家备受欢迎的阳光商场，它不仅商品种类繁多，而且服务贴心周到。本周末，为了回馈广大顾客的支持与厚爱，商场决定举办一场盛大的优惠活动。活动前夕，商场内外就已经被五彩斑斓的宣传海报装点得格外喜庆，吸引着过往行人的目光。海报上清晰地标注着：全场商品享受八折优惠，这一前所未有的力度让不少人心动不已。优惠范围覆盖了商场内的每一个角落，从时尚潮流的服装到精致小巧的配件，无一不囊括其中。更令人兴奋的是，凡是在活动期间购物的顾客，还能额外获得商场精心准备的赠品，这些赠品既有实用性又不失格调，为顾客的购物之旅增添了一份惊喜。",
+        "Story": "In the bustling city center, there is a popular sunshine mall. It not only has a wide variety of products, but also has considerate and thoughtful service. This weekend, in order to give back to the support and love of customers, the mall decided to hold a grand discount event. On the eve of the event, inside and outside the mall were decorated with colorful publicity posters, attracting the attention of passers-by. The poster clearly marked: All products enjoy a 20% discount, and this unprecedented intensity made many people excited. The discount range covers every corner of the mall, from fashionable clothing to exquisite and compact accessories, all of which are included. What is even more exciting is that customers who shop during the event can also receive extra gifts carefully prepared by the mall. These gifts are both practical and stylish, adding a surprise to customers' shopping trip.",
         "QuestionsList": [
             {
-                "Question": "商场本周末的优惠力度是多少？",
-                "OptionA": "七折",
-                "OptionB": "八折",
-                "OptionC": "九折",
-                "OptionD": "无折扣",
+                "Question": "What is the discount for the mall this weekend?",
+                "OptionA": "30% off",
+                "OptionB": "20% off",
+                "OptionC": "90% off",
+                "OptionD": "No discount",
                 "Answer": "OptionB"
             },
             {
-                "Question": "顾客在活动期间购物可以获得什么额外福利？",
-                "OptionA": "现金返还",
-                "OptionB": "优惠券",
-                "OptionC": "赠品",
-                "OptionD": "免费快递",
+                "Question": "What additional benefits do customers get when shopping during the event?",
+                "OptionA": "Cash Back",
+                "OptionB": "Coupons",
+                "OptionC": "Giveaway",
+                "OptionD": "Free express delivery",
                 "Answer": "OptionC"
             },
             {
-                "Question": "商场的宣传海报主要吸引的是哪类人群？",
-                "OptionA": "老年人",
-                "OptionB": "上班族",
-                "OptionC": "学生",
-                "OptionD": "过往行人",
+                "Question": "What kind of people do the shopping mall promotional posters attract?",
+                "OptionA": "Elderly",
+                "OptionB": "Office workers",
+                "OptionC": "student",
+                "OptionD": "Passing pedestrians",
                 "Answer": "OptionD"
             },
             {
-                "Question": "商场的名字叫什么？",
-                "OptionA": "阳光商场",
-                "OptionB": "白云商场",
-                "OptionC": "蓝天商场",
-                "OptionD": "春风商场",
+                "Question": "What is the name of the mall?",
+                "OptionA": "Sunshine Mall",
+                "OptionB": "Baiyun Mall",
+                "OptionC": "Blue Sky Mall",
+                "OptionD": "Spring Breeze Mall",
                 "Answer": "OptionA"
             }
         ]
     },
     {
-        "Story": "在宁静的城市一角，有一个深受居民喜爱的公园。这个公园不仅是人们散步、跑步的好去处，更是孩子们嬉戏玩耍的天堂。最近，为了进一步提升公园的娱乐性和吸引力，公园管理方决定增加一个新的儿童游乐场。这一决定迅速得到了社区居民的热烈反响，大家都期待着新游乐场的建成。经过紧张的施工和精心的布置，游乐场终于在上周正式对外开放了。新的游乐场内主要设有滑梯，它们从高高的平台上蜿蜒而下，为孩子们带来了无尽的乐趣。游乐场的开放不仅丰富了孩子们的课余生活，也为家长们提供了一个陪伴孩子成长的温馨场所。每当周末或节假日，游乐场内总是充满了孩子们的欢声笑语，成为了公园里一道亮丽的风景线。",
+        "Story": "In a corner of the quiet city, there is a park that is loved by residents. This park is not only a good place for people to walk and run, but also a paradise for children to play. Recently, in order to further enhance the recreationality and attractiveness of the park, the park manager decided to add a new children's playground. This decision quickly received a warm response from the community residents, and everyone was looking forward to the completion of the new playground. After intense construction and careful layout, the playground was finally officially opened to the public last week. The new playground mainly features slides, which wind down from the high platform, bringing endless fun to the children. The opening of the playground not only enriches children's extracurricular life, but also provides parents with a warm place to accompany their children's growth. Every weekend or holiday, the playground is always filled with the laughter of children, becoming a beautiful scenery in the park.",
         "QuestionsList": [
             {
-                "Question": "公园最近增加了什么新设施？",
-                "OptionA": "儿童游乐场",
-                "OptionB": "露天剧场",
-                "OptionC": "运动场",
-                "OptionD": "休息区",
+                "Question": "What new facilities have been added recently in the park?",
+                "OptionA": "Children's playground",
+                "OptionB": "Open-air theater",
+                "OptionC": "playground",
+                "OptionD": "Living Area",
                 "Answer": "OptionA"
             },
             {
-                "Question": "新的游乐设施在何时开放？",
-                "OptionA": "本周",
-                "OptionB": "上周",
-                "OptionC": "下周",
-                "OptionD": "上个月",
+                "Question": "When will the new rides be opened?",
+                "OptionA": "This week",
+                "OptionB": "Last week",
+                "OptionC": "next week",
+                "OptionD": "last month",
                 "Answer": "OptionB"
             },
             {
-                "Question": "游乐场内有哪些主要设施？",
-                "OptionA": "滑梯",
-                "OptionB": "秋千",
-                "OptionC": "游泳池",
-                "OptionD": "足球场",
+                "Question": "What are the main facilities in the playground?",
+                "OptionA": "Slide",
+                "OptionB": "Swing",
+                "OptionC": "swimming pool",
+                "OptionD": "football field",
                 "Answer": "OptionAA"
             },
             {
-                "Question": "新的游乐场为哪类人群带来了乐趣？",
-                "OptionA": "老年人",
-                "OptionB": "上班族",
-                "OptionC": "孩子们",
-                "OptionD": "宠物",
+                "Question": "Which group of people does the new playground bring fun?",
+                "OptionA": "Elderly",
+                "OptionB": "Office workers",
+                "OptionC": "Children",
+                "OptionD": "pet",
                 "Answer": "OptionC"
             }
         ]
     },
     {
-        "Story": "在一个宁静而温馨的春风小区里，居民们一直以来都享受着和谐安宁的生活环境。然而，随着夜幕的降临，小区内的照明设施逐渐显得有些力不从心，给夜间出行的居民带来了一定的不便。为了改善这一状况，小区管理方决定对所有路灯进行更新升级。经过一系列精心的准备和施工，新的路灯终于在近日全部安装完毕并投入使用。这些新路灯不仅外观更加时尚美观，而且照明效果也得到了显著提升，为小区的夜间环境增添了一份明亮与安全。自从路灯更新后，小区的夜间照明变得更加充足，居民们在夜晚散步、归家时都感到更加安心。此外，小区的整体环境也因此得到了提升，变得更加宜居和舒适。居民们对此次更新表示满意，纷纷称赞小区管理方的贴心与周到。",
+        "Story": "In a quiet and warm spring breeze community, residents have always enjoyed a harmonious and peaceful living environment. However, as night falls, the lighting facilities in the community gradually appear to be a little overwhelmed, causing some inconvenience to residents traveling at night. In order to improve this situation, the community management decided to update and upgrade all street lights. After a series of careful preparations and construction, the new street lights have finally been installed and put into use recently. These new street lights not only have a more stylish and beautiful appearance, but also have significantly improved the lighting effect, adding a brightness and safety to the night environment of the community. Since the street lights were updated, the night lighting in the community has become more sufficient, and residents feel more at ease when walking at night and returning home. In addition, the overall environment of the community has been improved and has become more livable and comfortable. Residents expressed satisfaction with the update and praised the community management for their thoughtfulness and thoughtfulness.",
         "QuestionsList": [
             {
-                "Question": "小区最近更新了什么设施？",
-                "OptionA": "路灯",
-                "OptionB": "花坛",
-                "OptionC": "停车场",
-                "OptionD": "道路",
+                "Question": "What facilities have been updated in the community recently?",
+                "OptionA": "Street lights",
+                "OptionB": "flower bed",
+                "OptionC": "PARKING LOT",
+                "OptionD": "the way",
                 "Answer": "OptionA"
             },
             {
-                "Question": "路灯更新后，小区的夜间环境变得更加什么？",
-                "OptionA": "明亮",
-                "OptionB": "黑暗",
-                "OptionC": "拥挤",
-                "OptionD": "脏乱",
+                "Question": "After the street lights are updated, what will the night environment of the community become even better?",
+                "OptionA": "Bright",
+                "OptionB": "dark",
+                "OptionC": "Crowded",
+                "OptionD": "Dirty and messy",
                 "Answer": "OptionA"
             },
             {
-                "Question": "居民对路灯更新持什么态度？",
-                "OptionA": "不满意",
-                "OptionB": "无所谓",
-                "OptionC": "满意",
-                "OptionD": "非常不满意",
+                "Question": "What attitude do residents have towards street light renewal?",
+                "OptionA": "Dissatisfied",
+                "OptionB": "It doesn't matter",
+                "OptionC": "satisfy",
+                "OptionD": "Very dissatisfied",
                 "Answer": "OptionC"
             },
             {
-                "Question": "故事中的小区叫什么？",
-                "OptionA": "阳光小区",
-                "OptionB": "碧春小区",
-                "OptionC": "中海小区",
-                "OptionD": "春风小区",
+                "Question": "What is the name of the community in the story?",
+                "OptionA": "Sunshine Community",
+                "OptionB": "Bichun Community",
+                "OptionC": "Zhonghai Community",
+                "OptionD": "Chunfeng Community",
                 "Answer": "OptionD"
             }
         ]
     },
     {
-        "Story": "在一个充满文化气息的城市角落，有一家深受读者喜爱的书店。这家书店不仅藏书丰富，还经常举办各类文化活动，为书迷们提供了一个交流的平台。本周末，书店为了推广一本备受期待的新书，特意举办了一场新书签售会。活动当天，书店内布置得温馨而雅致，书架上摆满了这本新书，等待着读者的翻阅与购买。作者也亲自到场，与读者面对面交流创作心得，分享书中的故事与灵感来源。这一消息迅速在书迷圈中传开，吸引了大量热爱阅读的读者前来参加。他们中有的是该作者的忠实粉丝，有的是对新书内容充满好奇的新读者，大家都怀揣着对书籍的热爱，共同参与了这场文化盛宴。",
+        "Story": "In a corner of a city full of cultural atmosphere, there is a bookstore that is loved by readers. This bookstore not only has a rich collection of books, but also often holds various cultural activities, providing a platform for book fans to communicate. This weekend, the bookstore held a new bookmarking ceremony to promote a highly anticipated new book. On the day of the event, the bookstore was decorated in a warm and elegant manner, and the bookshelf was filled with this new book, waiting for readers to read and purchase. The author also personally attended the scene to exchange creative experiences face to face with readers and share the stories and sources of inspiration in the book. The news quickly spread among the book fans, attracting a large number of readers who love reading to participate. Some of them are loyal fans of the author, and some are new readers who are curious about the content of the new book. Everyone has a love for books and participates in this cultural feast together.",
         "QuestionsList": [
             {
-                "Question": "书店举办了什么活动？",
-                "OptionA": "读书分享会",
-                "OptionB": "折扣促销活动",
-                "OptionC": "新书签售会",
-                "OptionD": "书籍拍卖会",
+                "Question": "What events did the bookstore hold?",
+                "OptionA": "Reading sharing session",
+                "OptionB": "Discount promotions",
+                "OptionC": "New bookmark sale",
+                "OptionD": "Book auction",
                 "Answer": "OptionC"
             },
             {
-                "Question": "谁亲自到场与读者交流？",
-                "OptionA": "书店老板",
-                "OptionB": "出版社编辑",
-                "OptionC": "作者",
-                "OptionD": "读者代表",
+                "Question": "Who is present to communicate with readers in person?",
+                "OptionA": "Bookstore owner",
+                "OptionB": "Publisher Editor",
+                "OptionC": "author",
+                "OptionD": "Reader representative",
                 "Answer": "OptionC"
             },
             {
-                "Question": "活动吸引了哪类人群前来？",
-                "OptionA": "游客",
-                "OptionB": "书迷",
-                "OptionC": "学生",
-                "OptionD": "商人",
+                "Question": "What kind of people did the event attract?",
+                "OptionA": "Visitors",
+                "OptionB": "Book fans",
+                "OptionC": "student",
+                "OptionD": "merchant",
                 "Answer": "OptionB"
             },
             {
-                "Question": "新书签售会的主要目的是什么？",
-                "OptionA": "推广新书",
-                "OptionB": "促销旧书",
-                "OptionC": "增加书店面积",
-                "OptionD": "举办讲座",
+                "Question": "What is the main purpose of the new bookmark sale?",
+                "OptionA": "Promote new books",
+                "OptionB": "Promotional old books",
+                "OptionC": "Increase bookstore area",
+                "OptionD": "Hold a lecture",
                 "Answer": "OptionA"
             }
         ]
     },
     {
-        "Story": "在市中心的医院里，最近举办了一场健康讲座，主题是心血管疾病预防。讲座邀请了知名专家进行讲解，吸引了众多市民前来参加。专家们不仅分享了心血管疾病的成因和危害，还提供了预防和控制的实用建议。市民们听得津津有味，不时提出自己的疑问，专家们耐心解答，现场气氛十分活跃。讲座结束后，市民们纷纷表示受益匪浅，对如何维护心血管健康有了更深的认识。医院通过这次讲座，不仅提高了市民的健康意识，也为医院赢得了口碑。",
+        "Story": "In the downtown hospital, a health lecture was recently held on the theme of cardiovascular disease prevention. The lecture invited well-known experts to give explanations, attracting many citizens to attend. Experts not only share the causes and harms of cardiovascular disease, but also provide practical advice on prevention and control. The citizens listened with relish and asked their own questions from time to time. The experts answered patiently, and the atmosphere on the scene was very lively. After the lecture, citizens expressed that they benefited a lot and had a deeper understanding of how to maintain cardiovascular health. Through this lecture, the hospital not only improved the health awareness of citizens, but also won a reputation for the hospital.",
         "QuestionsList": [
             {
-                "Question": "讲座的主题是什么？",
-                "OptionA": "心血管疾病预防",
-                "OptionB": "健身技巧",
-                "OptionC": "营养饮食",
-                "OptionD": "糖尿病管理",
+                "Question": "What is the topic of the lecture?",
+                "OptionA": "Cardiovascular disease prevention",
+                "OptionB": "Fitness skills",
+                "OptionC": "Nutritious diet",
+                "OptionD": "Diabetes Management",
                 "Answer": "OptionA"
             },
             {
-                "Question": "讲座邀请了哪些人？",
-                "OptionA": "市民",
-                "OptionB": "专家",
-                "OptionC": "医生",
-                "OptionD": "护士",
+                "Question": "Who were invited to the lecture?",
+                "OptionA": "Citizens",
+                "OptionB": "expert",
+                "OptionC": "doctor",
+                "OptionD": "Nurse",
                 "Answer": "OptionB"
             },
             {
-                "Question": "市民们在讲座中做了什么？",
-                "OptionA": "提问",
-                "OptionB": "讨论",
-                "OptionC": "记录",
-                "OptionD": "观察",
+                "Question": "What did the citizens do in the lecture?",
+                "OptionA": "Ask a question",
+                "OptionB": "discuss",
+                "OptionC": "Record",
+                "OptionD": "observe",
                 "Answer": "OptionA"
             },
             {
-                "Question": "医院通过讲座得到了什么？",
-                "OptionA": "口碑",
-                "OptionB": "知识",
-                "OptionC": "资金",
-                "OptionD": "设备",
+                "Question": "What did the hospital get through the lecture?",
+                "OptionA": "Reputation",
+                "OptionB": "Knowledge",
+                "OptionC": "funds",
+                "OptionD": "equipment",
                 "Answer": "OptionA"
             }
         ]
     }
     ,
     {
-        "Story": "市中心的展览馆热闹非凡，因为这里正在举办一年一度的汽车展览会。展览馆内，灯光璀璨，人声鼎沸，最新款的汽车和尖端技术吸引了无数汽车爱好者和行业专家的目光。从节能环保的电动车到高科技的自动驾驶系统，每一款展出的汽车都代表了汽车工业的最新发展。参观者们穿梭在各个展台之间，他们或拍照留念，或与工作人员交流探讨，甚至有机会亲自试驾体验。展览会展示了汽车技术，让参观者对汽车的未来有了更深的了解。三天的展览时间里，每天都有不同的主题活动，包括新车发布会、技术研讨会和行业领袖的演讲，使得整个展览会内容丰富，精彩纷呈。",
+        "Story": "The exhibition hall in the city center is very lively because the annual auto show is being held here. In the exhibition hall, the lights are bright and the people are buzzing. The latest models of cars and cutting-edge technologies have attracted the attention of countless car enthusiasts and industry experts. From energy-saving and environmentally friendly electric vehicles to high-tech autonomous driving systems, every car on display represents the latest developments in the automotive industry. Visitors shuttled between various booths, either taking photos or communicating with staff, or even having the opportunity to test drive in person. The exhibition demonstrated automotive technology, giving visitors a deeper understanding of the future of cars. During the three-day exhibition, there are different thematic activities every day, including new car launch conferences, technical seminars and speeches from industry leaders, making the entire exhibition rich in content and exciting.",
         "QuestionsList": [
             {
-                "Question": "汽车展览会在哪里举办？",
-                "OptionA": "展览馆",
-                "OptionB": "公园",
-                "OptionC": "酒店",
-                "OptionD": "体育场",
+                "Question": "Where is the auto show held?",
+                "OptionA": "Exhibition Hall",
+                "OptionB": "garden",
+                "OptionC": "hotel",
+                "OptionD": "stadium",
                 "Answer": "OptionA"
             },
             {
-                "Question": "展览会展示了什么？",
-                "OptionA": "汽车技术",
-                "OptionB": "艺术品",
-                "OptionC": "电子产品",
-                "OptionD": "服装",
+                "Question": "What was displayed at the exhibition?",
+                "OptionA": "Automotive Technology",
+                "OptionB": "artwork",
+                "OptionC": "Electronics",
+                "OptionD": "clothing",
                 "Answer": "OptionA"
             },
             {
-                "Question": "参观者在展览会上可以做什么？",
-                "OptionA": "试驾",
-                "OptionB": "游泳",
-                "OptionC": "跑步",
-                "OptionD": "听讲座",
+                "Question": "What can visitors do at the exhibition?",
+                "OptionA": "Test drive",
+                "OptionB": "swim",
+                "OptionC": "running",
+                "OptionD": "Listen to the lecture",
                 "Answer": "OptionA"
             },
             {
-                "Question": "展览会持续了多少天？",
-                "OptionA": "一天",
-                "OptionB": "三天",
-                "OptionC": "四天",
-                "OptionD": "两天",
+                "Question": "How many days did the exhibition last?",
+                "OptionA": "one day",
+                "OptionB": "Three days",
+                "OptionC": "Four days",
+                "OptionD": "Two days",
                 "Answer": "OptionB"
             }
         ]
     }
     ,
     {
-        "Story": "在城市的郊区，有一个热闹的农产品市场，以其新鲜的农产品而闻名。本周五，市场在经过一段时间的休整后重新开放，吸引了许多市民前来选购。市场上，摊贩们热情地叫卖着自家种植的农产品，新鲜的西红柿、脆嫩的黄瓜、金黄的玉米和多汁的橙子等琳琅满目。市民们穿梭在各个摊位之间，挑选着心仪的食材，脸上洋溢着对健康生活的追求。市场里，不仅有新鲜的农产品，还有现场制作的果酱和蜂蜜，以及各种手工艺品。孩子们在家长的带领下，好奇地观察着各种农产品，学习着它们的生长过程。市场每周五的开放，不仅为市民提供了一个购买新鲜食材的好去处，也为当地农民提供了一个展示和销售自己农产品的平台。",
+        "Story": "In the suburbs of the city, there is a lively agricultural produce market, known for its fresh produce. This Friday, the market reopened after a period of rest and recuperation, attracting many citizens to come and buy. In the market, vendors enthusiastically sell home-grown agricultural products, including fresh tomatoes, crispy cucumbers, golden corn and juicy oranges. Citizens shuttled between various stalls, selecting their favorite ingredients, and their faces were filled with the pursuit of a healthy life. In the market, there are not only fresh agricultural products, but also jams and honey made on-site, as well as various handicrafts. Under the leadership of their parents, the children curiously observe various agricultural products and learn their growth process. The opening of the market every Friday not only provides citizens with a good place to buy fresh ingredients, but also provides local farmers with a platform to display and sell their own agricultural products.",
         "QuestionsList": [
             {
-                "Question": "农产品市场在哪里？",
-                "OptionA": "郊区",
-                "OptionB": "市中心",
-                "OptionC": "海边",
-                "OptionD": "山上",
+                "Question": "Where is the agricultural product market?",
+                "OptionA": "suburbs",
+                "OptionB": "city ​​center",
+                "OptionC": "seaside",
+                "OptionD": "On the mountain",
                 "Answer": "OptionA"
             },
             {
-                "Question": "市场销售的是什么？",
-                "OptionA": "衣服",
-                "OptionB": "海鲜",
-                "OptionC": "肉类",
-                "OptionD": "农产品",
+                "Question": "What is sold in the market?",
+                "OptionA": "clothing",
+                "OptionB": "seafood",
+                "OptionC": "meat",
+                "OptionD": "Agricultural Products",
                 "Answer": "OptionD"
             },
             {
-                "Question": "市场重新开放是在哪一天？",
-                "OptionA": "本周五",
-                "OptionB": "本周一",
-                "OptionC": "本周六",
-                "OptionD": "本周日",
+                "Question": "On what day will the market reopen?",
+                "OptionA": "This Friday",
+                "OptionB": "Monday",
+                "OptionC": "This Saturday",
+                "OptionD": "This Sunday",
                 "Answer": "OptionA"
             },
             {
-                "Question": "农产品市场每周几开放？",
-                "OptionA": "周末",
-                "OptionB": "周五",
-                "OptionC": "周一",
-                "OptionD": "周三",
+                "Question": "What week is the agricultural product market open?",
+                "OptionA": "weekend",
+                "OptionB": "Friday",
+                "OptionC": "on Monday",
+                "OptionD": "Wednesday",
                 "Answer": "OptionB"
             }
         ]

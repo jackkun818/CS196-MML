@@ -1,8 +1,8 @@
-难度2
-市医院最近安排了一场关于心理健康的讲座，时间为下周三。
-问题16：健康讲座的主题是什么？
-运动
-营养
-心理健康
-疾病预防
+Difficulty 2
+The city hospital recently arranged a lecture on mental health, which will be held next Wednesday.
+Question 16: What is the topic of the health lecture?
+sports
+Nutrition
+Mental Health
+Disease prevention
 2

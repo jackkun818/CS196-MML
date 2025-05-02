@@ -1,35 +1,35 @@
 [
     {
-        "Story": "新购物中心昨天在东区开幕，吸引了大量顾客。购物中心内设有各种品牌的商店、餐馆和娱乐设施，为市民提供了一个理想的购物和休闲场所。",
+        "Story": "The new shopping center opened in the East Side yesterday, attracting a large number of customers. The shopping center has a variety of brands of shops, restaurants and entertainment facilities, providing citizens with an ideal place to shop and relax.",
         "QuestionsList": [
             {
-                "Question": "新购物中心在哪里开幕？",
-                "OptionA": "南区",
-                "OptionB": "西区",
-                "OptionC": "东区",
-                "OptionD": "北区",
+                "Question": "Where will the new shopping mall open?",
+                "OptionA": "South District",
+                "OptionB": "West District",
+                "OptionC": "East District",
+                "OptionD": "North District",
                 "Answer": "OptionC"
             }
         ]
     },
     {
-        "Story": "城市博物馆周一闭馆，其他时间开放。博物馆里展出了丰富的历史文物和艺术作品，吸引了众多市民和游客前来参观。",
+        "Story": "The City Museum is closed on Monday and open at other times. The museum displays a wealth of historical relics and artistic works, attracting many citizens and tourists to visit.",
         "QuestionsList": [
             {
-                "Question": "城市博物馆哪天闭馆？",
-                "OptionA": "周五",
-                "OptionB": "周日",
-                "OptionC": "周一",
-                "OptionD": "周三",
+                "Question": "When will the City Museum be closed?",
+                "OptionA": "Friday",
+                "OptionB": "Sunday",
+                "OptionC": "on Monday",
+                "OptionD": "Wednesday",
                 "Answer": "OptionC"
             }
         ]
     },
     {
-        "Story": "市区新开了一条公共交通线，途经10个主要车站。新交通线的开通极大地方便了市民的出行，尤其是通勤族，他们可以更快捷地到达工作地点或返回家中。",
+        "Story": "A new public transportation line has been opened in the city, passing through 10 major stations. The opening of the new transportation line has greatly facilitated the travel of citizens, especially commuters, who can arrive at work locations or return home more quickly.",
         "QuestionsList": [
             {
-                "Question": "新开的公共交通线经过几个车站？",
+                "Question": "How many stations does the newly opened public transportation line pass?",
                 "OptionA": "10",
                 "OptionB": "6",
                 "OptionC": "12",
@@ -39,23 +39,23 @@
         ]
     },
     {
-        "Story": "昨天夏季运动会在体育馆举行，吸引了众多市民前来观看比赛。比赛项目丰富多样，包括田径、游泳、篮球等，参赛选手表现出色，赢得了观众的热烈掌声。",
+        "Story": "Yesterday, the summer sports meeting was held in the gymnasium, attracting many citizens to come and watch the competition. The competition events are rich and diverse, including track and field, swimming, basketball, etc. The contestants performed well and won warm applause from the audience.",
         "QuestionsList": [
             {
-                "Question": "夏季运动会在哪里举行？",
-                "OptionA": "学校",
-                "OptionB": "体育馆",
-                "OptionC": "游泳池",
-                "OptionD": "公园",
+                "Question": "Where is the summer sports meeting held?",
+                "OptionA": "School",
+                "OptionB": "stadium",
+                "OptionC": "swimming pool",
+                "OptionD": "garden",
                 "Answer": "OptionB"
             }
         ]
     },
     {
-        "Story": "夜市的小吃摊位在晚上7点开始营业，常常吸引很多人。夜市的美食种类繁多，价格实惠，是市民晚间休闲的好去处。",
+        "Story": "The snack stalls in the night market open at 7 pm, often attracting a lot of people. The night market has a wide variety of food and affordable prices, making it a good place for citizens to relax at night.",
         "QuestionsList": [
             {
-                "Question": "夜市小吃摊位在晚上几点开始营业？",
+                "Question": "At what time does the night market snack stall start to open?",
                 "OptionA": "9",
                 "OptionB": "6",
                 "OptionC": "7",
@@ -65,66 +65,66 @@
         ]
     },
     {
-        "Story": "电影院本周末上映一部热门动作片，影评好评如潮。许多影迷专程前来观看，电影院几乎场场爆满。",
+        "Story": "A popular action movie was released in the cinema this weekend, and the film reviews were rave reviews. Many movie fans came to watch it, and the cinemas were almost full.",
         "QuestionsList": [
             {
-                "Question": "电影院本周末上映了什么类型的电影？",
-                "OptionA": "喜剧片",
-                "OptionB": "剧情片",
-                "OptionC": "动作片",
-                "OptionD": "爱情片",
+                "Question": "What type of movies will be released in the cinema this weekend?",
+                "OptionA": "Comedy",
+                "OptionB": "Drama",
+                "OptionC": "Action movie",
+                "OptionD": "Romance movies",
                 "Answer": "OptionC"
             }
         ]
     },
     {
-        "Story": "地铁车站正在进行改造工程，预计下个月完成。改造后，车站将更加现代化，提供更加便利的服务。",
+        "Story": "The subway station is undergoing renovation projects and is expected to be completed next month. After the renovation, the station will be more modern and provide more convenient services.",
         "QuestionsList": [
             {
-                "Question": "地铁车站的改造工程预计何时完成？",
-                "OptionA": "今年底",
-                "OptionB": "下个月",
-                "OptionC": "明年初",
-                "OptionD": "本月",
+                "Question": "When is the renovation project of the subway station expected to be completed?",
+                "OptionA": "At the end of this year",
+                "OptionB": "next month",
+                "OptionC": "Early next year",
+                "OptionD": "this month",
                 "Answer": "OptionB"
             }
         ]
     },
     {
-        "Story": "图书馆刚刚上架了一本畅销书，作者是知名作家李明。这本书自上架以来，受到了读者的热烈欢迎，借阅量一直居高不下。",
+        "Story": "The library has just launched a bestseller book, authored by famous writer Li Ming. Since its release, this book has been warmly welcomed by readers, and the number of borrowed books has remained high.",
         "QuestionsList": [
             {
-                "Question": "图书馆新上的畅销书的作者是谁？",
-                "OptionA": "李明",
-                "OptionB": "张伟",
-                "OptionC": "刘洋",
-                "OptionD": "王强",
+                "Question": "Who is the author of the new bestseller in the library?",
+                "OptionA": "Li Ming",
+                "OptionB": "Zhang Wei",
+                "OptionC": "Liu Yang",
+                "OptionD": "Wang Qiang",
                 "Answer": "OptionA"
             }
         ]
     },
     {
-        "Story": "书店今天开始了全场5折的促销活动，为期一周。此次促销活动吸引了大量的书迷，他们纷纷前来购买心仪的书籍。",
+        "Story": "The bookstore started a 50% off promotion today for a week. The promotion attracted a large number of book fans, who came to buy their favorite books.",
         "QuestionsList": [
             {
-                "Question": "书店的促销活动持续多久？",
-                "OptionA": "三天",
-                "OptionB": "一周",
-                "OptionC": "一个月",
-                "OptionD": "两周",
+                "Question": "How long does the bookstore promotion last?",
+                "OptionA": "Three days",
+                "OptionB": "One week",
+                "OptionC": "One month",
+                "OptionD": "Two weeks",
                 "Answer": "OptionB"
             }
         ]
     },
     {
-        "Story": "公园里的草坪昨天刚刚修剪过，看起来特别整洁。修剪后的草坪不仅美观，而且为前来休闲的市民提供了更舒适的环境。",
+        "Story": "The lawn in the park was just trimmed yesterday and looked particularly tidy. The trimmed lawn is not only beautiful, but also provides a more comfortable environment for citizens who come to relax.",
         "QuestionsList": [
             {
-                "Question": "公园草坪是什么时候修剪的？",
-                "OptionA": "上周",
-                "OptionB": "今年春天",
-                "OptionC": "本月初",
-                "OptionD": "昨天",
+                "Question": "When are the park lawns mowed?",
+                "OptionA": "Last week",
+                "OptionB": "This spring",
+                "OptionC": "Earlier this month",
+                "OptionD": "yesterday",
                 "Answer": "OptionD"
             }
         ]

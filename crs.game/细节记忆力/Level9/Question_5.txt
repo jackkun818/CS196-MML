@@ -1,8 +1,8 @@
-难度9
-城市的艺术展览会最近在市博物馆举办，展出了15幅新作。展览会从上午10点开放到下午5点，吸引了不少艺术爱好者。
-问题5：展览会展示了多少幅新作？
-10幅
-20幅
-12幅
-15幅
+Difficulty 9
+The City Art Exhibition was recently held at the City Museum, with 15 new works on display. The exhibition opens from 10 a.m. to 5 p.m., attracting many art lovers.
+Question 5: How many new works were displayed at the exhibition?
+10 width
+20 width
+12 widths
+15 width
 3

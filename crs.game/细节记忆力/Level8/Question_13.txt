@@ -1,8 +1,8 @@
-难度8
-游泳池每天的开放时间是早上9点到下午6点。
-问题13：游泳池的开放时间是什么时候？
-上午10点到5点
-早上9点到下午6点
-下午2点到晚上8点
-早上8点到晚上7点
+Difficulty 8
+The pool is open from 9 a.m. to 6 p.m. every day.
+Question 13: When is the opening hours of the swimming pool?
+10:00 to 5:00 a.m.
+9 am to 6 pm
+2pm to 8pm
+8 am to 7 pm
 1

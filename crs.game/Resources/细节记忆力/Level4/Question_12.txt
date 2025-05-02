@@ -1,8 +1,8 @@
-难度4
-新建的公寓楼已经开放。公寓内配备了现代化的厨房和洗浴设施。预计将吸引许多租客。
-问题12：新公寓配备了哪些设施？
-运动设施
-仅有卧室和客厅
-现代化的厨房和洗浴设施
-旧式家具和设备
+Difficulty 4
+The newly built apartment building has been opened. The apartment is equipped with a modern kitchen and bathing facilities. It is expected to attract many tenants.
+Question 12: What facilities are available in the new apartment?
+Sports facilities
+Only bedroom and living room
+Modern kitchen and bathing facilities
+Old style furniture and equipment
 2

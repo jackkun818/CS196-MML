@@ -1,8 +1,8 @@
-难度1
-医院刚刚引进了一台最新款的CT扫描仪，用于提升诊断精度。这台设备的引进，使得医院在疾病诊断方面迈上了一个新台阶。
-问题14：医院引进了什么新设备？
-X光机
-磁共振仪
-CT扫描仪
-超声波设备
+Difficulty 1
+The hospital just introduced the latest modelCTScanner for improving diagnostic accuracy. The introduction of this equipment has brought the hospital to a new level in disease diagnosis.
+Question 14: What new equipment has the hospital introduced?
+XOptical machine
+Magnetic resonance meter
+CTScanner
+Ultrasonic equipment
 2

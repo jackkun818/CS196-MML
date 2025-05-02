@@ -1,8 +1,8 @@
-难度8
-餐厅允许预定的时间段是从下午4点到晚上9点。
-问题10：餐厅允许预定的时间段是？
-下午4点到9点
-上午11点到3点
-下午2点到5点
-下午5点到10点
+Difficulty 8
+The restaurant allows reservations from 4 pm to 9 pm.
+Question 10: What is the time period for reservations in restaurants?
+4:00 to 9:00 pm
+11:00 to 3:00 a.m.
+2pm to 5pm
+5:00 to 10:00 pm
 0

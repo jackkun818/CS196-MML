@@ -1,8 +1,8 @@
-难度9
-学校的秋季运动会在学校操场举行。比赛项目包括跑步、跳远和篮球。运动会从早上8点开始，到下午3点结束。
-问题6：秋季运动会在哪个地点举行？
-学校体育馆
-学校操场
-学校礼堂
-学校图书馆
+Difficulty 9
+The school's autumn sports meeting was held on the school playground. Competitions include running, long jump and basketball. The sports meeting starts at 8 a.m. and ends at 3 p.m.
+Question 6: Where is the autumn sports meeting held?
+School gymnasium
+School playground
+School Auditorium
+School Library
 1

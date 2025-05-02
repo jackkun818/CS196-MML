@@ -1,8 +1,8 @@
-难度3
-书店本周末举办了一个促销活动，所有书籍8折优惠，促销时间为两天。
-问题14：书店促销活动持续了多少天？
-三天
-两天
-一天
-四天
+Difficulty 3
+The bookstore held a promotion this weekend with 20% off on all books, with a promotion time of two days.
+Question 14: How many days did the bookstore promotion last?
+Three days
+Two days
+one day
+Four days
 1

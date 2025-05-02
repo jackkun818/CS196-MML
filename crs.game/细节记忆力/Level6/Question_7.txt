@@ -1,8 +1,8 @@
-难度6
-健身房本月有半价优惠，优惠活动从今天开始，持续到月底。
-问题7：健身房优惠活动持续到什么时候？
-下周
-下个月
-今天
-月底
+Difficulty 6
+There are half-price offers for the gym this month, with the offer starting today and continuing until the end of the month.
+Question 7: When will the gym offer last?
+next week
+next month
+today
+End of the month
 3

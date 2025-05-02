@@ -1,8 +1,8 @@
-难度7
-市游泳池今天举行了比赛。比赛包括50米自由泳和100米蛙泳。比赛开始时间是下午2点。
-问题11：游泳比赛开始时间是什么时候？
-下午2点
-中午12点
-上午10点
-晚上6点
+Difficulty 7
+The city swimming pool held a competition today. The competition includes 50m freestyle and 100m breaststroke. The game starts at 2 pm.
+Question 11: When is the start time of the swimming competition?
+2 pm
+12 noon
+10 am
+6 pm
 0

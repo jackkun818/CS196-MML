@@ -1,14 +1,14 @@
-难度2
-端午节，为农历五月初五，又名端阳节、重午节、粽子节、五黄节、躲午节、端礼节等等，端是“开端”、“开始”的意思。端午节是我国古老的民俗大节，其由来传说甚多，分别有纪念介子推、屈原、伍子胥、曹娥、女诗人秋瑾等，还有恶月恶日、蓄兰沐浴、走黄巢等说法。
-问题1：端午节是农历的什么时候？
-五月初三
-五月初四
-五月初五
-五月初六
+Difficulty 2
+Dragon Boat Festival is the fifth day of the fifth lunar month, also known as Duanyang Festival, Chongwu Festival, Zongzi Festival, Five Yellow Festival, Luxury Festival, Duanyu Festival, Duanyi Festival, etc.“beginning”、“start”Meaning. The Dragon Boat Festival is an ancient folk festival in my country. It has many legends, including commemorating Jie Zitui, Qu Yuan, Wu Zixu, Cao E, the female poet Qiu Jin, etc., as well as sayings such as evil moon and bad days, orchid bathing, and walking in Huang Chao.
+Question 1: When is the Dragon Boat Festival during the lunar calendar?
+May 3rd
+The fourth day of May
+May 5th
+May 6th
 2
-问题2：文中提到了端午节的许多别称，以下哪个不是端午节的别称？
-端阳节
-龙舟节
-粽子节
-端礼节
+Question 2: The article mentions many nicknames of Dragon Boat Festival. Which of the following is not an nickname of Dragon Boat Festival?
+Dragon Boat Festival
+Dragon Boat Festival
+Zongzi Festival
+Duan etiquette
 1

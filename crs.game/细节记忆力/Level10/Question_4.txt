@@ -1,8 +1,8 @@
-难度10
-医院的急诊部24小时开放。急诊部会立即处理紧急情况，包括车祸、心脏病发作等。急诊处理费用较高，通常需要支付前期费用。普通门诊和急诊部分开处理。
-问题：医院的急诊部如何处理车祸情况？
-仅处理轻伤
-立即处理
-只在白天处理
-排队等待
+Difficulty 10
+The hospital's emergency department is open 24 hours a day. The emergency department will immediately deal with emergency situations, including car accidents, heart attacks, etc. Emergency treatment costs are high and usually require upfront fees. General outpatient and emergency departments shall be treated.
+Question: How does the hospital’s emergency department handle the car accident?
+Treat only minor injuries
+Handle it now
+Only processed during the day
+Waiting in line
 1

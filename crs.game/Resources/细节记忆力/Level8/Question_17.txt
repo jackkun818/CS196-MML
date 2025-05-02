@@ -1,8 +1,8 @@
-难度8
-图书馆的借书时间是每天早上9点到晚上6点。
-问题17：图书馆的借书时间是什么时候？
-早上8点到下午4点
-上午10点到下午5点
-下午1点到晚上9点
-早上9点到晚上6点
+Difficulty 8
+The library's book borrowing time is from 9 am to 6 pm every day.
+Question 17: When is the library’s time to borrow books?
+8 am to 4 pm
+10 a.m. to 5 p.m.
+1pm to 9pm
+9 am to 6 pm
 3

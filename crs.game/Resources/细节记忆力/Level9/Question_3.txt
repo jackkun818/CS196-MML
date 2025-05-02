@@ -1,8 +1,8 @@
-难度9
-市区最大的书店最近举办了促销活动，所有书籍打七折。促销活动从上午9点开始，一直到晚上6点结束。活动的最后一天，书店非常热闹。
-问题3：书店的促销活动持续了多久？
-8小时
-9小时
-6小时
-7小时
+Difficulty 9
+The largest bookstore in the city recently held a promotion with 30% off on all books. The promotion starts at 9 a.m. and ends at 6 p.m. On the last day of the event, the bookstore was very lively.
+Question 3: How long has the bookstore promotion lasted?
+8 hours
+9 hours
+6 hours
+7 hours
 1

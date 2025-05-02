@@ -1,8 +1,8 @@
-难度6
-城市书店本周末有折扣，所有书籍打七折，折扣时间是从周五到周日。
-问题9：折扣时间是从什么时候到什么时候？
-周末
-周五到周日
-整个月
-周一到周五
+Difficulty 6
+City Bookstores will be discounted this weekend, with 30% off on all books, and the discount will be from Friday to Sunday.
+Question 9: When to when does the discount time come?
+weekend
+Friday to Sunday
+The whole month
+Monday to Friday
 1

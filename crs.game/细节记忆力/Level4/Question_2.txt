@@ -1,8 +1,8 @@
-难度4
-最近水果市场的苹果和橙子价格上涨了20%。香蕉和葡萄的价格保持不变。市场负责人表示价格上涨是由于供应减少。
-问题2：哪种水果的价格上涨了？
-西瓜
-香蕉
-葡萄
-苹果
+Difficulty 4
+Apple and orange prices in the fruit market have risen by 20% recently. The prices of bananas and grapes remain the same. The market leader said the price increase was due to reduced supply.
+Question 2: Which fruit has risen?
+watermelon
+banana
+Grape
+apple
 3

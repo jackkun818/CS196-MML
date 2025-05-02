@@ -1,8 +1,8 @@
-难度9
-夏季音乐节在市中心公园举办。音乐节有5个乐队演出。音乐节从下午2点开始，一直到晚上10点结束。
-问题11：夏季音乐节有多少个乐队演出？
-4个
-5个
-3个
-6个
+Difficulty 9
+The summer music festival is held in downtown park. There are 5 bands performing in the festival. The festival begins at 2pm and ends at 10pm.
+Question 11: How many bands are there in the Summer Festival?
+4
+5
+3
+6
 1

@@ -1,8 +1,8 @@
-难度7
-今天下午3点，市中心的新书店正式开张。书店内提供了各种畅销书籍和咖啡。开张当天，有50名顾客到场。
-问题1：书店在什么时候开张？
-明天中午12点
-昨天晚上8点
-今天下午3点
-上周五上午10点
+Difficulty 7
+At 3 pm this afternoon, the new bookstore in the city center officially opened. A wide variety of best-selling books and coffees are available in the bookstore. On the day of opening, 50 customers were present.
+Question 1: When will the bookstore open?
+Tomorrow at 12 noon
+Last night at 8 pm
+This afternoon
+Last Friday at 10 a.m.
 2

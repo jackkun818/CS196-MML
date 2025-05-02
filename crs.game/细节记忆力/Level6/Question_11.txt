@@ -1,8 +1,8 @@
-难度6
-图书馆从早上9点到晚上8点开放。每天都有工作人员在场。
-问题11：图书馆从几点开放？
-8点
-7点
-9点
-10点
+Difficulty 6
+The library is open from 9 a.m. to 8 p.m. Staff are present every day.
+Question 11: From what time will the library open?
+8 o'clock
+7 o'clock
+9 o'clock
+10 o'clock
 2

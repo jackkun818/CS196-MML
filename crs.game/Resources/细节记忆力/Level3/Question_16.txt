@@ -1,8 +1,8 @@
-难度3
-医院新购入了一台超声波设备和一个现代化手术室，设备已经投入使用。
-问题16：医院新购入了哪些设备？
-超声波设备和手术室
-X光机和CT扫描仪
-确诊仪和体温计
-磁共振仪和心电图机
+Difficulty 3
+The hospital has purchased a new ultrasonic equipment and a modern operating room, and the equipment has been put into use.
+Question 16: What new equipment has the hospital purchased?
+Ultrasonic equipment and operating rooms
+XOptical machine andCTScanner
+Diagnostic instrument and thermometer
+Magnetic resonance meter and electrocardiogram
 0

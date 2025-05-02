@@ -1,8 +1,8 @@
-难度6
-邮局从早上8点到下午4点开放。今天邮局提供了快递和包裹服务。
-问题16：邮局从几点到几点开放？
-7点到3点
-8点到4点
-10点到6点
-9点到5点
+Difficulty 6
+The post office is open from 8 a.m. to 4 p.m. Today the post office provides courier and parcel services.
+Question 16: From what time to what time does the post office open?
+7 o'clock to 3 o'clock
+8 o'clock to 4 o'clock
+10 o'clock to 6 o'clock
+9 o'clock to 5 o'clock
 1

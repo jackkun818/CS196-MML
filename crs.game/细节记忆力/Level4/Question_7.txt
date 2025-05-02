@@ -1,8 +1,8 @@
-难度4
-图书馆最近将开放时间延长至晚上8点。周末的开放时间也增加了一小时。更多人能利用图书馆资源。
-问题7：图书馆的开放时间现在到几点？
-晚上8点
-晚上6点
-晚上9点
-晚上7点
+Difficulty 4
+The library will be open until 8 pm recently. The weekend opening hours have also been increased by an hour. More people can use library resources.
+Question 7: What time is the library open now?
+8 pm
+6 pm
+9 pm
+7 pm
 0

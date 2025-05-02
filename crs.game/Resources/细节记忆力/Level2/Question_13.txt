@@ -1,8 +1,8 @@
-难度2
-商场最近新增了一个儿童游乐区和一个休息区，每个区域都独立设置。
-问题13：商场新增了多少个区域？
-三个
-四个
-一个
-两个
+Difficulty 2
+The mall recently added a children's play area and a seating area, each with its own settings.
+Question 13: How many new areas have been added to the mall?
+Three
+Four
+one
+two
 3

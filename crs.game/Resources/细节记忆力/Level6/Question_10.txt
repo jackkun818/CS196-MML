@@ -1,8 +1,8 @@
-难度6
-市医院最近购入了一台新型CT扫描仪，新设备于上周开始使用。
-问题10：新型CT扫描仪是什么时候开始使用的？
-上周
-今天
-下个月
-明天
+Difficulty 6
+The city hospital recently purchased a new modelCTScanner, new equipment started to be used last week.
+Question 10: NewCTWhen did the scanner start to be used?
+Last week
+today
+next month
+tomorrow
 0

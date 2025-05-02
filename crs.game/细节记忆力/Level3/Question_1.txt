@@ -1,8 +1,8 @@
-难度3
-新开的餐厅提供早餐，从早上7点到10点营业，每份早餐价格为20元。
-问题1：餐厅早餐营业的时间是从什么时候到什么时候？
-从早上9点到12点
-从早上7点到10点
-从早上8点到11点
-从早上6点到9点
+Difficulty 3
+The newly opened restaurant serves breakfast, which is open from 7am to 10am, and the breakfast price is RMB 20 per serving.
+Question 1: When is the restaurant open to when?
+From 9am to 12am
+From 7am to 10am
+From 8 a.m. to 11 a.m.
+From 6am to 9am
 1

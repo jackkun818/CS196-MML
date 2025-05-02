@@ -1,8 +1,8 @@
-难度4
-公园最近增加了一个新的儿童游乐场。游乐场内有滑梯和秋千。新的设施已于上周开放。
-问题6：公园新增了什么设施？
-儿童游乐场
-露天剧场
-运动场
-休息区
+Difficulty 4
+The park recently added a new children's playground. There are slides and swings in the playground. New facilities opened last week.
+Question 6: What new facilities have been added to the park?
+Children's playground
+Open-air theater
+playground
+Living Area
 0

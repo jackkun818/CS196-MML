@@ -1,8 +1,8 @@
-难度5
-健身房新增了三台跑步机。所有设备都可以预约使用。健身房现在提供早晨7点到晚上9点的开放时间。
-问题8：健身房新增了什么设备？
-瑜伽垫
-哑铃
-跑步机
-自行车
+Difficulty 5
+Three new treadmills were added in the gym. All devices can be used on reservations. The gym now offers 7am to 9pm opening hours.
+Question 8: What equipment has been added to the gym?
+Yoga mat
+dumbbel
+treadmill
+bike
 2

@@ -1,8 +1,8 @@
-难度7
-这个周末，音乐会的票已售罄。音乐会将于晚上8点开始，预计持续两个小时。
-问题10：音乐会预计持续多长时间？
-两个小时
-1.5小时
-三个小时
-一个小时
+Difficulty 7
+This weekend, tickets for the concert were sold out. The concert will begin at 8 p.m. and is expected to last for two hours.
+Question 10: How long is the concert expected to last?
+Two hours
+1.5 hours
+Three hours
+One hour
 0

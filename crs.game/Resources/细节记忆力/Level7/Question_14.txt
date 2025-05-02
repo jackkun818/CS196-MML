@@ -1,8 +1,8 @@
-难度7
-上周末，咖啡店推出了买一赠一活动。活动时间从早上8点到下午4点。
-问题14：咖啡店的促销活动时间是什么时候？
-从早上9点到下午3点
-从中午12点到晚上8点
-从早上8点到下午4点
-从早上7点到下午5点
+Difficulty 7
+Last weekend, the coffee shop launched a buy one and get one free event. The event time is from 8 am to 4 pm.
+Question 14: When is the promotion time for a coffee shop?
+From 9 a.m. to 3 p.m.
+From 12 noon to 8 pm
+From 8 a.m. to 4 p.m.
+From 7 a.m. to 5 p.m.
 2

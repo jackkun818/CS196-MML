@@ -1,8 +1,8 @@
-难度7
-昨天早上，10点发车的火车延误了45分钟。乘客被通知新的发车时间是10点45分。
-问题9：火车的原定发车时间是什么时候？
-9点30分
-11点
-10点30分
-10点
+Difficulty 7
+Yesterday morning, the train departed at 10 o'clock was delayed by 45 minutes. Passengers are notified that the new departure time is 10:45.
+Question 9: When was the original departure time of the train?
+9:30
+11 o'clock
+10:30
+10 o'clock
 3

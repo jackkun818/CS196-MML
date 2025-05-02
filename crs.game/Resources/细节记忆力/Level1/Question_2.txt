@@ -1,8 +1,8 @@
-难度1
-新购物中心昨天在东区开幕，吸引了大量顾客。购物中心内设有各种品牌的商店、餐馆和娱乐设施，为市民提供了一个理想的购物和休闲场所。
-问题2：新购物中心在哪里开幕？
-南区
-西区
-东区
-北区
+Difficulty 1
+The new shopping center opened in the East Side yesterday, attracting a large number of customers. The shopping center has a variety of brands of shops, restaurants and entertainment facilities, providing citizens with an ideal place to shop and relax.
+Question 2: Where will the new shopping mall open?
+South District
+West District
+East District
+North District
 2

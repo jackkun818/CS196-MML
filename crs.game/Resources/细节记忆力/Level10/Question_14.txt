@@ -1,8 +1,8 @@
-难度10
-餐馆的招牌菜包括烤鸭、麻辣火锅和寿司。餐馆每月会推出新菜品，节假日和周末时有时会提供特别的折扣。餐馆还提供外卖和预定服务。
-问题：餐馆的招牌菜包括什么？
-面条和沙拉
-烤肉和炒菜
-烤鸭、麻辣火锅和寿司
-汉堡和披萨
+Difficulty 10
+The restaurant's signature dishes include roast duck, spicy hotpot and sushi. Restaurants launch new dishes every month, and sometimes offer special discounts on holidays and weekends. The restaurant also offers takeaway and reservation services.
+Question: What are the restaurant’s signature dishes?
+Noodles and salad
+Barbecue and stir-fry
+Roast duck, spicy hot pot and sushi
+Hamburgers and pizza
 2

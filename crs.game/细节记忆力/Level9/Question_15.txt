@@ -1,8 +1,8 @@
-难度9
-市立画廊举办了一场摄影展览，展出了12幅风景摄影作品。展览从早上10点开放，到晚上6点结束。
-问题15：摄影展览展出了多少幅风景摄影作品？
-10幅
-8幅
-12幅
-15幅
+Difficulty 9
+The Municipal Gallery held a photography exhibition, showing 12 landscape photography works. The exhibition opens from 10 a.m. to 6 p.m.
+Question 15: How many landscape photography works are exhibited in the photography exhibition?
+10 width
+8 width
+12 widths
+15 width
 2

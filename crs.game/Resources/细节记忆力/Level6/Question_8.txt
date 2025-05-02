@@ -1,8 +1,8 @@
-难度6
-新儿童游乐场今天正式开放，游乐场内有滑梯和秋千。
-问题8：游乐场是什么时候正式开放的？
-上周
-今天
-昨天
-明天
+Difficulty 6
+The new children's playground is officially opened today, with slides and swings in the playground.
+Question 8: When will the playground be officially opened?
+Last week
+today
+yesterday
+tomorrow
 1

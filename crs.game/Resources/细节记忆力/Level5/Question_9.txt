@@ -1,8 +1,8 @@
-难度5
-电影院开始放映一部新电影。电影从今晚开始放映。每场电影有两个放映时间。电影类型是科幻片。
-问题9：电影院放映了什么类型的新电影？
-科幻片
-喜剧片
-爱情片
-动作片
+Difficulty 5
+A new movie is being shown in the cinema. The movie will be screened tonight. Each movie has two screening times. The movie type is science fiction.
+Question 9: What type of new movies are being screened in the cinema?
+Science fiction film
+Comedy
+Romance movies
+Action movie
 0

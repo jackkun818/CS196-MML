@@ -1,8 +1,8 @@
-难度4
-音乐会将于下个月在市剧院举行。演出将包括古典音乐和现代曲目。票务销售已经开始。
-问题18：音乐会将在什么时候举行？
-本周
-下个月
-下周
-明年
+Difficulty 4
+The concert will be held at the Municipal Theater next month. The performance will include classical music and modern repertoire. Ticketing sales have begun.
+Question 18: When will the concert be held?
+This week
+next month
+next week
+next year
 1

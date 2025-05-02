@@ -1,8 +1,8 @@
-难度6
-今天早上8点钟，学校食堂提供了面包和牛奶。食堂的开放时间是7点。
-问题2：学校食堂何时开放？
-7点
-9点
-8点
-6点
+Difficulty 6
+At 8 o'clock this morning, the school cafeteria provided bread and milk. The canteen is open at 7 o'clock.
+Question 2: When will the school cafeteria be open?
+7 o'clock
+9 o'clock
+8 o'clock
+6 o'clock
 0

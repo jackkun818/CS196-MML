@@ -1,8 +1,8 @@
-难度7
-本周末，本地艺术馆将举办一场绘画艺术展览。展览将展示20幅新作，并于上午10点开放。
-问题5：艺术展览何时开放？
-中午12点
-上午10点
-晚上7点
-下午2点
+Difficulty 7
+This weekend, a painting art exhibition will be held in the local art gallery. The exhibition will display 20 new works and will be open at 10 a.m.
+Question 5: When will the art exhibition open?
+12 noon
+10 am
+7 pm
+2 pm
 1

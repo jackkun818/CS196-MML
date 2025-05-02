@@ -1,8 +1,8 @@
-难度10
-游泳池每天开放，提供游泳和水上运动课程。周末和节假日提供额外的水上健身课程。游泳池还设有更衣室和淋浴设施。
-问题：游泳池是否提供水上运动课程？
-只在节假日提供
-否
-是
-仅周末提供
+Difficulty 10
+The swimming pool is open daily and offers swimming and water sports classes. Additional water fitness classes are available on weekends and holidays. The swimming pool also has a dressing room and shower facilities.
+Question: Does the swimming pool offer water sports classes?
+Only available on holidays
+no
+yes
+Offered on weekends only
 2

@@ -1,8 +1,8 @@
-难度8
-餐馆每天中午12点开门，晚上10点闭馆。周末开放时间稍长。
-问题8：餐馆每天的开门时间是几点？
-上午11点
-晚上9点
-中午12点
-下午1点
+Difficulty 8
+The restaurant opens at 12 noon every day and closes at 10 pm. Opening hours on weekends are a little longer.
+Question 8: What time does the restaurant open every day?
+11 a.m.
+9 pm
+12 noon
+1 pm
 2

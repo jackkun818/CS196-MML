@@ -1,8 +1,8 @@
-难度3
-餐馆在这个月的每周五提供全场9折优惠，每次用餐可享受此折扣。
-问题7：餐馆的折扣活动在什么时间提供？
-每周三
-每周五
-每周一
-每周末
+Difficulty 3
+Restaurants offer a 10% discount on Fridays this month, and enjoy this discount for every meal.
+Question 7: When will the restaurant discount activities be offered?
+Every Wednesday
+Every Friday
+Every Monday
+Weekend
 1

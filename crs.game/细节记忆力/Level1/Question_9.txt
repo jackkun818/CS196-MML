@@ -1,8 +1,8 @@
-难度1
-地铁车站正在进行改造工程，预计下个月完成。改造后，车站将更加现代化，提供更加便利的服务。
-问题9：地铁车站的改造工程预计何时完成？
-今年底
-下个月
-明年初
-本月
+Difficulty 1
+The subway station is undergoing renovation projects and is expected to be completed next month. After the renovation, the station will be more modern and provide more convenient services.
+Question 9: When is the renovation project of the subway station expected to be completed?
+At the end of this year
+next month
+Early next year
+this month
 1

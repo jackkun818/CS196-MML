@@ -1,8 +1,8 @@
-难度3
-电影院最近上映了一部惊悚片，影长130分钟，每场电影票价50元。
-问题3：电影的时长是多少分钟？
-140分钟
-100分钟
-120分钟
-130分钟
+Difficulty 3
+A thriller recently released in the cinema, with a 130-minute movie and a ticket price of 50 yuan per movie.
+Question 3: How many minutes does the movie last?
+140 minutes
+100 minutes
+120 minutes
+130 minutes
 3

@@ -1,8 +1,8 @@
-难度3
-图书馆的开放时间是从早上9点到晚上8点，每周一到周六开放，周日休息。
-问题17：图书馆在周日开放吗？
-开放
-不开放
-只周六开放
-只周一开放
+Difficulty 3
+The library is open from 9 a.m. to 8 p.m., and is open Monday to Saturday and closed on Sundays.
+Question 17: Will the library be open on Sunday?
+open
+Not open
+Open only on Saturdays
+Open only on Mondays
 1

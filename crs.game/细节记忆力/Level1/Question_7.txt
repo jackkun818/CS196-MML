@@ -1,8 +1,8 @@
-难度1
-夜市的小吃摊位在晚7点开始营业，常常吸引很多人。夜市的美食种类繁多，价格实惠，是市民晚间休闲的好去处。
-问题7：夜市小吃摊位什么时候开始营业？
-晚9点
-晚6点
-晚7点
-晚8点
+Difficulty 1
+The snack stalls in the night market open at 7 pm, often attracting a lot of people. The night market has a wide variety of food and affordable prices, making it a good place for citizens to relax at night.
+Question 7: When will the night market snack stalls start business?
+9 pm
+6 pm
+7 pm
+8 pm
 2

@@ -1,8 +1,8 @@
-难度6
-商场今天有促销活动，所有服装享受打八折优惠。促销时间从10点到6点。
-问题14：商场促销时间是从几点到几点？
-10点到6点
-12点到8点
-9点到5点
-11点到7点
+Difficulty 6
+There are promotions in the mall today, and all clothing enjoy a 20% discount. Promotion time is from 10:00 to 6:00.
+Question 14: What time does the mall promotion time come from to what time?
+10 o'clock to 6 o'clock
+12 o'clock to 8 o'clock
+9 o'clock to 5 o'clock
+11 o'clock to 7 o'clock
 0

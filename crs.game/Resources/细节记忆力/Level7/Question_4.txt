@@ -1,8 +1,8 @@
-难度7
-本周一，市区的一家餐厅推出了新的菜单。新菜单包含了10道不同的菜品，包括素食和海鲜选项。
-问题4：餐厅的新菜单包含多少道菜品？
-12道
-10道
-8道
-15道
+Difficulty 7
+A restaurant in the downtown area launched a new menu this Monday. The new menu includes 10 different dishes, including vegetarian and seafood options.
+Question 4: How many dishes does the restaurant’s new menu contain?
+12
+10
+8 channels
+15
 1

@@ -1,8 +1,8 @@
-难度1
-本周末餐馆推出买一送一的优惠活动，吸引了很多顾客前来就餐。许多人趁着这个机会，和家人朋友一起享受美食。
-问题15：餐馆的优惠活动是什么？
-半价优惠
-买一送一
-免费饮料
-免服务费
+Difficulty 1
+This weekend, the restaurant launched a buy-one get one free discount, attracting many customers to come and have a meal. Many people take this opportunity to enjoy delicious food with their family and friends.
+Question 15: What are the offers for restaurants?
+Half price discount
+Buy one get one free
+Free drinks
+Free service fee
 1

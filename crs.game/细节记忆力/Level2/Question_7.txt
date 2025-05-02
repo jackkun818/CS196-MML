@@ -1,8 +1,8 @@
-难度2
-餐厅推出了两款新菜品，分别是辣味牛肉和清蒸鱼。
-问题7：餐厅推出了多少款新菜品？
-两款
-三款
-四款
-一款
+Difficulty 2
+The restaurant has launched two new dishes, namely spicy beef and steamed fish.
+Question 7: How many new dishes have the restaurant launched?
+Two models
+Three models
+Four models
+One
 0

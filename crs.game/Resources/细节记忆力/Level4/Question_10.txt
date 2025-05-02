@@ -1,8 +1,8 @@
-难度4
-小区最近更新了所有路灯，增加了夜间照明。小区环境变得更加安全。居民对此表示满意。
-问题10：小区最近更新了什么设施？
-路灯
-花坛
-停车场
-道路
+Difficulty 4
+The community has recently updated all street lights and added night lighting. The community environment has become safer. Residents expressed satisfaction with this.
+Question 10: What facilities have the community updated recently?
+Street lights
+flower bed
+PARKING LOT
+the way
 0

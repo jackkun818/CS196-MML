@@ -1,8 +1,8 @@
-难度3
-夜市新开了4个摊位，提供各种小吃和饮料，营业时间为晚6点到11点。
-问题10：夜市的摊位总数现在是多少个？
-4个
-3个
-6个
-5个
+Difficulty 3
+Four new stalls are opened in the night market, providing a variety of snacks and drinks, and the business hours are from 6 to 11 p.m.
+Question 10: How many stalls are there in the night market now?
+4
+3
+6
+5
 0

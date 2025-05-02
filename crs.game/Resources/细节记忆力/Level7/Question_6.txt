@@ -1,8 +1,8 @@
-难度7
-上周五，社区组织了一次清理活动。活动从早上8点开始，到中午12点结束。参与者清理了公园和街道。
-问题6：清理活动从几点开始？
-晚上6点
-中午12点
-早上8点
-下午1点
+Difficulty 7
+Last Friday, the community organized a cleanup event. The event starts at 8 a.m. and ends at 12 noon. Participants cleared the park and streets.
+Question 6: When will the cleaning activity start?
+6 pm
+12 noon
+8 a.m.
+1 pm
 2

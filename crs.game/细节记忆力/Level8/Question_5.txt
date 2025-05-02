@@ -1,8 +1,8 @@
-难度8
-今天的电影放映时间是下午3点和晚上7点。电影时长是2小时。
-问题5：电影的第一场放映时间是什么时候？
-下午4点
-晚上7点
-下午3点
-下午5点
+Difficulty 8
+Today's movie screenings are 3pm and 7pm. The movie is 2 hours.
+Question 5: When is the first screening time of the movie?
+4 pm
+7 pm
+3 pm
+5 pm
 2

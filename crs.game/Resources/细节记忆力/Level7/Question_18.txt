@@ -1,8 +1,8 @@
-难度7
-市公园今天延长了开放时间，从早上6点到晚上8点。
-问题18：公园今天的开放时间是什么时候？
-从早上7点到晚上7点
-从早上8点到晚上6点
-从早上9点到晚上9点
-从早上6点到晚上8点
+Difficulty 7
+City Park has extended its opening hours today from 6 a.m. to 8 p.m.
+Question 18: When is the park open today?
+From 7 a.m. to 7 p.m.
+From 8 a.m. to 6 p.m.
+From 9 a.m. to 9 p.m.
+From 6 a.m. to 8 p.m.
 3

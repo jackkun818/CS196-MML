@@ -1,408 +1,408 @@
 {
   "BackgroundImage": 
   {
-    "Path": "组 16317.png",
+    "Path": "Group 16317.png",
     "PxPosition": {  "Left": 0, "Up": 0, "Right": 0, "Down": 0 },
     "Size": { "Height": 741, "Width": 1260 },
-    "Info": "杂物售卖间"
+    "Info": "Debris sales room"
   },
   "Images": 
   [
     {
-      "Path": "组 15683.png",
+      "Path": "Group 15683.png",
       "PxMargin": { "Left": 89, "Up": 81, "Right": 1032, "Down": 332 },
       "Size": { "Height": 328.46 ,"Width": 138.92},
-      "Info": "男1号",
+      "Info": "Male No. 1",
       "Index": 0
     },
     {
-      "Path": "组 15868.png",
+      "Path": "Group 15868.png",
       "PxMargin": { "Left": 108, "Up": 89, "Right": 463, "Down": 91 },
       "Size": { "Width": 688.86, "Height": 561.18 },
-      "Info": "长方形长凳//应该在最底层",
+      "Info": "Rectangular bench//It should be at the bottom",
       "Index": 1
     },
 	{
-      "Path": "组 15881.png",
+      "Path": "Group 15881.png",
       "PxMargin": { "Left": 273, "Up": 218, "Right": 925, "Down": 338 },
       "Size": { "Width": 85.28, "Height": 117.2 },
-      "Info": "绿叶画",
+      "Info": "Green leaf painting",
       "Index": 2
     },
 	
 	{
-      "Path": "组 15693.png",
+      "Path": "Group 15693.png",
       "PxMargin": { "Left": 275, "Up": 421, "Right": 784, "Down": 101 },
       "Size": { "Width": 201.39, "Height": 219.08 },
-      "Info": "圆形设计椅",
+      "Info": "Round design chair",
       "Index": 3
     },
 		
 	{
-      "Path": "组 15870.png",
+      "Path": "Group 15870.png",
       "PxMargin": { "Left": 103, "Up": 438, "Right": 1113, "Down": 117 },
       "Size": { "Width": 44.18, "Height": 186.08 },
-      "Info": "短圆筒",
+      "Info": "Short cylinder",
       "Index": 4
     },
 			
 	{
-      "Path": "组 15872.png",
+      "Path": "Group 15872.png",
       "PxMargin": { "Left": 158, "Up":415 , "Right": 1058, "Down": 110 },
       "Size": { "Width": 44.18, "Height": 216.46 },
-      "Info": "长圆筒",
+      "Info": "Long cylinder",
       "Index": 5
     },
 				
 	{
-      "Path": "组 15874.png",
+      "Path": "Group 15874.png",
       "PxMargin": { "Left": 204, "Up": 484, "Right": 1022, "Down": 89 },
       "Size": { "Width": 34.34, "Height": 168.26 },
-      "Info": "浅色圆筒",
+      "Info": "Light-colored cylinder",
       "Index": 6
     },
 					
 	{
-      "Path": "组 15883.png",
+      "Path": "Group 15883.png",
       "PxMargin": { "Left": 299, "Up": 520, "Right": 900, "Down": 134 },
       "Size": { "Width": 60.91, "Height": 86.67 },
-      "Info": "灰色花瓶1",
+      "Info": "Grey vase 1",
       "Index": 7
     },
 						
 	{
-      "Path": "组 15885.png",
+      "Path": "Group 15885.png",
       "PxMargin": { "Left": 380, "Up": 373, "Right": 733, "Down": 145 },
       "Size": { "Width": 146.58, "Height": 222.56 },
-      "Info": "画作1",
+      "Info": "Painting 1",
       "Index": 8
     },
 							
 	{
-      "Path": "组 15887.png",
+      "Path": "Group 15887.png",
       "PxMargin": { "Left": 518, "Up": 366, "Right": 648, "Down": 266 },
       "Size": { "Width": 93.73, "Height": 109.48 },
-      "Info": "灰色花瓶2",
+      "Info": "Grey Vase 2",
       "Index": 9
     },
 								
 	{
-      "Path": "组 15980.png",
+      "Path": "Group 15980.png",
       "PxMargin": { "Left": 664, "Up": 200, "Right": 426, "Down": 304 },
       "Size": { "Width": 170.3, "Height": 237.34},
-      "Info": "画作2",
+      "Info": "Painting 2",
       "Index": 10
     },
 									
 	{
-      "Path": "组 16205.png",
+      "Path": "Group 16205.png",
       "PxMargin": { "Left": 781, "Up":405 , "Right": 357, "Down": 77 },
       "Size": { "Width": 122.16, "Height": 259.34 },
-      "Info": "衣架左",
+      "Info": "Left clothes hanger",
       "Index": 11
     },
 										
 	{
-      "Path": "组 16287.png",
+      "Path": "Group 16287.png",
       "PxMargin": { "Left": 819, "Up": 607, "Right": 411, "Down": 111 },
       "Size": { "Width": 30.23, "Height": 22.86 },
-      "Info": "左向黑鞋",
+      "Info": "Left-facing black shoes",
       "Index": 12
     },
 											
 	{
-      "Path": "组 16280.png",
+      "Path": "Group 16280.png",
       "PxMargin": { "Left": 840, "Up": 590, "Right": 390, "Down": 128 },
       "Size": { "Width": 30.23, "Height": 22.86 },
-      "Info": "右向黑鞋",
+      "Info": "Right-facing black shoes",
       "Index": 13
     },
 												
 	{
-      "Path": "组 16266.png",
+      "Path": "Group 16266.png",
       "PxMargin": { "Left": 912, "Up": 621, "Right": 318, "Down": 97 },
       "Size": { "Width": 30.26, "Height": 22.89 },
-      "Info": "左向棕皮鞋",
+      "Info": "Left-facing brown leather shoes",
       "Index": 14
     },
 													
 	{
-      "Path": "组 16273.png",
+      "Path": "Group 16273.png",
       "PxMargin": { "Left": 947, "Up": 613, "Right": 283, "Down": 105 },
       "Size": { "Width": 30.26, "Height": 22.89 },
-      "Info": "右向棕色皮鞋",
+      "Info": "Right-facing brown leather shoes",
       "Index": 15
     },
 													
 	{
-      "Path": "组 16259.png",
+      "Path": "Group 16259.png",
       "PxMargin": { "Left": 916, "Up": 583, "Right": 315, "Down": 128 },
       "Size": { "Width": 28.94, "Height": 30.32 },
-      "Info": "左向皮绒鞋",
+      "Info": "Left-facing velvet shoes",
       "Index": 16
     },
 													
 	{
-      "Path": "组 16257.png",
+      "Path": "Group 16257.png",
       "PxMargin": { "Left": 955, "Up": 568, "Right": 276, "Down": 142 },
       "Size": { "Width": 29.36, "Height": 30.73 },
-      "Info": "右向皮绒鞋",
+      "Info": "Right-facing velvet shoes",
       "Index": 17
     },
 														
 	{
-      "Path": "组 16294.png",
+      "Path": "Group 16294.png",
       "PxMargin": { "Left": 970, "Up": 534, "Right": 266, "Down": 174 },
       "Size": { "Width": 24.12, "Height": 32.65 },
-      "Info": "红色高跟鞋1",
+      "Info": "Red high heels 1",
       "Index": 18
     },
 														
 	{
-      "Path": "组 16301.png",
+      "Path": "Group 16301.png",
       "PxMargin": { "Left": 989, "Up": 551, "Right": 247, "Down": 157 },
       "Size": { "Width": 24.12, "Height": 32.65 },
-      "Info": "红色高跟鞋2",
+      "Info": "Red high heels 2",
       "Index": 19
     },
 														
 	{
-      "Path": "组 16315.png",
+      "Path": "Group 16315.png",
       "PxMargin": { "Left": 1013, "Up": 517, "Right": 220, "Down": 190 },
       "Size": { "Width": 26.63, "Height": 33.83 },
-      "Info": "蓝色高跟鞋1",
+      "Info": "Blue high heels 1",
       "Index": 20
     },
 														
 	{
-      "Path": "组 16308.png",
+      "Path": "Group 16308.png",
       "PxMargin": { "Left": 1046, "Up": 505, "Right": 187, "Down": 202 },
       "Size": { "Width": 26.63, "Height": 33.83 },
-      "Info": "蓝色高跟鞋2",
+      "Info": "Blue high heels 2",
       "Index": 21
     },
 														
 	{
-      "Path": "组 16203.png",
+      "Path": "Group 16203.png",
       "PxMargin": { "Left": 804, "Up": 420, "Right": 188, "Down": 162 },
       "Size": { "Width": 267.51, "Height": 158.74 },
-      "Info": "衣架木板",
+      "Info": "Clothes hanger board",
       "Index": 22
     },
 														
 	{
-      "Path": "组 16212.png",
+      "Path": "Group 16212.png",
       "PxMargin": { "Left": 828, "Up": 469, "Right": 315, "Down": 194 },
       "Size": { "Width": 117.13, "Height": 77.77 },
-      "Info": "深色长牛仔裤",
+      "Info": "Dark long jeans",
       "Index": 23
     },
 														
 	{
-      "Path": "组 16191.png",
+      "Path": "Group 16191.png",
       "PxMargin": { "Left": 880, "Up": 482, "Right": 272, "Down": 188 },
       "Size": { "Width": 107.51, "Height": 71.48 },
-      "Info": "浅色长牛仔裤",
+      "Info": "Light-colored long jeans",
       "Index": 24
     },
 															
 	{
-      "Path": "组 16196.png",
+      "Path": "Group 16196.png",
       "PxMargin": { "Left": 945, "Up": 447, "Right": 249, "Down": 248 },
       "Size": { "Width": 65.87, "Height": 45.68 },
-      "Info": "浅色短牛仔裤1",
+      "Info": "Light color short jeans 1",
       "Index": 25
     },
 															
 	{
-      "Path": "组 16217.png",
+      "Path": "Group 16217.png",
       "PxMargin": { "Left": 980, "Up": 427, "Right": 214, "Down": 268 },
       "Size": { "Width": 65.87, "Height": 45.68 },
-      "Info": "浅色短牛仔裤2",
+      "Info": "Light color short jeans 2",
       "Index": 26
     },
 															
 	{
-      "Path": "组 16209.png",
+      "Path": "Group 16209.png",
       "PxMargin": { "Left": 853, "Up": 373, "Right": 332, "Down": 242 },
       "Size": { "Width": 74.87, "Height": 126.09 },
-      "Info": "短袖1",
+      "Info": "Short-sleeved 1",
       "Index": 27
     },
 															
 	{
-      "Path": "组 16219.png",
+      "Path": "Group 16219.png",
       "PxMargin": { "Left": 887, "Up": 362, "Right": 286, "Down": 266 },
       "Size": { "Width": 86.74, "Height": 112.66 },
-      "Info": "长袖1",
+      "Info": "Long sleeve 1",
       "Index": 28
     },
 															
 	{
-      "Path": "组 16231.png",
+      "Path": "Group 16231.png",
       "PxMargin": { "Left": 937, "Up": 328, "Right": 248, "Down": 286 },
       "Size": { "Width": 74.77, "Height": 127.42 },
-      "Info": "短袖2",
+      "Info": "Short-sleeved 2",
       "Index": 29
     },
 															
 	{
-      "Path": "组 16235.png",
+      "Path": "Group 16235.png",
       "PxMargin": { "Left": 968, "Up": 313, "Right": 206, "Down": 320 },
       "Size": { "Width": 86.08, "Height": 107.94 },
-      "Info": "长袖2",
+      "Info": "Long Sleeve 2",
       "Index": 30
     },
 															
 	{
-      "Path": "组 16207.png",
+      "Path": "Group 16207.png",
       "PxMargin": { "Left": 842, "Up": 294, "Right": 217, "Down": 329 },
       "Size": { "Width": 200.7, "Height": 118.46 },
-      "Info": "长衣杆",
+      "Info": "Long clothes rod",
       "Index": 31
     },
 															
 	{
-      "Path": "组 16248.png",
+      "Path": "Group 16248.png",
       "PxMargin": { "Left": 585, "Up": 299, "Right": 547, "Down": 110 },
       "Size": { "Width": 128.09, "Height": 331.93 },
-      "Info": "白衣小人",
+      "Info": "Little man in white",
       "Index": 32
     },
 															
 	{
-      "Path": "组 16330.png",
+      "Path": "Group 16330.png",
       "PxMargin": { "Left": 1096, "Up": 77, "Right": 86, "Down": 326 },
       "Size": { "Width": 77.5, "Height": 338.24 },
-      "Info": "蓝衣人",
+      "Info": "Man in blue",
       "Index": 33
     },
 															
 	{
-      "Path": "组 15893.png",
+      "Path": "Group 15893.png",
       "PxMargin": { "Left": 131, "Up": 393, "Right": 1103, "Down": 323 },
       "Size": { "Width": 25.93, "Height": 24.8 },
-      "Info": "戒指1",
+      "Info": "Ring 1",
       "Index": 34
     },
 															
 	{
-      "Path": "组 15980.png",
+      "Path": "Group 15980.png",
       "PxMargin": { "Left": 208, "Up": 346, "Right": 1026, "Down": 370 },
       "Size": { "Width": 25.93, "Height": 24.8 },
-      "Info": "戒指2",
+      "Info": "Ring 2",
       "Index": 35
     },
 															
 	{
-      "Path": "组 15905.png",
+      "Path": "Group 15905.png",
       "PxMargin": { "Left": 880, "Up": 482, "Right": 272, "Down": 188 },
       "Size": { "Width": 25.93, "Height": 24.8 },
-      "Info": "戒指3",
+      "Info": "Ring 3",
       "Index": 36
     },
 															
 	{
-      "Path": "组 15907.png",
+      "Path": "Group 15907.png",
       "PxMargin": { "Left": 157, "Up": 347, "Right": 1048, "Down": 326 },
       "Size": { "Width": 54.88, "Height": 67.97 },
-      "Info": "项链1",
+      "Info": "Necklace 1",
       "Index": 37
     },
 															
 	{
-      "Path": "组 16056.png",
+      "Path": "Group 16056.png",
       "PxMargin": { "Left": 234, "Up": 293, "Right": 971, "Down": 380 },
       "Size": { "Width": 54.88, "Height": 67.97 },
-      "Info": "项链2",
+      "Info": "Necklace 2",
       "Index": 38
     },
 																
 	{
-      "Path": "组 16060.png",
+      "Path": "Group 16060.png",
       "PxMargin": { "Left": 305, "Up": 299, "Right": 893, "Down": 383 },
       "Size": { "Width": 62.28, "Height": 59.25 },
-      "Info": "高压锅",
+      "Info": "Pressure cooker",
       "Index": 39
     },
 																
 	{
-      "Path": "组 16062.png",
+      "Path": "Group 16062.png",
       "PxMargin": { "Left": 367, "Up": 344, "Right": 860, "Down": 362 },
       "Size": { "Width": 33.31, "Height": 34.74 },
-      "Info": "锅",
+      "Info": "pot",
       "Index": 40
     },
 																	
 	{
-      "Path": "组 16065.png",
+      "Path": "Group 16065.png",
       "PxMargin": { "Left": 330, "Up": 237, "Right": 893, "Down": 444 },
       "Size": { "Width": 37.02, "Height": 59.63 },
-      "Info": "书本",
+      "Info": "book",
       "Index": 41
     },
 																	
 	{
-      "Path": "组 16084.png",
+      "Path": "Group 16084.png",
       "PxMargin": { "Left": 376, "Up": 223, "Right": 830, "Down": 466 },
       "Size": { "Width": 54.05, "Height": 52.28 },
-      "Info": "电话机",
+      "Info": "Telephone",
       "Index": 42
     },
 																	
 	{
-      "Path": "组 16114.png",
+      "Path": "Group 16114.png",
       "PxMargin": { "Left": 430, "Up": 183, "Right": 733, "Down": 472 },
       "Size": { "Width": 96.51, "Height": 85.97 },
-      "Info": "打印机",
+      "Info": "printer",
       "Index": 43
     },
 																	
 	{
-      "Path": "组 16131.png",
+      "Path": "Group 16131.png",
       "PxMargin": { "Left": 491, "Up": 154, "Right": 731, "Down": 530 },
       "Size": { "Width": 37.51, "Height": 56.95 },
-      "Info": "小画作",
+      "Info": "Small paintings",
       "Index": 44
     },
 																	
 	{
-      "Path": "组 16129.png",
+      "Path": "Group 16129.png",
       "PxMargin": { "Left": 512, "Up": 75, "Right": 637, "Down": 562 },
       "Size": { "Width": 111.15, "Height": 139.67 },
-      "Info": "唱片收纳盒",
+      "Info": "Record storage box",
       "Index": 45
     },
 																	
 	{
-      "Path": "组 16173.png",
+      "Path": "Group 16173.png",
       "PxMargin": { "Left": 612, "Up": 48, "Right": 539, "Down": 582 },
       "Size": { "Width": 108.78, "Height": 110.53 },
-      "Info": "PC机",
+      "Info": "PCmachine",
       "Index": 46
     },
 																	
 	{
-      "Path": "组 16153.png",
+      "Path": "Group 16153.png",
       "PxMargin": { "Left": 674, "Up": 170, "Right": 552, "Down": 522 },
       "Size": { "Width": 34.45, "Height": 49.02 },
-      "Info": "水仙瓶",
+      "Info": "Daffodil bottle",
       "Index": 47
     },
 																	
 	{
-      "Path": "组 16112.png",
+      "Path": "Group 16112.png",
       "PxMargin": { "Left": 491, "Up": 267, "Right": 721, "Down": 421 },
       "Size": { "Width": 47.89, "Height": 53.36 },
-      "Info": "玩具车",
+      "Info": "Toy car",
       "Index": 48
     },
 																	
 	{
-      "Path": "组 16138.png",
+      "Path": "Group 16138.png",
       "PxMargin": { "Left": 602, "Up": 219, "Right": 603, "Down": 489 },
       "Size": { "Width": 55.39, "Height": 33.03 },
-      "Info": "唱片",
+      "Info": "record",
       "Index": 49
     },
   ]

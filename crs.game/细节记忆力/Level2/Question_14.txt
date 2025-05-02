@@ -1,8 +1,8 @@
-难度2
-电影节将在下个月的第一个周末开始，为期一周。
-问题14：电影节持续了多久？
-两周
-半个月
-三天
-一周
+Difficulty 2
+The festival will begin on the first weekend of next month for a week.
+Question 14: How long has the film festival lasted?
+Two weeks
+Half a month
+Three days
+One week
 3

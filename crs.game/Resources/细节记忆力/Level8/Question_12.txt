@@ -1,8 +1,8 @@
-难度8
-音乐会的开始时间是晚上8点，通常持续2小时。
-问题12：音乐会通常持续多长时间？
-1小时
-2小时
-4小时
-3小时
+Difficulty 8
+The concert starts at 8 pm and usually lasts for 2 hours.
+Question 12: How long does a concert usually last?
+1 hour
+2 hours
+4 hours
+3 hours
 1

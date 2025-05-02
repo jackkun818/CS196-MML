@@ -1,8 +1,8 @@
-难度8
-火车站每天有十班列车到达。第一班列车到达时间是早上6点。
-问题7：火车站的第一班列车到达时间是几点？
-下午3点
-早上6点
-晚上8点
-早上7点
+Difficulty 8
+Ten trains arrive at the train station every day. The first train arrives at 6 a.m.
+Question 7: What time is the arrival time of the first train at the railway station?
+3 pm
+6 a.m.
+8 pm
+7 a.m.
 1

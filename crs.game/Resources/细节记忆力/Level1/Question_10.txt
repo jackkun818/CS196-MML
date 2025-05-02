@@ -1,8 +1,8 @@
-难度1
-图书馆刚刚上架了一本畅销书，作者是知名作家李明。这本书自上架以来，受到了读者的热烈欢迎，借阅量一直居高不下。
-问题10：图书馆新上的畅销书的作者是谁？
-李明
-张伟
-刘洋
-王强
+Difficulty 1
+The library has just launched a bestseller book, authored by famous writer Li Ming. Since its release, this book has been warmly welcomed by readers, and the number of borrowed books has remained high.
+Question 10: Who is the author of the new bestseller in the library?
+Li Ming
+Zhang Wei
+Liu Yang
+Wang Qiang
 0

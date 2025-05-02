@@ -1,32 +1,32 @@
-难度5
-龙井茶是中国传统名茶之一。它产于浙江杭州西湖龙井村一带，已有一千二百余年历史。龙井茶色泽翠绿，香气浓郁，甘醇爽口，形如雀舌，有“色绿、香郁、味甘、形美”四绝的特点。龙井茶得名于龙井。龙井位于西湖之西翁家山的西北麓的龙井茶村。龙井茶因其产地不同，分为西湖龙井、钱塘龙井、越州龙井、越乡龙井四种，除了杭州市西湖区所管辖的范围的茶叶叫作西湖龙井外，其它产地产的俗称为浙江龙井茶。浙江龙井又以越州龙井为胜。
-问题1：龙井茶产于哪个湖附近？
-西湖
-太湖
-千岛湖
-白马湖
+Difficulty 5
+Longjing tea is one of the traditional famous teas in China. It is produced in Longjing Village, West Lake, Hangzhou, Zhejiang Province and has a history of more than 1,200 years. Longjing tea is green in color, rich in aroma, sweet and refreshing, shaped like a sparrow tongue,“Green color, sweet taste, beautiful shape”The characteristics of the four wonders. Longjing tea is named after Longjing. Longjing is located in Longjing Tea Village on the northwest foot of Xiwengjia Mountain on the West Lake. Due to its different origins, Longjing tea is divided into four types: West Lake Longjing, Qiantang Longjing, Yuezhou Longjing and Yuexiang Longjing. Except for the tea under the jurisdiction of Xihu District, Hangzhou, it is commonly known as Zhejiang Longjing Tea. Zhejiang Longjing also won Yuezhou Longjing.
+Question 1: Which lake is Longjing tea produced near?
+West Lake
+Taihu
+Qiandao Lake
+Baima Lake
 0
-问题2：龙井茶已有多少年的历史？
-1000余年
-1100余年
-1200余年
-1300余年
+Question 2: How many years has Longjing Tea have?
+More than 1,000 years
+More than 1,100 years
+More than 1,200 years
+More than 1,300 years
 2
-问题3：以下哪个不是龙井茶的特点？
-色绿
-香郁
-味苦
-形美
+Question 3: Which of the following is not the characteristic of Longjing Tea?
+Green
+Kaku
+Bitter taste
+Beautiful shape
 2
-问题4：龙井茶因其产地不同，分为四种，其中不包括以下哪个？
-钱塘龙井
-西湖龙井
-越乡龙井
-杭州龙井
+Question 4: Longjing tea is divided into four types due to its different origins, which of the following is not included?
+Qiantang Longjing
+West Lake Longjing
+Yuexiang Longjing
+Hangzhou Longjing
 3
-问题5：浙江龙井以哪一种为胜？
-西湖龙井
-钱塘龙井
-越州龙井
-越乡龙井
+Question 5: Which one is the winner in Longjing, Zhejiang?
+West Lake Longjing
+Qiantang Longjing
+Yuezhou Longjing
+Yuexiang Longjing
 2

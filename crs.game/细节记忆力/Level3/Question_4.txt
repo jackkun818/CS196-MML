@@ -1,8 +1,8 @@
-难度3
-校园运动会计划在下个月的第一个周六举行，活动将持续一天，所有学生均可参加。
-问题4：校园运动会将持续多少天？
-半天
-三天
-两天
-一天
+Difficulty 3
+The Campus Games are scheduled to be held on the first Saturday of next month, and the event will last for one day and are available to all students.
+Question 4: How many days will the campus sports meet last?
+long time
+Three days
+Two days
+one day
 3

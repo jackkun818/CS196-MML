@@ -1,8 +1,8 @@
-难度3
-学校节日活动定于下周六举行，活动包括音乐会和游戏，时间为下午1点到4点。
-问题13：学校节日活动的时间是什么？
-晚上6点到9点
-下午2点到5点
-上午9点到12点
-下午1点到4点
+Difficulty 3
+The school festival event is scheduled for next Saturday, with concerts and games, from 1 to 4 p.m.
+Question 13: What is the time for school festival activities?
+6:00 to 9:00 pm
+2pm to 5pm
+9:00 to 12:00 a.m.
+1:00 to 4:00 pm
 3

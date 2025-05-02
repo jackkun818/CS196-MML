@@ -1,6 +1,6 @@
-难度4
-商店本月进行库存清理大促。所有商品均有折扣，最高可达50%。活动将持续到月底。
-问题16：大促活动中，折扣最高是多少？
+Difficulty 4
+The store is conducting a big sale for inventory cleaning this month. All items are discounted, up to 50%. The event will last until the end of the month.
+Question 16: What is the highest discount in the promotion?
 40%
 30%
 50%

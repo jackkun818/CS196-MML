@@ -1,8 +1,8 @@
-难度8
-汽车修理店每天上午9点开门，晚上7点闭馆。
-问题18：汽车修理店的闭馆时间是几点？
-晚上7点
-上午10点
-晚上8点
-下午5点
+Difficulty 8
+The auto repair shop opens at 9 a.m. every day and closes at 7 p.m.
+Question 18: What time is the closing time of the auto repair shop?
+7 pm
+10 am
+8 pm
+5 pm
 0

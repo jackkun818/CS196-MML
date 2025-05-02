@@ -1,8 +1,8 @@
-难度4
-高校本学期新增了一门人工智能课程。课程内容包括基础理论和实操练习。学生可以选择选修。
-问题9：高校新增了什么课程？
-外语课程
-音乐课程
-人工智能课程
-数据科学课程
+Difficulty 4
+A new artificial intelligence course has been added to colleges and universities this semester. The course content includes basic theory and practical exercises. Students can choose to take the elective.
+Question 9: What new courses have universities added?
+Foreign Language Courses
+Music courses
+Artificial Intelligence Course
+Data Science Courses
 2

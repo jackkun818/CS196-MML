@@ -1,8 +1,8 @@
-难度9
-市中心刚开了一家新的餐厅，专门提供意大利菜。餐厅的名字叫“意大利风情”，开业当天吸引了很多食客。餐厅的营业时间是早上10点到晚上10点。
-问题2：新餐厅叫什么名字？
-意大利美味
-意大利传统
-意大利厨房
-意大利风情
+Difficulty 9
+A new restaurant has just opened in the city center, specializing in Italian cuisine. The name of the restaurant is“Italian style”, it attracted many diners on the opening day. The restaurant is open from 10 am to 10 pm.
+Question 2: What is the name of the new restaurant?
+Italian Delicious
+Italian tradition
+Italian kitchen
+Italian style
 3

@@ -1,8 +1,8 @@
-难度5
-市区的公交车线路进行了调整。调整后，公交车增加了10个站点。新线路经过主要商业区。调整从下周一开始。
-问题14：公交车线路的调整增加了多少个站点？
-5个
-15个
-10个
-20个
+Difficulty 5
+The bus routes in the city have been adjusted. After the adjustment, the bus added 10 stops. The new line passes through the main commercial area. Adjustments start next Monday.
+Question 14: How many stations have been added to the adjustment of bus routes?
+5
+15
+10
+20
 2
