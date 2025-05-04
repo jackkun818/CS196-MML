@@ -26,7 +26,7 @@ namespace crs.core
         //     .EnableSensitiveDataLogging()
         //     .EnableDetailedErrors();
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-            => optionsBuilder.UseSqlServer("Data Source=localhost\\SQLDEVELOPER;Initial Catalog=db2;Integrated Security=True;TrustServerCertificate=True;")
+            => optionsBuilder.UseSqlServer("Data Source=localhost;Initial Catalog=db2;Integrated Security=True;TrustServerCertificate=True;")
                .LogTo(msg => { Crs_LogHelper.Info(msg); }, LogLevel.Information)
                .EnableSensitiveDataLogging()
                .EnableDetailedErrors();
