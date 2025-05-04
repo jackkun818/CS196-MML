@@ -42,7 +42,7 @@ namespace crs.core.Services
         public readonly static Crs_TtsService Instance = new Lazy<Crs_TtsService>(() => new Crs_TtsService()).Value;
 
         readonly int timeOut = 30;
-        readonly string domain = "https://u477648-8af7-1eb671ef.westb.seetacloud.com:8443";
+        readonly string domain = "http://127.0.0.1:8001";
         readonly string ttsApi = "/vit/tts";
 
         public readonly int VoiceSampleRate = 32000;

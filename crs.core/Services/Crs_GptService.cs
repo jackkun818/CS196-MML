@@ -62,7 +62,7 @@ namespace crs.core.Services
         public readonly static Crs_GptService Instance = new Lazy<Crs_GptService>(() => new Crs_GptService()).Value;
 
         readonly int timeOut = 30;
-        readonly string domain = "https://u477648-bd7b-a6cf61d5.westb.seetacloud.com:8443";
+        readonly string domain = "http://127.0.0.1:8001";
         readonly string guideApi = "/gpt/guide/invoke";
 
         private Crs_GptService()
