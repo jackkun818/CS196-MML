@@ -185,7 +185,7 @@
                                 <Image Source="{StaticResource crs_医生头像}" />
                             </hc:Gravatar>
                             <StackPanel Margin="10,0,0,0" VerticalAlignment="Center">
-                                <TextBlock>当前医生</TextBlock>
+                                <TextBlock>Current Doctor</TextBlock>
                                 <TextBlock Text="{Binding DoctorItem.Name, FallbackValue=--, TargetNullValue=--}" TextTrimming="CharacterEllipsis" />
                             </StackPanel>
                         </DockPanel>
@@ -208,7 +208,7 @@
                                 <Image Source="{Binding PatientItem.SexImgType, Converter={StaticResource crs_BitmapImageConverter}}" />
                             </hc:Gravatar>
                             <StackPanel Margin="10,0,0,0" VerticalAlignment="Center">
-                                <TextBlock>当前患者</TextBlock>
+                                <TextBlock>Current Patients</TextBlock>
                                 <TextBlock Text="{Binding PatientItem.Name, TargetNullValue=--, FallbackValue=--}" TextTrimming="CharacterEllipsis" />
                             </StackPanel>
                         </DockPanel>

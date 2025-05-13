@@ -81,10 +81,10 @@
                                                            Opacity="0.6">
                                                     <TextBlock.Style>
                                                         <Style BasedOn="{StaticResource {x:Type TextBlock}}" TargetType="TextBlock">
-                                                            <Setter Property="Text" Value="（已设定方案）" />
+                                                            <Setter Property="Text" Value="(Plan has been set)" />
                                                             <Style.Triggers>
                                                                 <DataTrigger Binding="{Binding ProgramContent}" Value="{x:Null}">
-                                                                    <Setter Property="Text" Value="（未设定方案）" />
+                                                                    <Setter Property="Text" Value="(No plan set)" />
                                                                 </DataTrigger>
                                                             </Style.Triggers>
                                                         </Style>
@@ -118,7 +118,7 @@
                                                              VerticalAlignment="Center"
                                                              HorizontalContentAlignment="Center"
                                                              hc:BorderElement.CornerRadius="8"
-                                                             hc:InfoElement.Placeholder="当前状态"
+                                                             hc:InfoElement.Placeholder="Current Status"
                                                              Background="{StaticResource crs_SolidColorBrush.EFEFEF}"
                                                              BorderThickness="0"
                                                              DisplayMemberPath="Item1"
@@ -156,7 +156,7 @@
                                                     FontSize="19"
                                                     FontWeight="Bold"
                                                     Foreground="White">
-                                                设置方案
+                                                Plan Setup
                                             </Button>
                                             <Button Width="110"
                                                     Height="42"
@@ -173,7 +173,7 @@
                                                         <Style TargetType="TextBlock">
                                                             <Setter Property="Text" Value="--" />
                                                             <Style.Triggers>
-                                                                <DataTrigger Binding="{Binding ProgramType}" Value="评估测试">
+                                                                <DataTrigger Binding="{Binding ProgramType}" Value="1">
                                                                     <Setter Property="Text" Value="开始评估" />
                                                                 </DataTrigger>
                                                                 <DataTrigger Binding="{Binding ProgramType}" Value="康复训练">

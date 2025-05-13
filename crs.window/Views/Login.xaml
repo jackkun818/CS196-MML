@@ -37,7 +37,7 @@
                             Margin="0,93,0,0"
                             DockPanel.Dock="Top">
                 <hc:TextBox Padding="55,0,20,0"
-                            hc:InfoElement.Placeholder="输入账号/手机号"
+                            hc:InfoElement.Placeholder="Account Number/Phone Number"
                             hc:InfoElement.ShowClearButton="True"
                             Text="{Binding Account, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
                 <Image Height="23"
@@ -51,7 +51,7 @@
                             Margin="0,24,0,0"
                             DockPanel.Dock="Top">
                 <hc:PasswordBox Padding="55,0,20,0"
-                                hc:InfoElement.Placeholder="输入密码"
+                                hc:InfoElement.Placeholder="Password"
                                 hc:InfoElement.ShowClearButton="True"
                                 IsSafeEnabled="False"
                                 UnsafePassword="{Binding Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
@@ -69,7 +69,7 @@
                 <CheckBox HorizontalAlignment="Left"
                           Foreground="{StaticResource crs_SolidColorBrush.9B9B9B}"
                           IsChecked="{Binding RememberPassword}">
-                    记住密码
+                    Remember Me
                 </CheckBox>
             </Viewbox>
 
@@ -81,7 +81,7 @@
                     DockPanel.Dock="Bottom"
                     FontSize="23"
                     Foreground="White">
-                登录
+                Login
             </Button>
         </DockPanel>
     </Border>

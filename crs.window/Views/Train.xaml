@@ -41,11 +41,11 @@
                         <Button.Style>
                             <Style BasedOn="{StaticResource ButtonDefault}" TargetType="Button">
                                 <Setter Property="Command" Value="{Binding StartCommand}" />
-                                <Setter Property="Content" Value="开始" />
+                                <Setter Property="Content" Value="Start" />
                                 <Style.Triggers>
                                     <DataTrigger Binding="{Binding IsFromSchedule}" Value="True">
                                         <Setter Property="Command" Value="{Binding SaveCommand}" />
-                                        <Setter Property="Content" Value="保存" />
+                                        <Setter Property="Content" Value="Save" />
                                     </DataTrigger>
                                 </Style.Triggers>
                             </Style>
@@ -59,7 +59,7 @@
                             VerticalAlignment="Center"
                             FontSize="28"
                             FontWeight="Bold">
-                            训练方案
+                            Training Program
                         </TextBlock>
                         <Button
                             x:Name="historyToggleButton"
@@ -97,7 +97,7 @@
                                     FontSize="22"
                                     FontWeight="Bold"
                                     Foreground="{Binding Foreground, RelativeSource={RelativeSource AncestorType=Button}}">
-                                    历史方案
+                                    Testing History
                                 </TextBlock>
                             </StackPanel>
                         </Button>
@@ -153,7 +153,7 @@
                                                                 FontSize="16"
                                                                 FontWeight="Bold"
                                                                 Foreground="White">
-                                                                导入
+                                                                Import
                                                             </Button>
                                                             <TextBlock
                                                                 Margin="15,0,0,0"
@@ -342,7 +342,7 @@
                             FontSize="26"
                             FontWeight="Bold"
                             Foreground="White">
-                            添加
+                            Add
                         </Button>
 
                         <StackPanel
@@ -360,7 +360,7 @@
                                 VerticalAlignment="Center"
                                 FontSize="28"
                                 FontWeight="Bold">
-                                模式选择
+                                Select Mode
                             </TextBlock>
                         </StackPanel>
                         <ListBox
@@ -452,7 +452,7 @@
                                 VerticalAlignment="Center"
                                 FontSize="28"
                                 FontWeight="Bold">
-                                参数设置
+                                Parameter Settings
                             </TextBlock>
                         </StackPanel>
 
@@ -527,7 +527,7 @@
                                 VerticalAlignment="Center"
                                 FontSize="28"
                                 FontWeight="Bold">
-                                反馈
+                                Feedback
                             </TextBlock>
 
                             <hc:SimplePanel
@@ -592,7 +592,7 @@
                 FontSize="20"
                 FontWeight="DemiBold"
                 Opacity="0.6">
-                请按照医生开具的处方项目设定参数方案：
+                Please set the plan parameters according to the doctor's prescription:
             </TextBlock>
             <TextBlock
                 VerticalAlignment="Center"
@@ -606,7 +606,7 @@
                 FontWeight="DemiBold"
                 Opacity="0.6"
                 TextTrimming="CharacterEllipsis">
-                将方案添加至右侧后点击保存
+                Add the plan on the right, then click save.
             </TextBlock>
         </DockPanel>
     </hc:SimplePanel>

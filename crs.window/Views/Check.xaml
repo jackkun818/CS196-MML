@@ -32,7 +32,7 @@
                         Command="{Binding CheckCommand}"
                         FontSize="26"
                         Foreground="White">
-                    确认
+                    1
                 </Button>
             </Border>
         </DataTemplate>
