@@ -14,17 +14,17 @@ namespace crs.extension
     {
         public enum MenuType
         {
-            [Description("用户管理")]
+            [Description("Users")]
             UserManagement,
-            [Description("评估测试")]
+            [Description("Testing")]
             EvaluateTest,
-            [Description("康复训练")]
+            [Description("Training")]
             Train,
-            [Description("排班查询")]
+            [Description("Schedule")]
             Schedule,
-            [Description("数据报告")]
+            [Description("Reports")]
             Report,
-            [Description("数字人管理")]
+            [Description("AI Helper")]
             DigitalHuman,
         }
 

@@ -111,7 +111,7 @@ namespace crs.window
             containerRegistry.RegisterForNavigation<Menu>(Crs_View.Menu); // 主菜单
             containerRegistry.RegisterForNavigation<UserManagement>(Crs_View.UserManagement); // 用户管理           
             containerRegistry.RegisterForNavigation<EvaluateTestEx>(Crs_View.EvaluateTest); // 评估测试
-            containerRegistry.RegisterForNavigation<Train>(Crs_View.Train); // 康复训练
+            containerRegistry.RegisterForNavigation<Train>(Crs_View.Train); // 康复训练g
             containerRegistry.RegisterForNavigation<ScheduleEx>(Crs_View.Schedule); // 排班查询
             containerRegistry.RegisterForNavigation<Report>(Crs_View.Report); // 数据报告
             containerRegistry.RegisterForNavigation<DigitalHuman>(Crs_View.DigitalHuman); // 数字人管理

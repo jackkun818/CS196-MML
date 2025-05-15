@@ -118,7 +118,7 @@
                                                HorizontalAlignment="Center"
                                                VerticalAlignment="Center"
                                                Opacity="0.68"
-                                               Text="{Binding PhoneNumber, TargetNullValue=手机号：--, FallbackValue=手机号：--, StringFormat={}手机号：{0}}"
+                                               Text="{Binding PhoneNumber, TargetNullValue=Phone Number: --, FallbackValue=Phone Number: --, StringFormat={}Phone Number: {0}}"
                                                TextBlock.FontSize="18"
                                                TextBlock.Foreground="Black"
                                                TextTrimming="CharacterEllipsis" />

@@ -68,7 +68,7 @@
 
 <BitmapImage x:Key="crs_平面识别能力" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/平面识别能力.png" />
 
-<BitmapImage x:Key="crs_康复训练" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/康复训练.png" />
+<BitmapImage x:Key="crs_Training" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/康复训练.png" />
 
 <BitmapImage x:Key="crs_患者端背景" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/患者端背景.png" />
 
@@ -78,7 +78,7 @@
 
 <BitmapImage x:Key="crs_拓扑记忆力" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/拓扑记忆力.png" />
 
-<BitmapImage x:Key="crs_排班查询" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/排班查询.png" />
+<BitmapImage x:Key="crs_Schedule" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/排班查询.png" />
 
 <BitmapImage x:Key="crs_提示框" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/提示框.png" />
 
@@ -98,9 +98,9 @@
 
 <BitmapImage x:Key="crs_搜索能力2" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/搜索能力2.png" />
 
-<BitmapImage x:Key="crs_数字人管理" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/数字人管理.png" />
+<BitmapImage x:Key="crs_AI Helper" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/数字人管理.png" />
 
-<BitmapImage x:Key="crs_数据报告" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/数据报告.png" />
+<BitmapImage x:Key="crs_Reports" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/数据报告.png" />
 
 <BitmapImage x:Key="crs_新增" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/新增.png" />
 
@@ -120,7 +120,7 @@
 
 <BitmapImage x:Key="crs_注意力分配2" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/注意力分配2.png" />
 
-<BitmapImage x:Key="crs_用户管理" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/用户管理.png" />
+<BitmapImage x:Key="crs_Users" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/用户管理.png" />
 
 <BitmapImage x:Key="crs_男" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/男.png" />
 
@@ -152,7 +152,7 @@
 
 <BitmapImage x:Key="crs_设置" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/设置.png" />
 
-<BitmapImage x:Key="crs_评估测试" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/评估测试.png" />
+<BitmapImage x:Key="crs_Testing" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/评估测试.png" />
 
 <BitmapImage x:Key="crs_词汇记忆能力" po:Freeze="True" UriSource="/crs.theme;component/Resources/Images/词汇记忆能力.png" />
 

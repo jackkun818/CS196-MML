@@ -2,7 +2,7 @@
 namespace crs.extension
 {
     /// <summary>
-    /// ÊÓÍ¼Ãû³Æ
+    /// ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½
     /// </summary>
     public class Crs_View
     {
@@ -22,7 +22,7 @@ namespace crs.extension
     }
 
     /// <summary>
-    /// µ¯´°Token
+    /// ï¿½ï¿½ï¿½ï¿½Token
     /// </summary>
     public class Crs_DialogToken
     {
@@ -38,7 +38,7 @@ namespace crs.extension
     }
 
     /// <summary>
-    /// µ¯´°Ãû³Æ
+    /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     /// </summary>
     public class Crs_Dialog
     {
@@ -68,7 +68,7 @@ namespace crs.extension
     }
 
     /// <summary>
-    /// ÇøÓòÃû³Æ
+    /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     /// </summary>
     public class Crs_Region
     {

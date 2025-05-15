@@ -56,7 +56,7 @@
                         DockPanel.Dock="Top">
                         <TextBlock
                             VerticalAlignment="Center"
-                            FontSize="28"
+                            FontSize="26"
                             FontWeight="Bold">
                             Testing Plan
                         </TextBlock>
@@ -96,7 +96,7 @@
                                     FontSize="22"
                                     FontWeight="Bold"
                                     Foreground="{Binding Foreground, RelativeSource={RelativeSource AncestorType=Button}}">
-                                    Testing History
+                                    History
                                 </TextBlock>
                             </StackPanel>
                         </Button>
