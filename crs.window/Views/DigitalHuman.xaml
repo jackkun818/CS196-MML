@@ -35,7 +35,7 @@
                         FontSize="26"
                         FontWeight="Bold"
                         Foreground="White">
-                    新增数字人
+                    Activate AI Assistant
                 </Button>
                 <Button Width="241"
                         Height="67"
@@ -46,7 +46,7 @@
                         FontSize="26"
                         FontWeight="Bold"
                         Foreground="White">
-                    删除数字人
+                    Deactivate AI Assistant
                 </Button>
             </UniformGrid>
 

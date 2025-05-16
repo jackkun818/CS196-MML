@@ -50,7 +50,7 @@
                 <hc:SimplePanel>
                     <hc:TextBox Padding="100,0,30,0"
                                 hc:BorderElement.CornerRadius="9"
-                                hc:InfoElement.Placeholder="输入用户名/手机号进行查询"
+                                hc:InfoElement.Placeholder="Enter Username/Phone Number to Search"
                                 hc:InfoElement.ShowClearButton="True"
                                 Background="{StaticResource crs_SolidColorBrush.F8F8F8}"
                                 FontSize="26"
@@ -118,7 +118,7 @@
                                                HorizontalAlignment="Center"
                                                VerticalAlignment="Center"
                                                Opacity="0.68"
-                                               Text="{Binding PhoneNumber, TargetNullValue=手机号：--, FallbackValue=手机号：--, StringFormat={}手机号：{0}}"
+                                               Text="{Binding PhoneNumber, TargetNullValue=Phone Number: --, FallbackValue=Phone Number: --, StringFormat={}Phone Number: {0}}"
                                                TextBlock.FontSize="18"
                                                TextBlock.Foreground="Black"
                                                TextTrimming="CharacterEllipsis" />
