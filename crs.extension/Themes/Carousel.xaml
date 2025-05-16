@@ -1,0 +1,69 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:crs.extension.Controls"
+                    xmlns:hc="https://handyorg.github.io/handycontrol"
+                    xmlns:interactivity="clr-namespace:HandyControl.Interactivity;assembly=HandyControl">
+
+    <Style x:Key="crs_Carousel" TargetType="controls:Crs_Carousel">
+        <Setter Property="PageButtonStyle" Value="{StaticResource CarouselPateButton}" />
+        <Setter Property="ItemContainerStyle" Value="{StaticResource CarouselItemBaseStyle}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="controls:Crs_Carousel">
+                    <hc:SimplePanel ClipToBounds="True">
+                        <StackPanel x:Name="PART_Panel" Orientation="Horizontal" />
+                        <hc:SimplePanel x:Name="GridTop">
+                            <Button x:Name="PrevButton"
+                                    Margin="0,0,0,0"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Center"
+                                    Command="interactivity:ControlCommands.Prev"
+                                    Style="{StaticResource ButtonCustom}"
+                                    Visibility="Collapsed">
+                                <Border Width="50"
+                                        Height="100"
+                                        Background="{DynamicResource DarkOpacityBrush}"
+                                        CornerRadius="4">
+                                    <Path Margin="16"
+                                          Fill="White"
+                                          Style="{StaticResource LeftPathStyle}" />
+                                </Border>
+                            </Button>
+                            <Button x:Name="NextButton"
+                                    Margin="0,0,0,0"
+                                    HorizontalAlignment="Right"
+                                    VerticalAlignment="Center"
+                                    Command="interactivity:ControlCommands.Next"
+                                    Style="{StaticResource ButtonCustom}"
+                                    Visibility="Collapsed">
+                                <Border Width="50"
+                                        Height="100"
+                                        Background="{DynamicResource DarkOpacityBrush}"
+                                        CornerRadius="4">
+                                    <Path Margin="16"
+                                          Fill="White"
+                                          Style="{StaticResource RightPathStyle}" />
+                                </Border>
+                            </Button>
+                        </hc:SimplePanel>
+                        <StackPanel Name="PART_PanelPage"
+                                    Margin="0,0,0,20"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Bottom"
+                                    Orientation="Horizontal"
+                                    Visibility="Collapsed" />
+                    </hc:SimplePanel>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsFirstItem" Value="True">
+                            <Setter TargetName="PrevButton" Property="IsEnabled" Value="False" />
+                        </Trigger>
+                        <Trigger Property="IsLastItem" Value="True">
+                            <Setter TargetName="NextButton" Property="IsEnabled" Value="False" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>

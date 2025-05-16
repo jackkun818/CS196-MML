@@ -1,0 +1,64 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <OutputType>Exe</OutputType>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="args\gpt-args.ini" />
+    <None Remove="args\human-args.ini" />
+    <None Remove="args\sherpa-onnx-args.ini" />
+    <None Remove="args\tts-args.ini" />
+    <None Remove="log4net.config" />
+    <None Remove="sherpa-onnx\run-transducer.sh" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="args\tts-args.ini">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="args\gpt-args.ini">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="args\human-args.ini">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="args\sherpa-onnx-args.ini">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="log4net.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sherpa-onnx\run-transducer.sh">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommandLineParser" Version="2.9.1" />
+    <PackageReference Include="Flurl" Version="4.0.0" />
+    <PackageReference Include="Flurl.Http" Version="4.0.2" />
+    <PackageReference Include="Flurl.Http.Newtonsoft" Version="0.9.1" />
+    <PackageReference Include="FreeSpire.PDF" Version="10.2.0" />
+    <PackageReference Include="log4net" Version="3.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="org.k2fsa.sherpa.onnx" Version="1.10.23" />
+    <PackageReference Include="org.k2fsa.sherpa.onnx.runtime.win-x64" Version="1.10.23" />
+    <PackageReference Include="PortAudioSharp2" Version="1.0.4" />
+  </ItemGroup>
+
+</Project>

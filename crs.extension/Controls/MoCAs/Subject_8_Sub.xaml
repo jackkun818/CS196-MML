@@ -1,0 +1,54 @@
+﻿<UserControl x:Class="crs.extension.Controls.MoCAs.Subject_8_Sub"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:behaviors="http://schemas.microsoft.com/xaml/behaviors"
+             xmlns:controls="clr-namespace:crs.extension.Controls"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:hc="https://handyorg.github.io/handycontrol"
+             xmlns:local="clr-namespace:crs.extension.Controls.MoCAs"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:models="clr-namespace:crs.extension.Models"
+             xmlns:theme="clr-namespace:crs.theme;assembly=crs.theme"
+             d:Background="White"
+             d:DataContext="{d:DesignInstance IsDesignTimeCreatable=True,
+                                              Type={x:Type models:SubjectItem}}"
+             d:DesignHeight="975"
+             d:DesignWidth="1720"
+             mc:Ignorable="d">
+
+    <DockPanel DataContext="{Binding ChildrenItems[0]}">
+        <TextBlock HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   DockPanel.Dock="Bottom"
+                   FontSize="28"
+                   TextAlignment="Center"
+                   TextTrimming="CharacterEllipsis"
+                   TextWrapping="Wrap" />
+        <controls:Crs_AudioButton Margin="0,0,0,40"
+                                  AudioData="{Binding AudioData}"
+                                  Click="Crs_AudioButton_Click"
+                                  DockPanel.Dock="Bottom" />
+        <hc:SimpleStackPanel Margin="0,40"
+                             HorizontalAlignment="Center"
+                             VerticalAlignment="Center">
+            <TextBlock HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       FontSize="45"
+                       FontWeight="Bold"
+                       TextAlignment="Center"
+                       TextTrimming="CharacterEllipsis"
+                       TextWrapping="Wrap">
+                这是一个语言能力测验，请在1分钟内尽可能多的说出动物的名字
+            </TextBlock>
+            <TextBlock Margin="0,152,0,0"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       FontSize="120"
+                       Foreground="{StaticResource crs_SolidColorBrush.F89F00}"
+                       Text="{Binding CountdownTime, RelativeSource={RelativeSource AncestorType=local:Subject_8_Sub}, StringFormat={}{0:mm:ss}, TargetNullValue=00:00, FallbackValue=00:00}"
+                       TextAlignment="Center"
+                       TextTrimming="CharacterEllipsis"
+                       TextWrapping="Wrap" />
+        </hc:SimpleStackPanel>
+    </DockPanel>
+</UserControl>

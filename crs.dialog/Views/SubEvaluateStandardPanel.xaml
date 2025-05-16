@@ -1,0 +1,67 @@
+﻿<UserControl
+    x:Class="crs.dialog.Views.SubEvaluateStandardPanel"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:ex="clr-namespace:crs.extension;assembly=crs.extension"
+    xmlns:hc="https://handyorg.github.io/handycontrol"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:prism="http://prismlibrary.com/"
+    xmlns:theme="clr-namespace:crs.theme;assembly=crs.theme"
+    xmlns:vm="clr-namespace:crs.dialog.ViewModels"
+    d:DataContext="{d:DesignInstance IsDesignTimeCreatable=True,
+                                     Type={x:Type vm:SubEvaluateStandardPanelViewModel}}"
+    d:Height="1080"
+    d:Width="1920"
+    prism:ViewModelLocator.AutoWireViewModel="True"
+    mc:Ignorable="d">
+
+    <hc:SimplePanel DataContext="{Binding DataContext}">
+        <hc:SimplePanel.Background>
+            <ImageBrush ImageSource="{StaticResource crs_患者端背景2}" />
+        </hc:SimplePanel.Background>
+
+        <ContentControl
+            x:Name="subjectContentControl"
+            Margin="100,65,100,40"
+            Content="{Binding SubjectSelectedItem}"
+            ContentTemplateSelector="{StaticResource crs_SubjectTemplateSelector}"
+            IsEnabled="{Binding SubjectSelectedItem.IsComplete, Converter={StaticResource crs_Boolean2ReversalConverter}}"
+            Tag="Sub" />
+
+        <Button
+            x:Name="completeButton"
+            Width="241"
+            Height="67"
+            Margin="0,0,100,40"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Bottom"
+            hc:BorderElement.CornerRadius="8"
+            Background="{StaticResource crs_SolidColorBrush.F89F00}"
+            Click="completeButton_Click"
+            FontSize="26"
+            Foreground="White">
+            完成
+        </Button>
+        <Border
+            Width="500"
+            Height="300"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Bottom"
+            Background="White"
+            Visibility="{Binding TherapistScoringStatus}">
+            <TextBlock
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontSize="45"
+                FontWeight="Bold"
+                TextAlignment="Center"
+                TextTrimming="CharacterEllipsis"
+                TextWrapping="Wrap">
+                等待治疗师打分
+            </TextBlock>
+        </Border>
+
+
+    </hc:SimplePanel>
+</UserControl>

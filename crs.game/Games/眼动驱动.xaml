@@ -1,0 +1,17 @@
+﻿<local:BaseUserControl x:Class="crs.game.Games.眼动驱动"
+                       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                       xmlns:local="clr-namespace:crs.game"
+                       Width="800"
+                       Height="450"
+                       Background="#79b63f">
+    <Grid>
+        <Canvas Name="canvas"
+                Width="800"
+                Height="450" />
+        <MediaElement x:Name="mediaPlayer"
+                      LoadedBehavior="Manual"
+                      UnloadedBehavior="Stop" />
+    </Grid>
+</local:BaseUserControl>
+

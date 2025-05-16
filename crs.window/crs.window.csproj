@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows7.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <BaseOutputPath>..\publish\</BaseOutputPath>
+    <StartupObject>crs.window.Startup</StartupObject>
+    <Platforms>AnyCPU;x64</Platforms>
+    <ApplicationIcon>图标.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="图标.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="FreeSpire.PDF" Version="10.2.0" />
+    <PackageReference Include="HandyControl" Version="3.5.1" />
+    <PackageReference Include="LiveChartsCore" Version="2.0.0-rc2" />
+    <PackageReference Include="LiveChartsCore.SkiaSharpView" Version="2.0.0-rc2" />
+    <PackageReference Include="LiveChartsCore.SkiaSharpView.WPF" Version="2.0.0-rc2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Prism.DryIoc" Version="8.1.97" />
+    <PackageReference Include="Unofficial.MultiPlatform.Microsoft.Expression.Drawing" Version="1.0.0" />
+    <PackageReference Include="VirtualizingWrapPanel" Version="2.0.10" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\crs.core\crs.core.csproj" />
+    <ProjectReference Include="..\crs.dialog\crs.dialog.csproj" />
+    <ProjectReference Include="..\crs.extension\crs.extension.csproj" />
+    <ProjectReference Include="..\crs.theme\crs.theme.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\SubNull.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\SubWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

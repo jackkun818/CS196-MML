@@ -1,0 +1,231 @@
+from typing import List, Dict, Any
+from chains1111 import retrieval_chain,retrieval_chain_explain, retrieval_chain_guide,multi_query_chain,multi_query_chain_comfort, multi_query_chain_guide,hallucination_chain, fallback_chain, prescription_recommendation_chain, keyword_chain, recommened_paper_chain, multi_query_chain_explain, retrieval_chain_comfort,report_analysis_chain
+from vectorstores111 import dir, vectorstore_patient_evaluation, db, vectorstore_papers,training_db
+import os
+import re
+import ast
+from prompts111 import REVE_bg, PUME_bg
+from fetch_pubmed_data111 import PubMedScraper
+from langchain_community.document_loaders import CSVLoader
+from structs111 import ReportAnalysis
+
+
+def answer_hallucination_check(question: str, docs: List[str]):
+    generation = multi_query_chain.invoke({"question": question, "context": docs})
+    result = hallucination_chain.invoke({"documents": docs, "generation": generation})
+    if result.content.lower() == 'yes':
+        return generation
+    return generation
+    # else:
+    #     generatio
+    # n = fallback_chain.invoke({"question": question})
+
+def answer_hallucination_check_explain(params: dict, docs: List[str]):
+    input_dict = {
+        "params": params,
+        "context": docs
+    }
+    generation = multi_query_chain_explain.invoke(input_dict)
+    grade = 'no'
+    counter = 0
+    # while grade != 'yes':
+    #     generation = multi_query_chain.invoke({"question": param.get("question"), "language": param.get("language"), "temperature": param.get("temperature"), "temperature": param.get("temperature"),"context": docs})
+    #     result = hallucination_chain.invoke({"documents": docs, "generation": generation})
+    #     grade = result.content.lower()
+    #     counter += 1
+    #     if counter > 35:
+    #         break
+    return generation
+
+def answer_hallucination_check_comfort(params: dict, docs: List[str]):
+    input_dict = {
+        "params": params,
+        "context": docs
+    }
+    generation = multi_query_chain_comfort.invoke(input_dict)
+    grade = 'no'
+    counter = 0
+    return generation
+
+def answer_hallucination_check_guide(params: dict, docs: List[str]):
+    input_dict = {
+        "params": params,
+        "context": docs
+    }
+    generation = multi_query_chain_guide.invoke(input_dict)
+    grade = 'no'
+    counter = 0
+    return generation
+
+def parse_docs(List: list):
+    content =[]
+    documents = List[0]
+    print(documents)
+    for document in documents:
+        content.append(document.page_content)
+    return content
+
+# async def get_answer(param: dict):
+#     docs = retrieval_chain.invoke({"question": param.get("question")})
+#     answer = answer_hallucination_check_guide(param, docs)
+#     return answer
+async def get_answer(question:str):
+    print("question={}".format(question))
+    docs = retrieval_chain.invoke({"question": question})
+    answer = answer_hallucination_check(question, docs)
+    return answer
+
+async def get_explaination(params: dict):
+    print("params={}".format(params))
+    a=params.get("module_name")
+    print("a={}".format(a))
+    docs = retrieval_chain_explain.invoke({"module_name":params.get("module_name")})
+    content = parse_docs(docs)
+    explaination = answer_hallucination_check_explain(params, content)
+    return explaination
+
+async def get_comfort(params: dict):
+    docs = retrieval_chain_comfort.invoke({"module_name":params.get("module_name"),"current_details": params.get("current_details")})
+    content = parse_docs(docs)
+    comfort = answer_hallucination_check_comfort(params, content)
+    return comfort 
+
+async def get_guidance(params: dict):
+    docs = retrieval_chain_guide.invoke({"module_name":params.get("module_name"),"question": params.get("question")})
+    content = parse_docs(docs)
+    guidance = answer_hallucination_check_guide(params, content)
+    return guidance 
+
+
+
+
+def extract_params_from_message(message: str, function_id: int):
+    print("message={}".format(message.content))
+    if function_id == 1:
+        match = re.search(r'module_name:(.*),patient_name:(.*), language:(.*)', message.content)
+        print("match={}".format(match))
+        if match:
+            return {"module_name": match.group(1).strip(),"patient_name": match.group(2).strip(), "language": match.group(3).strip(),"module_id": function_id}
+    if function_id == 2:
+        match = re.match(r'module_name:(.*),patient_name:(.*), current_details:(.*), language:(.*)',  message.content)
+        if match:
+            return {"module_name": match.group(1).strip(),"patient_name": match.group(2).strip(), "current_details": match.group(3).strip(),"language": match.group(4).strip(),"module_id": function_id}
+    if function_id == 3:
+        match = re.match(r'module_name:(.*),question:(.*), patient_name:(.*), language:(.*)', message.content)
+        if match:
+            return {"module_name": match.group(1).strip(),"question":match.group(2).strip(),"patient_name": match.group(3).strip(), "language": match.group(4).strip(),"module_id": function_id}    
+    return {"question": "报错"}
+
+def extract_similar_ids(similar_cases) -> List[str]:
+    ids = []
+    for docs in similar_cases:
+        case = docs.page_content
+        a=re.findall(r"\d+", case)
+        id = re.findall(r"\d+", case)[0]
+        # id = "{:05d}".format(int(id))
+        ids.append(str(id))
+    return tuple(ids)
+
+def parse_result(result):
+    pattern = re.compile(r'\{.*?\}')
+
+    matches = pattern.findall(result)
+
+    dict_list = [ast.literal_eval(match) for match in matches]
+
+    return dict_list
+
+def get_similar_ids(id):
+    '''retrieve similar data based on patient ID
+    '''
+    query = f"SELECT * FROM patient_evaluation WHERE id = '{id}';"
+    patient_data = db.run(query, include_columns=True)
+    evaluation_retriever = vectorstore_patient_evaluation.as_retriever(search_kwargs={'k': 5})
+    similar_cases = evaluation_retriever.invoke(patient_data)
+    similar_ids = extract_similar_ids(similar_cases)
+    return patient_data , similar_ids
+
+def get_similar_cases(similar_ids):
+    query = f"SELECT * FROM patient_evaluation WHERE id IN {similar_ids};"
+    # print("similar_ids={}".format(similar_ids))
+    similar_cases = db.run(query, include_columns=True)
+    return similar_cases
+
+def get_similar_cases_prescription(similar_ids):
+    query = f"SELECT * FROM patient_prescription WHERE id IN {similar_ids};"
+    similar_cases_prescription = db.run(query, include_columns=True)
+    return similar_cases_prescription
+
+def get_recommendation(id: str):
+    patient_data, similar_ids = get_similar_ids(id)
+    print("similar_ids={}".format(similar_ids))
+    similar_cases = get_similar_cases(similar_ids)
+    similar_cases_prescription = get_similar_cases_prescription(similar_ids)
+    response = {}
+    response['similar_cases'] = similar_cases
+    response['recommendation'] = prescription_recommendation_chain.invoke({"patient_data": patient_data, "similar_cases_prescription": similar_cases_prescription})
+    return str(response)
+
+def parse_papers(papers):
+    parsed_papers = []
+    for paper in papers:
+        paper_dict = {}
+        lines = paper.page_content.split('\n')
+        for line in lines:
+            try:
+                key, value = line.split(": ", 1)
+                paper_dict[key] = value
+            except:
+                pass
+        parsed_papers.append(paper_dict)
+    return parsed_papers
+
+def get_paper_recommendation(description: str) -> str:
+    keywords = keyword_chain.invoke({"description": description})
+    PAPER_DIR = os.path.join(dir,'data/papers.csv')
+    scraper = PubMedScraper(keywords=keywords, output = PAPER_DIR)
+    scraper.main()
+
+    loader = CSVLoader(
+        file_path = PAPER_DIR,
+        csv_args={
+            "delimiter": ",",
+            "quotechar": '"',
+            "fieldnames": ['title', 'abstract', 'affiliations', 'authors', 'journal', 'date', 'keywords', 'url'],
+        }
+    )
+    paper_documents = loader.load()
+
+    vectorstore_papers.add_documents(documents = paper_documents)
+
+    paper_retriever = vectorstore_papers.as_retriever(search_kwargs={'k': 5})
+    retrieved_papers = paper_retriever.invoke(keywords)
+    parsed_papers = parse_papers(retrieved_papers)
+    responses = []
+    for paper in parsed_papers:
+        title, url, abstract = paper['title'], paper['url'], paper['abstract']
+        response = recommened_paper_chain.invoke({"description": description, "abstract": abstract})
+        response = f"Title: {title}; Reason of recommendation: {response} URL: {url}"
+        responses.append(response)
+    return '\n'.join(responses)
+
+def get_training_data(date, module):
+    try:
+        query = f"SELECT * FROM {module} WHERE 日期 = '{date}';"
+        training_data = training_db.run(query, include_columns=True)
+        return training_data
+    except:
+        raise ValueError("non-existent data")
+    
+def select_modular_prompt(module: str):
+    if module == 'REVE':
+        return REVE_bg
+    elif module == 'PUME':
+        return PUME_bg
+
+def get_report_anaysis(query:ReportAnalysis):
+    id, module, date = query.id, query.module, query.date
+    data = get_training_data(date, module)
+    module_info = select_modular_prompt(module)
+    response = report_analysis_chain.invoke({"module_name": module, "module_info": module_info, 'data': data})
+    return response

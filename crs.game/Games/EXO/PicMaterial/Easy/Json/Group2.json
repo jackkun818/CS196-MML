@@ -1,0 +1,97 @@
+{
+  "BackgroundImage": 
+  {
+    "Path": "组 15652.png",
+    "PxPosition": {  "Left": 0, "Up": 0, "Right": 0, "Down": 0 },
+    "Size": {"Width": 1260, "Height": 741 },
+    "Info": "女人拿水在厨房"
+  },
+  "Images": 
+  [
+    {
+      "Path": "蒙版组 124.png",
+      "PxMargin": { "Left": 0, "Up": 456, "Right": 1136, "Down": 145 },
+      "Size": { "Height": 140, "Width": 124},
+      "Info": "半边玻璃瓶",
+      "Index": 0
+    },
+    {
+      "Path": "组 15535.png",
+      "PxMargin": { "Left": 392, "Up": 207, "Right": 663, "Down": 157 },
+      "Size": { "Width": 205.07, "Height": 376.96 },
+      "Info": "大桶水",
+      "Index": 1
+    },
+	{
+      "Path": "组 15613.png",
+      "PxMargin": { "Left": 691, "Up": 331, "Right": 538, "Down": 273 },
+      "Size": { "Width": 31.06, "Height": 136.65 },
+      "Info": "锅铲左",
+      "Index": 2
+    },
+	
+	{
+      "Path": "组 15622.png",
+      "PxMargin": { "Left": 823, "Up": 331, "Right": 406, "Down": 273 },
+      "Size": { "Width": 31.06, "Height": 136.65 },
+      "Info": "锅铲右",
+      "Index": 3
+    },
+		
+	{
+      "Path": "组 15620.png",
+      "PxMargin": { "Left": 734, "Up": 331, "Right": 479, "Down": 273 },
+      "Size": { "Width": 47.02, "Height": 136.55 },
+      "Info": "汤勺",
+      "Index": 4
+    },
+			
+	{
+      "Path": "组 15589.png",
+      "PxMargin": { "Left": 650, "Up": 485, "Right": 529, "Down": 175 },
+      "Size": { "Width": 81.4, "Height": 80.8 },
+      "Info": "黄椒",
+      "Index": 5
+    },
+				
+	{
+      "Path": "组 15560.png",
+      "PxMargin": { "Left": 741, "Up": 513, "Right": 466, "Down": 176 },
+      "Size": { "Width": 53.38, "Height": 52.47 },
+      "Info": "西红柿",
+      "Index": 6
+    },
+					
+	{
+      "Path": "组 15629.png",
+      "PxMargin": { "Left": 584, "Up": 486, "Right": 123, "Down": 159 },
+      "Size": { "Width": 283.07, "Height": 95.75 },
+      "Info": "平底锅",
+      "Index": 7
+    },
+						
+	{
+      "Path": "组 15632.png",
+      "PxMargin": { "Left": 863, "Up": 542, "Right": 25, "Down": 149 },
+      "Size": { "Width": 371.63, "Height": 50.22 },
+      "Info": "煤气炉",
+      "Index": 8
+    },
+							
+	{
+      "Path": "组 15540.png",
+      "PxMargin": { "Left": 630, "Up": 548, "Right": 414, "Down": 155 },
+      "Size": { "Width": 215.56, "Height": 37.6 },
+      "Info": "砧板",
+      "Index": 9
+    },
+								
+	{
+      "Path": "组 15537.png",
+      "PxMargin": { "Left": 690, "Up": 587, "Right": 405, "Down": 147 },
+      "Size": { "Width": 164.99, "Height": 12.6 },
+      "Info": "小刀2",
+      "Index": 10
+    },
+  ]
+}

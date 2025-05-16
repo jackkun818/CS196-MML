@@ -1,0 +1,153 @@
+{
+  "BackgroundImage": 
+  {
+    "Path": "组 14823.png",
+    "PxPosition": {  "Left": 0, "Up": 0, "Right": 0, "Down": 0 },
+    "Size": { "Height": 743, "Width": 1263.1 },
+    "Info": "两个吊顶灯办公室"
+  },
+  "Images": 
+  [
+    {
+      "Path": "组 14792.png",
+      "PxMargin": { "Left": 22, "Up": 0, "Right": 1014, "Down": 416 },
+      "Size": { "Height": 327.02,"Width": 226.55  },
+      "Info": "左吊灯",
+      "Index": 0
+    },
+    {
+      "Path": "组 14819.png",
+      "PxMargin": { "Left": 201, "Up": 95, "Right": 820, "Down": 562 },
+      "Size": { "Width": 242.22, "Height": 85.85 },
+      "Info": "好多书",
+      "Index": 1
+    },
+	{
+      "Path": "组 14816.png",
+      "PxMargin": { "Left": 480, "Up": 89, "Right": 721, "Down": 562 },
+      "Size": { "Width": 61.53, "Height": 92.28 },
+      "Info": "仙人掌",
+      "Index": 2
+    },
+	
+	{
+      "Path": "组 14814.png",
+      "PxMargin": { "Left": 557, "Up": 94, "Right": 638, "Down": 562 },
+      "Size": { "Width": 67.62, "Height": 87.27 },
+      "Info": "小玉米",
+      "Index": 3
+    },
+		
+	{
+      "Path": "组 14812.png",
+      "PxMargin": { "Left": 678, "Up": 52, "Right": 486, "Down": 592 },
+      "Size": { "Width": 98.92, "Height": 98.92 },
+      "Info": "挂钟",
+      "Index": 4
+    },
+			
+	{
+      "Path": "组 14798.png",
+      "PxMargin": { "Left": 761, "Up": 0, "Right": 275, "Down": 416 },
+      "Size": { "Width": 226.55, "Height": 327.02 },
+      "Info": "右吊灯",
+      "Index": 5
+    },
+				
+	{
+      "Path": "组 14776.png",
+      "PxMargin": { "Left": 925, "Up": 127, "Right": 34, "Down": 422 },
+      "Size": { "Width": 304.46, "Height": 194.36 },
+      "Info": "公告板",
+      "Index": 6
+    },
+					
+	{
+      "Path": "组 14779.png",
+      "PxMargin": { "Left": 709, "Up": 256, "Right": 255, "Down": 328 },
+      "Size": { "Width": 298.75, "Height": 159.41 },
+      "Info": "右键鼠显示器",
+      "Index": 7
+    },
+						
+	{
+      "Path": "组 14779.png",
+      "PxMargin": { "Left": 547, "Up": 217, "Right": 535, "Down": 421 },
+      "Size": { "Width": 180.65, "Height": 104.61 },
+      "Info": "便签板",
+      "Index": 8
+    },
+							
+	{
+      "Path": "组 14783.png",
+      "PxMargin": { "Left": 544, "Up": 358, "Right": 612, "Down": 327 },
+      "Size": { "Width": 106.59, "Height": 57.54 },
+      "Info": "堆叠的书",
+      "Index": 9
+    },
+								
+	{
+      "Path": "组 14782.png",
+      "PxMargin": { "Left": 217, "Up": 256, "Right": 747, "Down": 328 },
+      "Size": { "Width": 298.75, "Height": 159.41 },
+      "Info": "左键鼠显示器",
+      "Index": 10
+    },
+									
+	{
+      "Path": "组 14786.png",
+      "PxMargin": { "Left": 152, "Up": 349, "Right": 1057, "Down": 327 },
+      "Size": { "Width": 53.66, "Height": 66.63 },
+      "Info": "相框",
+      "Index": 11
+    },
+										
+	{
+      "Path": "组 14763.png",
+      "PxMargin": { "Left": 54, "Up": 547, "Right": 1114, "Down": 62 },
+      "Size": { "Width": 94.91, "Height": 133.5 },
+      "Info": "垃圾桶",
+      "Index": 12
+    },
+											
+	{
+      "Path": "组 14767.png",
+      "PxMargin": { "Left": 170, "Up": 493, "Right": 1061, "Down": 154 },
+      "Size": { "Width": 31.7, "Height": 96.22 },
+      "Info": "左插座",
+      "Index": 13
+    },
+												
+	{
+      "Path": "组 14759.png",
+      "PxMargin": { "Left": 220, "Up": 334, "Right": 778, "Down": 59 },
+      "Size": { "Width": 264.59, "Height": 349.9 },
+      "Info": "侧着的椅子",
+      "Index": 14
+    },
+													
+	{
+      "Path": "组 14746.png",
+      "PxMargin": { "Left": 667, "Up": 339, "Right": 437, "Down": 59 },
+      "Size": { "Width": 158.52, "Height": 345.09 },
+      "Info": "正着的椅子",
+      "Index": 15
+    },
+													
+	{
+      "Path": "组 14769.png",
+      "PxMargin": { "Left": 981, "Up": 492, "Right": 250, "Down": 155 },
+      "Size": { "Width": 31.7, "Height": 96.22 },
+      "Info": "右插座",
+      "Index": 16
+    },
+													
+	{
+      "Path": "组 14771.png",
+      "PxMargin": { "Left": 1097, "Up": 406, "Right": 40, "Down": 68 },
+      "Size": { "Width": 126.11, "Height": 268.81 },
+      "Info": "大花盆",
+      "Index": 17
+    },
+  ]
+}

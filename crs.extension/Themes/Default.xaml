@@ -1,0 +1,37 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:converter="clr-namespace:crs.extension.Converter"
+                    xmlns:templateSelector="clr-namespace:crs.extension.TemplateSelector">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/crs.extension;component/Themes/Slider.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/crs.extension;component/Themes/Carousel.xaml" />
+
+        <ResourceDictionary Source="pack://application:,,,/crs.extension;component/Themes/MMSE_MoCA.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <converter:Bitmap2ImageSourceConverter x:Key="crs_Bitmap2ImageSourceConverter" />
+    <converter:Bitmap2ImageSourceConverter x:Key="crs_DigitalHumanBitmap2ImageSource_196_Converter"
+                                           DecodePixelWidth="196"
+                                           DefaultImagePath="./Temps/Images/数字人默认图.png" />
+    <converter:Bitmap2ImageSourceConverter x:Key="crs_DigitalHumanBitmap2ImageSource_316_Converter"
+                                           DecodePixelWidth="316"
+                                           DefaultImagePath="./Temps/Images/数字人默认图.png" />
+
+    <converter:Boolean2VisibilityConverter x:Key="crs_Boolean2VisibilityHiddenConverter" FalseVisibilityType="Hidden" />
+    <converter:Boolean2VisibilityConverter x:Key="crs_Boolean2VisibilityCollapsedConverter" FalseVisibilityType="Collapsed" />
+    <converter:Boolean2VisibilityConverter x:Key="crs_Boolean2VisibilityHiddenReversalConverter"
+                                           FalseVisibilityType="Hidden"
+                                           IsReversal="True" />
+    <converter:Boolean2VisibilityConverter x:Key="crs_Boolean2VisibilityCollapsedReversalConverter"
+                                           FalseVisibilityType="Collapsed"
+                                           IsReversal="True" />
+
+    <converter:Boolean2ReversalConverter x:Key="crs_Boolean2ReversalConverter" />
+
+    <converter:MathRoundConverter x:Key="crs_MathRoundConverter" />
+
+    <converter:BitmapStream2ImageSourceConverter x:Key="crs_BitmapStream2ImageSource_380_Converter" DecodePixelWidth="380" />
+
+    <templateSelector:SubjectTemplateSelector x:Key="crs_SubjectTemplateSelector" />
+</ResourceDictionary>

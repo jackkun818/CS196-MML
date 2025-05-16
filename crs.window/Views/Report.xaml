@@ -1,0 +1,262 @@
+﻿<UserControl x:Class="crs.window.Views.Report"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:hc="https://handyorg.github.io/handycontrol"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:prism="http://prismlibrary.com/"
+             xmlns:system="clr-namespace:System;assembly=mscorlib"
+             xmlns:theme="clr-namespace:crs.theme;assembly=crs.theme"
+             xmlns:vm="clr-namespace:crs.window.ViewModels"
+             xmlns:wpfToolkit="clr-namespace:WpfToolkit.Controls;assembly=VirtualizingWrapPanel"
+             d:Background="White"
+             d:DataContext="{d:DesignInstance IsDesignTimeCreatable=True,
+                                              Type={x:Type vm:ReportViewModel}}"
+             d:Height="1080"
+             d:Width="1920"
+             prism:ViewModelLocator.AutoWireViewModel="True"
+             mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <Style BasedOn="{StaticResource DataGridColumnHeaderStyle}" TargetType="DataGridColumnHeader">
+            <Setter Property="Foreground" Value="{StaticResource crs_SolidColorBrush.9B9B9B}" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+
+        <Style BasedOn="{StaticResource DataGridRowStyle}" TargetType="DataGridRow">
+            <Setter Property="Margin" Value="0,2" />
+            <Style.Triggers>
+                <Trigger Property="UIElement.IsMouseOver" Value="true">
+                    <Setter Property="Background" Value="Transparent" />
+                </Trigger>
+                <Trigger Property="DataGridRow.IsSelected" Value="True">
+                    <Setter Property="Background" Value="Transparent" />
+                </Trigger>
+                <MultiTrigger>
+                    <MultiTrigger.Conditions>
+                        <Condition Property="DataGridRow.IsSelected" Value="true" />
+                        <Condition Property="Selector.IsSelectionActive" Value="false" />
+                    </MultiTrigger.Conditions>
+                    <Setter Property="Background" Value="Transparent" />
+                </MultiTrigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style BasedOn="{StaticResource DataGridCellStyle}" TargetType="DataGridCell">
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+            <Setter Property="HorizontalContentAlignment" Value="Center" />
+            <Style.Triggers>
+                <Trigger Property="DataGridCell.IsSelected" Value="True">
+                    <Setter Property="Foreground" Value="Black" />
+                    <Setter Property="Background" Value="Transparent" />
+                </Trigger>
+                <MultiTrigger>
+                    <MultiTrigger.Conditions>
+                        <Condition Property="DataGridCell.IsSelected" Value="true" />
+                        <Condition Property="Selector.IsSelectionActive" Value="false" />
+                    </MultiTrigger.Conditions>
+                    <Setter Property="Foreground" Value="Black" />
+                    <Setter Property="Background" Value="Transparent" />
+                </MultiTrigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style BasedOn="{StaticResource {x:Type DataGrid}}" TargetType="DataGrid">
+            <Setter Property="ColumnHeaderHeight" Value="65" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="Padding" Value="20,10" />
+            <Setter Property="CanUserSortColumns" Value="False" />
+            <Setter Property="FontSize" Value="24" />
+            <Setter Property="RowHeight" Value="72" />
+            <Setter Property="SelectionMode" Value="Single" />
+            <Setter Property="ColumnHeaderStyle" Value="{StaticResource {x:Type DataGridColumnHeader}}" />
+            <Setter Property="RowStyle" Value="{StaticResource {x:Type DataGridRow}}" />
+            <Setter Property="CellStyle" Value="{StaticResource {x:Type DataGridCell}}" />
+        </Style>
+
+        <DataTemplate x:Key="EvaluateTestReport">
+            <hc:SimplePanel>
+                <DataGrid ItemsSource="{Binding ReportItems}">
+                    <DataGrid.Columns>
+                        <DataGridTemplateColumn Width="65">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Viewbox Width="30">
+                                        <CheckBox IsChecked="{Binding IsChecked, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                                    </Viewbox>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTextColumn Width="*"
+                                            Binding="{Binding DateTime, TargetNullValue=--, FallbackValue=--}"
+                                            Header="评估日期" />
+                        <DataGridTextColumn Width="*"
+                                            Binding="{Binding DurationTime, TargetNullValue=--, FallbackValue=--}"
+                                            Header="时长" />
+                        <DataGridTextColumn Width="*"
+                                            Binding="{Binding Mode, TargetNullValue=--, FallbackValue=--}"
+                                            Header="模式选择" />
+                        <DataGridTemplateColumn Width="*" Header="查看报告">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button Width="150"
+                                            Height="52"
+                                            hc:BorderElement.CornerRadius="26"
+                                            Background="{StaticResource crs_SolidColorBrush.F89F00}"
+                                            Command="{Binding DataContext.ViewCommand, RelativeSource={RelativeSource AncestorType=DataGrid}}"
+                                            CommandParameter="{Binding}"
+                                            FontSize="24"
+                                            Foreground="White">
+                                        查看报告
+                                    </Button>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </hc:SimplePanel>
+        </DataTemplate>
+        <DataTemplate x:Key="TrainReport">
+            <hc:SimplePanel>
+                <DataGrid ItemsSource="{Binding ReportItems}">
+                    <DataGrid.Columns>
+                        <DataGridTemplateColumn Width="65">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Viewbox Width="30">
+                                        <CheckBox IsChecked="{Binding IsChecked, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                                    </Viewbox>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTextColumn Width="1.5*"
+                                            Binding="{Binding DateTime, TargetNullValue=--, FallbackValue=--}"
+                                            Header="训练日期" />
+                        <DataGridTextColumn Width="*"
+                                            Binding="{Binding DurationTime, TargetNullValue=--, FallbackValue=--}"
+                                            Header="时长" />
+                        <DataGridTextColumn Width="*"
+                                            Binding="{Binding Type, TargetNullValue=--, FallbackValue=--}"
+                                            Header="分类" />
+                        <DataGridTextColumn Width="*"
+                                            Binding="{Binding Mode, TargetNullValue=--, FallbackValue=--}"
+                                            Header="模式选择" />
+                        <DataGridTextColumn Width="*"
+                                            Binding="{Binding Level, TargetNullValue=--, FallbackValue=--}"
+                                            Header="难度等级" />
+                        <DataGridTemplateColumn Width="*" Header="查看报告">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button Width="150"
+                                            Height="52"
+                                            hc:BorderElement.CornerRadius="26"
+                                            Background="{StaticResource crs_SolidColorBrush.F89F00}"
+                                            BorderThickness="0"
+                                            Command="{Binding DataContext.ViewCommand, RelativeSource={RelativeSource AncestorType=DataGrid}}"
+                                            CommandParameter="{Binding}"
+                                            FontSize="24"
+                                            Foreground="White">
+                                        查看报告
+                                    </Button>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </hc:SimplePanel>
+        </DataTemplate>
+        <DataTemplate x:Key="Null">
+            <hc:SimplePanel />
+        </DataTemplate>
+    </UserControl.Resources>
+
+    <DockPanel Margin="45">
+        <ListBox Padding="0"
+                 VerticalAlignment="Top"
+                 HorizontalContentAlignment="Stretch"
+                 BorderThickness="0"
+                 DockPanel.Dock="Top"
+                 ItemsSource="{Binding ReportTypeItems}"
+                 ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                 ScrollViewer.VerticalScrollBarVisibility="Disabled"
+                 SelectedItem="{Binding ReportTypeSelectedItem}">
+            <ListBox.Style>
+                <Style BasedOn="{StaticResource {x:Type ListBox}}" TargetType="ListBox" />
+            </ListBox.Style>
+            <hc:Interaction.Triggers>
+                <hc:EventTrigger EventName="SelectionChanged">
+                    <hc:InvokeCommandAction Command="{Binding ReportTypeSelectedItemChangedCommand}" />
+                </hc:EventTrigger>
+            </hc:Interaction.Triggers>
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <UniformGrid Margin="-4,1,-4,0"
+                                 Columns="2"
+                                 Rows="1" />
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+            <ListBox.ItemContainerStyle>
+                <Style BasedOn="{StaticResource ListBoxItemCustom}" TargetType="ListBoxItem" />
+            </ListBox.ItemContainerStyle>
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border x:Name="border"
+                            Height="65"
+                            Margin="6,2,6,0"
+                            Background="{StaticResource crs_SolidColorBrush.F8F8F8}"
+                            CornerRadius="6 6 0 0"
+                            Effect="{StaticResource EffectShadow2}">
+                        <TextBlock x:Name="textBlock"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   FontSize="28"
+                                   Text="{Binding Item1, TargetNullValue=--, FallbackValue=--}"
+                                   TextTrimming="CharacterEllipsis" />
+                    </Border>
+                    <DataTemplate.Triggers>
+                        <DataTrigger Binding="{Binding IsSelected, RelativeSource={RelativeSource AncestorType=ListBoxItem}}" Value="True">
+                            <Setter TargetName="border" Property="Background" Value="{StaticResource crs_SolidColorBrush.F89F00}" />
+                            <Setter TargetName="textBlock" Property="Foreground" Value="White" />
+                        </DataTrigger>
+                    </DataTemplate.Triggers>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Border Background="White"
+                CornerRadius="8"
+                Effect="{StaticResource EffectShadow1}">
+            <DockPanel>
+                <Button Width="241"
+                        Height="67"
+                        Margin="0,30"
+                        hc:BorderElement.CornerRadius="8"
+                        Background="{StaticResource crs_SolidColorBrush.F89F00}"
+                        Command="{Binding DeleteCommand}"
+                        DockPanel.Dock="Bottom"
+                        FontSize="26"
+                        FontWeight="Bold"
+                        Foreground="White">
+                    删除
+                </Button>
+
+                <ContentControl Content="{Binding}">
+                    <ContentControl.Style>
+                        <Style TargetType="ContentControl">
+                            <Setter Property="ContentTemplate" Value="{StaticResource Null}" />
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding ReportTypeSelectedItem.Item1}" Value="评估报告">
+                                    <Setter Property="ContentTemplate" Value="{StaticResource EvaluateTestReport}" />
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ReportTypeSelectedItem.Item1}" Value="训练报告">
+                                    <Setter Property="ContentTemplate" Value="{StaticResource TrainReport}" />
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </ContentControl.Style>
+                </ContentControl>
+            </DockPanel>
+        </Border>
+    </DockPanel>
+</UserControl>

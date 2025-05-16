@@ -1,0 +1,215 @@
+﻿<local:BaseUserControl x:Class="crs.game.Games.选择注意力讲解"
+                       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                       xmlns:hc="https://handyorg.github.io/handycontrol"
+                       xmlns:local="clr-namespace:crs.game"
+                       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                       Width="1340"
+                       Height="920"
+                       Background="#0000"
+                       mc:Ignorable="d">
+
+    <Grid Focusable="False">
+        <Grid Focusable="False">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition Width="350" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition Height="150" />
+            </Grid.RowDefinitions>
+            <Button x:Name="queren"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Width="242"
+                    Height="67"
+                    Margin="0,20,0,0"
+                    VerticalAlignment="Top"
+                    Background="#FFF89F00"
+                    Click="Button_Click"
+                    Content="确认"
+                    Focusable="False"
+                    FontFamily="Microsoft YaHei"
+                    FontSize="40"
+                    FontWeight="Bold"
+                    Foreground="White" />
+            <Image x:Name="RandomImage"
+                   Width="290"
+                   Height="290"
+                   Margin="350,276,350,203"
+                   Source="GONT1.png"
+                   Visibility="Hidden" />
+            <Button x:Name="OkButton"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Width="241"
+                    Height="67"
+                    Margin="0,21,0,0"
+                    VerticalAlignment="Top"
+                    Background="#FFF89F00"
+                    Click="OkButton_Click"
+                    Focusable="False"
+                    FontFamily="Microsoft YaHei"
+                    FontSize="40"
+                    FontWeight="Bold"
+                    Foreground="White"
+                    Visibility="Hidden">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock VerticalAlignment="Center"
+                               FontSize="40"
+                               Text="        进入训练    " />
+                    <TextBlock VerticalAlignment="Center"
+                               FontSize="40"
+                               Text="▶" />
+                </StackPanel>
+            </Button>
+            <Image x:Name="FeedbackImage"
+                   Width="181"
+                   Height="181"
+                   Margin="422,78,0,0"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top" />
+            <Image x:Name="TargetImage"
+                   Grid.Row="0"
+                   Grid.Column="1"
+                   Width="270"
+                   Height="272"
+                   Margin="34,276,0,0"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+                   RenderTransformOrigin="0.5,0.5"
+                   Source="GONT1.png">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform />
+                        <SkewTransform />
+                        <RotateTransform Angle="0.073" />
+                        <TranslateTransform />
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <TextBlock x:Name="TipBlock1"
+                       Grid.Row="0"
+                       Grid.Column="1"
+                       Margin="0,0,0,50"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Bottom"
+                       FontSize="30"
+                       TextWrapping="Wrap" />
+        </Grid>
+
+
+        <Viewbox Focusable="False">
+            <Grid Width="1343" Height="990">
+                <Button x:Name="Button_1"
+                        Width="241"
+                        Height="67"
+                        Margin="189,850,0,0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        Background="#FFF89F00"
+                        Click="Button_1_Click"
+                        Content="上一步"
+                        Cursor="Hand"
+                        FocusVisualStyle="{x:Null}"
+                        FontFamily="Microsoft YaHei"
+                        FontSize="40"
+                        FontWeight="Bold"
+                        Foreground="White">
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="15" />
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <Button x:Name="Button_2"
+                        Width="241"
+                        Height="67"
+                        Margin="550,850,0,0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        Background="#FFF89F00"
+                        Click="Button_2_Click"
+                        Content="下一步"
+                        Cursor="Hand"
+                        FocusVisualStyle="{x:Null}"
+                        FontFamily="Microsoft YaHei"
+                        FontSize="40"
+                        FontWeight="Bold"
+                        Foreground="White">
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="15" />
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <Button x:Name="Button_3"
+                        Width="241"
+                        Height="67"
+                        Margin="911,850,0,0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        Background="#FFF89F00"
+                        Click="Button_3_Click"
+                        Content="跳过"
+                        Cursor="Hand"
+                        FocusVisualStyle="{x:Null}"
+                        FontFamily="Microsoft YaHei"
+                        FontSize="40"
+                        FontWeight="Bold"
+                        Foreground="White">
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="15" />
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <TextBlock x:Name="Text_1"
+                           Margin="200,50,158,818"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Top"
+                           FontSize="40"
+                           Text="现在您在右侧可以看到需要确认选取的目标图"
+                           TextWrapping="Wrap" />
+                <Image x:Name="Image_1"
+                       Width="290"
+                       Height="290"
+                       Margin="526,307,527,393"
+                       Cursor=""
+                       Source="./pic/GONT/1.png"
+                       Stretch="Fill" />
+                <TextBlock x:Name="Text_2"
+                           Margin="200,50,158,818"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Top"
+                           FontSize="40"
+                           Text="当您看到屏幕上出现目标物时，请点击确认"
+                           TextWrapping="Wrap"
+                           Visibility="Hidden" />
+                <Image x:Name="Image_2"
+                       Width="290"
+                       Height="290"
+                       Margin="527,307,526,393"
+                       RenderTransformOrigin="0.496,1.037"
+                       Source="./pic/GONT/1.png"
+                       Stretch="Fill" />
+                <TextBlock x:Name="Text_3"
+                           Margin="200,50,158,818"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Top"
+                           FontSize="40"
+                           Text="当屏幕出现非目标物时，请您不要做出反应"
+                           TextWrapping="Wrap"
+                           Visibility="Hidden" />
+                <Image x:Name="Image_3"
+                       Width="420"
+                       Height="405"
+                       Margin="462,250,461,393"
+                       Source="./pic/GONT/2.png"
+                       Stretch="Fill" />
+            </Grid>
+        </Viewbox>
+    </Grid>
+</local:BaseUserControl>

@@ -1,0 +1,253 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>disable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <OutputType>Exe</OutputType>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Colors.txt" />
+    <None Remove="Resources\Images\MH-01.png" />
+    <None Remove="Resources\Images\MH-02.png" />
+    <None Remove="Resources\Images\上箭头.png" />
+    <None Remove="Resources\Images\下箭头.png" />
+    <None Remove="Resources\Images\专注注意力.png" />
+    <None Remove="Resources\Images\产品型号.png" />
+    <None Remove="Resources\Images\产品型号2.png" />
+    <None Remove="Resources\Images\公司LOGO.png" />
+    <None Remove="Resources\Images\公司LOGO1.png" />
+    <None Remove="Resources\Images\关闭.png" />
+    <None Remove="Resources\Images\关闭窗体.png" />
+    <None Remove="Resources\Images\删除.png" />
+    <None Remove="Resources\Images\加载.png" />
+    <None Remove="Resources\Images\医生头像.png" />
+    <None Remove="Resources\Images\历史方案.png" />
+    <None Remove="Resources\Images\参数调节.png" />
+    <None Remove="Resources\Images\反应能力.png" />
+    <None Remove="Resources\Images\反应行为.png" />
+    <None Remove="Resources\Images\反馈.png" />
+    <None Remove="Resources\Images\右箭头 - 复制(2).png" />
+    <None Remove="Resources\Images\右箭头 - 复制.png" />
+    <None Remove="Resources\Images\右箭头.png" />
+    <None Remove="Resources\Images\图形记忆力.png" />
+    <None Remove="Resources\Images\声音.png" />
+    <None Remove="Resources\Images\声音2.png" />
+    <None Remove="Resources\Images\女.png" />
+    <None Remove="Resources\Images\女生头像.png" />
+    <None Remove="Resources\Images\容貌记忆力.png" />
+    <None Remove="Resources\Images\密码.png" />
+    <None Remove="Resources\Images\对-未选中.png" />
+    <None Remove="Resources\Images\对-选中.png" />
+    <None Remove="Resources\Images\导出报告.png" />
+    <None Remove="Resources\Images\工作记忆力.png" />
+    <None Remove="Resources\Images\左箭头.png" />
+    <None Remove="Resources\Images\平面视野.png" />
+    <None Remove="Resources\Images\平面识别能力.png" />
+    <None Remove="Resources\Images\康复训练.png" />
+    <None Remove="Resources\Images\患者端背景.png" />
+    <None Remove="Resources\Images\患者端背景2.png" />
+    <None Remove="Resources\Images\报告设置背景图.png" />
+    <None Remove="Resources\Images\拓扑记忆力.png" />
+    <None Remove="Resources\Images\排班查询.png" />
+    <None Remove="Resources\Images\提示框.png" />
+    <None Remove="Resources\Images\提示灯.png" />
+    <None Remove="Resources\Images\插图.png" />
+    <None Remove="Resources\Images\插图2.png" />
+    <None Remove="Resources\Images\插图3.png" />
+    <None Remove="Resources\Images\搜索.png" />
+    <None Remove="Resources\Images\搜索2.png" />
+    <None Remove="Resources\Images\搜索能力.png" />
+    <None Remove="Resources\Images\搜索能力2.png" />
+    <None Remove="Resources\Images\数字人管理.png" />
+    <None Remove="Resources\Images\数据报告.png" />
+    <None Remove="Resources\Images\新增.png" />
+    <None Remove="Resources\Images\方案.png" />
+    <None Remove="Resources\Images\日期.png" />
+    <None Remove="Resources\Images\暂无内容.png" />
+    <None Remove="Resources\Images\最大化.png" />
+    <None Remove="Resources\Images\标准评估.png" />
+    <None Remove="Resources\Images\模式选择.png" />
+    <None Remove="Resources\Images\注意力分配.png" />
+    <None Remove="Resources\Images\注意力分配2.png" />
+    <None Remove="Resources\Images\用户管理.png" />
+    <None Remove="Resources\Images\男.png" />
+    <None Remove="Resources\Images\男生头像.png" />
+    <None Remove="Resources\Images\眼动训练.png" />
+    <None Remove="Resources\Images\空间数字搜索.png" />
+    <None Remove="Resources\Images\细节记忆力.png" />
+    <None Remove="Resources\Images\编辑.png" />
+    <None Remove="Resources\Images\菜单.png" />
+    <None Remove="Resources\Images\视觉修复训练.png" />
+    <None Remove="Resources\Images\视觉分配能力.png" />
+    <None Remove="Resources\Images\视野.png" />
+    <None Remove="Resources\Images\警惕训练2.png" />
+    <None Remove="Resources\Images\警觉能力.png" />
+    <None Remove="Resources\Images\警觉训练.png" />
+    <None Remove="Resources\Images\记忆广度.png" />
+    <None Remove="Resources\Images\设置.png" />
+    <None Remove="Resources\Images\评估测试.png" />
+    <None Remove="Resources\Images\词汇记忆能力.png" />
+    <None Remove="Resources\Images\词语记忆力.png" />
+    <None Remove="Resources\Images\账号.png" />
+    <None Remove="Resources\Images\返回.png" />
+    <None Remove="Resources\Images\选择注意力.png" />
+    <None Remove="Resources\Images\逻辑思维能力.png" />
+    <None Remove="Resources\Images\逻辑推理能力.png" />
+    <None Remove="Resources\Images\错-未选中.png" />
+    <None Remove="Resources\Images\错-选中.png" />
+    <None Remove="Resources\Images\问号.png" />
+    <None Remove="Resources\Images\题目插图1.png" />
+    <None Remove="Resources\Images\题目插图11.png" />
+    <None Remove="Resources\Images\题目插图11_Big.png" />
+    <None Remove="Resources\Images\题目插图1_Big.png" />
+    <None Remove="Resources\Images\题目插图2.png" />
+    <None Remove="Resources\Images\题目插图2_Big.png" />
+    <None Remove="Resources\Images\题目插图3.png" />
+    <None Remove="Resources\Images\题目插图3_Big.png" />
+    <None Remove="Resources\Images\题目插图4.png" />
+    <None Remove="Resources\Images\题目插图4_Big.png" />
+    <None Remove="Resources\Images\题目插图5.png" />
+    <None Remove="Resources\Images\题目插图5_Big.png" />
+    <None Remove="Resources\Images\题目插图6_Big.png" />
+    <None Remove="Resources\Images\题目插图7_Big.png" />
+    <None Remove="Resources\Images\麦克风.png" />
+    <None Remove="Resources\Images\默认模式.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Images\MH-01.png" />
+    <Resource Include="Resources\Images\MH-02.png" />
+    <Resource Include="Resources\Images\公司LOGO1.png" />
+    <Resource Include="Resources\Images\关闭窗体.png" />
+    <Resource Include="Resources\Images\导出报告.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FreeSpire.PDF" Version="10.2.0" />
+    <PackageReference Include="HandyControl" Version="3.5.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="VirtualizingWrapPanel" Version="2.0.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Colors.txt" />
+    <Resource Include="Resources\Images\上箭头.png" />
+    <Resource Include="Resources\Images\下箭头.png" />
+    <Resource Include="Resources\Images\对-未选中.png" />
+    <Resource Include="Resources\Images\对-选中.png" />
+    <Resource Include="Resources\Images\左箭头.png" />
+    <Resource Include="Resources\Images\右箭头.png" />
+    <Resource Include="Resources\Images\专注注意力.png" />
+    <Resource Include="Resources\Images\产品型号.png" />
+    <Resource Include="Resources\Images\产品型号2.png" />
+    <Resource Include="Resources\Images\公司LOGO.png" />
+    <Resource Include="Resources\Images\关闭.png" />
+    <Resource Include="Resources\Images\删除.png" />
+    <Resource Include="Resources\Images\加载.png" />
+    <Resource Include="Resources\Images\医生头像.png" />
+    <Resource Include="Resources\Images\历史方案.png" />
+    <Resource Include="Resources\Images\参数调节.png" />
+    <Resource Include="Resources\Images\反应能力.png" />
+    <Resource Include="Resources\Images\反应行为.png" />
+    <Resource Include="Resources\Images\反馈.png" />
+    <Resource Include="Resources\Images\图形记忆力.png" />
+    <Resource Include="Resources\Images\声音.png" />
+    <Resource Include="Resources\Images\声音2.png" />
+    <Resource Include="Resources\Images\女.png" />
+    <Resource Include="Resources\Images\女生头像.png" />
+    <Resource Include="Resources\Images\密码.png" />
+    <Resource Include="Resources\Images\患者端背景.png" />
+    <Resource Include="Resources\Images\患者端背景2.png" />
+    <Resource Include="Resources\Images\报告设置背景图.png" />
+    <Resource Include="Resources\Images\最大化.png" />
+    <Resource Include="Resources\Images\细节记忆力.png" />
+    <Resource Include="Resources\Images\提示框.png" />
+    <Resource Include="Resources\Images\提示灯.png" />
+    <Resource Include="Resources\Images\暂无内容.png" />
+    <Resource Include="Resources\Images\记忆广度.png" />
+    <Resource Include="Resources\Images\工作记忆力.png" />
+    <Resource Include="Resources\Images\平面视野.png" />
+    <Resource Include="Resources\Images\平面识别能力.png" />
+    <Resource Include="Resources\Images\康复训练.png" />
+    <Resource Include="Resources\Images\拓扑记忆力.png" />
+    <Resource Include="Resources\Images\排班查询.png" />
+    <Resource Include="Resources\Images\插图.png" />
+    <Resource Include="Resources\Images\插图2.png" />
+    <Resource Include="Resources\Images\插图3.png" />
+    <Resource Include="Resources\Images\搜索.png" />
+    <Resource Include="Resources\Images\搜索2.png" />
+    <Resource Include="Resources\Images\搜索能力.png" />
+    <Resource Include="Resources\Images\搜索能力2.png" />
+    <Resource Include="Resources\Images\数字人管理.png" />
+    <Resource Include="Resources\Images\数据报告.png" />
+    <Resource Include="Resources\Images\新增.png" />
+    <Resource Include="Resources\Images\方案.png" />
+    <Resource Include="Resources\Images\日期.png" />
+    <Resource Include="Resources\Images\标准评估.png" />
+    <Resource Include="Resources\Images\模式选择.png" />
+    <Resource Include="Resources\Images\注意力分配.png" />
+    <Resource Include="Resources\Images\注意力分配2.png" />
+    <Resource Include="Resources\Images\用户管理.png" />
+    <Resource Include="Resources\Images\男.png" />
+    <Resource Include="Resources\Images\男生头像.png" />
+    <Resource Include="Resources\Images\眼动训练.png" />
+    <Resource Include="Resources\Images\空间数字搜索.png" />
+    <Resource Include="Resources\Images\编辑.png" />
+    <Resource Include="Resources\Images\菜单.png" />
+    <Resource Include="Resources\Images\视觉修复训练.png" />
+    <Resource Include="Resources\Images\视觉分配能力.png" />
+    <Resource Include="Resources\Images\视野.png" />
+    <Resource Include="Resources\Images\警惕训练2.png" />
+    <Resource Include="Resources\Images\警觉能力.png" />
+    <Resource Include="Resources\Images\警觉训练.png" />
+    <Resource Include="Resources\Images\设置.png" />
+    <Resource Include="Resources\Images\评估测试.png" />
+    <Resource Include="Resources\Images\容貌记忆力.png" />
+    <Resource Include="Resources\Images\词语记忆力.png" />
+    <Resource Include="Resources\Images\词汇记忆能力.png" />
+    <Resource Include="Resources\Images\账号.png" />
+    <Resource Include="Resources\Images\返回.png" />
+    <Resource Include="Resources\Images\选择注意力.png" />
+    <Resource Include="Resources\Images\逻辑思维能力.png" />
+    <Resource Include="Resources\Images\逻辑推理能力.png" />
+    <Resource Include="Resources\Images\错-未选中.png" />
+    <Resource Include="Resources\Images\错-选中.png" />
+    <Resource Include="Resources\Images\问号.png" />
+    <Resource Include="Resources\Images\题目插图1.png" />
+    <Resource Include="Resources\Images\题目插图11.png" />
+    <Resource Include="Resources\Images\题目插图11_Big.png" />
+    <Resource Include="Resources\Images\题目插图1_Big.png" />
+    <Resource Include="Resources\Images\题目插图2.png" />
+    <Resource Include="Resources\Images\题目插图2_Big.png" />
+    <Resource Include="Resources\Images\题目插图3.png" />
+    <Resource Include="Resources\Images\题目插图3_Big.png" />
+    <Resource Include="Resources\Images\题目插图4.png" />
+    <Resource Include="Resources\Images\题目插图4_Big.png" />
+    <Resource Include="Resources\Images\题目插图5.png" />
+    <Resource Include="Resources\Images\题目插图5_Big.png" />
+    <Resource Include="Resources\Images\题目插图6_Big.png" />
+    <Resource Include="Resources\Images\题目插图7_Big.png" />
+    <Resource Include="Resources\Images\麦克风.png" />
+    <Resource Include="Resources\Images\默认模式.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

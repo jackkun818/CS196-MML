@@ -1,0 +1,141 @@
+﻿<UserControl
+    x:Class="crs.dialog.Views.SettingPanel"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="clr-namespace:crs.extension.Controls;assembly=crs.extension"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:hc="https://handyorg.github.io/handycontrol"
+    xmlns:lcc="clr-namespace:LiveChartsCore.SkiaSharpView.WPF;assembly=LiveChartsCore.SkiaSharpView.WPF"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:prism="http://prismlibrary.com/"
+    xmlns:system="clr-namespace:System;assembly=mscorlib"
+    xmlns:vm="clr-namespace:crs.dialog.ViewModels"
+    xmlns:wpfToolkit="clr-namespace:WpfToolkit.Controls;assembly=VirtualizingWrapPanel"
+    d:DataContext="{d:DesignInstance IsDesignTimeCreatable=True,
+                                     Type={x:Type vm:SettingPanelViewModel}}"
+    d:Height="1080"
+    d:Width="1920"
+    prism:ViewModelLocator.AutoWireViewModel="True"
+    mc:Ignorable="d">
+
+
+    <DockPanel>
+        <hc:SimplePanel
+            Height="100"
+            Background="Transparent"
+            DockPanel.Dock="Top"
+            MouseUp="SimplePanel_MouseUp" />
+        <hc:SimplePanel
+            Width="280"
+            Background="Transparent"
+            DockPanel.Dock="Left"
+            MouseUp="SimplePanel_MouseUp" />
+
+        <hc:SimplePanel Background="White">
+            <DockPanel Margin="45,10,45,45">
+                <UniformGrid
+                    Columns="3"
+                    DockPanel.Dock="Top"
+                    Rows="1">
+                    <Button
+                        Width="58"
+                        Height="46"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        BorderThickness="0"
+                        Command="{Binding CancelCommand}">
+                        <Button.Background>
+                            <ImageBrush ImageSource="{StaticResource crs_返回}" />
+                        </Button.Background>
+                    </Button>
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        FontSize="36"
+                        FontWeight="Bold">
+                        设置
+                    </TextBlock>
+                </UniformGrid>
+                <Border
+                    Margin="0,10,0,0"
+                    Background="White"
+                    CornerRadius="8"
+                    Effect="{StaticResource EffectShadow2}">
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+
+                        <StackPanel Width="1530" Height="848">
+                            <Border Padding="0" Background="Transparent">
+                                <Button
+                                    Width="1450"
+                                    Height="94"
+                                    Margin="0,40,0,0"
+                                    VerticalAlignment="Top"
+                                    hc:BorderElement.CornerRadius="26"
+                                    Command="{Binding AccountManageDialogCommand}"
+                                    FontSize="20"
+                                    FontWeight="Bold"
+                                    Foreground="Black">
+                                    <StackPanel
+                                        Width="1359"
+                                        HorizontalAlignment="Left"
+                                        Orientation="Horizontal">
+                                        <TextBlock
+                                            Margin="10,0,0,0"
+                                            VerticalAlignment="Center"
+                                            FontSize="28"><Run Text="账号管理" /></TextBlock>
+                                    </StackPanel>
+                                </Button>
+                            </Border>
+                            <Border Padding="0" Background="Transparent">
+                                <Button
+                                    Width="1450"
+                                    Height="94"
+                                    Margin="0,40,0,0"
+                                    VerticalAlignment="Top"
+                                    hc:BorderElement.CornerRadius="26"
+                                    Command="{Binding ReportSettingDialogCommand}"
+                                    FontSize="20"
+                                    FontWeight="Bold"
+                                    Foreground="Black">
+                                    <StackPanel
+                                        Width="1359"
+                                        HorizontalAlignment="Left"
+                                        Orientation="Horizontal">
+                                        <TextBlock
+                                            Margin="10,0,0,0"
+                                            VerticalAlignment="Center"
+                                            FontSize="28"><Run Text="报告设置" /></TextBlock>
+                                    </StackPanel>
+                                </Button>
+                            </Border>
+                            <Border Padding="0" Background="Transparent">
+                                <Button
+                                    Width="1450"
+                                    Height="94"
+                                    Margin="0,40,0,0"
+                                    VerticalAlignment="Top"
+                                    hc:BorderElement.CornerRadius="26"
+                                    Command="{Binding AboutUsDialogCommand}"
+                                    FontSize="20"
+                                    FontWeight="Bold"
+                                    Foreground="Black">
+
+                                    <StackPanel
+                                        Width="1359"
+                                        HorizontalAlignment="Left"
+                                        Orientation="Horizontal">
+                                        <TextBlock
+                                            Margin="10,0,0,0"
+                                            VerticalAlignment="Center"
+                                            FontSize="28"><Run Text="关于我们" /></TextBlock>
+                                    </StackPanel>
+                                </Button>
+                            </Border>
+                        </StackPanel>
+
+                    </ScrollViewer>
+                </Border>
+            </DockPanel>
+        </hc:SimplePanel>
+    </DockPanel>
+</UserControl>

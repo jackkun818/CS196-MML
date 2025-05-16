@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "crs.game": {
+      "commandName": "Project",
+      "commandLineArgs": "DEBUG"
+    }
+  }
+}

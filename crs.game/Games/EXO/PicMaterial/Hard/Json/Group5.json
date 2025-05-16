@@ -1,0 +1,209 @@
+{
+  "BackgroundImage": 
+  {
+    "Path": "组 15825.png",
+    "PxPosition": {  "Left": 0, "Up": 0, "Right": 0, "Down": 0 },
+    "Size": { "Height": 741, "Width": 1260 },
+    "Info": "FLEA MARKET"
+  },
+  "Images": 
+  [
+    {
+      "Path": "组 15683.png",
+      "PxMargin": { "Left": 146, "Up": 307, "Right": 1003, "Down": 115 },
+      "Size": { "Height": 318.99,"Width": 110.62  },
+      "Info": "全身镜",
+      "Index": 0
+    },
+    {
+      "Path": "组 15664.png",
+      "PxMargin": { "Left": 179, "Up": 197, "Right": 987, "Down": 439 },
+      "Size": { "Width": 94.46, "Height": 104.73 },
+      "Info": "圆形草帽",
+      "Index": 1
+    },
+	{
+      "Path": "组 15673.png",
+      "PxMargin": { "Left": 273, "Up": 218, "Right": 925, "Down": 338 },
+      "Size": { "Width": 61.73, "Height": 184.71 },
+      "Info": "手提包",
+      "Index": 2
+    },
+	
+	{
+      "Path": "组 15693.png",
+      "PxMargin": { "Left": 275, "Up": 421, "Right": 784, "Down": 101 },
+      "Size": { "Width": 201.39, "Height": 219.08 },
+      "Info": "圆形设计椅",
+      "Index": 3
+    },
+		
+	{
+      "Path": "组 15717.png",
+      "PxMargin": { "Left": 445, "Up": 184, "Right": 696, "Down": 140 },
+      "Size": { "Width": 119.2, "Height": 417.03 },
+      "Info": "立灯",
+      "Index": 4
+    },
+			
+	{
+      "Path": "组 15700.png",
+      "PxMargin": { "Left": 428, "Up": 587, "Right": 780, "Down": 81 },
+      "Size": { "Width": 52.39, "Height": 74.46 },
+      "Info": "绿色花瓶",
+      "Index": 5
+    },
+				
+	{
+      "Path": "组 15702.png",
+      "PxMargin": { "Left": 451, "Up": 531, "Right": 756, "Down": 98 },
+      "Size": { "Width": 53.36, "Height": 112.08 },
+      "Info": "棕色花瓶",
+      "Index": 6
+    },
+					
+	{
+      "Path": "组 15704.png",
+      "PxMargin": { "Left": 537, "Up": 576, "Right": 619, "Down": 61 },
+      "Size": { "Width": 103.96, "Height": 104.18 },
+      "Info": "红色的球",
+      "Index": 7
+    },
+						
+	{
+      "Path": "组 15732.png",
+      "PxMargin": { "Left": 558, "Up": 421, "Right": 634, "Down": 206 },
+      "Size": { "Width": 67.88, "Height": 113.73 },
+      "Info": "桌上花盆",
+      "Index": 8
+    },
+							
+	{
+      "Path": "组 15742.png",
+      "PxMargin": { "Left": 635, "Up": 396, "Right": 545, "Down": 205 },
+      "Size": { "Width": 80.32, "Height": 140.22 },
+      "Info": "台灯",
+      "Index": 9
+    },
+								
+	{
+      "Path": "组 15763.png",
+      "PxMargin": { "Left": 689, "Up": 214, "Right": 469, "Down": 399 },
+      "Size": { "Width": 102.43, "Height": 127.94 },
+      "Info": "挂画",
+      "Index": 10
+    },
+									
+	{
+      "Path": "组 15773.png",
+      "PxMargin": { "Left": 736, "Up":494 , "Right": 454, "Down": 149 },
+      "Size": { "Width": 70.22, "Height": 97.57 },
+      "Info": "垃圾桶",
+      "Index": 11
+    },
+										
+	{
+      "Path": "组 15777.png",
+      "PxMargin": { "Left": 760, "Up": 325, "Right": 353, "Down": 154 },
+      "Size": { "Width": 146.6, "Height": 262.1 },
+      "Info": "巨大盆栽",
+      "Index": 12
+    },
+											
+	{
+      "Path": "组 15807.png",
+      "PxMargin": { "Left": 830, "Up": 204, "Right": 327, "Down": 401 },
+      "Size": { "Width": 103.35, "Height": 135.64 },
+      "Info": "格子裙",
+      "Index": 13
+    },
+												
+	{
+      "Path": "组 15817.png",
+      "PxMargin": { "Left": 896, "Up": 204, "Right": 238, "Down": 379 },
+      "Size": { "Width": 126.4, "Height": 158.3 },
+      "Info": "皮夹克",
+      "Index": 14
+    },
+													
+	{
+      "Path": "组 15824.png",
+      "PxMargin": { "Left": 992, "Up": 207, "Right": 154, "Down": 398 },
+      "Size": { "Width": 114.38, "Height": 136.12 },
+      "Info": "短袖",
+      "Index": 15
+    },
+													
+	{
+      "Path": "组 15800.png",
+      "PxMargin": { "Left": 973, "Up": 437, "Right": 203, "Down": 258 },
+      "Size": { "Width": 83.83, "Height": 45.85 },
+      "Info": "绿色收纳箱",
+      "Index": 16
+    },
+													
+	{
+      "Path": "组 15793.png",
+      "PxMargin": { "Left": 973, "Up": 481, "Right": 203, "Down": 214 },
+      "Size": { "Width": 83.83, "Height": 45.85 },
+      "Info": "黄色收纳箱",
+      "Index": 17
+    },
+														
+	{
+      "Path": "组 15786.png",
+      "PxMargin": { "Left": 973, "Up": 525, "Right": 203, "Down": 170 },
+      "Size": { "Width": 83.83, "Height": 45.85 },
+      "Info": "红色色收纳箱",
+      "Index": 18
+    },
+														
+	{
+      "Path": "组 15779.png",
+      "PxMargin": { "Left": 992, "Up": 582, "Right": 127, "Down": 68 },
+      "Size": { "Width": 140.83, "Height": 91.13 },
+      "Info": "地上的围巾",
+      "Index": 19
+    },
+														
+	{
+      "Path": "组 15686.png",
+      "PxMargin": { "Left": 327, "Up": 593, "Right": 860, "Down": 72 },
+      "Size": { "Width": 72.63, "Height": 75.54 },
+      "Info": "打折标识",
+      "Index": 20
+    },
+														
+	{
+      "Path": "组 15756.png",
+      "PxMargin": { "Left": 600, "Up": 204, "Right": 597, "Down": 481 },
+      "Size": { "Width": 62.54, "Height": 56.26 },
+      "Info": "挂画上",
+      "Index": 21
+    },
+														
+	{
+      "Path": "组 15749.png",
+      "PxMargin": { "Left": 592, "Up": 316, "Right": 605, "Down": 369 },
+      "Size": { "Width": 62.54, "Height": 56.26 },
+      "Info": "挂画下",
+      "Index": 22
+    },
+														
+	{
+      "Path": "组 15666.png",
+      "PxMargin": { "Left": 163, "Up": 216, "Right": 873, "Down": 511 },
+      "Size": { "Width": 223.93, "Height": 14 },
+      "Info": "横衣杆",
+      "Index": 23
+    },
+														
+	{
+      "Path": "组 15775.png",
+      "PxMargin": { "Left": 806, "Up": 210, "Right": 151, "Down": 103 },
+      "Size": { "Width": 302.56, "Height": 427.9 },
+      "Info": "立衣架",
+      "Index": 24
+    },
+  ]
+}

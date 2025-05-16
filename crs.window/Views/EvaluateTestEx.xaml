@@ -1,0 +1,401 @@
+﻿<UserControl
+    x:Class="crs.window.Views.EvaluateTestEx"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:hc="https://handyorg.github.io/handycontrol"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:prism="http://prismlibrary.com/"
+    xmlns:theme="clr-namespace:crs.theme;assembly=crs.theme"
+    xmlns:vm="clr-namespace:crs.window.ViewModels"
+    xmlns:wpfToolkit="clr-namespace:WpfToolkit.Controls;assembly=VirtualizingWrapPanel"
+    d:Background="White"
+    d:DataContext="{d:DesignInstance IsDesignTimeCreatable=True,
+                                     Type={x:Type vm:EvaluateTestExViewModel}}"
+    d:Height="1080"
+    d:Width="1920"
+    prism:ViewModelLocator.AutoWireViewModel="True"
+    mc:Ignorable="d">
+
+    <hc:SimplePanel>
+        <DockPanel>
+            <Border
+                Width="373"
+                Margin="25,45,45,45"
+                Background="White"
+                CornerRadius="8"
+                DockPanel.Dock="Right"
+                Effect="{StaticResource EffectShadow2}">
+                <DockPanel>
+                    <Button
+                        Width="241"
+                        Height="67"
+                        Margin="0,30"
+                        hc:BorderElement.CornerRadius="8"
+                        Background="{StaticResource crs_SolidColorBrush.F89F00}"
+                        DockPanel.Dock="Bottom"
+                        FontSize="26"
+                        FontWeight="Bold"
+                        Foreground="White">
+                        <Button.Style>
+                            <Style BasedOn="{StaticResource ButtonDefault}" TargetType="Button">
+                                <Setter Property="Command" Value="{Binding StartCommand}" />
+                                <Setter Property="Content" Value="开始" />
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding IsFromSchedule}" Value="True">
+                                        <Setter Property="Command" Value="{Binding SaveCommand}" />
+                                        <Setter Property="Content" Value="保存" />
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+                    <hc:SimplePanel
+                        Height="50"
+                        Margin="25,20,25,5"
+                        DockPanel.Dock="Top">
+                        <TextBlock
+                            VerticalAlignment="Center"
+                            FontSize="28"
+                            FontWeight="Bold">
+                            测试方案
+                        </TextBlock>
+                        <Button
+                            x:Name="historyToggleButton"
+                            Width="144"
+                            Height="50"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Center"
+                            hc:BorderElement.CornerRadius="12"
+                            Command="{Binding HistoryProgramCommand}"
+                            Effect="{StaticResource EffectShadow2}">
+                            <Button.Style>
+                                <Style BasedOn="{StaticResource ButtonDefault}" TargetType="Button">
+                                    <Setter Property="Foreground" Value="{StaticResource crs_SolidColorBrush.F89F00}" />
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding HistoryIsOpen}" Value="True">
+                                            <Setter Property="Background" Value="{StaticResource crs_SolidColorBrush.F89F00}" />
+                                            <Setter Property="Foreground" Value="White" />
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Button.Style>
+                            <StackPanel Orientation="Horizontal">
+                                <hc:SimplePanel
+                                    Width="26"
+                                    Height="22"
+                                    VerticalAlignment="Center"
+                                    Background="{Binding Foreground, RelativeSource={RelativeSource AncestorType=Button}}">
+                                    <hc:SimplePanel.OpacityMask>
+                                        <ImageBrush ImageSource="{StaticResource crs_历史方案}" />
+                                    </hc:SimplePanel.OpacityMask>
+                                </hc:SimplePanel>
+                                <TextBlock
+                                    Margin="5,0,0,0"
+                                    VerticalAlignment="Center"
+                                    FontSize="22"
+                                    FontWeight="Bold"
+                                    Foreground="{Binding Foreground, RelativeSource={RelativeSource AncestorType=Button}}">
+                                    历史方案
+                                </TextBlock>
+                            </StackPanel>
+                        </Button>
+                        <theme:PopupEx
+                            x:Name="historyPopup"
+                            AllowsTransparency="True"
+                            HorizontalOffset="0"
+                            IsOpen="{Binding HistoryIsOpen}"
+                            Placement="Left"
+                            PlacementTarget="{Binding ElementName=historyToggleButton}"
+                            StaysOpen="{Binding HistoryStaysOpen}"
+                            Topmost="False">
+                            <hc:SimplePanel IsEnabled="{Binding HistoryStaysOpen, Converter={StaticResource crs_Boolean2ReversalConverter}}">
+                                <Border
+                                    Width="373"
+                                    Height="850"
+                                    Margin="10"
+                                    Background="White"
+                                    CornerRadius="9"
+                                    Effect="{StaticResource EffectShadow2}">
+                                    <ListBox
+                                        Margin="20,15"
+                                        HorizontalContentAlignment="Stretch"
+                                        Background="Transparent"
+                                        BorderThickness="0"
+                                        DockPanel.Dock="Top"
+                                        ItemContainerStyle="{StaticResource ListBoxItemCustom}"
+                                        ItemsSource="{Binding EvaluateHistoryProgramItems}">
+                                        <ListBox.ItemsPanel>
+                                            <ItemsPanelTemplate>
+                                                <VirtualizingStackPanel />
+                                            </ItemsPanelTemplate>
+                                        </ListBox.ItemsPanel>
+                                        <ListBox.ItemTemplate>
+                                            <DataTemplate>
+                                                <Border
+                                                    x:Name="border"
+                                                    Margin="5,10"
+                                                    Background="White"
+                                                    CornerRadius="8"
+                                                    Effect="{StaticResource EffectShadow2}">
+                                                    <DockPanel TextBlock.FontSize="18">
+                                                        <DockPanel Margin="0,0,15,15" DockPanel.Dock="Bottom">
+                                                            <Button
+                                                                Width="80"
+                                                                Height="32"
+                                                                VerticalAlignment="Center"
+                                                                hc:BorderElement.CornerRadius="16"
+                                                                Background="{StaticResource crs_SolidColorBrush.F89F00}"
+                                                                Command="{Binding DataContext.ImportCommand, RelativeSource={RelativeSource AncestorType=ListBox}}"
+                                                                CommandParameter="{Binding}"
+                                                                DockPanel.Dock="Right"
+                                                                FontSize="16"
+                                                                FontWeight="Bold"
+                                                                Foreground="White">
+                                                                导入
+                                                            </Button>
+                                                            <TextBlock
+                                                                Margin="15,0,0,0"
+                                                                VerticalAlignment="Center"
+                                                                FontSize="16.5"
+                                                                FontWeight="Bold"
+                                                                Opacity="0.7"
+                                                                Text="{Binding CreateTime, StringFormat={}日期：{0:yyyy-MM-dd HH:mm}, TargetNullValue=日期：--, FallbackValue=日期：--}" />
+                                                        </DockPanel>
+                                                        <DockPanel Margin="0,10" DockPanel.Dock="Top">
+                                                            <Button
+                                                                Width="26"
+                                                                Height="26"
+                                                                Margin="0,0,30,0"
+                                                                Command="{Binding DataContext.DeleteCommand, RelativeSource={RelativeSource AncestorType=ListBox}}"
+                                                                CommandParameter="{Binding}"
+                                                                DockPanel.Dock="Right">
+                                                                <Button.Background>
+                                                                    <ImageBrush ImageSource="{StaticResource crs_删除}" />
+                                                                </Button.Background>
+                                                            </Button>
+                                                            <Image
+                                                                Width="33"
+                                                                Height="33"
+                                                                Margin="20,0,0,0"
+                                                                DockPanel.Dock="Left"
+                                                                Source="{Binding Mode, Converter={StaticResource crs_ModeBitmapImageConverter}}" />
+                                                            <TextBlock
+                                                                Margin="20,0"
+                                                                VerticalAlignment="Center"
+                                                                FontSize="20"
+                                                                FontWeight="Bold"
+                                                                Text="{Binding Mode, TargetNullValue=--, FallbackValue=--}"
+                                                                TextTrimming="CharacterEllipsis" />
+                                                        </DockPanel>
+                                                    </DockPanel>
+                                                </Border>
+                                            </DataTemplate>
+                                        </ListBox.ItemTemplate>
+                                    </ListBox>
+                                </Border>
+                            </hc:SimplePanel>
+                        </theme:PopupEx>
+                    </hc:SimplePanel>
+                    <ListBox
+                        Margin="20,0"
+                        HorizontalContentAlignment="Stretch"
+                        Background="Transparent"
+                        BorderThickness="0"
+                        DockPanel.Dock="Top"
+                        ItemContainerStyle="{StaticResource ListBoxItemCustom}"
+                        ItemsSource="{Binding EvaluateProgramItems}"
+                        SelectedItem="{Binding EvaluateProgramSelectedItem}"
+                        SelectionChanged="ListBox_SelectionChanged">
+                        <ListBox.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <VirtualizingStackPanel />
+                            </ItemsPanelTemplate>
+                        </ListBox.ItemsPanel>
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <Border
+                                    x:Name="border"
+                                    Height="72"
+                                    Margin="5,10"
+                                    Background="White"
+                                    CornerRadius="8"
+                                    Effect="{StaticResource EffectShadow2}">
+                                    <DockPanel>
+                                        <Button
+                                            Width="26"
+                                            Height="26"
+                                            Margin="0,0,30,0"
+                                            Command="{Binding DataContext.DeleteProgramCommand, RelativeSource={RelativeSource AncestorType=ListBox}}"
+                                            CommandParameter="{Binding}"
+                                            DockPanel.Dock="Right">
+                                            <Button.Background>
+                                                <ImageBrush ImageSource="{StaticResource crs_删除}" />
+                                            </Button.Background>
+                                        </Button>
+                                        <Image
+                                            Width="33"
+                                            Height="33"
+                                            Margin="20,0,0,0"
+                                            DockPanel.Dock="Left"
+                                            Source="{Binding Mode, Converter={StaticResource crs_ModeBitmapImageConverter}}" />
+                                        <TextBlock
+                                            Margin="20,0"
+                                            VerticalAlignment="Center"
+                                            FontSize="20"
+                                            FontWeight="Bold"
+                                            Text="{Binding Mode, TargetNullValue=--, FallbackValue=--}"
+                                            TextTrimming="CharacterEllipsis" />
+
+                                    </DockPanel>
+                                </Border>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </DockPanel>
+            </Border>
+
+            <Border
+                Margin="45,45,0,45"
+                Background="White"
+                CornerRadius="8"
+                Effect="{StaticResource EffectShadow2}">
+                <DockPanel>
+                    <Button
+                        Width="241"
+                        Height="67"
+                        Margin="0,30"
+                        hc:BorderElement.CornerRadius="8"
+                        Background="{StaticResource crs_SolidColorBrush.F89F00}"
+                        Command="{Binding AddCommand}"
+                        DockPanel.Dock="Bottom"
+                        FontSize="26"
+                        FontWeight="Bold"
+                        Foreground="White">
+                        添加
+                    </Button>
+
+                    <StackPanel
+                        Height="50"
+                        Margin="40,20,0,5"
+                        DockPanel.Dock="Top"
+                        Orientation="Horizontal">
+                        <Image
+                            Width="30"
+                            Height="30"
+                            VerticalAlignment="Center"
+                            Source="{StaticResource crs_模式选择}" />
+                        <TextBlock
+                            Margin="10,0,0,0"
+                            VerticalAlignment="Center"
+                            FontSize="28"
+                            FontWeight="Bold">
+                            模式选择
+                        </TextBlock>
+                    </StackPanel>
+                    <ListBox
+                        Height="555"
+                        Margin="65,0"
+                        VerticalAlignment="Top"
+                        HorizontalContentAlignment="Stretch"
+                        BorderThickness="0"
+                        DockPanel.Dock="Top"
+                        ItemsSource="{Binding EvaluateModuleItems}"
+                        SelectedItem="{Binding EvaluateModuleSelectedItem}">
+                        <ListBox.Style>
+                            <Style BasedOn="{StaticResource {x:Type ListBox}}" TargetType="ListBox" />
+                        </ListBox.Style>
+                        <ListBox.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <wpfToolkit:VirtualizingWrapPanel SpacingMode="BetweenItemsOnly" />
+                            </ItemsPanelTemplate>
+                        </ListBox.ItemsPanel>
+                        <ListBox.ItemContainerStyle>
+                            <Style BasedOn="{StaticResource ListBoxItemCustom}" TargetType="ListBoxItem" />
+                        </ListBox.ItemContainerStyle>
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <Border
+                                    x:Name="border"
+                                    Width="171"
+                                    Height="234"
+                                    Margin="0,20"
+                                    Background="White"
+                                    BorderBrush="{StaticResource crs_SolidColorBrush.EFEFEF}"
+                                    BorderThickness="5"
+                                    CornerRadius="4"
+                                    Effect="{StaticResource EffectShadow2}">
+                                    <DockPanel>
+                                        <Rectangle
+                                            Width="60"
+                                            Height="5"
+                                            DockPanel.Dock="Top"
+                                            Fill="{StaticResource crs_SolidColorBrush.F89F00}"
+                                            RadiusX="2"
+                                            RadiusY="2" />
+                                        <TextBlock
+                                            Margin="0,30,0,0"
+                                            HorizontalAlignment="Center"
+                                            DockPanel.Dock="Top"
+                                            FontSize="20"
+                                            FontWeight="Bold"
+                                            Text="{Binding Mode, TargetNullValue=--, FallbackValue=--}"
+                                            TextTrimming="CharacterEllipsis" />
+
+                                        <hc:Gravatar
+                                            Width="94"
+                                            Height="94"
+                                            Margin="0,0,0,5"
+                                            Style="{StaticResource GravatarCircleImg}">
+                                            <Image Source="{Binding Mode, Converter={StaticResource crs_ModeBitmapImageConverter}}" />
+                                        </hc:Gravatar>
+                                    </DockPanel>
+                                </Border>
+                                <DataTemplate.Triggers>
+                                    <DataTrigger Binding="{Binding IsSelected, RelativeSource={RelativeSource AncestorType=ListBoxItem}}" Value="True">
+                                        <Setter TargetName="border" Property="BorderBrush" Value="{StaticResource crs_SolidColorBrush.F89F00}" />
+                                    </DataTrigger>
+                                </DataTemplate.Triggers>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </DockPanel>
+            </Border>
+        </DockPanel>
+        <DockPanel
+            Height="45"
+            Margin="45,0"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Top"
+            LastChildFill="False"
+            Visibility="{Binding IsFromSchedule, Converter={StaticResource crs_Boolean2VisibilityCollapsedConverter}}">
+            <Image
+                Height="35"
+                VerticalAlignment="Center"
+                DockPanel.Dock="Left"
+                Source="{StaticResource crs_提示灯}" />
+            <TextBlock
+                Margin="5,0,0,0"
+                VerticalAlignment="Center"
+                FontSize="20"
+                FontWeight="DemiBold"
+                Opacity="0.6">
+                请按照医生开具的处方项目设定参数方案：
+            </TextBlock>
+            <TextBlock
+                VerticalAlignment="Center"
+                FontSize="24"
+                FontWeight="Bold"
+                Opacity="1"
+                Text="{Binding DiagnosisInfo, StringFormat={}{0}。, TargetNullValue=--, FallbackValue=--}" />
+            <TextBlock
+                VerticalAlignment="Center"
+                FontSize="20"
+                FontWeight="DemiBold"
+                Opacity="0.6"
+                TextTrimming="CharacterEllipsis">
+                将方案添加至右侧后点击保存
+            </TextBlock>
+        </DockPanel>
+    </hc:SimplePanel>
+</UserControl>

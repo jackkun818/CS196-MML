@@ -1,0 +1,197 @@
+﻿<UserControl
+    x:Class="crs.dialog.Views.AccountManageDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:hc="https://handyorg.github.io/handycontrol"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:prism="http://prismlibrary.com/"
+    xmlns:vm="clr-namespace:crs.dialog.ViewModels"
+    xmlns:wpfToolkit="clr-namespace:WpfToolkit.Controls;assembly=VirtualizingWrapPanel"
+    Width="640"
+    Height="480"
+    d:DataContext="{d:DesignInstance IsDesignTimeCreatable=True,
+                                     Type={x:Type vm:AccountManageDialogViewModel}}"
+    prism:ViewModelLocator.AutoWireViewModel="True"
+    Background="Transparent"
+    mc:Ignorable="d">
+    <Border
+        Background="White"
+        BorderBrush="Gray"
+        BorderThickness="1"
+        CornerRadius="10">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="7*" />
+                <RowDefinition Height="4*" />
+            </Grid.RowDefinitions>
+            <TextBlock
+                Grid.Row="0"
+                Margin="10"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                FontFamily="黑体"
+                FontSize="26"
+                FontWeight="Bold"
+                Foreground="#000000"
+                Text="账号管理" />
+            <UniformGrid
+                Grid.Row="1"
+                Columns="1"
+                Rows="4">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*" />
+                        <ColumnDefinition Width="7*" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock
+                        Grid.Column="0"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        FontSize="26"
+                        Foreground="#000000"
+                        Text="账号" />
+                    <hc:TextBox
+                        Grid.Column="1"
+                        Width="300"
+                        Height="40"
+                        Margin="20,0,0,0"
+                        Padding="20,0"
+                        HorizontalAlignment="Left"
+                        hc:InfoElement.ShowClearButton="True"
+                        Background="{StaticResource crs_SolidColorBrush.EFEFEF}"
+                        FontSize="20"
+                        Foreground="#010101"
+                        IsReadOnly="True"
+                        Text="{Binding Account, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="191*" />
+                        <ColumnDefinition Width="321*" />
+                        <ColumnDefinition Width="126*" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock
+                        Grid.Column="0"
+                        Width="104"
+                        Height="33"
+                        Margin="87,0,0,0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        FontSize="26"
+                        Foreground="#000000"
+                        Text="当前密码" />
+                    <hc:PasswordBox
+                        Grid.Column="1"
+                        Width="300"
+                        Margin="20,6,0,6"
+                        Padding="20,0"
+                        HorizontalAlignment="Left"
+                        hc:InfoElement.Placeholder="请输入登录密码"
+                        hc:InfoElement.ShowClearButton="True"
+                        Background="{StaticResource crs_SolidColorBrush.EFEFEF}"
+                        FontSize="16"
+                        IsSafeEnabled="False"
+                        UnsafePassword="{Binding OldPassword, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*" />
+                        <ColumnDefinition Width="7*" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock
+                        Grid.Column="0"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        FontSize="26"
+                        Foreground="#000000"
+                        Text="新密码" />
+                    <hc:PasswordBox
+                        Grid.Column="1"
+                        Width="300"
+                        Margin="20,6,0,6"
+                        Padding="20,0"
+                        HorizontalAlignment="Left"
+                        hc:InfoElement.Placeholder="请输入新密码"
+                        hc:InfoElement.ShowClearButton="True"
+                        Background="{StaticResource crs_SolidColorBrush.EFEFEF}"
+                        FontSize="16"
+                        IsSafeEnabled="False"
+                        UnsafePassword="{Binding NewPassword1, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*" />
+                        <ColumnDefinition Width="7*" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock
+                        Grid.Column="0"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        FontSize="26"
+                        Foreground="#000000"
+                        Text="确认密码" />
+                    <hc:PasswordBox
+                        Grid.Column="1"
+                        Width="300"
+                        Margin="20,6,0,6"
+                        Padding="20,0"
+                        HorizontalAlignment="Left"
+                        hc:InfoElement.Placeholder="再次输入新密码"
+                        hc:InfoElement.ShowClearButton="True"
+                        Background="{StaticResource crs_SolidColorBrush.EFEFEF}"
+                        FontSize="16"
+                        IsSafeEnabled="False"
+                        UnsafePassword="{Binding NewPassword2, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                </Grid>
+            </UniformGrid>
+            <UniformGrid Grid.Row="2" Rows="2">
+                <TextBlock
+                    Margin="0,10,0,0"
+                    HorizontalAlignment="Center"
+                    FontSize="18"
+                    Foreground="Red"
+                    Text="{Binding ErrorMessage}" />
+                <UniformGrid Grid.Row="2" Columns="2">
+                    <Button
+                        Width="140"
+                        Height="45"
+                        Margin="0,0,30,0"
+                        HorizontalAlignment="Right"
+                        hc:BorderElement.CornerRadius="5"
+                        Background="{StaticResource crs_SolidColorBrush.EFEFEF}"
+                        Command="{Binding CancelCommand}"
+                        DockPanel.Dock="Bottom"
+                        FontSize="22"
+                        Foreground="#5e5e5e">
+                        <Button.Style>
+                            <Style BasedOn="{StaticResource ButtonBaseStyle}" TargetType="Button">
+                                <Setter Property="Content" Value="取消" />
+                            </Style>
+                        </Button.Style>
+                    </Button>
+                    <Button
+                        Width="140"
+                        Height="45"
+                        Margin="30,0,0,0"
+                        HorizontalAlignment="Left"
+                        hc:BorderElement.CornerRadius="5"
+                        Background="{StaticResource crs_SolidColorBrush.F89F00}"
+                        Command="{Binding ConfirmCommand}"
+                        DockPanel.Dock="Bottom"
+                        FontSize="22"
+                        Foreground="White">
+                        <Button.Style>
+                            <Style BasedOn="{StaticResource ButtonBaseStyle}" TargetType="Button">
+                                <Setter Property="Content" Value="确定" />
+                            </Style>
+                        </Button.Style>
+                    </Button>
+                </UniformGrid>
+            </UniformGrid>
+        </Grid>
+    </Border>
+</UserControl>
